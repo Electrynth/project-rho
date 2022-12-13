@@ -1,4 +1,4 @@
-import CardButton from 'common/CardButton';
+import CardButton from 'src/common/CardButton';
 
 function CardSelector({ handleAddShip, filteredCardIds }) {
     return (

@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router';
 import { IconButton, Divider, Chip } from '@mui/material';
-import FactionIcon from '../common/FactionIcon';
+import FactionIcon from 'src/common/FactionIcon';
 import styles from 'styles/Home.module.css';
 import robotoCondensed from 'config/font';
 

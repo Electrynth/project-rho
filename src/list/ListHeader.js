@@ -1,7 +1,7 @@
 import InputBase from '@mui/material/InputBase';
 import Chip from '@mui/material/Chip';
 import Typography from '@mui/material/Typography';
-import FactionIcon from 'common/FactionIcon';
+import FactionIcon from 'src/common/FactionIcon';
 import robotoCondensed from 'config/font';
 
 function ListHeader({

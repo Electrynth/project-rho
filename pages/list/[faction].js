@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useState, useEffect } from 'react';
-import ListContainer from './ListContainer';
+import ListContainer from 'src/list/ListContainer';
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 

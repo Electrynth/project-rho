@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import rebelsSvgIcon from '../public/images/factions/rebelsIcon.svg';
-import empireSvgIcon from '../public/images/factions/empireIcon.svg';
-import republicSvgIcon from '../public/images/factions/republicIcon.svg';
-import separatistsSvgIcon from '../public/images/factions/separatistsIcon.svg';
+import rebelsSvgIcon from 'public/images/factions/rebelsIcon.svg';
+import empireSvgIcon from 'public/images/factions/empireIcon.svg';
+import republicSvgIcon from 'public/images/factions/republicIcon.svg';
+import separatistsSvgIcon from 'public/images/factions/separatistsIcon.svg';
 
 function FactionIcon({ faction, style, ...props }) {
 

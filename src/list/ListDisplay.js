@@ -1,7 +1,7 @@
 import {
     Divider
 } from '@mui/material';
-import CardButton from 'common/CardButton';
+import CardButton from 'src/common/CardButton';
 import cards from 'config/cards.json';
 
 function ShipRows({ ships, cardZoomClick }) {

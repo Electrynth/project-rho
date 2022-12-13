@@ -1,4 +1,4 @@
-function ListCardDisplay() {
+function CardDisplay() {
     return (
         <div>
             ListCardDisplay
@@ -6,4 +6,4 @@ function ListCardDisplay() {
     );
 }
 
-export default ListCardDisplay;
+export default CardDisplay;

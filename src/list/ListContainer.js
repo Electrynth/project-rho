@@ -7,7 +7,7 @@ import ListShips from './ListShips';
 import ListSquadrons from './ListSquadrons';
 import ListObjectives from './ListObjectives';
 import ListFooter from './ListFooter'
-import ListCardDisplay from './ListCardDisplay';
+import CardDisplay from './CardDisplay';
 import ListDisplay from './ListDisplay';
 import CardSelector from './CardSelector';
 import styles from 'styles/ListContainer.module.css';
