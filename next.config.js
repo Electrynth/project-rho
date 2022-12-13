@@ -3,7 +3,7 @@ const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   images: {
-    unoptimized: isProd ? true : false
+    unoptimized: isProd ? false : true
   },
   reactStrictMode: true,
   images: {
