@@ -1,0 +1,4842 @@
+{
+  "idList": [
+    "aa",
+    "ab",
+    "ac",
+    "ad",
+    "ae",
+    "af",
+    "ag",
+    "ah",
+    "ai",
+    "aj",
+    "ak",
+    "al",
+    "am",
+    "an",
+    "ao",
+    "ap",
+    "aq",
+    "ar",
+    "as",
+    "at",
+    "au",
+    "av",
+    "aw",
+    "ax",
+    "ay",
+    "az",
+    "ba",
+    "bb",
+    "bc",
+    "bd",
+    "be",
+    "bf",
+    "bg",
+    "bh",
+    "bi",
+    "bj",
+    "bk",
+    "bl",
+    "bm",
+    "bn",
+    "bo",
+    "bp",
+    "bq",
+    "br",
+    "bs",
+    "bt",
+    "bu",
+    "bv",
+    "bw",
+    "bx",
+    "by",
+    "bz",
+    "ca",
+    "cb",
+    "cc",
+    "cd",
+    "ce",
+    "cf",
+    "cg",
+    "ch",
+    "ci",
+    "cj",
+    "ck",
+    "cm",
+    "cn",
+    "co",
+    "cp",
+    "cq",
+    "cr",
+    "cs",
+    "ct",
+    "cu",
+    "cv",
+    "cw",
+    "cx",
+    "cy",
+    "cz",
+    "da",
+    "db",
+    "dc",
+    "dd",
+    "de",
+    "df",
+    "dg",
+    "dh",
+    "di",
+    "dj",
+    "dk",
+    "dl",
+    "dm",
+    "dn",
+    "do",
+    "dp",
+    "dq",
+    "dr",
+    "ds",
+    "dt",
+    "du",
+    "dv",
+    "dw",
+    "dx",
+    "dy",
+    "dz",
+    "ea",
+    "eb",
+    "ec",
+    "ed",
+    "ee",
+    "ef",
+    "eg",
+    "eh",
+    "ei",
+    "ej",
+    "ek",
+    "el",
+    "em",
+    "en",
+    "eo",
+    "ep",
+    "eq",
+    "er",
+    "es",
+    "et",
+    "eu",
+    "ev",
+    "ew",
+    "ex",
+    "ey",
+    "ez",
+    "fa",
+    "fb",
+    "fc",
+    "fd",
+    "fe",
+    "ff",
+    "fg",
+    "fh",
+    "fi",
+    "fj",
+    "fk",
+    "fl",
+    "fm",
+    "fn",
+    "fo",
+    "fp",
+    "fq",
+    "fr",
+    "fs",
+    "ft",
+    "fu",
+    "fv",
+    "fw",
+    "fx",
+    "fy",
+    "fz",
+    "ga",
+    "gb",
+    "gc",
+    "gd",
+    "ge",
+    "gf",
+    "gg",
+    "gh",
+    "gi",
+    "gj",
+    "gk",
+    "gl",
+    "gm",
+    "gn",
+    "go",
+    "gp",
+    "gq",
+    "gr",
+    "gs",
+    "gt",
+    "gu",
+    "gv",
+    "gw",
+    "gx",
+    "gy",
+    "gz",
+    "ha",
+    "hb",
+    "hc",
+    "hd",
+    "he",
+    "hf",
+    "hg",
+    "hh",
+    "hi",
+    "hj",
+    "hk",
+    "hl",
+    "hm",
+    "hn",
+    "ho",
+    "hp",
+    "hq",
+    "hr",
+    "hs",
+    "ht",
+    "hu",
+    "hv",
+    "hw",
+    "hx",
+    "hy",
+    "hz",
+    "ia",
+    "ib",
+    "ic",
+    "id",
+    "ie",
+    "if",
+    "ig",
+    "ih",
+    "ii",
+    "ij",
+    "ik",
+    "il",
+    "im",
+    "in",
+    "io",
+    "ip",
+    "iq",
+    "ir",
+    "is",
+    "it",
+    "iu",
+    "iv",
+    "iw",
+    "ix",
+    "iy",
+    "iz",
+    "ja",
+    "jb",
+    "jc",
+    "jd",
+    "je",
+    "jf",
+    "jg",
+    "jh",
+    "ji",
+    "jj",
+    "jk",
+    "jl",
+    "jm",
+    "jn",
+    "jo",
+    "jp",
+    "jq",
+    "jr",
+    "js",
+    "jt",
+    "ju",
+    "jv",
+    "jw",
+    "jx",
+    "jy",
+    "jz",
+    "ka",
+    "kb",
+    "kc",
+    "kd",
+    "ke",
+    "kf",
+    "kg",
+    "kh",
+    "ki",
+    "kj",
+    "kk",
+    "kl",
+    "km",
+    "kn",
+    "ko",
+    "kp",
+    "kq",
+    "kr",
+    "ks",
+    "kt",
+    "ku",
+    "kv",
+    "kw",
+    "kx",
+    "ky",
+    "kz",
+    "la",
+    "lb",
+    "lc",
+    "ld",
+    "le",
+    "lf",
+    "lg",
+    "lh",
+    "li",
+    "lj",
+    "lk",
+    "ll",
+    "lm",
+    "ln",
+    "lo",
+    "lp",
+    "lq",
+    "lr",
+    "ls",
+    "lt",
+    "lu",
+    "lv",
+    "lw",
+    "lx",
+    "ly",
+    "lz",
+    "ma",
+    "mb",
+    "mc",
+    "md",
+    "me",
+    "mf",
+    "mg",
+    "mh",
+    "mi",
+    "mj",
+    "mk",
+    "ml",
+    "mm",
+    "mn",
+    "mo",
+    "mp",
+    "mq",
+    "mr",
+    "ms",
+    "mt",
+    "mu",
+    "mv",
+    "mw",
+    "mx",
+    "my",
+    "mz",
+    "na",
+    "nb",
+    "nc",
+    "nd",
+    "ne",
+    "nf",
+    "ng",
+    "nh",
+    "ni",
+    "nj",
+    "nk",
+    "nl",
+    "nm",
+    "nn",
+    "no",
+    "np",
+    "nq",
+    "nr",
+    "ns",
+    "nt",
+    "nu",
+    "nv",
+    "nw",
+    "nx",
+    "ny",
+    "nz",
+    "oa",
+    "ob",
+    "oc",
+    "od",
+    "oe",
+    "of",
+    "og",
+    "oh",
+    "oi",
+    "oj",
+    "ok",
+    "ol",
+    "om",
+    "on",
+    "oo",
+    "op",
+    "oq",
+    "or",
+    "os",
+    "ot",
+    "ou",
+    "ov",
+    "ow",
+    "ox",
+    "oy",
+    "oz",
+    "pa",
+    "pb",
+    "pc",
+    "pd",
+    "pe",
+    "pf",
+    "pg",
+    "ph",
+    "pi",
+    "pj",
+    "pk",
+    "pl",
+    "pm",
+    "pn",
+    "po",
+    "pp",
+    "pq",
+    "pr",
+    "ps",
+    "pt",
+    "pu",
+    "pv",
+    "pw",
+    "px",
+    "py",
+    "pz",
+    "qa",
+    "qb",
+    "qc",
+    "qd",
+    "qe",
+    "qf",
+    "qg",
+    "qh",
+    "qi",
+    "qj",
+    "qk",
+    "ql",
+    "qm",
+    "qn",
+    "qo",
+    "qp",
+    "qq",
+    "qr",
+    "qs",
+    "qt"
+  ],
+  "cardsById": {
+    "aa": {
+      "cardName": "Advanced Projectors",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/fREeP77.jpg",
+      "id": "aa",
+      "upgradeSlots": []
+    },
+    "ab": {
+      "cardName": "Cluster Bombs",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Ngqc1s9.jpg",
+      "id": "ab",
+      "upgradeSlots": []
+    },
+    "ac": {
+      "cardName": "Early Warning System",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/PBh5gdb.jpg",
+      "id": "ac",
+      "upgradeSlots": []
+    },
+    "ad": {
+      "cardName": "Electronic Countermeasures",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/LF2AEZT.jpg",
+      "id": "ad",
+      "upgradeSlots": []
+    },
+    "ae": {
+      "cardName": "Reactive Gunnery",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/rKp36un.jpg",
+      "id": "ae",
+      "upgradeSlots": []
+    },
+    "af": {
+      "cardName": "Redundant Shields",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/3CmOh4B.jpg",
+      "id": "af",
+      "upgradeSlots": []
+    },
+    "ag": {
+      "cardName": "Reinforced Blast Doors",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/OVWDAVK.jpg",
+      "id": "ag",
+      "upgradeSlots": []
+    },
+    "ah": {
+      "cardName": "Thermal Shields",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/ih2D2Zz.png",
+      "id": "ah",
+      "upgradeSlots": []
+    },
+    "ai": {
+      "cardName": "Admiral Ackbar",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/HFVv48K.jpg",
+      "id": "ai",
+      "upgradeSlots": []
+    },
+    "aj": {
+      "cardName": "Admiral Raddus",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/2IPtau4.jpg",
+      "id": "aj",
+      "upgradeSlots": []
+    },
+    "ak": {
+      "cardName": "Commander Sato",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/ir6QixK.jpg",
+      "id": "ak",
+      "upgradeSlots": []
+    },
+    "al": {
+      "cardName": "Garm Bel Iblis",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/fmlXop3.jpg",
+      "id": "al",
+      "upgradeSlots": []
+    },
+    "am": {
+      "cardName": "General Cracken",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/0NHwrEL.jpg",
+      "id": "am",
+      "upgradeSlots": []
+    },
+    "an": {
+      "cardName": "Emperor Palpatine",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/KBY36Qs.jpg",
+      "id": "an",
+      "upgradeSlots": []
+    },
+    "ao": {
+      "cardName": "General Romodi",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/U9wK3K8.jpg",
+      "id": "ao",
+      "upgradeSlots": []
+    },
+    "ap": {
+      "cardName": "General Tagge",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/LduHiR8.jpg",
+      "id": "ap",
+      "upgradeSlots": []
+    },
+    "aq": {
+      "cardName": "Grand Admiral Thrawn",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/FSpE1gl.jpg",
+      "id": "aq",
+      "upgradeSlots": []
+    },
+    "ar": {
+      "cardName": "Grand Moff Tarkin",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/OxvHWmA.jpg",
+      "id": "ar",
+      "upgradeSlots": []
+    },
+    "as": {
+      "cardName": "General Dodonna",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/MsS9AN8.jpg",
+      "id": "as",
+      "upgradeSlots": []
+    },
+    "at": {
+      "cardName": "Moff Jerjerrod",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/qZAVH6a.jpg",
+      "id": "at",
+      "upgradeSlots": []
+    },
+    "au": {
+      "cardName": "General Madine",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/ePeK8Ok.jpg",
+      "id": "au",
+      "upgradeSlots": []
+    },
+    "av": {
+      "cardName": "Admiral Tarkin",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/mJplVe5.png",
+      "id": "av",
+      "upgradeSlots": []
+    },
+    "aw": {
+      "cardName": "General Rieekan",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/Q6pSiLj.jpg",
+      "id": "aw",
+      "upgradeSlots": []
+    },
+    "ax": {
+      "cardName": "Admiral Yularen",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/QloblZJ.jpeg",
+      "id": "ax",
+      "upgradeSlots": []
+    },
+    "ay": {
+      "cardName": "Kyrsta Agate",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/CdWKsAz.jpg",
+      "id": "ay",
+      "upgradeSlots": []
+    },
+    "az": {
+      "cardName": "Bail Organa",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/SBYa2yD.jpeg",
+      "id": "az",
+      "upgradeSlots": []
+    },
+    "ba": {
+      "cardName": "Leia Organa",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/Xsqh5f0.jpg",
+      "id": "ba",
+      "upgradeSlots": []
+    },
+    "bb": {
+      "cardName": "Luminara Unduli",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/SlkHtHE.png",
+      "id": "bb",
+      "upgradeSlots": []
+    },
+    "bc": {
+      "cardName": "Mon Mothma",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/ZK3rQeb.jpg",
+      "id": "bc",
+      "upgradeSlots": []
+    },
+    "bd": {
+      "cardName": "Obi-Wan Kenobi",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/xkfBnRw.jpeg",
+      "id": "bd",
+      "upgradeSlots": []
+    },
+    "be": {
+      "cardName": "Admiral Konstantine",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/ONoTDBL.jpg",
+      "id": "be",
+      "upgradeSlots": []
+    },
+    "bf": {
+      "cardName": "Plo Koon",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/RY01HsT.jpg",
+      "id": "bf",
+      "upgradeSlots": []
+    },
+    "bg": {
+      "cardName": "Admiral Motti",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/rkMe17G.jpg",
+      "id": "bg",
+      "upgradeSlots": []
+    },
+    "bh": {
+      "cardName": "Admiral Trench",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/eOaryOm.png",
+      "id": "bh",
+      "upgradeSlots": []
+    },
+    "bi": {
+      "cardName": "Admiral Ozzel",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/v0nThwx.jpg",
+      "id": "bi",
+      "upgradeSlots": []
+    },
+    "bj": {
+      "cardName": "Count Dooku",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/YOm4LIi.jpeg",
+      "id": "bj",
+      "upgradeSlots": []
+    },
+    "bk": {
+      "cardName": "Admiral Piett",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/2D3DgQS.jpg",
+      "id": "bk",
+      "upgradeSlots": []
+    },
+    "bl": {
+      "cardName": "General Grievous",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/xLHg92l.png",
+      "id": "bl",
+      "upgradeSlots": []
+    },
+    "bm": {
+      "cardName": "Admiral Screed",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/DUToctV.jpg",
+      "id": "bm",
+      "upgradeSlots": []
+    },
+    "bn": {
+      "cardName": "Kraken",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/zLNsrOo.jpeg",
+      "id": "bn",
+      "upgradeSlots": []
+    },
+    "bo": {
+      "cardName": "Admiral Sloane",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/rzZtf8B.jpg",
+      "id": "bo",
+      "upgradeSlots": []
+    },
+    "bp": {
+      "cardName": "Mar Tuuk",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/POTMBXQ.png",
+      "id": "bp",
+      "upgradeSlots": []
+    },
+    "bq": {
+      "cardName": "Darth Vader",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/ysyfpEF.jpg",
+      "id": "bq",
+      "upgradeSlots": []
+    },
+    "br": {
+      "cardName": "TF-1726",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/aptrDok.png",
+      "id": "br",
+      "upgradeSlots": []
+    },
+    "bs": {
+      "cardName": "Take Evasive Action!",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Grqrp2Y.jpg",
+      "id": "bs",
+      "upgradeSlots": []
+    },
+    "bt": {
+      "cardName": "Mercy Mission",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/G5WinB0.png",
+      "id": "bt",
+      "upgradeSlots": []
+    },
+    "bu": {
+      "cardName": "Hot Landing",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Gst4AaJ.png",
+      "id": "bu",
+      "upgradeSlots": []
+    },
+    "bv": {
+      "cardName": "Jedi Hostage",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/rtdHtYX.png",
+      "id": "bv",
+      "upgradeSlots": []
+    },
+    "bw": {
+      "cardName": "Shields to Maximum!",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/2I3JN7G.jpg",
+      "id": "bw",
+      "upgradeSlots": []
+    },
+    "bx": {
+      "cardName": "Intensify Firepower!",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/X4Pkv96.jpg",
+      "id": "bx",
+      "upgradeSlots": []
+    },
+    "by": {
+      "cardName": "Entrapment Formation!",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/7ipOGiT.jpg",
+      "id": "by",
+      "upgradeSlots": []
+    },
+    "bz": {
+      "cardName": "All Fighters, Follow Me!",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/pRqJy8Z.jpg",
+      "id": "bz",
+      "upgradeSlots": []
+    },
+    "ca": {
+      "cardName": "Grav Shift Reroute",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/QipiGSD.jpg",
+      "id": "ca",
+      "upgradeSlots": []
+    },
+    "cb": {
+      "cardName": "Targeting Scrambler",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/KoUrM8N.jpg",
+      "id": "cb",
+      "upgradeSlots": []
+    },
+    "cc": {
+      "cardName": "G-8 Experimental Projector",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/DUzGkon.jpg",
+      "id": "cc",
+      "upgradeSlots": []
+    },
+    "cd": {
+      "cardName": "G7-X Grav Well Projector",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/BaMEJzl.jpg",
+      "id": "cd",
+      "upgradeSlots": []
+    },
+    "ce": {
+      "cardName": "Bomber Command Center",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/slRsjXp.jpg",
+      "id": "ce",
+      "upgradeSlots": []
+    },
+    "cf": {
+      "cardName": "Comms Net",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/56EgYe9.jpg",
+      "id": "cf",
+      "upgradeSlots": []
+    },
+    "cg": {
+      "cardName": "Jamming Field",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/YjACVRj.jpg",
+      "id": "cg",
+      "upgradeSlots": []
+    },
+    "ch": {
+      "cardName": "Munitions Resupply",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/IEHG2uc.jpeg",
+      "id": "ch",
+      "upgradeSlots": []
+    },
+    "ci": {
+      "cardName": "Parts Resupply",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/trKTRFt.jpg",
+      "id": "ci",
+      "upgradeSlots": []
+    },
+    "cj": {
+      "cardName": "Repair Crews",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/sFnhtzi.jpg",
+      "id": "cj",
+      "upgradeSlots": []
+    },
+    "ck": {
+      "cardName": "Slicer Tools",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/f3pcTt5.jpg",
+      "id": "ck",
+      "upgradeSlots": []
+    },
+    "cm": {
+      "cardName": "Boosted Comms",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/pq9oDK2.jpg",
+      "id": "cm",
+      "upgradeSlots": []
+    },
+    "cn": {
+      "cardName": "Disposable Capacitors",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/sujhLdx.jpg",
+      "id": "cn",
+      "upgradeSlots": []
+    },
+    "co": {
+      "cardName": "Expanded Hangar Bay",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/uHXkIP2.jpg",
+      "id": "co",
+      "upgradeSlots": []
+    },
+    "cp": {
+      "cardName": "Flag Bridge",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/qJksgmR.jpg",
+      "id": "cp",
+      "upgradeSlots": []
+    },
+    "cq": {
+      "cardName": "Flak Guns",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/pRgw74R.png",
+      "id": "cq",
+      "upgradeSlots": []
+    },
+    "cr": {
+      "cardName": "Hardened Bulkheads",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Cz9oxBt.jpg",
+      "id": "cr",
+      "upgradeSlots": []
+    },
+    "cs": {
+      "cardName": "Phylon Q7 Tractor Beams",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/x7VhJXM.jpg",
+      "id": "cs",
+      "upgradeSlots": []
+    },
+    "ct": {
+      "cardName": "Point-Defense Reroute",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/IAIYK4H.jpg",
+      "id": "ct",
+      "upgradeSlots": []
+    },
+    "cu": {
+      "cardName": "Proximity Mines",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/e93H1wf.jpg",
+      "id": "cu",
+      "upgradeSlots": []
+    },
+    "cv": {
+      "cardName": "Quad Laser Turrets",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/HKfQx0O.jpg",
+      "id": "cv",
+      "upgradeSlots": []
+    },
+    "cw": {
+      "cardName": "Rapid Launch Bays",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/PHiQ5fk.jpg",
+      "id": "cw",
+      "upgradeSlots": []
+    },
+    "cx": {
+      "cardName": "Reserve Hangar Deck",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/CuuMCQr.jpg",
+      "id": "cx",
+      "upgradeSlots": []
+    },
+    "cy": {
+      "cardName": "Hyperspace Rings",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/GCSZ4Wy.jpeg",
+      "id": "cy",
+      "upgradeSlots": []
+    },
+    "cz": {
+      "cardName": "SPHA-T",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/uIvMeUJ.png",
+      "id": "cz",
+      "upgradeSlots": []
+    },
+    "da": {
+      "cardName": "Advanced Transponder Net",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/vm6HKV1.jpg",
+      "id": "da",
+      "upgradeSlots": []
+    },
+    "db": {
+      "cardName": "B2 Rocket Troopers",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/cK6wUox.png",
+      "id": "db",
+      "upgradeSlots": []
+    },
+    "dc": {
+      "cardName": "Heavy Ion Emplacements",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/S82y39J.jpg",
+      "id": "dc",
+      "upgradeSlots": []
+    },
+    "dd": {
+      "cardName": "High-Capacity Ion Turbines",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/sNFD2X4.jpg",
+      "id": "dd",
+      "upgradeSlots": []
+    },
+    "de": {
+      "cardName": "Ion Cannon Batteries",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/ygkNbuk.jpg",
+      "id": "de",
+      "upgradeSlots": []
+    },
+    "df": {
+      "cardName": "Leading Shots",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/0wvdKHN.jpg",
+      "id": "df",
+      "upgradeSlots": []
+    },
+    "dg": {
+      "cardName": "MS-1 Ion Cannons",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/WJpPDTH.jpg",
+      "id": "dg",
+      "upgradeSlots": []
+    },
+    "dh": {
+      "cardName": "NK-7 Ion Cannons",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/pw7KB1o.jpg",
+      "id": "dh",
+      "upgradeSlots": []
+    },
+    "di": {
+      "cardName": "Overload Pulse",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/93yRQdH.jpg",
+      "id": "di",
+      "upgradeSlots": []
+    },
+    "dj": {
+      "cardName": "Point Defense Ion Cannons",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Ed6N3bM.png",
+      "id": "dj",
+      "upgradeSlots": []
+    },
+    "dk": {
+      "cardName": "SW-7 Ion Batteries",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/rL77eki.jpg",
+      "id": "dk",
+      "upgradeSlots": []
+    },
+    "dl": {
+      "cardName": "Assault Concussion Missiles",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/iuWMfEx.jpg",
+      "id": "dl",
+      "upgradeSlots": []
+    },
+    "dm": {
+      "cardName": "Assault Proton Torpedoes",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/ZHMQWZr.jpg",
+      "id": "dm",
+      "upgradeSlots": []
+    },
+    "dn": {
+      "cardName": "Expanded Launchers",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/PrpF5Sh.jpg",
+      "id": "dn",
+      "upgradeSlots": []
+    },
+    "do": {
+      "cardName": "External Racks",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/0nzMm68.jpg",
+      "id": "do",
+      "upgradeSlots": []
+    },
+    "dp": {
+      "cardName": "Flechette Torpedoes",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/ENBODz0.jpg",
+      "id": "dp",
+      "upgradeSlots": []
+    },
+    "dq": {
+      "cardName": "Ordnance Pods",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/bxshsaj.jpg",
+      "id": "dq",
+      "upgradeSlots": []
+    },
+    "dr": {
+      "cardName": "Rapid Reload",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/gX8DdhB.jpg",
+      "id": "dr",
+      "upgradeSlots": []
+    },
+    "ds": {
+      "cardName": "Wide-Area Barrage",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/HA96Xmz.jpg",
+      "id": "ds",
+      "upgradeSlots": []
+    },
+    "dt": {
+      "cardName": "Damage Control Officer",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/jsuMjsT.jpg",
+      "id": "dt",
+      "upgradeSlots": []
+    },
+    "du": {
+      "cardName": "Defense Liaison",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/FqhDYBp.jpg",
+      "id": "du",
+      "upgradeSlots": []
+    },
+    "dv": {
+      "cardName": "Engineering Captain",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/gOLEgHZ.jpg",
+      "id": "dv",
+      "upgradeSlots": []
+    },
+    "dw": {
+      "cardName": "Expert Shield Tech",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/bB1tz0h.jpg",
+      "id": "dw",
+      "upgradeSlots": []
+    },
+    "dx": {
+      "cardName": "Navigation Officer",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/VKrSVRL.jpg",
+      "id": "dx",
+      "upgradeSlots": []
+    },
+    "dy": {
+      "cardName": "Major Derlin",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Q8rOdcb.jpeg",
+      "id": "dy",
+      "upgradeSlots": []
+    },
+    "dz": {
+      "cardName": "Leia Organa",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/bJcJynH.jpg",
+      "id": "dz",
+      "upgradeSlots": []
+    },
+    "ea": {
+      "cardName": "Lando Calrissian",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/fw8Qm7S.jpeg",
+      "id": "ea",
+      "upgradeSlots": []
+    },
+    "eb": {
+      "cardName": "Kyrsta Agate",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Fwdfoev.jpeg",
+      "id": "eb",
+      "upgradeSlots": []
+    },
+    "ec": {
+      "cardName": "Intel Officer",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/VvdtHvv.jpg",
+      "id": "ec",
+      "upgradeSlots": []
+    },
+    "ed": {
+      "cardName": "Hondo Ohnaka",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/ka4vK2h.jpg",
+      "id": "ed",
+      "upgradeSlots": []
+    },
+    "ee": {
+      "cardName": "General Draven",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/d3Qyp8a.jpeg",
+      "id": "ee",
+      "upgradeSlots": []
+    },
+    "ef": {
+      "cardName": "Flight Commander",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/IqzvNR7.jpg",
+      "id": "ef",
+      "upgradeSlots": []
+    },
+    "eg": {
+      "cardName": "Ezra Bridger",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/7K3X4Po.jpeg",
+      "id": "eg",
+      "upgradeSlots": []
+    },
+    "eh": {
+      "cardName": "Chart Officer",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/HVWr1Ru.jpg",
+      "id": "eh",
+      "upgradeSlots": []
+    },
+    "ei": {
+      "cardName": "Captain Rex",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/AEeHqHn.jpeg",
+      "id": "ei",
+      "upgradeSlots": []
+    },
+    "ej": {
+      "cardName": "Ahsoka Tano",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/Qu7q6hP.jpg",
+      "id": "ej",
+      "upgradeSlots": []
+    },
+    "ek": {
+      "cardName": "Adar Tallon",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "http://i.imgur.com/htbjXKu.jpg",
+      "id": "ek",
+      "upgradeSlots": []
+    },
+    "el": {
+      "cardName": "Support Officer",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/fEdzGRr.jpg",
+      "id": "el",
+      "upgradeSlots": []
+    },
+    "em": {
+      "cardName": "Tactical Expert",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/aAvvHM6.jpg",
+      "id": "em",
+      "upgradeSlots": []
+    },
+    "en": {
+      "cardName": "Toryn Farr",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/kjyMTLq.jpeg",
+      "id": "en",
+      "upgradeSlots": []
+    },
+    "eo": {
+      "cardName": "Veteran Captain",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/GCmA53j.jpg",
+      "id": "eo",
+      "upgradeSlots": []
+    },
+    "ep": {
+      "cardName": "Skilled First Officer",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/6ipZf4i.jpg",
+      "id": "ep",
+      "upgradeSlots": []
+    },
+    "eq": {
+      "cardName": "Raymus Antilles",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/1Ae4QfL.jpg",
+      "id": "eq",
+      "upgradeSlots": []
+    },
+    "er": {
+      "cardName": "Sabine Wren",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/s6dTW50.jpg",
+      "id": "er",
+      "upgradeSlots": []
+    },
+    "es": {
+      "cardName": "Walex Blissex",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/X0OgdJp.jpeg",
+      "id": "es",
+      "upgradeSlots": []
+    },
+    "et": {
+      "cardName": "Weapons Liaison",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/XxbObBi.jpg",
+      "id": "et",
+      "upgradeSlots": []
+    },
+    "eu": {
+      "cardName": "Wedge Antilles",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/OSOELtb.jpeg",
+      "id": "eu",
+      "upgradeSlots": []
+    },
+    "ev": {
+      "cardName": "Wing Commander",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/FjHlkZC.jpg",
+      "id": "ev",
+      "upgradeSlots": []
+    },
+    "ew": {
+      "cardName": "Admiral Chiraneau",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/MnfDupy.jpg",
+      "id": "ew",
+      "upgradeSlots": []
+    },
+    "ex": {
+      "cardName": "Admiral Montferrat",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Y7lJDlF.jpg",
+      "id": "ex",
+      "upgradeSlots": []
+    },
+    "ey": {
+      "cardName": "Admiral Ozzel",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/hPkP4Nf.jpeg",
+      "id": "ey",
+      "upgradeSlots": []
+    },
+    "ez": {
+      "cardName": "Admiral Titus",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Rm0hVoL.jpeg",
+      "id": "ez",
+      "upgradeSlots": []
+    },
+    "fa": {
+      "cardName": "Agent Kallus",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Wuz7UVA.jpeg",
+      "id": "fa",
+      "upgradeSlots": []
+    },
+    "fb": {
+      "cardName": "Captain Needa",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/qeUR8rK.jpeg",
+      "id": "fb",
+      "upgradeSlots": []
+    },
+    "fc": {
+      "cardName": "Captain Brunson",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/KJFYNXO.jpg",
+      "id": "fc",
+      "upgradeSlots": []
+    },
+    "fd": {
+      "cardName": "Director Krennic",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/MWbTBAg.jpg",
+      "id": "fd",
+      "upgradeSlots": []
+    },
+    "fe": {
+      "cardName": "Director Isard",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/2OKtNz1.jpg",
+      "id": "fe",
+      "upgradeSlots": []
+    },
+    "ff": {
+      "cardName": "Commander Gherant",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/IAt9Puz.jpeg",
+      "id": "ff",
+      "upgradeSlots": []
+    },
+    "fg": {
+      "cardName": "Commander Vanto",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/vyMS9Vl.jpeg",
+      "id": "fg",
+      "upgradeSlots": []
+    },
+    "fh": {
+      "cardName": "Commander Woldar",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/nsUrWcO.jpeg",
+      "id": "fh",
+      "upgradeSlots": []
+    },
+    "fi": {
+      "cardName": "Darth Vader",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/wUS7LNn.jpg",
+      "id": "fi",
+      "upgradeSlots": []
+    },
+    "fj": {
+      "cardName": "Emperor Palpatine",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/SAJT8HA.jpg",
+      "id": "fj",
+      "upgradeSlots": []
+    },
+    "fk": {
+      "cardName": "Commandant Aresko",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/3md8wnE.jpeg",
+      "id": "fk",
+      "upgradeSlots": []
+    },
+    "fl": {
+      "cardName": "Commander Beck",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/VPsl8a9.jpeg",
+      "id": "fl",
+      "upgradeSlots": []
+    },
+    "fm": {
+      "cardName": "Iden Versio",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/GspJT2q.jpg",
+      "id": "fm",
+      "upgradeSlots": []
+    },
+    "fn": {
+      "cardName": "Instructor Goran",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/ZpxS19K.jpg",
+      "id": "fn",
+      "upgradeSlots": []
+    },
+    "fo": {
+      "cardName": "Lira Wessex",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/A9ZQ2mz.jpg",
+      "id": "fo",
+      "upgradeSlots": []
+    },
+    "fp": {
+      "cardName": "Minister Tua",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/oBLlFVB.jpg",
+      "id": "fp",
+      "upgradeSlots": []
+    },
+    "fq": {
+      "cardName": "Reeva Demesne",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/hPWCUbI.jpg",
+      "id": "fq",
+      "upgradeSlots": []
+    },
+    "fr": {
+      "cardName": "Taskmaster Grint",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/9U4hKcc.jpg",
+      "id": "fr",
+      "upgradeSlots": []
+    },
+    "fs": {
+      "cardName": "The Grand Inquisitor",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/xzcI49o.jpg",
+      "id": "fs",
+      "upgradeSlots": []
+    },
+    "ft": {
+      "cardName": "Wulff Yularen",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/dvWsOm8.jpg",
+      "id": "ft",
+      "upgradeSlots": []
+    },
+    "fu": {
+      "cardName": "Adi Gallia",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/NtfCKwG.jpeg",
+      "id": "fu",
+      "upgradeSlots": []
+    },
+    "fv": {
+      "cardName": "Ahsoka Tano",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/SVAWnrZ.jpeg",
+      "id": "fv",
+      "upgradeSlots": []
+    },
+    "fw": {
+      "cardName": "Barriss Offee",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/TK5hk9G.png",
+      "id": "fw",
+      "upgradeSlots": []
+    },
+    "fx": {
+      "cardName": "Clone Captain Silver",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/VzHNQTY.jpg",
+      "id": "fx",
+      "upgradeSlots": []
+    },
+    "fy": {
+      "cardName": "Clone Captain Zak",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/A1FePh3.jpeg",
+      "id": "fy",
+      "upgradeSlots": []
+    },
+    "fz": {
+      "cardName": "Clone Cmdr. Wolffe",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/pb3QjZp.jpg",
+      "id": "fz",
+      "upgradeSlots": []
+    },
+    "ga": {
+      "cardName": "Passel Argente",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/fVSYbCJ.png",
+      "id": "ga",
+      "upgradeSlots": []
+    },
+    "gb": {
+      "cardName": "Rune Haako",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/aEgMSwp.jpg",
+      "id": "gb",
+      "upgradeSlots": []
+    },
+    "gc": {
+      "cardName": "San Hill",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/AcVqv40.png",
+      "id": "gc",
+      "upgradeSlots": []
+    },
+    "gd": {
+      "cardName": "Shu Mai",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/8dG1YpO.png",
+      "id": "gd",
+      "upgradeSlots": []
+    },
+    "ge": {
+      "cardName": "TI-99",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/V9CYOEU.png",
+      "id": "ge",
+      "upgradeSlots": []
+    },
+    "gf": {
+      "cardName": "Tikkes",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/l7G05tI.png",
+      "id": "gf",
+      "upgradeSlots": []
+    },
+    "gg": {
+      "cardName": "T-Series Tactical Droid",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/8H1wATK.jpeg",
+      "id": "gg",
+      "upgradeSlots": []
+    },
+    "gh": {
+      "cardName": "Wat Tambor",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/MYpNhXT.jpeg",
+      "id": "gh",
+      "upgradeSlots": []
+    },
+    "gi": {
+      "cardName": "Magnite Crystal Tractor Beam Array",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/2YpzXNT.jpg",
+      "id": "gi",
+      "upgradeSlots": []
+    },
+    "gj": {
+      "cardName": "Orbital Bombardment Particle Cannons",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/t9VRV0n.jpg",
+      "id": "gj",
+      "upgradeSlots": []
+    },
+    "gk": {
+      "cardName": "Superheavy Composite Beam Turbolasers",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/a7AycPb.jpg",
+      "id": "gk",
+      "upgradeSlots": []
+    },
+    "gl": {
+      "cardName": "Auxiliary Shields Team",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/SkNnm5P.jpg",
+      "id": "gl",
+      "upgradeSlots": []
+    },
+    "gm": {
+      "cardName": "Engine Techs",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/5oEvYoq.jpg",
+      "id": "gm",
+      "upgradeSlots": []
+    },
+    "gn": {
+      "cardName": "Engineering Team",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/ZmpFl4q.jpg",
+      "id": "gn",
+      "upgradeSlots": []
+    },
+    "go": {
+      "cardName": "Fighter Coordination Team",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/wKI96Sb.jpg",
+      "id": "go",
+      "upgradeSlots": []
+    },
+    "gp": {
+      "cardName": "Medical Team",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/jwf6kLG.jpg",
+      "id": "gp",
+      "upgradeSlots": []
+    },
+    "gq": {
+      "cardName": "Nav Team",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/GdjIeBj.jpg",
+      "id": "gq",
+      "upgradeSlots": []
+    },
+    "gr": {
+      "cardName": "Projection Experts",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/0hPAHTI.jpg",
+      "id": "gr",
+      "upgradeSlots": []
+    },
+    "gs": {
+      "cardName": "Battle Droid Reserves",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/ffhsdrO.jpeg",
+      "id": "gs",
+      "upgradeSlots": []
+    },
+    "gt": {
+      "cardName": "Garel's Honor",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/tl2VV0J.jpg",
+      "id": "gt",
+      "upgradeSlots": []
+    },
+    "gu": {
+      "cardName": "Task Force Antilles",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/NWw9f29.jpg",
+      "id": "gu",
+      "upgradeSlots": []
+    },
+    "gv": {
+      "cardName": "Task Force Organa",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/FwbIwpU.jpg",
+      "id": "gv",
+      "upgradeSlots": []
+    },
+    "gw": {
+      "cardName": "Redemption",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Dp0ayI3.jpg",
+      "id": "gw",
+      "upgradeSlots": []
+    },
+    "gx": {
+      "cardName": "Salvation",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/xjIXfVD.jpg",
+      "id": "gx",
+      "upgradeSlots": []
+    },
+    "gy": {
+      "cardName": "Vanguard",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/4a6la8P.jpg",
+      "id": "gy",
+      "upgradeSlots": []
+    },
+    "gz": {
+      "cardName": "Yavaris",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/qtHU4B2.jpg",
+      "id": "gz",
+      "upgradeSlots": []
+    },
+    "ha": {
+      "cardName": "Phoenix Home",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/4pKVy0F.jpg",
+      "id": "ha",
+      "upgradeSlots": []
+    },
+    "hb": {
+      "cardName": "Admonition",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/rRIV5mH.jpg",
+      "id": "hb",
+      "upgradeSlots": []
+    },
+    "hc": {
+      "cardName": "Foresight",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/HpSit4j.jpg",
+      "id": "hc",
+      "upgradeSlots": []
+    },
+    "hd": {
+      "cardName": "Tantive IV",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/THWav9j.jpg",
+      "id": "hd",
+      "upgradeSlots": []
+    },
+    "he": {
+      "cardName": "Gallant Haven",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Foap6UL.jpg",
+      "id": "he",
+      "upgradeSlots": []
+    },
+    "hf": {
+      "cardName": "Liberator",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/zPLLjv2.jpg",
+      "id": "hf",
+      "upgradeSlots": []
+    },
+    "hg": {
+      "cardName": "Quantum Storm",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Zvki0aa.jpg",
+      "id": "hg",
+      "upgradeSlots": []
+    },
+    "hh": {
+      "cardName": "Dodonna's Pride",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/XoROjrp.jpg",
+      "id": "hh",
+      "upgradeSlots": []
+    },
+    "hi": {
+      "cardName": "Jaina's Light",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/v5gczKg.jpg",
+      "id": "hi",
+      "upgradeSlots": []
+    },
+    "hj": {
+      "cardName": "Paragon",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/1lMOUvu.jpg",
+      "id": "hj",
+      "upgradeSlots": []
+    },
+    "hk": {
+      "cardName": "Bright Hope",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/ppRWBhH.jpg",
+      "id": "hk",
+      "upgradeSlots": []
+    },
+    "hl": {
+      "cardName": "Defiance",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/cBm6bOA.jpg",
+      "id": "hl",
+      "upgradeSlots": []
+    },
+    "hm": {
+      "cardName": "Home One",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/ao1aUWd.jpg",
+      "id": "hm",
+      "upgradeSlots": []
+    },
+    "hn": {
+      "cardName": "Independence",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/eeJ4K4e.jpg",
+      "id": "hn",
+      "upgradeSlots": []
+    },
+    "ho": {
+      "cardName": "Endeavor",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/YQO9jve.jpg",
+      "id": "ho",
+      "upgradeSlots": []
+    },
+    "hp": {
+      "cardName": "Liberty",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/gnoxT5J.jpg",
+      "id": "hp",
+      "upgradeSlots": []
+    },
+    "hq": {
+      "cardName": "Mon Karren",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/JbMnQpC.jpg",
+      "id": "hq",
+      "upgradeSlots": []
+    },
+    "hr": {
+      "cardName": "Aspiration",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/O0n3gY9.jpg",
+      "id": "hr",
+      "upgradeSlots": []
+    },
+    "hs": {
+      "cardName": "Profundity",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/P0LQ9NC.jpg",
+      "id": "hs",
+      "upgradeSlots": []
+    },
+    "ht": {
+      "cardName": "Mon Calamari Exodus Fleet",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Gi02xgi.jpg",
+      "id": "ht",
+      "upgradeSlots": []
+    },
+    "hu": {
+      "cardName": "Amity",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/BcOXgXM.jpg",
+      "id": "hu",
+      "upgradeSlots": []
+    },
+    "hv": {
+      "cardName": "Concord",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/76LdzqR.jpg",
+      "id": "hv",
+      "upgradeSlots": []
+    },
+    "hw": {
+      "cardName": "Unity",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/RP1KPrl.jpg",
+      "id": "hw",
+      "upgradeSlots": []
+    },
+    "hx": {
+      "cardName": "Suppressor",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/11G4bE0.jpg",
+      "id": "hx",
+      "upgradeSlots": []
+    },
+    "hy": {
+      "cardName": "Vector",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/h7NhmMa.jpg",
+      "id": "hy",
+      "upgradeSlots": []
+    },
+    "hz": {
+      "cardName": "Impetuous",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/3fOmzlk.jpg",
+      "id": "hz",
+      "upgradeSlots": []
+    },
+    "ia": {
+      "cardName": "Instigator",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/dht3fJ6.jpg",
+      "id": "ia",
+      "upgradeSlots": []
+    },
+    "ib": {
+      "cardName": "Corvus",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/huKZyhu.jpg",
+      "id": "ib",
+      "upgradeSlots": []
+    },
+    "ic": {
+      "cardName": "Centicore",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/y41PoZy.jpg",
+      "id": "ic",
+      "upgradeSlots": []
+    },
+    "id": {
+      "cardName": "Hand of Justice",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/gfeIVpM.jpg",
+      "id": "id",
+      "upgradeSlots": []
+    },
+    "ie": {
+      "cardName": "Demolisher",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/lIICVGX.jpg",
+      "id": "ie",
+      "upgradeSlots": []
+    },
+    "if": {
+      "cardName": "Insidious",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/lJU1Qr0.jpg",
+      "id": "if",
+      "upgradeSlots": []
+    },
+    "ig": {
+      "cardName": "Pursuant",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/8971Me7.jpg",
+      "id": "ig",
+      "upgradeSlots": []
+    },
+    "ih": {
+      "cardName": "Squall",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/IPQVSGM.jpg",
+      "id": "ih",
+      "upgradeSlots": []
+    },
+    "ii": {
+      "cardName": "Stronghold",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/1UwT76i.jpg",
+      "id": "ii",
+      "upgradeSlots": []
+    },
+    "ij": {
+      "cardName": "Corrupter",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/n8Plm1g.jpg",
+      "id": "ij",
+      "upgradeSlots": []
+    },
+    "ik": {
+      "cardName": "Dominator",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/d03SuuK.jpg",
+      "id": "ik",
+      "upgradeSlots": []
+    },
+    "il": {
+      "cardName": "Harrow",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/2j7zspi.jpg",
+      "id": "il",
+      "upgradeSlots": []
+    },
+    "im": {
+      "cardName": "Warlord",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/E8oYSJj.jpg",
+      "id": "im",
+      "upgradeSlots": []
+    },
+    "in": {
+      "cardName": "Interdictor",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/sIO1x2W.jpg",
+      "id": "in",
+      "upgradeSlots": []
+    },
+    "io": {
+      "cardName": "Cataclysm",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/BJwwHvW.jpg",
+      "id": "io",
+      "upgradeSlots": []
+    },
+    "ip": {
+      "cardName": "Rakehell",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/R3NVdce.jpg",
+      "id": "ip",
+      "upgradeSlots": []
+    },
+    "iq": {
+      "cardName": "Sunder",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/qs97P5O.jpg",
+      "id": "iq",
+      "upgradeSlots": []
+    },
+    "ir": {
+      "cardName": "Avenger",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/UOIKPqu.jpg",
+      "id": "ir",
+      "upgradeSlots": []
+    },
+    "is": {
+      "cardName": "Chimaera",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/o5AtxcG.jpg",
+      "id": "is",
+      "upgradeSlots": []
+    },
+    "it": {
+      "cardName": "Devastator",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/nKieVmI.jpg",
+      "id": "it",
+      "upgradeSlots": []
+    },
+    "iu": {
+      "cardName": "Relentless",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/AT9rKe4.jpg",
+      "id": "iu",
+      "upgradeSlots": []
+    },
+    "iv": {
+      "cardName": "Sovereign",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/AnJZEFb.jpg",
+      "id": "iv",
+      "upgradeSlots": []
+    },
+    "iw": {
+      "cardName": "Seventh Fleet Star Destroyer",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/G90ZE7x.jpg",
+      "id": "iw",
+      "upgradeSlots": []
+    },
+    "ix": {
+      "cardName": "Annihilator",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/R9rr8vA.jpg",
+      "id": "ix",
+      "upgradeSlots": []
+    },
+    "iy": {
+      "cardName": "Eclipse",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Vnmp8CR.jpg",
+      "id": "iy",
+      "upgradeSlots": []
+    },
+    "iz": {
+      "cardName": "Executor",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/OGaToRQ.jpg",
+      "id": "iz",
+      "upgradeSlots": []
+    },
+    "ja": {
+      "cardName": "Ravager",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/AcTzTTY.jpg",
+      "id": "ja",
+      "upgradeSlots": []
+    },
+    "jb": {
+      "cardName": "Radiant VII",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/kTBiAsS.jpg",
+      "id": "jb",
+      "upgradeSlots": []
+    },
+    "jc": {
+      "cardName": "Swift Return",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/lVSb7xQ.jpeg",
+      "id": "jc",
+      "upgradeSlots": []
+    },
+    "jd": {
+      "cardName": "Implacable",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Y8uSW2V.jpeg",
+      "id": "jd",
+      "upgradeSlots": []
+    },
+    "je": {
+      "cardName": "Nevoota Bee",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/bBFNBzc.jpeg",
+      "id": "je",
+      "upgradeSlots": []
+    },
+    "jf": {
+      "cardName": "TB-73",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/IONCQi6.png",
+      "id": "jf",
+      "upgradeSlots": []
+    },
+    "jg": {
+      "cardName": "FB-88",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/l5LNFSR.png",
+      "id": "jg",
+      "upgradeSlots": []
+    },
+    "jh": {
+      "cardName": "Tranquility",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/GiYVWvE.png",
+      "id": "jh",
+      "upgradeSlots": []
+    },
+    "ji": {
+      "cardName": "Triumphant",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/OTgslNK.png",
+      "id": "ji",
+      "upgradeSlots": []
+    },
+    "jj": {
+      "cardName": "Resolute",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/TVoRURO.png",
+      "id": "jj",
+      "upgradeSlots": []
+    },
+    "jk": {
+      "cardName": "Beast of Burden",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/0dOnlMq.jpeg",
+      "id": "jk",
+      "upgradeSlots": []
+    },
+    "jl": {
+      "cardName": "Foreman's Labor",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/cfJ004t.jpeg",
+      "id": "jl",
+      "upgradeSlots": []
+    },
+    "jm": {
+      "cardName": "Sa Nalaor",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/o0RS5kE.jpg",
+      "id": "jm",
+      "upgradeSlots": []
+    },
+    "jn": {
+      "cardName": "Tide of Progress XII",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/rcXW6sg.jpeg",
+      "id": "jn",
+      "upgradeSlots": []
+    },
+    "jo": {
+      "cardName": "Invisible Hand",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/gW84lFN.png",
+      "id": "jo",
+      "upgradeSlots": []
+    },
+    "jp": {
+      "cardName": "Invincible",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/NcS65Gb.png",
+      "id": "jp",
+      "upgradeSlots": []
+    },
+    "jq": {
+      "cardName": "Lucid Voice",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/b5i7cIW.png",
+      "id": "jq",
+      "upgradeSlots": []
+    },
+    "jr": {
+      "cardName": "Patriot Fist",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/032w54v.png",
+      "id": "jr",
+      "upgradeSlots": []
+    },
+    "js": {
+      "cardName": "Nova Defiant",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/baLcwQJ.png",
+      "id": "js",
+      "upgradeSlots": []
+    },
+    "jt": {
+      "cardName": "Gilded Aegis",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/wbFFUaq.png",
+      "id": "jt",
+      "upgradeSlots": []
+    },
+    "ju": {
+      "cardName": "DBY-827 Heavy Turbolaser",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/wNkyRDb.png",
+      "id": "ju",
+      "upgradeSlots": []
+    },
+    "jv": {
+      "cardName": "Dual Turbolaser Turrets",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/RfHrc24.jpg",
+      "id": "jv",
+      "upgradeSlots": []
+    },
+    "jw": {
+      "cardName": "Enhanced Armament",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/fixRACB.jpg",
+      "id": "jw",
+      "upgradeSlots": []
+    },
+    "jx": {
+      "cardName": "H9 Turbolasers",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/vPAmdyc.jpg",
+      "id": "jx",
+      "upgradeSlots": []
+    },
+    "jy": {
+      "cardName": "Heavy Fire Zone",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/f0phD19.jpg",
+      "id": "jy",
+      "upgradeSlots": []
+    },
+    "jz": {
+      "cardName": "Heavy Turbolaser Turrets",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/1BzH8yv.jpg",
+      "id": "jz",
+      "upgradeSlots": []
+    },
+    "ka": {
+      "cardName": "Linked Turbolaser Towers",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Zxt5U1V.jpg",
+      "id": "ka",
+      "upgradeSlots": []
+    },
+    "kb": {
+      "cardName": "Quad Battery Turrets",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/OpE4elu.jpg",
+      "id": "kb",
+      "upgradeSlots": []
+    },
+    "kc": {
+      "cardName": "Quad Turbolaser Cannons",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/QdRydD8.jpg",
+      "id": "kc",
+      "upgradeSlots": []
+    },
+    "kd": {
+      "cardName": "Slaved Turrets",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/J9NmUDb.jpg",
+      "id": "kd",
+      "upgradeSlots": []
+    },
+    "ke": {
+      "cardName": "Spinal Armament",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/0eLX7ML.jpg",
+      "id": "ke",
+      "upgradeSlots": []
+    },
+    "kf": {
+      "cardName": "Turbolaser Reroute Circuits",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/6faOpzf.jpg",
+      "id": "kf",
+      "upgradeSlots": []
+    },
+    "kg": {
+      "cardName": "XI7 Turbolasers",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/leeZbxw.jpg",
+      "id": "kg",
+      "upgradeSlots": []
+    },
+    "kh": {
+      "cardName": "XX-9 Turbolasers",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/ttbae06.jpg",
+      "id": "kh",
+      "upgradeSlots": []
+    },
+    "ki": {
+      "cardName": "Swivel-Mount Batteries",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/QyfrQ24.jpeg",
+      "id": "ki",
+      "upgradeSlots": []
+    },
+    "kj": {
+      "cardName": "Caitken and Shollan",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/5msklkl.jpg",
+      "id": "kj",
+      "upgradeSlots": []
+    },
+    "kk": {
+      "cardName": "Fire-Control Team",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/VFlRiDL.jpg",
+      "id": "kk",
+      "upgradeSlots": []
+    },
+    "kl": {
+      "cardName": "Flight Controllers",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/3WO48B6.jpg",
+      "id": "kl",
+      "upgradeSlots": []
+    },
+    "km": {
+      "cardName": "Gunnery Team",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/Jw2Qhgz.jpg",
+      "id": "km",
+      "upgradeSlots": []
+    },
+    "kn": {
+      "cardName": "Local Fire Control",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/OepfCdw.jpg",
+      "id": "kn",
+      "upgradeSlots": []
+    },
+    "ko": {
+      "cardName": "Ordnance Experts",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/3SpyXDz.jpg",
+      "id": "ko",
+      "upgradeSlots": []
+    },
+    "kp": {
+      "cardName": "Ruthless Strategists",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/2mDorqh.jpg",
+      "id": "kp",
+      "upgradeSlots": []
+    },
+    "kq": {
+      "cardName": "Sensor Team",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/pnn0pOz.jpg",
+      "id": "kq",
+      "upgradeSlots": []
+    },
+    "kr": {
+      "cardName": "Veteran Gunners",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/mYGP8R6.jpg",
+      "id": "kr",
+      "upgradeSlots": []
+    },
+    "ks": {
+      "cardName": "Weapons Battery Techs",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/wQ6S57i.jpg",
+      "id": "ks",
+      "upgradeSlots": []
+    },
+    "kt": {
+      "cardName": "Gunnery Chief Varnillian",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/JG9I88l.jpg",
+      "id": "kt",
+      "upgradeSlots": []
+    },
+    "ku": {
+      "cardName": "Clone Gunners",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/8Rr4vE5.jpeg",
+      "id": "ku",
+      "upgradeSlots": []
+    },
+    "kv": {
+      "cardName": "Boarding Engineers",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/iIj1jTC.jpg",
+      "id": "kv",
+      "upgradeSlots": []
+    },
+    "kw": {
+      "cardName": "Boarding Troopers",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/U9MB7cI.jpg",
+      "id": "kw",
+      "upgradeSlots": []
+    },
+    "kx": {
+      "cardName": "Cham Syndulla",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/1UBq5nW.jpg",
+      "id": "kx",
+      "upgradeSlots": []
+    },
+    "ky": {
+      "cardName": "Jyn Erso",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/PJTbNuK.jpg",
+      "id": "ky",
+      "upgradeSlots": []
+    },
+    "kz": {
+      "cardName": "Shriv Suurgav",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/0y9SkmF.jpg",
+      "id": "kz",
+      "upgradeSlots": []
+    },
+    "la": {
+      "cardName": "Darth Vader",
+      "faction": "",
+      "cardType": "upgrade",
+      "imageUrl": "https://i.imgur.com/8Xu7fJp.jpg",
+      "id": "la",
+      "upgradeSlots": []
+    },
+    "lb": {
+      "cardName": "Hardcell-class Transport",
+      "faction": "separatists",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/T7QWSb4.jpeg",
+      "id": "lb",
+      "shipSize": "small",
+      "points": 47,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "officer",
+        "support team",
+        "fleet support"
+      ]
+    },
+    "lc": {
+      "cardName": "Hardcell-class Battle Refit",
+      "faction": "separatists",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/X96bJDW.jpeg",
+      "id": "lc",
+      "shipSize": "small",
+      "points": 52,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "offensive retrofit",
+        "defensive retrofit",
+        "turbolasers"
+      ]
+    },
+    "ld": {
+      "cardName": "Munificent-class Comms Frigate",
+      "faction": "separatists",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/T5LCaof.jpeg",
+      "id": "ld",
+      "shipSize": "medium",
+      "points": 70,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "offensive retrofit",
+        "ion cannons",
+        "turbolasers"
+      ]
+    },
+    "le": {
+      "cardName": "Munificent-class Star Frigate",
+      "faction": "separatists",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/kN6lJzW.jpeg",
+      "id": "le",
+      "shipSize": "medium",
+      "points": 73,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "defensive retrofit",
+        "ion cannons",
+        "turbolasers"
+      ]
+    },
+    "lf": {
+      "cardName": "Recusant-class Light Destroyer",
+      "faction": "separatists",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/rQUJG5H.jpg",
+      "id": "lf",
+      "shipSize": "large",
+      "points": 85,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "ordnance",
+        "turbolasers"
+      ]
+    },
+    "lg": {
+      "cardName": "Recusant-class Support Destroyer",
+      "faction": "separatists",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/EnEIdGQ.jpg",
+      "id": "lg",
+      "shipSize": "large",
+      "points": 90,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "offensive retrofit",
+        "turbolasers"
+      ]
+    },
+    "lh": {
+      "cardName": "Providence-class Carrier",
+      "faction": "separatists",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/pScwKfv.jpg",
+      "id": "lh",
+      "shipSize": "large",
+      "points": 105,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "defensive retrofit",
+        "fleet command",
+        "offensive retrofit",
+        "ordnance",
+        "ion cannons",
+        "turbolasers"
+      ]
+    },
+    "li": {
+      "cardName": "Providence-class Dreadnought",
+      "faction": "separatists",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/2CH9F4i.jpg",
+      "id": "li",
+      "shipSize": "large",
+      "points": 105,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "ordnance",
+        "ion cannons",
+        "turbolasers",
+        "turbolasers"
+      ]
+    },
+    "lj": {
+      "cardName": "Consular-class Armed Cruiser",
+      "faction": "republic",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/CV9k4Fz.jpeg",
+      "id": "lj",
+      "shipSize": "small",
+      "points": 37,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "defensive retrofit",
+        "ordnance"
+      ]
+    },
+    "lk": {
+      "cardName": "Consular-class Charger c70",
+      "faction": "republic",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/CXHwzPR.jpeg",
+      "id": "lk",
+      "shipSize": "small",
+      "points": 45,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "offensive retrofit",
+        "turbolasers"
+      ]
+    },
+    "ll": {
+      "cardName": "Acclamator I-class Assault Ship",
+      "faction": "republic",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/6JbZwXG.jpeg",
+      "id": "ll",
+      "shipSize": "medium",
+      "points": 66,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "offensive retrofit",
+        "ordnance",
+        "turbolasers"
+      ]
+    },
+    "lm": {
+      "cardName": "Acclamator II-class Assault Ship",
+      "faction": "republic",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/NhED6cA.jpg",
+      "id": "lm",
+      "shipSize": "medium",
+      "points": 71,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "defensive retrofit",
+        "ordnance",
+        "turbolasers"
+      ]
+    },
+    "ln": {
+      "cardName": "Venator I-class Star Destroyer",
+      "faction": "republic",
+      "cardType": "ship",
+      "imageUrl": "http://i.imgur.com/KEIFF2n.jpeg",
+      "id": "ln",
+      "shipSize": "large",
+      "points": 90,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "fleet command",
+        "offensive retrofit",
+        "ordnance",
+        "turbolasers"
+      ]
+    },
+    "lo": {
+      "cardName": "Venator II-class Star Destroyer",
+      "faction": "republic",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/RouFvsV.jpeg",
+      "id": "lo",
+      "shipSize": "large",
+      "points": 100,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "defensive retrofit",
+        "ordnance",
+        "turbolasers"
+      ]
+    },
+    "lp": {
+      "cardName": "Pelta-class Medical Frigate",
+      "faction": "republic",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/lC6GsSz.jpg",
+      "id": "lp",
+      "shipSize": "small",
+      "points": 49,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "fleet support",
+        "offensive retrofit"
+      ]
+    },
+    "lq": {
+      "cardName": "Pelta-class Transport Frigate",
+      "faction": "republic",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/8mtcXZo.jpg",
+      "id": "lq",
+      "shipSize": "small",
+      "points": 45,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "fleet support",
+        "defensive retrofit"
+      ]
+    },
+    "lr": {
+      "cardName": "B-wing Squadron",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/bB11RGw.png",
+      "id": "lr",
+      "upgradeSlots": []
+    },
+    "ls": {
+      "cardName": "Keyan Farlander",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/r4bx4xg.png",
+      "id": "ls",
+      "upgradeSlots": []
+    },
+    "lt": {
+      "cardName": "Ten Numb",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/8zae2YW.png",
+      "id": "lt",
+      "upgradeSlots": []
+    },
+    "lu": {
+      "cardName": "Shara Bey",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/QhDp5hB.png",
+      "id": "lu",
+      "upgradeSlots": []
+    },
+    "lv": {
+      "cardName": "Green Squadron",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/a00ZFfc.png",
+      "id": "lv",
+      "upgradeSlots": []
+    },
+    "lw": {
+      "cardName": "X-wing Squadron",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/d5QuMBy.png",
+      "id": "lw",
+      "upgradeSlots": []
+    },
+    "lx": {
+      "cardName": "Dagger Squadron",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/41kkBy6.png",
+      "id": "lx",
+      "upgradeSlots": []
+    },
+    "ly": {
+      "cardName": "Luke Skywalker",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/CcTsLiM.png",
+      "id": "ly",
+      "upgradeSlots": []
+    },
+    "lz": {
+      "cardName": "Y-wing Squadron",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/20kwNNs.png",
+      "id": "lz",
+      "upgradeSlots": []
+    },
+    "ma": {
+      "cardName": "Wedge Antilles",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/uepzi7O.png",
+      "id": "ma",
+      "upgradeSlots": []
+    },
+    "mb": {
+      "cardName": "\"Dutch\" Vander",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/97UoG34.png",
+      "id": "mb",
+      "upgradeSlots": []
+    },
+    "mc": {
+      "cardName": "Biggs Darklighter",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/zLMC2Fc.png",
+      "id": "mc",
+      "upgradeSlots": []
+    },
+    "md": {
+      "cardName": "YT-1300",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/pFKaprO.png",
+      "id": "md",
+      "upgradeSlots": []
+    },
+    "me": {
+      "cardName": "Han Solo",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/8ni1bSl.png",
+      "id": "me",
+      "upgradeSlots": []
+    },
+    "mf": {
+      "cardName": "Lando Calrissian",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/Xk43ysd.png",
+      "id": "mf",
+      "upgradeSlots": []
+    },
+    "mg": {
+      "cardName": "HWK-290",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/Zm7888b.png",
+      "id": "mg",
+      "upgradeSlots": []
+    },
+    "mh": {
+      "cardName": "Jan Ors",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/NQqAVr8.png",
+      "id": "mh",
+      "upgradeSlots": []
+    },
+    "mi": {
+      "cardName": "Kanan Jarrus",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/Cpp6DXG.png",
+      "id": "mi",
+      "upgradeSlots": []
+    },
+    "mj": {
+      "cardName": "Norra Wexley",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/VlUNCkM.png",
+      "id": "mj",
+      "upgradeSlots": []
+    },
+    "mk": {
+      "cardName": "Rogue Squadron",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/A1IByHc.png",
+      "id": "mk",
+      "upgradeSlots": []
+    },
+    "ml": {
+      "cardName": "Scurrg H-6 Bomber",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/QvhGpkj.png",
+      "id": "ml",
+      "upgradeSlots": []
+    },
+    "mm": {
+      "cardName": "Gold Squadron",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/m6efvmr.png",
+      "id": "mm",
+      "upgradeSlots": []
+    },
+    "mn": {
+      "cardName": "YT-2400",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/Ui3LTlu.png",
+      "id": "mn",
+      "upgradeSlots": []
+    },
+    "mo": {
+      "cardName": "Nym",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/vfrMC1z.png",
+      "id": "mo",
+      "upgradeSlots": []
+    },
+    "mp": {
+      "cardName": "A-wing Squadron",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/JikzQGo.png",
+      "id": "mp",
+      "upgradeSlots": []
+    },
+    "mq": {
+      "cardName": "Dash Rendar",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/7TfYFsY.png",
+      "id": "mq",
+      "upgradeSlots": []
+    },
+    "mr": {
+      "cardName": "Malee Hurra",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/JmifVSX.png",
+      "id": "mr",
+      "upgradeSlots": []
+    },
+    "ms": {
+      "cardName": "Tycho Celchu",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/XsXiGTU.png",
+      "id": "ms",
+      "upgradeSlots": []
+    },
+    "mt": {
+      "cardName": "Mart Mattin",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/UyCPNqt.png",
+      "id": "mt",
+      "upgradeSlots": []
+    },
+    "mu": {
+      "cardName": "Z-95 Headhunter Squadron",
+      "faction": "rebels",
+      "cardType": "squdron",
+      "imageUrl": "https://i.imgur.com/o3ydY6G.png",
+      "id": "mu",
+      "upgradeSlots": []
+    },
+    "mv": {
+      "cardName": "GR-75 Medium Transports",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/vMgbQB3.png",
+      "id": "mv",
+      "shipSize": "small",
+      "points": 18,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "fleet support",
+        "offensive retrofit"
+      ]
+    },
+    "mw": {
+      "cardName": "GR-75 Combat Retrofits",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/GmEEfVA.png",
+      "id": "mw",
+      "shipSize": "small",
+      "points": 24,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "fleet support",
+        "offensive retrofit"
+      ]
+    },
+    "mx": {
+      "cardName": "CR90 Corvette A",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/bobtrD0.png",
+      "id": "mx",
+      "shipSize": "small",
+      "points": 44,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "defensive retrofit",
+        "turbolasers"
+      ]
+    },
+    "my": {
+      "cardName": "CR90 Corvette B",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/ff7qkS5.png",
+      "id": "my",
+      "shipSize": "small",
+      "points": 39,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "defensive retrofit",
+        "ion cannons"
+      ]
+    },
+    "mz": {
+      "cardName": "Nebulon-B Support Refit",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/Htpwn5Q.png",
+      "id": "mz",
+      "shipSize": "small",
+      "points": 51,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "turbolasers"
+      ]
+    },
+    "na": {
+      "cardName": "Hammerhead Scout Corvette",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/QcTmlXq.png",
+      "id": "na",
+      "shipSize": "small",
+      "points": 41,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "offensive retrofit",
+        "weapons team",
+        "turbolasers"
+      ]
+    },
+    "nb": {
+      "cardName": "Hammerhead Torpedo Corvette",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/h8DWzpu.png",
+      "id": "nb",
+      "shipSize": "small",
+      "points": 36,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "offensive retrofit",
+        "weapons team",
+        "ordnance"
+      ]
+    },
+    "nc": {
+      "cardName": "Assault Frigate Mark II A",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/XXIO5qw.png",
+      "id": "nc",
+      "shipSize": "medium",
+      "points": 81,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "defensive retrofit",
+        "turbolasers"
+      ]
+    },
+    "nd": {
+      "cardName": "Assault Frigate Mark II B",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/LsxALho.png",
+      "id": "nd",
+      "shipSize": "medium",
+      "points": 72,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "defensive retrofit",
+        "turbolasers"
+      ]
+    },
+    "ne": {
+      "cardName": "MC80 Command Cruiser",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/zJfyMXV.png",
+      "id": "ne",
+      "shipSize": "large",
+      "points": 106,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "offensive retrofit",
+        "defensive retrofit",
+        "ion cannons",
+        "turbolasers"
+      ]
+    },
+    "nf": {
+      "cardName": "Nebulon-B Escort Frigate",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/hnEKY1U.png",
+      "id": "nf",
+      "shipSize": "small",
+      "points": 57,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "turbolasers"
+      ]
+    },
+    "ng": {
+      "cardName": "MC80 Assault Cruiser",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/vC6SfGR.png",
+      "id": "ng",
+      "shipSize": "large",
+      "points": 114,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "defensive retrofit",
+        "defensive retrofit",
+        "ion cannons",
+        "turbolasers"
+      ]
+    },
+    "nh": {
+      "cardName": "MC30c Scout Frigate",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/L3532U9.png",
+      "id": "nh",
+      "shipSize": "small",
+      "points": 69,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "defensive retrofit",
+        "ordnance",
+        "turbolasers"
+      ]
+    },
+    "ni": {
+      "cardName": "MC80 Star Cruiser",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/bEDTEFP.png",
+      "id": "ni",
+      "shipSize": "large",
+      "points": 96,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "support team",
+        "ion cannons",
+        "turbolasers",
+        "turbolasers"
+      ]
+    },
+    "nj": {
+      "cardName": "Starhawk-class Battleship Mark I",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/xJIm5pQ.png",
+      "id": "nj",
+      "shipSize": "large",
+      "points": 140,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "ion cannons",
+        "turbolasers",
+        "super weapon"
+      ]
+    },
+    "nk": {
+      "cardName": "Starhawk-class Battleship Mark II",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/VZFlC1M.png",
+      "id": "nk",
+      "shipSize": "large",
+      "points": 150,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "ion cannons",
+        "turbolasers",
+        "super weapon"
+      ]
+    },
+    "nl": {
+      "cardName": "MC30c Torpedo Frigate",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/RG0ttdp.png",
+      "id": "nl",
+      "shipSize": "small",
+      "points": 63,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "defensive retrofit",
+        "ordnance",
+        "turbolasers"
+      ]
+    },
+    "nm": {
+      "cardName": "MC80 Battle Cruiser",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/Xij4Ufr.png",
+      "id": "nm",
+      "shipSize": "large",
+      "points": 103,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "support team",
+        "ion cannons",
+        "turbolasers",
+        "turbolasers"
+      ]
+    },
+    "nn": {
+      "cardName": "Modified Pelta-class Command Ship",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/x6gMgaX.png",
+      "id": "nn",
+      "shipSize": "small",
+      "points": 60,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "fleet command",
+        "offensive retrofit"
+      ]
+    },
+    "no": {
+      "cardName": "MC75 Ordnance Cruiser",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/L9piyH4.png",
+      "id": "no",
+      "shipSize": "large",
+      "points": 100,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "defensive retrofit",
+        "ordnance",
+        "ordnance"
+      ]
+    },
+    "np": {
+      "cardName": "Modified Pelta-class Assault Ship",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/fw4TbCR.png",
+      "id": "np",
+      "shipSize": "small",
+      "points": 56,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "fleet command",
+        "ordnance"
+      ]
+    },
+    "nq": {
+      "cardName": "MC75 Armored Cruiser",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/sLecO5b.png",
+      "id": "nq",
+      "shipSize": "large",
+      "points": 104,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "defensive retrofit",
+        "ordnance",
+        "ion cannons",
+        "turbolasers"
+      ]
+    },
+    "nr": {
+      "cardName": "TIE Fighter Squadron",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/IBPIZFC.png",
+      "id": "nr",
+      "points": 8,
+      "isUnique": true,
+      "keywords": [
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "ns": {
+      "cardName": "\"Mauler\" Mithel",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/XOrV29v.png",
+      "id": "ns",
+      "points": 15,
+      "isUnique": true,
+      "keywords": [
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "nt": {
+      "cardName": "\"Howlrunner\"",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/9JyPCY1.png",
+      "id": "nt",
+      "points": 16,
+      "isUnique": true,
+      "keywords": [
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "nu": {
+      "cardName": "Valen Rudor",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/jJbbq5p.png",
+      "id": "nu",
+      "points": 13,
+      "isUnique": true,
+      "keywords": [
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "nv": {
+      "cardName": "Major Rhymer",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/fPUE6qa.png",
+      "id": "nv",
+      "points": 16,
+      "isUnique": true,
+      "keywords": [
+        "bomber",
+        "heavy"
+      ],
+      "upgradeSlots": []
+    },
+    "nw": {
+      "cardName": "Captain Jonus",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/iNHpN8D.png",
+      "id": "nw",
+      "points": 16,
+      "isUnique": true,
+      "keywords": [
+        "bomber",
+        "grit",
+        "heavy"
+      ],
+      "upgradeSlots": []
+    },
+    "nx": {
+      "cardName": "Gamma Squadron",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/MuOU5H0.png",
+      "id": "nx",
+      "points": 10,
+      "isUnique": true,
+      "keywords": [
+        "bomber",
+        "grit"
+      ],
+      "upgradeSlots": []
+    },
+    "ny": {
+      "cardName": "TIE Advanced Squadron",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/oqevOIs.png",
+      "id": "ny",
+      "points": 12,
+      "isUnique": true,
+      "keywords": [
+        "escort"
+      ],
+      "upgradeSlots": []
+    },
+    "nz": {
+      "cardName": "Black Squadron",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/wHVRghK.png",
+      "id": "nz",
+      "points": 9,
+      "isUnique": true,
+      "keywords": [
+        "counter",
+        "escort"
+      ],
+      "upgradeSlots": []
+    },
+    "oa": {
+      "cardName": "Darth Vader",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/qMTERFQ.png",
+      "id": "oa",
+      "points": 21,
+      "isUnique": true,
+      "keywords": [
+        "escort"
+      ],
+      "upgradeSlots": []
+    },
+    "ob": {
+      "cardName": "TIE Interceptor Squadron",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/sEjCnbR.png",
+      "id": "ob",
+      "points": 11,
+      "isUnique": true,
+      "keywords": [
+        "counter",
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "oc": {
+      "cardName": "Zertik Strom",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/92y5pLs.png",
+      "id": "oc",
+      "points": 15,
+      "isUnique": true,
+      "keywords": [
+        "escort"
+      ],
+      "upgradeSlots": []
+    },
+    "od": {
+      "cardName": "Soontir Fel",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/OFz3wPf.png",
+      "id": "od",
+      "points": 18,
+      "isUnique": true,
+      "keywords": [
+        "counter",
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "oe": {
+      "cardName": "Tempest Squadron",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/Pco10DS.png",
+      "id": "oe",
+      "points": 13,
+      "isUnique": true,
+      "keywords": [
+        "bomber",
+        "escort"
+      ],
+      "upgradeSlots": []
+    },
+    "of": {
+      "cardName": "Ciena Ree",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/gGsK5NT.png",
+      "id": "of",
+      "points": 17,
+      "isUnique": true,
+      "keywords": [
+        "counter",
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "og": {
+      "cardName": "Firespray-31",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/dmC3jNm.png",
+      "id": "og",
+      "points": 18,
+      "isUnique": true,
+      "keywords": [
+        "bomber",
+        "rogue"
+      ],
+      "upgradeSlots": []
+    },
+    "oh": {
+      "cardName": "JumpMaster 5000",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/pBix7LS.png",
+      "id": "oh",
+      "points": 12,
+      "isUnique": true,
+      "keywords": [
+        "intel",
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "oi": {
+      "cardName": "Dengar",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/SGHkuVm.png",
+      "id": "oi",
+      "points": 20,
+      "isUnique": true,
+      "keywords": [
+        "intel",
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "oj": {
+      "cardName": "Tel Trevura",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/8UTq2I7.png",
+      "id": "oj",
+      "points": 17,
+      "isUnique": true,
+      "keywords": [
+        "grit",
+        "rogue"
+      ],
+      "upgradeSlots": []
+    },
+    "ok": {
+      "cardName": "Aggressor Assault Fighter",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/awIbXGE.png",
+      "id": "ok",
+      "points": 16,
+      "isUnique": true,
+      "keywords": [
+        "counter",
+        "rogue"
+      ],
+      "upgradeSlots": []
+    },
+    "ol": {
+      "cardName": "IG-88",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/s9mWI5Z.png",
+      "id": "ol",
+      "points": 21,
+      "isUnique": true,
+      "keywords": [
+        "counter",
+        "rogue"
+      ],
+      "upgradeSlots": []
+    },
+    "om": {
+      "cardName": "IG-88B",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/yxjuseo.png",
+      "id": "om",
+      "points": 21,
+      "isUnique": true,
+      "keywords": [
+        "counter",
+        "rogue"
+      ],
+      "upgradeSlots": []
+    },
+    "on": {
+      "cardName": "YV-666",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/VwtnRPG.png",
+      "id": "on",
+      "points": 15,
+      "isUnique": true,
+      "keywords": [
+        "grit",
+        "heavy",
+        "rogue"
+      ],
+      "upgradeSlots": []
+    },
+    "oo": {
+      "cardName": "Bossk",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/cO69PsD.png",
+      "id": "oo",
+      "points": 23,
+      "isUnique": true,
+      "keywords": [
+        "grit",
+        "rogue"
+      ],
+      "upgradeSlots": []
+    },
+    "op": {
+      "cardName": "Saber Squadron",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/xjsjQjV.png",
+      "id": "op",
+      "points": 12,
+      "isUnique": true,
+      "keywords": [
+        "snipe",
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "oq": {
+      "cardName": "Boba Fett",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/SwdbJdL.png",
+      "id": "oq",
+      "points": 26,
+      "isUnique": true,
+      "keywords": [
+        "bomber",
+        "rogue"
+      ],
+      "upgradeSlots": []
+    },
+    "or": {
+      "cardName": "Moralo Eval",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/Ylo65oA.png",
+      "id": "or",
+      "points": 22,
+      "isUnique": true,
+      "keywords": [
+        "grit",
+        "rogue"
+      ],
+      "upgradeSlots": []
+    },
+    "os": {
+      "cardName": "TIE Bomber Squadron",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/JGg79So.png",
+      "id": "os",
+      "points": 9,
+      "isUnique": true,
+      "keywords": [
+        "bomber",
+        "heavy"
+      ],
+      "upgradeSlots": []
+    },
+    "ot": {
+      "cardName": "Hondo Ohnaka",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/K8A1QGa.png",
+      "id": "ot",
+      "points": 24,
+      "isUnique": true,
+      "keywords": [
+        "bomber",
+        "grit",
+        "rogue"
+      ],
+      "upgradeSlots": []
+    },
+    "ou": {
+      "cardName": "TIE Phantom Squadron",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/Tvy7ZfX.png",
+      "id": "ou",
+      "points": 14,
+      "isUnique": true,
+      "keywords": [
+        "cloak"
+      ],
+      "upgradeSlots": []
+    },
+    "ov": {
+      "cardName": "Gozanti-class Cruisers",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/MBkIeoQ.png",
+      "id": "ov",
+      "shipSize": "small",
+      "points": 23,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "fleet support",
+        "offensive retrofit"
+      ]
+    },
+    "ow": {
+      "cardName": "Gozanti-class Assault Carriers",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/LMf2YI6.png",
+      "id": "ow",
+      "shipSize": "small",
+      "points": 28,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "fleet support",
+        "offensive retrofit"
+      ]
+    },
+    "ox": {
+      "cardName": "Interdictor Suppression Refit",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/kB3R9ds.png",
+      "id": "ox",
+      "shipSize": "medium",
+      "points": 90,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "offensive retrofit",
+        "experimental retrofit",
+        "experimental retrofit",
+        "ion cannons"
+      ]
+    },
+    "oy": {
+      "cardName": "Interdictor Combat Refit",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/lMiL8Df.png",
+      "id": "oy",
+      "shipSize": "medium",
+      "points": 93,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "offensive retrofit",
+        "experimental retrofit",
+        "ion cannons"
+      ]
+    },
+    "oz": {
+      "cardName": "Raider I-class Corvette",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/C5LKczU.png",
+      "id": "oz",
+      "shipSize": "small",
+      "points": 44,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "ordnance"
+      ]
+    },
+    "pa": {
+      "cardName": "Quasar Fire I-class Cruiser-Carrier",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/7XMsdsM.png",
+      "id": "pa",
+      "shipSize": "medium",
+      "points": 54,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "offensive retrofit"
+      ]
+    },
+    "pb": {
+      "cardName": "Quasar Fire II-class Cruiser-Carrier",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/lO6OBYS.png",
+      "id": "pb",
+      "shipSize": "medium",
+      "points": 61,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "weapons team",
+        "offensive retrofit"
+      ]
+    },
+    "pc": {
+      "cardName": "Raider II-class Corvette",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/10Tytpi.png",
+      "id": "pc",
+      "shipSize": "small",
+      "points": 48,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "ion cannons"
+      ]
+    },
+    "pd": {
+      "cardName": "Imperial I-class Star Destroyer",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/Gg2bqJM.png",
+      "id": "pd",
+      "shipSize": "large",
+      "points": 110,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "offensive retrofit",
+        "ion cannons",
+        "turbolasers"
+      ]
+    },
+    "pe": {
+      "cardName": "Gladiator I-class Star Destroyer",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/SqGqZD2.png",
+      "id": "pe",
+      "shipSize": "small",
+      "points": 56,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "support team",
+        "ordnance"
+      ]
+    },
+    "pf": {
+      "cardName": "Gladiator II-class Star Destroyer",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/UkX25YU.png",
+      "id": "pf",
+      "shipSize": "small",
+      "points": 62,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "support team",
+        "ordnance"
+      ]
+    },
+    "pg": {
+      "cardName": "Imperial Star Destroyer Kuat Refit",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/443vU9i.png",
+      "id": "pg",
+      "shipSize": "large",
+      "points": 112,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "defensive retrofit",
+        "ion cannons",
+        "ordnance"
+      ]
+    },
+    "ph": {
+      "cardName": "Arquitens-class Light Cruiser",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/cRimUl0.png",
+      "id": "ph",
+      "shipSize": "small",
+      "points": 54,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "defensive retrofit",
+        "turbolasers"
+      ]
+    },
+    "pi": {
+      "cardName": "Imperial II-class Star Destroyer",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/wCgFDmm.png",
+      "id": "pi",
+      "shipSize": "large",
+      "points": 120,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "defensive retrofit",
+        "ion cannons",
+        "turbolasers"
+      ]
+    },
+    "pj": {
+      "cardName": "Arquitens-class Command Cruiser",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/gMUjnfM.png",
+      "id": "pj",
+      "shipSize": "small",
+      "points": 59,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "support team",
+        "defensive retrofit",
+        "turbolasers"
+      ]
+    },
+    "pk": {
+      "cardName": "Imperial Star Destroyer Cymoon 1 Refit",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/6hVaf98.png",
+      "id": "pk",
+      "shipSize": "large",
+      "points": 112,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "fleet command",
+        "offensive retrofit",
+        "turbolasers",
+        "turbolasers"
+      ]
+    },
+    "pl": {
+      "cardName": "Victory I-class Star Destroyer",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/qcN5LEl.png",
+      "id": "pl",
+      "shipSize": "medium",
+      "points": 75,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "support team",
+        "offensive retrofit",
+        "ordnance",
+        "ordnance"
+      ]
+    },
+    "pm": {
+      "cardName": "Onager-class Testbed",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/EAv7Koo.png",
+      "id": "pm",
+      "shipSize": "large",
+      "points": 96,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "weapons team",
+        "support team",
+        "super weapon"
+      ]
+    },
+    "pn": {
+      "cardName": "Victory II-class Star Destroyer",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/W8kLKpj.png",
+      "id": "pn",
+      "shipSize": "medium",
+      "points": 85,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "ion cannons",
+        "turbolasers"
+      ]
+    },
+    "po": {
+      "cardName": "Onager-class Star Destroyer",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/eqHrxL7.png",
+      "id": "po",
+      "shipSize": "large",
+      "points": 110,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "weapons team",
+        "weapons team",
+        "turbolasers",
+        "super weapon"
+      ]
+    },
+    "pp": {
+      "cardName": "Executor II-class Star Dreadnought",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/X0PsSTN.png",
+      "id": "pp",
+      "shipSize": "huge",
+      "points": 411,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "officer",
+        "officer",
+        "officer",
+        "weapons team",
+        "fleet command",
+        "offensive retrofit",
+        "offensive retrofit",
+        "ion cannons",
+        "ion cannons",
+        "turbolasers",
+        "turbolasers"
+      ]
+    },
+    "pq": {
+      "cardName": "Executor I-class Star Dreadnought",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/HQwM67x.png",
+      "id": "pq",
+      "shipSize": "huge",
+      "points": 381,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "officer",
+        "officer",
+        "officer",
+        "weapons team",
+        "fleet command",
+        "fleet command",
+        "fleet command",
+        "fleet command",
+        "offensive retrofit",
+        "ion cannons",
+        "turbolasers"
+      ]
+    },
+    "pr": {
+      "cardName": "Star Dreadnought Assault Prototype",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/QhAu7ta.png",
+      "id": "pr",
+      "shipSize": "huge",
+      "points": 250,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "officer",
+        "officer",
+        "weapons team",
+        "offensive retrofit",
+        "offensive retrofit",
+        "ion cannons",
+        "ion cannons",
+        "turbolasers",
+        "turbolasers"
+      ]
+    },
+    "ps": {
+      "cardName": "Star Dreadnought Command Prototype",
+      "faction": "empire",
+      "cardType": "ship",
+      "imageUrl": "https://i.imgur.com/5oilBpo.png",
+      "id": "ps",
+      "shipSize": "huge",
+      "points": 220,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "officer",
+        "officer",
+        "weapons team",
+        "fleet command",
+        "fleet command",
+        "offensive retrofit",
+        "ion cannons",
+        "turbolasers"
+      ]
+    },
+    "pt": {
+      "cardName": "Vulture-class Droid Fighter Squadron",
+      "faction": "separatists",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/851EiGY.jpeg",
+      "id": "pt",
+      "points": 8,
+      "isUnique": true,
+      "keywords": [
+        "AI: anti-squadron",
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "pu": {
+      "cardName": "Haor Chall Prototypes",
+      "faction": "separatists",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/sMYjVpK.jpeg",
+      "id": "pu",
+      "points": 16,
+      "isUnique": true,
+      "keywords": [
+        "AI: anti-squadron",
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "pv": {
+      "cardName": "DFS-311",
+      "faction": "separatists",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/ph9wqQ7.jpeg",
+      "id": "pv",
+      "points": 18,
+      "isUnique": true,
+      "keywords": [
+        "AI: anti-squadron",
+        "intel",
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "pw": {
+      "cardName": "General Grievous",
+      "faction": "separatists",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/AYE4WqR.jpeg",
+      "id": "pw",
+      "points": 22,
+      "isUnique": true,
+      "keywords": [
+        "relay",
+        "screen"
+      ],
+      "upgradeSlots": []
+    },
+    "px": {
+      "cardName": "Hyena-class Droid Bomber Squadron",
+      "faction": "separatists",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/4zpFWdk.jpeg",
+      "id": "px",
+      "points": 11,
+      "isUnique": true,
+      "keywords": [
+        "AI: battery",
+        "bomber",
+        "heavy"
+      ],
+      "upgradeSlots": []
+    },
+    "py": {
+      "cardName": "Baktoid Prototypes",
+      "faction": "separatists",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/kQGXd4d.jpg",
+      "id": "py",
+      "points": 16,
+      "isUnique": true,
+      "keywords": [
+        "AI: battery",
+        "bomber",
+        "heavy"
+      ],
+      "upgradeSlots": []
+    },
+    "pz": {
+      "cardName": "DBS-404",
+      "faction": "separatists",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/IJojXUS.jpg",
+      "id": "pz",
+      "points": 17,
+      "isUnique": true,
+      "keywords": [
+        "AI: battery",
+        "bomber",
+        "heavy"
+      ],
+      "upgradeSlots": []
+    },
+    "qa": {
+      "cardName": "Droid Tri-Fighter Squadron",
+      "faction": "separatists",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/gju4n8W.jpeg",
+      "id": "qa",
+      "points": 11,
+      "isUnique": true,
+      "keywords": [
+        "AI: anti-squadron",
+        "counter ",
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "qb": {
+      "cardName": "Phlac-Arphocc Prototypes",
+      "faction": "separatists",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/AUJ1HKt.jpg",
+      "id": "qb",
+      "points": 19,
+      "isUnique": true,
+      "keywords": [
+        "AI: anti-squadron",
+        "counter ",
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "qc": {
+      "cardName": "DIS-T81",
+      "faction": "separatists",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/wUiIUcJ.jpeg",
+      "id": "qc",
+      "points": 17,
+      "isUnique": true,
+      "keywords": [
+        "AI: anti-squadron",
+        "counter ",
+        "snipe",
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "qd": {
+      "cardName": "Belbullab-22 Starfighter Squadron",
+      "faction": "separatists",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/zxJrlMf.jpg",
+      "id": "qd",
+      "points": 15,
+      "isUnique": true,
+      "keywords": [
+        "relay",
+        "screen"
+      ],
+      "upgradeSlots": []
+    },
+    "qe": {
+      "cardName": "V-19 Torrent Squadron",
+      "faction": "republic",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/aiyBkpn.jpeg",
+      "id": "qe",
+      "points": 12,
+      "isUnique": true,
+      "keywords": [
+        "escort",
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "qf": {
+      "cardName": "\"Axe\"",
+      "faction": "republic",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/h9d4P44.jpeg",
+      "id": "qf",
+      "points": 17,
+      "isUnique": true,
+      "keywords": [
+        "escort",
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "qg": {
+      "cardName": "\"Kickback\"",
+      "faction": "republic",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/crnCDLq.jpeg",
+      "id": "qg",
+      "points": 16,
+      "isUnique": true,
+      "keywords": [
+        "escort",
+        "swarm"
+      ],
+      "upgradeSlots": []
+    },
+    "qh": {
+      "cardName": "ARC-170 Starfighter Squadron",
+      "faction": "republic",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/ggkaXOF.jpeg",
+      "id": "qh",
+      "points": 15,
+      "isUnique": true,
+      "keywords": [
+        "bomber",
+        "counter "
+      ],
+      "upgradeSlots": []
+    },
+    "qi": {
+      "cardName": "\"Odd Ball\"",
+      "faction": "republic",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/JVuBlg2.jpeg",
+      "id": "qi",
+      "points": 23,
+      "isUnique": true,
+      "keywords": [
+        "bomber",
+        "counter "
+      ],
+      "upgradeSlots": []
+    },
+    "qj": {
+      "cardName": "Delta-7 Aethersprite Squadron",
+      "faction": "republic",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/huDC10s.jpeg",
+      "id": "qj",
+      "points": 17,
+      "isUnique": true,
+      "keywords": [
+        "adept",
+        "counter ",
+        "dodge"
+      ],
+      "upgradeSlots": []
+    },
+    "qk": {
+      "cardName": "Ahsoka Tano",
+      "faction": "republic",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/W0HDKSn.jpg",
+      "id": "qk",
+      "points": 23,
+      "isUnique": true,
+      "keywords": [
+        "adept",
+        "counter ",
+        "grit"
+      ],
+      "upgradeSlots": []
+    },
+    "ql": {
+      "cardName": "Luminara Unduli",
+      "faction": "republic",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/hjjJXia.jpeg",
+      "id": "ql",
+      "points": 23,
+      "isUnique": true,
+      "keywords": [
+        "adept",
+        "counter "
+      ],
+      "upgradeSlots": []
+    },
+    "qm": {
+      "cardName": "Kit Fisto",
+      "faction": "republic",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/gpGELBf.jpeg",
+      "id": "qm",
+      "points": 26,
+      "isUnique": true,
+      "keywords": [
+        "adept",
+        "counter ",
+        "intel"
+      ],
+      "upgradeSlots": []
+    },
+    "qn": {
+      "cardName": "Plo Koon",
+      "faction": "republic",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/iqalHXV.jpeg",
+      "id": "qn",
+      "points": 24,
+      "isUnique": true,
+      "keywords": [
+        "adept ",
+        "counter "
+      ],
+      "upgradeSlots": []
+    },
+    "qo": {
+      "cardName": "BTL-B Y-Wing Squadron",
+      "faction": "republic",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/qvyTtNf.jpeg",
+      "id": "qo",
+      "points": 10,
+      "isUnique": true,
+      "keywords": [
+        "bomber",
+        "heavy"
+      ],
+      "upgradeSlots": []
+    },
+    "qp": {
+      "cardName": "Anakin Skywalker",
+      "faction": "republic",
+      "cardType": "squadron",
+      "imageUrl": "https://i.imgur.com/zsDolt7.jpeg",
+      "id": "qp",
+      "upgradeSlots": []
+    },
+    "qq": {
+      "cardName": "Darth Vader",
+      "faction": "empire",
+      "cardType": "squadron",
+      "imageUrl": "https://raw.githubusercontent.com/Valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/empire/def/vader_card.jpg",
+      "id": "qq",
+      "points": 25,
+      "isUnique": true,
+      "keywords": [
+        "adept",
+        "rogue",
+        "bomber"
+      ],
+      "upgradeSlots": []
+    },
+    "qr": {
+      "cardName": "Hera Syndulla",
+      "faction": "rebels",
+      "cardType": "squadron",
+      "imageUrl": "https://raw.githubusercontent.com/Valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/rebel/vcx/hera_card.jpg",
+      "id": "qr",
+      "points": 28,
+      "isUnique": true,
+      "keywords": [
+        "rogue",
+        "grit"
+      ],
+      "upgradeSlots": []
+    },
+    "qs": {
+      "cardName": "Hera Syndulla",
+      "faction": "rebels",
+      "cardType": "squadron",
+      "imageUrl": "https://raw.githubusercontent.com/Valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/rebel/xwing/hera_card.jpg",
+      "id": "qs",
+      "points": 23,
+      "isUnique": true,
+      "keywords": [
+        "dodge",
+        "bomber"
+      ],
+      "upgradeSlots": []
+    },
+    "qt": {
+      "cardName": "Providence-class Carrier",
+      "faction": "rebels",
+      "cardType": "ship",
+      "imageUrl": "https://raw.githubusercontent.com/Valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/ships/rebel/providence/carrier_card.jpg",
+      "id": "qt",
+      "shipSize": "large",
+      "points": 95,
+      "isUnique": false,
+      "upgradeSlots": [
+        "officer",
+        "officer",
+        "weapons team",
+        "weapons team",
+        "offensive retrofit",
+        "offensive retrofit",
+        "support team",
+        "support team"
+      ]
+    }
+  }
+}
