@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
 
 const nextConfig = {
   images: {
-    unoptimized: false
+    loader: 'custom'
   },
   reactStrictMode: true,
   images: {
@@ -20,4 +19,4 @@ const nextConfig = {
   }
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;
