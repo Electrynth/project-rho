@@ -7,9 +7,6 @@ import { Add } from '@mui/icons-material';
 import Image from 'next/image';
 import robotoCondensed from 'config/font';
 import cards from 'config/cards.json';
-const imageLoader = require('loader.js');
-// list of IDs
-// onClick fxn
 
 function getEligibleShipIds(faction, uniques) {
     const eligibleShipIds = [];
@@ -47,7 +44,6 @@ function ShipRow({ ship }) {
                         height={412}
                         alt={shipCard.cardName}
                         style={{ margin: '-113px 0px 0px -80px', transform: 'scale(0.45)' }}
-                        loader={imageLoader}
                     />
                 </div>
                 <div style={{ fontWeight: 300 }}>{shipCard.cardName}</div>
@@ -97,7 +93,7 @@ function ListShips({
     }
 
     return (
-        <div style={{ display: 'flex', flexFlow: 'column nowrap' }}>
+        <div className={robotoCondensed.className} style={{ display: 'flex', flexFlow: 'column nowrap' }}>
             {shipRows}
             <Button
                 fullWidth
@@ -109,7 +105,7 @@ function ListShips({
                     handleSetUserPrioAction('addShip');
                     handleSetFilteredCardIds(eligibleShipIds);
                 }}
-                className={robotoCondensed.className}
+                style={{ fontFamily: 'inherit' }}
             >
                 Add Ship
             </Button>

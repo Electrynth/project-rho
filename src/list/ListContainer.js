@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import styles from 'styles/ListContainer.module.css';
+import robotoCondensed from 'config/font';
 import { useRouter } from 'next/router';
 import { Divider, Paper, IconButton, Typography } from '@mui/material';
 import Clear from '@mui/icons-material/Clear';
@@ -10,8 +12,8 @@ import ListFooter from './ListFooter'
 import CardDisplay from './CardDisplay';
 import ListDisplay from './ListDisplay';
 import CardSelector from './CardSelector';
-import styles from 'styles/ListContainer.module.css';
-import robotoCondensed from 'config/font';
+
+
 import cards from 'config/cards';
 
 function RightPaneHeader({ userPriorityAction, handleSetUserPrioAction }) {
@@ -113,10 +115,10 @@ function ListContainer({
     }
 
     return (
-        <div className={styles.flexRow}>
+        <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
             <div style={{ ...primaryPaneStyles }}>
                 <ListHeader points={points} title={title} faction={faction} handleSetTitle={handleSetTitleFromEvent} />
-                <Divider variant="middle" className={styles.divider} />
+                <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListShips
                     ships={ships}
                     faction={faction}
@@ -125,15 +127,15 @@ function ListContainer({
                     handleSetFilteredCardIds={handleSetFilteredCardIds}
                     handleSetCardClick={handleSetCardClick}
                 />
-                <Divider variant="middle" className={styles.divider} />
+                <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListSquadrons squadrons={squadrons} />
-                <Divider variant="middle" className={styles.divider} />
+                <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListObjectives
                     redObjId={redObjId}
                     yellowObjId={yellowObjId}
                     blueObjId={blueObjId}
                 />
-                <Divider variant="middle" className={styles.divider} />
+                <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListFooter  />
             </div>
             <div className={styles.rightPane} style={{ ...secondaryPaneStyles }}>

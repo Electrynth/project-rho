@@ -1,15 +1,6 @@
-.flexRow {
-    display: flex;
-    flex-flow: row nowrap;
-}
 
 .rightPane {
     background-color: #eee;
-}
-
-.divider {
-    margin: 20px 0px;
-    color: #eee;
 }
 
 @media (prefers-color-scheme: dark) {

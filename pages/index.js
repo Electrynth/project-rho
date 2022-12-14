@@ -2,7 +2,6 @@ import Head from 'next/head'
 import { useRouter } from 'next/router';
 import { IconButton, Divider, Chip } from '@mui/material';
 import FactionIcon from 'src/common/FactionIcon';
-import styles from 'styles/Home.module.css';
 import robotoCondensed from 'config/font';
 
 function FactionLinkButton({ faction }) {
@@ -13,7 +12,7 @@ function FactionLinkButton({ faction }) {
           <FactionIcon
               faction={faction}
               width={50}
-              className={styles.factionIcon}
+              style={{ borderRadius: 50 }}
           />
       </IconButton>
   );
@@ -36,14 +35,14 @@ export default function Home() {
             <span style={{ marginRight: 6 }} />
             <Chip clickable label="About Us" className={robotoCondensed.className} />
           </div>
-          <Divider variant="middle" className={styles.divider} />
+          <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
           <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
               <FactionLinkButton faction="rebels" />
               <FactionLinkButton faction="empire" />
               <FactionLinkButton faction="republic" />
               <FactionLinkButton faction="separatists" />
           </div>
-          <Divider variant="middle" className={styles.divider} />
+          <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
           <Chip clickable label="Login" className={robotoCondensed.className} />
         </div>
     </div>

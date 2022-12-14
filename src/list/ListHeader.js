@@ -13,7 +13,7 @@ function ListHeader({
 }) {
     return (
         <div style={{ display: 'flex', flexFlow: 'column' }}>
-            <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', marginBottom: 8 }}>
+            <div className={robotoCondensed.className} style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', marginBottom: 8 }}>
                 <div style={{ display: 'flex', justifyContent: 'center', marginRight: 16 }}>
                     <FactionIcon faction={faction} style={{ width: 30, height: 30 }} />
                 </div>
@@ -24,8 +24,7 @@ function ListHeader({
                     variant="standard"
                     value={title}
                     onChange={handleSetTitle}
-                    className={robotoCondensed.className}
-                    style={{ fontSize: 20 }}
+                    style={{ fontSize: 20, fontFamily: 'inherit' }}
                 />
                 <div style={{ display: 'flex', justifyContent: 'center', marginLeft: 16 }}>
                     {points}
@@ -35,14 +34,15 @@ function ListHeader({
                 clickable
                 variant="outlined"
                 label={
-                    <Typography
-                        variant="body1"
-                        className={robotoCondensed.className}
-                    >
-                        Version: Community Patch
-                    </Typography>
+                    <div className={robotoCondensed.className}>
+                        <Typography
+                            variant="body1"
+                            style={{ fontFamily: 'inherit' }}
+                        >
+                            Version: Community Patch
+                        </Typography>
+                    </div>
                 }
-                className={robotoCondensed.className}
             />
         </div>
     );
