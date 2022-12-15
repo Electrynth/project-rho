@@ -13,7 +13,6 @@ import CardDisplay from './CardDisplay';
 import ListDisplay from './ListDisplay';
 import CardSelector from './CardSelector';
 
-
 import cards from 'config/cards';
 
 function RightPaneHeader({ userPriorityAction, handleSetUserPrioAction }) {
@@ -65,7 +64,8 @@ function ListContainer({
     }
 
     const [version, setVersion] = useState(0);
-    const [points, setPoints] = useState(0);
+    const [shipPoints, setShipPoints] = useState(0);
+    const [squadronPoints, setSquadronPoints] = useState(0);
     const [title, setTitle] = useState('');
     const [faction, setFaction] = useState('');
     const [commander, setCommander] = useState('');
@@ -92,6 +92,30 @@ function ListContainer({
         handleSetUserPrioAction('');
     }
 
+    const handleAddSquadron = (id) => {
+        const card = cards.cardsById[id];
+        if (card.isUnique) setUniques([...uniques, id]);
+        setSquadrons([...squadrons, id]);
+        handleSetUserPrioAction('');
+    }
+
+    useEffect(() => {
+        let shipPoints = 0;
+        let squadronPoints = 0;
+        ships.forEach(ship => {
+            const shipCard = cards.cardsById[ship.id];
+            const { points } = shipCard;
+            shipPoints += points;
+        });
+        squadrons.forEach(squadron => {
+            const squadronCard = cards.cardsById[squadron];
+            if (squadronCard.points) squadronPoints += squadronCard.points
+            else return 0;
+        });
+        setShipPoints(shipPoints);
+        setSquadronPoints(squadronPoints);
+    }, [ships, squadrons]);
+
 
     let rightPaneContent = (
         <ListDisplay
@@ -107,9 +131,19 @@ function ListContainer({
     if (userPriorityAction === 'addShip') {
         rightPaneContent = (
             <CardSelector
+                userPriorityAction={userPriorityAction}
                 filteredCardIds={filteredCardIds}
                 handleAddShip={handleAddShip}
-                handleSetUserPrioAction={handleSetUserPrioAction}
+                handleAddSquadron={handleAddSquadron}
+            />
+        );
+    } else if (userPriorityAction === 'addSquadron') {
+        rightPaneContent = (
+            <CardSelector
+                userPriorityAction={userPriorityAction}
+                filteredCardIds={filteredCardIds}
+                handleAddShip={handleAddShip}
+                handleAddSquadron={handleAddSquadron}
             />
         );
     }
@@ -117,7 +151,7 @@ function ListContainer({
     return (
         <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
             <div style={{ ...primaryPaneStyles }}>
-                <ListHeader points={points} title={title} faction={faction} handleSetTitle={handleSetTitleFromEvent} />
+                <ListHeader points={shipPoints + squadronPoints} title={title} faction={faction} handleSetTitle={handleSetTitleFromEvent} />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListShips
                     ships={ships}
@@ -128,7 +162,14 @@ function ListContainer({
                     handleSetCardClick={handleSetCardClick}
                 />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
-                <ListSquadrons squadrons={squadrons} />
+                <ListSquadrons
+                    faction={faction}
+                    uniques={uniques}
+                    points={squadronPoints}
+                    squadrons={squadrons}
+                    handleSetFilteredCardIds={handleSetFilteredCardIds}
+                    handleSetUserPrioAction={handleSetUserPrioAction}
+                />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListObjectives
                     redObjId={redObjId}

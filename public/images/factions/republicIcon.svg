@@ -3,6 +3,8 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 2000 2000" style="enable-background:new 0 0 2000 2000;" xml:space="preserve">
 <style type="text/css">
+	.st1 { fill: black; stroke: white; }
+	.st2 { fill: none; stroke: black; stroke-width: 70; }
 	@media (prefers-color-scheme: dark) {
 		.st0 { fill: white; stroke: white; stroke-miterlimit: 10; }
 		.st1 { fill: white; stroke: white; }

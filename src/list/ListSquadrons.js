@@ -1,8 +1,24 @@
+import { useMemo } from 'react';
 import { Button, Typography } from '@mui/material';
 import { Add } from '@mui/icons-material';
 import robotoCondensed from 'config/font';
+import cards from 'config/cards';
 
-function ListSquadrons({ points = 0 }) {
+function getEligibleSquadronIds(faction, uniques) {
+    const eligibleSquadronIds = [];
+    for (let i = 0; i < cards.idList.length; i++) {
+        const id = cards.idList[i];
+        const card = cards.cardsById[id];
+        if (card.cardType !== 'squadron') continue;
+        if (card.faction !== faction) continue;
+        if (uniques.includes(id)) continue;
+        eligibleSquadronIds.push(id);
+    }
+    return eligibleSquadronIds;
+}
+
+function ListSquadrons({ faction, uniques, points = 0, squadrons, handleSetUserPrioAction, handleSetFilteredCardIds }) {
+    const eligibleSquadronIds = useMemo(() => getEligibleSquadronIds(faction, uniques));
     return (
         <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
             <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
@@ -10,6 +26,10 @@ function ListSquadrons({ points = 0 }) {
                     disableRipple
                     disableElevation
                     variant="contained"
+                    onClick={() => {
+                        handleSetUserPrioAction('addSquadron');
+                        handleSetFilteredCardIds(eligibleSquadronIds);
+                    }}
                 >
                     <Add />
                     <div
