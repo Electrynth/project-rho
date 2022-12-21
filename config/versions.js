@@ -1,11 +1,11 @@
 const versions = [
     {
         version: 0,
-        label: 'Base Game'
+        label: 'Project Rho Patch'
     },
     {
         version: 1,
-        label: 'Community Patch 1'
+        label: 'Base Game'
     }
 ];
 

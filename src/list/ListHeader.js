@@ -5,11 +5,13 @@ import FactionIcon from 'src/common/FactionIcon';
 import robotoCondensed from 'config/font';
 
 function ListHeader({
-    points,
     title,
     faction,
     version,
-    handleSetTitle
+    versions,
+    points,
+    handleSetTitle,
+    handleSetVersion
 }) {
     return (
         <div style={{ display: 'flex', flexFlow: 'column' }}>
@@ -26,7 +28,7 @@ function ListHeader({
                     onChange={handleSetTitle}
                     style={{ fontSize: 20, fontFamily: 'inherit' }}
                 />
-                <div style={{ display: 'flex', justifyContent: 'center', marginLeft: 16 }}>
+                <div style={{ display: 'flex', justifyContent: 'center', marginLeft: 16, fontSize: 20 }}>
                     {points}
                 </div>
             </div>

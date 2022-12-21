@@ -3001,7 +3001,7 @@
     "lr": {
       "cardName": "B-wing Squadron",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/bB11RGw.png",
       "id": "lr",
       "upgradeSlots": []
@@ -3009,7 +3009,7 @@
     "ls": {
       "cardName": "Keyan Farlander",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/r4bx4xg.png",
       "id": "ls",
       "upgradeSlots": []
@@ -3017,7 +3017,7 @@
     "lt": {
       "cardName": "Ten Numb",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/8zae2YW.png",
       "id": "lt",
       "upgradeSlots": []
@@ -3025,7 +3025,7 @@
     "lu": {
       "cardName": "Shara Bey",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/QhDp5hB.png",
       "id": "lu",
       "upgradeSlots": []
@@ -3033,7 +3033,7 @@
     "lv": {
       "cardName": "Green Squadron",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/a00ZFfc.png",
       "id": "lv",
       "upgradeSlots": []
@@ -3041,7 +3041,7 @@
     "lw": {
       "cardName": "X-wing Squadron",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/d5QuMBy.png",
       "id": "lw",
       "upgradeSlots": []
@@ -3049,7 +3049,7 @@
     "lx": {
       "cardName": "Dagger Squadron",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/41kkBy6.png",
       "id": "lx",
       "upgradeSlots": []
@@ -3057,7 +3057,7 @@
     "ly": {
       "cardName": "Luke Skywalker",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/CcTsLiM.png",
       "id": "ly",
       "upgradeSlots": []
@@ -3065,7 +3065,7 @@
     "lz": {
       "cardName": "Y-wing Squadron",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/20kwNNs.png",
       "id": "lz",
       "upgradeSlots": []
@@ -3073,7 +3073,7 @@
     "ma": {
       "cardName": "Wedge Antilles",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/uepzi7O.png",
       "id": "ma",
       "upgradeSlots": []
@@ -3081,7 +3081,7 @@
     "mb": {
       "cardName": "\"Dutch\" Vander",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/97UoG34.png",
       "id": "mb",
       "upgradeSlots": []
@@ -3089,7 +3089,7 @@
     "mc": {
       "cardName": "Biggs Darklighter",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/zLMC2Fc.png",
       "id": "mc",
       "upgradeSlots": []
@@ -3097,7 +3097,7 @@
     "md": {
       "cardName": "YT-1300",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/pFKaprO.png",
       "id": "md",
       "upgradeSlots": []
@@ -3105,7 +3105,7 @@
     "me": {
       "cardName": "Han Solo",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/8ni1bSl.png",
       "id": "me",
       "upgradeSlots": []
@@ -3113,7 +3113,7 @@
     "mf": {
       "cardName": "Lando Calrissian",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/Xk43ysd.png",
       "id": "mf",
       "upgradeSlots": []
@@ -3121,7 +3121,7 @@
     "mg": {
       "cardName": "HWK-290",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/Zm7888b.png",
       "id": "mg",
       "upgradeSlots": []
@@ -3129,7 +3129,7 @@
     "mh": {
       "cardName": "Jan Ors",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/NQqAVr8.png",
       "id": "mh",
       "upgradeSlots": []
@@ -3137,7 +3137,7 @@
     "mi": {
       "cardName": "Kanan Jarrus",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/Cpp6DXG.png",
       "id": "mi",
       "upgradeSlots": []
@@ -3145,7 +3145,7 @@
     "mj": {
       "cardName": "Norra Wexley",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/VlUNCkM.png",
       "id": "mj",
       "upgradeSlots": []
@@ -3153,7 +3153,7 @@
     "mk": {
       "cardName": "Rogue Squadron",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/A1IByHc.png",
       "id": "mk",
       "upgradeSlots": []
@@ -3161,7 +3161,7 @@
     "ml": {
       "cardName": "Scurrg H-6 Bomber",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/QvhGpkj.png",
       "id": "ml",
       "upgradeSlots": []
@@ -3169,7 +3169,7 @@
     "mm": {
       "cardName": "Gold Squadron",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/m6efvmr.png",
       "id": "mm",
       "upgradeSlots": []
@@ -3177,7 +3177,7 @@
     "mn": {
       "cardName": "YT-2400",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/Ui3LTlu.png",
       "id": "mn",
       "upgradeSlots": []
@@ -3185,7 +3185,7 @@
     "mo": {
       "cardName": "Nym",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/vfrMC1z.png",
       "id": "mo",
       "upgradeSlots": []
@@ -3193,7 +3193,7 @@
     "mp": {
       "cardName": "A-wing Squadron",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/JikzQGo.png",
       "id": "mp",
       "upgradeSlots": []
@@ -3201,7 +3201,7 @@
     "mq": {
       "cardName": "Dash Rendar",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/7TfYFsY.png",
       "id": "mq",
       "upgradeSlots": []
@@ -3209,7 +3209,7 @@
     "mr": {
       "cardName": "Malee Hurra",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/JmifVSX.png",
       "id": "mr",
       "upgradeSlots": []
@@ -3217,7 +3217,7 @@
     "ms": {
       "cardName": "Tycho Celchu",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/XsXiGTU.png",
       "id": "ms",
       "upgradeSlots": []
@@ -3225,7 +3225,7 @@
     "mt": {
       "cardName": "Mart Mattin",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/UyCPNqt.png",
       "id": "mt",
       "upgradeSlots": []
@@ -3233,7 +3233,7 @@
     "mu": {
       "cardName": "Z-95 Headhunter Squadron",
       "faction": "rebels",
-      "cardType": "squadron",
+      "cardType": "squadron","points": 0,
       "imageUrl": "https://i.imgur.com/o3ydY6G.png",
       "id": "mu",
       "upgradeSlots": []
@@ -4771,6 +4771,7 @@
       "cardName": "Anakin Skywalker",
       "faction": "republic",
       "cardType": "squadron",
+      "points": 0,
       "imageUrl": "https://i.imgur.com/zsDolt7.jpeg",
       "id": "qp",
       "upgradeSlots": []
@@ -4826,7 +4827,7 @@
       "id": "qt",
       "shipSize": "large",
       "points": 95,
-      "isUnique": false,
+      "isUnique": true,
       "upgradeSlots": [
         "officer",
         "officer",

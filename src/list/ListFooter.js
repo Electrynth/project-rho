@@ -15,7 +15,6 @@ function ListFooter() {
                 <Button
                     disableRipple
                     disableElevation
-                    size="small"
                     variant="contained"
                 >
                     <span className={robotoCondensed.className}>
@@ -25,7 +24,6 @@ function ListFooter() {
                 <Button
                     disableRipple
                     disableElevation
-                    size="small"
                     variant="text"
                     color="secondary"
                     style={{ marginLeft: 4 }}

@@ -1,26 +1,13 @@
 import Head from 'next/head'
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import ListContainer from 'src/list/ListContainer';
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
 function List() {
     const theme = useTheme();
-    const userPriorityActionList = [
-        '',
-        'viewCard',
-        'addShip',
-        'switchShip',
-        'addUpgrade',
-        'switchUpgrade',
-        'addSquadron',
-        'switchSquadron',
-        'addObjective'
-    ];
-    const [userPriorityAction, setUserPriorityAction] = useState('');
-    const handleSetUserPrioAction = (newUserAction) => {
-        setUserPriorityAction(newUserAction);
-    };
+    const [isRightPaneFocused, setIsRightPaneFocused] = useState(false);
+    const handleSetRightPaneFocus = (isFocused) => setIsRightPaneFocused(isFocused);
 
     const breakpoints = {
         sm: useMediaQuery(theme.breakpoints.up('sm')),
@@ -39,7 +26,7 @@ function List() {
     
     if (breakpoints.lg) { primaryPaneStyles.width = 440; primaryPaneStyles.minWidth = 440; }
     else if (breakpoints.md) { primaryPaneStyles.width = 380; primaryPaneStyles.minWidth = 380; }
-    else if (userPriorityAction !== '') primaryPaneStyles.display = 'none';
+    else if (isRightPaneFocused) primaryPaneStyles.display = 'none';
 
     const secondaryPaneStyles = {
         flexGrow: 1,
@@ -51,7 +38,7 @@ function List() {
     };
 
     if (breakpoints.lg || breakpoints.md) secondaryPaneStyles.display = 'flex';
-    else if (userPriorityAction !== '') secondaryPaneStyles.display = 'flex';
+    else if (isRightPaneFocused) secondaryPaneStyles.display = 'flex';
 
     return (
         <div>
@@ -61,11 +48,10 @@ function List() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <ListContainer
-                userPriorityAction={userPriorityAction}
-                userPriorityActionList={userPriorityActionList}
                 primaryPaneStyles={primaryPaneStyles}
                 secondaryPaneStyles={secondaryPaneStyles}
-                handleSetUserPrioAction={handleSetUserPrioAction}
+                isRightPaneFocused={isRightPaneFocused}
+                handleSetRightPaneFocus={handleSetRightPaneFocus}
             />
         </div>
     );
