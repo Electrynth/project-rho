@@ -254,16 +254,16 @@ function ListContainer({
                     <div>
                         <div style={{ display: isCardPropsUniqueDelimited ? 'none' : 'block' }}>
                             <CardSelector
-                                cardComponents={cardComponentProps.map(cardProps => (<CardButton {...cardProps}/>))}
+                                cardComponents={cardComponentProps.map(cardProps => (<CardButton key={cardProps.id} {...cardProps}/>))}
                             />
                         </div>
                         <div style={{ display: isCardPropsUniqueDelimited ? 'block' : 'none' }}>
                             <CardSelector
-                                cardComponents={uniqueCardRowProps.map(cardProps => (<CardButton {...cardProps}/>))}
+                                cardComponents={uniqueCardRowProps.map(cardProps => (<CardButton key={cardProps.id} {...cardProps}/>))}
                             />
                             <Divider variant="middle" style={{ margin: '10px 0px', color: '#eee' }} />
                             <CardSelector
-                                cardComponents={nonUniqueCardRowProps.map(cardProps => (<CardButton {...cardProps}/>))}
+                                cardComponents={nonUniqueCardRowProps.map(cardProps => (<CardButton key={cardProps.id} {...cardProps}/>))}
                             />
                         </div>
                     </div>
