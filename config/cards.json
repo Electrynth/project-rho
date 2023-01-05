@@ -1557,7 +1557,7 @@
       "cardName": "Venator II-class Star Destroyer",
       "faction": "empire",
       "cardType": "ship",
-      "imageUrl": "http://i.imgur.com/KEIFF2n.jpeg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/empire/venator/II_card.jpg?raw=true",
       "shipSize": "large",
       "points": 100,
       "isUnique": true,
