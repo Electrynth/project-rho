@@ -452,7 +452,7 @@
       "cardName": "Hardcell-class Transport",
       "faction": "separatists",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/T7QWSb4.jpeg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/separatist/hardcell/transport_card.jpg?raw=true",
       "shipSize": "small",
       "points": 47,
       "isUnique": false,
@@ -470,7 +470,7 @@
       "cardName": "Hardcell-class Battle Refit",
       "faction": "separatists",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/X96bJDW.jpeg",
+      "imageUrl": "https://raw.githubusercontent.com/Valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/ships/separatist/hardcell/battle_card.jpg",
       "shipSize": "small",
       "points": 52,
       "isUnique": false,
@@ -488,7 +488,7 @@
       "cardName": "Gozanti-class Cruisers",
       "faction": "separatists",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/MBkIeoQ.png",
+      "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/ships/separatist/gozanti/cruiser_card.jpg",
       "shipSize": "small",
       "points": 23,
       "isUnique": false,
@@ -504,7 +504,7 @@
       "cardName": "Munificent-class Comms Frigate",
       "faction": "separatists",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/T5LCaof.jpeg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/separatist/munificent/comms_card.jpg?raw=true",
       "shipSize": "medium",
       "points": 70,
       "isUnique": false,
@@ -523,7 +523,7 @@
       "cardName": "Munificent-class Star Frigate",
       "faction": "separatists",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/kN6lJzW.jpeg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/separatist/munificent/star_card.jpg?raw=true",
       "shipSize": "medium",
       "points": 73,
       "isUnique": false,
@@ -542,7 +542,7 @@
       "cardName": "Recusant-class Light Destroyer",
       "faction": "separatists",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/rQUJG5H.jpg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/separatist/recusant/light_card.jpg?raw=true",
       "shipSize": "large",
       "points": 85,
       "isUnique": false,
@@ -561,7 +561,7 @@
       "cardName": "Recusant-class Support Destroyer",
       "faction": "separatists",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/EnEIdGQ.jpg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/separatist/recusant/support_card.jpg?raw=true",
       "shipSize": "large",
       "points": 90,
       "isUnique": false,
@@ -580,7 +580,7 @@
       "cardName": "Providence-class Carrier",
       "faction": "separatists",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/pScwKfv.jpg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/separatist/providence/carrier_card.jpg?raw=true",
       "shipSize": "large",
       "points": 105,
       "isUnique": false,
@@ -601,7 +601,7 @@
       "cardName": "Providence-class Dreadnought",
       "faction": "separatists",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/2CH9F4i.jpg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/separatist/providence/dreadnought_card.jpg?raw=true",
       "shipSize": "large",
       "points": 105,
       "isUnique": false,
@@ -622,7 +622,7 @@
       "cardName": "Consular-class Armed Cruiser",
       "faction": "republic",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/CV9k4Fz.jpeg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/republic/consular/armed_card.jpg?raw=true",
       "shipSize": "small",
       "points": 37,
       "isUnique": false,
@@ -640,7 +640,7 @@
       "cardName": "Consular-class Charger c70",
       "faction": "republic",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/CXHwzPR.jpeg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/republic/consular/charger_card.jpg?raw=true",
       "shipSize": "small",
       "points": 45,
       "isUnique": false,
@@ -656,9 +656,9 @@
     },
     "al": {
       "cardName": "Victory I-class Star Destroyer",
-      "faction": "separatists",
+      "faction": "republic",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/qcN5LEl.png",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/republic/victory/I_card.jpg?raw=true",
       "shipSize": "medium",
       "points": 75,
       "isUnique": false,
@@ -678,7 +678,7 @@
       "cardName": "Acclamator I-class Assault Ship",
       "faction": "republic",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/6JbZwXG.jpeg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/republic/acclamator/I_card.jpg?raw=true",
       "shipSize": "medium",
       "points": 66,
       "isUnique": false,
@@ -698,7 +698,7 @@
       "cardName": "Acclamator II-class Assault Ship",
       "faction": "republic",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/NhED6cA.jpg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/republic/acclamator/II_card.jpg?raw=true",
       "shipSize": "medium",
       "points": 71,
       "isUnique": false,
@@ -717,7 +717,7 @@
       "cardName": "Venator I-class Star Destroyer",
       "faction": "republic",
       "cardType": "ship",
-      "imageUrl": "http://i.imgur.com/KEIFF2n.jpeg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/republic/venator/I_card.jpg?raw=true",
       "shipSize": "large",
       "points": 90,
       "isUnique": false,
@@ -737,7 +737,7 @@
       "cardName": "Venator II-class Star Destroyer",
       "faction": "republic",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/RouFvsV.jpeg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/republic/venator/II_card.jpg?raw=true",
       "shipSize": "large",
       "points": 100,
       "isUnique": false,
@@ -757,7 +757,7 @@
       "cardName": "Pelta-class Medical Frigate",
       "faction": "republic",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/lC6GsSz.jpg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/republic/pelta/medical_card.jpg?raw=true",
       "shipSize": "small",
       "points": 49,
       "isUnique": false,
@@ -775,7 +775,7 @@
       "cardName": "Pelta-class Transport Frigate",
       "faction": "republic",
       "cardType": "ship",
-      "imageUrl": "https://i.imgur.com/8mtcXZo.jpg",
+      "imageUrl": "https://github.com/Valadian/TabletopSimulatorIncludeDir/blob/master/TTS_armada/assets/ships/republic/pelta/transport_card.jpg?raw=true",
       "shipSize": "small",
       "points": 45,
       "isUnique": false,
@@ -3729,14 +3729,14 @@
     },
     "jp": {
       "cardName": "Hondo Ohnaka",
-      "points": 3,
+      "points": 2,
       "isUnique": true,
       "faction": "",
       "upgradeSlots": [
         "officer"
       ],
       "isModification": false,
-      "imageUrl": "https://i.imgur.com/K8A1QGa.png",
+      "imageUrl": "https://i.imgur.com/ka4vK2h.jpg",
       "id": "jp",
       "cardType": "upgrade"
     },
@@ -3775,7 +3775,7 @@
         "officer"
       ],
       "isModification": false,
-      "imageUrl": "",
+      "imageUrl": "https://i.imgur.com/FqhDYBp.jpg",
       "id": "js",
       "cardType": "upgrade"
     },
@@ -3905,7 +3905,7 @@
         "officer"
       ],
       "isModification": false,
-      "imageUrl": "",
+      "imageUrl": "https://i.imgur.com/XxbObBi.jpg",
       "id": "kd",
       "cardType": "upgrade"
     },
@@ -3931,7 +3931,7 @@
         "officer"
       ],
       "isModification": false,
-      "imageUrl": "",
+      "imageUrl": "http://i.imgur.com/htbjXKu.jpg",
       "id": "kf",
       "cardType": "upgrade"
     },
@@ -3944,7 +3944,7 @@
         "officer"
       ],
       "isModification": false,
-      "imageUrl": "https://i.imgur.com/W0HDKSn.jpg",
+      "imageUrl": "http://i.imgur.com/Qu7q6hP.jpg",
       "id": "kg",
       "cardType": "upgrade"
     },
@@ -4009,7 +4009,7 @@
         "officer"
       ],
       "isModification": false,
-      "imageUrl": "https://i.imgur.com/Xk43ysd.png",
+      "imageUrl": "https://i.imgur.com/fw8Qm7S.jpeg",
       "id": "kl",
       "cardType": "upgrade"
     },
@@ -4100,7 +4100,7 @@
         "officer"
       ],
       "isModification": false,
-      "imageUrl": "https://i.imgur.com/uepzi7O.png",
+      "imageUrl": "https://i.imgur.com/OSOELtb.jpeg",
       "id": "ks",
       "cardType": "upgrade"
     },
@@ -4113,7 +4113,7 @@
         "officer"
       ],
       "isModification": false,
-      "imageUrl": "",
+      "imageUrl": "https://i.imgur.com/NtfCKwG.jpeg",
       "id": "kt",
       "cardType": "upgrade"
     },
@@ -4126,7 +4126,7 @@
         "officer"
       ],
       "isModification": false,
-      "imageUrl": "https://i.imgur.com/W0HDKSn.jpg",
+      "imageUrl": "https://i.imgur.com/SVAWnrZ.jpeg",
       "id": "ku",
       "cardType": "upgrade"
     },
@@ -4165,7 +4165,7 @@
         "officer"
       ],
       "isModification": false,
-      "imageUrl": "",
+      "imageUrl": "https://i.imgur.com/pb3QjZp.jpg",
       "id": "kx",
       "cardType": "upgrade"
     },
@@ -4178,7 +4178,7 @@
         "officer"
       ],
       "isModification": false,
-      "imageUrl": "",
+      "imageUrl": "https://i.imgur.com/Mt2SoH7.jpg",
       "id": "ky",
       "cardType": "upgrade"
     },

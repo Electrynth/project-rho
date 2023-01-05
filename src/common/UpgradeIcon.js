@@ -19,7 +19,7 @@ function UpgradeIcon({ upgradeType, style, ...props }) {
     const upgradeTypeToSrc = {
         commander,
         'defensive retrofit': defensiveRetrofit,
-        'experiemental retrofit': experimentalRetrofit,
+        'experimental retrofit': experimentalRetrofit,
         'fleet command': fleetCommand,
         'fleet support': fleetSupport,
         'ion cannons': ionCannons,

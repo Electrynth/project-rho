@@ -8,10 +8,12 @@ import SquadronRow from './SquadronRow';
 function ListSquadrons({
     squadrons,
     squadronPoints,
+    swapSquadron,
     removeSquadron,
     incrementSquadron,
     decrementSquadron,
-    setEligibleSquadronsToAdd
+    setEligibleSquadronsToAdd,
+    setEligibleSquadronsToSwap
 }) {
     return (
         <div style={{ display: 'flex', flexFlow: 'column' }}>
@@ -20,9 +22,11 @@ function ListSquadrons({
                     key={squadron.id}
                     index={index}
                     squadron={squadron}
+                    swapSquadron={swapSquadron}
                     removeSquadron={removeSquadron}
                     incrementSquadron={incrementSquadron}
                     decrementSquadron={decrementSquadron}
+                    setEligibleSquadronsToSwap={setEligibleSquadronsToSwap}
                 />
             )}
             <Button

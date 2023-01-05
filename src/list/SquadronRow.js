@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/Image';
+import Image from 'next/image';
 import { Button, Divider } from '@mui/material';
 import { Add, Remove, SwapHoriz, Search, Clear } from '@mui/icons-material';
 import DualHoverButton from 'src/common/DualHoverButton';
@@ -9,9 +9,11 @@ import robotoCondensed from 'config/font';
 function SquadronRow({
     index,
     squadron,
+    swapSquadron,
     removeSquadron,
     incrementSquadron,
-    decrementSquadron
+    decrementSquadron,
+    setEligibleSquadronsToSwap
 }) {
     const squadronCard = cards.cardsById[squadron.id];
     const squadronPoints = squadronCard.points * squadron.count;
@@ -34,7 +36,7 @@ function SquadronRow({
                                 width={256}
                                 height={357}
                                 alt={squadronCard.cardName}
-                                style={{ margin: '-100px 0 0 -80px', transform: 'scale(0.45)' }}
+                                style={{ margin: '-105px 0 0 -85px', transform: 'scale(0.45)' }}
                             />
                         </div>
                         <div style={{ fontWeight: 300 }}>
@@ -63,7 +65,7 @@ function SquadronRow({
                                 width={256}
                                 height={357}
                                 alt={squadronCard.cardName}
-                                style={{ margin: '-100px 0 0 -80px', transform: 'scale(0.45)', opacity: '0.5', cursor: 'pointer' }}
+                                style={{ margin: '-105px 0 0 -85px', transform: 'scale(0.45)', opacity: '0.5', cursor: 'pointer' }}
                             />
                         </div>
                         <div style={{ fontWeight: 300 }}>
@@ -87,6 +89,7 @@ function SquadronRow({
                             )}
                             <SwapHoriz
                                 style={{ marginRight: 4, cursor: 'pointer' }}
+                                onClick={() => setEligibleSquadronsToSwap(index)}
                             />
                             <Clear
                                 onClick={() => removeSquadron(index)}

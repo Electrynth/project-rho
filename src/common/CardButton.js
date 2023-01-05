@@ -11,7 +11,10 @@ function CardButton({ id, isDisabled, onClick }) {
     const card = cards.cardsById[id];
     if (card.imageUrl) {
         return (
-            <Card sx={{ maxWidth: 240, marginRight: 1, marginBottom: 1 }} onClick={isDisabled ? undefined : onClick}>
+            <Card
+                sx={{ maxWidth: card.cardType === 'upgrade' ? 180 : 240, marginRight: 1, marginBottom: 1 }}
+                onClick={isDisabled ? undefined : onClick}
+            >
                 <CardActionArea style={{ display: 'flex', justifyContent: 'flex-end' }}>
                     <CardMedia
                         component="img"

@@ -6,11 +6,21 @@ function ListShips({
     ships,
     shipPoints,
     removeShip,
-    setEligibleShipsToAdd
+    setEligibleShipsToAdd,
+    setEligibleUpgradesToAdd
 }) {
     return (
         <div style={{ display: 'flex', flexFlow: 'column' }}>
-            {ships.map((ship, index) => <ShipRow key={ship.id} ship={ship} index={index} shipPoints={shipPoints} removeShip={removeShip} />)}
+            {ships.map((ship, index) =>
+                <ShipRow
+                    key={ship.id}
+                    ship={ship}
+                    index={index}
+                    shipPoints={shipPoints}
+                    removeShip={removeShip}
+                    setEligibleUpgradesToAdd={setEligibleUpgradesToAdd}
+                />
+            )}
             <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
                 <Button
                     fullWidth

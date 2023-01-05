@@ -6,7 +6,7 @@ import cards from 'config/cards';
 import robotoCondensed from 'config/font';
 import UpgradeIcon from 'src/common/UpgradeIcon';
 
-function ShipRow({ index, ship, removeShip }) {
+function ShipRow({ index, ship, removeShip, setEligibleUpgradesToAdd }) {
     const shipCard = cards.cardsById[ship.id];
     const upgradePoints = ship.upgradesEquipped.reduce((a, b) => {
         let points = 0;
@@ -114,6 +114,7 @@ function ShipRow({ index, ship, removeShip }) {
                                         key={`${upgrade.upgradeType}_${i}`}
                                         upgradeType={upgrade.upgradeType}
                                         style={{ height: 25, width: 25, margin: '0px 2px', marginTop: 2, cursor: 'pointer' }}
+                                        onClick={() => setEligibleUpgradesToAdd(index, i)}
                                     />
                                 );
                             })}
