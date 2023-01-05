@@ -15,7 +15,7 @@ function ShipRows({ ships, cardZoomClick }) {
                     </div>
                 );
             })}
-            <Divider />
+            <Divider style={{ marginBottom: 8 }} />
         </div>
     );
 }
@@ -23,9 +23,13 @@ function ShipRows({ ships, cardZoomClick }) {
 function SquadronsRow({ squadrons, cardZoomClick }) {
     if (squadrons.length === 0 ) return undefined;
     return (
-        <div>
-            {squadrons.length}
-            <Divider />
+        <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
+            {squadrons.map((squadron) => {
+                return (
+                    <CardButton id={squadron.id} key={squadron.id} />
+                );
+            })}
+            <Divider style={{ marginBottom: 8 }} />
         </div>
     );
 }

@@ -55,8 +55,6 @@ function ListContainer({
     }, [query]);
 
     const [version, setVersion] = useState(0);
-    const [shipPoints, setShipPoints] = useState(0);
-    const [squadronPoints, setSquadronPoints] = useState(0);
     const [title, setTitle] = useState('');
     const [faction, setFaction] = useState('');
     const [commander, setCommander] = useState('');
@@ -100,11 +98,27 @@ function ListContainer({
             if (cards.cardsById[id].isUnique) setUniques([...uniques, id]);
             newSquadrons.push({ id, count: 1 });
         }
-        setSquadrons([...newSquadrons]);
+        setSquadrons(newSquadrons);
         handleSetRightPaneFocus(false);
         setCardComponentProps([]);
         setRightPaneText('');
         setIsCardPropsUniqueDelimited(false);
+    }
+
+    const incrementSquadron = (index) => {
+        const newSquadrons = [...squadrons];
+        newSquadrons[index].count += 1;
+        setSquadrons(newSquadrons);
+    }
+
+    const decrementSquadron = (index) => {
+        const newSquadrons = [...squadrons];
+        newSquadrons[index].count -= 1;
+        if (newSquadrons[index].count === 0) {
+            removeSquadron(index);
+        } else {
+            setSquadrons(newSquadrons);
+        }
     }
 
     const removeShip = (index) => {
@@ -112,7 +126,7 @@ function ListContainer({
         const { id } = ship;
         const newUniques = [...uniques];
         const uniqueIdIndex = newUniques.indexOf(id);
-        if (uniqueIdIndex) newUniques.splice(uniqueIdIndex, 1);
+        if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
         for (let i = 0; i < ship.upgradesEquipped.length; i++) {
             const upgrade = ship.upgradesEquipped[i];
             const upgradeId = upgrade.id;
@@ -121,6 +135,7 @@ function ListContainer({
         const newShips = [...ships];
         newShips.splice(index, 1);
         setShips(newShips);
+        setUniques(newUniques);
     }
 
     const removeSquadron = (index) => {
@@ -128,15 +143,16 @@ function ListContainer({
         const newUniques = [...uniques];
         const squadron = newSquadrons[index];
         const uniqueIdIndex = uniques.indexOf(squadron.id);
-        if (uniqueIdIndex) newUniques.splice(uniqueIdIndex, 1);
+        if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
         newSquadrons.splice(index, 1);
-        setSquadrons([...newSquadrons]);
+        setSquadrons(newSquadrons);
+        setUniques(newUniques);
     }
     
     const setEligibleShipsToAdd = () => {
         const newCardComponentProps = [];
-        for (let i = 0; i < cards.idList.length; i++) {
-            const id = cards.idList[i];
+        for (let i = 0; i < cards.shipIdList.length; i++) {
+            const id = cards.shipIdList[i];
             const card = cards.cardsById[id];
             if (card.cardType !== 'ship') continue;
             if (card.faction !== faction) continue;
@@ -155,8 +171,8 @@ function ListContainer({
 
     const setEligibleSquadronsToAdd = () => {
         const newCardComponentProps = [];
-        for (let i = 0; i < cards.idList.length; i++) {
-            const id = cards.idList[i];
+        for (let i = 0; i < cards.squadronIdList.length; i++) {
+            const id = cards.squadronIdList[i];
             const card = cards.cardsById[id];
             if (card.cardType !== 'squadron') continue;
             if (card.faction !== faction) continue;
@@ -173,24 +189,19 @@ function ListContainer({
         setIsCardPropsUniqueDelimited(true);
     }
 
-    useEffect(() => {
-        let shipPoints = 0;
-        let squadronPoints = 0;
-        ships.forEach(ship => {
-            const shipCard = cards.cardsById[ship.id];
-            const { points } = shipCard;
-            shipPoints += points;
-        });
-        squadrons.forEach(squadron => {
-            const squadronCard = cards.cardsById[squadron.id];
-            const { points } = squadronCard
-            if (points) squadronPoints += points
-            else return 0;
-        });
-        setShipPoints(shipPoints);
-        setSquadronPoints(squadronPoints);
-    }, [ships, squadrons]);
-
+    let shipPoints = 0;
+    let squadronPoints = 0;
+    ships.forEach(ship => {
+        const shipCard = cards.cardsById[ship.id];
+        const { points } = shipCard;
+        shipPoints += points;
+    });
+    squadrons.forEach(squadron => {
+        const squadronCard = cards.cardsById[squadron.id];
+        const { points } = squadronCard
+        if (points) squadronPoints += points * squadron.count;
+        else return 0;
+    });
 
     cardComponentProps.sort((a, b) => {
         const cardA = cards.cardsById[a.id];
@@ -232,6 +243,8 @@ function ListContainer({
                 <ListSquadrons
                     squadrons={squadrons}
                     squadronPoints={squadronPoints}
+                    incrementSquadron={incrementSquadron}
+                    decrementSquadron={decrementSquadron}
                     removeSquadron={removeSquadron}
                     setEligibleSquadronsToAdd={setEligibleSquadronsToAdd}
                 />

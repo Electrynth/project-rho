@@ -10,13 +10,14 @@ function ListShips({
 }) {
     return (
         <div style={{ display: 'flex', flexFlow: 'column' }}>
-            {ships.map((ship) => <ShipRow key={ship.id} ship={ship} shipPoints={shipPoints} removeShip={removeShip} />)}
+            {ships.map((ship, index) => <ShipRow key={ship.id} ship={ship} index={index} shipPoints={shipPoints} removeShip={removeShip} />)}
             <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
                 <Button
                     fullWidth
                     disableElevation
                     disableRipple
                     variant="contained"
+                    size="large"
                     onClick={setEligibleShipsToAdd}
                     style={{ height: 40 }}
                 >

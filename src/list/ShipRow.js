@@ -1,4 +1,3 @@
-import { useMemo } from 'react';
 import Image from 'next/image';
 import { Button, Divider } from '@mui/material';
 import { Add, ContentCopy, Search, Clear } from '@mui/icons-material';
@@ -7,16 +6,15 @@ import cards from 'config/cards';
 import robotoCondensed from 'config/font';
 import UpgradeIcon from 'src/common/UpgradeIcon';
 
-function ShipRow({ ship, removeShip }) {
-    console.log(ship);
+function ShipRow({ index, ship, removeShip }) {
     const shipCard = cards.cardsById[ship.id];
-    const upgradePoints = useMemo(() => {
+    const upgradePoints = ship.upgradesEquipped.reduce((a, b) => {
         let points = 0;
-        for (let i = 0; i < ship.upgradesEquipped.length; i++) {
-            if (ship.upgradesEquipped[i].id) points += cards.cardsById[ship.upgradesEquipped[i].id].points;
-        }
-        return points;
-    }, [ship]);
+        if (a.id) points += cards.cardsById[a.id];
+        if (b.id) points += cards.cardsById[b.id];
+        return points
+    })
+    
     return (
         <div style={{ display: 'flex', flexFlow: 'column nowrap' }}>
             <DualHoverButton
@@ -41,7 +39,7 @@ function ShipRow({ ship, removeShip }) {
                         </div>
                         <div style={{ fontWeight: 300 }}>{shipCard.cardName}</div>
                         <span style={{ flexGrow: 1 }} />
-                        <div style={{ marginRight: 2 }}>{shipCard.points}</div>
+                        <div style={{ marginRight: 8 }}>{shipCard.points}</div>
                     </div>
                 )}
                 hoverActions={(
@@ -71,10 +69,10 @@ function ShipRow({ ship, removeShip }) {
                         <div style={{ marginRight: 2, display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
                             <ContentCopy
                                 fontSize="small"
-                                style={{ marginRight: 6, cursor: 'pointer' }}
+                                style={{ marginRight: 4, cursor: 'pointer' }}
                             />
                             <Clear
-                                
+                                onClick={() => removeShip(index)}
                                 style={{ marginRight: 2, cursor: 'pointer' }}
                             />
                         </div>
@@ -115,7 +113,7 @@ function ShipRow({ ship, removeShip }) {
                                     <UpgradeIcon
                                         key={`${upgrade.upgradeType}_${i}`}
                                         upgradeType={upgrade.upgradeType}
-                                        style={{ height: 26, width: 26, margin: '0px 2px', marginTop: 1, cursor: 'pointer' }}
+                                        style={{ height: 25, width: 25, margin: '0px 2px', marginTop: 2, cursor: 'pointer' }}
                                     />
                                 );
                             })}
