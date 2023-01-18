@@ -6,13 +6,13 @@ import cards from 'config/cards';
 import robotoCondensed from 'config/font';
 import UpgradeIcon from 'src/common/UpgradeIcon';
 
-function ShipRow({ index, ship, removeShip, setEligibleUpgradesToAdd }) {
+function ShipRow({ index, ship, removeShip, removeUpgrade, setEligibleUpgradesToAdd }) {
     const shipCard = cards.cardsById[ship.id];
     let upgradePoints = 0;
 
     for (let i = 0; i < ship.upgradesEquipped.length; i++) {
         const upgrade = ship.upgradesEquipped[i];
-        if (upgrade.id) upgradePoints += cards.cardsById[upgrade.id].points;
+        if (upgrade.id && upgrade.id !== true) upgradePoints += cards.cardsById[upgrade.id].points;
     }
     return (
         <div style={{ display: 'flex', flexFlow: 'column nowrap' }}>
@@ -36,7 +36,7 @@ function ShipRow({ index, ship, removeShip, setEligibleUpgradesToAdd }) {
                                 style={{ margin: '-113px 0px 0px -80px', transform: 'scale(0.45)' }}
                             />
                         </div>
-                        <div style={{ fontWeight: 300 }}>{shipCard.cardName}</div>
+                        <div style={{ fontWeight: 300 }}>{shipCard.displayName ? shipCard.displayName : shipCard.cardName}</div>
                         <span style={{ flexGrow: 1 }} />
                         <div style={{ marginRight: 8 }}>{shipCard.points}</div>
                     </div>
@@ -63,7 +63,7 @@ function ShipRow({ index, ship, removeShip, setEligibleUpgradesToAdd }) {
                                 style={{ margin: '-113px 0px 0px -80px', transform: 'scale(0.45)', opacity: '0.5', cursor: 'pointer' }}
                             />
                         </div>
-                        <div style={{ fontWeight: 300 }}>{shipCard.cardName}</div>
+                        <div style={{ fontWeight: 300 }}>{shipCard.displayName ? shipCard.displayName : shipCard.cardName}</div>
                         <span style={{ flexGrow: 1 }} />
                         <div style={{ marginRight: 2, display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
                             <ContentCopy
@@ -80,10 +80,10 @@ function ShipRow({ index, ship, removeShip, setEligibleUpgradesToAdd }) {
             />
             <div style={{ display: 'flex', flexFlow: 'column nowrap' }}>
                 {ship.upgradesEquipped.map((upgrade, i) => {
-                    if (!upgrade.id) return undefined;
+                    if (!upgrade.id || upgrade.id === true) return undefined;
                     const upgradeCard = cards.cardsById[upgrade.id];
                     return (
-                        <div style={{ display: 'flex', flexFlow: 'row nowrap', marginTop: 4 }}>
+                        <div key={`${upgrade.id}_${i}`} style={{ display: 'flex', flexFlow: 'row nowrap', marginTop: 4 }}>
                             <span style={{ minWidth: 20 }} />
                             <UpgradeIcon
                                 key={`${upgrade.upgradeType}_${i}`}
@@ -151,7 +151,7 @@ function ShipRow({ index, ship, removeShip, setEligibleUpgradesToAdd }) {
                                                 style={{ marginRight: 4, cursor: 'pointer' }}
                                             />
                                             <Clear
-                                                onClick={() => {}}
+                                                onClick={() => removeUpgrade(index, i)}
                                                 style={{ marginRight: 2, cursor: 'pointer' }}
                                             />
                                         </div>
@@ -196,6 +196,19 @@ function ShipRow({ index, ship, removeShip, setEligibleUpgradesToAdd }) {
                     hoverActions={(
                         <div style={{ display: 'flex', flexFlow: 'row nowrap', height: 40, alignItems: 'center', padding: 5 }}>
                             {ship.upgradesEquipped.map((upgrade, i) => {
+                                if (upgrade.id === true) {
+                                    <UpgradeIcon
+                                        key={`${upgrade.upgradeType}_${i}`}
+                                        upgradeType={upgrade.upgradeType}
+                                        style={{
+                                            height: 25,
+                                            width: 25,
+                                            margin: '0px 2px',
+                                            marginTop: 2,
+                                            opacity: 0.1
+                                        }}
+                                    />
+                                }
                                 return (
                                     <UpgradeIcon
                                         key={`${upgrade.upgradeType}_${i}`}

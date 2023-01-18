@@ -89,21 +89,33 @@ function ListContainer({
     const addUpgrade = (shipIndex, upgradeIndex, id) => {
         const newShips = [...ships];
         const newShip = newShips[shipIndex];
-        const upgrade = cards.cardsById[id];
-        newShip.upgradesEquipped[upgradeIndex].id = id;
-        if (upgrade.isUnique) setUniques([...uniques, id]);
-        if (upgrade.upgradeSlots.length > 1) {
-            if (upgrade.upgradeSlots[0] === newShip.upgradesEquipped[upgradeIndex].upgradeType) {
-                newShip.upgradesEquipped[upgradeIndex + 1].id = id;
-            } else {
-                newShip.upgradesEquipped[upgradeIndex - 1].id = id;
+        const upgradeCard = cards.cardsById[id];
+
+        if (upgradeCard.isUnique) setUniques([...uniques, id]);
+        if (upgradeCard.upgradeSlots.length > 1) {
+            const upgradeSlotDict = {};
+            for (let i = 0; i < upgradeCard.upgradeSlots.length; i++) {
+                upgradeSlotDict[upgradeCard.upgradeSlots[i]] = true;
             }
+            for (let i = 0; i < newShip.upgradesEquipped.length; i++) {
+                const equippedUpgrade = newShip.upgradesEquipped[i];
+                if (equippedUpgrade.upgradeType in upgradeSlotDict && upgradeSlotDict[equippedUpgrade.upgradeType] === true) {
+                    if (upgradeIndex === i) equippedUpgrade.id = id;
+                    else equippedUpgrade.id = true;
+                    upgradeSlotDict[equippedUpgrade.upgradeType] = i;
+                }
+            }
+            newShip.upgradesEquipped[upgradeIndex].upgradeSlotDict = upgradeSlotDict;
+        } else {
+            newShip.upgradesEquipped[upgradeIndex].id = id;
         }
         setShips(newShips);
         handleSetRightPaneFocus(false);
         setCardComponentProps([]);
         setRightPaneText('');
     }
+
+    console.log(ships);
 
     const addSquadron = (id) => {
         const newSquadrons = [...squadrons];
@@ -176,6 +188,25 @@ function ListContainer({
         setUniques(newUniques);
     }
 
+    const removeUpgrade = (shipIndex, upgradeIndex) => {
+        const newShips = [...ships];
+        const newUniques = [...uniques];
+        const newShip = newShips[shipIndex];
+        const upgrade = newShip.upgradesEquipped[upgradeIndex];
+        const upgradeCard = cards.cardsById[upgrade.id];
+        const uniqueIdIndex = uniques.indexOf(upgrade.id);
+        if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
+        if (upgradeCard.upgradeSlots.length > 1) {
+            for (let i = 0; i < Object.keys(upgrade.upgradeSlotDict).length; i++) {
+                const key = Object.keys(upgrade.upgradeSlotDict)[i];
+                newShip.upgradesEquipped[upgrade.upgradeSlotDict[key]].id = undefined;
+            }
+          
+        } 
+        newShip.upgradesEquipped[upgradeIndex] = { upgradeType: upgrade.upgradeType, id: undefined };
+        setShips(newShips);
+    }
+
     const removeSquadron = (index) => {
         const newSquadrons = [...squadrons];
         const newUniques = [...uniques];
@@ -211,14 +242,14 @@ function ListContainer({
         const shipCard = cards.cardsById[ships[shipIndex].id];
         const upgradeType = ships[shipIndex].upgradesEquipped[upgradeIndex].upgradeType;
         const newCardComponentProps = [];
-        let hasOpenWeaponsTeam = false;
-        let hasOpenOffensiveRetro = false;
+
+        const openUpgradeSlots = {};
         for (let i = 0; i < ships[shipIndex].upgradesEquipped.length; i++) {
             const upgrade = ships[shipIndex].upgradesEquipped[i];
-            hasOpenWeaponsTeam = upgrade.upgradeType === 'weapons team' && upgrade.id === undefined;
-            hasOpenOffensiveRetro = upgrade.upgradeType === 'offensive retrofit' && upgrade.id === undefined;
-            hasOpenWeaponsTeam = !(hasOpenWeaponsTeam && !hasOpenOffensiveRetro); // needs open weapons team and offensive retro in succession
-            if (hasOpenWeaponsTeam && hasOpenOffensiveRetro) break;
+            if (upgrade.id === undefined) {
+                if (openUpgradeSlots[upgrade.upgradeType]) openUpgradeSlots[upgrade.upgradeType] += 1;
+                else openUpgradeSlots[upgrade.upgradeType] = 1;
+            }
         }
         for (let i = 0; i < cards.upgradeIdList.length; i++) {
             const id = cards.upgradeIdList[i];
@@ -226,7 +257,7 @@ function ListContainer({
             if (card.faction !== '' && card.faction !== faction) continue;
             if (!card.upgradeSlots.includes(upgradeType)) continue;
             if (!isUpgradeRequirementsMet(card.requirements, { ...shipCard, faction })) continue;
-            if (card.upgradeSlots.length > 1 && !(hasOpenOffensiveRetro && hasOpenWeaponsTeam)) continue;
+            if (card.upgradeSlots.length > 1 && !(openUpgradeSlots['weapons team'] > 0 && openUpgradeSlots['offensive retrofit'] > 0)) continue;
             newCardComponentProps.push({
                 id,
                 key: id,
@@ -287,6 +318,14 @@ function ListContainer({
         const shipCard = cards.cardsById[ship.id];
         const { points } = shipCard;
         shipPoints += points;
+        for (let i = 0; i < ship.upgradesEquipped.length; i++) {
+            const upgrade = ship.upgradesEquipped[i];
+            if (upgrade.id && upgrade.id !== true) {
+                const upgradeCard = cards.cardsById[upgrade.id];
+                const { points } = upgradeCard;
+                shipPoints += points;
+            }
+        }
     });
     squadrons.forEach(squadron => {
         const squadronCard = cards.cardsById[squadron.id];
@@ -337,6 +376,7 @@ function ListContainer({
                     ships={ships}
                     shipPoints={shipPoints}
                     removeShip={removeShip}
+                    removeUpgrade={removeUpgrade}
                     setEligibleShipsToAdd={setEligibleShipsToAdd}
                     setEligibleUpgradesToAdd={setEligibleUpgradesToAdd}
                 />

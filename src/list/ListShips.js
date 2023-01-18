@@ -6,6 +6,7 @@ function ListShips({
     ships,
     shipPoints,
     removeShip,
+    removeUpgrade,
     setEligibleShipsToAdd,
     setEligibleUpgradesToAdd
 }) {
@@ -18,6 +19,7 @@ function ListShips({
                     index={index}
                     shipPoints={shipPoints}
                     removeShip={removeShip}
+                    removeUpgrade={removeUpgrade}
                     setEligibleUpgradesToAdd={setEligibleUpgradesToAdd}
                 />
             )}

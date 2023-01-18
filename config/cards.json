@@ -449,6 +449,7 @@
   ],
   "cardsById": {
     "aa": {
+      "displayName": "Hardcell Transport",
       "cardName": "Hardcell-class Transport",
       "faction": "separatists",
       "cardType": "ship",
@@ -467,6 +468,7 @@
       "id": "aa"
     },
     "ab": {
+      "displayName": "Hardcell Battle Refit",
       "cardName": "Hardcell-class Battle Refit",
       "faction": "separatists",
       "cardType": "ship",
@@ -485,6 +487,7 @@
       "id": "ab"
     },
     "ac": {
+      "displayName": "Gozanti Cruisers",
       "cardName": "Gozanti-class Cruisers",
       "faction": "separatists",
       "cardType": "ship",
@@ -501,6 +504,7 @@
       "id": "ac"
     },
     "ad": {
+      "displayName": "Munificent Comms Frigate",
       "cardName": "Munificent-class Comms Frigate",
       "faction": "separatists",
       "cardType": "ship",
@@ -520,6 +524,7 @@
       "id": "ad"
     },
     "ae": {
+      "displayName": "Munificent Star Frigate",
       "cardName": "Munificent-class Star Frigate",
       "faction": "separatists",
       "cardType": "ship",
@@ -539,6 +544,7 @@
       "id": "ae"
     },
     "af": {
+      "displayName": "Recusant Light Destroyer",
       "cardName": "Recusant-class Light Destroyer",
       "faction": "separatists",
       "cardType": "ship",
@@ -558,6 +564,7 @@
       "id": "af"
     },
     "ag": {
+      "displayName": "Recusant Support Destroyer",
       "cardName": "Recusant-class Support Destroyer",
       "faction": "separatists",
       "cardType": "ship",
@@ -577,6 +584,7 @@
       "id": "ag"
     },
     "ah": {
+      "displayName": "Providence Carrier",
       "cardName": "Providence-class Carrier",
       "faction": "separatists",
       "cardType": "ship",
@@ -598,6 +606,7 @@
       "id": "ah"
     },
     "ai": {
+      "displayName": "Providence Dreadnought",
       "cardName": "Providence-class Dreadnought",
       "faction": "separatists",
       "cardType": "ship",
@@ -619,6 +628,7 @@
       "id": "ai"
     },
     "aj": {
+      "displayName": "Consular Armed Cruiser",
       "cardName": "Consular-class Armed Cruiser",
       "faction": "republic",
       "cardType": "ship",
@@ -637,6 +647,7 @@
       "id": "aj"
     },
     "ak": {
+      "displayName": "Consular Charger c70",
       "cardName": "Consular-class Charger c70",
       "faction": "republic",
       "cardType": "ship",
@@ -655,6 +666,7 @@
       "id": "ak"
     },
     "al": {
+      "displayName": "Victory I",
       "cardName": "Victory I-class Star Destroyer",
       "faction": "republic",
       "cardType": "ship",
@@ -675,6 +687,7 @@
       "id": "al"
     },
     "am": {
+      "displayName": "Accalamator I",
       "cardName": "Acclamator I-class Assault Ship",
       "faction": "republic",
       "cardType": "ship",
@@ -695,6 +708,7 @@
       "id": "am"
     },
     "an": {
+      "displayName": "Acclamator II",
       "cardName": "Acclamator II-class Assault Ship",
       "faction": "republic",
       "cardType": "ship",
@@ -714,6 +728,7 @@
       "id": "an"
     },
     "ao": {
+      "displayName": "Venator I",
       "cardName": "Venator I-class Star Destroyer",
       "faction": "republic",
       "cardType": "ship",
@@ -734,6 +749,7 @@
       "id": "ao"
     },
     "ap": {
+      "displayName": "Venator II",
       "cardName": "Venator II-class Star Destroyer",
       "faction": "republic",
       "cardType": "ship",
@@ -754,6 +770,7 @@
       "id": "ap"
     },
     "aq": {
+      "displayName": "Pelta Medical Frigate",
       "cardName": "Pelta-class Medical Frigate",
       "faction": "republic",
       "cardType": "ship",
@@ -772,6 +789,7 @@
       "id": "aq"
     },
     "ar": {
+      "displayName": "Pelta Transport Frigate",
       "cardName": "Pelta-class Transport Frigate",
       "faction": "republic",
       "cardType": "ship",
@@ -911,6 +929,7 @@
       "id": "ay"
     },
     "ba": {
+      "displayName": "Assault Frigate MkI A",
       "cardName": "Assault Frigate Mark II A",
       "faction": "rebels",
       "cardType": "ship",
@@ -930,6 +949,7 @@
       "id": "ba"
     },
     "bb": {
+      "displayName": "Assault Frigate MkII B",
       "cardName": "Assault Frigate Mark II B",
       "faction": "rebels",
       "cardType": "ship",
@@ -1045,6 +1065,7 @@
       "id": "bg"
     },
     "bh": {
+      "displayName": "Stawhawk Battleship MkI",
       "cardName": "Starhawk-class Battleship Mark I",
       "faction": "rebels",
       "cardType": "ship",
@@ -1066,6 +1087,7 @@
       "id": "bh"
     },
     "bi": {
+      "displayName": "Starhawk Battleship MkII",
       "cardName": "Starhawk-class Battleship Mark II",
       "faction": "rebels",
       "cardType": "ship",
@@ -1126,6 +1148,7 @@
       "id": "bk"
     },
     "bl": {
+      "displayName": "Modified Pelta Command Ship",
       "cardName": "Modified Pelta-class Command Ship",
       "faction": "rebels",
       "cardType": "ship",
@@ -1164,6 +1187,7 @@
       "id": "bm"
     },
     "bn": {
+      "displayName": "Modified Pelta Assault Ship",
       "cardName": "Modified Pelta-class Assault Ship",
       "faction": "rebels",
       "cardType": "ship",
@@ -1203,6 +1227,7 @@
       "id": "bo"
     },
     "bp": {
+      "displayName": "Gozanti Cruisers",
       "cardName": "Gozanti-class Cruisers",
       "faction": "empire",
       "cardType": "ship",
@@ -1219,6 +1244,7 @@
       "id": "bp"
     },
     "bq": {
+      "displayName": "Gozanti Assault Carriers",
       "cardName": "Gozanti-class Assault Carriers",
       "faction": "empire",
       "cardType": "ship",
@@ -1274,6 +1300,7 @@
       "id": "bs"
     },
     "bt": {
+      "displayName": "Raider I",
       "cardName": "Raider I-class Corvette",
       "faction": "empire",
       "cardType": "ship",
@@ -1292,6 +1319,7 @@
       "id": "bt"
     },
     "bu": {
+      "displayName": "Quasar Fire I",
       "cardName": "Quasar Fire I-class Cruiser-Carrier",
       "faction": "empire",
       "cardType": "ship",
@@ -1310,6 +1338,7 @@
       "id": "bu"
     },
     "bv": {
+      "displayName": "Quasar Fire II",
       "cardName": "Quasar Fire II-class Cruiser-Carrier",
       "faction": "empire",
       "cardType": "ship",
@@ -1328,6 +1357,7 @@
       "id": "bv"
     },
     "bw": {
+      "displayName": "Raider II",
       "cardName": "Raider II-class Corvette",
       "faction": "empire",
       "cardType": "ship",
@@ -1346,6 +1376,7 @@
       "id": "bw"
     },
     "bx": {
+      "displayName": "Imperial I",
       "cardName": "Imperial I-class Star Destroyer",
       "faction": "empire",
       "cardType": "ship",
@@ -1366,6 +1397,7 @@
       "id": "bx"
     },
     "by": {
+      "displayName": "Gladiator I",
       "cardName": "Gladiator I-class Star Destroyer",
       "faction": "empire",
       "cardType": "ship",
@@ -1384,6 +1416,7 @@
       "id": "by"
     },
     "ca": {
+      "displayName": "Gladiator II",
       "cardName": "Gladiator II-class Star Destroyer",
       "faction": "empire",
       "cardType": "ship",
@@ -1402,6 +1435,7 @@
       "id": "ca"
     },
     "cb": {
+      "displayName": "ISD Kuat Refit",
       "cardName": "Imperial Star Destroyer Kuat Refit",
       "faction": "empire",
       "cardType": "ship",
@@ -1422,6 +1456,7 @@
       "id": "cb"
     },
     "cc": {
+      "displayName": "Arquitens Light Cruiser",
       "cardName": "Arquitens-class Light Cruiser",
       "faction": "empire",
       "cardType": "ship",
@@ -1439,6 +1474,7 @@
       "id": "cc"
     },
     "cd": {
+      "displayName": "Imperial II",
       "cardName": "Imperial II-class Star Destroyer",
       "faction": "empire",
       "cardType": "ship",
@@ -1459,6 +1495,7 @@
       "id": "cd"
     },
     "ce": {
+      "displayName": "Arquitens Command Cruiser",
       "cardName": "Arquitens-class Command Cruiser",
       "faction": "empire",
       "cardType": "ship",
@@ -1477,6 +1514,7 @@
       "id": "ce"
     },
     "cf": {
+      "displayName": "ISD Cymoon 1 Refit",
       "cardName": "Imperial Star Destroyer Cymoon 1 Refit",
       "faction": "empire",
       "cardType": "ship",
@@ -1497,6 +1535,7 @@
       "id": "cf"
     },
     "cg": {
+      "displayName": "Victory I",
       "cardName": "Victory I-class Star Destroyer",
       "faction": "empire",
       "cardType": "ship",
@@ -1516,6 +1555,7 @@
       "id": "cg"
     },
     "ch": {
+      "displayName": "Onager Testbed",
       "cardName": "Onager-class Testbed",
       "faction": "empire",
       "cardType": "ship",
@@ -1535,6 +1575,7 @@
       "id": "ch"
     },
     "ci": {
+      "displayName": "Victory II",
       "cardName": "Victory II-class Star Destroyer",
       "faction": "empire",
       "cardType": "ship",
@@ -1554,6 +1595,7 @@
       "id": "ci"
     },
     "cj": {
+      "displayName": "Venator II",
       "cardName": "Venator II-class Star Destroyer",
       "faction": "empire",
       "cardType": "ship",
@@ -1574,6 +1616,7 @@
       "id": "cj"
     },
     "ck": {
+      "displayName": "Onager Star Destroyer",
       "cardName": "Onager-class Star Destroyer",
       "faction": "empire",
       "cardType": "ship",
@@ -1593,6 +1636,7 @@
       "id": "ck"
     },
     "cl": {
+      "displayName": "SSD Executor II",
       "cardName": "Executor II-class Star Dreadnought",
       "faction": "empire",
       "cardType": "ship",
@@ -1619,6 +1663,7 @@
       "id": "cl"
     },
     "cm": {
+      "displayName": "SSD Executor I",
       "cardName": "Executor I-class Star Dreadnought",
       "faction": "empire",
       "cardType": "ship",
@@ -1645,6 +1690,7 @@
       "id": "cm"
     },
     "cn": {
+      "displayName": "SSD Assault Prototype",
       "cardName": "Star Dreadnought Assault Prototype",
       "faction": "empire",
       "cardType": "ship",
@@ -1669,6 +1715,7 @@
       "id": "cn"
     },
     "co": {
+      "displayName": "SSD Command Prototype",
       "cardName": "Star Dreadnought Command Prototype",
       "faction": "empire",
       "cardType": "ship",
@@ -1692,6 +1739,7 @@
       "id": "co"
     },
     "cp": {
+      "displayName": "Providence Carrier",
       "cardName": "Providence-class Carrier",
       "faction": "rebels",
       "cardType": "ship",
@@ -2678,7 +2726,7 @@
       "id": "gj"
     },
     "gk": {
-      "cardName": "Darth Vader2",
+      "cardName": "Darth Vader",
       "faction": "empire",
       "points": 25,
       "isUnique": true,

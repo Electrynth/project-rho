@@ -2,9 +2,6 @@ const checkIsMatch = (object, source) => {
     let matchingProperties = 0;
     for (const [key, value] of Object.entries(object)) {
         if (key in source && source[key].includes(value)) matchingProperties += 1;
-        if (key in source) {
-            console.log(value, "is in",source[key], "?");
-        }
     }
     if (matchingProperties === Object.keys(object).length) return true;
     else return false;
