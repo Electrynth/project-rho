@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import _ from 'lodash';
 import styles from 'styles/ListContainer.module.css';
 import robotoCondensed from 'config/font';
 import { useRouter } from 'next/router';
@@ -14,7 +15,7 @@ import CardSelector from './CardSelector';
 import CardButton from 'src/common/CardButton';
 import versions from 'config/versions';
 import cards from 'config/cards';
-import { NoEncryptionRounded } from '@mui/icons-material';
+import { isUpgradeRequirementsMet } from 'src/utility';
 
 function RightPaneHeader({ rightPaneText, isRightPaneFocused, handleSetRightPaneFocus }) {
     return (
@@ -207,6 +208,7 @@ function ListContainer({
     }
 
     const setEligibleUpgradesToAdd = (shipIndex, upgradeIndex) => {
+        const shipCard = cards.cardsById[ships[shipIndex].id];
         const upgradeType = ships[shipIndex].upgradesEquipped[upgradeIndex].upgradeType;
         const newCardComponentProps = [];
         let hasOpenWeaponsTeam = false;
@@ -223,6 +225,7 @@ function ListContainer({
             const card = cards.cardsById[id];
             if (card.faction !== '' && card.faction !== faction) continue;
             if (!card.upgradeSlots.includes(upgradeType)) continue;
+            if (!isUpgradeRequirementsMet(card.requirements, { ...shipCard, faction })) continue;
             if (card.upgradeSlots.length > 1 && !(hasOpenOffensiveRetro && hasOpenWeaponsTeam)) continue;
             newCardComponentProps.push({
                 id,
@@ -236,6 +239,7 @@ function ListContainer({
         handleSetRightPaneFocus(true);
         setIsCardPropsDelimited(true);
     }
+
 
     const setEligibleSquadronsToAdd = () => {
         const newCardComponentProps = [];

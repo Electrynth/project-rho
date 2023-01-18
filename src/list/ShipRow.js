@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { Button, Divider } from '@mui/material';
-import { Add, ContentCopy, Search, Clear } from '@mui/icons-material';
+import { Add, ContentCopy, Search, Clear, SwapHoriz } from '@mui/icons-material';
 import DualHoverButton from 'src/common/DualHoverButton';
 import cards from 'config/cards';
 import robotoCondensed from 'config/font';
@@ -8,13 +8,12 @@ import UpgradeIcon from 'src/common/UpgradeIcon';
 
 function ShipRow({ index, ship, removeShip, setEligibleUpgradesToAdd }) {
     const shipCard = cards.cardsById[ship.id];
-    const upgradePoints = ship.upgradesEquipped.reduce((a, b) => {
-        let points = 0;
-        if (a.id) points += cards.cardsById[a.id];
-        if (b.id) points += cards.cardsById[b.id];
-        return points
-    })
-    
+    let upgradePoints = 0;
+
+    for (let i = 0; i < ship.upgradesEquipped.length; i++) {
+        const upgrade = ship.upgradesEquipped[i];
+        if (upgrade.id) upgradePoints += cards.cardsById[upgrade.id].points;
+    }
     return (
         <div style={{ display: 'flex', flexFlow: 'column nowrap' }}>
             <DualHoverButton
@@ -79,6 +78,90 @@ function ShipRow({ index, ship, removeShip, setEligibleUpgradesToAdd }) {
                     </div>
                 )}
             />
+            <div style={{ display: 'flex', flexFlow: 'column nowrap' }}>
+                {ship.upgradesEquipped.map((upgrade, i) => {
+                    if (!upgrade.id) return undefined;
+                    const upgradeCard = cards.cardsById[upgrade.id];
+                    return (
+                        <div style={{ display: 'flex', flexFlow: 'row nowrap', marginTop: 4 }}>
+                            <span style={{ minWidth: 20 }} />
+                            <UpgradeIcon
+                                key={`${upgrade.upgradeType}_${i}`}
+                                upgradeType={upgrade.upgradeType}
+                                style={{
+                                    height: 22.5,
+                                    width: 22.5,
+                                    zIndex: 1,
+                                    marginTop: 10,
+                                    marginLeft: 5,
+                                    position: 'absolute'
+                                }}
+                            />
+                            <DualHoverButton
+                                buttonActions={(
+                                    <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
+                                        <div
+                                            style={{
+                                                overflow: 'hidden',
+                                                width: 60,
+                                                height: 40,
+                                                borderRadius: 5,
+                                                marginRight: 8
+                                            }}
+                                        >
+                                            <Image
+                                                src={upgradeCard.imageUrl}
+                                                width={180}
+                                                height={259}
+                                                alt={upgradeCard.cardName}
+                                                style={{ margin: '-75px 0px 0px -60px', transform: 'scale(0.45)' }}
+                                            />
+                                        </div>
+                                        <div style={{ fontWeight: 300 }}>{upgradeCard.cardName}</div>
+                                        <span style={{ flexGrow: 1 }} />
+                                        <div style={{ marginRight: 8 }}>{upgradeCard.points}</div>
+                                    </div>
+                                )}
+                                hoverActions={(
+                                    <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, .12)' }}>
+                                        <div
+                                            style={{
+                                                overflow: 'hidden',
+                                                width: 60,
+                                                height: 40,
+                                                borderRadius: 5,
+                                                marginRight: 8
+                                            }}
+                                        >
+                                            <Search
+                                                style={{ zIndex: 1, marginLeft: 20, marginTop: 10, position: 'absolute', cursor: 'pointer' }}
+                                            />
+                                            <Image
+                                                src={upgradeCard.imageUrl}
+                                                width={180}
+                                                height={259}
+                                                alt={upgradeCard.cardName}
+                                                style={{ margin: '-75px 0px 0px -60px', transform: 'scale(0.45)', opacity: '0.5', cursor: 'pointer' }}
+                                            />
+                                        </div>
+                                        <div style={{ fontWeight: 300 }}>{upgradeCard.cardName}</div>
+                                        <span style={{ flexGrow: 1 }} />
+                                        <div style={{ marginRight: 2, display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
+                                            <SwapHoriz
+                                                style={{ marginRight: 4, cursor: 'pointer' }}
+                                            />
+                                            <Clear
+                                                onClick={() => {}}
+                                                style={{ marginRight: 2, cursor: 'pointer' }}
+                                            />
+                                        </div>
+                                    </div>
+                                )}
+                            />
+                        </div>
+                    );
+                })}
+            </div>
             <div style={{ display: 'flex', flexFlow: 'row nowrap', marginTop: 4 }}>
                 <span style={{ minWidth: 15 }} />
                 <DualHoverButton
@@ -100,8 +183,12 @@ function ShipRow({ index, ship, removeShip, setEligibleUpgradesToAdd }) {
                             </Button>
                             <div style={{ flexGrow: 1 }} />
                             {upgradePoints > 0 ? (
-                                <div className={robotoCondensed.className} style={{ marginRight: 2 }}>
-                                    {shipCard.points + upgradePoints}
+                                <div
+                                    style={{ marginRight: 4, border: '1px solid', borderRadius: 5, borderColor: 'rgba(238, 238, 238, 0.5)', padding: 1 }}
+                                >
+                                    <div className={robotoCondensed.className} style={{ paddingLeft: 2, paddingRight: 2 }}>
+                                        {shipCard.points + upgradePoints}
+                                    </div>
                                 </div>
                             ) : undefined}
                         </div>
@@ -113,8 +200,15 @@ function ShipRow({ index, ship, removeShip, setEligibleUpgradesToAdd }) {
                                     <UpgradeIcon
                                         key={`${upgrade.upgradeType}_${i}`}
                                         upgradeType={upgrade.upgradeType}
-                                        style={{ height: 25, width: 25, margin: '0px 2px', marginTop: 2, cursor: 'pointer' }}
-                                        onClick={() => setEligibleUpgradesToAdd(index, i)}
+                                        style={{
+                                            height: 25,
+                                            width: 25,
+                                            margin: '0px 2px',
+                                            marginTop: 2,
+                                            cursor: upgrade.id ? 'auto' : 'pointer',
+                                            opacity: upgrade.id ? 0.1 : 1
+                                        }}
+                                        onClick={upgrade.id ? undefined : () => setEligibleUpgradesToAdd(index, i)}
                                     />
                                 );
                             })}
