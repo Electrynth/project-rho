@@ -78,7 +78,7 @@ function ListContainer({
         const newShip = { id };
         const card = cards.cardsById[id];
         newShip.upgradesEquipped = card.upgradeSlots.map(upgradeType => ({ upgradeType, id: undefined }));
-
+        newShip.hasModification = false;
         if (card.isUnique) setUniques([...uniques, id]);
         setShips([...ships, newShip]);
         handleSetRightPaneFocus(false);
@@ -92,6 +92,7 @@ function ListContainer({
         const upgradeCard = cards.cardsById[id];
 
         if (upgradeCard.isUnique) setUniques([...uniques, id]);
+        if (upgradeCard.isModification) newShip.hasModification = true;
         if (upgradeCard.upgradeSlots.length > 1) {
             const upgradeSlotDict = {};
             for (let i = 0; i < upgradeCard.upgradeSlots.length; i++) {
@@ -195,6 +196,7 @@ function ListContainer({
         const upgrade = newShip.upgradesEquipped[upgradeIndex];
         const upgradeCard = cards.cardsById[upgrade.id];
         const uniqueIdIndex = uniques.indexOf(upgrade.id);
+        if (upgradeCard.isModification) newShip.hasModification = false;
         if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
         if (upgradeCard.upgradeSlots.length > 1) {
             for (let i = 0; i < Object.keys(upgrade.upgradeSlotDict).length; i++) {
@@ -239,6 +241,7 @@ function ListContainer({
     }
 
     const setEligibleUpgradesToAdd = (shipIndex, upgradeIndex) => {
+        const ship = ships[shipIndex];
         const shipCard = cards.cardsById[ships[shipIndex].id];
         const upgradeType = ships[shipIndex].upgradesEquipped[upgradeIndex].upgradeType;
         const newCardComponentProps = [];
@@ -258,10 +261,11 @@ function ListContainer({
             if (!card.upgradeSlots.includes(upgradeType)) continue;
             if (!isUpgradeRequirementsMet(card.requirements, { ...shipCard, faction })) continue;
             if (card.upgradeSlots.length > 1 && !(openUpgradeSlots['weapons team'] > 0 && openUpgradeSlots['offensive retrofit'] > 0)) continue;
+            let isDisabled = ship.hasModification && card.isModification || uniques.includes(id);
             newCardComponentProps.push({
                 id,
                 key: id,
-                isDisabled: uniques.includes(id),
+                isDisabled,
                 onClick: () => addUpgrade(shipIndex, upgradeIndex, id)
             });
         }
