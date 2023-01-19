@@ -4,6 +4,7 @@ import robotoCondensed from 'config/font';
 
 function ListShips({
     ships,
+    commander,
     shipPoints,
     removeShip,
     removeUpgrade,
@@ -16,6 +17,7 @@ function ListShips({
                 <ShipRow
                     key={ship.id}
                     ship={ship}
+                    commander={commander}
                     index={index}
                     shipPoints={shipPoints}
                     removeShip={removeShip}

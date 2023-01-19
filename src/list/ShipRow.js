@@ -6,7 +6,7 @@ import cards from 'config/cards';
 import robotoCondensed from 'config/font';
 import UpgradeIcon from 'src/common/UpgradeIcon';
 
-function ShipRow({ index, ship, removeShip, removeUpgrade, setEligibleUpgradesToAdd }) {
+function ShipRow({ index, ship, commander, removeShip, removeUpgrade, setEligibleUpgradesToAdd }) {
     const shipCard = cards.cardsById[ship.id];
     let upgradePoints = 0;
 
@@ -196,34 +196,38 @@ function ShipRow({ index, ship, removeShip, removeUpgrade, setEligibleUpgradesTo
                     hoverActions={(
                         <div style={{ display: 'flex', flexFlow: 'row nowrap', height: 40, alignItems: 'center', padding: 5, borderRadius: 5, backgroundColor: 'rgba(0, 0, 0, .12)' }}>
                             {ship.upgradesEquipped.map((upgrade, i) => {
-                                if (upgrade.id === true) {
-                                    <UpgradeIcon
-                                        key={`${upgrade.upgradeType}_${i}`}
-                                        upgradeType={upgrade.upgradeType}
-                                        style={{
-                                            height: 25,
-                                            width: 25,
-                                            margin: '0px 2px',
-                                            marginTop: 2,
-                                            opacity: 0.1
-                                        }}
-                                    />
+                                console.log(commander, upgrade.upgradeType);
+                                if (upgrade.id === true || upgrade.upgradeType === 'commander' && commander !== '') {
+                                    return (
+                                        <UpgradeIcon
+                                            key={`${upgrade.upgradeType}_${i}`}
+                                            upgradeType={upgrade.upgradeType}
+                                            style={{
+                                                height: 25,
+                                                width: 25,
+                                                margin: '0px 2px',
+                                                marginTop: 2,
+                                                opacity: 0.1
+                                            }}
+                                        />
+                                    );
+                                } else {
+                                    return (
+                                        <UpgradeIcon
+                                            key={`${upgrade.upgradeType}_${i}`}
+                                            upgradeType={upgrade.upgradeType}
+                                            style={{
+                                                height: 25,
+                                                width: 25,
+                                                margin: '0px 2px',
+                                                marginTop: 2,
+                                                cursor: upgrade.id ? 'auto' : 'pointer',
+                                                opacity: upgrade.id ? 0.1 : 1
+                                            }}
+                                            onClick={upgrade.id ? undefined : () => setEligibleUpgradesToAdd(index, i)}
+                                        />
+                                    );
                                 }
-                                return (
-                                    <UpgradeIcon
-                                        key={`${upgrade.upgradeType}_${i}`}
-                                        upgradeType={upgrade.upgradeType}
-                                        style={{
-                                            height: 25,
-                                            width: 25,
-                                            margin: '0px 2px',
-                                            marginTop: 2,
-                                            cursor: upgrade.id ? 'auto' : 'pointer',
-                                            opacity: upgrade.id ? 0.1 : 1
-                                        }}
-                                        onClick={upgrade.id ? undefined : () => setEligibleUpgradesToAdd(index, i)}
-                                    />
-                                );
                             })}
                         </div>
                     )}

@@ -92,6 +92,7 @@ function ListContainer({
         const upgradeCard = cards.cardsById[id];
 
         if (upgradeCard.isUnique) setUniques([...uniques, id]);
+        if (upgradeCard.upgradeSlots.includes('commander')) setCommander(id);
         if (upgradeCard.isModification) newShip.hasModification = true;
         if (upgradeCard.upgradeSlots.length > 1) {
             const upgradeSlotDict = {};
@@ -115,8 +116,6 @@ function ListContainer({
         setCardComponentProps([]);
         setRightPaneText('');
     }
-
-    console.log(ships);
 
     const addSquadron = (id) => {
         const newSquadrons = [...squadrons];
@@ -181,7 +180,9 @@ function ListContainer({
         for (let i = 0; i < ship.upgradesEquipped.length; i++) {
             const upgrade = ship.upgradesEquipped[i];
             const upgradeId = upgrade.id;
-            if (upgradeId && newUniques.indexOf(upgradeId)) newUniques.splice(uniqueIdIndex, 1);
+            const upgradeCard = cards.cardsById[upgradeId];
+            if (upgradeId && upgradeCard.upgradeSlots.includes('commander')) setCommander('');
+            if (upgradeId && newUniques.indexOf(upgradeId) > -1) newUniques.splice(uniqueIdIndex, 1);
         }
         const newShips = [...ships];
         newShips.splice(index, 1);
@@ -198,6 +199,7 @@ function ListContainer({
         const uniqueIdIndex = uniques.indexOf(upgrade.id);
         if (upgradeCard.isModification) newShip.hasModification = false;
         if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
+        if (upgradeCard.upgradeSlots.includes('commander')) setCommander('');
         if (upgradeCard.upgradeSlots.length > 1) {
             for (let i = 0; i < Object.keys(upgrade.upgradeSlotDict).length; i++) {
                 const key = Object.keys(upgrade.upgradeSlotDict)[i];
@@ -378,6 +380,7 @@ function ListContainer({
                 />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListShips
+                    commander={commander}
                     ships={ships}
                     shipPoints={shipPoints}
                     removeShip={removeShip}
