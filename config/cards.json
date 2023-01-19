@@ -25,6 +25,7 @@
     "aw",
     "ax",
     "ay",
+    "az",
     "ba",
     "bb",
     "bc",
@@ -50,6 +51,7 @@
     "bw",
     "bx",
     "by",
+    "bz",
     "ca",
     "cb",
     "cc",
@@ -63,11 +65,17 @@
     "ck",
     "cl",
     "cm",
-    "cn",
-    "co",
-    "cp"
+    "cn"
   ],
   "upgradeIdList": [
+    "hw",
+    "hx",
+    "hy",
+    "hz",
+    "ia",
+    "ib",
+    "ic",
+    "id",
     "ie",
     "if",
     "ig",
@@ -89,6 +97,7 @@
     "iw",
     "ix",
     "iy",
+    "iz",
     "ja",
     "jb",
     "jc",
@@ -114,6 +123,7 @@
     "jw",
     "jx",
     "jy",
+    "jz",
     "ka",
     "kb",
     "kc",
@@ -139,6 +149,7 @@
     "kw",
     "kx",
     "ky",
+    "kz",
     "la",
     "lb",
     "lc",
@@ -164,6 +175,7 @@
     "lw",
     "lx",
     "ly",
+    "lz",
     "ma",
     "mb",
     "mc",
@@ -189,6 +201,7 @@
     "mw",
     "mx",
     "my",
+    "mz",
     "na",
     "nb",
     "nc",
@@ -214,6 +227,7 @@
     "nw",
     "nx",
     "ny",
+    "nz",
     "oa",
     "ob",
     "oc",
@@ -239,6 +253,7 @@
     "ow",
     "ox",
     "oy",
+    "oz",
     "pa",
     "pb",
     "pc",
@@ -264,6 +279,7 @@
     "pw",
     "px",
     "py",
+    "pz",
     "qa",
     "qb",
     "qc",
@@ -289,6 +305,7 @@
     "qw",
     "qx",
     "qy",
+    "qz",
     "ra",
     "rb",
     "rc",
@@ -327,29 +344,13 @@
     "sj",
     "sk",
     "sl",
-    "sm",
-    "sn",
-    "so",
-    "sp",
-    "sq",
-    "sr",
-    "ss",
-    "st",
-    "su",
-    "sv",
-    "sw",
-    "sx",
-    "sy",
-    "sz",
-    "ta",
-    "tb",
-    "tc",
-    "td",
-    "te",
-    "tf",
-    "tg"
+    "sm"
   ],
   "squadronIdList": [
+    "dy",
+    "dz",
+    "ea",
+    "eb",
     "ec",
     "ed",
     "ee",
@@ -373,6 +374,7 @@
     "ew",
     "ex",
     "ey",
+    "ez",
     "fa",
     "fb",
     "fc",
@@ -398,6 +400,7 @@
     "fw",
     "fx",
     "fy",
+    "fz",
     "ga",
     "gb",
     "gc",
@@ -423,6 +426,7 @@
     "gw",
     "gx",
     "gy",
+    "gz",
     "ha",
     "hb",
     "hc",
@@ -444,16 +448,11 @@
     "hs",
     "ht",
     "hu",
-    "hv",
-    "hw",
-    "hx",
-    "hy",
-    "ia",
-    "ib",
-    "ic",
-    "id"
+    "hv"
   ],
   "objectiveIdList": [
+    "co",
+    "cp",
     "cq",
     "cr",
     "cs",
@@ -463,6 +462,7 @@
     "cw",
     "cx",
     "cy",
+    "cz",
     "da",
     "db",
     "dc",
@@ -486,10 +486,7 @@
     "du",
     "dv",
     "dw",
-    "dx",
-    "dy",
-    "ea",
-    "eb"
+    "dx"
   ],
   "cardsById": {
     "aa": {
@@ -972,7 +969,7 @@
       ],
       "id": "ay"
     },
-    "ba": {
+    "az": {
       "displayName": "Assault Frigate MkI A",
       "cardName": "Assault Frigate Mark II A",
       "faction": "rebels",
@@ -990,9 +987,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "ba"
+      "id": "az"
     },
-    "bb": {
+    "ba": {
       "displayName": "Assault Frigate MkII B",
       "cardName": "Assault Frigate Mark II B",
       "faction": "rebels",
@@ -1010,9 +1007,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "bb"
+      "id": "ba"
     },
-    "bc": {
+    "bb": {
       "cardName": "MC80 Command Cruiser",
       "faction": "rebels",
       "cardType": "ship",
@@ -1030,9 +1027,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "bc"
+      "id": "bb"
     },
-    "bd": {
+    "bc": {
       "cardName": "Nebulon-B Escort Frigate",
       "faction": "rebels",
       "cardType": "ship",
@@ -1047,9 +1044,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "bd"
+      "id": "bc"
     },
-    "be": {
+    "bd": {
       "cardName": "MC80 Assault Cruiser",
       "faction": "rebels",
       "cardType": "ship",
@@ -1067,9 +1064,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "be"
+      "id": "bd"
     },
-    "bf": {
+    "be": {
       "cardName": "MC30c Scout Frigate",
       "faction": "rebels",
       "cardType": "ship",
@@ -1086,9 +1083,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "bf"
+      "id": "be"
     },
-    "bg": {
+    "bf": {
       "cardName": "MC80 Star Cruiser",
       "faction": "rebels",
       "cardType": "ship",
@@ -1106,9 +1103,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "bg"
+      "id": "bf"
     },
-    "bh": {
+    "bg": {
       "displayName": "Stawhawk Battleship MkI",
       "cardName": "Starhawk-class Battleship Mark I",
       "faction": "rebels",
@@ -1128,9 +1125,9 @@
         "super weapon",
         "title"
       ],
-      "id": "bh"
+      "id": "bg"
     },
-    "bi": {
+    "bh": {
       "displayName": "Starhawk Battleship MkII",
       "cardName": "Starhawk-class Battleship Mark II",
       "faction": "rebels",
@@ -1150,9 +1147,9 @@
         "super weapon",
         "title"
       ],
-      "id": "bi"
+      "id": "bh"
     },
-    "bj": {
+    "bi": {
       "cardName": "MC30c Torpedo Frigate",
       "faction": "rebels",
       "cardType": "ship",
@@ -1169,9 +1166,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "bj"
+      "id": "bi"
     },
-    "bk": {
+    "bj": {
       "cardName": "MC80 Battle Cruiser",
       "faction": "rebels",
       "cardType": "ship",
@@ -1189,9 +1186,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "bk"
+      "id": "bj"
     },
-    "bl": {
+    "bk": {
       "displayName": "Modified Pelta Command Ship",
       "cardName": "Modified Pelta-class Command Ship",
       "faction": "rebels",
@@ -1208,9 +1205,9 @@
         "offensive retrofit",
         "title"
       ],
-      "id": "bl"
+      "id": "bk"
     },
-    "bm": {
+    "bl": {
       "cardName": "MC75 Ordnance Cruiser",
       "faction": "rebels",
       "cardType": "ship",
@@ -1228,9 +1225,9 @@
         "ordnance",
         "title"
       ],
-      "id": "bm"
+      "id": "bl"
     },
-    "bn": {
+    "bm": {
       "displayName": "Modified Pelta Assault Ship",
       "cardName": "Modified Pelta-class Assault Ship",
       "faction": "rebels",
@@ -1247,9 +1244,9 @@
         "ordnance",
         "title"
       ],
-      "id": "bn"
+      "id": "bm"
     },
-    "bo": {
+    "bn": {
       "cardName": "MC75 Armored Cruiser",
       "faction": "rebels",
       "cardType": "ship",
@@ -1268,9 +1265,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "bo"
+      "id": "bn"
     },
-    "bp": {
+    "bo": {
       "displayName": "Gozanti Cruisers",
       "cardName": "Gozanti-class Cruisers",
       "faction": "empire",
@@ -1285,9 +1282,9 @@
         "offensive retrofit",
         "title"
       ],
-      "id": "bp"
+      "id": "bo"
     },
-    "bq": {
+    "bp": {
       "displayName": "Gozanti Assault Carriers",
       "cardName": "Gozanti-class Assault Carriers",
       "faction": "empire",
@@ -1302,9 +1299,9 @@
         "offensive retrofit",
         "title"
       ],
-      "id": "bq"
+      "id": "bp"
     },
-    "br": {
+    "bq": {
       "cardName": "Interdictor Suppression Refit",
       "faction": "empire",
       "cardType": "ship",
@@ -1322,9 +1319,9 @@
         "ion cannons",
         "title"
       ],
-      "id": "br"
+      "id": "bq"
     },
-    "bs": {
+    "br": {
       "cardName": "Interdictor Combat Refit",
       "faction": "empire",
       "cardType": "ship",
@@ -1341,9 +1338,9 @@
         "ion cannons",
         "title"
       ],
-      "id": "bs"
+      "id": "br"
     },
-    "bt": {
+    "bs": {
       "displayName": "Raider I",
       "cardName": "Raider I-class Corvette",
       "faction": "empire",
@@ -1360,9 +1357,9 @@
         "ordnance",
         "title"
       ],
-      "id": "bt"
+      "id": "bs"
     },
-    "bu": {
+    "bt": {
       "displayName": "Quasar Fire I",
       "cardName": "Quasar Fire I-class Cruiser-Carrier",
       "faction": "empire",
@@ -1379,9 +1376,9 @@
         "offensive retrofit",
         "title"
       ],
-      "id": "bu"
+      "id": "bt"
     },
-    "bv": {
+    "bu": {
       "displayName": "Quasar Fire II",
       "cardName": "Quasar Fire II-class Cruiser-Carrier",
       "faction": "empire",
@@ -1398,9 +1395,9 @@
         "offensive retrofit",
         "title"
       ],
-      "id": "bv"
+      "id": "bu"
     },
-    "bw": {
+    "bv": {
       "displayName": "Raider II",
       "cardName": "Raider II-class Corvette",
       "faction": "empire",
@@ -1417,9 +1414,9 @@
         "ion cannons",
         "title"
       ],
-      "id": "bw"
+      "id": "bv"
     },
-    "bx": {
+    "bw": {
       "displayName": "Imperial I",
       "cardName": "Imperial I-class Star Destroyer",
       "faction": "empire",
@@ -1438,9 +1435,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "bx"
+      "id": "bw"
     },
-    "by": {
+    "bx": {
       "displayName": "Gladiator I",
       "cardName": "Gladiator I-class Star Destroyer",
       "faction": "empire",
@@ -1457,9 +1454,9 @@
         "ordnance",
         "title"
       ],
-      "id": "by"
+      "id": "bx"
     },
-    "ca": {
+    "by": {
       "displayName": "Gladiator II",
       "cardName": "Gladiator II-class Star Destroyer",
       "faction": "empire",
@@ -1476,9 +1473,9 @@
         "ordnance",
         "title"
       ],
-      "id": "ca"
+      "id": "by"
     },
-    "cb": {
+    "bz": {
       "displayName": "ISD Kuat Refit",
       "cardName": "Imperial Star Destroyer Kuat Refit",
       "faction": "empire",
@@ -1497,9 +1494,9 @@
         "ordnance",
         "title"
       ],
-      "id": "cb"
+      "id": "bz"
     },
-    "cc": {
+    "ca": {
       "displayName": "Arquitens Light Cruiser",
       "cardName": "Arquitens-class Light Cruiser",
       "faction": "empire",
@@ -1515,9 +1512,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "cc"
+      "id": "ca"
     },
-    "cd": {
+    "cb": {
       "displayName": "Imperial II",
       "cardName": "Imperial II-class Star Destroyer",
       "faction": "empire",
@@ -1536,9 +1533,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "cd"
+      "id": "cb"
     },
-    "ce": {
+    "cc": {
       "displayName": "Arquitens Command Cruiser",
       "cardName": "Arquitens-class Command Cruiser",
       "faction": "empire",
@@ -1555,9 +1552,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "ce"
+      "id": "cc"
     },
-    "cf": {
+    "cd": {
       "displayName": "ISD Cymoon 1 Refit",
       "cardName": "Imperial Star Destroyer Cymoon 1 Refit",
       "faction": "empire",
@@ -1576,9 +1573,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "cf"
+      "id": "cd"
     },
-    "cg": {
+    "ce": {
       "displayName": "Victory I",
       "cardName": "Victory I-class Star Destroyer",
       "faction": "empire",
@@ -1596,9 +1593,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "cg"
+      "id": "ce"
     },
-    "ch": {
+    "cf": {
       "displayName": "Onager Testbed",
       "cardName": "Onager-class Testbed",
       "faction": "empire",
@@ -1616,9 +1613,9 @@
         "super weapon",
         "title"
       ],
-      "id": "ch"
+      "id": "cf"
     },
-    "ci": {
+    "cg": {
       "displayName": "Victory II",
       "cardName": "Victory II-class Star Destroyer",
       "faction": "empire",
@@ -1636,9 +1633,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "ci"
+      "id": "cg"
     },
-    "cj": {
+    "ch": {
       "displayName": "Venator II",
       "cardName": "Venator II-class Star Destroyer",
       "faction": "empire",
@@ -1657,9 +1654,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "cj"
+      "id": "ch"
     },
-    "ck": {
+    "ci": {
       "displayName": "Onager Star Destroyer",
       "cardName": "Onager-class Star Destroyer",
       "faction": "empire",
@@ -1677,9 +1674,9 @@
         "super weapon",
         "title"
       ],
-      "id": "ck"
+      "id": "ci"
     },
-    "cl": {
+    "cj": {
       "displayName": "SSD Executor II",
       "cardName": "Executor II-class Star Dreadnought",
       "faction": "empire",
@@ -1704,9 +1701,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "cl"
+      "id": "cj"
     },
-    "cm": {
+    "ck": {
       "displayName": "SSD Executor I",
       "cardName": "Executor I-class Star Dreadnought",
       "faction": "empire",
@@ -1731,9 +1728,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "cm"
+      "id": "ck"
     },
-    "cn": {
+    "cl": {
       "displayName": "SSD Assault Prototype",
       "cardName": "Star Dreadnought Assault Prototype",
       "faction": "empire",
@@ -1756,9 +1753,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "cn"
+      "id": "cl"
     },
-    "co": {
+    "cm": {
       "displayName": "SSD Command Prototype",
       "cardName": "Star Dreadnought Command Prototype",
       "faction": "empire",
@@ -1780,9 +1777,9 @@
         "turbolasers",
         "title"
       ],
-      "id": "co"
+      "id": "cm"
     },
-    "cp": {
+    "cn": {
       "displayName": "Providence Carrier",
       "cardName": "Providence-class Carrier",
       "faction": "rebels",
@@ -1803,225 +1800,225 @@
         "support team",
         "title"
       ],
-      "id": "cp"
+      "id": "cn"
     },
-    "cq": {
+    "co": {
       "cardName": "Advanced Gunnery",
       "cardType": "objective",
       "objectType": "assault",
-      "id": "cq"
+      "id": "co"
     },
-    "cr": {
+    "cp": {
       "cardName": "Abandoned Mining Facility",
       "cardType": "objective",
       "objectType": "defense",
-      "id": "cr"
+      "id": "cp"
     },
-    "cs": {
+    "cq": {
       "cardName": "Dangerous Territory",
       "cardType": "objective",
       "objectType": "navigation",
+      "id": "cq"
+    },
+    "cr": {
+      "cardName": "Blockade Run",
+      "cardType": "objective",
+      "objectType": "assault",
+      "id": "cr"
+    },
+    "cs": {
+      "cardName": "Close-Range Intel Scan",
+      "cardType": "objective",
+      "objectType": "assault",
       "id": "cs"
     },
     "ct": {
-      "cardName": "Blockade Run",
+      "cardName": "Ion Storm",
       "cardType": "objective",
       "objectType": "assault",
       "id": "ct"
     },
     "cu": {
-      "cardName": "Close-Range Intel Scan",
+      "cardName": "Marked for Destruction",
       "cardType": "objective",
       "objectType": "assault",
       "id": "cu"
     },
     "cv": {
-      "cardName": "Ion Storm",
+      "cardName": "Most Wanted",
       "cardType": "objective",
       "objectType": "assault",
       "id": "cv"
     },
     "cw": {
-      "cardName": "Marked for Destruction",
+      "cardName": "Opening Salvo",
       "cardType": "objective",
       "objectType": "assault",
       "id": "cw"
     },
     "cx": {
-      "cardName": "Most Wanted",
+      "cardName": "Precision Strike",
       "cardType": "objective",
       "objectType": "assault",
       "id": "cx"
     },
     "cy": {
-      "cardName": "Opening Salvo",
+      "cardName": "Rift Assault ",
       "cardType": "objective",
       "objectType": "assault",
       "id": "cy"
     },
+    "cz": {
+      "cardName": "Station Assault",
+      "cardType": "objective",
+      "objectType": "assault",
+      "id": "cz"
+    },
     "da": {
-      "cardName": "Precision Strike",
+      "cardName": "Surprise Attack",
       "cardType": "objective",
       "objectType": "assault",
       "id": "da"
     },
     "db": {
-      "cardName": "Rift Assault ",
+      "cardName": "Targeting Beacons",
       "cardType": "objective",
       "objectType": "assault",
       "id": "db"
     },
     "dc": {
-      "cardName": "Station Assault",
+      "cardName": "Asteroid Tactics",
       "cardType": "objective",
-      "objectType": "assault",
+      "objectType": "defense",
       "id": "dc"
     },
     "dd": {
-      "cardName": "Surprise Attack",
+      "cardName": "Capture the VIP",
       "cardType": "objective",
-      "objectType": "assault",
+      "objectType": "defense",
       "id": "dd"
     },
     "de": {
-      "cardName": "Targeting Beacons",
+      "cardName": "Contested Outpost",
       "cardType": "objective",
-      "objectType": "assault",
+      "objectType": "defense",
       "id": "de"
     },
     "df": {
-      "cardName": "Asteroid Tactics",
+      "cardName": "Fighter Ambush",
       "cardType": "objective",
       "objectType": "defense",
       "id": "df"
     },
     "dg": {
-      "cardName": "Capture the VIP",
+      "cardName": "Fire Lanes",
       "cardType": "objective",
       "objectType": "defense",
       "id": "dg"
     },
     "dh": {
-      "cardName": "Contested Outpost",
+      "cardName": "Fleet Ambush",
       "cardType": "objective",
       "objectType": "defense",
       "id": "dh"
     },
     "di": {
-      "cardName": "Fighter Ambush",
+      "cardName": "Fleet in Being",
       "cardType": "objective",
       "objectType": "defense",
       "id": "di"
     },
     "dj": {
-      "cardName": "Fire Lanes",
+      "cardName": "Hyperspace Assault",
       "cardType": "objective",
       "objectType": "defense",
       "id": "dj"
     },
     "dk": {
-      "cardName": "Fleet Ambush",
+      "cardName": "Jamming Barrier",
       "cardType": "objective",
       "objectType": "defense",
       "id": "dk"
     },
     "dl": {
-      "cardName": "Fleet in Being",
+      "cardName": "Planetary Ion Cannon",
       "cardType": "objective",
       "objectType": "defense",
       "id": "dl"
     },
     "dm": {
-      "cardName": "Hyperspace Assault",
+      "cardName": "Rift Ambush",
       "cardType": "objective",
       "objectType": "defense",
       "id": "dm"
     },
     "dn": {
-      "cardName": "Jamming Barrier",
+      "cardName": "Doomed Station",
       "cardType": "objective",
-      "objectType": "defense",
+      "objectType": "navigation",
       "id": "dn"
     },
     "do": {
-      "cardName": "Planetary Ion Cannon",
+      "cardName": "Hyperspace Migration",
       "cardType": "objective",
-      "objectType": "defense",
+      "objectType": "navigation",
       "id": "do"
     },
     "dp": {
-      "cardName": "Rift Ambush",
+      "cardName": "Infested Fields ",
       "cardType": "objective",
-      "objectType": "defense",
+      "objectType": "navigation",
       "id": "dp"
     },
     "dq": {
-      "cardName": "Doomed Station",
+      "cardName": "Intel Sweep",
       "cardType": "objective",
       "objectType": "navigation",
       "id": "dq"
     },
     "dr": {
-      "cardName": "Hyperspace Migration",
+      "cardName": "Minefields",
       "cardType": "objective",
       "objectType": "navigation",
       "id": "dr"
     },
     "ds": {
-      "cardName": "Infested Fields ",
+      "cardName": "Navigational Hazards",
       "cardType": "objective",
       "objectType": "navigation",
       "id": "ds"
     },
     "dt": {
-      "cardName": "Intel Sweep",
+      "cardName": "Salvage Run",
       "cardType": "objective",
       "objectType": "navigation",
       "id": "dt"
     },
     "du": {
-      "cardName": "Minefields",
+      "cardName": "Sensor Net",
       "cardType": "objective",
       "objectType": "navigation",
       "id": "du"
     },
     "dv": {
-      "cardName": "Navigational Hazards",
+      "cardName": "Solar Corona",
       "cardType": "objective",
       "objectType": "navigation",
       "id": "dv"
     },
     "dw": {
-      "cardName": "Salvage Run",
+      "cardName": "Superior Positions",
       "cardType": "objective",
       "objectType": "navigation",
       "id": "dw"
     },
     "dx": {
-      "cardName": "Sensor Net",
+      "cardName": "Volatile Deposits",
       "cardType": "objective",
       "objectType": "navigation",
       "id": "dx"
     },
     "dy": {
-      "cardName": "Solar Corona",
-      "cardType": "objective",
-      "objectType": "navigation",
-      "id": "dy"
-    },
-    "ea": {
-      "cardName": "Superior Positions",
-      "cardType": "objective",
-      "objectType": "navigation",
-      "id": "ea"
-    },
-    "eb": {
-      "cardName": "Volatile Deposits",
-      "cardType": "objective",
-      "objectType": "navigation",
-      "id": "eb"
-    },
-    "ec": {
       "cardName": "Biggs Darklighter",
       "faction": "rebels",
       "points": 19,
@@ -2032,9 +2029,9 @@
       ],
       "imageUrl": "https://i.imgur.com/zLMC2Fc.png",
       "cardType": "squadron",
-      "id": "ec"
+      "id": "dy"
     },
-    "ed": {
+    "dz": {
       "cardName": "Hera Syndulla",
       "faction": "rebels",
       "points": 28,
@@ -2045,9 +2042,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/Valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/rebel/vcx/hera_card.jpg",
       "cardType": "squadron",
-      "id": "ed"
+      "id": "dz"
     },
-    "ee": {
+    "ea": {
       "cardName": "Hera Syndulla2",
       "faction": "rebels",
       "points": 23,
@@ -2058,9 +2055,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/Valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/rebel/xwing/hera_card.jpg",
       "cardType": "squadron",
-      "id": "ee"
+      "id": "ea"
     },
-    "ef": {
+    "eb": {
       "cardName": "A-Wing Squadron",
       "faction": "rebels",
       "points": 11,
@@ -2070,9 +2067,9 @@
       ],
       "imageUrl": "https://i.imgur.com/JikzQGo.png",
       "cardType": "squadron",
-      "id": "ef"
+      "id": "eb"
     },
-    "eg": {
+    "ec": {
       "cardName": "X-Wing Squadron",
       "faction": "rebels",
       "points": 13,
@@ -2083,9 +2080,9 @@
       ],
       "imageUrl": "https://i.imgur.com/d5QuMBy.png",
       "cardType": "squadron",
-      "id": "eg"
+      "id": "ec"
     },
-    "eh": {
+    "ed": {
       "cardName": "Y-Wing Squadron",
       "faction": "rebels",
       "points": 10,
@@ -2096,9 +2093,9 @@
       ],
       "imageUrl": "https://i.imgur.com/20kwNNs.png",
       "cardType": "squadron",
-      "id": "eh"
+      "id": "ed"
     },
-    "ei": {
+    "ee": {
       "cardName": "B-Wing Squadron",
       "faction": "rebels",
       "points": 14,
@@ -2108,9 +2105,9 @@
       ],
       "imageUrl": "https://i.imgur.com/bB11RGw.png",
       "cardType": "squadron",
-      "id": "ei"
+      "id": "ee"
     },
-    "ej": {
+    "ef": {
       "cardName": "Green Squadron",
       "faction": "rebels",
       "points": 12,
@@ -2121,9 +2118,9 @@
       ],
       "imageUrl": "https://i.imgur.com/a00ZFfc.png",
       "cardType": "squadron",
-      "id": "ej"
+      "id": "ef"
     },
-    "ek": {
+    "eg": {
       "cardName": "Rogue Squadron",
       "faction": "rebels",
       "points": 14,
@@ -2134,9 +2131,9 @@
       ],
       "imageUrl": "https://i.imgur.com/A1IByHc.png",
       "cardType": "squadron",
-      "id": "ek"
+      "id": "eg"
     },
-    "el": {
+    "eh": {
       "cardName": "Gold Squadron",
       "faction": "rebels",
       "points": 12,
@@ -2146,9 +2143,9 @@
       ],
       "imageUrl": "https://i.imgur.com/m6efvmr.png",
       "cardType": "squadron",
-      "id": "el"
+      "id": "eh"
     },
-    "em": {
+    "ei": {
       "cardName": "Dagger Squadron",
       "faction": "rebels",
       "points": 15,
@@ -2159,9 +2156,9 @@
       ],
       "imageUrl": "https://i.imgur.com/41kkBy6.png",
       "cardType": "squadron",
-      "id": "em"
+      "id": "ei"
     },
-    "en": {
+    "ej": {
       "cardName": "E-Wing Squadron",
       "faction": "rebels",
       "points": 15,
@@ -2172,9 +2169,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/rebel/ewing/base_card.jpg",
       "cardType": "squadron",
-      "id": "en"
+      "id": "ej"
     },
-    "eo": {
+    "ek": {
       "cardName": "HWK-290",
       "faction": "rebels",
       "points": 12,
@@ -2185,9 +2182,9 @@
       ],
       "imageUrl": "https://i.imgur.com/Zm7888b.png",
       "cardType": "squadron",
-      "id": "eo"
+      "id": "ek"
     },
-    "ep": {
+    "el": {
       "cardName": "Lancer-class Pursuit Craft",
       "faction": "rebels",
       "points": 15,
@@ -2199,9 +2196,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/rebel/lancer/base_card.jpg",
       "cardType": "squadron",
-      "id": "ep"
+      "id": "el"
     },
-    "eq": {
+    "em": {
       "cardName": "Scurrg H-6 Bomber",
       "faction": "rebels",
       "points": 16,
@@ -2213,9 +2210,9 @@
       ],
       "imageUrl": "https://i.imgur.com/QvhGpkj.png",
       "cardType": "squadron",
-      "id": "eq"
+      "id": "em"
     },
-    "er": {
+    "en": {
       "cardName": "VCX-100 Freighter",
       "faction": "rebels",
       "points": 15,
@@ -2227,9 +2224,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/rebel/vcx/base_card.jpg",
       "cardType": "squadron",
-      "id": "er"
+      "id": "en"
     },
-    "es": {
+    "eo": {
       "cardName": "YT-1300",
       "faction": "rebels",
       "points": 13,
@@ -2240,9 +2237,9 @@
       ],
       "imageUrl": "https://i.imgur.com/pFKaprO.png",
       "cardType": "squadron",
-      "id": "es"
+      "id": "eo"
     },
-    "et": {
+    "ep": {
       "cardName": "YT-2400",
       "faction": "rebels",
       "points": 16,
@@ -2252,9 +2249,9 @@
       ],
       "imageUrl": "https://i.imgur.com/Ui3LTlu.png",
       "cardType": "squadron",
-      "id": "et"
+      "id": "ep"
     },
-    "eu": {
+    "eq": {
       "cardName": "Z-95 Headhunter Squadron",
       "faction": "rebels",
       "points": 7,
@@ -2264,9 +2261,9 @@
       ],
       "imageUrl": "https://i.imgur.com/o3ydY6G.png",
       "cardType": "squadron",
-      "id": "eu"
+      "id": "eq"
     },
-    "ev": {
+    "er": {
       "cardName": "Corran Horn",
       "faction": "rebels",
       "points": 22,
@@ -2278,9 +2275,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/rebel/ewing/corran_card.jpg",
       "cardType": "squadron",
-      "id": "ev"
+      "id": "er"
     },
-    "ew": {
+    "es": {
       "cardName": "Dash Rendar",
       "faction": "rebels",
       "points": 24,
@@ -2291,9 +2288,9 @@
       ],
       "imageUrl": "https://i.imgur.com/7TfYFsY.png",
       "cardType": "squadron",
-      "id": "ew"
+      "id": "es"
     },
-    "ex": {
+    "et": {
       "cardName": "\"Dutch\" Vander",
       "faction": "rebels",
       "points": 16,
@@ -2304,9 +2301,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/rebel/ywing/dutch_card.jpg",
       "cardType": "squadron",
-      "id": "ex"
+      "id": "et"
     },
-    "ey": {
+    "eu": {
       "cardName": "Han Solo",
       "faction": "rebels",
       "points": 26,
@@ -2317,9 +2314,9 @@
       ],
       "imageUrl": "https://i.imgur.com/8ni1bSl.png",
       "cardType": "squadron",
-      "id": "ey"
+      "id": "eu"
     },
-    "fa": {
+    "ev": {
       "cardName": "Jan Ors",
       "faction": "rebels",
       "points": 19,
@@ -2330,9 +2327,9 @@
       ],
       "imageUrl": "https://i.imgur.com/NQqAVr8.png",
       "cardType": "squadron",
-      "id": "fa"
+      "id": "ev"
     },
-    "fb": {
+    "ew": {
       "cardName": "Kanan Jarrus",
       "faction": "rebels",
       "points": 19,
@@ -2344,9 +2341,9 @@
       ],
       "imageUrl": "https://i.imgur.com/Cpp6DXG.png",
       "cardType": "squadron",
-      "id": "fb"
+      "id": "ew"
     },
-    "fc": {
+    "ex": {
       "cardName": "Ketsu Onyo",
       "faction": "rebels",
       "points": 22,
@@ -2358,9 +2355,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/rebel/lancer/ketsu_card.jpg",
       "cardType": "squadron",
-      "id": "fc"
+      "id": "ex"
     },
-    "fd": {
+    "ey": {
       "cardName": "Keyan Farlander",
       "faction": "rebels",
       "points": 20,
@@ -2370,9 +2367,9 @@
       ],
       "imageUrl": "https://i.imgur.com/r4bx4xg.png",
       "cardType": "squadron",
-      "id": "fd"
+      "id": "ey"
     },
-    "fe": {
+    "ez": {
       "cardName": "Lando Calrissian",
       "faction": "rebels",
       "points": 23,
@@ -2383,9 +2380,9 @@
       ],
       "imageUrl": "https://i.imgur.com/Xk43ysd.png",
       "cardType": "squadron",
-      "id": "fe"
+      "id": "ez"
     },
-    "ff": {
+    "fa": {
       "cardName": "Lieutenant Blount",
       "faction": "rebels",
       "points": 14,
@@ -2395,9 +2392,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/rebel/z95/blount_card.jpg",
       "cardType": "squadron",
-      "id": "ff"
+      "id": "fa"
     },
-    "fg": {
+    "fb": {
       "cardName": "Luke Skywalker",
       "faction": "rebels",
       "points": 20,
@@ -2408,9 +2405,9 @@
       ],
       "imageUrl": "https://i.imgur.com/CcTsLiM.png",
       "cardType": "squadron",
-      "id": "fg"
+      "id": "fb"
     },
-    "fh": {
+    "fc": {
       "cardName": "Malee Hurra",
       "faction": "rebels",
       "points": 26,
@@ -2421,9 +2418,9 @@
       ],
       "imageUrl": "https://i.imgur.com/JmifVSX.png",
       "cardType": "squadron",
-      "id": "fh"
+      "id": "fc"
     },
-    "fi": {
+    "fd": {
       "cardName": "Mart Mattin",
       "faction": "rebels",
       "points": 22,
@@ -2434,9 +2431,9 @@
       ],
       "imageUrl": "https://i.imgur.com/UyCPNqt.png",
       "cardType": "squadron",
-      "id": "fi"
+      "id": "fd"
     },
-    "fj": {
+    "fe": {
       "cardName": "Norra Wexley",
       "faction": "rebels",
       "points": 17,
@@ -2446,9 +2443,9 @@
       ],
       "imageUrl": "https://i.imgur.com/VlUNCkM.png",
       "cardType": "squadron",
-      "id": "fj"
+      "id": "fe"
     },
-    "fk": {
+    "ff": {
       "cardName": "Nym",
       "faction": "rebels",
       "points": 21,
@@ -2459,9 +2456,9 @@
       ],
       "imageUrl": "https://i.imgur.com/vfrMC1z.png",
       "cardType": "squadron",
-      "id": "fk"
+      "id": "ff"
     },
-    "fl": {
+    "fg": {
       "cardName": "Shara Bey",
       "faction": "rebels",
       "points": 17,
@@ -2471,9 +2468,9 @@
       ],
       "imageUrl": "https://i.imgur.com/QhDp5hB.png",
       "cardType": "squadron",
-      "id": "fl"
+      "id": "fg"
     },
-    "fm": {
+    "fh": {
       "cardName": "Ten Numb",
       "faction": "rebels",
       "points": 19,
@@ -2483,9 +2480,9 @@
       ],
       "imageUrl": "https://i.imgur.com/8zae2YW.png",
       "cardType": "squadron",
-      "id": "fm"
+      "id": "fh"
     },
-    "fn": {
+    "fi": {
       "cardName": "Tycho Celchu",
       "faction": "rebels",
       "points": 16,
@@ -2495,9 +2492,9 @@
       ],
       "imageUrl": "https://i.imgur.com/XsXiGTU.png",
       "cardType": "squadron",
-      "id": "fn"
+      "id": "fi"
     },
-    "fo": {
+    "fj": {
       "cardName": "Wedge Antilles",
       "faction": "rebels",
       "points": 19,
@@ -2508,9 +2505,9 @@
       ],
       "imageUrl": "https://i.imgur.com/uepzi7O.png",
       "cardType": "squadron",
-      "id": "fo"
+      "id": "fj"
     },
-    "fp": {
+    "fk": {
       "cardName": "Aggressor Assault Fighter",
       "faction": "empire",
       "points": 16,
@@ -2521,9 +2518,9 @@
       ],
       "imageUrl": "https://i.imgur.com/awIbXGE.png",
       "cardType": "squadron",
-      "id": "fp"
+      "id": "fk"
     },
-    "fq": {
+    "fl": {
       "cardName": "Firespray-31",
       "faction": "empire",
       "points": 18,
@@ -2534,9 +2531,9 @@
       ],
       "imageUrl": "https://i.imgur.com/dmC3jNm.png",
       "cardType": "squadron",
-      "id": "fq"
+      "id": "fl"
     },
-    "fr": {
+    "fm": {
       "cardName": "JumpMaster 5000",
       "faction": "empire",
       "points": 12,
@@ -2547,9 +2544,9 @@
       ],
       "imageUrl": "https://i.imgur.com/pBix7LS.png",
       "cardType": "squadron",
-      "id": "fr"
+      "id": "fm"
     },
-    "fs": {
+    "fn": {
       "cardName": "Lambda-class Shuttle",
       "faction": "empire",
       "points": 15,
@@ -2561,9 +2558,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/empire/lambda/base_card.jpg",
       "cardType": "squadron",
-      "id": "fs"
+      "id": "fn"
     },
-    "ft": {
+    "fo": {
       "cardName": "Mandalorian Gauntlet Fighter",
       "faction": "empire",
       "points": 20,
@@ -2574,9 +2571,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/empire/guantlet/base_card.jpg",
       "cardType": "squadron",
-      "id": "ft"
+      "id": "fo"
     },
-    "fu": {
+    "fp": {
       "cardName": "TIE Advanced Squadron",
       "faction": "empire",
       "points": 12,
@@ -2586,9 +2583,9 @@
       ],
       "imageUrl": "https://i.imgur.com/oqevOIs.png",
       "cardType": "squadron",
-      "id": "fu"
+      "id": "fp"
     },
-    "fv": {
+    "fq": {
       "cardName": "TIE Bomber Squadron",
       "faction": "empire",
       "points": 9,
@@ -2599,9 +2596,9 @@
       ],
       "imageUrl": "https://i.imgur.com/JGg79So.png",
       "cardType": "squadron",
-      "id": "fv"
+      "id": "fq"
     },
-    "fw": {
+    "fr": {
       "cardName": "TIE Defender Squadron",
       "faction": "empire",
       "points": 16,
@@ -2611,9 +2608,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/empire/def/base_card.jpg",
       "cardType": "squadron",
-      "id": "fw"
+      "id": "fr"
     },
-    "fx": {
+    "fs": {
       "cardName": "TIE Fighter Squadron",
       "faction": "empire",
       "points": 8,
@@ -2623,9 +2620,9 @@
       ],
       "imageUrl": "https://i.imgur.com/IBPIZFC.png",
       "cardType": "squadron",
-      "id": "fx"
+      "id": "fs"
     },
-    "fy": {
+    "ft": {
       "cardName": "TIE Interceptor",
       "faction": "empire",
       "points": 11,
@@ -2636,9 +2633,9 @@
       ],
       "imageUrl": "https://i.imgur.com/sEjCnbR.png",
       "cardType": "squadron",
-      "id": "fy"
+      "id": "ft"
     },
-    "ga": {
+    "fu": {
       "cardName": "TIE Phantom Squadron",
       "faction": "empire",
       "points": 14,
@@ -2648,9 +2645,9 @@
       ],
       "imageUrl": "https://i.imgur.com/Tvy7ZfX.png",
       "cardType": "squadron",
-      "id": "ga"
+      "id": "fu"
     },
-    "gb": {
+    "fv": {
       "cardName": "VT-49 Decimator",
       "faction": "empire",
       "points": 22,
@@ -2662,9 +2659,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/empire/decimator/base_card.jpg",
       "cardType": "squadron",
-      "id": "gb"
+      "id": "fv"
     },
-    "gc": {
+    "fw": {
       "cardName": "YV-666",
       "faction": "empire",
       "points": 15,
@@ -2676,9 +2673,9 @@
       ],
       "imageUrl": "https://i.imgur.com/VwtnRPG.png",
       "cardType": "squadron",
-      "id": "gc"
+      "id": "fw"
     },
-    "gd": {
+    "fx": {
       "cardName": "Black Squadron",
       "faction": "empire",
       "points": 9,
@@ -2689,9 +2686,9 @@
       ],
       "imageUrl": "https://i.imgur.com/wHVRghK.png",
       "cardType": "squadron",
-      "id": "gd"
+      "id": "fx"
     },
-    "ge": {
+    "fy": {
       "cardName": "Boba Fett",
       "faction": "empire",
       "points": 26,
@@ -2702,9 +2699,9 @@
       ],
       "imageUrl": "https://i.imgur.com/SwdbJdL.png",
       "cardType": "squadron",
-      "id": "ge"
+      "id": "fy"
     },
-    "gf": {
+    "fz": {
       "cardName": "Bossk",
       "faction": "empire",
       "points": 23,
@@ -2715,9 +2712,9 @@
       ],
       "imageUrl": "https://i.imgur.com/cO69PsD.png",
       "cardType": "squadron",
-      "id": "gf"
+      "id": "fz"
     },
-    "gg": {
+    "ga": {
       "cardName": "Captain Jonus",
       "faction": "empire",
       "points": 16,
@@ -2729,9 +2726,9 @@
       ],
       "imageUrl": "https://i.imgur.com/iNHpN8D.png",
       "cardType": "squadron",
-      "id": "gg"
+      "id": "ga"
     },
-    "gh": {
+    "gb": {
       "cardName": "Ciena Ree",
       "faction": "empire",
       "points": 17,
@@ -2742,9 +2739,9 @@
       ],
       "imageUrl": "https://i.imgur.com/gGsK5NT.png",
       "cardType": "squadron",
-      "id": "gh"
+      "id": "gb"
     },
-    "gi": {
+    "gc": {
       "cardName": "Colonel Jendon",
       "faction": "empire",
       "points": 20,
@@ -2755,9 +2752,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/empire/lambda/jendon_card.jpg",
       "cardType": "squadron",
-      "id": "gi"
+      "id": "gc"
     },
-    "gj": {
+    "gd": {
       "cardName": "Darth Vader",
       "faction": "empire",
       "points": 21,
@@ -2767,9 +2764,9 @@
       ],
       "imageUrl": "https://i.imgur.com/qMTERFQ.png",
       "cardType": "squadron",
-      "id": "gj"
+      "id": "gd"
     },
-    "gk": {
+    "ge": {
       "cardName": "Darth Vader",
       "faction": "empire",
       "points": 25,
@@ -2781,9 +2778,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/Valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/empire/def/vader_card.jpg",
       "cardType": "squadron",
-      "id": "gk"
+      "id": "ge"
     },
-    "gl": {
+    "gf": {
       "cardName": "Dengar",
       "faction": "empire",
       "points": 20,
@@ -2794,9 +2791,9 @@
       ],
       "imageUrl": "https://i.imgur.com/SGHkuVm.png",
       "cardType": "squadron",
-      "id": "gl"
+      "id": "gf"
     },
-    "gm": {
+    "gg": {
       "cardName": "Gamma Squadron",
       "faction": "empire",
       "points": 10,
@@ -2807,9 +2804,9 @@
       ],
       "imageUrl": "https://i.imgur.com/MuOU5H0.png",
       "cardType": "squadron",
-      "id": "gm"
+      "id": "gg"
     },
-    "gn": {
+    "gh": {
       "cardName": "Gar Saxon",
       "faction": "empire",
       "points": 23,
@@ -2820,9 +2817,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/empire/guantlet/saxon_card.jpg",
       "cardType": "squadron",
-      "id": "gn"
+      "id": "gh"
     },
-    "go": {
+    "gi": {
       "cardName": "Hondo Ohnaka",
       "faction": "empire",
       "points": 24,
@@ -2834,9 +2831,9 @@
       ],
       "imageUrl": "https://i.imgur.com/K8A1QGa.png",
       "cardType": "squadron",
-      "id": "go"
+      "id": "gi"
     },
-    "gp": {
+    "gj": {
       "cardName": "\"Howlrunner\"",
       "faction": "empire",
       "points": 16,
@@ -2846,9 +2843,9 @@
       ],
       "imageUrl": "https://i.imgur.com/9JyPCY1.png",
       "cardType": "squadron",
-      "id": "gp"
+      "id": "gj"
     },
-    "gq": {
+    "gk": {
       "cardName": "IG-88",
       "faction": "empire",
       "points": 21,
@@ -2859,9 +2856,9 @@
       ],
       "imageUrl": "https://i.imgur.com/s9mWI5Z.png",
       "cardType": "squadron",
-      "id": "gq"
+      "id": "gk"
     },
-    "gr": {
+    "gl": {
       "cardName": "IG-88B",
       "faction": "empire",
       "points": 21,
@@ -2872,9 +2869,9 @@
       ],
       "imageUrl": "https://i.imgur.com/yxjuseo.png",
       "cardType": "squadron",
-      "id": "gr"
+      "id": "gl"
     },
-    "gs": {
+    "gm": {
       "cardName": "Maarek Stele",
       "faction": "empire",
       "points": 21,
@@ -2885,9 +2882,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/empire/def/maarek_card.jpg",
       "cardType": "squadron",
-      "id": "gs"
+      "id": "gm"
     },
-    "gt": {
+    "gn": {
       "cardName": "Major Rhymer",
       "faction": "empire",
       "points": 16,
@@ -2898,9 +2895,9 @@
       ],
       "imageUrl": "https://i.imgur.com/fPUE6qa.png",
       "cardType": "squadron",
-      "id": "gt"
+      "id": "gn"
     },
-    "gu": {
+    "go": {
       "cardName": "\"Mauler\" Mithel",
       "faction": "empire",
       "points": 15,
@@ -2910,9 +2907,9 @@
       ],
       "imageUrl": "https://i.imgur.com/XOrV29v.png",
       "cardType": "squadron",
-      "id": "gu"
+      "id": "go"
     },
-    "gv": {
+    "gp": {
       "cardName": "Moralo Eval",
       "faction": "empire",
       "points": 22,
@@ -2923,9 +2920,9 @@
       ],
       "imageUrl": "https://i.imgur.com/Ylo65oA.png",
       "cardType": "squadron",
-      "id": "gv"
+      "id": "gp"
     },
-    "gw": {
+    "gq": {
       "cardName": "Morna Kee",
       "faction": "empire",
       "points": 27,
@@ -2936,9 +2933,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/empire/decimator/morna_card.jpg",
       "cardType": "squadron",
-      "id": "gw"
+      "id": "gq"
     },
-    "gx": {
+    "gr": {
       "cardName": "Saber Squadron",
       "faction": "empire",
       "points": 12,
@@ -2949,9 +2946,9 @@
       ],
       "imageUrl": "https://i.imgur.com/xjsjQjV.png",
       "cardType": "squadron",
-      "id": "gx"
+      "id": "gr"
     },
-    "gy": {
+    "gs": {
       "cardName": "Soontir Fel",
       "faction": "empire",
       "points": 18,
@@ -2962,9 +2959,9 @@
       ],
       "imageUrl": "https://i.imgur.com/OFz3wPf.png",
       "cardType": "squadron",
-      "id": "gy"
+      "id": "gs"
     },
-    "ha": {
+    "gt": {
       "cardName": "Tel Trevura",
       "faction": "empire",
       "points": 17,
@@ -2975,9 +2972,9 @@
       ],
       "imageUrl": "https://i.imgur.com/8UTq2I7.png",
       "cardType": "squadron",
-      "id": "ha"
+      "id": "gt"
     },
-    "hb": {
+    "gu": {
       "cardName": "Tempest Squadron",
       "faction": "empire",
       "points": 13,
@@ -2988,9 +2985,9 @@
       ],
       "imageUrl": "https://i.imgur.com/Pco10DS.png",
       "cardType": "squadron",
-      "id": "hb"
+      "id": "gu"
     },
-    "hc": {
+    "gv": {
       "cardName": "Valen Rudor",
       "faction": "empire",
       "points": 13,
@@ -3000,9 +2997,9 @@
       ],
       "imageUrl": "https://i.imgur.com/jJbbq5p.png",
       "cardType": "squadron",
-      "id": "hc"
+      "id": "gv"
     },
-    "hd": {
+    "gw": {
       "cardName": "\"Whisper\"",
       "faction": "empire",
       "points": 20,
@@ -3012,9 +3009,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/empire/pha/whisper_card.jpg",
       "cardType": "squadron",
-      "id": "hd"
+      "id": "gw"
     },
-    "he": {
+    "gx": {
       "cardName": "Zertik Strom",
       "faction": "empire",
       "points": 15,
@@ -3024,9 +3021,9 @@
       ],
       "imageUrl": "https://i.imgur.com/92y5pLs.png",
       "cardType": "squadron",
-      "id": "he"
+      "id": "gx"
     },
-    "hf": {
+    "gy": {
       "cardName": "ARC-170 Starfighter Squadron",
       "faction": "republic",
       "points": 15,
@@ -3037,9 +3034,9 @@
       ],
       "imageUrl": "https://i.imgur.com/ggkaXOF.jpeg",
       "cardType": "squadron",
-      "id": "hf"
+      "id": "gy"
     },
-    "hg": {
+    "gz": {
       "cardName": "BTL-B Y-Wing Squadron",
       "faction": "republic",
       "points": 10,
@@ -3050,9 +3047,9 @@
       ],
       "imageUrl": "https://i.imgur.com/qvyTtNf.jpeg",
       "cardType": "squadron",
-      "id": "hg"
+      "id": "gz"
     },
-    "hh": {
+    "ha": {
       "cardName": "Delta-7 Aethersprite Squadron",
       "faction": "republic",
       "points": 17,
@@ -3064,9 +3061,9 @@
       ],
       "imageUrl": "https://i.imgur.com/huDC10s.jpeg",
       "cardType": "squadron",
-      "id": "hh"
+      "id": "ha"
     },
-    "hi": {
+    "hb": {
       "cardName": "V-19 Torrent Squadron",
       "faction": "republic",
       "points": 12,
@@ -3077,9 +3074,9 @@
       ],
       "imageUrl": "https://i.imgur.com/aiyBkpn.jpeg",
       "cardType": "squadron",
-      "id": "hi"
+      "id": "hb"
     },
-    "hj": {
+    "hc": {
       "cardName": "Ahsoka Tano",
       "faction": "republic",
       "points": 23,
@@ -3091,9 +3088,9 @@
       ],
       "imageUrl": "https://i.imgur.com/W0HDKSn.jpg",
       "cardType": "squadron",
-      "id": "hj"
+      "id": "hc"
     },
-    "hk": {
+    "hd": {
       "cardName": "Anakin Skywalker",
       "faction": "republic",
       "points": 19,
@@ -3105,9 +3102,9 @@
       ],
       "imageUrl": "https://i.imgur.com/zsDolt7.jpeg",
       "cardType": "squadron",
-      "id": "hk"
+      "id": "hd"
     },
-    "hl": {
+    "he": {
       "cardName": "Anakin Skywalker2",
       "faction": "republic",
       "points": 24,
@@ -3119,9 +3116,9 @@
       ],
       "imageUrl": "https://raw.githubusercontent.com/valadian/TabletopSimulatorIncludeDir/master/TTS_armada/assets/squadrons/republic/delta/anakin_card.jpg",
       "cardType": "squadron",
-      "id": "hl"
+      "id": "he"
     },
-    "hm": {
+    "hf": {
       "cardName": "\"Axe\"",
       "faction": "republic",
       "points": 17,
@@ -3132,9 +3129,9 @@
       ],
       "imageUrl": "https://i.imgur.com/h9d4P44.jpeg",
       "cardType": "squadron",
-      "id": "hm"
+      "id": "hf"
     },
-    "hn": {
+    "hg": {
       "cardName": "\"Kickback\"",
       "faction": "republic",
       "points": 16,
@@ -3145,9 +3142,9 @@
       ],
       "imageUrl": "https://i.imgur.com/crnCDLq.jpeg",
       "cardType": "squadron",
-      "id": "hn"
+      "id": "hg"
     },
-    "ho": {
+    "hh": {
       "cardName": "Kit Fisto",
       "faction": "republic",
       "points": 26,
@@ -3159,9 +3156,9 @@
       ],
       "imageUrl": "https://i.imgur.com/gpGELBf.jpeg",
       "cardType": "squadron",
-      "id": "ho"
+      "id": "hh"
     },
-    "hp": {
+    "hi": {
       "cardName": "Luminara Unduli",
       "faction": "republic",
       "points": 23,
@@ -3172,9 +3169,9 @@
       ],
       "imageUrl": "https://i.imgur.com/hjjJXia.jpeg",
       "cardType": "squadron",
-      "id": "hp"
+      "id": "hi"
     },
-    "hq": {
+    "hj": {
       "cardName": "\"Odd Ball\"",
       "faction": "republic",
       "points": 23,
@@ -3185,9 +3182,9 @@
       ],
       "imageUrl": "https://i.imgur.com/JVuBlg2.jpeg",
       "cardType": "squadron",
-      "id": "hq"
+      "id": "hj"
     },
-    "hr": {
+    "hk": {
       "cardName": "Plo Koon",
       "faction": "republic",
       "points": 24,
@@ -3198,9 +3195,9 @@
       ],
       "imageUrl": "https://i.imgur.com/iqalHXV.jpeg",
       "cardType": "squadron",
-      "id": "hr"
+      "id": "hk"
     },
-    "hs": {
+    "hl": {
       "cardName": "Belbullab-22 Starfighter Squadron",
       "faction": "separatists",
       "points": 15,
@@ -3211,9 +3208,9 @@
       ],
       "imageUrl": "https://i.imgur.com/zxJrlMf.jpg",
       "cardType": "squadron",
-      "id": "hs"
+      "id": "hl"
     },
-    "ht": {
+    "hm": {
       "cardName": "Droid Tri-Fighter Squadron",
       "faction": "separatists",
       "points": 11,
@@ -3225,9 +3222,9 @@
       ],
       "imageUrl": "https://i.imgur.com/gju4n8W.jpeg",
       "cardType": "squadron",
-      "id": "ht"
+      "id": "hm"
     },
-    "hu": {
+    "hn": {
       "cardName": "Hyena-class Droid Bomber Squadron",
       "faction": "separatists",
       "points": 11,
@@ -3239,9 +3236,9 @@
       ],
       "imageUrl": "https://i.imgur.com/4zpFWdk.jpeg",
       "cardType": "squadron",
-      "id": "hu"
+      "id": "hn"
     },
-    "hv": {
+    "ho": {
       "cardName": "Vulture-class Droid Fighter Squadron",
       "faction": "separatists",
       "points": 8,
@@ -3252,9 +3249,9 @@
       ],
       "imageUrl": "https://i.imgur.com/851EiGY.jpeg",
       "cardType": "squadron",
-      "id": "hv"
+      "id": "ho"
     },
-    "hw": {
+    "hp": {
       "cardName": "Baktoid Prototypes",
       "faction": "separatists",
       "points": 16,
@@ -3266,9 +3263,9 @@
       ],
       "imageUrl": "https://i.imgur.com/kQGXd4d.jpg",
       "cardType": "squadron",
-      "id": "hw"
+      "id": "hp"
     },
-    "hx": {
+    "hq": {
       "cardName": "DBS-404",
       "faction": "separatists",
       "points": 17,
@@ -3280,9 +3277,9 @@
       ],
       "imageUrl": "https://i.imgur.com/IJojXUS.jpg",
       "cardType": "squadron",
-      "id": "hx"
+      "id": "hq"
     },
-    "hy": {
+    "hr": {
       "cardName": "DFS-311",
       "faction": "separatists",
       "points": 18,
@@ -3294,9 +3291,9 @@
       ],
       "imageUrl": "https://i.imgur.com/ph9wqQ7.jpeg",
       "cardType": "squadron",
-      "id": "hy"
+      "id": "hr"
     },
-    "ia": {
+    "hs": {
       "cardName": "DIS-T81",
       "faction": "separatists",
       "points": 17,
@@ -3309,9 +3306,9 @@
       ],
       "imageUrl": "https://i.imgur.com/wUiIUcJ.jpeg",
       "cardType": "squadron",
-      "id": "ia"
+      "id": "hs"
     },
-    "ib": {
+    "ht": {
       "cardName": "General Grievous",
       "faction": "separatists",
       "points": 22,
@@ -3322,9 +3319,9 @@
       ],
       "imageUrl": "https://i.imgur.com/AYE4WqR.jpeg",
       "cardType": "squadron",
-      "id": "ib"
+      "id": "ht"
     },
-    "ic": {
+    "hu": {
       "cardName": "Haor Chall Prototypes",
       "faction": "separatists",
       "points": 16,
@@ -3335,9 +3332,9 @@
       ],
       "imageUrl": "https://i.imgur.com/sMYjVpK.jpeg",
       "cardType": "squadron",
-      "id": "ic"
+      "id": "hu"
     },
-    "id": {
+    "hv": {
       "cardName": "Phlac-Arphocc Prototypes",
       "faction": "separatists",
       "points": 19,
@@ -3349,9 +3346,9 @@
       ],
       "imageUrl": "https://i.imgur.com/AUJ1HKt.jpg",
       "cardType": "squadron",
-      "id": "id"
+      "id": "hv"
     },
-    "ie": {
+    "hw": {
       "cardName": "Admiral Ackbar",
       "points": 38,
       "isUnique": true,
@@ -3362,10 +3359,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/HFVv48K.jpg",
-      "id": "ie",
+      "id": "hw",
       "cardType": "upgrade"
     },
-    "if": {
+    "hx": {
       "cardName": "Admiral Raddus",
       "points": 26,
       "isUnique": true,
@@ -3376,10 +3373,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/2IPtau4.jpg",
-      "id": "if",
+      "id": "hx",
       "cardType": "upgrade"
     },
-    "ig": {
+    "hy": {
       "cardName": "Commander Sato",
       "points": 27,
       "isUnique": true,
@@ -3390,10 +3387,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/ir6QixK.jpg",
-      "id": "ig",
+      "id": "hy",
       "cardType": "upgrade"
     },
-    "ih": {
+    "hz": {
       "cardName": "Garm Bel Iblis",
       "points": 25,
       "isUnique": true,
@@ -3404,10 +3401,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/fmlXop3.jpg",
-      "id": "ih",
+      "id": "hz",
       "cardType": "upgrade"
     },
-    "ii": {
+    "ia": {
       "cardName": "General Cracken",
       "points": 26,
       "isUnique": true,
@@ -3418,10 +3415,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/0NHwrEL.jpg",
-      "id": "ii",
+      "id": "ia",
       "cardType": "upgrade"
     },
-    "ij": {
+    "ib": {
       "cardName": "General Dodonna",
       "points": 20,
       "isUnique": true,
@@ -3432,10 +3429,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/MsS9AN8.jpg",
-      "id": "ij",
+      "id": "ib",
       "cardType": "upgrade"
     },
-    "ik": {
+    "ic": {
       "cardName": "General Madine",
       "points": 30,
       "isUnique": true,
@@ -3446,10 +3443,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/ePeK8Ok.jpg",
-      "id": "ik",
+      "id": "ic",
       "cardType": "upgrade"
     },
-    "il": {
+    "id": {
       "cardName": "General Rieekan",
       "points": 34,
       "isUnique": true,
@@ -3460,10 +3457,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/Q6pSiLj.jpg",
-      "id": "il",
+      "id": "id",
       "cardType": "upgrade"
     },
-    "im": {
+    "ie": {
       "cardName": "Kyrsta Agate",
       "points": 20,
       "isUnique": true,
@@ -3474,10 +3471,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/CdWKsAz.jpg",
-      "id": "im",
+      "id": "ie",
       "cardType": "upgrade"
     },
-    "in": {
+    "if": {
       "cardName": "Leia Organa",
       "points": 28,
       "isUnique": true,
@@ -3488,10 +3485,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/Xsqh5f0.jpg",
-      "id": "in",
+      "id": "if",
       "cardType": "upgrade"
     },
-    "io": {
+    "ig": {
       "cardName": "Mon Mothma",
       "points": 27,
       "isUnique": true,
@@ -3502,10 +3499,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/ZK3rQeb.jpg",
-      "id": "io",
+      "id": "ig",
       "cardType": "upgrade"
     },
-    "ip": {
+    "ih": {
       "cardName": "Admiral Konstantine",
       "points": 23,
       "isUnique": true,
@@ -3516,10 +3513,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/ONoTDBL.jpg",
-      "id": "ip",
+      "id": "ih",
       "cardType": "upgrade"
     },
-    "iq": {
+    "ii": {
       "cardName": "Admiral Motti",
       "points": 24,
       "isUnique": true,
@@ -3530,10 +3527,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/rkMe17G.jpg",
-      "id": "iq",
+      "id": "ii",
       "cardType": "upgrade"
     },
-    "ir": {
+    "ij": {
       "cardName": "Admiral Ozzel",
       "points": 20,
       "isUnique": true,
@@ -3544,10 +3541,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/v0nThwx.jpg",
-      "id": "ir",
+      "id": "ij",
       "cardType": "upgrade"
     },
-    "is": {
+    "ik": {
       "cardName": "Admiral Piett",
       "points": 22,
       "isUnique": true,
@@ -3558,10 +3555,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/2D3DgQS.jpg",
-      "id": "is",
+      "id": "ik",
       "cardType": "upgrade"
     },
-    "it": {
+    "il": {
       "cardName": "Admiral Screed",
       "points": 26,
       "isUnique": true,
@@ -3572,10 +3569,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/DUToctV.jpg",
-      "id": "it",
+      "id": "il",
       "cardType": "upgrade"
     },
-    "iu": {
+    "im": {
       "cardName": "Admiral Sloane",
       "points": 24,
       "isUnique": true,
@@ -3586,10 +3583,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/rzZtf8B.jpg",
-      "id": "iu",
+      "id": "im",
       "cardType": "upgrade"
     },
-    "iv": {
+    "in": {
       "cardName": "Darth Vader",
       "points": 36,
       "isUnique": true,
@@ -3600,10 +3597,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/ysyfpEF.jpg",
-      "id": "iv",
+      "id": "in",
       "cardType": "upgrade"
     },
-    "iw": {
+    "io": {
       "cardName": "Emperor Palpatine",
       "points": 35,
       "isUnique": true,
@@ -3614,10 +3611,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/KBY36Qs.jpg",
-      "id": "iw",
+      "id": "io",
       "cardType": "upgrade"
     },
-    "ix": {
+    "ip": {
       "cardName": "General Romodi",
       "points": 20,
       "isUnique": true,
@@ -3628,10 +3625,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/U9wK3K8.jpg",
-      "id": "ix",
+      "id": "ip",
       "cardType": "upgrade"
     },
-    "iy": {
+    "iq": {
       "cardName": "General Tagge",
       "points": 25,
       "isUnique": true,
@@ -3642,10 +3639,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/LduHiR8.jpg",
-      "id": "iy",
+      "id": "iq",
       "cardType": "upgrade"
     },
-    "ja": {
+    "ir": {
       "cardName": "Grand Admiral Thrawn",
       "points": 32,
       "isUnique": true,
@@ -3656,10 +3653,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/FSpE1gl.jpg",
-      "id": "ja",
+      "id": "ir",
       "cardType": "upgrade"
     },
-    "jb": {
+    "is": {
       "cardName": "Grand Moff Tarkin",
       "points": 28,
       "isUnique": true,
@@ -3670,10 +3667,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/OxvHWmA.jpg",
-      "id": "jb",
+      "id": "is",
       "cardType": "upgrade"
     },
-    "jc": {
+    "it": {
       "cardName": "Moff Jerjerrod",
       "points": 23,
       "isUnique": true,
@@ -3684,10 +3681,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/qZAVH6a.jpg",
-      "id": "jc",
+      "id": "it",
       "cardType": "upgrade"
     },
-    "jd": {
+    "iu": {
       "cardName": "Admiral Tarkin",
       "points": 30,
       "isUnique": true,
@@ -3698,10 +3695,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/mJplVe5.png",
-      "id": "jd",
+      "id": "iu",
       "cardType": "upgrade"
     },
-    "je": {
+    "iv": {
       "cardName": "Admiral Yularen",
       "points": 24,
       "isUnique": true,
@@ -3712,10 +3709,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/QloblZJ.jpeg",
-      "id": "je",
+      "id": "iv",
       "cardType": "upgrade"
     },
-    "jf": {
+    "iw": {
       "cardName": "Bail Organa",
       "points": 28,
       "isUnique": true,
@@ -3726,10 +3723,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/SBYa2yD.jpeg",
-      "id": "jf",
+      "id": "iw",
       "cardType": "upgrade"
     },
-    "jg": {
+    "ix": {
       "cardName": "Luminara Unduli",
       "points": 25,
       "isUnique": true,
@@ -3740,10 +3737,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/SlkHtHE.png",
-      "id": "jg",
+      "id": "ix",
       "cardType": "upgrade"
     },
-    "jh": {
+    "iy": {
       "cardName": "Obi-Wan Kenobi",
       "points": 28,
       "isUnique": true,
@@ -3754,10 +3751,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/xkfBnRw.jpeg",
-      "id": "jh",
+      "id": "iy",
       "cardType": "upgrade"
     },
-    "ji": {
+    "iz": {
       "cardName": "Plo Koon",
       "points": 26,
       "isUnique": true,
@@ -3768,10 +3765,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/RY01HsT.jpg",
-      "id": "ji",
+      "id": "iz",
       "cardType": "upgrade"
     },
-    "jj": {
+    "ja": {
       "cardName": "Admiral Trench",
       "points": 36,
       "isUnique": true,
@@ -3782,10 +3779,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/eOaryOm.png",
-      "id": "jj",
+      "id": "ja",
       "cardType": "upgrade"
     },
-    "jk": {
+    "jb": {
       "cardName": "Count Dooku",
       "points": 30,
       "isUnique": true,
@@ -3796,10 +3793,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/YOm4LIi.jpeg",
-      "id": "jk",
+      "id": "jb",
       "cardType": "upgrade"
     },
-    "jl": {
+    "jc": {
       "cardName": "General Grievous",
       "points": 20,
       "isUnique": true,
@@ -3810,10 +3807,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/xLHg92l.png",
-      "id": "jl",
+      "id": "jc",
       "cardType": "upgrade"
     },
-    "jm": {
+    "jd": {
       "cardName": "Kraken",
       "points": 30,
       "isUnique": true,
@@ -3824,10 +3821,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/zLNsrOo.jpeg",
-      "id": "jm",
+      "id": "jd",
       "cardType": "upgrade"
     },
-    "jn": {
+    "je": {
       "cardName": "Mar Tuuk",
       "points": 28,
       "isUnique": true,
@@ -3838,10 +3835,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/POTMBXQ.png",
-      "id": "jn",
+      "id": "je",
       "cardType": "upgrade"
     },
-    "jo": {
+    "jf": {
       "cardName": "TF-1726",
       "points": 26,
       "isUnique": true,
@@ -3852,10 +3849,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/aptrDok.png",
-      "id": "jo",
+      "id": "jf",
       "cardType": "upgrade"
     },
-    "jp": {
+    "jg": {
       "cardName": "Hondo Ohnaka",
       "points": 2,
       "isUnique": true,
@@ -3866,10 +3863,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/ka4vK2h.jpg",
-      "id": "jp",
+      "id": "jg",
       "cardType": "upgrade"
     },
-    "jq": {
+    "jh": {
       "cardName": "Chart Officer",
       "points": 2,
       "isUnique": false,
@@ -3880,10 +3877,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/HVWr1Ru.jpg",
-      "id": "jq",
+      "id": "jh",
       "cardType": "upgrade"
     },
-    "jr": {
+    "ji": {
       "cardName": "Damage Control Officer",
       "points": 5,
       "isUnique": false,
@@ -3894,10 +3891,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/jsuMjsT.jpg",
-      "id": "jr",
+      "id": "ji",
       "cardType": "upgrade"
     },
-    "js": {
+    "jj": {
       "cardName": "Defense Liason",
       "points": 3,
       "isUnique": false,
@@ -3908,10 +3905,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/FqhDYBp.jpg",
-      "id": "js",
+      "id": "jj",
       "cardType": "upgrade"
     },
-    "jt": {
+    "jk": {
       "cardName": "Engineering Captain",
       "points": 6,
       "isUnique": false,
@@ -3922,10 +3919,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/gOLEgHZ.jpg",
-      "id": "jt",
+      "id": "jk",
       "cardType": "upgrade"
     },
-    "ju": {
+    "jl": {
       "cardName": "Expert Shield Tech",
       "points": 5,
       "isUnique": false,
@@ -3936,10 +3933,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/bB1tz0h.jpg",
-      "id": "ju",
+      "id": "jl",
       "cardType": "upgrade"
     },
-    "jv": {
+    "jm": {
       "cardName": "Flight Commander",
       "points": 3,
       "isUnique": false,
@@ -3950,10 +3947,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/IqzvNR7.jpg",
-      "id": "jv",
+      "id": "jm",
       "cardType": "upgrade"
     },
-    "jw": {
+    "jn": {
       "cardName": "Intel Officer",
       "points": 7,
       "isUnique": false,
@@ -3964,10 +3961,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/VvdtHvv.jpg",
-      "id": "jw",
+      "id": "jn",
       "cardType": "upgrade"
     },
-    "jx": {
+    "jo": {
       "cardName": "Navigation Officer",
       "points": 6,
       "isUnique": false,
@@ -3978,10 +3975,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/VKrSVRL.jpg",
-      "id": "jx",
+      "id": "jo",
       "cardType": "upgrade"
     },
-    "jy": {
+    "jp": {
       "cardName": "Skilled First Officer",
       "points": 1,
       "isUnique": false,
@@ -3992,10 +3989,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/6ipZf4i.jpg",
-      "id": "jy",
+      "id": "jp",
       "cardType": "upgrade"
     },
-    "ka": {
+    "jq": {
       "cardName": "Support Officer",
       "points": 4,
       "isUnique": false,
@@ -4006,10 +4003,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/fEdzGRr.jpg",
-      "id": "ka",
+      "id": "jq",
       "cardType": "upgrade"
     },
-    "kb": {
+    "jr": {
       "cardName": "Tactical Expert",
       "points": 6,
       "isUnique": false,
@@ -4020,10 +4017,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/aAvvHM6.jpg",
-      "id": "kb",
+      "id": "jr",
       "cardType": "upgrade"
     },
-    "kc": {
+    "js": {
       "cardName": "Veteran Captain",
       "points": 3,
       "isUnique": false,
@@ -4034,10 +4031,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/GCmA53j.jpg",
-      "id": "kc",
+      "id": "js",
       "cardType": "upgrade"
     },
-    "kd": {
+    "jt": {
       "cardName": "Weapons Liason",
       "points": 3,
       "isUnique": false,
@@ -4048,10 +4045,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/XxbObBi.jpg",
-      "id": "kd",
+      "id": "jt",
       "cardType": "upgrade"
     },
-    "ke": {
+    "ju": {
       "cardName": "Wing Commander",
       "points": 6,
       "isUnique": false,
@@ -4062,10 +4059,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/FjHlkZC.jpg",
-      "id": "ke",
+      "id": "ju",
       "cardType": "upgrade"
     },
-    "kf": {
+    "jv": {
       "cardName": "Adar Talon",
       "points": 10,
       "isUnique": true,
@@ -4076,10 +4073,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/htbjXKu.jpg",
-      "id": "kf",
+      "id": "jv",
       "cardType": "upgrade"
     },
-    "kg": {
+    "jw": {
       "cardName": "Ahsoka Tano",
       "points": 2,
       "isUnique": true,
@@ -4090,10 +4087,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "http://i.imgur.com/Qu7q6hP.jpg",
-      "id": "kg",
+      "id": "jw",
       "cardType": "upgrade"
     },
-    "kh": {
+    "jx": {
       "cardName": "Captain Rex",
       "points": 5,
       "isUnique": true,
@@ -4104,10 +4101,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/AEeHqHn.jpeg",
-      "id": "kh",
+      "id": "jx",
       "cardType": "upgrade"
     },
-    "ki": {
+    "jy": {
       "cardName": "Ezra Bridger",
       "points": 3,
       "isUnique": true,
@@ -4118,10 +4115,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/7K3X4Po.jpeg",
-      "id": "ki",
+      "id": "jy",
       "cardType": "upgrade"
     },
-    "kj": {
+    "jz": {
       "cardName": "General Draven",
       "points": 3,
       "isUnique": true,
@@ -4132,10 +4129,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/d3Qyp8a.jpeg",
-      "id": "kj",
+      "id": "jz",
       "cardType": "upgrade"
     },
-    "kk": {
+    "ka": {
       "cardName": "Kyrsta Agate",
       "points": 5,
       "isUnique": true,
@@ -4146,10 +4143,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Fwdfoev.jpeg",
-      "id": "kk",
+      "id": "ka",
       "cardType": "upgrade"
     },
-    "kl": {
+    "kb": {
       "cardName": "Lando Calrissian",
       "points": 4,
       "isUnique": true,
@@ -4160,10 +4157,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/fw8Qm7S.jpeg",
-      "id": "kl",
+      "id": "kb",
       "cardType": "upgrade"
     },
-    "km": {
+    "kc": {
       "cardName": "Leia Organa",
       "points": 3,
       "isUnique": true,
@@ -4174,10 +4171,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/bJcJynH.jpg",
-      "id": "km",
+      "id": "kc",
       "cardType": "upgrade"
     },
-    "kn": {
+    "kd": {
       "cardName": "Major Derlin",
       "points": 7,
       "isUnique": true,
@@ -4188,10 +4185,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Q8rOdcb.jpeg",
-      "id": "kn",
+      "id": "kd",
       "cardType": "upgrade"
     },
-    "ko": {
+    "ke": {
       "cardName": "Raymus Antilles",
       "points": 7,
       "isUnique": true,
@@ -4202,10 +4199,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/1Ae4QfL.jpg",
-      "id": "ko",
+      "id": "ke",
       "cardType": "upgrade"
     },
-    "kp": {
+    "kf": {
       "cardName": "Sabine Wren",
       "points": 4,
       "isUnique": true,
@@ -4216,10 +4213,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/s6dTW50.jpg",
-      "id": "kp",
+      "id": "kf",
       "cardType": "upgrade"
     },
-    "kq": {
+    "kg": {
       "cardName": "Toryn Farr",
       "points": 7,
       "isUnique": true,
@@ -4230,10 +4227,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/kjyMTLq.jpeg",
-      "id": "kq",
+      "id": "kg",
       "cardType": "upgrade"
     },
-    "kr": {
+    "kh": {
       "cardName": "Walex Blissex",
       "points": 5,
       "isUnique": true,
@@ -4244,10 +4241,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/X0OgdJp.jpeg",
-      "id": "kr",
+      "id": "kh",
       "cardType": "upgrade"
     },
-    "ks": {
+    "ki": {
       "cardName": "Wedge Antilles",
       "points": 4,
       "isUnique": true,
@@ -4258,10 +4255,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/OSOELtb.jpeg",
-      "id": "ks",
+      "id": "ki",
       "cardType": "upgrade"
     },
-    "kt": {
+    "kj": {
       "cardName": "Adi Galia",
       "points": 3,
       "isUnique": true,
@@ -4272,10 +4269,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/NtfCKwG.jpeg",
-      "id": "kt",
+      "id": "kj",
       "cardType": "upgrade"
     },
-    "ku": {
+    "kk": {
       "cardName": "Ahsoka Tano",
       "points": 6,
       "isUnique": true,
@@ -4286,10 +4283,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/SVAWnrZ.jpeg",
-      "id": "ku",
+      "id": "kk",
       "cardType": "upgrade"
     },
-    "kv": {
+    "kl": {
       "cardName": "Barriss Offee",
       "points": 6,
       "isUnique": true,
@@ -4300,10 +4297,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/TK5hk9G.png",
-      "id": "kv",
+      "id": "kl",
       "cardType": "upgrade"
     },
-    "kw": {
+    "km": {
       "cardName": "Clone Captain Zak",
       "points": 5,
       "isUnique": true,
@@ -4314,10 +4311,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/A1FePh3.jpeg",
-      "id": "kw",
+      "id": "km",
       "cardType": "upgrade"
     },
-    "kx": {
+    "kn": {
       "cardName": "Clone Commander Wolfee",
       "points": 6,
       "isUnique": true,
@@ -4328,10 +4325,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/pb3QjZp.jpg",
-      "id": "kx",
+      "id": "kn",
       "cardType": "upgrade"
     },
-    "ky": {
+    "ko": {
       "cardName": "Clone Navigation Officer",
       "points": 4,
       "isUnique": false,
@@ -4342,10 +4339,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Mt2SoH7.jpg",
-      "id": "ky",
+      "id": "ko",
       "cardType": "upgrade"
     },
-    "la": {
+    "kp": {
       "cardName": "Passel Argente",
       "points": 6,
       "isUnique": true,
@@ -4356,10 +4353,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/fVSYbCJ.png",
-      "id": "la",
+      "id": "kp",
       "cardType": "upgrade"
     },
-    "lb": {
+    "kq": {
       "cardName": "Rune Haako",
       "points": 4,
       "isUnique": true,
@@ -4370,10 +4367,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/aEgMSwp.jpg",
-      "id": "lb",
+      "id": "kq",
       "cardType": "upgrade"
     },
-    "lc": {
+    "kr": {
       "cardName": "San Hill",
       "points": 3,
       "isUnique": true,
@@ -4384,10 +4381,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/AcVqv40.png",
-      "id": "lc",
+      "id": "kr",
       "cardType": "upgrade"
     },
-    "ld": {
+    "ks": {
       "cardName": "Shu Mai",
       "points": 4,
       "isUnique": true,
@@ -4398,10 +4395,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/8dG1YpO.png",
-      "id": "ld",
+      "id": "ks",
       "cardType": "upgrade"
     },
-    "le": {
+    "kt": {
       "cardName": "TI-99",
       "points": 4,
       "isUnique": true,
@@ -4412,10 +4409,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/V9CYOEU.png",
-      "id": "le",
+      "id": "kt",
       "cardType": "upgrade"
     },
-    "lf": {
+    "ku": {
       "cardName": "Tikkes",
       "points": 2,
       "isUnique": true,
@@ -4426,10 +4423,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/l7G05tI.png",
-      "id": "lf",
+      "id": "ku",
       "cardType": "upgrade"
     },
-    "lg": {
+    "kv": {
       "cardName": "Wat Tambor",
       "points": 5,
       "isUnique": true,
@@ -4440,10 +4437,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/MYpNhXT.jpeg",
-      "id": "lg",
+      "id": "kv",
       "cardType": "upgrade"
     },
-    "lh": {
+    "kw": {
       "cardName": "T-Series Tactical Droid",
       "points": 4,
       "isUnique": false,
@@ -4454,10 +4451,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/8H1wATK.jpeg",
-      "id": "lh",
+      "id": "kw",
       "cardType": "upgrade"
     },
-    "li": {
+    "kx": {
       "cardName": "Caitken and Sholan",
       "points": 6,
       "isUnique": true,
@@ -4468,10 +4465,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/5msklkl.jpg",
-      "id": "li",
+      "id": "kx",
       "cardType": "upgrade"
     },
-    "lj": {
+    "ky": {
       "cardName": "Gunnery Chief Varnillian",
       "points": 6,
       "isUnique": true,
@@ -4482,10 +4479,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/JG9I88l.jpg",
-      "id": "lj",
+      "id": "ky",
       "cardType": "upgrade"
     },
-    "lk": {
+    "kz": {
       "cardName": "Fire-Control Team",
       "points": 2,
       "isUnique": false,
@@ -4496,10 +4493,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/VFlRiDL.jpg",
-      "id": "lk",
+      "id": "kz",
       "cardType": "upgrade"
     },
-    "ll": {
+    "la": {
       "cardName": "Gunnery Team",
       "points": 7,
       "isUnique": false,
@@ -4510,10 +4507,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Jw2Qhgz.jpg",
-      "id": "ll",
+      "id": "la",
       "cardType": "upgrade"
     },
-    "lm": {
+    "lb": {
       "cardName": "Flight Controllers",
       "points": 6,
       "isUnique": false,
@@ -4524,10 +4521,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/3WO48B6.jpg",
-      "id": "lm",
+      "id": "lb",
       "cardType": "upgrade"
     },
-    "ln": {
+    "lc": {
       "cardName": "Local Fire Control",
       "points": 4,
       "isUnique": false,
@@ -4538,10 +4535,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/OepfCdw.jpg",
-      "id": "ln",
+      "id": "lc",
       "cardType": "upgrade"
     },
-    "lo": {
+    "ld": {
       "cardName": "Ordnance Experts",
       "points": 4,
       "isUnique": false,
@@ -4552,10 +4549,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/3SpyXDz.jpg",
-      "id": "lo",
+      "id": "ld",
       "cardType": "upgrade"
     },
-    "lp": {
+    "le": {
       "cardName": "Ruthless Strategists",
       "points": 5,
       "isUnique": false,
@@ -4566,10 +4563,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/2mDorqh.jpg",
-      "id": "lp",
+      "id": "le",
       "cardType": "upgrade"
     },
-    "lq": {
+    "lf": {
       "cardName": "Sensor Team",
       "points": 5,
       "isUnique": false,
@@ -4580,10 +4577,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/pnn0pOz.jpg",
-      "id": "lq",
+      "id": "lf",
       "cardType": "upgrade"
     },
-    "lr": {
+    "lg": {
       "cardName": "Veteran Gunners",
       "points": 5,
       "isUnique": false,
@@ -4594,10 +4591,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/mYGP8R6.jpg",
-      "id": "lr",
+      "id": "lg",
       "cardType": "upgrade"
     },
-    "ls": {
+    "lh": {
       "cardName": "Weapons Battery Techs",
       "points": 5,
       "isUnique": false,
@@ -4608,10 +4605,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/wQ6S57i.jpg",
-      "id": "ls",
+      "id": "lh",
       "cardType": "upgrade"
     },
-    "lt": {
+    "li": {
       "cardName": "Clone Gunners",
       "points": 4,
       "isUnique": false,
@@ -4622,10 +4619,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/8Rr4vE5.jpeg",
-      "id": "lt",
+      "id": "li",
       "cardType": "upgrade"
     },
-    "lu": {
+    "lj": {
       "cardName": "Cham Syndulla",
       "points": 5,
       "isUnique": true,
@@ -4637,10 +4634,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/1UBq5nW.jpg",
-      "id": "lu",
+      "id": "lj",
       "cardType": "upgrade"
     },
-    "lv": {
+    "lk": {
       "cardName": "Jyn Erso",
       "points": 4,
       "isUnique": true,
@@ -4652,10 +4649,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/PJTbNuK.jpg",
-      "id": "lv",
+      "id": "lk",
       "cardType": "upgrade"
     },
-    "lw": {
+    "ll": {
       "cardName": "Shriv Suurgav",
       "points": 6,
       "isUnique": true,
@@ -4667,10 +4664,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/0y9SkmF.jpg",
-      "id": "lw",
+      "id": "ll",
       "cardType": "upgrade"
     },
-    "lx": {
+    "lm": {
       "cardName": "Darth Vader",
       "points": 3,
       "isUnique": true,
@@ -4682,10 +4679,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/8Xu7fJp.jpg",
-      "id": "lx",
+      "id": "lm",
       "cardType": "upgrade"
     },
-    "ly": {
+    "ln": {
       "cardName": "Boarding Troopers",
       "points": 3,
       "isUnique": false,
@@ -4697,10 +4694,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/U9MB7cI.jpg",
-      "id": "ly",
+      "id": "ln",
       "cardType": "upgrade"
     },
-    "ma": {
+    "lo": {
       "cardName": "Boarding Engineers",
       "points": 2,
       "isUnique": false,
@@ -4712,10 +4709,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/iIj1jTC.jpg",
-      "id": "ma",
+      "id": "lo",
       "cardType": "upgrade"
     },
-    "mb": {
+    "lp": {
       "cardName": "Advanced Transponder Net",
       "points": 5,
       "isUnique": false,
@@ -4726,10 +4723,10 @@
       "requirements": [],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/vm6HKV1.jpg",
-      "id": "mb",
+      "id": "lp",
       "cardType": "upgrade"
     },
-    "mc": {
+    "lq": {
       "cardName": "Boosted Comms",
       "points": 4,
       "isUnique": false,
@@ -4740,10 +4737,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/pq9oDK2.jpg",
-      "id": "mc",
+      "id": "lq",
       "cardType": "upgrade"
     },
-    "md": {
+    "lr": {
       "cardName": "Disposable Capacitors",
       "points": 3,
       "isUnique": false,
@@ -4753,15 +4750,19 @@
       ],
       "requirements": [
         "OR",
-        { "shipSize": "small" },
-        { "shipSize": "medium" }
+        {
+          "shipSize": "small"
+        },
+        {
+          "shipSize": "medium"
+        }
       ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/sujhLdx.jpg",
-      "id": "md",
+      "id": "lr",
       "cardType": "upgrade"
     },
-    "me": {
+    "ls": {
       "cardName": "Expanded Hangar Bay",
       "points": 5,
       "isUnique": false,
@@ -4772,10 +4773,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/uHXkIP2.jpg",
-      "id": "me",
+      "id": "ls",
       "cardType": "upgrade"
     },
-    "mf": {
+    "lt": {
       "cardName": "Flag Bridge",
       "points": 0,
       "isUnique": false,
@@ -4785,19 +4786,25 @@
       ],
       "requirements": [
         "AND",
-        { "flagship": true },
+        {
+          "flagship": true
+        },
         [
           "OR",
-          { "shipSize": "medium" },
-          { "shipSize": "large" }
+          {
+            "shipSize": "medium"
+          },
+          {
+            "shipSize": "large"
+          }
         ]
       ],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/qJksgmR.jpg",
-      "id": "mf",
+      "id": "lt",
       "cardType": "upgrade"
     },
-    "mg": {
+    "lu": {
       "cardName": "Flak Guns",
       "points": 3,
       "isUnique": false,
@@ -4808,10 +4815,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/pRgw74R.png",
-      "id": "mg",
+      "id": "lu",
       "cardType": "upgrade"
     },
-    "mh": {
+    "lv": {
       "cardName": "Hardened Bulkheads",
       "points": 5,
       "isUnique": false,
@@ -4819,13 +4826,17 @@
       "upgradeSlots": [
         "offensive retrofit"
       ],
-      "requirements": [{ "shipSize": "large" }],
+      "requirements": [
+        {
+          "shipSize": "large"
+        }
+      ],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/Cz9oxBt.jpg",
-      "id": "mh",
+      "id": "lv",
       "cardType": "upgrade"
     },
-    "mi": {
+    "lw": {
       "cardName": "Phylon Q7 Tractor Beams",
       "points": 6,
       "isUnique": false,
@@ -4836,10 +4847,10 @@
       "requirements": [],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/x7VhJXM.jpg",
-      "id": "mi",
+      "id": "lw",
       "cardType": "upgrade"
     },
-    "mj": {
+    "lx": {
       "cardName": "Point-Defense Reroute",
       "points": 5,
       "isUnique": false,
@@ -4850,10 +4861,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/IAIYK4H.jpg",
-      "id": "mj",
+      "id": "lx",
       "cardType": "upgrade"
     },
-    "mk": {
+    "ly": {
       "cardName": "Proximity Mines",
       "points": 4,
       "isUnique": false,
@@ -4864,10 +4875,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/e93H1wf.jpg",
-      "id": "mk",
+      "id": "ly",
       "cardType": "upgrade"
     },
-    "ml": {
+    "lz": {
       "cardName": "Quad Laser Turrets",
       "points": 5,
       "isUnique": false,
@@ -4878,10 +4889,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/HKfQx0O.jpg",
-      "id": "ml",
+      "id": "lz",
       "cardType": "upgrade"
     },
-    "mm": {
+    "ma": {
       "cardName": "Rapid Launch Bays",
       "points": 6,
       "isUnique": false,
@@ -4892,10 +4903,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/PHiQ5fk.jpg",
-      "id": "mm",
+      "id": "ma",
       "cardType": "upgrade"
     },
-    "mn": {
+    "mb": {
       "cardName": "Reserve Hangar Deck",
       "points": 3,
       "isUnique": false,
@@ -4906,10 +4917,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/CuuMCQr.jpg",
-      "id": "mn",
+      "id": "mb",
       "cardType": "upgrade"
     },
-    "mo": {
+    "mc": {
       "cardName": "Auxilliary Shields Team",
       "points": 3,
       "isUnique": false,
@@ -4920,10 +4931,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/SkNnm5P.jpg",
-      "id": "mo",
+      "id": "mc",
       "cardType": "upgrade"
     },
-    "mp": {
+    "md": {
       "cardName": "Engine Techs",
       "points": 8,
       "isUnique": false,
@@ -4934,10 +4945,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/5oEvYoq.jpg",
-      "id": "mp",
+      "id": "md",
       "cardType": "upgrade"
     },
-    "mq": {
+    "me": {
       "cardName": "Engineering Team",
       "points": 5,
       "isUnique": false,
@@ -4948,10 +4959,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/ZmpFl4q.jpg",
-      "id": "mq",
+      "id": "me",
       "cardType": "upgrade"
     },
-    "mr": {
+    "mf": {
       "cardName": "Fighter Coordination Team",
       "points": 3,
       "isUnique": false,
@@ -4962,10 +4973,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/wKI96Sb.jpg",
-      "id": "mr",
+      "id": "mf",
       "cardType": "upgrade"
     },
-    "ms": {
+    "mg": {
       "cardName": "Medical Team",
       "points": 1,
       "isUnique": false,
@@ -4976,10 +4987,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/jwf6kLG.jpg",
-      "id": "ms",
+      "id": "mg",
       "cardType": "upgrade"
     },
-    "mt": {
+    "mh": {
       "cardName": "Nav Team",
       "points": 4,
       "isUnique": false,
@@ -4990,10 +5001,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/GdjIeBj.jpg",
-      "id": "mt",
+      "id": "mh",
       "cardType": "upgrade"
     },
-    "mu": {
+    "mi": {
       "cardName": "Projection Experts",
       "points": 6,
       "isUnique": false,
@@ -5004,10 +5015,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/0hPAHTI.jpg",
-      "id": "mu",
+      "id": "mi",
       "cardType": "upgrade"
     },
-    "mv": {
+    "mj": {
       "cardName": "Advanced Projectors",
       "points": 6,
       "isUnique": false,
@@ -5018,10 +5029,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/fREeP77.jpg",
-      "id": "mv",
+      "id": "mj",
       "cardType": "upgrade"
     },
-    "mw": {
+    "mk": {
       "cardName": "Cluster Bombs",
       "points": 5,
       "isUnique": false,
@@ -5032,10 +5043,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Ngqc1s9.jpg",
-      "id": "mw",
+      "id": "mk",
       "cardType": "upgrade"
     },
-    "mx": {
+    "ml": {
       "cardName": "Early Warning System",
       "points": 7,
       "isUnique": false,
@@ -5046,10 +5057,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/PBh5gdb.jpg",
-      "id": "mx",
+      "id": "ml",
       "cardType": "upgrade"
     },
-    "my": {
+    "mm": {
       "cardName": "Electronic Countermeasures",
       "points": 7,
       "isUnique": false,
@@ -5060,10 +5071,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/LF2AEZT.jpg",
-      "id": "my",
+      "id": "mm",
       "cardType": "upgrade"
     },
-    "na": {
+    "mn": {
       "cardName": "Reactive Gunnery",
       "points": 4,
       "isUnique": false,
@@ -5074,10 +5085,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/rKp36un.jpg",
-      "id": "na",
+      "id": "mn",
       "cardType": "upgrade"
     },
-    "nb": {
+    "mo": {
       "cardName": "Redundant Shields",
       "points": 8,
       "isUnique": false,
@@ -5088,10 +5099,10 @@
       "requirements": [],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/3CmOh4B.jpg",
-      "id": "nb",
+      "id": "mo",
       "cardType": "upgrade"
     },
-    "nc": {
+    "mp": {
       "cardName": "Reinforced Blast Doors",
       "points": 5,
       "isUnique": false,
@@ -5102,10 +5113,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/OVWDAVK.jpg",
-      "id": "nc",
+      "id": "mp",
       "cardType": "upgrade"
     },
-    "nd": {
+    "mq": {
       "cardName": "Thermal Shields",
       "points": 5,
       "isUnique": false,
@@ -5115,15 +5126,19 @@
       ],
       "requirements": [
         "OR",
-        { "faction": "republic" },
-        { "faction": "separatists" }
+        {
+          "faction": "republic"
+        },
+        {
+          "faction": "separatists"
+        }
       ],
       "isModification": false,
       "imageUrl": "",
-      "id": "nd",
+      "id": "mq",
       "cardType": "upgrade"
     },
-    "ne": {
+    "mr": {
       "cardName": "Assault Concussion Missiles",
       "points": 5,
       "isUnique": false,
@@ -5134,10 +5149,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/iuWMfEx.jpg",
-      "id": "ne",
+      "id": "mr",
       "cardType": "upgrade"
     },
-    "nf": {
+    "ms": {
       "cardName": "Assault Proton Torpedoes",
       "points": 4,
       "isUnique": false,
@@ -5148,10 +5163,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/ZHMQWZr.jpg",
-      "id": "nf",
+      "id": "ms",
       "cardType": "upgrade"
     },
-    "ng": {
+    "mt": {
       "cardName": "Expanded Launchers",
       "points": 13,
       "isUnique": false,
@@ -5162,10 +5177,10 @@
       "requirements": [],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/PrpF5Sh.jpg",
-      "id": "ng",
+      "id": "mt",
       "cardType": "upgrade"
     },
-    "nh": {
+    "mu": {
       "cardName": "External Racks",
       "points": 4,
       "isUnique": false,
@@ -5176,10 +5191,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/0nzMm68.jpg",
-      "id": "nh",
+      "id": "mu",
       "cardType": "upgrade"
     },
-    "ni": {
+    "mv": {
       "cardName": "Flechette Torpedoes",
       "points": 3,
       "isUnique": false,
@@ -5190,10 +5205,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/ENBODz0.jpg",
-      "id": "ni",
+      "id": "mv",
       "cardType": "upgrade"
     },
-    "nj": {
+    "mw": {
       "cardName": "Ordnance Pods",
       "points": 3,
       "isUnique": false,
@@ -5204,10 +5219,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/bxshsaj.jpg",
-      "id": "nj",
+      "id": "mw",
       "cardType": "upgrade"
     },
-    "nk": {
+    "mx": {
       "cardName": "Rapid Reload",
       "points": 8,
       "isUnique": false,
@@ -5218,10 +5233,10 @@
       "requirements": [],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/gX8DdhB.jpg",
-      "id": "nk",
+      "id": "mx",
       "cardType": "upgrade"
     },
-    "nl": {
+    "my": {
       "cardName": "Wide-Area Barrage",
       "points": 2,
       "isUnique": false,
@@ -5232,10 +5247,10 @@
       "requirements": [],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/HA96Xmz.jpg",
-      "id": "nl",
+      "id": "my",
       "cardType": "upgrade"
     },
-    "nm": {
+    "mz": {
       "cardName": "Heavy Ion Emplacements",
       "points": 8,
       "isUnique": false,
@@ -5246,10 +5261,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/S82y39J.jpg",
-      "id": "nm",
+      "id": "mz",
       "cardType": "upgrade"
     },
-    "nn": {
+    "na": {
       "cardName": "High-Capacity Ion Turbines",
       "points": 8,
       "isUnique": false,
@@ -5260,10 +5275,10 @@
       "requirements": [],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/sNFD2X4.jpg",
-      "id": "nn",
+      "id": "na",
       "cardType": "upgrade"
     },
-    "no": {
+    "nb": {
       "cardName": "Ion Cannon Batteries",
       "points": 5,
       "isUnique": false,
@@ -5274,10 +5289,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/ygkNbuk.jpg",
-      "id": "no",
+      "id": "nb",
       "cardType": "upgrade"
     },
-    "np": {
+    "nc": {
       "cardName": "Leading Shots",
       "points": 6,
       "isUnique": false,
@@ -5288,10 +5303,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/0wvdKHN.jpg",
-      "id": "np",
+      "id": "nc",
       "cardType": "upgrade"
     },
-    "nq": {
+    "nd": {
       "cardName": "MS-1 Ion Cannons",
       "points": 2,
       "isUnique": false,
@@ -5302,10 +5317,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/WJpPDTH.jpg",
-      "id": "nq",
+      "id": "nd",
       "cardType": "upgrade"
     },
-    "nr": {
+    "ne": {
       "cardName": "NK-7 Ion Cannons",
       "points": 10,
       "isUnique": false,
@@ -5316,10 +5331,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/pw7KB1o.jpg",
-      "id": "nr",
+      "id": "ne",
       "cardType": "upgrade"
     },
-    "ns": {
+    "nf": {
       "cardName": "Overload Pulse",
       "points": 8,
       "isUnique": false,
@@ -5330,10 +5345,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/93yRQdH.jpg",
-      "id": "ns",
+      "id": "nf",
       "cardType": "upgrade"
     },
-    "nt": {
+    "ng": {
       "cardName": "Point Defense Ion Cannons",
       "points": 4,
       "isUnique": false,
@@ -5343,14 +5358,16 @@
       ],
       "requirements": [
         "NOT",
-        { "shipSize": "huge" }
+        {
+          "shipSize": "huge"
+        }
       ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Ed6N3bM.png",
-      "id": "nt",
+      "id": "ng",
       "cardType": "upgrade"
     },
-    "nu": {
+    "nh": {
       "cardName": "SW-7 Ion Batteries",
       "points": 5,
       "isUnique": false,
@@ -5361,10 +5378,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/rL77eki.jpg",
-      "id": "nu",
+      "id": "nh",
       "cardType": "upgrade"
     },
-    "nv": {
+    "ni": {
       "cardName": "DBY-827 Heavy Turbolasers",
       "points": 3,
       "isUnique": false,
@@ -5375,10 +5392,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/wNkyRDb.png",
-      "id": "nv",
+      "id": "ni",
       "cardType": "upgrade"
     },
-    "nw": {
+    "nj": {
       "cardName": "Dual Turbolaser Turrets",
       "points": 5,
       "isUnique": false,
@@ -5389,10 +5406,10 @@
       "requirements": [],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/RfHrc24.jpg",
-      "id": "nw",
+      "id": "nj",
       "cardType": "upgrade"
     },
-    "nx": {
+    "nk": {
       "cardName": "Enhanced Armament",
       "points": 10,
       "isUnique": false,
@@ -5403,10 +5420,10 @@
       "requirements": [],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/fixRACB.jpg",
-      "id": "nx",
+      "id": "nk",
       "cardType": "upgrade"
     },
-    "ny": {
+    "nl": {
       "cardName": "H9 Turbolasers",
       "points": 8,
       "isUnique": false,
@@ -5417,10 +5434,10 @@
       "requirements": [],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/vPAmdyc.jpg",
-      "id": "ny",
+      "id": "nl",
       "cardType": "upgrade"
     },
-    "oa": {
+    "nm": {
       "cardName": "Heavy Fire Zone",
       "points": 4,
       "isUnique": false,
@@ -5431,10 +5448,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/f0phD19.jpg",
-      "id": "oa",
+      "id": "nm",
       "cardType": "upgrade"
     },
-    "ob": {
+    "nn": {
       "cardName": "Heavy Turbolaser Turrets",
       "points": 6,
       "isUnique": false,
@@ -5445,10 +5462,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/1BzH8yv.jpg",
-      "id": "ob",
+      "id": "nn",
       "cardType": "upgrade"
     },
-    "oc": {
+    "no": {
       "cardName": "Linked Turbolaser Turrets",
       "points": 7,
       "isUnique": false,
@@ -5459,10 +5476,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Zxt5U1V.jpg",
-      "id": "oc",
+      "id": "no",
       "cardType": "upgrade"
     },
-    "od": {
+    "np": {
       "cardName": "Quad Battery Turrets",
       "points": 5,
       "isUnique": false,
@@ -5473,10 +5490,10 @@
       "requirements": [],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/OpE4elu.jpg",
-      "id": "od",
+      "id": "np",
       "cardType": "upgrade"
     },
-    "oe": {
+    "nq": {
       "cardName": "Quad Turbolaser Cannons",
       "points": 10,
       "isUnique": false,
@@ -5487,10 +5504,10 @@
       "requirements": [],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/QdRydD8.jpg",
-      "id": "oe",
+      "id": "nq",
       "cardType": "upgrade"
     },
-    "of": {
+    "nr": {
       "cardName": "Slaved Turrets",
       "points": 5,
       "isUnique": false,
@@ -5501,10 +5518,10 @@
       "requirements": [],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/J9NmUDb.jpg",
-      "id": "of",
+      "id": "nr",
       "cardType": "upgrade"
     },
-    "og": {
+    "ns": {
       "cardName": "Spinal Armament",
       "points": 9,
       "isUnique": false,
@@ -5515,10 +5532,10 @@
       "requirements": [],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/0eLX7ML.jpg",
-      "id": "og",
+      "id": "ns",
       "cardType": "upgrade"
     },
-    "oh": {
+    "nt": {
       "cardName": "Turbolaser Reroute Circuits",
       "points": 7,
       "isUnique": false,
@@ -5529,10 +5546,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/6faOpzf.jpg",
-      "id": "oh",
+      "id": "nt",
       "cardType": "upgrade"
     },
-    "oi": {
+    "nu": {
       "cardName": "XI7 Turbolasers",
       "points": 6,
       "isUnique": false,
@@ -5543,10 +5560,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/leeZbxw.jpg",
-      "id": "oi",
+      "id": "nu",
       "cardType": "upgrade"
     },
-    "oj": {
+    "nv": {
       "cardName": "XX-9 Turbolasers",
       "points": 5,
       "isUnique": false,
@@ -5557,10 +5574,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/ttbae06.jpg",
-      "id": "oj",
+      "id": "nv",
       "cardType": "upgrade"
     },
-    "ok": {
+    "nw": {
       "cardName": "Swivel-Mount Batteries",
       "points": 8,
       "isUnique": false,
@@ -5570,15 +5587,19 @@
       ],
       "requirements": [
         "OR",
-        { "faction": "republic" },
-        { "faction": "separatists" }
+        {
+          "faction": "republic"
+        },
+        {
+          "faction": "separatists"
+        }
       ],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/QyfrQ24.jpeg",
-      "id": "ok",
+      "id": "nw",
       "cardType": "upgrade"
     },
-    "ol": {
+    "nx": {
       "cardName": "Admonition",
       "points": 6,
       "isUnique": true,
@@ -5586,13 +5607,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "MC30" }],
+      "requirements": [
+        {
+          "cardName": "MC30"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/rRIV5mH.jpg",
-      "id": "ol",
+      "id": "nx",
       "cardType": "upgrade"
     },
-    "om": {
+    "ny": {
       "cardName": "Annihilator",
       "points": 8,
       "isUnique": true,
@@ -5600,13 +5625,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Star Dreadnought" }],
+      "requirements": [
+        {
+          "cardName": "Star Dreadnought"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/R9rr8vA.jpg",
-      "id": "om",
+      "id": "ny",
       "cardType": "upgrade"
     },
-    "on": {
+    "nz": {
       "cardName": "Amity",
       "points": 6,
       "isUnique": true,
@@ -5614,13 +5643,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Starhawk" }],
+      "requirements": [
+        {
+          "cardName": "Starhawk"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/BcOXgXM.jpg",
-      "id": "on",
+      "id": "nz",
       "cardType": "upgrade"
     },
-    "oo": {
+    "oa": {
       "cardName": "Aspiration",
       "points": 3,
       "isUnique": true,
@@ -5628,13 +5661,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "MC75" }],
+      "requirements": [
+        {
+          "cardName": "MC75"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/O0n3gY9.jpg",
-      "id": "oo",
+      "id": "oa",
       "cardType": "upgrade"
     },
-    "op": {
+    "ob": {
       "cardName": "Avenger",
       "points": 5,
       "isUnique": true,
@@ -5644,15 +5681,19 @@
       ],
       "requirements": [
         "OR",
-        { "cardName": "Imperial I" },
-        { "cardName": "Imperial Star Destroyer"}
+        {
+          "cardName": "Imperial I"
+        },
+        {
+          "cardName": "Imperial Star Destroyer"
+        }
       ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/UOIKPqu.jpg",
-      "id": "op",
+      "id": "ob",
       "cardType": "upgrade"
     },
-    "oq": {
+    "oc": {
       "cardName": "Beast of Burden",
       "points": 6,
       "isUnique": true,
@@ -5660,13 +5701,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Hardcell" }],
+      "requirements": [
+        {
+          "cardName": "Hardcell"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/0dOnlMq.jpeg",
-      "id": "oq",
+      "id": "oc",
       "cardType": "upgrade"
     },
-    "or": {
+    "od": {
       "cardName": "Bright Hope",
       "points": 2,
       "isUnique": true,
@@ -5674,13 +5719,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "GR-75" }],
+      "requirements": [
+        {
+          "cardName": "GR-75"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/ppRWBhH.jpg",
-      "id": "or",
+      "id": "od",
       "cardType": "upgrade"
     },
-    "os": {
+    "oe": {
       "cardName": "Cataclysm",
       "points": 5,
       "isUnique": true,
@@ -5688,13 +5737,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Onager" }],
+      "requirements": [
+        {
+          "cardName": "Onager"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/BJwwHvW.jpg",
-      "id": "os",
+      "id": "oe",
       "cardType": "upgrade"
     },
-    "ot": {
+    "of": {
       "cardName": "Centicore",
       "points": 3,
       "isUnique": true,
@@ -5702,13 +5755,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Arquitens" }],
+      "requirements": [
+        {
+          "cardName": "Arquitens"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/y41PoZy.jpg",
-      "id": "ot",
+      "id": "of",
       "cardType": "upgrade"
     },
-    "ou": {
+    "og": {
       "cardName": "Chimaera",
       "points": 4,
       "isUnique": true,
@@ -5718,15 +5775,19 @@
       ],
       "requirements": [
         "OR",
-        { "cardName": "Imperial I" },
-        { "cardName": "Imperial Star Destroyer"}
+        {
+          "cardName": "Imperial I"
+        },
+        {
+          "cardName": "Imperial Star Destroyer"
+        }
       ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/o5AtxcG.jpg",
-      "id": "ou",
+      "id": "og",
       "cardType": "upgrade"
     },
-    "ov": {
+    "oh": {
       "cardName": "Concord",
       "points": 12,
       "isUnique": true,
@@ -5734,13 +5795,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Starhawk" }],
+      "requirements": [
+        {
+          "cardName": "Starhawk"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/76LdzqR.jpg",
-      "id": "ov",
+      "id": "oh",
       "cardType": "upgrade"
     },
-    "ow": {
+    "oi": {
       "cardName": "Corrupter",
       "points": 5,
       "isUnique": true,
@@ -5748,13 +5813,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Victory" }],
+      "requirements": [
+        {
+          "cardName": "Victory"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/n8Plm1g.jpg",
-      "id": "ow",
+      "id": "oi",
       "cardType": "upgrade"
     },
-    "ox": {
+    "oj": {
       "cardName": "Corvus",
       "points": 2,
       "isUnique": true,
@@ -5762,13 +5831,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Raider" }],
+      "requirements": [
+        {
+          "cardName": "Raider"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/huKZyhu.jpg",
-      "id": "ox",
+      "id": "oj",
       "cardType": "upgrade"
     },
-    "oy": {
+    "ok": {
       "cardName": "Defiance",
       "points": 5,
       "isUnique": true,
@@ -5778,15 +5851,19 @@
       ],
       "requirements": [
         "OR",
-        { "cardName": "MC80 Command" },
-        { "cardName": "MC80 Assault"}
+        {
+          "cardName": "MC80 Command"
+        },
+        {
+          "cardName": "MC80 Assault"
+        }
       ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/cBm6bOA.jpg",
-      "id": "oy",
+      "id": "ok",
       "cardType": "upgrade"
     },
-    "pa": {
+    "ol": {
       "cardName": "Demolisher",
       "points": 10,
       "isUnique": true,
@@ -5794,13 +5871,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Gladiator" }],
+      "requirements": [
+        {
+          "cardName": "Gladiator"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/lIICVGX.jpg",
-      "id": "pa",
+      "id": "ol",
       "cardType": "upgrade"
     },
-    "pb": {
+    "om": {
       "cardName": "Devastator",
       "points": 10,
       "isUnique": true,
@@ -5810,15 +5891,19 @@
       ],
       "requirements": [
         "OR",
-        { "cardName": "Imperial I" },
-        { "cardName": "Imperial Star Destroyer" }
+        {
+          "cardName": "Imperial I"
+        },
+        {
+          "cardName": "Imperial Star Destroyer"
+        }
       ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/nKieVmI.jpg",
-      "id": "pb",
+      "id": "om",
       "cardType": "upgrade"
     },
-    "pc": {
+    "on": {
       "cardName": "Dodonna's Pride",
       "points": 6,
       "isUnique": true,
@@ -5826,13 +5911,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "CR90" }],
+      "requirements": [
+        {
+          "cardName": "CR90"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/XoROjrp.jpg",
-      "id": "pc",
+      "id": "on",
       "cardType": "upgrade"
     },
-    "pd": {
+    "oo": {
       "cardName": "Dominator",
       "points": 12,
       "isUnique": true,
@@ -5840,13 +5929,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Victory" }],
+      "requirements": [
+        {
+          "cardName": "Victory"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/d03SuuK.jpg",
-      "id": "pd",
+      "id": "oo",
       "cardType": "upgrade"
     },
-    "pe": {
+    "op": {
       "cardName": "Eclipse",
       "points": 3,
       "isUnique": true,
@@ -5854,13 +5947,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Star Dreadnought" }],
+      "requirements": [
+        {
+          "cardName": "Star Dreadnought"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Vnmp8CR.jpg",
-      "id": "pe",
+      "id": "op",
       "cardType": "upgrade"
     },
-    "pf": {
+    "oq": {
       "cardName": "Endeavor",
       "points": 4,
       "isUnique": true,
@@ -5870,15 +5967,19 @@
       ],
       "requirements": [
         "OR",
-        { "cardName": "MC80 Star" },
-        { "cardName": "MC80 Battle" }
+        {
+          "cardName": "MC80 Star"
+        },
+        {
+          "cardName": "MC80 Battle"
+        }
       ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/YQO9jve.jpg",
-      "id": "pf",
+      "id": "oq",
       "cardType": "upgrade"
     },
-    "pg": {
+    "or": {
       "cardName": "Executor",
       "points": 2,
       "isUnique": true,
@@ -5886,13 +5987,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Star Dreadnought" }],
+      "requirements": [
+        {
+          "cardName": "Star Dreadnought"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/OGaToRQ.jpg",
-      "id": "pg",
+      "id": "or",
       "cardType": "upgrade"
     },
-    "ph": {
+    "os": {
       "cardName": "FB-88",
       "points": 4,
       "isUnique": true,
@@ -5900,13 +6005,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Pelta-class" }],
+      "requirements": [
+        {
+          "cardName": "Pelta-class"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/l5LNFSR.png",
-      "id": "ph",
+      "id": "os",
       "cardType": "upgrade"
     },
-    "pi": {
+    "ot": {
       "cardName": "Foreman's Labor",
       "points": 5,
       "isUnique": true,
@@ -5914,13 +6023,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Hardcell" }],
+      "requirements": [
+        {
+          "cardName": "Hardcell"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/cfJ004t.jpeg",
-      "id": "pi",
+      "id": "ot",
       "cardType": "upgrade"
     },
-    "pj": {
+    "ou": {
       "cardName": "Foresight",
       "points": 8,
       "isUnique": true,
@@ -5928,13 +6041,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "MC30" }],
+      "requirements": [
+        {
+          "cardName": "MC30"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/HpSit4j.jpg",
-      "id": "pj",
+      "id": "ou",
       "cardType": "upgrade"
     },
-    "pk": {
+    "ov": {
       "cardName": "Gallant Haven",
       "points": 8,
       "isUnique": true,
@@ -5942,13 +6059,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Assault Frigate" }],
+      "requirements": [
+        {
+          "cardName": "Assault Frigate"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Foap6UL.jpg",
-      "id": "pk",
+      "id": "ov",
       "cardType": "upgrade"
     },
-    "pl": {
+    "ow": {
       "cardName": "Garel's Honor",
       "points": 4,
       "isUnique": true,
@@ -5956,13 +6077,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Hammerhead" }],
+      "requirements": [
+        {
+          "cardName": "Hammerhead"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/tl2VV0J.jpg",
-      "id": "pl",
+      "id": "ow",
       "cardType": "upgrade"
     },
-    "pm": {
+    "ox": {
       "cardName": "Gilded Aegis",
       "points": 5,
       "isUnique": true,
@@ -5970,13 +6095,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Recusant" }],
+      "requirements": [
+        {
+          "cardName": "Recusant"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/wbFFUaq.png",
-      "id": "pm",
+      "id": "ox",
       "cardType": "upgrade"
     },
-    "pn": {
+    "oy": {
       "cardName": "Hand of Justice",
       "points": 4,
       "isUnique": true,
@@ -5984,13 +6113,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Arquitens" }],
+      "requirements": [
+        {
+          "cardName": "Arquitens"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/gfeIVpM.jpg",
-      "id": "pn",
+      "id": "oy",
       "cardType": "upgrade"
     },
-    "po": {
+    "oz": {
       "cardName": "Harrow",
       "points": 3,
       "isUnique": true,
@@ -5998,13 +6131,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Victory" }],
+      "requirements": [
+        {
+          "cardName": "Victory"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/2j7zspi.jpg",
-      "id": "po",
+      "id": "oz",
       "cardType": "upgrade"
     },
-    "pp": {
+    "pa": {
       "cardName": "Home One",
       "points": 7,
       "isUnique": true,
@@ -6014,15 +6151,19 @@
       ],
       "requirements": [
         "OR",
-        { "cardName": "MC80 Command" },
-        { "cardName": "MC80 Assault" }
+        {
+          "cardName": "MC80 Command"
+        },
+        {
+          "cardName": "MC80 Assault"
+        }
       ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/ao1aUWd.jpg",
-      "id": "pp",
+      "id": "pa",
       "cardType": "upgrade"
     },
-    "pq": {
+    "pb": {
       "cardName": "Implacable",
       "points": 4,
       "isUnique": true,
@@ -6030,13 +6171,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Acclamator" }],
+      "requirements": [
+        {
+          "cardName": "Acclamator"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Y8uSW2V.jpeg",
-      "id": "pq",
+      "id": "pb",
       "cardType": "upgrade"
     },
-    "pr": {
+    "pc": {
       "cardName": "Impetuous",
       "points": 4,
       "isUnique": true,
@@ -6044,13 +6189,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Raider" }],
+      "requirements": [
+        {
+          "cardName": "Raider"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/3fOmzlk.jpg",
-      "id": "pr",
+      "id": "pc",
       "cardType": "upgrade"
     },
-    "ps": {
+    "pd": {
       "cardName": "Independence",
       "points": 8,
       "isUnique": true,
@@ -6060,15 +6209,19 @@
       ],
       "requirements": [
         "OR",
-        { "cardName": "MC80 Command" },
-        { "cardName": "MC80 Assault" }
+        {
+          "cardName": "MC80 Command"
+        },
+        {
+          "cardName": "MC80 Assault"
+        }
       ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/eeJ4K4e.jpg",
-      "id": "ps",
+      "id": "pd",
       "cardType": "upgrade"
     },
-    "pt": {
+    "pe": {
       "cardName": "Insidious",
       "points": 3,
       "isUnique": true,
@@ -6076,13 +6229,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Gladiator" }],
+      "requirements": [
+        {
+          "cardName": "Gladiator"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/lJU1Qr0.jpg",
-      "id": "pt",
+      "id": "pe",
       "cardType": "upgrade"
     },
-    "pu": {
+    "pf": {
       "cardName": "Instigator",
       "points": 4,
       "isUnique": true,
@@ -6090,13 +6247,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Raider" }],
+      "requirements": [
+        {
+          "cardName": "Raider"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/dht3fJ6.jpg",
-      "id": "pu",
+      "id": "pf",
       "cardType": "upgrade"
     },
-    "pv": {
+    "pg": {
       "cardName": "Interdictor",
       "points": 3,
       "isUnique": true,
@@ -6104,13 +6265,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Interdictor" }],
+      "requirements": [
+        {
+          "cardName": "Interdictor"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/sIO1x2W.jpg",
-      "id": "pv",
+      "id": "pg",
       "cardType": "upgrade"
     },
-    "pw": {
+    "ph": {
       "cardName": "Invincible",
       "points": 5,
       "isUnique": true,
@@ -6118,13 +6283,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Providence" }],
+      "requirements": [
+        {
+          "cardName": "Providence"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/NcS65Gb.png",
-      "id": "pw",
+      "id": "ph",
       "cardType": "upgrade"
     },
-    "px": {
+    "pi": {
       "cardName": "Invisible Hand",
       "points": 9,
       "isUnique": true,
@@ -6132,13 +6301,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Providence" }],
+      "requirements": [
+        {
+          "cardName": "Providence"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/gW84lFN.png",
-      "id": "px",
+      "id": "pi",
       "cardType": "upgrade"
     },
-    "py": {
+    "pj": {
       "cardName": "Jaina's Light",
       "points": 2,
       "isUnique": true,
@@ -6146,13 +6319,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "CR90" }],
+      "requirements": [
+        {
+          "cardName": "CR90"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/v5gczKg.jpg",
-      "id": "py",
+      "id": "pj",
       "cardType": "upgrade"
     },
-    "qa": {
+    "pk": {
       "cardName": "Liberator",
       "points": 2,
       "isUnique": true,
@@ -6160,13 +6337,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "CR90" }],
+      "requirements": [
+        {
+          "cardName": "CR90"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/zPLLjv2.jpg",
-      "id": "qa",
+      "id": "pk",
       "cardType": "upgrade"
     },
-    "qb": {
+    "pl": {
       "cardName": "Liberty",
       "points": 3,
       "isUnique": true,
@@ -6176,15 +6357,19 @@
       ],
       "requirements": [
         "OR",
-        { "cardName": "MC80 Battle Cruiser" },
-        { "cardName": "MC80 Star Cruiser" }
+        {
+          "cardName": "MC80 Battle Cruiser"
+        },
+        {
+          "cardName": "MC80 Star Cruiser"
+        }
       ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/gnoxT5J.jpg",
-      "id": "qb",
+      "id": "pl",
       "cardType": "upgrade"
     },
-    "qc": {
+    "pm": {
       "cardName": "Lucid Voice",
       "points": 8,
       "isUnique": true,
@@ -6192,13 +6377,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Providence" }],
+      "requirements": [
+        {
+          "cardName": "Providence"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/b5i7cIW.png",
-      "id": "qc",
+      "id": "pm",
       "cardType": "upgrade"
     },
-    "qd": {
+    "pn": {
       "cardName": "Mon Karren",
       "points": 6,
       "isUnique": true,
@@ -6208,15 +6397,19 @@
       ],
       "requirements": [
         "OR",
-        { "cardName": "MC80 Battle Cruiser" },
-        { "cardName": "MC80 Star Cruiser" }
+        {
+          "cardName": "MC80 Battle Cruiser"
+        },
+        {
+          "cardName": "MC80 Star Cruiser"
+        }
       ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/JbMnQpC.jpg",
-      "id": "qd",
+      "id": "pn",
       "cardType": "upgrade"
     },
-    "qe": {
+    "po": {
       "cardName": "Nevoota Bee",
       "points": 5,
       "isUnique": true,
@@ -6224,13 +6417,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Acclamator" }],
+      "requirements": [
+        {
+          "cardName": "Acclamator"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/bBFNBzc.jpeg",
-      "id": "qe",
+      "id": "po",
       "cardType": "upgrade"
     },
-    "qf": {
+    "pp": {
       "cardName": "Nova Defiant",
       "points": 4,
       "isUnique": true,
@@ -6238,13 +6435,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Recusant" }],
+      "requirements": [
+        {
+          "cardName": "Recusant"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/baLcwQJ.png",
-      "id": "qf",
+      "id": "pp",
       "cardType": "upgrade"
     },
-    "qg": {
+    "pq": {
       "cardName": "Paragon",
       "points": 5,
       "isUnique": true,
@@ -6252,13 +6453,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Assault Frigate" }],
+      "requirements": [
+        {
+          "cardName": "Assault Frigate"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/1lMOUvu.jpg",
-      "id": "qg",
+      "id": "pq",
       "cardType": "upgrade"
     },
-    "qh": {
+    "pr": {
       "cardName": "Patriot Fist",
       "points": 6,
       "isUnique": true,
@@ -6266,13 +6471,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Recusant" }],
+      "requirements": [
+        {
+          "cardName": "Recusant"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/032w54v.png",
-      "id": "qh",
+      "id": "pr",
       "cardType": "upgrade"
     },
-    "qi": {
+    "ps": {
       "cardName": "Phoenix Home",
       "points": 3,
       "isUnique": true,
@@ -6280,13 +6489,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Modified Pelta" }],
+      "requirements": [
+        {
+          "cardName": "Modified Pelta"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/4pKVy0F.jpg",
-      "id": "qi",
+      "id": "ps",
       "cardType": "upgrade"
     },
-    "qj": {
+    "pt": {
       "cardName": "Profundity",
       "points": 7,
       "isUnique": true,
@@ -6294,13 +6507,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "MC75" }],
+      "requirements": [
+        {
+          "cardName": "MC75"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/P0LQ9NC.jpg",
-      "id": "qj",
+      "id": "pt",
       "cardType": "upgrade"
     },
-    "qk": {
+    "pu": {
       "cardName": "Pursuant",
       "points": 2,
       "isUnique": true,
@@ -6308,13 +6525,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Quasar" }],
+      "requirements": [
+        {
+          "cardName": "Quasar"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/8971Me7.jpg",
-      "id": "qk",
+      "id": "pu",
       "cardType": "upgrade"
     },
-    "ql": {
+    "pv": {
       "cardName": "Quantum Storm",
       "points": 1,
       "isUnique": true,
@@ -6322,13 +6543,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "GR-75" }],
+      "requirements": [
+        {
+          "cardName": "GR-75"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Zvki0aa.jpg",
-      "id": "ql",
+      "id": "pv",
       "cardType": "upgrade"
     },
-    "qm": {
+    "pw": {
       "cardName": "Radiant VII",
       "points": 1,
       "isUnique": true,
@@ -6336,13 +6561,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Consular" }],
+      "requirements": [
+        {
+          "cardName": "Consular"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/kTBiAsS.jpg",
-      "id": "qm",
+      "id": "pw",
       "cardType": "upgrade"
     },
-    "qn": {
+    "px": {
       "cardName": "Rakehell",
       "points": 4,
       "isUnique": true,
@@ -6350,13 +6579,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Onager" }],
+      "requirements": [
+        {
+          "cardName": "Onager"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/R3NVdce.jpg",
-      "id": "qn",
+      "id": "px",
       "cardType": "upgrade"
     },
-    "qo": {
+    "py": {
       "cardName": "Ravager",
       "points": 4,
       "isUnique": true,
@@ -6366,15 +6599,19 @@
       ],
       "requirements": [
         "OR",
-        { "cardName": "Executor" },
-        { "cardName": "Star Dreadnought" }
+        {
+          "cardName": "Executor"
+        },
+        {
+          "cardName": "Star Dreadnought"
+        }
       ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/AcTzTTY.jpg",
-      "id": "qo",
+      "id": "py",
       "cardType": "upgrade"
     },
-    "qp": {
+    "pz": {
       "cardName": "Redemption",
       "points": 8,
       "isUnique": true,
@@ -6382,13 +6619,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Nebulon" }],
+      "requirements": [
+        {
+          "cardName": "Nebulon"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Dp0ayI3.jpg",
-      "id": "qp",
+      "id": "pz",
       "cardType": "upgrade"
     },
-    "qq": {
+    "qa": {
       "cardName": "Relentless",
       "points": 3,
       "isUnique": true,
@@ -6398,15 +6639,19 @@
       ],
       "requirements": [
         "OR",
-        { "cardName": "Imperial I" },
-        { "cardName": "Imperial Star Destroyer" }
+        {
+          "cardName": "Imperial I"
+        },
+        {
+          "cardName": "Imperial Star Destroyer"
+        }
       ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/AT9rKe4.jpg",
-      "id": "qq",
+      "id": "qa",
       "cardType": "upgrade"
     },
-    "qr": {
+    "qb": {
       "cardName": "Resolute",
       "points": 6,
       "isUnique": true,
@@ -6414,13 +6659,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Venator" }],
+      "requirements": [
+        {
+          "cardName": "Venator"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/TVoRURO.png",
-      "id": "qr",
+      "id": "qb",
       "cardType": "upgrade"
     },
-    "qs": {
+    "qc": {
       "cardName": "Salvation",
       "points": 7,
       "isUnique": true,
@@ -6428,13 +6677,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Nebulon" }],
+      "requirements": [
+        {
+          "cardName": "Nebulon"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/xjIXfVD.jpg",
-      "id": "qs",
+      "id": "qc",
       "cardType": "upgrade"
     },
-    "qt": {
+    "qd": {
       "cardName": "Sa Nalaor",
       "points": 5,
       "isUnique": true,
@@ -6442,13 +6695,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Munificent" }],
+      "requirements": [
+        {
+          "cardName": "Munificent"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/o0RS5kE.jpg",
-      "id": "qt",
+      "id": "qd",
       "cardType": "upgrade"
     },
-    "qu": {
+    "qe": {
       "cardName": "Sovereign",
       "points": 4,
       "isUnique": true,
@@ -6458,15 +6715,19 @@
       ],
       "requirements": [
         "OR",
-        { "cardName": "Imperial Star Destroyer" },
-        { "cardName": "Imperial I" }
+        {
+          "cardName": "Imperial Star Destroyer"
+        },
+        {
+          "cardName": "Imperial I"
+        }
       ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/AnJZEFb.jpg",
-      "id": "qu",
+      "id": "qe",
       "cardType": "upgrade"
     },
-    "qv": {
+    "qf": {
       "cardName": "Squall",
       "points": 3,
       "isUnique": true,
@@ -6474,13 +6735,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Quasar" }],
+      "requirements": [
+        {
+          "cardName": "Quasar"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/IPQVSGM.jpg",
-      "id": "qv",
+      "id": "qf",
       "cardType": "upgrade"
     },
-    "qw": {
+    "qg": {
       "cardName": "Stronghold",
       "points": 5,
       "isUnique": true,
@@ -6488,13 +6753,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Quasar" }],
+      "requirements": [
+        {
+          "cardName": "Quasar"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/1UwT76i.jpg",
-      "id": "qw",
+      "id": "qg",
       "cardType": "upgrade"
     },
-    "qx": {
+    "qh": {
       "cardName": "Sunder",
       "points": 10,
       "isUnique": true,
@@ -6502,13 +6771,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Onager" }],
+      "requirements": [
+        {
+          "cardName": "Onager"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/qs97P5O.jpg",
-      "id": "qx",
+      "id": "qh",
       "cardType": "upgrade"
     },
-    "qy": {
+    "qi": {
       "cardName": "Suppressor",
       "points": 4,
       "isUnique": true,
@@ -6516,13 +6789,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Gozanti" }],
+      "requirements": [
+        {
+          "cardName": "Gozanti"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/11G4bE0.jpg",
-      "id": "qy",
+      "id": "qi",
       "cardType": "upgrade"
     },
-    "ra": {
+    "qj": {
       "cardName": "Swift Return",
       "points": 3,
       "isUnique": true,
@@ -6530,13 +6807,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Consular" }],
+      "requirements": [
+        {
+          "cardName": "Consular"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/lVSb7xQ.jpeg",
-      "id": "ra",
+      "id": "qj",
       "cardType": "upgrade"
     },
-    "rb": {
+    "qk": {
       "cardName": "Tantive IV",
       "points": 3,
       "isUnique": true,
@@ -6544,13 +6825,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "CR90" }],
+      "requirements": [
+        {
+          "cardName": "CR90"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/THWav9j.jpg",
-      "id": "rb",
+      "id": "qk",
       "cardType": "upgrade"
     },
-    "rc": {
+    "ql": {
       "cardName": "TB-73",
       "points": 5,
       "isUnique": true,
@@ -6558,13 +6843,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Venator" }],
+      "requirements": [
+        {
+          "cardName": "Venator"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/IONCQi6.png",
-      "id": "rc",
+      "id": "ql",
       "cardType": "upgrade"
     },
-    "rd": {
+    "qm": {
       "cardName": "Tide of Progress XII",
       "points": 2,
       "isUnique": true,
@@ -6572,13 +6861,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Munificent" }],
+      "requirements": [
+        {
+          "cardName": "Munificent"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/rcXW6sg.jpeg",
-      "id": "rd",
+      "id": "qm",
       "cardType": "upgrade"
     },
-    "re": {
+    "qn": {
       "cardName": "Tranquility",
       "points": 3,
       "isUnique": true,
@@ -6586,13 +6879,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Venator" }],
+      "requirements": [
+        {
+          "cardName": "Venator"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/GiYVWvE.png",
-      "id": "re",
+      "id": "qn",
       "cardType": "upgrade"
     },
-    "rf": {
+    "qo": {
       "cardName": "Triumphant",
       "points": 5,
       "isUnique": true,
@@ -6600,13 +6897,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Venator" }],
+      "requirements": [
+        {
+          "cardName": "Venator"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/OTgslNK.png",
-      "id": "rf",
+      "id": "qo",
       "cardType": "upgrade"
     },
-    "rg": {
+    "qp": {
       "cardName": "Unity",
       "points": 10,
       "isUnique": true,
@@ -6614,13 +6915,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Starhawk" }],
+      "requirements": [
+        {
+          "cardName": "Starhawk"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/RP1KPrl.jpg",
-      "id": "rg",
+      "id": "qp",
       "cardType": "upgrade"
     },
-    "rh": {
+    "qq": {
       "cardName": "Vanguard",
       "points": 4,
       "isUnique": true,
@@ -6629,12 +6934,16 @@
         "title"
       ],
       "isModification": false,
-      "requirements": [{ "cardName": "Nebulon" }],
+      "requirements": [
+        {
+          "cardName": "Nebulon"
+        }
+      ],
       "imageUrl": "https://i.imgur.com/4a6la8P.jpg",
-      "id": "rh",
+      "id": "qq",
       "cardType": "upgrade"
     },
-    "ri": {
+    "qr": {
       "cardName": "Vector",
       "points": 2,
       "isUnique": true,
@@ -6643,12 +6952,16 @@
         "title"
       ],
       "isModification": false,
-      "requirements": [{ "cardName": "Gozanti" }],
+      "requirements": [
+        {
+          "cardName": "Gozanti"
+        }
+      ],
       "imageUrl": "https://i.imgur.com/h7NhmMa.jpg",
-      "id": "ri",
+      "id": "qr",
       "cardType": "upgrade"
     },
-    "rj": {
+    "qs": {
       "cardName": "Warlord",
       "points": 8,
       "isUnique": true,
@@ -6657,12 +6970,16 @@
         "title"
       ],
       "isModification": false,
-      "requirements": [{ "cardName": "Victory" }],
+      "requirements": [
+        {
+          "cardName": "Victory"
+        }
+      ],
       "imageUrl": "https://i.imgur.com/E8oYSJj.jpg",
-      "id": "rj",
+      "id": "qs",
       "cardType": "upgrade"
     },
-    "rk": {
+    "qt": {
       "cardName": "Yavaris",
       "points": 5,
       "isUnique": true,
@@ -6670,13 +6987,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Nebulon" }],
+      "requirements": [
+        {
+          "cardName": "Nebulon"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/qtHU4B2.jpg",
-      "id": "rk",
+      "id": "qt",
       "cardType": "upgrade"
     },
-    "rl": {
+    "qu": {
       "cardName": "Mon Calamari Exodus Fleet",
       "points": 5,
       "isUnique": false,
@@ -6684,13 +7005,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "MC" }],
+      "requirements": [
+        {
+          "cardName": "MC"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Gi02xgi.jpg",
-      "id": "rl",
+      "id": "qu",
       "cardType": "upgrade"
     },
-    "rm": {
+    "qv": {
       "cardName": "Seventh Fleet Star Destroyer",
       "points": 5,
       "isUnique": false,
@@ -6699,12 +7024,16 @@
         "title"
       ],
       "isModification": false,
-      "requirements": [{ "cardName": "Star Destroyer" }],
+      "requirements": [
+        {
+          "cardName": "Star Destroyer"
+        }
+      ],
       "imageUrl": "https://i.imgur.com/G90ZE7x.jpg",
-      "id": "rm",
+      "id": "qv",
       "cardType": "upgrade"
     },
-    "rn": {
+    "qw": {
       "cardName": "Task Force Antilles",
       "points": 3,
       "isUnique": false,
@@ -6713,12 +7042,16 @@
         "title"
       ],
       "isModification": false,
-      "requirements": [{ "cardName": "Hammerhead" }],
+      "requirements": [
+        {
+          "cardName": "Hammerhead"
+        }
+      ],
       "imageUrl": "https://i.imgur.com/NWw9f29.jpg",
-      "id": "rn",
+      "id": "qw",
       "cardType": "upgrade"
     },
-    "ro": {
+    "qx": {
       "cardName": "Task Force Organa",
       "points": 1,
       "isUnique": false,
@@ -6726,13 +7059,17 @@
       "upgradeSlots": [
         "title"
       ],
-      "requirements": [{ "cardName": "Hammerhead" }],
+      "requirements": [
+        {
+          "cardName": "Hammerhead"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/FwbIwpU.jpg",
-      "id": "ro",
+      "id": "qx",
       "cardType": "upgrade"
     },
-    "rp": {
+    "qy": {
       "cardName": "Admiral Chiraneau",
       "points": 10,
       "isUnique": true,
@@ -6743,10 +7080,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/MnfDupy.jpg",
-      "id": "rp",
+      "id": "qy",
       "cardType": "upgrade"
     },
-    "rq": {
+    "qz": {
       "cardName": "Admiral Montferrat",
       "points": 5,
       "isUnique": true,
@@ -6757,10 +7094,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Y7lJDlF.jpg",
-      "id": "rq",
+      "id": "qz",
       "cardType": "upgrade"
     },
-    "rr": {
+    "ra": {
       "cardName": "Admiral Ozzel",
       "points": 2,
       "isUnique": true,
@@ -6771,10 +7108,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/hPkP4Nf.jpeg",
-      "id": "rr",
+      "id": "ra",
       "cardType": "upgrade"
     },
-    "rs": {
+    "rb": {
       "cardName": "Admiral Titus",
       "points": 2,
       "isUnique": true,
@@ -6785,10 +7122,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Rm0hVoL.jpeg",
-      "id": "rs",
+      "id": "rb",
       "cardType": "upgrade"
     },
-    "rt": {
+    "rc": {
       "cardName": "Agent Kallus",
       "points": 3,
       "isUnique": true,
@@ -6799,10 +7136,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Wuz7UVA.jpeg",
-      "id": "rt",
+      "id": "rc",
       "cardType": "upgrade"
     },
-    "ru": {
+    "rd": {
       "cardName": "Captian Brunson",
       "points": 9,
       "isUnique": true,
@@ -6813,10 +7150,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/KJFYNXO.jpg",
-      "id": "ru",
+      "id": "rd",
       "cardType": "upgrade"
     },
-    "rv": {
+    "re": {
       "cardName": "Captain Needa",
       "points": 2,
       "isUnique": true,
@@ -6827,10 +7164,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/qeUR8rK.jpeg",
-      "id": "rv",
+      "id": "re",
       "cardType": "upgrade"
     },
-    "rw": {
+    "rf": {
       "cardName": "Commandant Aresko",
       "points": 7,
       "isUnique": true,
@@ -6841,10 +7178,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/3md8wnE.jpeg",
-      "id": "rw",
+      "id": "rf",
       "cardType": "upgrade"
     },
-    "rx": {
+    "rg": {
       "cardName": "Commander Beck",
       "points": 3,
       "isUnique": true,
@@ -6855,10 +7192,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/VPsl8a9.jpeg",
-      "id": "rx",
+      "id": "rg",
       "cardType": "upgrade"
     },
-    "ry": {
+    "rh": {
       "cardName": "Commander Gherant",
       "points": 2,
       "isUnique": true,
@@ -6869,10 +7206,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/IAt9Puz.jpeg",
-      "id": "ry",
+      "id": "rh",
       "cardType": "upgrade"
     },
-    "rz": {
+    "ri": {
       "cardName": "Commander Vanto",
       "points": 7,
       "isUnique": true,
@@ -6883,10 +7220,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/vyMS9Vl.jpeg",
-      "id": "rz",
+      "id": "ri",
       "cardType": "upgrade"
     },
-    "sa": {
+    "rj": {
       "cardName": "Commander Woldar",
       "points": 4,
       "isUnique": true,
@@ -6897,10 +7234,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/nsUrWcO.jpeg",
-      "id": "sa",
+      "id": "rj",
       "cardType": "upgrade"
     },
-    "sb": {
+    "rk": {
       "cardName": "Darth Vader",
       "points": 1,
       "isUnique": true,
@@ -6911,10 +7248,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/wUS7LNn.jpg",
-      "id": "sb",
+      "id": "rk",
       "cardType": "upgrade"
     },
-    "sc": {
+    "rl": {
       "cardName": "Director Isard",
       "points": 3,
       "isUnique": true,
@@ -6925,10 +7262,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/2OKtNz1.jpg",
-      "id": "sc",
+      "id": "rl",
       "cardType": "upgrade"
     },
-    "sd": {
+    "rm": {
       "cardName": "Director Krennic",
       "points": 8,
       "isUnique": true,
@@ -6939,10 +7276,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/MWbTBAg.jpg",
-      "id": "sd",
+      "id": "rm",
       "cardType": "upgrade"
     },
-    "se": {
+    "rn": {
       "cardName": "Emperor Palpatine",
       "points": 3,
       "isUnique": true,
@@ -6953,10 +7290,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/SAJT8HA.jpg",
-      "id": "se",
+      "id": "rn",
       "cardType": "upgrade"
     },
-    "sf": {
+    "ro": {
       "cardName": "Iden Versio",
       "points": 6,
       "isUnique": true,
@@ -6967,10 +7304,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/GspJT2q.jpg",
-      "id": "sf",
+      "id": "ro",
       "cardType": "upgrade"
     },
-    "sg": {
+    "rp": {
       "cardName": "Instructor Goran",
       "points": 4,
       "isUnique": true,
@@ -6980,11 +7317,11 @@
       ],
       "requirements": [],
       "isModification": false,
-      "imageUrl": "https://i.imgur.com/ZpxS19K.jp",
-      "id": "sg",
+      "imageUrl": "https://i.imgur.com/ZpxS19K.jpg",
+      "id": "rp",
       "cardType": "upgrade"
     },
-    "sh": {
+    "rq": {
       "cardName": "Lira Wessex",
       "points": 4,
       "isUnique": true,
@@ -6995,10 +7332,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/A9ZQ2mz.jpg",
-      "id": "sh",
+      "id": "rq",
       "cardType": "upgrade"
     },
-    "si": {
+    "rr": {
       "cardName": "Minister Tua",
       "points": 4,
       "isUnique": true,
@@ -7009,10 +7346,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/oBLlFVB.jpg",
-      "id": "si",
+      "id": "rr",
       "cardType": "upgrade"
     },
-    "sj": {
+    "rs": {
       "cardName": "Reeva Demesne",
       "points": 4,
       "isUnique": true,
@@ -7023,10 +7360,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/hPWCUbI.jpg",
-      "id": "sj",
+      "id": "rs",
       "cardType": "upgrade"
     },
-    "sk": {
+    "rt": {
       "cardName": "Taskmaster Grint",
       "points": 5,
       "isUnique": true,
@@ -7037,10 +7374,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/9U4hKcc.jpg",
-      "id": "sk",
+      "id": "rt",
       "cardType": "upgrade"
     },
-    "sl": {
+    "ru": {
       "cardName": "The Grand Inquisitor",
       "points": 4,
       "isUnique": true,
@@ -7051,10 +7388,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/xzcI49o.jpg",
-      "id": "sl",
+      "id": "ru",
       "cardType": "upgrade"
     },
-    "sn": {
+    "rv": {
       "cardName": "Wulff Yularen",
       "points": 7,
       "isUnique": true,
@@ -7065,10 +7402,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/dvWsOm8.jpg",
-      "id": "sn",
+      "id": "rv",
       "cardType": "upgrade"
     },
-    "so": {
+    "rw": {
       "cardName": "All Fighters, Follow Me!",
       "points": 5,
       "isUnique": true,
@@ -7079,10 +7416,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/pRqJy8Z.jpg",
-      "id": "so",
+      "id": "rw",
       "cardType": "upgrade"
     },
-    "sp": {
+    "rx": {
       "cardName": "Entrapment Formation!",
       "points": 5,
       "isUnique": true,
@@ -7093,10 +7430,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/7ipOGiT.jpg",
-      "id": "sp",
+      "id": "rx",
       "cardType": "upgrade"
     },
-    "sq": {
+    "ry": {
       "cardName": "Hot Landing",
       "points": 3,
       "isUnique": true,
@@ -7107,10 +7444,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Gst4AaJ.png",
-      "id": "sq",
+      "id": "ry",
       "cardType": "upgrade"
     },
-    "sr": {
+    "rz": {
       "cardName": "Intensify Firepower!",
       "points": 6,
       "isUnique": true,
@@ -7121,10 +7458,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/X4Pkv96.jpg",
-      "id": "sr",
+      "id": "rz",
       "cardType": "upgrade"
     },
-    "st": {
+    "sa": {
       "cardName": "Jedi Hostage",
       "points": 3,
       "isUnique": true,
@@ -7135,10 +7472,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/rtdHtYX.png",
-      "id": "st",
+      "id": "sa",
       "cardType": "upgrade"
     },
-    "su": {
+    "sb": {
       "cardName": "Mercy Mission",
       "points": 0,
       "isUnique": true,
@@ -7149,10 +7486,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/G5WinB0.png",
-      "id": "su",
+      "id": "sb",
       "cardType": "upgrade"
     },
-    "sv": {
+    "sc": {
       "cardName": "Shields to Maxiumum!",
       "points": 6,
       "isUnique": true,
@@ -7163,10 +7500,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/2I3JN7G.jpg",
-      "id": "sv",
+      "id": "sc",
       "cardType": "upgrade"
     },
-    "sw": {
+    "sd": {
       "cardName": "Take Evasive Action!",
       "points": 6,
       "isUnique": true,
@@ -7177,10 +7514,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/Grqrp2Y.jpg",
-      "id": "sw",
+      "id": "sd",
       "cardType": "upgrade"
     },
-    "sx": {
+    "se": {
       "cardName": "G-8 Experimental Projector",
       "points": 8,
       "isUnique": true,
@@ -7191,10 +7528,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/DUzGkon.jpg",
-      "id": "sx",
+      "id": "se",
       "cardType": "upgrade"
     },
-    "sy": {
+    "sf": {
       "cardName": "Grav Shift Reroute",
       "points": 2,
       "isUnique": true,
@@ -7205,10 +7542,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/QipiGSD.jpg",
-      "id": "sy",
+      "id": "sf",
       "cardType": "upgrade"
     },
-    "sz": {
+    "sg": {
       "cardName": "G7-X Grav Well Projector",
       "points": 2,
       "isUnique": false,
@@ -7219,10 +7556,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/BaMEJzl.jpg",
-      "id": "sz",
+      "id": "sg",
       "cardType": "upgrade"
     },
-    "ta": {
+    "sh": {
       "cardName": "Targeting Scrambler",
       "points": 5,
       "isUnique": false,
@@ -7233,10 +7570,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/KoUrM8N.jpg",
-      "id": "ta",
+      "id": "sh",
       "cardType": "upgrade"
     },
-    "tb": {
+    "si": {
       "cardName": "Magnite Crystal Tractor Beam",
       "points": 10,
       "isUnique": false,
@@ -7244,13 +7581,17 @@
       "upgradeSlots": [
         "super weapon"
       ],
-      "requirements": [{ "cardName": "Starhawk" }],
+      "requirements": [
+        {
+          "cardName": "Starhawk"
+        }
+      ],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/2YpzXNT.jpg",
-      "id": "tb",
+      "id": "si",
       "cardType": "upgrade"
     },
-    "td": {
+    "sj": {
       "cardName": "Orbital Bombardment Particle Cannons",
       "points": 5,
       "isUnique": false,
@@ -7258,13 +7599,17 @@
       "upgradeSlots": [
         "super weapon"
       ],
-      "requirements": [{ "cardName": "Onager" }],
+      "requirements": [
+        {
+          "cardName": "Onager"
+        }
+      ],
       "isModification": true,
-      "imageUrl": "https://i.imgur.com/t9VRV0n.jp",
-      "id": "td",
+      "imageUrl": "https://i.imgur.com/t9VRV0n.jpg",
+      "id": "sj",
       "cardType": "upgrade"
     },
-    "te": {
+    "sk": {
       "cardName": "Superheavy Composite Beam Turbolasers",
       "points": 7,
       "isUnique": false,
@@ -7272,13 +7617,17 @@
       "upgradeSlots": [
         "super weapon"
       ],
-      "requirements": [{ "cardName": "Onager" }],
+      "requirements": [
+        {
+          "cardName": "Onager"
+        }
+      ],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/a7AycPb.jpg",
-      "id": "te",
+      "id": "sk",
       "cardType": "upgrade"
     },
-    "tf": {
+    "sl": {
       "cardName": "Clone Captain Silver",
       "points": 4,
       "isUnique": true,
@@ -7289,10 +7638,10 @@
       "requirements": [],
       "isModification": false,
       "imageUrl": "https://i.imgur.com/VzHNQTY.jpg",
-      "id": "tf",
+      "id": "sl",
       "cardType": "upgrade"
     },
-    "tg": {
+    "sm": {
       "cardName": "SPHA-T",
       "points": 7,
       "isUnique": false,
@@ -7300,10 +7649,14 @@
       "upgradeSlots": [
         "offensive retrofit"
       ],
-      "requirements": [{ "cardName": "Star Destroyer" }],
+      "requirements": [
+        {
+          "cardName": "Star Destroyer"
+        }
+      ],
       "isModification": true,
       "imageUrl": "https://i.imgur.com/uIvMeUJ.png",
-      "id": "tg",
+      "id": "sm",
       "cardType": "upgrade"
     }
   }
