@@ -92,7 +92,7 @@ function ShipRow({ index, ship, removeShip, removeUpgrade, setEligibleUpgradesTo
                                     height: 22.5,
                                     width: 22.5,
                                     zIndex: 1,
-                                    marginTop: 10,
+                                    marginTop: 9,
                                     marginLeft: 5,
                                     position: 'absolute'
                                 }}
@@ -194,7 +194,7 @@ function ShipRow({ index, ship, removeShip, removeUpgrade, setEligibleUpgradesTo
                         </div>
                     )}
                     hoverActions={(
-                        <div style={{ display: 'flex', flexFlow: 'row nowrap', height: 40, alignItems: 'center', padding: 5 }}>
+                        <div style={{ display: 'flex', flexFlow: 'row nowrap', height: 40, alignItems: 'center', padding: 5, borderRadius: 5, backgroundColor: 'rgba(0, 0, 0, .12)' }}>
                             {ship.upgradesEquipped.map((upgrade, i) => {
                                 if (upgrade.id === true) {
                                     <UpgradeIcon

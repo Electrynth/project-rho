@@ -303,7 +303,51 @@
     "rl",
     "rm",
     "rn",
-    "ro"
+    "ro",
+    "rp",
+    "rq",
+    "rr",
+    "rs",
+    "rt",
+    "ru",
+    "rv",
+    "rw",
+    "rx",
+    "ry",
+    "rz",
+    "sa",
+    "sb",
+    "sc",
+    "sd",
+    "se",
+    "sf",
+    "sg",
+    "sh",
+    "si",
+    "sj",
+    "sk",
+    "sl",
+    "sm",
+    "sn",
+    "so",
+    "sp",
+    "sq",
+    "sr",
+    "ss",
+    "st",
+    "su",
+    "sv",
+    "sw",
+    "sx",
+    "sy",
+    "sz",
+    "ta",
+    "tb",
+    "tc",
+    "td",
+    "te",
+    "tf",
+    "tg"
   ],
   "squadronIdList": [
     "ec",
@@ -6686,6 +6730,622 @@
       "isModification": false,
       "imageUrl": "https://i.imgur.com/FwbIwpU.jpg",
       "id": "ro",
+      "cardType": "upgrade"
+    },
+    "rp": {
+      "cardName": "Admiral Chiraneau",
+      "points": 10,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "rp",
+      "cardType": "upgrade"
+    },
+    "rq": {
+      "cardName": "Admiral Montferrat",
+      "points": 5,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "rq",
+      "cardType": "upgrade"
+    },
+    "rr": {
+      "cardName": "Admiral Ozzel",
+      "points": 2,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "rr",
+      "cardType": "upgrade"
+    },
+    "rs": {
+      "cardName": "Admiral Titus",
+      "points": 2,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "rs",
+      "cardType": "upgrade"
+    },
+    "rt": {
+      "cardName": "Agent Kallus",
+      "points": 3,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "rt",
+      "cardType": "upgrade"
+    },
+    "ru": {
+      "cardName": "Captian Brunson",
+      "points": 9,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "ru",
+      "cardType": "upgrade"
+    },
+    "rv": {
+      "cardName": "Captain Needa",
+      "points": 2,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "rv",
+      "cardType": "upgrade"
+    },
+    "rw": {
+      "cardName": "Commandant Aresko",
+      "points": 7,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "rw",
+      "cardType": "upgrade"
+    },
+    "rx": {
+      "cardName": "Commander Beck",
+      "points": 3,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "rx",
+      "cardType": "upgrade"
+    },
+    "ry": {
+      "cardName": "Commander Gherant",
+      "points": 2,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "ry",
+      "cardType": "upgrade"
+    },
+    "rz": {
+      "cardName": "Commander Vanto",
+      "points": 7,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "rz",
+      "cardType": "upgrade"
+    },
+    "sa": {
+      "cardName": "Commander Woldar",
+      "points": 4,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sa",
+      "cardType": "upgrade"
+    },
+    "sb": {
+      "cardName": "Darth Vader",
+      "points": 1,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sb",
+      "cardType": "upgrade"
+    },
+    "sc": {
+      "cardName": "Director Isard",
+      "points": 3,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sc",
+      "cardType": "upgrade"
+    },
+    "sd": {
+      "cardName": "Director Krennic",
+      "points": 8,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sd",
+      "cardType": "upgrade"
+    },
+    "se": {
+      "cardName": "Emperor Palpatine",
+      "points": 3,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "se",
+      "cardType": "upgrade"
+    },
+    "sf": {
+      "cardName": "Iden Versio",
+      "points": 6,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sf",
+      "cardType": "upgrade"
+    },
+    "sg": {
+      "cardName": "Instructor Goran",
+      "points": 4,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sg",
+      "cardType": "upgrade"
+    },
+    "sh": {
+      "cardName": "Lira Wessex",
+      "points": 4,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sh",
+      "cardType": "upgrade"
+    },
+    "si": {
+      "cardName": "Minister Tua",
+      "points": 4,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "si",
+      "cardType": "upgrade"
+    },
+    "sj": {
+      "cardName": "Reeva Demesne",
+      "points": 4,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sj",
+      "cardType": "upgrade"
+    },
+    "sk": {
+      "cardName": "Taskmaster Grint",
+      "points": 5,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sk",
+      "cardType": "upgrade"
+    },
+    "sl": {
+      "cardName": "The Grand Inquisitor",
+      "points": 4,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sl",
+      "cardType": "upgrade"
+    },
+    "sm": {
+      "cardName": "Commander Woldar",
+      "points": 4,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sm",
+      "cardType": "upgrade"
+    },
+    "sn": {
+      "cardName": "Wulff Yularen",
+      "points": 7,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sn",
+      "cardType": "upgrade"
+    },
+    "so": {
+      "cardName": "All Fighters, Follow Me!",
+      "points": 5,
+      "isUnique": true,
+      "faction": "",
+      "upgradeSlots": [
+        "fleet command"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "so",
+      "cardType": "upgrade"
+    },
+    "sp": {
+      "cardName": "Entrapment Formation!",
+      "points": 5,
+      "isUnique": true,
+      "faction": "",
+      "upgradeSlots": [
+        "fleet command"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sp",
+      "cardType": "upgrade"
+    },
+    "sq": {
+      "cardName": "Hot Landing",
+      "points": 3,
+      "isUnique": true,
+      "faction": "republic",
+      "upgradeSlots": [
+        "fleet command"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sq",
+      "cardType": "upgrade"
+    },
+    "sr": {
+      "cardName": "Intensify Firepower!",
+      "points": 6,
+      "isUnique": true,
+      "faction": "",
+      "upgradeSlots": [
+        "fleet command"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sr",
+      "cardType": "upgrade"
+    },
+    "ss": {
+      "cardName": "Entrapment Formation!",
+      "points": 5,
+      "isUnique": true,
+      "faction": "",
+      "upgradeSlots": [
+        "fleet command"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "ss",
+      "cardType": "upgrade"
+    },
+    "st": {
+      "cardName": "Jedi Hostage",
+      "points": 3,
+      "isUnique": true,
+      "faction": "separatists",
+      "upgradeSlots": [
+        "fleet command"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "st",
+      "cardType": "upgrade"
+    },
+    "su": {
+      "cardName": "Mercy Mission",
+      "points": 0,
+      "isUnique": true,
+      "faction": "republic",
+      "upgradeSlots": [
+        "fleet command"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "su",
+      "cardType": "upgrade"
+    },
+    "sv": {
+      "cardName": "Shields to Maxiumum!",
+      "points": 6,
+      "isUnique": true,
+      "faction": "",
+      "upgradeSlots": [
+        "fleet command"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sv",
+      "cardType": "upgrade"
+    },
+    "sw": {
+      "cardName": "Take Evasive Action!",
+      "points": 6,
+      "isUnique": true,
+      "faction": "",
+      "upgradeSlots": [
+        "fleet command"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sw",
+      "cardType": "upgrade"
+    },
+    "sx": {
+      "cardName": "G-8 Experimental Projector",
+      "points": 8,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "experimental retrofit"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sx",
+      "cardType": "upgrade"
+    },
+    "sy": {
+      "cardName": "Grav Shift Reroute",
+      "points": 2,
+      "isUnique": true,
+      "faction": "empire",
+      "upgradeSlots": [
+        "experimental retrofit"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sy",
+      "cardType": "upgrade"
+    },
+    "sz": {
+      "cardName": "G7-X Grav Well Projector",
+      "points": 2,
+      "isUnique": false,
+      "faction": "empire",
+      "upgradeSlots": [
+        "experimental retrofit"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sz",
+      "cardType": "upgrade"
+    },
+    "ta": {
+      "cardName": "Targeting Scrambler",
+      "points": 5,
+      "isUnique": false,
+      "faction": "empire",
+      "upgradeSlots": [
+        "experimental retrofit"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "ta",
+      "cardType": "upgrade"
+    },
+    "tb": {
+      "cardName": "Magnite Crystal Tractor Beam",
+      "points": 10,
+      "isUnique": false,
+      "faction": "rebels",
+      "upgradeSlots": [
+        "super weapon"
+      ],
+      "requirements": [{ "cardName": "Starhawk" }],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "tb",
+      "cardType": "upgrade"
+    },
+    "tc": {
+      "cardName": "Targeting Scrambler",
+      "points": 5,
+      "isUnique": false,
+      "faction": "empire",
+      "upgradeSlots": [
+        "experimental retrofit"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "tc",
+      "cardType": "upgrade"
+    },
+    "td": {
+      "cardName": "Orbital Bombardment Particle Cannons",
+      "points": 5,
+      "isUnique": false,
+      "faction": "empire",
+      "upgradeSlots": [
+        "super weapon"
+      ],
+      "requirements": [{ "cardName": "Onager" }],
+      "isModification": true,
+      "imageUrl": "",
+      "id": "td",
+      "cardType": "upgrade"
+    },
+    "te": {
+      "cardName": "Superheavy Composite Beam Turbolasers",
+      "points": 7,
+      "isUnique": false,
+      "faction": "empire",
+      "upgradeSlots": [
+        "super weapon"
+      ],
+      "requirements": [{ "cardName": "Onager" }],
+      "isModification": true,
+      "imageUrl": "",
+      "id": "te",
+      "cardType": "upgrade"
+    },
+    "tf": {
+      "cardName": "Clone Captain Silver",
+      "points": 4,
+      "isUnique": true,
+      "faction": "republic",
+      "upgradeSlots": [
+        "officer"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "tf",
+      "cardType": "upgrade"
+    },
+    "tg": {
+      "cardName": "SPHA-T",
+      "points": 7,
+      "isUnique": false,
+      "faction": "republic",
+      "upgradeSlots": [
+        "offensive retrofit"
+      ],
+      "requirements": [{ "cardName": "Star Destroyer" }],
+      "isModification": true,
+      "imageUrl": "",
+      "id": "tg",
       "cardType": "upgrade"
     }
   }
