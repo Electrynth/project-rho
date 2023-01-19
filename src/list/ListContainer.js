@@ -206,6 +206,7 @@ function ListContainer({
           
         } 
         newShip.upgradesEquipped[upgradeIndex] = { upgradeType: upgrade.upgradeType, id: undefined };
+        setUniques(newUniques);
         setShips(newShips);
     }
 
