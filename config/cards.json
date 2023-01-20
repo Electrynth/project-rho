@@ -7658,6 +7658,104 @@
       "imageUrl": "https://i.imgur.com/uIvMeUJ.png",
       "id": "sm",
       "cardType": "upgrade"
+    },
+    "sn": {
+      "cardName": "Bomber Command Center",
+      "points": 8,
+      "isUnique": false,
+      "faction": "",
+      "upgradeSlots": [
+        "fleet support"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sn",
+      "cardType": "upgrade"
+    },
+    "so": {
+      "cardName": "Comms Net",
+      "points": 2,
+      "isUnique": false,
+      "faction": "",
+      "upgradeSlots": [
+        "fleet support"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "so",
+      "cardType": "upgrade"
+    },
+    "sp": {
+      "cardName": "Jamming Field",
+      "points": 2,
+      "isUnique": false,
+      "faction": "",
+      "upgradeSlots": [
+        "fleet support"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sp",
+      "cardType": "upgrade"
+    },
+    "sq": {
+      "cardName": "Munitions Resupply",
+      "points": 3,
+      "isUnique": false,
+      "faction": "",
+      "upgradeSlots": [
+        "fleet support"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sq",
+      "cardType": "upgrade"
+    },
+    "sr": {
+      "cardName": "Parts Resupply",
+      "points": 3,
+      "isUnique": false,
+      "faction": "",
+      "upgradeSlots": [
+        "fleet support"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "sr",
+      "cardType": "upgrade"
+    },
+    "ss": {
+      "cardName": "Repair Crew",
+      "points": 4,
+      "isUnique": false,
+      "faction": "",
+      "upgradeSlots": [
+        "fleet support"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "ss",
+      "cardType": "upgrade"
+    },
+    "st": {
+      "cardName": "Slicer Tools",
+      "points": 4,
+      "isUnique": false,
+      "faction": "",
+      "upgradeSlots": [
+        "fleet support"
+      ],
+      "requirements": [],
+      "isModification": false,
+      "imageUrl": "",
+      "id": "st",
+      "cardType": "upgrade"
     }
   }
 }
