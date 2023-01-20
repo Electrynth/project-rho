@@ -7669,7 +7669,7 @@
       ],
       "requirements": [],
       "isModification": false,
-      "imageUrl": "",
+      "imageUrl": "https://i.imgur.com/slRsjXp.jpg",
       "id": "sn",
       "cardType": "upgrade"
     },
@@ -7683,7 +7683,7 @@
       ],
       "requirements": [],
       "isModification": false,
-      "imageUrl": "",
+      "imageUrl": "https://i.imgur.com/56EgYe9.jpg",
       "id": "so",
       "cardType": "upgrade"
     },
@@ -7697,7 +7697,7 @@
       ],
       "requirements": [],
       "isModification": false,
-      "imageUrl": "",
+      "imageUrl": "https://i.imgur.com/YjACVRj.jpg",
       "id": "sp",
       "cardType": "upgrade"
     },
@@ -7705,7 +7705,7 @@
       "cardName": "Munitions Resupply",
       "points": 3,
       "isUnique": false,
-      "faction": "",
+      "faction": "https://i.imgur.com/IEHG2uc.jpeg",
       "upgradeSlots": [
         "fleet support"
       ],
@@ -7725,7 +7725,7 @@
       ],
       "requirements": [],
       "isModification": false,
-      "imageUrl": "",
+      "imageUrl": "https://i.imgur.com/trKTRFt.jpg",
       "id": "sr",
       "cardType": "upgrade"
     },
@@ -7739,7 +7739,7 @@
       ],
       "requirements": [],
       "isModification": false,
-      "imageUrl": "",
+      "imageUrl": "https://i.imgur.com/sFnhtzi.jpg",
       "id": "ss",
       "cardType": "upgrade"
     },
@@ -7753,7 +7753,7 @@
       ],
       "requirements": [],
       "isModification": false,
-      "imageUrl": "",
+      "imageUrl": "https://i.imgur.com/f3pcTt5.jpg",
       "id": "st",
       "cardType": "upgrade"
     }
