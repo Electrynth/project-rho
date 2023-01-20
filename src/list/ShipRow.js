@@ -4,9 +4,10 @@ import { Add, ContentCopy, Search, Clear, SwapHoriz } from '@mui/icons-material'
 import DualHoverButton from 'src/common/DualHoverButton';
 import cards from 'config/cards';
 import robotoCondensed from 'config/font';
+import versions from 'config/versions';
 import UpgradeIcon from 'src/common/UpgradeIcon';
 
-function ShipRow({ index, ship, commander, removeShip, removeUpgrade, setEligibleUpgradesToAdd }) {
+function ShipRow({ index, version = 1, ship, commander, removeShip, removeUpgrade, setEligibleUpgradesToAdd }) {
     const shipCard = cards.cardsById[ship.id];
     let upgradePoints = 0;
 
@@ -38,7 +39,9 @@ function ShipRow({ index, ship, commander, removeShip, removeUpgrade, setEligibl
                         </div>
                         <div style={{ fontWeight: 300 }}>{shipCard.displayName ? shipCard.displayName : shipCard.cardName}</div>
                         <span style={{ flexGrow: 1 }} />
-                        <div style={{ marginRight: 8 }}>{shipCard.points}</div>
+                        <div style={{ marginRight: 8 }}>
+                            {shipCard.id in versions[version].pointDeltas ? shipCard.points + versions[version].pointDeltas[shipCard.id] : shipCard.points}
+                        </div>
                     </div>
                 )}
                 hoverActions={(
@@ -119,7 +122,9 @@ function ShipRow({ index, ship, commander, removeShip, removeUpgrade, setEligibl
                                         </div>
                                         <div style={{ fontWeight: 300 }}>{upgradeCard.cardName}</div>
                                         <span style={{ flexGrow: 1 }} />
-                                        <div style={{ marginRight: 8 }}>{upgradeCard.points}</div>
+                                        <div style={{ marginRight: 8 }}>
+                                            {upgradeCard.id in versions[version].pointDeltas ? upgradeCard.points + versions[version].pointDeltas[upgradeCard.id] : upgradeCard.points}
+                                        </div>
                                     </div>
                                 )}
                                 hoverActions={(

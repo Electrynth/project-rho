@@ -6,9 +6,12 @@ import {
     CardMedia
 } from '@mui/material';
 import cards from 'config/cards.json';
+import versions from 'config/versions';
 
-function CardButton({ id, isDisabled, onClick }) {
+
+function CardButton({ id, version = 1, isDisabled, onClick }) {
     const card = cards.cardsById[id];
+    console.log(versions[version]);
     if (card.imageUrl) {
         return (
             <Card
@@ -39,7 +42,7 @@ function CardButton({ id, isDisabled, onClick }) {
                             variant="body2"
                             style={{ padding: '1px 3px', color: '#333', fontWeight: 'bold' }}
                         >
-                            {card.points}
+                            {id in versions[version].pointDeltas ? card.points + versions[version].pointDeltas[id] : card.points}
                         </Typography>
                     </Box>
                 </CardActionArea>

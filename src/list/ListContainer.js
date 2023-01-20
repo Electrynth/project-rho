@@ -55,7 +55,7 @@ function ListContainer({
         setFaction(query.faction);
     }, [query]);
 
-    const [version, setVersion] = useState(0);
+    const [version, setVersion] = useState(1);
     const [title, setTitle] = useState('');
     const [faction, setFaction] = useState('');
     const [commander, setCommander] = useState('');
@@ -233,6 +233,7 @@ function ListContainer({
             newCardComponentProps.push({
                 id,
                 key: id,
+                version,
                 isDisabled: uniques.includes(id),
                 onClick: () => addShip(id)
             });
@@ -268,6 +269,7 @@ function ListContainer({
             newCardComponentProps.push({
                 id,
                 key: id,
+                version,
                 isDisabled,
                 onClick: () => addUpgrade(shipIndex, upgradeIndex, id)
             });
@@ -289,6 +291,7 @@ function ListContainer({
             newCardComponentProps.push({
                 id,
                 key: id,
+                version,
                 isDisabled: uniques.includes(id),
                 onClick: () => addSquadron(id)
             });
@@ -325,19 +328,31 @@ function ListContainer({
         const shipCard = cards.cardsById[ship.id];
         const { points } = shipCard;
         shipPoints += points;
+        if (ship.id in versions[version].pointDeltas) {
+            shipPoints += versions[version].pointDeltas[ship.id];
+        }
         for (let i = 0; i < ship.upgradesEquipped.length; i++) {
             const upgrade = ship.upgradesEquipped[i];
             if (upgrade.id && upgrade.id !== true) {
                 const upgradeCard = cards.cardsById[upgrade.id];
                 const { points } = upgradeCard;
                 shipPoints += points;
+                if (upgrade.id in versions[version].pointDeltas) {
+                    shipPoints += versions[version].pointDeltas[upgrade.id];
+                }
             }
         }
     });
     squadrons.forEach(squadron => {
         const squadronCard = cards.cardsById[squadron.id];
         const { points } = squadronCard
-        if (points) squadronPoints += points * squadron.count;
+
+        let delta = 0;
+        if (squadron.id in versions[version].pointDeltas) {
+            delta = versions[version].pointDeltas[squadron.id];
+        }
+
+        if (points) squadronPoints += (points + delta) * squadron.count;
         else return 0;
     });
 
@@ -373,13 +388,13 @@ function ListContainer({
                     title={title}
                     faction={faction}
                     version={version}
-                    versions={versions}
                     points={shipPoints + squadronPoints}
                     handleSetTitle={handleSetTitleFromEvent}
                     handleSetVersion={handleSetVersionFromEvent}
                 />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListShips
+                    version={version}
                     commander={commander}
                     ships={ships}
                     shipPoints={shipPoints}
@@ -390,6 +405,7 @@ function ListContainer({
                 />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListSquadrons
+                    version={version}
                     squadrons={squadrons}
                     squadronPoints={squadronPoints}
                     swapSquadron={swapSquadron}

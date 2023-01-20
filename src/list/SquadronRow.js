@@ -4,9 +4,11 @@ import { Button, Divider } from '@mui/material';
 import { Add, Remove, SwapHoriz, Search, Clear } from '@mui/icons-material';
 import DualHoverButton from 'src/common/DualHoverButton';
 import cards from 'config/cards';
+import versions from 'config/versions';
 import robotoCondensed from 'config/font';
 
 function SquadronRow({
+    version,
     index,
     squadron,
     swapSquadron,
@@ -43,7 +45,9 @@ function SquadronRow({
                             {squadron.count > 1 ? `${squadron.count} × ${squadronCard.cardName}` : squadronCard.cardName}
                         </div>
                         <span style={{ flexGrow: 1 }} />
-                        <div style={{ marginRight: 8 }}>{squadronPoints}</div>
+                        <div style={{ marginRight: 8 }}>
+                            {squadron.id in versions[version].pointDeltas ? versions[version].pointDeltas[squadron.id] + squadronPoints : squadronPoints}
+                        </div>
                     </div>
                 )}
                 hoverActions={(

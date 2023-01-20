@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router';
-import { IconButton, Divider, Chip } from '@mui/material';
+import { IconButton, Divider, Chip, Alert, AlertTitle } from '@mui/material';
 import FactionIcon from 'src/common/FactionIcon';
 import robotoCondensed from 'config/font';
 
@@ -28,10 +28,29 @@ export default function Home() {
       </Head>
       <div style={{ padding: 20, display: 'flex', flexFlow: 'column nowrap', justifyContent: 'center', alignItems: 'center' }}>
           <h2><strong>Project Rho</strong></h2>
+          <Alert severity="info" className={robotoCondensed.className}>
+            <AlertTitle className={robotoCondensed.className}>Under Construction</AlertTitle>
+            Major Phase 1 Features remaining (early-mid February):
+            <li>Upgrade "swap" button</li>
+            <li>Ship "copy" button</li>
+            <li>Performance enhancements</li>
+            <br />
+            Major Phase 2 Features to come (late February - early March):
+            <li>Account & List saving</li>
+            <li>List exports</li>
+            <li>List forking</li>
+            <li>"Roadmap" section on homepage</li>
+            <li>"About Us" section on homepage</li>
+            <br />
+            Feedback to think about
+            <li>How is the interface usability? Clunky? Slow?</li>
+            <li>How is the interface visuals? Ugly? Too much detail? Not enough?</li>
+            <li>Do card images load quick enough? On desktop? On mobile?</li>
+            <li>Are card images legible enough to read their text?</li>
+            <li>Is the website text large enough to read?</li>
+          </Alert>
           <div style={{ display: 'flex', flexFlow: 'row wrap', alignItems: 'center' }}>
             <Chip clickable label="Roadmap" className={robotoCondensed.className} />
-            <span style={{ marginRight: 6 }} />
-            <Chip clickable label="Dice Roller" className={robotoCondensed.className} />
             <span style={{ marginRight: 6 }} />
             <Chip clickable label="About Us" className={robotoCondensed.className} />
           </div>

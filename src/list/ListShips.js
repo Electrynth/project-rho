@@ -3,6 +3,7 @@ import ShipRow from './ShipRow';
 import robotoCondensed from 'config/font';
 
 function ListShips({
+    version,
     ships,
     commander,
     shipPoints,
@@ -15,6 +16,7 @@ function ListShips({
         <div style={{ display: 'flex', flexFlow: 'column' }}>
             {ships.map((ship, index) =>
                 <ShipRow
+                    version={version}
                     key={ship.id}
                     ship={ship}
                     commander={commander}

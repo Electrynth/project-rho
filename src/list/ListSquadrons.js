@@ -6,6 +6,7 @@ import robotoCondensed from 'config/font';
 import SquadronRow from './SquadronRow';
 
 function ListSquadrons({
+    version,
     squadrons,
     squadronPoints,
     swapSquadron,
@@ -19,6 +20,7 @@ function ListSquadrons({
         <div style={{ display: 'flex', flexFlow: 'column' }}>
             {squadrons.map((squadron, index) =>
                 <SquadronRow
+                    version={version}
                     key={squadron.id}
                     index={index}
                     squadron={squadron}
