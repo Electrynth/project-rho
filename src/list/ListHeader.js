@@ -61,7 +61,7 @@ function ListHeader({
             />
             <Dialog onClose={handleClose} open={isDialogOpen}>
                 <DialogTitle className={robotoCondensed.className}>Game Versions</DialogTitle>
-                <div style={{ padding: 12, minWidth: 480 }}>
+                <div style={{ padding: 12 }}>
                     <FormControl fullWidth>
                         <InputLabel id="select-game-version" className={robotoCondensed.className}>Version</InputLabel>
                         <Select
