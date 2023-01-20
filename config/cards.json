@@ -7712,13 +7712,13 @@
       "cardName": "Munitions Resupply",
       "points": 3,
       "isUnique": false,
-      "faction": "https://i.imgur.com/IEHG2uc.jpeg",
+      "faction": "",
       "upgradeSlots": [
         "fleet support"
       ],
       "requirements": [],
       "isModification": false,
-      "imageUrl": "",
+      "imageUrl": "https://i.imgur.com/IEHG2uc.jpeg",
       "id": "sq",
       "cardType": "upgrade"
     },
