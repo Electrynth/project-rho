@@ -31,16 +31,16 @@ export default function Home() {
           <Alert severity="info" className={robotoCondensed.className}>
             <AlertTitle className={robotoCondensed.className}>Under Construction</AlertTitle>
             Major Phase 1 Features remaining (early-mid February):
-            <li>Upgrade "swap" button</li>
-            <li>Ship "copy" button</li>
+            <li>Upgrade swap button</li>
+            <li>Ship copy button</li>
             <li>Performance enhancements</li>
             <br />
             Major Phase 2 Features to come (late February - early March):
             <li>Account & List saving</li>
             <li>List exports</li>
             <li>List forking</li>
-            <li>"Roadmap" section on homepage</li>
-            <li>"About Us" section on homepage</li>
+            <li>Roadmap section on homepage</li>
+            <li>About Us section on homepage</li>
             <br />
             Feedback to think about
             <li>How is the interface usability? Clunky? Slow?</li>

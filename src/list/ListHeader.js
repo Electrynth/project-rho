@@ -71,7 +71,7 @@ function ListHeader({
                             onChange={handleSetVersion}
                         >
                             {versions.map(version => (
-                                <MenuItem value={version.id}>
+                                <MenuItem key={version.id} value={version.id}>
                                     <span className={robotoCondensed.className}>
                                         {version.label}
                                     </span>
