@@ -12,7 +12,7 @@ function ShipRows({ version, ships, cardZoomClick }) {
             {ships.map((ship) => {
                 const upgrades = ship.upgradesEquipped.map((upgrade) => {
                     if (upgrade.id) {
-                        return <CardButton version={version} id={upgrade.id} cardStyles={{ maxHeight: 200 }} />
+                        return <CardButton version={version} id={upgrade.id} key={upgrade.id} cardStyles={{ maxHeight: 200 }} />
                     } else {
                         return undefined;
                     }

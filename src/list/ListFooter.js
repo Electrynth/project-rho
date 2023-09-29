@@ -13,6 +13,7 @@ function ListFooter() {
         <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
             <div style={{ ...centerAlignedRowStyles }}>
                 <Button
+                    disabled
                     disableRipple
                     disableElevation
                     variant="contained"
@@ -36,21 +37,26 @@ function ListFooter() {
             </div>
             <div style={{ flexGrow: 1 }} />
             <div style={{ ...centerAlignedRowStyles }}>
-                <IconButton size="small" style={{ marginRight: 2 }}>
-                    <Print fontSize="inherit" />
-                </IconButton>
+                
                 <IconButton size="small" style={{ marginRight: 2 }}>
                     <OpenInNew fontSize="inherit" />
                 </IconButton>
-                <IconButton size="small" style={{ marginRight: 2 }}>
+                
+            </div>
+        </div>
+    );
+}
+
+/*
+<IconButton size="small" style={{ marginRight: 2 }}>
+                    <Print fontSize="inherit" />
+                </IconButton>
+<IconButton size="small" style={{ marginRight: 2 }}>
                     <FileCopy fontSize="inherit" />
                 </IconButton>
                 <IconButton size="small" style={{ marginRight: 2 }}>
                     <Delete fontSize="inherit" />
                 </IconButton>
-            </div>
-        </div>
-    );
-}
+*/
 
 export default ListFooter;
