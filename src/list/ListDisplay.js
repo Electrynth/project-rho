@@ -6,7 +6,7 @@ import cards from 'config/cards.js';
 
 function ShipRows({ version, ships, cardZoomClick }) {
     if (ships.length === 0) return undefined;
-    console.log(ships);
+
     return (
         <div>
             {ships.map((ship) => {
