@@ -111,14 +111,16 @@ function ListContainer({
         lines.push('');
 
         lines.push('Squadrons:');
+        console.log(squadrons);
         let totalSquadronPoints = 0;
         squadrons.forEach(squadron => {
             if (squadron.id) {
                 const squadronCard = cards.cardsById[squadron.id];
-                totalSquadronPoints += squadronCard.points;
                 if (squadron.count === 1) {
+                    totalSquadronPoints += squadronCard.points;
                     lines.push(`• ${squadronCard.displayName ? squadronCard.displayName : squadronCard.cardName} (${squadronCard.points})`);
                 } else {
+                    totalSquadronPoints += squadronCard.points * squadron.count;
                     lines.push(`• ${squadron.count} x ${squadronCard.displayName ? squadronCard.displayName : squadronCard.cardName} (${squadronCard.points * squadron.count})`);
                 }
             }
