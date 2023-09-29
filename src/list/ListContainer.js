@@ -246,6 +246,7 @@ function ListContainer({
     
     const setEligibleShipsToAdd = () => {
         const newCardComponentProps = [];
+        const appendedCardComponentProps = [];
         for (let i = 0; i < cards.shipIdList.length; i++) {
             const id = cards.shipIdList[i];
             const card = cards.cardsById[id];
@@ -261,9 +262,9 @@ function ListContainer({
             });
         }
         setRightPaneText('Add Ship');
-        setCardComponentProps(newCardComponentProps);
+        setCardComponentProps([...newCardComponentProps, ...appendedCardComponentProps]);
         handleSetRightPaneFocus(true);
-        setIsCardPropsDelimited(false)
+        setIsCardPropsDelimited(true)
     }
 
     const setEligibleObjectiveToAdd = (objectiveType) => {
@@ -411,8 +412,8 @@ function ListContainer({
     cardComponentProps.sort((a, b) => {
         const cardA = cards.cardsById[a.id];
         const cardB = cards.cardsById[b.id];
-        if (cardA.cardName > cardB.cardName) return 1;
-        else if (cardA.cardName < cardB.cardName) return -1;
+        if (cardA.cardName.replace(/"/g, '') > cardB.cardName.replace(/"/g, '')) return 1;
+        else if (cardA.cardName.replace(/"/g, '') < cardB.cardName.replace(/"/g, '')) return -1;
         else return 0;
     });
     const uniqueCardRowProps = [];
@@ -427,6 +428,10 @@ function ListContainer({
                 uniqueCardRowProps.push(cardComponentProps[i]);
             } else if (card.cardType === 'upgrade' && card.upgradeSlots.length > 1) {
                 nonUniqueCardRowProps.push(cardComponentProps[i]);
+            } else if (card.cardType === 'ship' && card.shipSize === 'huge') {
+                nonUniqueCardRowProps.push(cardComponentProps[i]);
+            } else if (card.cardType === 'ship' && card.shipSize !== 'huge') {
+                uniqueCardRowProps.push(cardComponentProps[i]);
             } else {
                 nonUniqueCardRowProps.push(cardComponentProps[i]);
             }
