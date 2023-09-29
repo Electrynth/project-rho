@@ -11,15 +11,13 @@ import 'styles/globals.css'
 function MyApp({ Component, pageProps }) {
     const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
     return (
-        <>
+        <ThemeProvider theme={darkTheme}>
+            <CssBaseline />
+            <main className={robotoCondensed.className}>
+                <Component {...pageProps} />
+            </main>
             <Analytics />
-            <ThemeProvider theme={darkTheme}>
-                <CssBaseline />
-                <main className={robotoCondensed.className}>
-                    <Component {...pageProps} />
-                </main>
-            </ThemeProvider>
-        </>
+        </ThemeProvider>
     );
 }
 
