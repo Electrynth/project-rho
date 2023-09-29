@@ -5315,6 +5315,7 @@
         "cardName": "Victory"
       }
     ],
+    "addsUpgradeSlot": "support team",
     "isModification": false,
     "id": "oz",
     "cardType": "upgrade"
@@ -5454,6 +5455,7 @@
     "upgradeSlots": [
       "title"
     ],
+    "addsUpgradeSlot": "defensive retrofit",
     "requirements": [
       {
         "cardName": "Providence"
@@ -6436,7 +6438,7 @@
   },
   "rq": {
     "cardName": "Lira Wessex",
-    "points": 4,
+    "points": 2,
     "isUnique": true,
     "faction": "empire",
     "upgradeSlots": [
@@ -6449,14 +6451,18 @@
   },
   "rr": {
     "cardName": "Minister Tua",
-    "points": 4,
+    "points": 2,
     "isUnique": true,
     "faction": "empire",
     "upgradeSlots": [
       "officer"
     ],
-    "requirements": [],
+    "requirements": [
+      "NOT",
+      { "shipSize": "huge" }
+    ],
     "isModification": false,
+    "addsUpgradeSlot": "defensive retrofit",
     "id": "rr",
     "cardType": "upgrade"
   },

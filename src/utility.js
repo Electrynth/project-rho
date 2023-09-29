@@ -1,6 +1,6 @@
 const checkIsMatch = (object, source) => {
     let matchingProperties = 0;
-    console.log(object, source);
+
     for (const [key, value] of Object.entries(object)) {
         if (key in source && source[key].includes(value)) matchingProperties += 1;
     }

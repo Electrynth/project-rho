@@ -16,6 +16,7 @@ import CardButton from 'src/common/CardButton';
 import versions from 'config/versions';
 import cards from 'config/cards.js';
 import { isUpgradeRequirementsMet } from 'src/utility';
+import { RefreshOutlined } from '@mui/icons-material';
 
 const { cardsById } = cards;
 
@@ -75,6 +76,61 @@ function ListContainer({
     const handleSetTitleFromEvent = (event) => setTitle(event.target.value);
     const handleSetVersionFromEvent = (event) => setVersion(event.target.value);
 
+    const generateExportedListText = () => {
+        let totalListPoints = 0;
+        const lines = [];
+        const commanderCard = commander ? cards.cardsById[commander] : undefined;
+
+        lines.push(`Name: ${title}`);
+        lines.push(`Faction: ${faction}`);
+        lines.push(`Commander: ${commanderCard ? (commanderCard.displayName ? commanderCard.displayName : commanderCard.cardName) : ''}`);
+        lines.push('');
+
+        const assaultObjectiveName = redObjId ? cards.cardsById[redObjId].cardName : '';
+        const defenseObjectiveName = yellowObjId ? cards.cardsById[yellowObjId].cardName : '';
+        const navigationObjectiveName = blueObjId ? cards.cardsById[blueObjId].cardName : '';
+        lines.push(`Assault: ${assaultObjectiveName}`);
+        lines.push(`Defense: ${defenseObjectiveName}`);
+        lines.push(`Navigation: ${navigationObjectiveName}`);
+        lines.push('');
+
+        ships.forEach(ship => {
+            const shipCard = cards.cardsById[ship.id];
+            let shipTotalPoints = shipCard.points;
+            lines.push(`${shipCard.displayName ? shipCard.displayName : shipCard.cardName} (${shipCard.points})`);
+            ship.upgradesEquipped.forEach(upgrade => {
+                if (upgrade.id) {
+                    const upgradeCard = cards.cardsById[upgrade.id];
+                    shipTotalPoints += upgradeCard.points;
+                    lines.push(`• ${upgradeCard.displayName ? upgradeCard.displayName : upgradeCard.cardName} (${upgradeCard.points})`);
+                }
+            });
+            lines.push(`= ${shipTotalPoints} Points`);
+            totalListPoints += shipTotalPoints;
+        });
+        lines.push('');
+
+        lines.push('Squadrons:');
+        let totalSquadronPoints = 0;
+        squadrons.forEach(squadron => {
+            if (squadron.id) {
+                const squadronCard = cards.cardsById[squadron.id];
+                totalSquadronPoints += squadronCard.points;
+                if (squadron.count === 1) {
+                    lines.push(`• ${squadronCard.displayName ? squadronCard.displayName : squadronCard.cardName} (${squadronCard.points})`);
+                } else {
+                    lines.push(`• ${squadron.count} x ${squadronCard.displayName ? squadronCard.displayName : squadronCard.cardName} (${squadronCard.points * squadron.count})`);
+                }
+            }
+        });
+        lines.push(`= ${totalSquadronPoints} Points`)
+        lines.push('');
+
+        totalListPoints += totalSquadronPoints;
+        lines.push(`Total Points: ${totalListPoints}`);
+        return lines.join('\n');
+    }
+
     const addShip = (id) => {
         const newShip = { id };
         const card = cards.cardsById[id];
@@ -111,6 +167,19 @@ function ListContainer({
             newShip.upgradesEquipped[upgradeIndex].upgradeSlotDict = upgradeSlotDict;
         } else {
             newShip.upgradesEquipped[upgradeIndex].id = id;
+        }
+        if (upgradeCard.addsUpgradeSlot) {
+            if (upgradeCard.id === 'rr') {
+                let hasDefensiveRetro = false;
+                newShip.upgradesEquipped.forEach(upgradeSlot => {
+                    if (upgradeSlot.upgradeType === 'defensive retrofit') hasDefensiveRetro = true;
+                })
+                if (!hasDefensiveRetro) {
+                    newShip.upgradesEquipped.push({ rootCardId: id, upgradeType: upgradeCard.addsUpgradeSlot, id: undefined });
+                }
+            } else {
+                newShip.upgradesEquipped.push({ rootCardId: id, upgradeType: upgradeCard.addsUpgradeSlot, id: undefined });
+            }
         }
         setShips(newShips);
         handleSetRightPaneFocus(false);
@@ -226,7 +295,23 @@ function ListContainer({
                 newShip.upgradesEquipped[upgrade.upgradeSlotDict[key]].id = undefined;
             }
           
-        } 
+        }
+        if (upgradeCard.addsUpgradeSlot) {
+            let secondUpgradeCardIndex;
+            for (let i = 0; i < newShip.upgradesEquipped.length; i++) {
+                if (newShip.upgradesEquipped[i].rootCardId && newShip.upgradesEquipped[i].rootCardId === upgradeCard.id) {
+                    secondUpgradeCardIndex = i;
+                    if (newShip.upgradesEquipped[i].id) {
+                        // TODO: rework this
+                        // have to start the whole new upgrade removal process... 
+                        const secondUpgradeCard = cards.cardsById[newShip.upgradesEquipped[i].id];
+
+                        if (secondUpgradeCard.isModification) newShip.hasModification = false;
+                    }
+                }
+            }
+            newShip.upgradesEquipped.splice(secondUpgradeCardIndex, 1);
+        }
         newShip.upgradesEquipped[upgradeIndex] = { upgradeType: upgrade.upgradeType, id: undefined };
         setUniques(newUniques);
         setShips(newShips);
@@ -482,7 +567,9 @@ function ListContainer({
                     setEligibleObjectiveToAdd={setEligibleObjectiveToAdd}
                 />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
-                <ListFooter />
+                <ListFooter
+                    generateExportedListText={generateExportedListText}
+                />
             </div>
             <div className={styles.rightPane} style={{ ...secondaryPaneStyles }}>
                 <RightPaneHeader

@@ -25,13 +25,7 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = {} }) {
                     alt={card.cardName}
                     style={{ maxHeight: card.cardType === 'upgrade' ? 300 : 340, opacity: isDisabled ? '0.25' : '1.0', ...cardStyles }}
                 />
-            </CardActionArea>
-        </Card>
-    );
-}
-
-/*
-<Box
+                <Box
                     style={{
                         backgroundColor: `rgb(255, 255, 255, ${isDisabled ? '0.75' : '1.0'}`,
                         borderRadius: 4,
@@ -51,6 +45,13 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = {} }) {
                         {id in versions[version].pointDeltas ? card.points + versions[version].pointDeltas[id] : card.points}
                     </Typography>
                 </Box>
+            </CardActionArea>
+        </Card>
+    );
+}
+
+/*
+
 */
 
 export default CardButton;
