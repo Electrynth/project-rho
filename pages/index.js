@@ -51,7 +51,7 @@ export default function Home() {
           <div style={{ display: 'flex', flexFlow: 'row wrap', alignItems: 'center', marginTop: 18 }}>
             <Chip
               clickable
-              label="What is this?"
+              label={<span className={robotoCondensed.className}>What is this?</span>}
               className={robotoCondensed.className}
               onClick={() => setIsDialogOpen(true)}
             />
@@ -65,18 +65,18 @@ export default function Home() {
           </div>
           <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
         </div>
-        <Dialog onClose={() => setIsDialogOpen(false)} open={isDialogOpen}>
-              <DialogTitle>What is this?</DialogTitle>
+        <Dialog className={robotoCondensed.className} onClose={() => setIsDialogOpen(false)} open={isDialogOpen}>
+              <DialogTitle className={robotoCondensed.className}>What is this?</DialogTitle>
               <DialogContent>
-                <DialogContentText>
+                <DialogContentText className={robotoCondensed.className}>
                   This website is a currently untitled and unaffiliated (temporarily referred to has Project Rho) list builder meant to be used to conveniently create lists for the Retcon Open tournament.
                 </DialogContentText>
                 <br />
-                <DialogContentText>
+                <DialogContentText className={robotoCondensed.className}>
                   Questions, inquiries, feedback, bug reports, and feature requests may be emailed to <a style={{ color: 'blue' }} href="mailto:contact@legion-hq.com">contact@legion-hq.com</a> or may be sent in a direct message to nick on the Armada Hub discord server.
                 </DialogContentText>
                 <br />
-                <DialogContentText>
+                <DialogContentText className={robotoCondensed.className}>
                   This website is an unofficial fan creation. All images, game symbols, and text is copyright Lucasfilm Ltd. and Fantasy Flight Games / Atomic Mass Games. This website is not affiliated or sponsored by Atomic Mass Games.
                 </DialogContentText>
               </DialogContent>
