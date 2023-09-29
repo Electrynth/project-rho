@@ -1249,217 +1249,217 @@
   "co": {
     "cardName": "Advanced Gunnery",
     "cardType": "objective",
-    "objectType": "assault",
+    "objectiveType": "assault",
     "id": "co"
   },
   "cp": {
     "cardName": "Abandoned Mining Facility",
     "cardType": "objective",
-    "objectType": "defense",
+    "objectiveType": "defense",
     "id": "cp"
   },
   "cq": {
     "cardName": "Dangerous Territory",
     "cardType": "objective",
-    "objectType": "navigation",
+    "objectiveType": "navigation",
     "id": "cq"
   },
   "cr": {
     "cardName": "Blockade Run",
     "cardType": "objective",
-    "objectType": "assault",
+    "objectiveType": "assault",
     "id": "cr"
   },
   "cs": {
     "cardName": "Close-Range Intel Scan",
     "cardType": "objective",
-    "objectType": "assault",
+    "objectiveType": "assault",
     "id": "cs"
   },
   "ct": {
     "cardName": "Ion Storm",
     "cardType": "objective",
-    "objectType": "assault",
+    "objectiveType": "assault",
     "id": "ct"
   },
   "cu": {
-    "cardName": "Marked for Destruction",
+    "cardName": "Marked For Destruction",
     "cardType": "objective",
-    "objectType": "assault",
+    "objectiveType": "assault",
     "id": "cu"
   },
   "cv": {
     "cardName": "Most Wanted",
     "cardType": "objective",
-    "objectType": "assault",
+    "objectiveType": "assault",
     "id": "cv"
   },
   "cw": {
     "cardName": "Opening Salvo",
     "cardType": "objective",
-    "objectType": "assault",
+    "objectiveType": "assault",
     "id": "cw"
   },
   "cx": {
     "cardName": "Precision Strike",
     "cardType": "objective",
-    "objectType": "assault",
+    "objectiveType": "assault",
     "id": "cx"
   },
   "cy": {
-    "cardName": "Rift Assault ",
+    "cardName": "Rift Assault",
     "cardType": "objective",
-    "objectType": "assault",
+    "objectiveType": "assault",
     "id": "cy"
   },
   "cz": {
     "cardName": "Station Assault",
     "cardType": "objective",
-    "objectType": "assault",
+    "objectiveType": "assault",
     "id": "cz"
   },
   "da": {
     "cardName": "Surprise Attack",
     "cardType": "objective",
-    "objectType": "assault",
+    "objectiveType": "assault",
     "id": "da"
   },
   "db": {
     "cardName": "Targeting Beacons",
     "cardType": "objective",
-    "objectType": "assault",
+    "objectiveType": "assault",
     "id": "db"
   },
   "dc": {
     "cardName": "Asteroid Tactics",
     "cardType": "objective",
-    "objectType": "defense",
+    "objectiveType": "defense",
     "id": "dc"
   },
   "dd": {
     "cardName": "Capture the VIP",
     "cardType": "objective",
-    "objectType": "defense",
+    "objectiveType": "defense",
     "id": "dd"
   },
   "de": {
     "cardName": "Contested Outpost",
     "cardType": "objective",
-    "objectType": "defense",
+    "objectiveType": "defense",
     "id": "de"
   },
   "df": {
     "cardName": "Fighter Ambush",
     "cardType": "objective",
-    "objectType": "defense",
+    "objectiveType": "defense",
     "id": "df"
   },
   "dg": {
     "cardName": "Fire Lanes",
     "cardType": "objective",
-    "objectType": "defense",
+    "objectiveType": "defense",
     "id": "dg"
   },
   "dh": {
     "cardName": "Fleet Ambush",
     "cardType": "objective",
-    "objectType": "defense",
+    "objectiveType": "defense",
     "id": "dh"
   },
   "di": {
     "cardName": "Fleet in Being",
     "cardType": "objective",
-    "objectType": "defense",
+    "objectiveType": "defense",
     "id": "di"
   },
   "dj": {
     "cardName": "Hyperspace Assault",
     "cardType": "objective",
-    "objectType": "defense",
+    "objectiveType": "defense",
     "id": "dj"
   },
   "dk": {
     "cardName": "Jamming Barrier",
     "cardType": "objective",
-    "objectType": "defense",
+    "objectiveType": "defense",
     "id": "dk"
   },
   "dl": {
     "cardName": "Planetary Ion Cannon",
     "cardType": "objective",
-    "objectType": "defense",
+    "objectiveType": "defense",
     "id": "dl"
   },
   "dm": {
     "cardName": "Rift Ambush",
     "cardType": "objective",
-    "objectType": "defense",
+    "objectiveType": "defense",
     "id": "dm"
   },
   "dn": {
     "cardName": "Doomed Station",
     "cardType": "objective",
-    "objectType": "navigation",
+    "objectiveType": "navigation",
     "id": "dn"
   },
   "do": {
     "cardName": "Hyperspace Migration",
     "cardType": "objective",
-    "objectType": "navigation",
+    "objectiveType": "navigation",
     "id": "do"
   },
   "dp": {
-    "cardName": "Infested Fields ",
+    "cardName": "Infested Fields",
     "cardType": "objective",
-    "objectType": "navigation",
+    "objectiveType": "navigation",
     "id": "dp"
   },
   "dq": {
     "cardName": "Intel Sweep",
     "cardType": "objective",
-    "objectType": "navigation",
+    "objectiveType": "navigation",
     "id": "dq"
   },
   "dr": {
     "cardName": "Minefields",
     "cardType": "objective",
-    "objectType": "navigation",
+    "objectiveType": "navigation",
     "id": "dr"
   },
   "ds": {
     "cardName": "Navigational Hazards",
     "cardType": "objective",
-    "objectType": "navigation",
+    "objectiveType": "navigation",
     "id": "ds"
   },
   "dt": {
     "cardName": "Salvage Run",
     "cardType": "objective",
-    "objectType": "navigation",
+    "objectiveType": "navigation",
     "id": "dt"
   },
   "du": {
     "cardName": "Sensor Net",
     "cardType": "objective",
-    "objectType": "navigation",
+    "objectiveType": "navigation",
     "id": "du"
   },
   "dv": {
     "cardName": "Solar Corona",
     "cardType": "objective",
-    "objectType": "navigation",
+    "objectiveType": "navigation",
     "id": "dv"
   },
   "dw": {
     "cardName": "Superior Positions",
     "cardType": "objective",
-    "objectType": "navigation",
+    "objectiveType": "navigation",
     "id": "dw"
   },
   "dx": {
     "cardName": "Volatile Deposits",
     "cardType": "objective",
-    "objectType": "navigation",
+    "objectiveType": "navigation",
     "id": "dx"
   },
   "dy": {

@@ -75,7 +75,6 @@ function ListContainer({
     const handleSetTitleFromEvent = (event) => setTitle(event.target.value);
     const handleSetVersionFromEvent = (event) => setVersion(event.target.value);
 
-
     const addShip = (id) => {
         const newShip = { id };
         const card = cards.cardsById[id];
@@ -175,6 +174,22 @@ function ListContainer({
         }
     }
 
+    const addObjective = (id, objectiveType) => {
+        if (objectiveType === 'assault') setRedObjId(id);
+        if (objectiveType === 'defense') setYellowObjId(id);
+        if (objectiveType === 'navigation') setBlueObjId(id);
+
+        handleSetRightPaneFocus(false);
+        setCardComponentProps([]);
+        setRightPaneText('');
+    }
+
+    const removeObjective = (objectiveType) => {
+        if (objectiveType === 'assault') setRedObjId();
+        if (objectiveType === 'defense') setYellowObjId();
+        if (objectiveType === 'navigation') setBlueObjId();
+    }
+
     const removeShip = (index) => {
         const ship = ships[index];
         const { id } = ship;
@@ -246,6 +261,34 @@ function ListContainer({
             });
         }
         setRightPaneText('Add Ship');
+        setCardComponentProps(newCardComponentProps);
+        handleSetRightPaneFocus(true);
+        setIsCardPropsDelimited(false)
+    }
+
+    const setEligibleObjectiveToAdd = (objectiveType) => {
+        const newCardComponentProps = [];
+        for (let i = 0; i < cards.objectiveIdList.length; i++) {
+            const id = cards.objectiveIdList[i];
+            const card = cards.cardsById[id];
+            
+            if (card.cardType !== 'objective') continue;
+            if (card.objectiveType !== objectiveType) continue;
+            if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
+
+            let isDisabled = false;
+            if (objectiveType === 'assault' && redObjId === id) isDisabled = true;
+            if (objectiveType === 'defense' && yellowObjId === id) isDisabled = true;
+            if (objectiveType === 'navigation' && blueObjId === id) isDisabled = true;
+            newCardComponentProps.push({
+                id,
+                key: id,
+                version,
+                isDisabled,
+                onClick: () => addObjective(id, objectiveType)
+            });
+        }
+        setRightPaneText('Add Objective');
         setCardComponentProps(newCardComponentProps);
         handleSetRightPaneFocus(true);
         setIsCardPropsDelimited(false)
@@ -429,6 +472,9 @@ function ListContainer({
                     redObjId={redObjId}
                     yellowObjId={yellowObjId}
                     blueObjId={blueObjId}
+                    addObjective={addObjective}
+                    removeObjective={removeObjective}
+                    setEligibleObjectiveToAdd={setEligibleObjectiveToAdd}
                 />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListFooter />
