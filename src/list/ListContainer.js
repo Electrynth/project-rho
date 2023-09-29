@@ -94,7 +94,6 @@ function ListContainer({
         lines.push(`Navigation: ${navigationObjectiveName}`);
         lines.push('');
 
-        //console.log(ships);
         ships.forEach(ship => {
             const shipCard = cards.cardsById[ship.id];
             let shipTotalPoints = shipCard.points;
@@ -143,7 +142,6 @@ function ListContainer({
         setCardComponentProps([]);
         setRightPaneText('');
     }
-
     const addUpgrade = (shipIndex, upgradeIndex, id) => {
         const newShips = [...ships];
         const newShip = newShips[shipIndex];
@@ -159,6 +157,7 @@ function ListContainer({
             }
             for (let i = 0; i < newShip.upgradesEquipped.length; i++) {
                 const equippedUpgrade = newShip.upgradesEquipped[i];
+                if (equippedUpgrade.id === true || cards.cardsById[equippedUpgrade.id]) continue; // don't overwrite equipped upgrades
                 if (equippedUpgrade.upgradeType in upgradeSlotDict && upgradeSlotDict[equippedUpgrade.upgradeType] === true) {
                     if (upgradeIndex === i) equippedUpgrade.id = id;
                     else equippedUpgrade.id = true;
@@ -404,6 +403,9 @@ function ListContainer({
             if (card.upgradeSlots.length > 1 && !(openUpgradeSlots['weapons team'] > 0 && openUpgradeSlots['offensive retrofit'] > 0)) continue;
             if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
             let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.displayName ? card.displayName : card.cardName);
+            ship.upgradesEquipped.forEach(upgrade => {
+                if (upgrade.id !== true && upgrade.id === id) isDisabled = true;
+            })
             newCardComponentProps.push({
                 id,
                 key: id,
