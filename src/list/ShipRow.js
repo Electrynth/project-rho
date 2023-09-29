@@ -86,7 +86,7 @@ function ShipRow({ index, version = 1, ship, commander, removeShip, removeUpgrad
                     if (!upgrade.id || upgrade.id === true) return undefined;
                     const upgradeCard = cards.cardsById[upgrade.id];
                     return (
-                        <div key={`${upgrade.id}_${i}`} style={{ display: 'flex', flexFlow: 'row nowrap', marginTop: 4 }}>
+                        <div key={`${upgrade.id}_${i}`} style={{ display: 'flex', position: 'relative', flexFlow: 'row nowrap', marginTop: 4 }}>
                             <span style={{ minWidth: 20 }} />
                             <UpgradeIcon
                                 key={`${upgrade.upgradeType}_${i}`}

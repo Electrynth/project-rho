@@ -51,7 +51,7 @@ function SquadronRow({
                     </div>
                 )}
                 hoverActions={(
-                    <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', backgroundColor: 'rgba(0, 0, 0, .12)' }}>
+                    <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', position: 'relative', backgroundColor: 'rgba(0, 0, 0, .12)' }}>
                         <div
                             style={{
                                 overflow: 'hidden',
