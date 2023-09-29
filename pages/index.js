@@ -39,16 +39,16 @@ export default function Home() {
       </Head>
       <div style={{ padding: 20, display: 'flex', flexFlow: 'column nowrap', justifyContent: 'center', alignItems: 'center' }}>
           <Alert severity="info">
-            <AlertTitle><span className={robotoCondensed.className} style={{ fontSize: 24 }}>Under Construction!</span></AlertTitle>
-            <span className={robotoCondensed.className} style={{ fontSize: 16 }}>
-              <span style={{ fontSize: 20 }}>Major features coming soon:</span>
-              <li>Clicking on a card opens an expanded view of it</li>
-              <li>Upgrade swap button</li>
-              <li>Ship copy button</li>
-              <li>List exporting</li>
-              <li>Free user accounts to save lists</li>
-              <li>Various performance and quality of life enhancements</li>
-              <li>UI Tweaks</li>
+            <AlertTitle sx={{ fontSize: 18 }}><span className={robotoCondensed.className}>Under Construction!</span></AlertTitle>
+            <span style={{ fontSize: 16 }}>
+              <span className={robotoCondensed.className} style={{ fontSize: 18 }}>Major features coming soon:</span>
+              <li className={robotoCondensed.className}>Clicking on a card opens an expanded view of it</li>
+              <li className={robotoCondensed.className}>Upgrade swap button</li>
+              <li className={robotoCondensed.className}>Ship copy button</li>
+              <li className={robotoCondensed.className}>List exporting</li>
+              <li className={robotoCondensed.className}>Free user accounts to save lists</li>
+              <li className={robotoCondensed.className}>Various performance and quality of life enhancements</li>
+              <li className={robotoCondensed.className}>UI Tweaks</li>
             </span>
           </Alert>
           <div style={{ display: 'flex', flexFlow: 'row wrap', alignItems: 'center', marginTop: 18 }}>
