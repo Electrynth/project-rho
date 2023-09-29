@@ -62,7 +62,7 @@ function ListFooter({ generateExportedListText }) {
                     />
                 </DialogContent>
                 <DialogActions>
-                    {window.isSecureContext ? (
+                    {(typeof window !== 'undefined') && window.isSecureContext ? (
                         <Button
                             size="large"
                             color="secondary"
