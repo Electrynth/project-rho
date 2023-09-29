@@ -1,6 +1,11 @@
+import { useState } from 'react';
 import Head from 'next/head'
 import { useRouter } from 'next/router';
-import { IconButton, Divider, Chip, Alert, AlertTitle } from '@mui/material';
+import Dialog from '@mui/material/Dialog';
+import DialogTitle from '@mui/material/DialogTitle';
+import DialogContent from '@mui/material/DialogContent';
+import DialogContentText from '@mui/material/DialogContentText';
+import { IconButton, Divider, Chip, Alert, AlertTitle, Typography } from '@mui/material';
 import FactionIcon from 'src/common/FactionIcon';
 import robotoCondensed from 'config/font';
 
@@ -19,6 +24,12 @@ function FactionLinkButton({ faction }) {
 }
 
 export default function Home() {
+  const [dialogHeader, setDialogHeader] = useState('');
+  const [dialogBody, setDialogBody] = useState('');
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const handleOpen = () => setIsDialogOpen(true);
+  const handleClose = () => setIsDialogOpen(false);
+
   return (
     <div>
       <Head>
@@ -27,32 +38,23 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div style={{ padding: 20, display: 'flex', flexFlow: 'column nowrap', justifyContent: 'center', alignItems: 'center' }}>
-          <h2><strong>Project Rho</strong></h2>
           <Alert severity="info" className={robotoCondensed.className}>
-            <AlertTitle className={robotoCondensed.className}>Under Construction</AlertTitle>
-            Major Phase 1 Features remaining (early-mid February):
+            <AlertTitle className={robotoCondensed.className}>Under Construction!</AlertTitle>
+            Major features coming soon:
             <li>Upgrade swap button</li>
             <li>Ship copy button</li>
-            <li>Performance enhancements</li>
-            <br />
-            Major Phase 2 Features to come (late February - early March):
-            <li>Account & List saving</li>
-            <li>List exports</li>
-            <li>List forking</li>
-            <li>Roadmap section on homepage</li>
-            <li>About Us section on homepage</li>
-            <br />
-            Feedback to think about
-            <li>How is the interface usability? Clunky? Slow?</li>
-            <li>How is the interface visuals? Ugly? Too much detail? Not enough?</li>
-            <li>Do card images load quick enough? On desktop? On mobile?</li>
-            <li>Are card images legible enough to read their text?</li>
-            <li>Is the website text large enough to read?</li>
+            <li>List exporting</li>
+            <li>Free user accounts to save lists</li>
+            <li>Various performance and quality of life enhancements</li>
+            <li>UI Tweaks</li>
           </Alert>
-          <div style={{ display: 'flex', flexFlow: 'row wrap', alignItems: 'center' }}>
-            <Chip clickable label="Roadmap" className={robotoCondensed.className} />
-            <span style={{ marginRight: 6 }} />
-            <Chip clickable label="About Us" className={robotoCondensed.className} />
+          <div style={{ display: 'flex', flexFlow: 'row wrap', alignItems: 'center', marginTop: 18 }}>
+            <Chip
+              clickable
+              label="What is this?"
+              className={robotoCondensed.className}
+              onClick={() => setIsDialogOpen(true)}
+            />
           </div>
           <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
           <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
@@ -62,8 +64,23 @@ export default function Home() {
               <FactionLinkButton faction="separatists" />
           </div>
           <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
-          <Chip clickable label="Login" className={robotoCondensed.className} />
         </div>
+        <Dialog onClose={() => setIsDialogOpen(false)} open={isDialogOpen}>
+              <DialogTitle>What is this?</DialogTitle>
+              <DialogContent>
+                <DialogContentText>
+                  This website is a list builder meant to be used to conveniently create lists for the Retcon Open tournament.
+                </DialogContentText>
+                <br />
+                <DialogContentText>
+                  Questions, inquiries, feedback, bug reports, and feature requests may be emailed to <a style={{ color: 'blue' }} href="mailto:contact@legion-hq.com">contact@legion-hq.com</a> or may be sent in a direct message to nick on the Armada Hub discord server.
+                </DialogContentText>
+                <br />
+                <DialogContentText>
+                  This website is an unofficial fan creation. All images, game symbols, and text is copyright Lucasfilm Ltd. and Fantasy Flight Games / Atomic Mass Games. This website is not affiliated or sponsored by Atomic Mass Games.
+                </DialogContentText>
+              </DialogContent>
+        </Dialog>
     </div>
   )
 }

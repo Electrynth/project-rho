@@ -2,16 +2,16 @@ import {
     Divider
 } from '@mui/material';
 import CardButton from 'src/common/CardButton';
-import cards from 'config/cards.json';
+import cards from 'config/cards.js';
 
-function ShipRows({ ships, cardZoomClick }) {
+function ShipRows({ version, ships, cardZoomClick }) {
     if (ships.length === 0) return undefined;
     return (
         <div>
             {ships.map((ship) => {
                 return (
-                    <div key={ship.id} style={{ width: '40%' }}>
-                        <CardButton id={ship.id} />
+                    <div key={ship.id} style={{ maxWidth: 205 }}>
+                        <CardButton version={version} id={ship.id} />
                     </div>
                 );
             })}
@@ -20,13 +20,13 @@ function ShipRows({ ships, cardZoomClick }) {
     );
 }
 
-function SquadronsRow({ squadrons, cardZoomClick }) {
+function SquadronsRow({ version, squadrons, cardZoomClick }) {
     if (squadrons.length === 0 ) return undefined;
     return (
         <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
             {squadrons.map((squadron) => {
                 return (
-                    <CardButton id={squadron.id} key={squadron.id} />
+                    <CardButton version={version} id={squadron.id} key={squadron.id} />
                 );
             })}
             <Divider style={{ marginBottom: 8 }} />
@@ -35,6 +35,7 @@ function SquadronsRow({ squadrons, cardZoomClick }) {
 }
 
 function ObjectivesRow({
+    version,
     redObjId,
     blueObjId,
     yellowObjId,
@@ -52,6 +53,7 @@ function ObjectivesRow({
 }
 
 function ListDisplay({
+    version,
     ships = [],
     squadrons = [],
     redObjId,
@@ -65,9 +67,10 @@ function ListDisplay({
     }
     return (
         <div style={{ display: 'flex', flexFlow: 'column nowrap' }}>
-            <ShipRows ships={ships} cardZoomClick={cardZoomClick} />
-            <SquadronsRow squadrons={squadrons} cardZoomClick={cardZoomClick} />
+            <ShipRows version={version} ships={ships} cardZoomClick={cardZoomClick} />
+            <SquadronsRow version={version} squadrons={squadrons} cardZoomClick={cardZoomClick} />
             <ObjectivesRow
+                version={version}
                 redObjId={redObjId}
                 blueObjId={blueObjId}
                 yellowObjId={yellowObjId}

@@ -30,7 +30,7 @@ function ShipRow({ index, version = 1, ship, commander, removeShip, removeUpgrad
                             }}
                         >
                             <Image
-                                src={shipCard.imageUrl}
+                                src={cards.getCardImageUrl(shipCard.cardName, 'ship')}
                                 width={240}
                                 height={412}
                                 alt={shipCard.cardName}
@@ -59,7 +59,7 @@ function ShipRow({ index, version = 1, ship, commander, removeShip, removeUpgrad
                                 style={{ zIndex: 1, marginLeft: 30, marginTop: 10, position: 'absolute', cursor: 'pointer' }}
                             />
                             <Image
-                                src={shipCard.imageUrl}
+                                src={cards.getCardImageUrl(shipCard.cardName, 'ship')}
                                 width={240}
                                 height={412}
                                 alt={shipCard.cardName}
@@ -113,7 +113,7 @@ function ShipRow({ index, version = 1, ship, commander, removeShip, removeUpgrad
                                             }}
                                         >
                                             <Image
-                                                src={upgradeCard.imageUrl}
+                                                src={cards.getCardImageUrl(upgradeCard.cardName, 'upgrade')}
                                                 width={180}
                                                 height={259}
                                                 alt={upgradeCard.cardName}
@@ -142,7 +142,7 @@ function ShipRow({ index, version = 1, ship, commander, removeShip, removeUpgrad
                                                 style={{ zIndex: 1, marginLeft: 20, marginTop: 10, position: 'absolute', cursor: 'pointer' }}
                                             />
                                             <Image
-                                                src={upgradeCard.imageUrl}
+                                                src={cards.getCardImageUrl(upgradeCard.cardName, 'upgrade')}
                                                 width={180}
                                                 height={259}
                                                 alt={upgradeCard.cardName}
@@ -201,7 +201,7 @@ function ShipRow({ index, version = 1, ship, commander, removeShip, removeUpgrad
                     hoverActions={(
                         <div style={{ display: 'flex', flexFlow: 'row nowrap', height: 40, alignItems: 'center', padding: 5, borderRadius: 5, backgroundColor: 'rgba(0, 0, 0, .12)' }}>
                             {ship.upgradesEquipped.map((upgrade, i) => {
-                                console.log(commander, upgrade.upgradeType);
+
                                 if (upgrade.id === true || upgrade.upgradeType === 'commander' && commander !== '') {
                                     return (
                                         <UpgradeIcon

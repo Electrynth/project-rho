@@ -3,7 +3,7 @@ import _ from 'lodash';
 import styles from 'styles/ListContainer.module.css';
 import robotoCondensed from 'config/font';
 import { useRouter } from 'next/router';
-import { Divider, Paper, IconButton, Typography } from '@mui/material';
+import { Divider, Paper, IconButton, Typography, cardMediaClasses } from '@mui/material';
 import Clear from '@mui/icons-material/Clear';
 import ListHeader from './ListHeader';
 import ListShips from './ListShips';
@@ -14,8 +14,10 @@ import ListDisplay from './ListDisplay';
 import CardSelector from './CardSelector';
 import CardButton from 'src/common/CardButton';
 import versions from 'config/versions';
-import cards from 'config/cards';
+import cards from 'config/cards.js';
 import { isUpgradeRequirementsMet } from 'src/utility';
+
+const { cardsById } = cards;
 
 function RightPaneHeader({ rightPaneText, isRightPaneFocused, handleSetRightPaneFocus }) {
     return (
@@ -55,7 +57,7 @@ function ListContainer({
         setFaction(query.faction);
     }, [query]);
 
-    const [version, setVersion] = useState(1);
+    const [version, setVersion] = useState(0);
     const [title, setTitle] = useState('');
     const [faction, setFaction] = useState('');
     const [commander, setCommander] = useState('');
@@ -79,7 +81,7 @@ function ListContainer({
         const card = cards.cardsById[id];
         newShip.upgradesEquipped = card.upgradeSlots.map(upgradeType => ({ upgradeType, id: undefined }));
         newShip.hasModification = false;
-        if (card.isUnique) setUniques([...uniques, id]);
+        if (card.isUnique) setUniques([...uniques, card.displayName ? card.displayName : card.cardName]);
         setShips([...ships, newShip]);
         handleSetRightPaneFocus(false);
         setCardComponentProps([]);
@@ -91,7 +93,7 @@ function ListContainer({
         const newShip = newShips[shipIndex];
         const upgradeCard = cards.cardsById[id];
 
-        if (upgradeCard.isUnique) setUniques([...uniques, id]);
+        if (upgradeCard.isUnique) setUniques([...uniques, upgradeCard.displayName ? upgradeCard.displayName : upgradeCard.cardName]);
         if (upgradeCard.upgradeSlots.includes('commander')) setCommander(id);
         if (upgradeCard.isModification) newShip.hasModification = true;
         if (upgradeCard.upgradeSlots.length > 1) {
@@ -127,7 +129,8 @@ function ListContainer({
             }
         }
         if (!isSquadronAlreadyInList) {
-            if (cards.cardsById[id].isUnique) setUniques([...uniques, id]);
+            const card = cardsById[id];
+            if (cards.cardsById[id].isUnique) setUniques([...uniques, card.displayName ? card.displayName : card.cardName]);
             newSquadrons.push({ id, count: 1 });
         }
         setSquadrons(newSquadrons);
@@ -143,9 +146,10 @@ function ListContainer({
         const newSquadron = { id, count: 1 };
         const newSquadronCard = cards.cardsById[id];
         const newUniques = [...uniques];
-        const uniqueIdIndex = uniques.indexOf(squadron.id);
+        const oldSquadronCard = cardsById[squadron.id];
+        const uniqueIdIndex = uniques.indexOf(oldSquadronCard.displayName ? oldSquadronCard.displayName : oldSquadronCard.cardName);
         if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
-        if (newSquadronCard.isUnique) newUniques.push(id);
+        if (newSquadronCard.isUnique) newUniques.push(newSquadronCard.displayName ? newSquadronCard.displayName : newSquadronCard.cardName);
         newSquadrons[index] = newSquadron;
         setSquadrons(newSquadrons);
         setUniques(newUniques);
@@ -174,15 +178,16 @@ function ListContainer({
     const removeShip = (index) => {
         const ship = ships[index];
         const { id } = ship;
+        const card = cardsById[id];
         const newUniques = [...uniques];
-        const uniqueIdIndex = newUniques.indexOf(id);
+        const uniqueIdIndex = newUniques.indexOf(card.displayName ? card.displayName : card.cardName);
         if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
         for (let i = 0; i < ship.upgradesEquipped.length; i++) {
             const upgrade = ship.upgradesEquipped[i];
             const upgradeId = upgrade.id;
             const upgradeCard = cards.cardsById[upgradeId];
             if (upgradeId && upgradeCard.upgradeSlots.includes('commander')) setCommander('');
-            if (upgradeId && newUniques.indexOf(upgradeId) > -1) newUniques.splice(uniqueIdIndex, 1);
+            if (upgradeId && newUniques.indexOf(upgradeCard.displayName ? upgradeCard.displayName : upgradeCard.cardName) > -1) newUniques.splice(uniqueIdIndex, 1);
         }
         const newShips = [...ships];
         newShips.splice(index, 1);
@@ -196,7 +201,7 @@ function ListContainer({
         const newShip = newShips[shipIndex];
         const upgrade = newShip.upgradesEquipped[upgradeIndex];
         const upgradeCard = cards.cardsById[upgrade.id];
-        const uniqueIdIndex = uniques.indexOf(upgrade.id);
+        const uniqueIdIndex = uniques.indexOf(upgradeCard.displayName ? upgradeCard.displayName : upgradeCard.cardName);
         if (upgradeCard.isModification) newShip.hasModification = false;
         if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
         if (upgradeCard.upgradeSlots.includes('commander')) setCommander('');
@@ -216,7 +221,8 @@ function ListContainer({
         const newSquadrons = [...squadrons];
         const newUniques = [...uniques];
         const squadron = newSquadrons[index];
-        const uniqueIdIndex = uniques.indexOf(squadron.id);
+        const card = cardsById[squadron.id];
+        const uniqueIdIndex = uniques.indexOf(card.displayName ? card.displayName : card.cardName);
         if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
         newSquadrons.splice(index, 1);
         setSquadrons(newSquadrons);
@@ -230,11 +236,12 @@ function ListContainer({
             const card = cards.cardsById[id];
             if (card.cardType !== 'ship') continue;
             if (card.faction !== faction) continue;
+            if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
             newCardComponentProps.push({
                 id,
                 key: id,
                 version,
-                isDisabled: uniques.includes(id),
+                isDisabled: uniques.includes(card.displayName ? card.displayName : card.cardName),
                 onClick: () => addShip(id)
             });
         }
@@ -265,7 +272,8 @@ function ListContainer({
             if (!card.upgradeSlots.includes(upgradeType)) continue;
             if (!isUpgradeRequirementsMet(card.requirements, { ...shipCard, faction })) continue;
             if (card.upgradeSlots.length > 1 && !(openUpgradeSlots['weapons team'] > 0 && openUpgradeSlots['offensive retrofit'] > 0)) continue;
-            let isDisabled = ship.hasModification && card.isModification || uniques.includes(id);
+            if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
+            let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.displayName ? card.displayName : card.cardName);
             newCardComponentProps.push({
                 id,
                 key: id,
@@ -288,11 +296,12 @@ function ListContainer({
             const card = cards.cardsById[id];
             if (card.cardType !== 'squadron') continue;
             if (card.faction !== faction) continue;
+            if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
             newCardComponentProps.push({
                 id,
                 key: id,
                 version,
-                isDisabled: uniques.includes(id),
+                isDisabled: uniques.includes(card.displayName ? card.displayName : card.cardName),
                 onClick: () => addSquadron(id)
             });
         }
@@ -312,7 +321,7 @@ function ListContainer({
             newCardComponentProps.push({
                 id,
                 key: id,
-                isDisabled: uniques.includes(id),
+                isDisabled: uniques.includes(card.displayName ? card.displayName : card.cardName),
                 onClick: () => swapSquadron(index, id)
             });
         }
@@ -449,6 +458,7 @@ function ListContainer({
                     </div>
                 ) : (
                     <ListDisplay
+                        version={version}
                         ships={ships}
                         squadrons={squadrons}
                         redObjId={redObjId}

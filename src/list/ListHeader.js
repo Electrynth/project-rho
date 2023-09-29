@@ -11,7 +11,7 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import FactionIcon from 'src/common/FactionIcon';
 import robotoCondensed from 'config/font';
-import cards from 'config/cards.json';
+import cards from 'config/cards.js';
 import versions from 'config/versions';
 
 function ListHeader({
@@ -60,7 +60,7 @@ function ListHeader({
                 onClick={handleOpen}
             />
             <Dialog onClose={handleClose} open={isDialogOpen}>
-                <DialogTitle className={robotoCondensed.className}>Game Versions</DialogTitle>
+                <DialogTitle className={robotoCondensed.className}>Game Ruleset Versions</DialogTitle>
                 <div style={{ padding: 12 }}>
                     <FormControl fullWidth>
                         <InputLabel id="select-game-version" className={robotoCondensed.className}>Version</InputLabel>
@@ -80,16 +80,47 @@ function ListHeader({
                         </Select>
                     </FormControl>
                     <Paper style={{ marginTop: 8, padding: 12 }} className={robotoCondensed.className}>
-                        <Typography variant="h5" className={robotoCondensed.className}>Changelog</Typography>
+                        <Typography variant="h5" className={robotoCondensed.className}>Description</Typography>
                         <div style={{ maxHeight: 600, overflowY: 'scroll' }}>
-                            {Object.keys(versions[version].pointDeltas).map((id) => {
-                                const card = cards.cardsById[id];
-                                return (
-                                    <li key={id}>
-                                        {card.cardName} ({card.cardType}): {card.points} {'->'} {card.points + versions[version].pointDeltas[id]}
-                                    </li>
-                                );
-                            })}
+                            {versions[version].description ? (
+                                <Typography className={robotoCondensed.className}>{versions[version].description}</Typography>
+                            ) : (
+                                <Typography className={robotoCondensed.className}>None</Typography>
+                            )}
+                        </div>
+                    </Paper>
+                    <Paper style={{ marginTop: 8, padding: 12 }} className={robotoCondensed.className}>
+                        <Typography variant="h5" className={robotoCondensed.className}>Omitted Cards</Typography>
+                        <div style={{ maxHeight: 600, overflowY: 'scroll' }}>
+                            {versions[version].omittedCards.length > 0 ? (
+                                versions[version].omittedCards.map(id => {
+                                    const card = cards.cardsById[id];
+                                    return (
+                                        <li key={id}>
+                                            {card.displayName ? card.displayName : card.cardName} ({`${card.cardType === 'upgrade' ? card.upgradeSlots.map(upgrade => (upgrade)) : card.cardType}`})
+                                        </li>
+                                    );
+                                })
+                            ) : (
+                                <Typography className={robotoCondensed.className}>None</Typography>
+                            )}
+                        </div>
+                    </Paper>
+                    <Paper style={{ marginTop: 8, padding: 12 }} className={robotoCondensed.className}>
+                        <Typography variant="h5" className={robotoCondensed.className}>Point Changes</Typography>
+                        <div style={{ maxHeight: 600, overflowY: 'scroll' }}>
+                            {Object.keys(versions[version].pointDeltas).length > 0 ? (
+                                Object.keys(versions[version].pointDeltas).map(id => {
+                                    const card = cards.cardsById[id];
+                                    return (
+                                        <li key={id}>
+                                            {card.cardName} ({card.cardType}): {card.points} {'->'} {card.points + versions[version].pointDeltas[id]}
+                                        </li>
+                                    );
+                                })
+                            ) : (
+                                <Typography className={robotoCondensed.className}>None</Typography>
+                            )}
                         </div>
                     </Paper>
                 </div>

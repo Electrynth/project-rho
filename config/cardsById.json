@@ -1,0 +1,6931 @@
+{
+  "aa": {
+    "displayName": "Hardcell Transport",
+    "cardName": "Hardcell-class Transport",
+    "faction": "separatists",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 47,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "officer",
+      "support team",
+      "fleet support",
+      "title"
+    ],
+    "id": "aa"
+  },
+  "ab": {
+    "displayName": "Hardcell Battle Refit",
+    "cardName": "Hardcell-class Battle Refit",
+    "faction": "separatists",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 52,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "offensive retrofit",
+      "defensive retrofit",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ab"
+  },
+  "ac": {
+    "displayName": "Gozanti Cruisers",
+    "cardName": "Gozanti-class Cruisers Separatists",
+    "faction": "separatists",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 23,
+    "isUnique": false,
+    "upgradeSlots": [
+      "officer",
+      "weapons team",
+      "ion cannons",
+      "title"
+    ],
+    "id": "ac"
+  },
+  "ad": {
+    "displayName": "Munificent Comms Frigate",
+    "cardName": "Munificent-class Comms Frigate",
+    "faction": "separatists",
+    "cardType": "ship",
+    "shipSize": "medium",
+    "points": 70,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "offensive retrofit",
+      "ion cannons",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ad"
+  },
+  "ae": {
+    "displayName": "Munificent Star Frigate",
+    "cardName": "Munificent-class Star Frigate",
+    "faction": "separatists",
+    "cardType": "ship",
+    "shipSize": "medium",
+    "points": 73,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "defensive retrofit",
+      "ion cannons",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ae"
+  },
+  "af": {
+    "displayName": "Recusant Light Destroyer",
+    "cardName": "Recusant-class Light Destroyer",
+    "faction": "separatists",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 85,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "ordnance",
+      "turbolasers",
+      "title"
+    ],
+    "id": "af"
+  },
+  "ag": {
+    "displayName": "Recusant Support Destroyer",
+    "cardName": "Recusant-class Support Destroyer",
+    "faction": "separatists",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 90,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "offensive retrofit",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ag"
+  },
+  "ah": {
+    "displayName": "Providence Carrier",
+    "cardName": "Providence-class Carrier",
+    "faction": "separatists",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 105,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "defensive retrofit",
+      "fleet command",
+      "offensive retrofit",
+      "ordnance",
+      "ion cannons",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ah"
+  },
+  "ai": {
+    "displayName": "Providence Dreadnought",
+    "cardName": "Providence-class Dreadnought",
+    "faction": "separatists",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 105,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "ordnance",
+      "ion cannons",
+      "turbolasers",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ai"
+  },
+  "aj": {
+    "displayName": "Consular Armed Cruiser",
+    "cardName": "Consular-class Armed Cruiser",
+    "faction": "republic",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 37,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "defensive retrofit",
+      "ordnance",
+      "title"
+    ],
+    "id": "aj"
+  },
+  "ak": {
+    "displayName": "Consular Charger c70",
+    "cardName": "Consular-class Charger c70",
+    "faction": "republic",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 45,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "offensive retrofit",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ak"
+  },
+  "al": {
+    "displayName": "Victory I",
+    "cardName": "Victory I-class Star Destroyer Republic",
+    "faction": "republic",
+    "cardType": "ship",
+    "shipSize": "medium",
+    "points": 75,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "support team",
+      "offensive retrofit",
+      "ordnance",
+      "ordnance",
+      "title"
+    ],
+    "id": "al"
+  },
+  "am": {
+    "displayName": "Accalamator I",
+    "cardName": "Acclamator I-class Assault Ship",
+    "faction": "republic",
+    "cardType": "ship",
+    "shipSize": "medium",
+    "points": 66,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "offensive retrofit",
+      "ordnance",
+      "turbolasers",
+      "title"
+    ],
+    "id": "am"
+  },
+  "an": {
+    "displayName": "Acclamator II",
+    "cardName": "Acclamator II-class Assault Ship",
+    "faction": "republic",
+    "cardType": "ship",
+    "shipSize": "medium",
+    "points": 71,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "defensive retrofit",
+      "ordnance",
+      "turbolasers",
+      "title"
+    ],
+    "id": "an"
+  },
+  "ao": {
+    "displayName": "Venator I",
+    "cardName": "Venator I-class Star Destroyer",
+    "faction": "republic",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 90,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "fleet command",
+      "offensive retrofit",
+      "ordnance",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ao"
+  },
+  "ap": {
+    "displayName": "Venator II",
+    "cardName": "Venator II-class Star Destroyer",
+    "faction": "republic",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 100,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "defensive retrofit",
+      "ordnance",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ap"
+  },
+  "aq": {
+    "displayName": "Pelta Medical Frigate",
+    "cardName": "Pelta-class Medical Frigate",
+    "faction": "republic",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 49,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "fleet support",
+      "offensive retrofit",
+      "title"
+    ],
+    "id": "aq"
+  },
+  "ar": {
+    "displayName": "Pelta Transport Frigate",
+    "cardName": "Pelta-class Transport Frigate",
+    "faction": "republic",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 45,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "fleet support",
+      "defensive retrofit",
+      "title"
+    ],
+    "id": "ar"
+  },
+  "as": {
+    "cardName": "GR-75 Medium Transports",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 18,
+    "isUnique": false,
+    "upgradeSlots": [
+      "officer",
+      "fleet support",
+      "offensive retrofit",
+      "title"
+    ],
+    "id": "as"
+  },
+  "at": {
+    "cardName": "GR-75 Combat Retrofits",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 24,
+    "isUnique": false,
+    "upgradeSlots": [
+      "officer",
+      "fleet support",
+      "offensive retrofit",
+      "title"
+    ],
+    "id": "at"
+  },
+  "au": {
+    "cardName": "CR90 Corvette A",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 44,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "defensive retrofit",
+      "turbolasers",
+      "title"
+    ],
+    "id": "au"
+  },
+  "av": {
+    "cardName": "CR90 Corvette B",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 39,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "defensive retrofit",
+      "ion cannons",
+      "title"
+    ],
+    "id": "av"
+  },
+  "aw": {
+    "cardName": "Nebulon-B Support Refit",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 51,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "turbolasers",
+      "title"
+    ],
+    "id": "aw"
+  },
+  "ax": {
+    "cardName": "Hammerhead Scout Corvette",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 41,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "offensive retrofit",
+      "weapons team",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ax"
+  },
+  "ay": {
+    "cardName": "Hammerhead Torpedo Corvette",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 36,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "offensive retrofit",
+      "weapons team",
+      "ordnance",
+      "title"
+    ],
+    "id": "ay"
+  },
+  "az": {
+    "displayName": "Assault Frigate MkII A",
+    "cardName": "Assault Frigate Mark II A",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "medium",
+    "points": 81,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "defensive retrofit",
+      "turbolasers",
+      "title"
+    ],
+    "id": "az"
+  },
+  "ba": {
+    "displayName": "Assault Frigate MkII B",
+    "cardName": "Assault Frigate Mark II B",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "medium",
+    "points": 72,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "defensive retrofit",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ba"
+  },
+  "bb": {
+    "cardName": "MC80 Command Cruiser",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 106,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "offensive retrofit",
+      "defensive retrofit",
+      "ion cannons",
+      "turbolasers",
+      "title"
+    ],
+    "id": "bb"
+  },
+  "bc": {
+    "cardName": "Nebulon-B Escort Frigate",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 57,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "turbolasers",
+      "title"
+    ],
+    "id": "bc"
+  },
+  "bd": {
+    "cardName": "MC80 Assault Cruiser",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 114,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "defensive retrofit",
+      "defensive retrofit",
+      "ion cannons",
+      "turbolasers",
+      "title"
+    ],
+    "id": "bd"
+  },
+  "be": {
+    "cardName": "MC30c Scout Frigate",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 69,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "defensive retrofit",
+      "ordnance",
+      "turbolasers",
+      "title"
+    ],
+    "id": "be"
+  },
+  "bf": {
+    "cardName": "MC80 Star Cruiser",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 96,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "support team",
+      "ion cannons",
+      "turbolasers",
+      "turbolasers",
+      "title"
+    ],
+    "id": "bf"
+  },
+  "bg": {
+    "displayName": "Stawhawk Battleship MkI",
+    "cardName": "Starhawk-class Battleship Mark I",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 140,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "ion cannons",
+      "turbolasers",
+      "super weapon",
+      "title"
+    ],
+    "id": "bg"
+  },
+  "bh": {
+    "displayName": "Starhawk Battleship MkII",
+    "cardName": "Starhawk-class Battleship Mark II",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 150,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "ion cannons",
+      "turbolasers",
+      "super weapon",
+      "title"
+    ],
+    "id": "bh"
+  },
+  "bi": {
+    "cardName": "MC30c Torpedo Frigate",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 63,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "defensive retrofit",
+      "ordnance",
+      "turbolasers",
+      "title"
+    ],
+    "id": "bi"
+  },
+  "bj": {
+    "cardName": "MC80 Battle Cruiser",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 103,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "support team",
+      "ion cannons",
+      "turbolasers",
+      "turbolasers",
+      "title"
+    ],
+    "id": "bj"
+  },
+  "bk": {
+    "displayName": "Modified Pelta Command Ship",
+    "cardName": "Modified Pelta-class Command Ship",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 60,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "fleet command",
+      "offensive retrofit",
+      "title"
+    ],
+    "id": "bk"
+  },
+  "bl": {
+    "cardName": "MC75 Ordnance Cruiser",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 100,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "defensive retrofit",
+      "ordnance",
+      "ordnance",
+      "title"
+    ],
+    "id": "bl"
+  },
+  "bm": {
+    "displayName": "Modified Pelta Assault Ship",
+    "cardName": "Modified Pelta-class Assault Ship",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 56,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "fleet command",
+      "ordnance",
+      "title"
+    ],
+    "id": "bm"
+  },
+  "bn": {
+    "cardName": "MC75 Armored Cruiser",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 104,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "defensive retrofit",
+      "ordnance",
+      "ion cannons",
+      "turbolasers",
+      "title"
+    ],
+    "id": "bn"
+  },
+  "bo": {
+    "displayName": "Gozanti Cruisers",
+    "cardName": "Gozanti-class Cruisers",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 23,
+    "isUnique": false,
+    "upgradeSlots": [
+      "officer",
+      "fleet support",
+      "offensive retrofit",
+      "title"
+    ],
+    "id": "bo"
+  },
+  "bp": {
+    "displayName": "Gozanti Assault Carriers",
+    "cardName": "Gozanti-class Assault Carriers",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 28,
+    "isUnique": false,
+    "upgradeSlots": [
+      "officer",
+      "fleet support",
+      "offensive retrofit",
+      "title"
+    ],
+    "id": "bp"
+  },
+  "bq": {
+    "cardName": "Interdictor Suppression Refit",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "medium",
+    "points": 90,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "offensive retrofit",
+      "experimental retrofit",
+      "experimental retrofit",
+      "ion cannons",
+      "title"
+    ],
+    "id": "bq"
+  },
+  "br": {
+    "cardName": "Interdictor Combat Refit",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "medium",
+    "points": 93,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "offensive retrofit",
+      "experimental retrofit",
+      "ion cannons",
+      "title"
+    ],
+    "id": "br"
+  },
+  "bs": {
+    "displayName": "Raider I",
+    "cardName": "Raider I-class Corvette",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 44,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "ordnance",
+      "title"
+    ],
+    "id": "bs"
+  },
+  "bt": {
+    "displayName": "Quasar Fire I",
+    "cardName": "Quasar Fire I-class Cruiser-Carrier",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "medium",
+    "points": 54,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "offensive retrofit",
+      "title"
+    ],
+    "id": "bt"
+  },
+  "bu": {
+    "displayName": "Quasar Fire II",
+    "cardName": "Quasar Fire II-class Cruiser-Carrier",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "medium",
+    "points": 61,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "weapons team",
+      "offensive retrofit",
+      "title"
+    ],
+    "id": "bu"
+  },
+  "bv": {
+    "displayName": "Raider II",
+    "cardName": "Raider II-class Corvette",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 48,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "ion cannons",
+      "title"
+    ],
+    "id": "bv"
+  },
+  "bw": {
+    "displayName": "Imperial I",
+    "cardName": "Imperial I-class Star Destroyer",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 110,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "offensive retrofit",
+      "ion cannons",
+      "turbolasers",
+      "title"
+    ],
+    "id": "bw"
+  },
+  "bx": {
+    "displayName": "Gladiator I",
+    "cardName": "Gladiator I-class Star Destroyer",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 56,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "support team",
+      "ordnance",
+      "title"
+    ],
+    "id": "bx"
+  },
+  "by": {
+    "displayName": "Gladiator II",
+    "cardName": "Gladiator II-class Star Destroyer",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 62,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "support team",
+      "ordnance",
+      "title"
+    ],
+    "id": "by"
+  },
+  "bz": {
+    "displayName": "ISD Kuat Refit",
+    "cardName": "Imperial Star Destroyer Kuat Refit",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 112,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "defensive retrofit",
+      "ion cannons",
+      "ordnance",
+      "title"
+    ],
+    "id": "bz"
+  },
+  "ca": {
+    "displayName": "Arquitens Light Cruiser",
+    "cardName": "Arquitens-class Light Cruiser",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 54,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "defensive retrofit",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ca"
+  },
+  "cb": {
+    "displayName": "Imperial II",
+    "cardName": "Imperial II-class Star Destroyer",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 120,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "defensive retrofit",
+      "ion cannons",
+      "turbolasers",
+      "title"
+    ],
+    "id": "cb"
+  },
+  "cc": {
+    "displayName": "Arquitens Command Cruiser",
+    "cardName": "Arquitens-class Command Cruiser",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 59,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "defensive retrofit",
+      "turbolasers",
+      "title"
+    ],
+    "id": "cc"
+  },
+  "cd": {
+    "displayName": "ISD Cymoon 1 Refit",
+    "cardName": "Imperial Star Destroyer Cymoon 1 Refit",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 112,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "fleet command",
+      "offensive retrofit",
+      "turbolasers",
+      "turbolasers",
+      "title"
+    ],
+    "id": "cd"
+  },
+  "ce": {
+    "displayName": "Victory I",
+    "cardName": "Victory I-class Star Destroyer",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "medium",
+    "points": 73,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "ordnance",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ce"
+  },
+  "cf": {
+    "displayName": "Onager Testbed",
+    "cardName": "Onager-class Testbed",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 96,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "weapons team",
+      "support team",
+      "super weapon",
+      "title"
+    ],
+    "id": "cf"
+  },
+  "cg": {
+    "displayName": "Victory II",
+    "cardName": "Victory II-class Star Destroyer",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "medium",
+    "points": 85,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "ion cannons",
+      "turbolasers",
+      "title"
+    ],
+    "id": "cg"
+  },
+  "ch": {
+    "displayName": "Venator II",
+    "cardName": "Venator II-class Star Destroyer Empire",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 100,
+    "isUnique": true,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "defensive retrofit",
+      "ordnance",
+      "ordnance",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ch"
+  },
+  "ci": {
+    "displayName": "Onager Star Destroyer",
+    "cardName": "Onager-class Star Destroyer",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 110,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "weapons team",
+      "turbolasers",
+      "super weapon",
+      "title"
+    ],
+    "id": "ci"
+  },
+  "cj": {
+    "displayName": "SSD Executor II",
+    "cardName": "Executor II-class Star Dreadnought",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "huge",
+    "points": 411,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "officer",
+      "officer",
+      "officer",
+      "weapons team",
+      "fleet command",
+      "offensive retrofit",
+      "offensive retrofit",
+      "ion cannons",
+      "ion cannons",
+      "turbolasers",
+      "turbolasers",
+      "title"
+    ],
+    "id": "cj"
+  },
+  "ck": {
+    "displayName": "SSD Executor I",
+    "cardName": "Executor I-class Star Dreadnought",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "huge",
+    "points": 381,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "officer",
+      "officer",
+      "officer",
+      "weapons team",
+      "fleet command",
+      "fleet command",
+      "fleet command",
+      "fleet command",
+      "offensive retrofit",
+      "ion cannons",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ck"
+  },
+  "cl": {
+    "displayName": "SSD Assault Prototype",
+    "cardName": "Star Dreadnought Assault Prototype",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "huge",
+    "points": 250,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "officer",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "offensive retrofit",
+      "ion cannons",
+      "ion cannons",
+      "turbolasers",
+      "turbolasers",
+      "title"
+    ],
+    "id": "cl"
+  },
+  "cm": {
+    "displayName": "SSD Command Prototype",
+    "cardName": "Star Dreadnought Command Prototype",
+    "faction": "empire",
+    "cardType": "ship",
+    "shipSize": "huge",
+    "points": 220,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "officer",
+      "officer",
+      "weapons team",
+      "fleet command",
+      "fleet command",
+      "offensive retrofit",
+      "ion cannons",
+      "turbolasers",
+      "title"
+    ],
+    "id": "cm"
+  },
+  "cn": {
+    "displayName": "Providence Carrier",
+    "cardName": "Providence-class Carrier Rebels",
+    "faction": "rebels",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 95,
+    "isUnique": true,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "officer",
+      "weapons team",
+      "weapons team",
+      "offensive retrofit",
+      "offensive retrofit",
+      "support team",
+      "support team",
+      "title"
+    ],
+    "id": "cn"
+  },
+  "co": {
+    "cardName": "Advanced Gunnery",
+    "cardType": "objective",
+    "objectType": "assault",
+    "id": "co"
+  },
+  "cp": {
+    "cardName": "Abandoned Mining Facility",
+    "cardType": "objective",
+    "objectType": "defense",
+    "id": "cp"
+  },
+  "cq": {
+    "cardName": "Dangerous Territory",
+    "cardType": "objective",
+    "objectType": "navigation",
+    "id": "cq"
+  },
+  "cr": {
+    "cardName": "Blockade Run",
+    "cardType": "objective",
+    "objectType": "assault",
+    "id": "cr"
+  },
+  "cs": {
+    "cardName": "Close-Range Intel Scan",
+    "cardType": "objective",
+    "objectType": "assault",
+    "id": "cs"
+  },
+  "ct": {
+    "cardName": "Ion Storm",
+    "cardType": "objective",
+    "objectType": "assault",
+    "id": "ct"
+  },
+  "cu": {
+    "cardName": "Marked for Destruction",
+    "cardType": "objective",
+    "objectType": "assault",
+    "id": "cu"
+  },
+  "cv": {
+    "cardName": "Most Wanted",
+    "cardType": "objective",
+    "objectType": "assault",
+    "id": "cv"
+  },
+  "cw": {
+    "cardName": "Opening Salvo",
+    "cardType": "objective",
+    "objectType": "assault",
+    "id": "cw"
+  },
+  "cx": {
+    "cardName": "Precision Strike",
+    "cardType": "objective",
+    "objectType": "assault",
+    "id": "cx"
+  },
+  "cy": {
+    "cardName": "Rift Assault ",
+    "cardType": "objective",
+    "objectType": "assault",
+    "id": "cy"
+  },
+  "cz": {
+    "cardName": "Station Assault",
+    "cardType": "objective",
+    "objectType": "assault",
+    "id": "cz"
+  },
+  "da": {
+    "cardName": "Surprise Attack",
+    "cardType": "objective",
+    "objectType": "assault",
+    "id": "da"
+  },
+  "db": {
+    "cardName": "Targeting Beacons",
+    "cardType": "objective",
+    "objectType": "assault",
+    "id": "db"
+  },
+  "dc": {
+    "cardName": "Asteroid Tactics",
+    "cardType": "objective",
+    "objectType": "defense",
+    "id": "dc"
+  },
+  "dd": {
+    "cardName": "Capture the VIP",
+    "cardType": "objective",
+    "objectType": "defense",
+    "id": "dd"
+  },
+  "de": {
+    "cardName": "Contested Outpost",
+    "cardType": "objective",
+    "objectType": "defense",
+    "id": "de"
+  },
+  "df": {
+    "cardName": "Fighter Ambush",
+    "cardType": "objective",
+    "objectType": "defense",
+    "id": "df"
+  },
+  "dg": {
+    "cardName": "Fire Lanes",
+    "cardType": "objective",
+    "objectType": "defense",
+    "id": "dg"
+  },
+  "dh": {
+    "cardName": "Fleet Ambush",
+    "cardType": "objective",
+    "objectType": "defense",
+    "id": "dh"
+  },
+  "di": {
+    "cardName": "Fleet in Being",
+    "cardType": "objective",
+    "objectType": "defense",
+    "id": "di"
+  },
+  "dj": {
+    "cardName": "Hyperspace Assault",
+    "cardType": "objective",
+    "objectType": "defense",
+    "id": "dj"
+  },
+  "dk": {
+    "cardName": "Jamming Barrier",
+    "cardType": "objective",
+    "objectType": "defense",
+    "id": "dk"
+  },
+  "dl": {
+    "cardName": "Planetary Ion Cannon",
+    "cardType": "objective",
+    "objectType": "defense",
+    "id": "dl"
+  },
+  "dm": {
+    "cardName": "Rift Ambush",
+    "cardType": "objective",
+    "objectType": "defense",
+    "id": "dm"
+  },
+  "dn": {
+    "cardName": "Doomed Station",
+    "cardType": "objective",
+    "objectType": "navigation",
+    "id": "dn"
+  },
+  "do": {
+    "cardName": "Hyperspace Migration",
+    "cardType": "objective",
+    "objectType": "navigation",
+    "id": "do"
+  },
+  "dp": {
+    "cardName": "Infested Fields ",
+    "cardType": "objective",
+    "objectType": "navigation",
+    "id": "dp"
+  },
+  "dq": {
+    "cardName": "Intel Sweep",
+    "cardType": "objective",
+    "objectType": "navigation",
+    "id": "dq"
+  },
+  "dr": {
+    "cardName": "Minefields",
+    "cardType": "objective",
+    "objectType": "navigation",
+    "id": "dr"
+  },
+  "ds": {
+    "cardName": "Navigational Hazards",
+    "cardType": "objective",
+    "objectType": "navigation",
+    "id": "ds"
+  },
+  "dt": {
+    "cardName": "Salvage Run",
+    "cardType": "objective",
+    "objectType": "navigation",
+    "id": "dt"
+  },
+  "du": {
+    "cardName": "Sensor Net",
+    "cardType": "objective",
+    "objectType": "navigation",
+    "id": "du"
+  },
+  "dv": {
+    "cardName": "Solar Corona",
+    "cardType": "objective",
+    "objectType": "navigation",
+    "id": "dv"
+  },
+  "dw": {
+    "cardName": "Superior Positions",
+    "cardType": "objective",
+    "objectType": "navigation",
+    "id": "dw"
+  },
+  "dx": {
+    "cardName": "Volatile Deposits",
+    "cardType": "objective",
+    "objectType": "navigation",
+    "id": "dx"
+  },
+  "dy": {
+    "cardName": "Biggs Darklighter",
+    "faction": "rebels",
+    "points": 19,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Escort"
+    ],
+    "cardType": "squadron",
+    "id": "dy"
+  },
+  "dz": {
+    "displayName": "Hera Syndulla",
+    "cardName": "Hera Syndulla Ghost",
+    "faction": "rebels",
+    "points": 28,
+    "isUnique": true,
+    "keywords": [
+      "Rogue",
+      "Grit"
+    ],
+    "cardType": "squadron",
+    "id": "dz"
+  },
+  "ea": {
+    "displayName": "Hera Syndulla",
+    "cardName": "Hera Syndulla X-Wing",
+    "faction": "rebels",
+    "points": 23,
+    "isUnique": true,
+    "keywords": [
+      "Dodge",
+      "Bomber"
+    ],
+    "cardType": "squadron",
+    "id": "ea"
+  },
+  "eb": {
+    "cardName": "A-Wing Squadron",
+    "faction": "rebels",
+    "points": 11,
+    "isUnique": false,
+    "keywords": [
+      "Counter"
+    ],
+    "cardType": "squadron",
+    "id": "eb"
+  },
+  "ec": {
+    "cardName": "X-Wing Squadron",
+    "faction": "rebels",
+    "points": 13,
+    "isUnique": false,
+    "keywords": [
+      "Bomber",
+      "Escort"
+    ],
+    "cardType": "squadron",
+    "id": "ec"
+  },
+  "ed": {
+    "cardName": "Y-Wing Squadron",
+    "faction": "rebels",
+    "points": 10,
+    "isUnique": false,
+    "keywords": [
+      "Bomber",
+      "Heavy"
+    ],
+    "cardType": "squadron",
+    "id": "ed"
+  },
+  "ee": {
+    "cardName": "B-Wing Squadron",
+    "faction": "rebels",
+    "points": 14,
+    "isUnique": false,
+    "keywords": [
+      "Bomber "
+    ],
+    "cardType": "squadron",
+    "id": "ee"
+  },
+  "ef": {
+    "cardName": "Green Squadron",
+    "faction": "rebels",
+    "points": 12,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Counter"
+    ],
+    "cardType": "squadron",
+    "id": "ef"
+  },
+  "eg": {
+    "cardName": "Rogue Squadron",
+    "faction": "rebels",
+    "points": 14,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "eg"
+  },
+  "eh": {
+    "cardName": "Gold Squadron",
+    "faction": "rebels",
+    "points": 12,
+    "isUnique": true,
+    "keywords": [
+      "Bomber"
+    ],
+    "cardType": "squadron",
+    "id": "eh"
+  },
+  "ei": {
+    "cardName": "Dagger Squadron",
+    "faction": "rebels",
+    "points": 15,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "ei"
+  },
+  "ej": {
+    "cardName": "E-Wing Squadron",
+    "faction": "rebels",
+    "points": 15,
+    "isUnique": false,
+    "keywords": [
+      "Bomber",
+      "Snipe"
+    ],
+    "cardType": "squadron",
+    "id": "ej"
+  },
+  "ek": {
+    "cardName": "HWK-290",
+    "faction": "rebels",
+    "points": 12,
+    "isUnique": false,
+    "keywords": [
+      "Counter",
+      "Intel"
+    ],
+    "cardType": "squadron",
+    "id": "ek"
+  },
+  "el": {
+    "cardName": "Lancer-class Pursuit Craft",
+    "faction": "rebels",
+    "points": 15,
+    "isUnique": false,
+    "keywords": [
+      "Bomber",
+      "Grit",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "el"
+  },
+  "em": {
+    "cardName": "Scurrg H-6 Bomber",
+    "faction": "rebels",
+    "points": 16,
+    "isUnique": false,
+    "keywords": [
+      "Bomber",
+      "Grit",
+      "Heavy"
+    ],
+    "cardType": "squadron",
+    "id": "em"
+  },
+  "en": {
+    "cardName": "VCX-100 Freighter",
+    "faction": "rebels",
+    "points": 15,
+    "isUnique": false,
+    "keywords": [
+      "Heavy",
+      "Relay",
+      "Strategic"
+    ],
+    "cardType": "squadron",
+    "id": "en"
+  },
+  "eo": {
+    "cardName": "YT-1300",
+    "faction": "rebels",
+    "points": 13,
+    "isUnique": false,
+    "keywords": [
+      "Counter",
+      "Escort"
+    ],
+    "cardType": "squadron",
+    "id": "eo"
+  },
+  "ep": {
+    "cardName": "YT-2400",
+    "faction": "rebels",
+    "points": 16,
+    "isUnique": false,
+    "keywords": [
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "ep"
+  },
+  "eq": {
+    "cardName": "Z-95 Headhunter Squadron",
+    "faction": "rebels",
+    "points": 7,
+    "isUnique": false,
+    "keywords": [
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "eq"
+  },
+  "er": {
+    "cardName": "Corran Horn",
+    "faction": "rebels",
+    "points": 22,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Rogue",
+      "Snipe"
+    ],
+    "cardType": "squadron",
+    "id": "er"
+  },
+  "es": {
+    "cardName": "Dash Rendar",
+    "faction": "rebels",
+    "points": 24,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "es"
+  },
+  "et": {
+    "cardName": "\"Dutch\" Vander",
+    "faction": "rebels",
+    "points": 16,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Heavy"
+    ],
+    "cardType": "squadron",
+    "id": "et"
+  },
+  "eu": {
+    "cardName": "Han Solo",
+    "faction": "rebels",
+    "points": 26,
+    "isUnique": true,
+    "keywords": [
+      "Grit",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "eu"
+  },
+  "ev": {
+    "cardName": "Jan Ors",
+    "faction": "rebels",
+    "points": 19,
+    "isUnique": true,
+    "keywords": [
+      "Counter",
+      "Intel"
+    ],
+    "cardType": "squadron",
+    "id": "ev"
+  },
+  "ew": {
+    "cardName": "Kanan Jarrus",
+    "faction": "rebels",
+    "points": 19,
+    "isUnique": true,
+    "keywords": [
+      "Assault",
+      "Cloak",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "ew"
+  },
+  "ex": {
+    "cardName": "Ketsu Onyo",
+    "faction": "rebels",
+    "points": 22,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Grit",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "ex"
+  },
+  "ey": {
+    "cardName": "Keyan Farlander",
+    "faction": "rebels",
+    "points": 20,
+    "isUnique": true,
+    "keywords": [
+      "Bomber"
+    ],
+    "cardType": "squadron",
+    "id": "ey"
+  },
+  "ez": {
+    "cardName": "Lando Calrissian",
+    "faction": "rebels",
+    "points": 23,
+    "isUnique": true,
+    "keywords": [
+      "Grit",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "ez"
+  },
+  "fa": {
+    "cardName": "Lieutenant Blount",
+    "faction": "rebels",
+    "points": 14,
+    "isUnique": true,
+    "keywords": [
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "fa"
+  },
+  "fb": {
+    "cardName": "Luke Skywalker",
+    "faction": "rebels",
+    "points": 20,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Escort"
+    ],
+    "cardType": "squadron",
+    "id": "fb"
+  },
+  "fc": {
+    "cardName": "Malee Hurra",
+    "faction": "rebels",
+    "points": 26,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Grit"
+    ],
+    "cardType": "squadron",
+    "id": "fc"
+  },
+  "fd": {
+    "cardName": "Mart Mattin",
+    "faction": "rebels",
+    "points": 22,
+    "isUnique": true,
+    "keywords": [
+      "Grit",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "fd"
+  },
+  "fe": {
+    "cardName": "Norra Wexley",
+    "faction": "rebels",
+    "points": 17,
+    "isUnique": true,
+    "keywords": [
+      "Bomber"
+    ],
+    "cardType": "squadron",
+    "id": "fe"
+  },
+  "ff": {
+    "cardName": "Nym",
+    "faction": "rebels",
+    "points": 21,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Grit"
+    ],
+    "cardType": "squadron",
+    "id": "ff"
+  },
+  "fg": {
+    "cardName": "Shara Bey",
+    "faction": "rebels",
+    "points": 17,
+    "isUnique": true,
+    "keywords": [
+      "Counter"
+    ],
+    "cardType": "squadron",
+    "id": "fg"
+  },
+  "fh": {
+    "cardName": "Ten Numb",
+    "faction": "rebels",
+    "points": 19,
+    "isUnique": true,
+    "keywords": [
+      "Bomber"
+    ],
+    "cardType": "squadron",
+    "id": "fh"
+  },
+  "fi": {
+    "cardName": "Tycho Celchu",
+    "faction": "rebels",
+    "points": 16,
+    "isUnique": true,
+    "keywords": [
+      "Counter"
+    ],
+    "cardType": "squadron",
+    "id": "fi"
+  },
+  "fj": {
+    "cardName": "Wedge Antilles",
+    "faction": "rebels",
+    "points": 19,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Escort"
+    ],
+    "cardType": "squadron",
+    "id": "fj"
+  },
+  "fk": {
+    "cardName": "Aggressor Assault Fighter",
+    "faction": "empire",
+    "points": 16,
+    "isUnique": false,
+    "keywords": [
+      "Counter",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "fk"
+  },
+  "fl": {
+    "cardName": "Firespray-31",
+    "faction": "empire",
+    "points": 18,
+    "isUnique": false,
+    "keywords": [
+      "Bomber",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "fl"
+  },
+  "fm": {
+    "cardName": "JumpMaster 5000",
+    "faction": "empire",
+    "points": 12,
+    "isUnique": false,
+    "keywords": [
+      "Intel",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "fm"
+  },
+  "fn": {
+    "cardName": "Lambda-class Shuttle",
+    "faction": "empire",
+    "points": 15,
+    "isUnique": false,
+    "keywords": [
+      "Heavy",
+      "Relay",
+      "Strategic"
+    ],
+    "cardType": "squadron",
+    "id": "fn"
+  },
+  "fo": {
+    "cardName": "Mandalorian Gauntlet Fighter",
+    "faction": "empire",
+    "points": 20,
+    "isUnique": false,
+    "keywords": [
+      "Assault",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "fo"
+  },
+  "fp": {
+    "cardName": "TIE Advanced Squadron",
+    "faction": "empire",
+    "points": 12,
+    "isUnique": false,
+    "keywords": [
+      "Escort"
+    ],
+    "cardType": "squadron",
+    "id": "fp"
+  },
+  "fq": {
+    "cardName": "TIE Bomber Squadron",
+    "faction": "empire",
+    "points": 9,
+    "isUnique": false,
+    "keywords": [
+      "Bomber",
+      "Heavy"
+    ],
+    "cardType": "squadron",
+    "id": "fq"
+  },
+  "fr": {
+    "cardName": "TIE Defender Squadron",
+    "faction": "empire",
+    "points": 16,
+    "isUnique": false,
+    "keywords": [
+      "Bomber"
+    ],
+    "cardType": "squadron",
+    "id": "fr"
+  },
+  "fs": {
+    "cardName": "TIE Fighter Squadron",
+    "faction": "empire",
+    "points": 8,
+    "isUnique": false,
+    "keywords": [
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "fs"
+  },
+  "ft": {
+    "cardName": "TIE Interceptor",
+    "faction": "empire",
+    "points": 11,
+    "isUnique": false,
+    "keywords": [
+      "Counter",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "ft"
+  },
+  "fu": {
+    "cardName": "TIE Phantom Squadron",
+    "faction": "empire",
+    "points": 14,
+    "isUnique": false,
+    "keywords": [
+      "Cloak"
+    ],
+    "cardType": "squadron",
+    "id": "fu"
+  },
+  "fv": {
+    "cardName": "VT-49 Decimator",
+    "faction": "empire",
+    "points": 22,
+    "isUnique": false,
+    "keywords": [
+      "Counter",
+      "Heavy",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "fv"
+  },
+  "fw": {
+    "cardName": "YV-666",
+    "faction": "empire",
+    "points": 15,
+    "isUnique": false,
+    "keywords": [
+      "Grit",
+      "Heavy",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "fw"
+  },
+  "fx": {
+    "cardName": "Black Squadron",
+    "faction": "empire",
+    "points": 9,
+    "isUnique": true,
+    "keywords": [
+      "Counter",
+      "Escort"
+    ],
+    "cardType": "squadron",
+    "id": "fx"
+  },
+  "fy": {
+    "cardName": "Boba Fett",
+    "faction": "empire",
+    "points": 26,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "fy"
+  },
+  "fz": {
+    "cardName": "Bossk",
+    "faction": "empire",
+    "points": 23,
+    "isUnique": true,
+    "keywords": [
+      "Grit",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "fz"
+  },
+  "ga": {
+    "cardName": "Captain Jonus",
+    "faction": "empire",
+    "points": 16,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Grit",
+      "Heavy"
+    ],
+    "cardType": "squadron",
+    "id": "ga"
+  },
+  "gb": {
+    "cardName": "Ciena Ree",
+    "faction": "empire",
+    "points": 17,
+    "isUnique": true,
+    "keywords": [
+      "Counter",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "gb"
+  },
+  "gc": {
+    "cardName": "Colonel Jendon",
+    "faction": "empire",
+    "points": 20,
+    "isUnique": true,
+    "keywords": [
+      "Heavy",
+      "Relay"
+    ],
+    "cardType": "squadron",
+    "id": "gc"
+  },
+  "gd": {
+    "displayName": "Darth Vader",
+    "cardName": "Darth Vader TIE Advanced",
+    "faction": "empire",
+    "points": 21,
+    "isUnique": true,
+    "keywords": [
+      "Escort"
+    ],
+    "cardType": "squadron",
+    "id": "gd"
+  },
+  "ge": {
+    "displayName": "Darth Vader",
+    "cardName": "Darth Vader TIE Defender",
+    "faction": "empire",
+    "points": 25,
+    "isUnique": true,
+    "keywords": [
+      "Adept",
+      "Bomber",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "ge"
+  },
+  "gf": {
+    "cardName": "Dengar",
+    "faction": "empire",
+    "points": 20,
+    "isUnique": true,
+    "keywords": [
+      "Intel",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "gf"
+  },
+  "gg": {
+    "cardName": "Gamma Squadron",
+    "faction": "empire",
+    "points": 10,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Grit"
+    ],
+    "cardType": "squadron",
+    "id": "gg"
+  },
+  "gh": {
+    "cardName": "Gar Saxon",
+    "faction": "empire",
+    "points": 23,
+    "isUnique": true,
+    "keywords": [
+      "Assault",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "gh"
+  },
+  "gi": {
+    "cardName": "Hondo Ohnaka",
+    "faction": "empire",
+    "points": 24,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Grit",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "gi"
+  },
+  "gj": {
+    "cardName": "\"Howlrunner\"",
+    "faction": "empire",
+    "points": 16,
+    "isUnique": true,
+    "keywords": [
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "gj"
+  },
+  "gk": {
+    "cardName": "IG-88",
+    "faction": "empire",
+    "points": 21,
+    "isUnique": true,
+    "keywords": [
+      "Counter",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "gk"
+  },
+  "gl": {
+    "cardName": "IG-88B",
+    "faction": "empire",
+    "points": 21,
+    "isUnique": true,
+    "keywords": [
+      "Counter",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "gl"
+  },
+  "gm": {
+    "cardName": "Maarek Stele",
+    "faction": "empire",
+    "points": 21,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Grit"
+    ],
+    "cardType": "squadron",
+    "id": "gm"
+  },
+  "gn": {
+    "cardName": "Major Rhymer",
+    "faction": "empire",
+    "points": 16,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Heavy"
+    ],
+    "cardType": "squadron",
+    "id": "gn"
+  },
+  "go": {
+    "cardName": "\"Mauler\" Mithel",
+    "faction": "empire",
+    "points": 15,
+    "isUnique": true,
+    "keywords": [
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "go"
+  },
+  "gp": {
+    "cardName": "Moralo Eval",
+    "faction": "empire",
+    "points": 22,
+    "isUnique": true,
+    "keywords": [
+      "Grit",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "gp"
+  },
+  "gq": {
+    "cardName": "Morna Kee",
+    "faction": "empire",
+    "points": 27,
+    "isUnique": true,
+    "keywords": [
+      "Counter",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "gq"
+  },
+  "gr": {
+    "cardName": "Saber Squadron",
+    "faction": "empire",
+    "points": 12,
+    "isUnique": true,
+    "keywords": [
+      "Snipe",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "gr"
+  },
+  "gs": {
+    "cardName": "Soontir Fel",
+    "faction": "empire",
+    "points": 18,
+    "isUnique": true,
+    "keywords": [
+      "Counter",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "gs"
+  },
+  "gt": {
+    "cardName": "Tel Trevura",
+    "faction": "empire",
+    "points": 17,
+    "isUnique": true,
+    "keywords": [
+      "Grit",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "gt"
+  },
+  "gu": {
+    "cardName": "Tempest Squadron",
+    "faction": "empire",
+    "points": 13,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Escort"
+    ],
+    "cardType": "squadron",
+    "id": "gu"
+  },
+  "gv": {
+    "cardName": "Valen Rudor",
+    "faction": "empire",
+    "points": 13,
+    "isUnique": true,
+    "keywords": [
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "gv"
+  },
+  "gw": {
+    "cardName": "\"Whisper\"",
+    "faction": "empire",
+    "points": 20,
+    "isUnique": true,
+    "keywords": [
+      "Cloak"
+    ],
+    "cardType": "squadron",
+    "id": "gw"
+  },
+  "gx": {
+    "cardName": "Zertik Strom",
+    "faction": "empire",
+    "points": 15,
+    "isUnique": true,
+    "keywords": [
+      "Escort"
+    ],
+    "cardType": "squadron",
+    "id": "gx"
+  },
+  "gy": {
+    "cardName": "ARC-170 Starfighter Squadron",
+    "faction": "republic",
+    "points": 15,
+    "isUnique": false,
+    "keywords": [
+      "Bomber",
+      "Counter"
+    ],
+    "cardType": "squadron",
+    "id": "gy"
+  },
+  "gz": {
+    "cardName": "BTL-B Y-Wing Squadron",
+    "faction": "republic",
+    "points": 10,
+    "isUnique": false,
+    "keywords": [
+      "Bomber",
+      "Heavy"
+    ],
+    "cardType": "squadron",
+    "id": "gz"
+  },
+  "ha": {
+    "cardName": "Delta-7 Aethersprite Squadron",
+    "faction": "republic",
+    "points": 17,
+    "isUnique": false,
+    "keywords": [
+      "Adept",
+      "Counter",
+      "Dodge"
+    ],
+    "cardType": "squadron",
+    "id": "ha"
+  },
+  "hb": {
+    "cardName": "V-19 Torrent Squadron",
+    "faction": "republic",
+    "points": 12,
+    "isUnique": false,
+    "keywords": [
+      "Escort",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "hb"
+  },
+  "hc": {
+    "cardName": "Ahsoka Tano",
+    "faction": "republic",
+    "points": 23,
+    "isUnique": true,
+    "keywords": [
+      "Adept",
+      "Counter",
+      "Grit"
+    ],
+    "cardType": "squadron",
+    "id": "hc"
+  },
+  "hd": {
+    "displayName": "Anakin Skywalker",
+    "cardName": "Anakin Skywalker BTL-B",
+    "faction": "republic",
+    "points": 19,
+    "isUnique": true,
+    "keywords": [
+      "Adept",
+      "Bomber",
+      "Heavy"
+    ],
+    "cardType": "squadron",
+    "id": "hd"
+  },
+  "he": {
+    "displayName": "Anakin Skywalker",
+    "cardName": "Anakin Skywalker Delta",
+    "faction": "republic",
+    "points": 24,
+    "isUnique": true,
+    "keywords": [
+      "Adept",
+      "Counter",
+      "Dodge"
+    ],
+    "cardType": "squadron",
+    "id": "he"
+  },
+  "hf": {
+    "cardName": "\"Axe\"",
+    "faction": "republic",
+    "points": 17,
+    "isUnique": true,
+    "keywords": [
+      "Escort",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "hf"
+  },
+  "hg": {
+    "cardName": "\"Kickback\"",
+    "faction": "republic",
+    "points": 16,
+    "isUnique": true,
+    "keywords": [
+      "Escort",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "hg"
+  },
+  "hh": {
+    "cardName": "Kit Fisto",
+    "faction": "republic",
+    "points": 26,
+    "isUnique": true,
+    "keywords": [
+      "Adept",
+      "Counter",
+      "Intel"
+    ],
+    "cardType": "squadron",
+    "id": "hh"
+  },
+  "hi": {
+    "cardName": "Luminara Unduli",
+    "faction": "republic",
+    "points": 23,
+    "isUnique": true,
+    "keywords": [
+      "Adept",
+      "Counter"
+    ],
+    "cardType": "squadron",
+    "id": "hi"
+  },
+  "hj": {
+    "cardName": "\"Odd Ball\"",
+    "faction": "republic",
+    "points": 23,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Counter"
+    ],
+    "cardType": "squadron",
+    "id": "hj"
+  },
+  "hk": {
+    "cardName": "Plo Koon",
+    "faction": "republic",
+    "points": 24,
+    "isUnique": true,
+    "keywords": [
+      "Adept ",
+      "Counter"
+    ],
+    "cardType": "squadron",
+    "id": "hk"
+  },
+  "hl": {
+    "cardName": "Belbullab-22 Starfighter Squadron",
+    "faction": "separatists",
+    "points": 15,
+    "isUnique": false,
+    "keywords": [
+      "Relay",
+      "Screen"
+    ],
+    "cardType": "squadron",
+    "id": "hl"
+  },
+  "hm": {
+    "cardName": "Droid Tri-Fighter Squadron",
+    "faction": "separatists",
+    "points": 11,
+    "isUnique": false,
+    "keywords": [
+      "Ai",
+      "Counter",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "hm"
+  },
+  "hn": {
+    "cardName": "Hyena-class Droid Bomber Squadron",
+    "faction": "separatists",
+    "points": 11,
+    "isUnique": false,
+    "keywords": [
+      "Ai",
+      "Bomber",
+      "Heavy"
+    ],
+    "cardType": "squadron",
+    "id": "hn"
+  },
+  "ho": {
+    "cardName": "Vulture-class Droid Fighter Squadron",
+    "faction": "separatists",
+    "points": 8,
+    "isUnique": false,
+    "keywords": [
+      "Ai",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "ho"
+  },
+  "hp": {
+    "cardName": "Baktoid Prototypes",
+    "faction": "separatists",
+    "points": 16,
+    "isUnique": true,
+    "keywords": [
+      "Ai",
+      "Bomber",
+      "Heavy"
+    ],
+    "cardType": "squadron",
+    "id": "hp"
+  },
+  "hq": {
+    "cardName": "DBS-404",
+    "faction": "separatists",
+    "points": 17,
+    "isUnique": true,
+    "keywords": [
+      "Ai",
+      "Bomber",
+      "Heavy"
+    ],
+    "cardType": "squadron",
+    "id": "hq"
+  },
+  "hr": {
+    "cardName": "DFS-311",
+    "faction": "separatists",
+    "points": 18,
+    "isUnique": true,
+    "keywords": [
+      "Ai",
+      "Intel",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "hr"
+  },
+  "hs": {
+    "cardName": "DIS-T81",
+    "faction": "separatists",
+    "points": 17,
+    "isUnique": true,
+    "keywords": [
+      "Ai",
+      "Counter",
+      "Snipe",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "hs"
+  },
+  "ht": {
+    "cardName": "General Grievous",
+    "faction": "separatists",
+    "points": 22,
+    "isUnique": true,
+    "keywords": [
+      "Relay",
+      "Screen"
+    ],
+    "cardType": "squadron",
+    "id": "ht"
+  },
+  "hu": {
+    "cardName": "Haor Chall Prototypes",
+    "faction": "separatists",
+    "points": 16,
+    "isUnique": true,
+    "keywords": [
+      "Ai",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "hu"
+  },
+  "hv": {
+    "cardName": "Phlac-Arphocc Prototypes",
+    "faction": "separatists",
+    "points": 19,
+    "isUnique": true,
+    "keywords": [
+      "Ai",
+      "Counter",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "hv"
+  },
+  "hw": {
+    "cardName": "Admiral Ackbar",
+    "points": 38,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "hw",
+    "cardType": "upgrade"
+  },
+  "hx": {
+    "cardName": "Admiral Raddus",
+    "points": 26,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "hx",
+    "cardType": "upgrade"
+  },
+  "hy": {
+    "cardName": "Commander Sato",
+    "points": 27,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "hy",
+    "cardType": "upgrade"
+  },
+  "hz": {
+    "cardName": "Garm Bel Iblis",
+    "points": 25,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "hz",
+    "cardType": "upgrade"
+  },
+  "ia": {
+    "cardName": "General Cracken",
+    "points": 26,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ia",
+    "cardType": "upgrade"
+  },
+  "ib": {
+    "cardName": "General Dodonna",
+    "points": 20,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ib",
+    "cardType": "upgrade"
+  },
+  "ic": {
+    "cardName": "General Madine",
+    "points": 30,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ic",
+    "cardType": "upgrade"
+  },
+  "id": {
+    "cardName": "General Rieekan",
+    "points": 34,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "id",
+    "cardType": "upgrade"
+  },
+  "ie": {
+    "cardName": "Kyrsta Agate",
+    "points": 20,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ie",
+    "cardType": "upgrade"
+  },
+  "if": {
+    "displayName": "Leia Organa",
+    "cardName": "Leia Organa Admiral",
+    "points": 28,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "if",
+    "cardType": "upgrade"
+  },
+  "ig": {
+    "cardName": "Mon Mothma",
+    "points": 27,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ig",
+    "cardType": "upgrade"
+  },
+  "ih": {
+    "cardName": "Admiral Konstantine",
+    "points": 23,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ih",
+    "cardType": "upgrade"
+  },
+  "ii": {
+    "cardName": "Admiral Motti",
+    "points": 24,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ii",
+    "cardType": "upgrade"
+  },
+  "ij": {
+    "cardName": "Admiral Ozzel",
+    "points": 20,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ij",
+    "cardType": "upgrade"
+  },
+  "ik": {
+    "cardName": "Admiral Piett",
+    "points": 22,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ik",
+    "cardType": "upgrade"
+  },
+  "il": {
+    "cardName": "Admiral Screed",
+    "points": 26,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "il",
+    "cardType": "upgrade"
+  },
+  "im": {
+    "cardName": "Admiral Sloane",
+    "points": 24,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "im",
+    "cardType": "upgrade"
+  },
+  "in": {
+    "displayName": "Darth Vader",
+    "cardName": "Darth Vader Admiral",
+    "points": 36,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "in",
+    "cardType": "upgrade"
+  },
+  "io": {
+    "cardName": "Emperor Palpatine",
+    "points": 35,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "io",
+    "cardType": "upgrade"
+  },
+  "ip": {
+    "cardName": "General Romodi",
+    "points": 20,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ip",
+    "cardType": "upgrade"
+  },
+  "iq": {
+    "cardName": "General Tagge",
+    "points": 25,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "iq",
+    "cardType": "upgrade"
+  },
+  "ir": {
+    "cardName": "Grand Admiral Thrawn",
+    "points": 32,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ir",
+    "cardType": "upgrade"
+  },
+  "is": {
+    "cardName": "Grand Moff Tarkin",
+    "points": 28,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "is",
+    "cardType": "upgrade"
+  },
+  "it": {
+    "cardName": "Moff Jerjerrod",
+    "points": 23,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "it",
+    "cardType": "upgrade"
+  },
+  "iu": {
+    "cardName": "Admiral Tarkin",
+    "points": 30,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "iu",
+    "cardType": "upgrade"
+  },
+  "iv": {
+    "cardName": "Admiral Yularen",
+    "points": 24,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "iv",
+    "cardType": "upgrade"
+  },
+  "iw": {
+    "cardName": "Bail Organa",
+    "points": 28,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "iw",
+    "cardType": "upgrade"
+  },
+  "ix": {
+    "cardName": "Luminara Unduli",
+    "points": 25,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ix",
+    "cardType": "upgrade"
+  },
+  "iy": {
+    "cardName": "Obi-Wan Kenobi",
+    "points": 28,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "iy",
+    "cardType": "upgrade"
+  },
+  "iz": {
+    "cardName": "Plo Koon",
+    "points": 26,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "iz",
+    "cardType": "upgrade"
+  },
+  "ja": {
+    "cardName": "Admiral Trench",
+    "points": 36,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ja",
+    "cardType": "upgrade"
+  },
+  "jb": {
+    "cardName": "Count Dooku",
+    "points": 30,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jb",
+    "cardType": "upgrade"
+  },
+  "jc": {
+    "cardName": "General Grievous",
+    "points": 20,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jc",
+    "cardType": "upgrade"
+  },
+  "jd": {
+    "cardName": "Kraken",
+    "points": 30,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jd",
+    "cardType": "upgrade"
+  },
+  "je": {
+    "cardName": "Mar Tuuk",
+    "points": 28,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "je",
+    "cardType": "upgrade"
+  },
+  "jf": {
+    "cardName": "TF-1726",
+    "points": 26,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jf",
+    "cardType": "upgrade"
+  },
+  "jg": {
+    "cardName": "Hondo Ohnaka",
+    "points": 2,
+    "isUnique": true,
+    "faction": "",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jg",
+    "cardType": "upgrade"
+  },
+  "jh": {
+    "cardName": "Chart Officer",
+    "points": 2,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jh",
+    "cardType": "upgrade"
+  },
+  "ji": {
+    "cardName": "Damage Control Officer",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ji",
+    "cardType": "upgrade"
+  },
+  "jj": {
+    "cardName": "Defense Liason",
+    "points": 3,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jj",
+    "cardType": "upgrade"
+  },
+  "jk": {
+    "cardName": "Engineering Captain",
+    "points": 6,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jk",
+    "cardType": "upgrade"
+  },
+  "jl": {
+    "cardName": "Expert Shield Tech",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jl",
+    "cardType": "upgrade"
+  },
+  "jm": {
+    "cardName": "Flight Commander",
+    "points": 3,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jm",
+    "cardType": "upgrade"
+  },
+  "jn": {
+    "cardName": "Intel Officer",
+    "points": 7,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jn",
+    "cardType": "upgrade"
+  },
+  "jo": {
+    "cardName": "Navigation Officer",
+    "points": 6,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jo",
+    "cardType": "upgrade"
+  },
+  "jp": {
+    "cardName": "Skilled First Officer",
+    "points": 1,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jp",
+    "cardType": "upgrade"
+  },
+  "jq": {
+    "cardName": "Support Officer",
+    "points": 4,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jq",
+    "cardType": "upgrade"
+  },
+  "jr": {
+    "cardName": "Tactical Expert",
+    "points": 6,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jr",
+    "cardType": "upgrade"
+  },
+  "js": {
+    "cardName": "Veteran Captain",
+    "points": 3,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "js",
+    "cardType": "upgrade"
+  },
+  "jt": {
+    "cardName": "Weapons Liason",
+    "points": 3,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jt",
+    "cardType": "upgrade"
+  },
+  "ju": {
+    "cardName": "Wing Commander",
+    "points": 6,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ju",
+    "cardType": "upgrade"
+  },
+  "jv": {
+    "cardName": "Adar Talon",
+    "points": 10,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jv",
+    "cardType": "upgrade"
+  },
+  "jw": {
+    "cardName": "Ahsoka Tano",
+    "points": 2,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jw",
+    "cardType": "upgrade"
+  },
+  "jx": {
+    "cardName": "Captain Rex",
+    "points": 5,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jx",
+    "cardType": "upgrade"
+  },
+  "jy": {
+    "cardName": "Ezra Bridger",
+    "points": 3,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jy",
+    "cardType": "upgrade"
+  },
+  "jz": {
+    "cardName": "General Draven",
+    "points": 3,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "jz",
+    "cardType": "upgrade"
+  },
+  "ka": {
+    "cardName": "Kyrsta Agate",
+    "points": 5,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ka",
+    "cardType": "upgrade"
+  },
+  "kb": {
+    "cardName": "Lando Calrissian",
+    "points": 4,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kb",
+    "cardType": "upgrade"
+  },
+  "kc": {
+    "cardName": "Leia Organa",
+    "points": 3,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kc",
+    "cardType": "upgrade"
+  },
+  "kd": {
+    "cardName": "Major Derlin",
+    "points": 7,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kd",
+    "cardType": "upgrade"
+  },
+  "ke": {
+    "cardName": "Raymus Antilles",
+    "points": 7,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ke",
+    "cardType": "upgrade"
+  },
+  "kf": {
+    "cardName": "Sabine Wren",
+    "points": 4,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kf",
+    "cardType": "upgrade"
+  },
+  "kg": {
+    "cardName": "Toryn Farr",
+    "points": 7,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kg",
+    "cardType": "upgrade"
+  },
+  "kh": {
+    "cardName": "Walex Blissex",
+    "points": 5,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kh",
+    "cardType": "upgrade"
+  },
+  "ki": {
+    "cardName": "Wedge Antilles",
+    "points": 4,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ki",
+    "cardType": "upgrade"
+  },
+  "kj": {
+    "cardName": "Adi Galia",
+    "points": 3,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kj",
+    "cardType": "upgrade"
+  },
+  "kk": {
+    "displayName": "Ahsoka Tano",
+    "cardName": "Ahsoka Tano Republic",
+    "points": 6,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kk",
+    "cardType": "upgrade"
+  },
+  "kl": {
+    "cardName": "Barriss Offee",
+    "points": 6,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kl",
+    "cardType": "upgrade"
+  },
+  "km": {
+    "cardName": "Clone Captain Zak",
+    "points": 5,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "km",
+    "cardType": "upgrade"
+  },
+  "kn": {
+    "cardName": "Clone Commander Wolfee",
+    "points": 6,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kn",
+    "cardType": "upgrade"
+  },
+  "ko": {
+    "cardName": "Clone Navigation Officer",
+    "points": 4,
+    "isUnique": false,
+    "faction": "republic",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ko",
+    "cardType": "upgrade"
+  },
+  "kp": {
+    "cardName": "Passel Argente",
+    "points": 6,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kp",
+    "cardType": "upgrade"
+  },
+  "kq": {
+    "cardName": "Rune Haako",
+    "points": 4,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kq",
+    "cardType": "upgrade"
+  },
+  "kr": {
+    "cardName": "San Hill",
+    "points": 3,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kr",
+    "cardType": "upgrade"
+  },
+  "ks": {
+    "cardName": "Shu Mai",
+    "points": 4,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ks",
+    "cardType": "upgrade"
+  },
+  "kt": {
+    "cardName": "TI-99",
+    "points": 4,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kt",
+    "cardType": "upgrade"
+  },
+  "ku": {
+    "cardName": "Tikkes",
+    "points": 2,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ku",
+    "cardType": "upgrade"
+  },
+  "kv": {
+    "cardName": "Wat Tambor",
+    "points": 5,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kv",
+    "cardType": "upgrade"
+  },
+  "kw": {
+    "cardName": "T-Series Tactical Droid",
+    "points": 4,
+    "isUnique": false,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kw",
+    "cardType": "upgrade"
+  },
+  "kx": {
+    "cardName": "Caitken and Sholan",
+    "points": 6,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "weapons team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kx",
+    "cardType": "upgrade"
+  },
+  "ky": {
+    "cardName": "Gunnery Chief Varnillian",
+    "points": 6,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "weapons team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ky",
+    "cardType": "upgrade"
+  },
+  "kz": {
+    "cardName": "Fire-Control Team",
+    "points": 2,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "weapons team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "kz",
+    "cardType": "upgrade"
+  },
+  "la": {
+    "cardName": "Gunnery Team",
+    "points": 7,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "weapons team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "la",
+    "cardType": "upgrade"
+  },
+  "lb": {
+    "cardName": "Flight Controllers",
+    "points": 6,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "weapons team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "lb",
+    "cardType": "upgrade"
+  },
+  "lc": {
+    "cardName": "Local Fire Control",
+    "points": 4,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "weapons team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "lc",
+    "cardType": "upgrade"
+  },
+  "ld": {
+    "cardName": "Ordnance Experts",
+    "points": 4,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "weapons team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ld",
+    "cardType": "upgrade"
+  },
+  "le": {
+    "cardName": "Ruthless Strategists",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "weapons team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "le",
+    "cardType": "upgrade"
+  },
+  "lf": {
+    "cardName": "Sensor Team",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "weapons team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "lf",
+    "cardType": "upgrade"
+  },
+  "lg": {
+    "cardName": "Veteran Gunners",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "weapons team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "lg",
+    "cardType": "upgrade"
+  },
+  "lh": {
+    "cardName": "Weapons Battery Techs",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "weapons team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "lh",
+    "cardType": "upgrade"
+  },
+  "li": {
+    "cardName": "Clone Gunners",
+    "points": 4,
+    "isUnique": false,
+    "faction": "republic",
+    "upgradeSlots": [
+      "weapons team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "li",
+    "cardType": "upgrade"
+  },
+  "lj": {
+    "cardName": "Cham Syndulla",
+    "points": 5,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "weapons team",
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "lj",
+    "cardType": "upgrade"
+  },
+  "lk": {
+    "cardName": "Jyn Erso",
+    "points": 4,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "weapons team",
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "lk",
+    "cardType": "upgrade"
+  },
+  "ll": {
+    "cardName": "Shriv Suurgav",
+    "points": 6,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "weapons team",
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ll",
+    "cardType": "upgrade"
+  },
+  "lm": {
+    "displayName": "Darth Vader",
+    "cardName": "Darth Vader Boarding Team",
+    "points": 3,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "weapons team",
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "lm",
+    "cardType": "upgrade"
+  },
+  "ln": {
+    "cardName": "Boarding Troopers",
+    "points": 3,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "weapons team",
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ln",
+    "cardType": "upgrade"
+  },
+  "lo": {
+    "cardName": "Boarding Engineers",
+    "points": 2,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "weapons team",
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "lo",
+    "cardType": "upgrade"
+  },
+  "lp": {
+    "cardName": "Advanced Transponder Net",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": true,
+    "id": "lp",
+    "cardType": "upgrade"
+  },
+  "lq": {
+    "cardName": "Boosted Comms",
+    "points": 4,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "lq",
+    "cardType": "upgrade"
+  },
+  "lr": {
+    "cardName": "Disposable Capacitors",
+    "points": 3,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [
+      "OR",
+      {
+        "shipSize": "small"
+      },
+      {
+        "shipSize": "medium"
+      }
+    ],
+    "isModification": false,
+    "id": "lr",
+    "cardType": "upgrade"
+  },
+  "ls": {
+    "cardName": "Expanded Hangar Bay",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ls",
+    "cardType": "upgrade"
+  },
+  "lt": {
+    "cardName": "Flag Bridge",
+    "points": 0,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [
+      "AND",
+      {
+        "flagship": true
+      },
+      [
+        "OR",
+        {
+          "shipSize": "medium"
+        },
+        {
+          "shipSize": "large"
+        }
+      ]
+    ],
+    "isModification": true,
+    "id": "lt",
+    "cardType": "upgrade"
+  },
+  "lu": {
+    "cardName": "Flak Guns",
+    "points": 3,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "lu",
+    "cardType": "upgrade"
+  },
+  "lv": {
+    "cardName": "Hardened Bulkheads",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [
+      {
+        "shipSize": "large"
+      }
+    ],
+    "isModification": true,
+    "id": "lv",
+    "cardType": "upgrade"
+  },
+  "lw": {
+    "cardName": "Phylon Q7 Tractor Beams",
+    "points": 6,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": true,
+    "id": "lw",
+    "cardType": "upgrade"
+  },
+  "lx": {
+    "cardName": "Point-Defense Reroute",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "lx",
+    "cardType": "upgrade"
+  },
+  "ly": {
+    "cardName": "Proximity Mines",
+    "points": 4,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ly",
+    "cardType": "upgrade"
+  },
+  "lz": {
+    "cardName": "Quad Laser Turrets",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "lz",
+    "cardType": "upgrade"
+  },
+  "ma": {
+    "cardName": "Rapid Launch Bays",
+    "points": 6,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ma",
+    "cardType": "upgrade"
+  },
+  "mb": {
+    "cardName": "Reserve Hangar Deck",
+    "points": 3,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mb",
+    "cardType": "upgrade"
+  },
+  "mc": {
+    "cardName": "Auxilliary Shields Team",
+    "points": 3,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "support team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mc",
+    "cardType": "upgrade"
+  },
+  "md": {
+    "cardName": "Engine Techs",
+    "points": 8,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "support team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "md",
+    "cardType": "upgrade"
+  },
+  "me": {
+    "cardName": "Engineering Team",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "support team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "me",
+    "cardType": "upgrade"
+  },
+  "mf": {
+    "cardName": "Fighter Coordination Team",
+    "points": 3,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "support team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mf",
+    "cardType": "upgrade"
+  },
+  "mg": {
+    "cardName": "Medical Team",
+    "points": 1,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "support team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mg",
+    "cardType": "upgrade"
+  },
+  "mh": {
+    "cardName": "Nav Team",
+    "points": 4,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "support team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mh",
+    "cardType": "upgrade"
+  },
+  "mi": {
+    "cardName": "Projection Experts",
+    "points": 6,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "support team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mi",
+    "cardType": "upgrade"
+  },
+  "mj": {
+    "cardName": "Advanced Projectors",
+    "points": 6,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "defensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mj",
+    "cardType": "upgrade"
+  },
+  "mk": {
+    "cardName": "Cluster Bombs",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "defensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mk",
+    "cardType": "upgrade"
+  },
+  "ml": {
+    "cardName": "Early Warning System",
+    "points": 7,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "defensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ml",
+    "cardType": "upgrade"
+  },
+  "mm": {
+    "cardName": "Electronic Countermeasures",
+    "points": 7,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "defensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mm",
+    "cardType": "upgrade"
+  },
+  "mn": {
+    "cardName": "Reactive Gunnery",
+    "points": 4,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "defensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mn",
+    "cardType": "upgrade"
+  },
+  "mo": {
+    "cardName": "Redundant Shields",
+    "points": 8,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "defensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": true,
+    "id": "mo",
+    "cardType": "upgrade"
+  },
+  "mp": {
+    "cardName": "Reinforced Blast Doors",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "defensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mp",
+    "cardType": "upgrade"
+  },
+  "mq": {
+    "cardName": "Thermal Shields",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "defensive retrofit"
+    ],
+    "requirements": [
+      "AND",
+      [
+        "OR",
+        {
+          "faction": "republic"
+        },
+        {
+          "faction": "separatists"
+        }
+      ],
+      [
+        "OR",
+        {
+          "shipSize": "medium"
+        },
+        {
+          "shipSize": "large"
+        }
+      ]
+    ],
+    "isModification": false,
+    "id": "mq",
+    "cardType": "upgrade"
+  },
+  "mr": {
+    "cardName": "Assault Concussion Missiles",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ordnance"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mr",
+    "cardType": "upgrade"
+  },
+  "ms": {
+    "cardName": "Assault Proton Torpedoes",
+    "points": 4,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ordnance"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ms",
+    "cardType": "upgrade"
+  },
+  "mt": {
+    "cardName": "Expanded Launchers",
+    "points": 13,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ordnance"
+    ],
+    "requirements": [],
+    "isModification": true,
+    "id": "mt",
+    "cardType": "upgrade"
+  },
+  "mu": {
+    "cardName": "External Racks",
+    "points": 4,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ordnance"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mu",
+    "cardType": "upgrade"
+  },
+  "mv": {
+    "cardName": "Flechette Torpedoes",
+    "points": 3,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ordnance"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mv",
+    "cardType": "upgrade"
+  },
+  "mw": {
+    "cardName": "Ordnance Pods",
+    "points": 3,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ordnance"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mw",
+    "cardType": "upgrade"
+  },
+  "mx": {
+    "cardName": "Rapid Reload",
+    "points": 8,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ordnance"
+    ],
+    "requirements": [],
+    "isModification": true,
+    "id": "mx",
+    "cardType": "upgrade"
+  },
+  "my": {
+    "cardName": "Wide-Area Barrage",
+    "points": 2,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ordnance"
+    ],
+    "requirements": [],
+    "isModification": true,
+    "id": "my",
+    "cardType": "upgrade"
+  },
+  "mz": {
+    "cardName": "Heavy Ion Emplacements",
+    "points": 9,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ion cannons"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "mz",
+    "cardType": "upgrade"
+  },
+  "na": {
+    "cardName": "High-Capacity Ion Turbines",
+    "points": 8,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ion cannons"
+    ],
+    "requirements": [],
+    "isModification": true,
+    "id": "na",
+    "cardType": "upgrade"
+  },
+  "nb": {
+    "cardName": "Ion Cannon Batteries",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ion cannons"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "nb",
+    "cardType": "upgrade"
+  },
+  "nc": {
+    "cardName": "Leading Shots",
+    "points": 6,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ion cannons"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "nc",
+    "cardType": "upgrade"
+  },
+  "nd": {
+    "cardName": "MS-1 Ion Cannons",
+    "points": 2,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ion cannons"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "nd",
+    "cardType": "upgrade"
+  },
+  "ne": {
+    "cardName": "NK-7 Ion Cannons",
+    "points": 10,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ion cannons"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ne",
+    "cardType": "upgrade"
+  },
+  "nf": {
+    "cardName": "Overload Pulse",
+    "points": 8,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ion cannons"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "nf",
+    "cardType": "upgrade"
+  },
+  "ng": {
+    "cardName": "Point Defense Ion Cannons",
+    "points": 4,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ion cannons"
+    ],
+    "requirements": [
+      "NOT",
+      {
+        "shipSize": "huge"
+      }
+    ],
+    "isModification": false,
+    "id": "ng",
+    "cardType": "upgrade"
+  },
+  "nh": {
+    "cardName": "SW-7 Ion Batteries",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "ion cannons"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "nh",
+    "cardType": "upgrade"
+  },
+  "ni": {
+    "cardName": "DBY-827 Heavy Turbolasers",
+    "points": 3,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ni",
+    "cardType": "upgrade"
+  },
+  "nj": {
+    "cardName": "Dual Turbolaser Turrets",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [],
+    "isModification": true,
+    "id": "nj",
+    "cardType": "upgrade"
+  },
+  "nk": {
+    "cardName": "Enhanced Armament",
+    "points": 10,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [],
+    "isModification": true,
+    "id": "nk",
+    "cardType": "upgrade"
+  },
+  "nl": {
+    "cardName": "H9 Turbolasers",
+    "points": 8,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [],
+    "isModification": true,
+    "id": "nl",
+    "cardType": "upgrade"
+  },
+  "nm": {
+    "cardName": "Heavy Fire Zone",
+    "points": 4,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "nm",
+    "cardType": "upgrade"
+  },
+  "nn": {
+    "cardName": "Heavy Turbolaser Turrets",
+    "points": 6,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "nn",
+    "cardType": "upgrade"
+  },
+  "no": {
+    "cardName": "Linked Turbolaser Turrets",
+    "points": 7,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "no",
+    "cardType": "upgrade"
+  },
+  "np": {
+    "cardName": "Quad Battery Turrets",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [],
+    "isModification": true,
+    "id": "np",
+    "cardType": "upgrade"
+  },
+  "nq": {
+    "cardName": "Quad Turbolaser Cannons",
+    "points": 10,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [],
+    "isModification": true,
+    "id": "nq",
+    "cardType": "upgrade"
+  },
+  "nr": {
+    "cardName": "Slaved Turrets",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [],
+    "isModification": true,
+    "id": "nr",
+    "cardType": "upgrade"
+  },
+  "ns": {
+    "cardName": "Spinal Armament",
+    "points": 9,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [],
+    "isModification": true,
+    "id": "ns",
+    "cardType": "upgrade"
+  },
+  "nt": {
+    "cardName": "Turbolaser Reroute Circuits",
+    "points": 7,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "nt",
+    "cardType": "upgrade"
+  },
+  "nu": {
+    "cardName": "XI7 Turbolasers",
+    "points": 6,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "nu",
+    "cardType": "upgrade"
+  },
+  "nv": {
+    "cardName": "XX-9 Turbolasers",
+    "points": 5,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "nv",
+    "cardType": "upgrade"
+  },
+  "nw": {
+    "cardName": "Swivel-Mount Batteries",
+    "points": 8,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [
+      "OR",
+      {
+        "faction": "republic"
+      },
+      {
+        "faction": "separatists"
+      }
+    ],
+    "isModification": true,
+    "id": "nw",
+    "cardType": "upgrade"
+  },
+  "nx": {
+    "cardName": "Admonition",
+    "points": 6,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "MC30"
+      }
+    ],
+    "isModification": false,
+    "id": "nx",
+    "cardType": "upgrade"
+  },
+  "ny": {
+    "cardName": "Annihilator",
+    "points": 8,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Star Dreadnought"
+      }
+    ],
+    "isModification": false,
+    "id": "ny",
+    "cardType": "upgrade"
+  },
+  "nz": {
+    "cardName": "Amity",
+    "points": 6,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Starhawk"
+      }
+    ],
+    "isModification": false,
+    "id": "nz",
+    "cardType": "upgrade"
+  },
+  "oa": {
+    "cardName": "Aspiration",
+    "points": 3,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "MC75"
+      }
+    ],
+    "isModification": false,
+    "id": "oa",
+    "cardType": "upgrade"
+  },
+  "ob": {
+    "cardName": "Avenger",
+    "points": 5,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      "OR",
+      {
+        "cardName": "Imperial I"
+      },
+      {
+        "cardName": "Imperial Star Destroyer"
+      }
+    ],
+    "isModification": false,
+    "id": "ob",
+    "cardType": "upgrade"
+  },
+  "oc": {
+    "cardName": "Beast of Burden",
+    "points": 6,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Hardcell"
+      }
+    ],
+    "isModification": false,
+    "id": "oc",
+    "cardType": "upgrade"
+  },
+  "od": {
+    "cardName": "Bright Hope",
+    "points": 2,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "GR-75"
+      }
+    ],
+    "isModification": false,
+    "id": "od",
+    "cardType": "upgrade"
+  },
+  "oe": {
+    "cardName": "Cataclysm",
+    "points": 5,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Onager"
+      }
+    ],
+    "isModification": false,
+    "id": "oe",
+    "cardType": "upgrade"
+  },
+  "of": {
+    "cardName": "Centicore",
+    "points": 3,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Arquitens"
+      }
+    ],
+    "isModification": false,
+    "id": "of",
+    "cardType": "upgrade"
+  },
+  "og": {
+    "cardName": "Chimaera",
+    "points": 4,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      "OR",
+      {
+        "cardName": "Imperial I"
+      },
+      {
+        "cardName": "Imperial Star Destroyer"
+      }
+    ],
+    "isModification": false,
+    "id": "og",
+    "cardType": "upgrade"
+  },
+  "oh": {
+    "cardName": "Concord",
+    "points": 12,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Starhawk"
+      }
+    ],
+    "isModification": false,
+    "id": "oh",
+    "cardType": "upgrade"
+  },
+  "oi": {
+    "cardName": "Corrupter",
+    "points": 5,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Victory"
+      }
+    ],
+    "isModification": false,
+    "id": "oi",
+    "cardType": "upgrade"
+  },
+  "oj": {
+    "cardName": "Corvus",
+    "points": 2,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Raider"
+      }
+    ],
+    "isModification": false,
+    "id": "oj",
+    "cardType": "upgrade"
+  },
+  "ok": {
+    "cardName": "Defiance",
+    "points": 5,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      "OR",
+      {
+        "cardName": "MC80 Command"
+      },
+      {
+        "cardName": "MC80 Assault"
+      }
+    ],
+    "isModification": false,
+    "id": "ok",
+    "cardType": "upgrade"
+  },
+  "ol": {
+    "cardName": "Demolisher",
+    "points": 10,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Gladiator"
+      }
+    ],
+    "isModification": false,
+    "id": "ol",
+    "cardType": "upgrade"
+  },
+  "om": {
+    "cardName": "Devastator",
+    "points": 10,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      "OR",
+      {
+        "cardName": "Imperial I"
+      },
+      {
+        "cardName": "Imperial Star Destroyer"
+      }
+    ],
+    "isModification": false,
+    "id": "om",
+    "cardType": "upgrade"
+  },
+  "on": {
+    "cardName": "Dodonna's Pride",
+    "points": 6,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "CR90"
+      }
+    ],
+    "isModification": false,
+    "id": "on",
+    "cardType": "upgrade"
+  },
+  "oo": {
+    "cardName": "Dominator",
+    "points": 12,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Victory"
+      }
+    ],
+    "isModification": false,
+    "id": "oo",
+    "cardType": "upgrade"
+  },
+  "op": {
+    "cardName": "Eclipse",
+    "points": 3,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Star Dreadnought"
+      }
+    ],
+    "isModification": false,
+    "id": "op",
+    "cardType": "upgrade"
+  },
+  "oq": {
+    "cardName": "Endeavor",
+    "points": 4,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      "OR",
+      {
+        "cardName": "MC80 Star"
+      },
+      {
+        "cardName": "MC80 Battle"
+      }
+    ],
+    "isModification": false,
+    "id": "oq",
+    "cardType": "upgrade"
+  },
+  "or": {
+    "cardName": "Executor",
+    "points": 2,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Star Dreadnought"
+      }
+    ],
+    "isModification": false,
+    "id": "or",
+    "cardType": "upgrade"
+  },
+  "os": {
+    "cardName": "FB-88",
+    "points": 4,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Pelta-class"
+      }
+    ],
+    "isModification": false,
+    "id": "os",
+    "cardType": "upgrade"
+  },
+  "ot": {
+    "cardName": "Foreman's Labor",
+    "points": 5,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Hardcell"
+      }
+    ],
+    "isModification": false,
+    "id": "ot",
+    "cardType": "upgrade"
+  },
+  "ou": {
+    "cardName": "Foresight",
+    "points": 8,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "MC30"
+      }
+    ],
+    "isModification": false,
+    "id": "ou",
+    "cardType": "upgrade"
+  },
+  "ov": {
+    "cardName": "Gallant Haven",
+    "points": 8,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Assault Frigate"
+      }
+    ],
+    "isModification": false,
+    "id": "ov",
+    "cardType": "upgrade"
+  },
+  "ow": {
+    "cardName": "Garel's Honor",
+    "points": 4,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Hammerhead"
+      }
+    ],
+    "isModification": false,
+    "id": "ow",
+    "cardType": "upgrade"
+  },
+  "ox": {
+    "cardName": "Gilded Aegis",
+    "points": 5,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Recusant"
+      }
+    ],
+    "isModification": false,
+    "id": "ox",
+    "cardType": "upgrade"
+  },
+  "oy": {
+    "cardName": "Hand of Justice",
+    "points": 4,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Arquitens"
+      }
+    ],
+    "isModification": false,
+    "id": "oy",
+    "cardType": "upgrade"
+  },
+  "oz": {
+    "cardName": "Harrow",
+    "points": 3,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Victory"
+      }
+    ],
+    "isModification": false,
+    "id": "oz",
+    "cardType": "upgrade"
+  },
+  "pa": {
+    "cardName": "Home One",
+    "points": 7,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      "OR",
+      {
+        "cardName": "MC80 Command"
+      },
+      {
+        "cardName": "MC80 Assault"
+      }
+    ],
+    "isModification": false,
+    "id": "pa",
+    "cardType": "upgrade"
+  },
+  "pb": {
+    "cardName": "Implacable",
+    "points": 4,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Acclamator"
+      }
+    ],
+    "isModification": false,
+    "id": "pb",
+    "cardType": "upgrade"
+  },
+  "pc": {
+    "cardName": "Impetuous",
+    "points": 4,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Raider"
+      }
+    ],
+    "isModification": false,
+    "id": "pc",
+    "cardType": "upgrade"
+  },
+  "pd": {
+    "cardName": "Independence",
+    "points": 8,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      "OR",
+      {
+        "cardName": "MC80 Command"
+      },
+      {
+        "cardName": "MC80 Assault"
+      }
+    ],
+    "isModification": false,
+    "id": "pd",
+    "cardType": "upgrade"
+  },
+  "pe": {
+    "cardName": "Insidious",
+    "points": 3,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Gladiator"
+      }
+    ],
+    "isModification": false,
+    "id": "pe",
+    "cardType": "upgrade"
+  },
+  "pf": {
+    "cardName": "Instigator",
+    "points": 4,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Raider"
+      }
+    ],
+    "isModification": false,
+    "id": "pf",
+    "cardType": "upgrade"
+  },
+  "pg": {
+    "cardName": "Interdictor",
+    "points": 3,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Interdictor"
+      }
+    ],
+    "isModification": false,
+    "id": "pg",
+    "cardType": "upgrade"
+  },
+  "ph": {
+    "cardName": "Invincible",
+    "points": 5,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Providence"
+      }
+    ],
+    "isModification": false,
+    "id": "ph",
+    "cardType": "upgrade"
+  },
+  "pi": {
+    "cardName": "Invisible Hand",
+    "points": 9,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Providence"
+      }
+    ],
+    "isModification": false,
+    "id": "pi",
+    "cardType": "upgrade"
+  },
+  "pj": {
+    "cardName": "Jaina's Light",
+    "points": 2,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "CR90"
+      }
+    ],
+    "isModification": false,
+    "id": "pj",
+    "cardType": "upgrade"
+  },
+  "pk": {
+    "cardName": "Liberator",
+    "points": 2,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "CR90"
+      }
+    ],
+    "isModification": false,
+    "id": "pk",
+    "cardType": "upgrade"
+  },
+  "pl": {
+    "cardName": "Liberty",
+    "points": 3,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      "OR",
+      {
+        "cardName": "MC80 Battle Cruiser"
+      },
+      {
+        "cardName": "MC80 Star Cruiser"
+      }
+    ],
+    "isModification": false,
+    "id": "pl",
+    "cardType": "upgrade"
+  },
+  "pm": {
+    "cardName": "Lucid Voice",
+    "points": 8,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Providence"
+      }
+    ],
+    "isModification": false,
+    "id": "pm",
+    "cardType": "upgrade"
+  },
+  "pn": {
+    "cardName": "Mon Karren",
+    "points": 6,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      "OR",
+      {
+        "cardName": "MC80 Battle Cruiser"
+      },
+      {
+        "cardName": "MC80 Star Cruiser"
+      }
+    ],
+    "isModification": false,
+    "id": "pn",
+    "cardType": "upgrade"
+  },
+  "po": {
+    "cardName": "Nevoota Bee",
+    "points": 5,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Acclamator"
+      }
+    ],
+    "isModification": false,
+    "id": "po",
+    "cardType": "upgrade"
+  },
+  "pp": {
+    "cardName": "Nova Defiant",
+    "points": 4,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Recusant"
+      }
+    ],
+    "isModification": false,
+    "id": "pp",
+    "cardType": "upgrade"
+  },
+  "pq": {
+    "cardName": "Paragon",
+    "points": 5,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Assault Frigate"
+      }
+    ],
+    "isModification": false,
+    "id": "pq",
+    "cardType": "upgrade"
+  },
+  "pr": {
+    "cardName": "Patriot Fist",
+    "points": 6,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Recusant"
+      }
+    ],
+    "isModification": false,
+    "id": "pr",
+    "cardType": "upgrade"
+  },
+  "ps": {
+    "cardName": "Phoenix Home",
+    "points": 3,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Modified Pelta"
+      }
+    ],
+    "isModification": false,
+    "id": "ps",
+    "cardType": "upgrade"
+  },
+  "pt": {
+    "cardName": "Profundity",
+    "points": 7,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "MC75"
+      }
+    ],
+    "isModification": false,
+    "id": "pt",
+    "cardType": "upgrade"
+  },
+  "pu": {
+    "cardName": "Pursuant",
+    "points": 2,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Quasar"
+      }
+    ],
+    "isModification": false,
+    "id": "pu",
+    "cardType": "upgrade"
+  },
+  "pv": {
+    "cardName": "Quantum Storm",
+    "points": 1,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "GR-75"
+      }
+    ],
+    "isModification": false,
+    "id": "pv",
+    "cardType": "upgrade"
+  },
+  "pw": {
+    "cardName": "Radiant VII",
+    "points": 1,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Consular"
+      }
+    ],
+    "isModification": false,
+    "id": "pw",
+    "cardType": "upgrade"
+  },
+  "px": {
+    "cardName": "Rakehell",
+    "points": 4,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Onager"
+      }
+    ],
+    "isModification": false,
+    "id": "px",
+    "cardType": "upgrade"
+  },
+  "py": {
+    "cardName": "Ravager",
+    "points": 4,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      "OR",
+      {
+        "cardName": "Executor"
+      },
+      {
+        "cardName": "Star Dreadnought"
+      }
+    ],
+    "isModification": false,
+    "id": "py",
+    "cardType": "upgrade"
+  },
+  "pz": {
+    "cardName": "Redemption",
+    "points": 8,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Nebulon"
+      }
+    ],
+    "isModification": false,
+    "id": "pz",
+    "cardType": "upgrade"
+  },
+  "qa": {
+    "cardName": "Relentless",
+    "points": 3,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      "OR",
+      {
+        "cardName": "Imperial I"
+      },
+      {
+        "cardName": "Imperial Star Destroyer"
+      }
+    ],
+    "isModification": false,
+    "id": "qa",
+    "cardType": "upgrade"
+  },
+  "qb": {
+    "cardName": "Resolute",
+    "points": 6,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Venator"
+      }
+    ],
+    "isModification": false,
+    "id": "qb",
+    "cardType": "upgrade"
+  },
+  "qc": {
+    "cardName": "Salvation",
+    "points": 7,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Nebulon"
+      }
+    ],
+    "isModification": false,
+    "id": "qc",
+    "cardType": "upgrade"
+  },
+  "qd": {
+    "cardName": "Sa Nalaor",
+    "points": 5,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Munificent"
+      }
+    ],
+    "isModification": false,
+    "id": "qd",
+    "cardType": "upgrade"
+  },
+  "qe": {
+    "cardName": "Sovereign",
+    "points": 4,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      "OR",
+      {
+        "cardName": "Imperial Star Destroyer"
+      },
+      {
+        "cardName": "Imperial I"
+      }
+    ],
+    "isModification": false,
+    "id": "qe",
+    "cardType": "upgrade"
+  },
+  "qf": {
+    "cardName": "Squall",
+    "points": 3,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Quasar"
+      }
+    ],
+    "isModification": false,
+    "id": "qf",
+    "cardType": "upgrade"
+  },
+  "qg": {
+    "cardName": "Stronghold",
+    "points": 5,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Quasar"
+      }
+    ],
+    "isModification": false,
+    "id": "qg",
+    "cardType": "upgrade"
+  },
+  "qh": {
+    "cardName": "Sunder",
+    "points": 10,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Onager"
+      }
+    ],
+    "isModification": false,
+    "id": "qh",
+    "cardType": "upgrade"
+  },
+  "qi": {
+    "cardName": "Suppressor",
+    "points": 4,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Gozanti"
+      }
+    ],
+    "isModification": false,
+    "id": "qi",
+    "cardType": "upgrade"
+  },
+  "qj": {
+    "cardName": "Swift Return",
+    "points": 3,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Consular"
+      }
+    ],
+    "isModification": false,
+    "id": "qj",
+    "cardType": "upgrade"
+  },
+  "qk": {
+    "cardName": "Tantive IV",
+    "points": 3,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "CR90"
+      }
+    ],
+    "isModification": false,
+    "id": "qk",
+    "cardType": "upgrade"
+  },
+  "ql": {
+    "cardName": "TB-73",
+    "points": 5,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Venator"
+      }
+    ],
+    "isModification": false,
+    "id": "ql",
+    "cardType": "upgrade"
+  },
+  "qm": {
+    "cardName": "Tide of Progress XII",
+    "points": 2,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Munificent"
+      }
+    ],
+    "isModification": false,
+    "id": "qm",
+    "cardType": "upgrade"
+  },
+  "qn": {
+    "cardName": "Tranquility",
+    "points": 3,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Venator"
+      }
+    ],
+    "isModification": false,
+    "id": "qn",
+    "cardType": "upgrade"
+  },
+  "qo": {
+    "cardName": "Triumphant",
+    "points": 5,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Venator"
+      }
+    ],
+    "isModification": false,
+    "id": "qo",
+    "cardType": "upgrade"
+  },
+  "qp": {
+    "cardName": "Unity",
+    "points": 10,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Starhawk"
+      }
+    ],
+    "isModification": false,
+    "id": "qp",
+    "cardType": "upgrade"
+  },
+  "qq": {
+    "cardName": "Vanguard",
+    "points": 4,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "isModification": false,
+    "requirements": [
+      {
+        "cardName": "Nebulon"
+      }
+    ],
+    "id": "qq",
+    "cardType": "upgrade"
+  },
+  "qr": {
+    "cardName": "Vector",
+    "points": 2,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "isModification": false,
+    "requirements": [
+      {
+        "cardName": "Gozanti"
+      }
+    ],
+    "id": "qr",
+    "cardType": "upgrade"
+  },
+  "qs": {
+    "cardName": "Warlord",
+    "points": 8,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "isModification": false,
+    "requirements": [
+      {
+        "cardName": "Victory"
+      }
+    ],
+    "id": "qs",
+    "cardType": "upgrade"
+  },
+  "qt": {
+    "cardName": "Yavaris",
+    "points": 5,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Nebulon"
+      }
+    ],
+    "isModification": false,
+    "id": "qt",
+    "cardType": "upgrade"
+  },
+  "qu": {
+    "cardName": "Mon Calamari Exodus Fleet",
+    "points": 5,
+    "isUnique": false,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "MC"
+      }
+    ],
+    "isModification": false,
+    "id": "qu",
+    "cardType": "upgrade"
+  },
+  "qv": {
+    "cardName": "Seventh Fleet Star Destroyer",
+    "points": 5,
+    "isUnique": false,
+    "faction": "empire",
+    "upgradeSlots": [
+      "title"
+    ],
+    "isModification": false,
+    "requirements": [
+      {
+        "cardName": "Star Destroyer"
+      }
+    ],
+    "id": "qv",
+    "cardType": "upgrade"
+  },
+  "qw": {
+    "cardName": "Task Force Antilles",
+    "points": 3,
+    "isUnique": false,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "isModification": false,
+    "requirements": [
+      {
+        "cardName": "Hammerhead"
+      }
+    ],
+    "id": "qw",
+    "cardType": "upgrade"
+  },
+  "qx": {
+    "cardName": "Task Force Organa",
+    "points": 1,
+    "isUnique": false,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Hammerhead"
+      }
+    ],
+    "isModification": false,
+    "id": "qx",
+    "cardType": "upgrade"
+  },
+  "qy": {
+    "cardName": "Admiral Chiraneau",
+    "points": 10,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "qy",
+    "cardType": "upgrade"
+  },
+  "qz": {
+    "cardName": "Admiral Montferrat",
+    "points": 5,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "qz",
+    "cardType": "upgrade"
+  },
+  "ra": {
+    "displayName": "Admiral Ozzel",
+    "cardName": "Admiral Ozzel Officer",
+    "points": 2,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ra",
+    "cardType": "upgrade"
+  },
+  "rb": {
+    "cardName": "Admiral Titus",
+    "points": 2,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rb",
+    "cardType": "upgrade"
+  },
+  "rc": {
+    "cardName": "Agent Kallus",
+    "points": 3,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rc",
+    "cardType": "upgrade"
+  },
+  "rd": {
+    "cardName": "Captian Brunson",
+    "points": 9,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rd",
+    "cardType": "upgrade"
+  },
+  "re": {
+    "cardName": "Captain Needa",
+    "points": 2,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "re",
+    "cardType": "upgrade"
+  },
+  "rf": {
+    "cardName": "Commandant Aresko",
+    "points": 7,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rf",
+    "cardType": "upgrade"
+  },
+  "rg": {
+    "cardName": "Commander Beck",
+    "points": 3,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rg",
+    "cardType": "upgrade"
+  },
+  "rh": {
+    "cardName": "Commander Gherant",
+    "points": 2,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rh",
+    "cardType": "upgrade"
+  },
+  "ri": {
+    "cardName": "Commander Vanto",
+    "points": 7,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ri",
+    "cardType": "upgrade"
+  },
+  "rj": {
+    "cardName": "Commander Woldar",
+    "points": 4,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rj",
+    "cardType": "upgrade"
+  },
+  "rk": {
+    "displayName": "Darth Vader",
+    "cardName": "Darth Vader Officer",
+    "points": 1,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rk",
+    "cardType": "upgrade"
+  },
+  "rl": {
+    "cardName": "Director Isard",
+    "points": 3,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rl",
+    "cardType": "upgrade"
+  },
+  "rm": {
+    "cardName": "Director Krennic",
+    "points": 8,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rm",
+    "cardType": "upgrade"
+  },
+  "rn": {
+    "displayName": "Emperor Palpatine",
+    "cardName": "Emperor Palpatine Officer",
+    "points": 3,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rn",
+    "cardType": "upgrade"
+  },
+  "ro": {
+    "cardName": "Iden Versio",
+    "points": 6,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ro",
+    "cardType": "upgrade"
+  },
+  "rp": {
+    "cardName": "Instructor Goran",
+    "points": 4,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rp",
+    "cardType": "upgrade"
+  },
+  "rq": {
+    "cardName": "Lira Wessex",
+    "points": 4,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rq",
+    "cardType": "upgrade"
+  },
+  "rr": {
+    "cardName": "Minister Tua",
+    "points": 4,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rr",
+    "cardType": "upgrade"
+  },
+  "rs": {
+    "cardName": "Reeva Demesne",
+    "points": 4,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rs",
+    "cardType": "upgrade"
+  },
+  "rt": {
+    "cardName": "Taskmaster Grint",
+    "points": 5,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rt",
+    "cardType": "upgrade"
+  },
+  "ru": {
+    "cardName": "The Grand Inquisitor",
+    "points": 4,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ru",
+    "cardType": "upgrade"
+  },
+  "rv": {
+    "cardName": "Wulff Yularen",
+    "points": 7,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rv",
+    "cardType": "upgrade"
+  },
+  "rw": {
+    "cardName": "All Fighters, Follow Me!",
+    "points": 5,
+    "isUnique": true,
+    "faction": "",
+    "upgradeSlots": [
+      "fleet command"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rw",
+    "cardType": "upgrade"
+  },
+  "rx": {
+    "cardName": "Entrapment Formation!",
+    "points": 5,
+    "isUnique": true,
+    "faction": "",
+    "upgradeSlots": [
+      "fleet command"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rx",
+    "cardType": "upgrade"
+  },
+  "ry": {
+    "cardName": "Hot Landing",
+    "points": 3,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "fleet command"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ry",
+    "cardType": "upgrade"
+  },
+  "rz": {
+    "cardName": "Intensify Firepower!",
+    "points": 6,
+    "isUnique": true,
+    "faction": "",
+    "upgradeSlots": [
+      "fleet command"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "rz",
+    "cardType": "upgrade"
+  },
+  "sa": {
+    "cardName": "Jedi Hostage",
+    "points": 3,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "fleet command"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sa",
+    "cardType": "upgrade"
+  },
+  "sb": {
+    "cardName": "Mercy Mission",
+    "points": 0,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "fleet command"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sb",
+    "cardType": "upgrade"
+  },
+  "sc": {
+    "cardName": "Shields to Maxiumum!",
+    "points": 6,
+    "isUnique": true,
+    "faction": "",
+    "upgradeSlots": [
+      "fleet command"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sc",
+    "cardType": "upgrade"
+  },
+  "sd": {
+    "cardName": "Take Evasive Action!",
+    "points": 6,
+    "isUnique": true,
+    "faction": "",
+    "upgradeSlots": [
+      "fleet command"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sd",
+    "cardType": "upgrade"
+  },
+  "se": {
+    "cardName": "G-8 Experimental Projector",
+    "points": 8,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "experimental retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "se",
+    "cardType": "upgrade"
+  },
+  "sf": {
+    "cardName": "Grav Shift Reroute",
+    "points": 2,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "experimental retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sf",
+    "cardType": "upgrade"
+  },
+  "sg": {
+    "cardName": "G7-X Grav Well Projector",
+    "points": 2,
+    "isUnique": false,
+    "faction": "empire",
+    "upgradeSlots": [
+      "experimental retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sg",
+    "cardType": "upgrade"
+  },
+  "sh": {
+    "cardName": "Targeting Scrambler",
+    "points": 5,
+    "isUnique": false,
+    "faction": "empire",
+    "upgradeSlots": [
+      "experimental retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sh",
+    "cardType": "upgrade"
+  },
+  "si": {
+    "cardName": "Magnite Crystal Tractor Beam",
+    "points": 10,
+    "isUnique": false,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "super weapon"
+    ],
+    "requirements": [
+      {
+        "cardName": "Starhawk"
+      }
+    ],
+    "isModification": false,
+    "id": "si",
+    "cardType": "upgrade"
+  },
+  "sj": {
+    "cardName": "Orbital Bombardment Particle Cannons",
+    "points": 5,
+    "isUnique": false,
+    "faction": "empire",
+    "upgradeSlots": [
+      "super weapon"
+    ],
+    "requirements": [
+      {
+        "cardName": "Onager"
+      }
+    ],
+    "isModification": true,
+    "id": "sj",
+    "cardType": "upgrade"
+  },
+  "sk": {
+    "cardName": "Superheavy Composite Beam Turbolasers",
+    "points": 7,
+    "isUnique": false,
+    "faction": "empire",
+    "upgradeSlots": [
+      "super weapon"
+    ],
+    "requirements": [
+      {
+        "cardName": "Onager"
+      }
+    ],
+    "isModification": true,
+    "id": "sk",
+    "cardType": "upgrade"
+  },
+  "sl": {
+    "cardName": "Clone Captain Silver",
+    "points": 4,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sl",
+    "cardType": "upgrade"
+  },
+  "sm": {
+    "cardName": "SPHA-T",
+    "points": 7,
+    "isUnique": false,
+    "faction": "republic",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [
+      {
+        "cardName": "Star Destroyer"
+      }
+    ],
+    "isModification": true,
+    "id": "sm",
+    "cardType": "upgrade"
+  },
+  "sn": {
+    "cardName": "Bomber Command Center",
+    "points": 8,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "fleet support"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sn",
+    "cardType": "upgrade"
+  },
+  "so": {
+    "cardName": "Comms Net",
+    "points": 2,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "fleet support"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "so",
+    "cardType": "upgrade"
+  },
+  "sp": {
+    "cardName": "Jamming Field",
+    "points": 2,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "fleet support"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sp",
+    "cardType": "upgrade"
+  },
+  "sq": {
+    "cardName": "Munitions Resupply",
+    "points": 3,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "fleet support"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sq",
+    "cardType": "upgrade"
+  },
+  "sr": {
+    "cardName": "Parts Resupply",
+    "points": 3,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "fleet support"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sr",
+    "cardType": "upgrade"
+  },
+  "ss": {
+    "cardName": "Repair Crew",
+    "points": 4,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "fleet support"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ss",
+    "cardType": "upgrade"
+  },
+  "st": {
+    "cardName": "Slicer Tools",
+    "points": 7,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "fleet support"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "st",
+    "cardType": "upgrade"
+  },
+  "su": {
+    "cardName": "Fenn Rau",
+    "faction": "rebels",
+    "points": 24,
+    "isUnique": true,
+    "keywords": [
+      "Assault",
+      "Escort"
+    ],
+    "cardType": "squadron",
+    "id": "su"
+  },
+  "sv": {
+    "cardName": "General Draven Admiral",
+    "points": 28,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sv",
+    "cardType": "upgrade"
+  },
+  "sw": {
+    "cardName": "Governor Pryce",
+    "points": 7,
+    "isUnique": true,
+    "faction": "empire",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sw",
+    "cardType": "upgrade"
+  },
+  "sx": {
+    "displayName": "Anakin Skywalker",
+    "cardName": "Anakin Skywalker Admiral",
+    "points": 29,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sx",
+    "cardType": "upgrade"
+  },
+  "sy": {
+    "cardName": "Matchstick",
+    "faction": "republic",
+    "points": 14,
+    "isUnique": true,
+    "keywords": [
+      "Bomber"
+    ],
+    "cardType": "squadron",
+    "id": "sy"
+  },
+  "sz": {
+    "cardName": "Asajj Ventress",
+    "points": 4,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "officer"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "sz",
+    "cardType": "upgrade"
+  },
+  "ta": {
+    "cardName": "Wat Tambor",
+    "faction": "separatists",
+    "points": 20,
+    "isUnique": true,
+    "keywords": [
+      "Escort",
+      "Screen"
+    ],
+    "cardType": "squadron",
+    "id": "ta"
+  }
+}
