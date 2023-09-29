@@ -12,7 +12,7 @@ function ListFooter({ generateExportedListText }) {
     };
     const router = useRouter();
 
-    const listText = useMemo(() => generateExportedListText());
+    const listText = useMemo(() => generateExportedListText(), [generateExportedListText]);
 
     return (
         <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
