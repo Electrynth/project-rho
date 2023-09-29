@@ -59,8 +59,8 @@ function ListHeader({
                 }
                 onClick={handleOpen}
             />
-            <Dialog onClose={handleClose} open={isDialogOpen}>
-                <DialogTitle className={robotoCondensed.className}>Game Ruleset Versions</DialogTitle>
+            <Dialog fullWidth maxWidth="sm" onClose={handleClose} open={isDialogOpen}>
+                <DialogTitle><span className={robotoCondensed.className}>Game Ruleset Versions</span></DialogTitle>
                 <div style={{ padding: 12 }}>
                     <FormControl fullWidth>
                         <InputLabel id="select-game-version" className={robotoCondensed.className}>Version</InputLabel>
@@ -83,43 +83,43 @@ function ListHeader({
                         <Typography variant="h5" className={robotoCondensed.className}>Description</Typography>
                         <div style={{ maxHeight: 600, overflowY: 'scroll' }}>
                             {versions[version].description ? (
-                                <Typography className={robotoCondensed.className}>{versions[version].description}</Typography>
+                                <Typography><span className={robotoCondensed.className}>{versions[version].description}</span></Typography>
                             ) : (
-                                <Typography className={robotoCondensed.className}>None</Typography>
+                                <Typography><span className={robotoCondensed.className}>None</span></Typography>
                             )}
                         </div>
                     </Paper>
                     <Paper style={{ marginTop: 8, padding: 12 }} className={robotoCondensed.className}>
-                        <Typography variant="h5" className={robotoCondensed.className}>Omitted Cards</Typography>
+                        <Typography variant="h5"><span className={robotoCondensed.className}>Omitted Cards</span></Typography>
                         <div style={{ maxHeight: 600, overflowY: 'scroll' }}>
                             {versions[version].omittedCards.length > 0 ? (
                                 versions[version].omittedCards.map(id => {
                                     const card = cards.cardsById[id];
                                     return (
-                                        <li key={id}>
+                                        <li key={id} className={robotoCondensed.className}>
                                             {card.displayName ? card.displayName : card.cardName} ({`${card.cardType === 'upgrade' ? card.upgradeSlots.map(upgrade => (upgrade)) : card.cardType}`})
                                         </li>
                                     );
                                 })
                             ) : (
-                                <Typography className={robotoCondensed.className}>None</Typography>
+                                <Typography><span className={robotoCondensed.className}>None</span></Typography>
                             )}
                         </div>
                     </Paper>
                     <Paper style={{ marginTop: 8, padding: 12 }} className={robotoCondensed.className}>
-                        <Typography variant="h5" className={robotoCondensed.className}>Point Changes</Typography>
+                        <Typography variant="h5"><span className={robotoCondensed.className}>Point Changes</span></Typography>
                         <div style={{ maxHeight: 600, overflowY: 'scroll' }}>
                             {Object.keys(versions[version].pointDeltas).length > 0 ? (
                                 Object.keys(versions[version].pointDeltas).map(id => {
                                     const card = cards.cardsById[id];
                                     return (
-                                        <li key={id}>
+                                        <li key={id} className={robotoCondensed.className}>
                                             {card.cardName} ({card.cardType}): {card.points} {'->'} {card.points + versions[version].pointDeltas[id]}
                                         </li>
                                     );
                                 })
                             ) : (
-                                <Typography className={robotoCondensed.className}>None</Typography>
+                                <Typography><span className={robotoCondensed.className}>None</span></Typography>
                             )}
                         </div>
                     </Paper>
