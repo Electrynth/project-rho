@@ -6,16 +6,20 @@ import robotoCondensed from 'config/font';
 import { Analytics } from '@vercel/analytics/react';
 import 'styles/globals.css'
 
+// <ThemeProvider theme={prefersDarkMode ? darkTheme : lightTheme}>
+
 function MyApp({ Component, pageProps }) {
     const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)');
     return (
-        <ThemeProvider theme={prefersDarkMode ? darkTheme : lightTheme}>
-            <CssBaseline />
-            <main className={robotoCondensed.className}>
-                <Analytics />
-                <Component {...pageProps} />
-            </main>
-        </ThemeProvider>
+        <>
+            <Analytics />
+                <ThemeProvider theme={darkTheme}>
+                    <CssBaseline />
+                    <main className={robotoCondensed.className}>
+                        <Component {...pageProps} />
+                    </main>
+                </ThemeProvider>
+        </>
     );
 }
 
