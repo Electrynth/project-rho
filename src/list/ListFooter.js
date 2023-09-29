@@ -71,7 +71,7 @@ function ListFooter({ generateExportedListText }) {
                             onClick={() => {
                                 navigator.clipboard.writeText(listText);
                                 setCopySuccess(true);
-                                setTimeout(() => setCopySuccess(false, 500));
+                                setTimeout(() => setCopySuccess(false), 500);
                             }}
                         >
                             <span className={robotoCondensed.className}>

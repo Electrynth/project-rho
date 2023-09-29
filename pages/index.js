@@ -41,6 +41,7 @@ export default function Home() {
           <Alert severity="info">
             <AlertTitle><span className={robotoCondensed.className}>Under Construction!</span></AlertTitle>
             <span className={robotoCondensed.className}>Major features coming soon:</span>
+            <li className={robotoCondensed.className}>Clicking on a card opens an expanded view of it</li>
             <li className={robotoCondensed.className}>Upgrade swap button</li>
             <li className={robotoCondensed.className}>Ship copy button</li>
             <li className={robotoCondensed.className}>List exporting</li>
