@@ -4722,7 +4722,7 @@
   },
   "nr": {
     "cardName": "Slaved Turrets",
-    "points": 5,
+    "points": 6,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [

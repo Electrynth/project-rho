@@ -72,7 +72,7 @@ export default function Home() {
               <DialogTitle><span className={robotoCondensed.className} style={{ fontSize: 24 }}>What is this?</span></DialogTitle>
               <DialogContent>
                 <DialogContentText>
-                  <span className={robotoCondensed.className} style={{ fontSize: 18 }}>This website is a (currently) untitled and unaffiliated list builder meant to be used to conveniently create lists for the Retcon Open tournament. It will be temporarily called Project Rho.</span>
+                  <span className={robotoCondensed.className} style={{ fontSize: 18 }}>This website is a (currently) untitled and unaffiliated list builder meant to be used to conveniently create lists for the Retcon Open tournament. It will be temporarily called Project Rho. The Retcon Open tournament rules are simple: No cards only found in wave 8.</span>
                 </DialogContentText>
                 <br />
                 <DialogContentText>

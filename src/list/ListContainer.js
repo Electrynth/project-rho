@@ -94,12 +94,13 @@ function ListContainer({
         lines.push(`Navigation: ${navigationObjectiveName}`);
         lines.push('');
 
+        //console.log(ships);
         ships.forEach(ship => {
             const shipCard = cards.cardsById[ship.id];
             let shipTotalPoints = shipCard.points;
             lines.push(`${shipCard.displayName ? shipCard.displayName : shipCard.cardName} (${shipCard.points})`);
             ship.upgradesEquipped.forEach(upgrade => {
-                if (upgrade.id) {
+                if (upgrade.id && cards.cardsById[upgrade.id]) {
                     const upgradeCard = cards.cardsById[upgrade.id];
                     shipTotalPoints += upgradeCard.points;
                     lines.push(`• ${upgradeCard.displayName ? upgradeCard.displayName : upgradeCard.cardName} (${upgradeCard.points})`);
@@ -270,8 +271,8 @@ function ListContainer({
             const upgrade = ship.upgradesEquipped[i];
             const upgradeId = upgrade.id;
             const upgradeCard = cards.cardsById[upgradeId];
-            if (upgradeId && upgradeCard.upgradeSlots.includes('commander')) setCommander('');
-            if (upgradeId && newUniques.indexOf(upgradeCard.displayName ? upgradeCard.displayName : upgradeCard.cardName) > -1) newUniques.splice(uniqueIdIndex, 1);
+            if (upgradeId && upgradeId !== true && upgradeCard.upgradeSlots.includes('commander')) setCommander('');
+            if (upgradeId && upgradeId !== true && newUniques.indexOf(upgradeCard.displayName ? upgradeCard.displayName : upgradeCard.cardName) > -1) newUniques.splice(uniqueIdIndex, 1);
         }
         const newShips = [...ships];
         newShips.splice(index, 1);

@@ -10,8 +10,8 @@ import versions from 'config/versions';
 
 
 function CardButton({ id, version, isDisabled, onClick, cardStyles = {} }) {
+    if (id === true) return undefined;
     const card = cards.cardsById[id];
-
     return (
         <Card
             sx={{ marginRight: 1, marginBottom: 1 }}
