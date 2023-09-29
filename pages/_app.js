@@ -12,8 +12,8 @@ function MyApp({ Component, pageProps }) {
         <ThemeProvider theme={prefersDarkMode ? darkTheme : lightTheme}>
             <CssBaseline />
             <main className={robotoCondensed.className}>
-                <Component {...pageProps} />
                 <Analytics />
+                <Component {...pageProps} />
             </main>
         </ThemeProvider>
     );
