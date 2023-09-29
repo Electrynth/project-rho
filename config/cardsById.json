@@ -41,7 +41,7 @@
     "faction": "separatists",
     "cardType": "ship",
     "shipSize": "small",
-    "points": 23,
+    "points": 27,
     "isUnique": false,
     "upgradeSlots": [
       "officer",
@@ -3819,7 +3819,7 @@
   },
   "le": {
     "cardName": "Ruthless Strategists",
-    "points": 5,
+    "points": 4,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
