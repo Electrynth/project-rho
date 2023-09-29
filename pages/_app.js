@@ -13,8 +13,8 @@ function MyApp({ Component, pageProps }) {
             <CssBaseline />
             <main className={robotoCondensed.className}>
                 <Component {...pageProps} />
+                <Analytics />
             </main>
-            <Analytics />
         </ThemeProvider>
     );
 }
