@@ -69,7 +69,7 @@ export default function Home() {
               <DialogTitle>What is this?</DialogTitle>
               <DialogContent>
                 <DialogContentText>
-                  This website is a list builder meant to be used to conveniently create lists for the Retcon Open tournament.
+                  This website is a currently untitled and unaffiliated (temporarily referred to has Project Rho) list builder meant to be used to conveniently create lists for the Retcon Open tournament.
                 </DialogContentText>
                 <br />
                 <DialogContentText>

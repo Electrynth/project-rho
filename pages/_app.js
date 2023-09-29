@@ -3,6 +3,7 @@ import { ThemeProvider, StylesProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import { lightTheme, darkTheme } from 'config/muiThemes';
 import robotoCondensed from 'config/font';
+import { Analytics } from '@vercel/analytics';
 import 'styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }) {
             <main className={robotoCondensed.className}>
                 <Component {...pageProps} />
             </main>
+            <Analytics />
         </ThemeProvider>
     );
 }
