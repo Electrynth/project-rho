@@ -49,12 +49,11 @@ function ObjectivesRow({
     yellowObjId,
     cardZoomClick
 }) {
-    if (!redObjId && !blueObjId && !yellowObjId) return undefined;
     return (
         <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
-            <CardButton version={version} id={redObjId} cardStyles={{ maxHeight: 240 }} />
-            <CardButton version={version} id={blueObjId} cardStyles={{ maxHeight: 240 }} />
-            <CardButton version={version} id={yellowObjId} cardStyles={{ maxHeight: 240 }} />
+            {redObjId && <CardButton version={version} id={redObjId} cardStyles={{ maxHeight: 240 }} />}
+            {blueObjId && <CardButton version={version} id={blueObjId} cardStyles={{ maxHeight: 240 }} />}
+            {yellowObjId && <CardButton version={version} id={yellowObjId} cardStyles={{ maxHeight: 240 }} />}
         </div>
     );
 }
