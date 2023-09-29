@@ -13,12 +13,12 @@ function MyApp({ Component, pageProps }) {
     return (
         <>
             <Analytics />
-                <ThemeProvider theme={darkTheme}>
-                    <CssBaseline />
-                    <main className={robotoCondensed.className}>
-                        <Component {...pageProps} />
-                    </main>
-                </ThemeProvider>
+            <ThemeProvider theme={darkTheme}>
+                <CssBaseline />
+                <main className={robotoCondensed.className}>
+                    <Component {...pageProps} />
+                </main>
+            </ThemeProvider>
         </>
     );
 }

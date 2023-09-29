@@ -1,0 +1,10 @@
+
+.rightPane {
+    background-color: #eee;
+}
+
+@media (prefers-color-scheme: dark) {
+    .rightPane {
+        background-color: #333;
+    }
+  }
