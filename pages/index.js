@@ -39,20 +39,22 @@ export default function Home() {
       </Head>
       <div style={{ padding: 20, display: 'flex', flexFlow: 'column nowrap', justifyContent: 'center', alignItems: 'center' }}>
           <Alert severity="info">
-            <AlertTitle><span className={robotoCondensed.className}>Under Construction!</span></AlertTitle>
-            <span className={robotoCondensed.className}>Major features coming soon:</span>
-            <li className={robotoCondensed.className}>Clicking on a card opens an expanded view of it</li>
-            <li className={robotoCondensed.className}>Upgrade swap button</li>
-            <li className={robotoCondensed.className}>Ship copy button</li>
-            <li className={robotoCondensed.className}>List exporting</li>
-            <li className={robotoCondensed.className}>Free user accounts to save lists</li>
-            <li className={robotoCondensed.className}>Various performance and quality of life enhancements</li>
-            <li className={robotoCondensed.className}>UI Tweaks</li>
+            <AlertTitle><span className={robotoCondensed.className} style={{ fontSize: 24 }}>Under Construction!</span></AlertTitle>
+            <span className={robotoCondensed.className} style={{ fontSize: 16 }}>
+              <span style={{ fontSize: 20 }}>Major features coming soon:</span>
+              <li>Clicking on a card opens an expanded view of it</li>
+              <li>Upgrade swap button</li>
+              <li>Ship copy button</li>
+              <li>List exporting</li>
+              <li>Free user accounts to save lists</li>
+              <li>Various performance and quality of life enhancements</li>
+              <li>UI Tweaks</li>
+            </span>
           </Alert>
           <div style={{ display: 'flex', flexFlow: 'row wrap', alignItems: 'center', marginTop: 18 }}>
             <Chip
               clickable
-              label={<span className={robotoCondensed.className}>What is this?</span>}
+              label={<span className={robotoCondensed.className} style={{ fontSize: 16 }}>What is this?</span>}
               className={robotoCondensed.className}
               onClick={() => setIsDialogOpen(true)}
             />
@@ -67,18 +69,18 @@ export default function Home() {
           <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
         </div>
         <Dialog onClose={() => setIsDialogOpen(false)} open={isDialogOpen}>
-              <DialogTitle><span className={robotoCondensed.className}>What is this?</span></DialogTitle>
+              <DialogTitle><span className={robotoCondensed.className} style={{ fontSize: 24 }}>What is this?</span></DialogTitle>
               <DialogContent>
                 <DialogContentText>
-                  <span className={robotoCondensed.className}>This website is a currently untitled and unaffiliated (temporarily referred to has Project Rho) list builder meant to be used to conveniently create lists for the Retcon Open tournament.</span>
+                  <span className={robotoCondensed.className} style={{ fontSize: 18 }}>This website is a currently untitled and unaffiliated (temporarily referred to has Project Rho) list builder meant to be used to conveniently create lists for the Retcon Open tournament.</span>
                 </DialogContentText>
                 <br />
                 <DialogContentText>
-                  <span className={robotoCondensed.className}>Questions, inquiries, feedback, bug reports, and feature requests may be emailed to <a style={{ color: 'blue' }} href="mailto:contact@legion-hq.com">contact@legion-hq.com</a> or may be sent in a direct message to nick on the Armada Hub discord server.</span>
+                  <span className={robotoCondensed.className} style={{ fontSize: 18 }}>Questions, inquiries, feedback, bug reports, and feature requests may be emailed to <a style={{ color: 'blue' }} href="mailto:contact@legion-hq.com">contact@legion-hq.com</a> or may be sent in a direct message to nick on the Armada Hub discord server.</span>
                 </DialogContentText>
                 <br />
                 <DialogContentText>
-                  <span className={robotoCondensed.className}>This website is an unofficial fan creation. All images, game symbols, and text is copyright Lucasfilm Ltd. and Fantasy Flight Games / Atomic Mass Games. This website is not affiliated or sponsored by Atomic Mass Games.</span>
+                  <span className={robotoCondensed.className} style={{ fontSize: 18 }}>This website is an unofficial fan creation. All images, game symbols, and text is copyright Lucasfilm Ltd. and Fantasy Flight Games / Atomic Mass Games. This website is not affiliated or sponsored by Atomic Mass Games.</span>
                 </DialogContentText>
               </DialogContent>
         </Dialog>
