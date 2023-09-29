@@ -14,7 +14,8 @@ function ListSquadrons({
     incrementSquadron,
     decrementSquadron,
     setEligibleSquadronsToAdd,
-    setEligibleSquadronsToSwap
+    setEligibleSquadronsToSwap,
+    handleSetZoomOnCard
 }) {
     return (
         <div style={{ display: 'flex', flexFlow: 'column' }}>
@@ -29,6 +30,7 @@ function ListSquadrons({
                     incrementSquadron={incrementSquadron}
                     decrementSquadron={decrementSquadron}
                     setEligibleSquadronsToSwap={setEligibleSquadronsToSwap}
+                    handleSetZoomOnCard={handleSetZoomOnCard}
                 />
             )}
             <Button

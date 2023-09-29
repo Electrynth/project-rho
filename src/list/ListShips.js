@@ -10,7 +10,8 @@ function ListShips({
     removeShip,
     removeUpgrade,
     setEligibleShipsToAdd,
-    setEligibleUpgradesToAdd
+    setEligibleUpgradesToAdd,
+    handleSetZoomOnCard
 }) {
     return (
         <div style={{ display: 'flex', flexFlow: 'column' }}>
@@ -25,6 +26,7 @@ function ListShips({
                     removeShip={removeShip}
                     removeUpgrade={removeUpgrade}
                     setEligibleUpgradesToAdd={setEligibleUpgradesToAdd}
+                    handleSetZoomOnCard={handleSetZoomOnCard}
                 />
             )}
             <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>

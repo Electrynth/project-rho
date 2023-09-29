@@ -15,7 +15,8 @@ function SquadronRow({
     removeSquadron,
     incrementSquadron,
     decrementSquadron,
-    setEligibleSquadronsToSwap
+    setEligibleSquadronsToSwap,
+    handleSetZoomOnCard
 }) {
     const squadronCard = cards.cardsById[squadron.id];
     const squadronPoints = squadronCard.points * squadron.count;
@@ -60,6 +61,7 @@ function SquadronRow({
                                 borderRadius: 5,
                                 marginRight: 8
                             }}
+                            onClick={() => handleSetZoomOnCard(squadronCard.id)}
                         >
                             <Search
                                 style={{ zIndex: 1, marginLeft: 30, marginTop: 10, position: 'absolute', cursor: 'pointer' }}

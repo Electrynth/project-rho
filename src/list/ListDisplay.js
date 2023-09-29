@@ -4,7 +4,7 @@ import {
 import CardButton from 'src/common/CardButton';
 import cards from 'config/cards.js';
 
-function ShipRows({ version, ships, cardZoomClick }) {
+function ShipRows({ version, ships, handleSetZoomOnCard }) {
     if (ships.length === 0) return undefined;
 
     return (
@@ -12,14 +12,14 @@ function ShipRows({ version, ships, cardZoomClick }) {
             {ships.map((ship) => {
                 const upgrades = ship.upgradesEquipped.map((upgrade) => {
                     if (upgrade.id && upgrade.id !== true) {
-                        return <CardButton version={version} id={upgrade.id} key={upgrade.id} cardStyles={{ maxHeight: 200 }} />
+                        return <CardButton version={version} id={upgrade.id} key={upgrade.id} cardStyles={{ maxHeight: 200 }} onClick={() => handleSetZoomOnCard(upgrade.id)} />
                     } else {
                         return undefined;
                     }
                 });
                 return (
                     <div key={ship.id} style={{ display: 'flex', flexFlow: 'row wrap' }}>
-                        <CardButton version={version} id={ship.id} cardStyles={{ maxHeight: 300 }} />
+                        <CardButton version={version} id={ship.id} cardStyles={{ maxHeight: 300 }} onClick={() => handleSetZoomOnCard(ship.id)} />
                         {upgrades}
                     </div>
                 );
@@ -29,13 +29,13 @@ function ShipRows({ version, ships, cardZoomClick }) {
     );
 }
 
-function SquadronsRow({ version, squadrons, cardZoomClick }) {
+function SquadronsRow({ version, squadrons, handleSetZoomOnCard }) {
     if (squadrons.length === 0 ) return undefined;
     return (
         <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
             {squadrons.map((squadron) => {
                 return (
-                    <CardButton version={version} id={squadron.id} key={squadron.id} cardStyles={{ maxHeight: 240 }} />
+                    <CardButton version={version} id={squadron.id} key={squadron.id} cardStyles={{ maxHeight: 240 }} onClick={() => handleSetZoomOnCard(squadron.id)} />
                 );
             })}
         </div>
@@ -47,13 +47,13 @@ function ObjectivesRow({
     redObjId,
     blueObjId,
     yellowObjId,
-    cardZoomClick
+    handleSetZoomOnCard
 }) {
     return (
         <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
-            {redObjId && <CardButton version={version} id={redObjId} cardStyles={{ maxHeight: 240 }} />}
-            {blueObjId && <CardButton version={version} id={blueObjId} cardStyles={{ maxHeight: 240 }} />}
-            {yellowObjId && <CardButton version={version} id={yellowObjId} cardStyles={{ maxHeight: 240 }} />}
+            {redObjId && <CardButton version={version} id={redObjId} cardStyles={{ maxHeight: 240 }} onClick={() => handleSetZoomOnCard(redObjId)} />}
+            {blueObjId && <CardButton version={version} id={blueObjId} cardStyles={{ maxHeight: 240 }} onClick={() => handleSetZoomOnCard(yellowObjId)} />}
+            {yellowObjId && <CardButton version={version} id={yellowObjId} cardStyles={{ maxHeight: 240 }} onClick={() => handleSetZoomOnCard(blueObjId)} />}
         </div>
     );
 }
@@ -65,23 +65,21 @@ function ListDisplay({
     redObjId,
     yellowObjId,
     blueObjId,
-    handleSetUserPrioAction = () => {}
+    handleSetUserPrioAction = () => {},
+    handleSetZoomOnCard
 }) {
 
-    const cardZoomClick = (id) => {
-        handleSetUserPrioAction('viewCard');
-    }
     return (
         <div style={{ display: 'flex', flexFlow: 'column nowrap' }}>
-            <ShipRows version={version} ships={ships} cardZoomClick={cardZoomClick} />
-            <SquadronsRow version={version} squadrons={squadrons} cardZoomClick={cardZoomClick} />
+            <ShipRows version={version} ships={ships} handleSetZoomOnCard={handleSetZoomOnCard} />
+            <SquadronsRow version={version} squadrons={squadrons} handleSetZoomOnCard={handleSetZoomOnCard} />
             <Divider style={{ marginBottom: 8 }} />
             <ObjectivesRow
                 version={version}
                 redObjId={redObjId}
                 blueObjId={blueObjId}
                 yellowObjId={yellowObjId}
-                cardZoomClick={cardZoomClick}
+                handleSetZoomOnCard={handleSetZoomOnCard}
             />
         </div>
     );

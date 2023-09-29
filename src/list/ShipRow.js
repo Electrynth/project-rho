@@ -7,7 +7,7 @@ import robotoCondensed from 'config/font';
 import versions from 'config/versions';
 import UpgradeIcon from 'src/common/UpgradeIcon';
 
-function ShipRow({ index, version = 1, ship, commander, removeShip, removeUpgrade, setEligibleUpgradesToAdd }) {
+function ShipRow({ index, version = 1, ship, commander, removeShip, removeUpgrade, setEligibleUpgradesToAdd, handleSetZoomOnCard }) {
     const shipCard = cards.cardsById[ship.id];
     let upgradePoints = 0;
 
@@ -54,6 +54,7 @@ function ShipRow({ index, version = 1, ship, commander, removeShip, removeUpgrad
                                 borderRadius: 5,
                                 marginRight: 8
                             }}
+                            onClick={() => handleSetZoomOnCard(shipCard.id)}
                         >
                             <Search
                                 style={{ zIndex: 1, marginLeft: 30, marginTop: 10, position: 'absolute', cursor: 'pointer' }}
@@ -137,6 +138,7 @@ function ShipRow({ index, version = 1, ship, commander, removeShip, removeUpgrad
                                                 borderRadius: 5,
                                                 marginRight: 8
                                             }}
+                                            onClick={() => handleSetZoomOnCard(upgradeCard.id)}
                                         >
                                             <Search
                                                 style={{ zIndex: 1, marginLeft: 20, marginTop: 10, position: 'absolute', cursor: 'pointer' }}

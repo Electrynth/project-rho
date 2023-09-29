@@ -3,7 +3,7 @@ import { Circle, SwapHoriz, Clear } from '@mui/icons-material';
 import cards from 'config/cards.js';
 import robotoCondensed from 'config/font';
 
-function ObjectiveButton({ children, iconStyle, cardId, setEligibleObjectiveToAdd, removeObjective }) {
+function ObjectiveButton({ children, iconStyle, cardId, setEligibleObjectiveToAdd, removeObjective, handleSetZoomOnCard }) {
     if (!cardId) {
         return (
             <Button
@@ -32,6 +32,7 @@ function ObjectiveButton({ children, iconStyle, cardId, setEligibleObjectiveToAd
                 disableRipple
                 disableElevation
                 style={{ justifyContent: 'flex-start' }}
+                onClick={() => handleSetZoomOnCard(cardId)}
             >
                 <div className={robotoCondensed.className} style={{ paddingTop: 2 }}>
                     {children}
@@ -42,7 +43,7 @@ function ObjectiveButton({ children, iconStyle, cardId, setEligibleObjectiveToAd
     );
 }
 
-function ListObjectives({ redObjId, yellowObjId, blueObjId, removeObjective, setEligibleObjectiveToAdd }) {
+function ListObjectives({ redObjId, yellowObjId, blueObjId, removeObjective, setEligibleObjectiveToAdd, handleSetZoomOnCard }) {
 
     return (
         <div style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'flex-start' }}>
@@ -51,6 +52,7 @@ function ListObjectives({ redObjId, yellowObjId, blueObjId, removeObjective, set
                 cardId={redObjId}
                 removeObjective={() => removeObjective('assault')}
                 setEligibleObjectiveToAdd={() => setEligibleObjectiveToAdd('assault')}
+                handleSetZoomOnCard={handleSetZoomOnCard}
             >
                 {redObjId ? cards.cardsById[redObjId].cardName : 'Add Assault Objective'}
             </ObjectiveButton>
@@ -59,6 +61,7 @@ function ListObjectives({ redObjId, yellowObjId, blueObjId, removeObjective, set
                 cardId={yellowObjId}
                 removeObjective={() => removeObjective('defense')}
                 setEligibleObjectiveToAdd={() => setEligibleObjectiveToAdd('defense')}
+                handleSetZoomOnCard={handleSetZoomOnCard}
             >
                 {yellowObjId ? cards.cardsById[yellowObjId].cardName : 'Add Defense Objective'}
             </ObjectiveButton>
@@ -67,6 +70,7 @@ function ListObjectives({ redObjId, yellowObjId, blueObjId, removeObjective, set
                 cardId={blueObjId}
                 removeObjective={() => removeObjective('navigation')}
                 setEligibleObjectiveToAdd={() => setEligibleObjectiveToAdd('navigation')}
+                handleSetZoomOnCard={handleSetZoomOnCard}
             >
                 {blueObjId ? cards.cardsById[blueObjId].cardName : 'Add Navigation Objective'}
             </ObjectiveButton>

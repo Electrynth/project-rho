@@ -1,9 +1,22 @@
 import { useState, useEffect } from 'react';
 import _ from 'lodash';
+import Image from 'next/image';
 import styles from 'styles/ListContainer.module.css';
 import robotoCondensed from 'config/font';
 import { useRouter } from 'next/router';
-import { Divider, Paper, IconButton, Typography, cardMediaClasses } from '@mui/material';
+import {
+    Divider,
+    Paper,
+    Button,
+    IconButton,
+    Typography,
+    cardMediaClasses,
+    Dialog,
+    DialogTitle,
+    DialogContent,
+    DialogContentText,
+    DialogActions
+} from '@mui/material';
 import Clear from '@mui/icons-material/Clear';
 import ListHeader from './ListHeader';
 import ListShips from './ListShips';
@@ -17,6 +30,7 @@ import versions from 'config/versions';
 import cards from 'config/cards.js';
 import { isUpgradeRequirementsMet } from 'src/utility';
 import { RefreshOutlined } from '@mui/icons-material';
+import { ClassNames } from '@emotion/react';
 
 const { cardsById } = cards;
 
@@ -35,8 +49,10 @@ function RightPaneHeader({ rightPaneText, isRightPaneFocused, handleSetRightPane
                 position: 'sticky',
             }}
         >
-            <Typography className={robotoCondensed.className}>
-                {rightPaneText ? rightPaneText : undefined}
+            <Typography>
+                <span className={robotoCondensed.className}>
+                    {rightPaneText ? rightPaneText : undefined}
+                </span>
             </Typography>
             <IconButton onClick={() => handleSetRightPaneFocus(false)}>
                 <Clear />
@@ -72,6 +88,8 @@ function ListContainer({
     const [cardComponentProps, setCardComponentProps] = useState([]);
     const [rightPaneText, setRightPaneText] = useState('');
     const [isCardPropsDelimited, setIsCardPropsDelimited] = useState(false);
+
+    const [zoomDialogCard, setZoomDialogCard] = useState();
 
     const handleSetTitleFromEvent = (event) => setTitle(event.target.value);
     const handleSetVersionFromEvent = (event) => setVersion(event.target.value);
@@ -111,7 +129,7 @@ function ListContainer({
         lines.push('');
 
         lines.push('Squadrons:');
-        console.log(squadrons);
+
         let totalSquadronPoints = 0;
         squadrons.forEach(squadron => {
             if (squadron.id) {
@@ -549,6 +567,7 @@ function ListContainer({
                     removeUpgrade={removeUpgrade}
                     setEligibleShipsToAdd={setEligibleShipsToAdd}
                     setEligibleUpgradesToAdd={setEligibleUpgradesToAdd}
+                    handleSetZoomOnCard={(id) => setZoomDialogCard(id)}
                 />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListSquadrons
@@ -561,6 +580,7 @@ function ListContainer({
                     removeSquadron={removeSquadron}
                     setEligibleSquadronsToSwap={setEligibleSquadronsToSwap}
                     setEligibleSquadronsToAdd={setEligibleSquadronsToAdd}
+                    handleSetZoomOnCard={(id) => setZoomDialogCard(id)}
                 />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListObjectives
@@ -570,6 +590,7 @@ function ListContainer({
                     addObjective={addObjective}
                     removeObjective={removeObjective}
                     setEligibleObjectiveToAdd={setEligibleObjectiveToAdd}
+                    handleSetZoomOnCard={(id) => setZoomDialogCard(id)}
                 />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListFooter
@@ -607,9 +628,32 @@ function ListContainer({
                         redObjId={redObjId}
                         yellowObjId={yellowObjId}
                         blueObjId={blueObjId}
+                        handleSetZoomOnCard={(id) => setZoomDialogCard(id)}
                     />
                 )}
             </div>
+            <Dialog open={Boolean(zoomDialogCard)} onClose={() => setZoomDialogCard()}>
+                <DialogTitle>
+                    <span className={robotoCondensed.className}>
+                        {zoomDialogCard && (cards.cardsById[zoomDialogCard].displayName ? cards.cardsById[zoomDialogCard].displayName : cards.cardsById[zoomDialogCard].cardName)}
+                    </span>
+                </DialogTitle>
+                <DialogContent>
+                    {zoomDialogCard ? (
+                        <Image
+                            src={cards.getCardImageUrl(cards.cardsById[zoomDialogCard].cardName, cards.cardsById[zoomDialogCard].cardType)}
+                            width={400}
+                            height={cards.cardsById[zoomDialogCard].cardType === 'ship' ? 688 : 556}
+                            alt={cards.cardsById[zoomDialogCard].cardName}
+                        />
+                    ) : undefined}
+                </DialogContent>
+                <DialogActions>
+                    <Button color="secondary" size="large" onClick={() => setZoomDialogCard()}>
+                        <span className={robotoCondensed.className}>Back</span>
+                    </Button>
+                </DialogActions>
+            </Dialog>
         </div>
     );
 }

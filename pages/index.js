@@ -34,7 +34,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Project Rho</title>
-        <meta name="description" content="Armada list builder" />
+        <meta name="description" content="Star Wars: Armada list builder" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div style={{ padding: 20, display: 'flex', flexFlow: 'column nowrap', justifyContent: 'center', alignItems: 'center' }}>
@@ -42,7 +42,6 @@ export default function Home() {
             <AlertTitle sx={{ fontSize: 18 }}><span className={robotoCondensed.className}>Under Construction!</span></AlertTitle>
             <span style={{ fontSize: 16 }}>
               <span className={robotoCondensed.className} style={{ fontSize: 18 }}>Major features coming soon:</span>
-              <li className={robotoCondensed.className}>Clicking on a card opens an expanded view of it</li>
               <li className={robotoCondensed.className}>Upgrade swap button</li>
               <li className={robotoCondensed.className}>Ship copy button</li>
               <li className={robotoCondensed.className}>List exporting</li>
