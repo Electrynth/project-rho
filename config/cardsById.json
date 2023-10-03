@@ -5719,6 +5719,7 @@
     "upgradeSlots": [
       "title"
     ],
+    "addsUpgradeSlot": "fleet support",
     "requirements": [
       {
         "cardName": "Consular"
@@ -6933,5 +6934,44 @@
     ],
     "cardType": "squadron",
     "id": "ta"
+  },
+  "tb": {
+    "cardName": "B2 Rocket Troopers",
+    "points": 7,
+    "isUnique": false,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "tb",
+    "cardType": "upgrade"
+  },
+  "tc": {
+    "cardName": "Hyperwave Signal Boost",
+    "points": 3,
+    "isUnique": false,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "offensive retrofit"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "tc",
+    "cardType": "upgrade"
+  },
+  "td": {
+    "cardName": "Battle Droid Reserves",
+    "points": 4,
+    "isUnique": false,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "support team"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "td",
+    "cardType": "upgrade"
   }
 }
