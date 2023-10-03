@@ -5,7 +5,7 @@ import Dialog from '@mui/material/Dialog';
 import DialogTitle from '@mui/material/DialogTitle';
 import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
-import { IconButton, Divider, Chip, Alert, AlertTitle, Typography } from '@mui/material';
+import { IconButton, Divider, Chip, Alert, AlertTitle } from '@mui/material';
 import FactionIcon from 'src/common/FactionIcon';
 import robotoCondensed from 'config/font';
 
@@ -24,11 +24,8 @@ function FactionLinkButton({ faction }) {
 }
 
 export default function Home() {
-  const [dialogHeader, setDialogHeader] = useState('');
-  const [dialogBody, setDialogBody] = useState('');
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
-  const handleOpen = () => setIsDialogOpen(true);
-  const handleClose = () => setIsDialogOpen(false);
+  const [isAboutUsDialogOpen, setIsAboutUsDialogOpen] = useState(false);
+  const [isContactDialogOpen, setIsContactDialogOpen] = useState(false);
 
   return (
     <div>
@@ -55,7 +52,7 @@ export default function Home() {
               clickable
               label={<span className={robotoCondensed.className} style={{ fontSize: 16 }}>What is this?</span>}
               className={robotoCondensed.className}
-              onClick={() => setIsDialogOpen(true)}
+              onClick={() => setIsAboutUsDialogOpen(true)}
             />
           </div>
           <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
@@ -66,22 +63,32 @@ export default function Home() {
               <FactionLinkButton faction="separatists" />
           </div>
           <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
+          <Chip
+              clickable
+              label={<span className={robotoCondensed.className} style={{ fontSize: 16 }}>Contact Us</span>}
+              className={robotoCondensed.className}
+              onClick={() => setIsContactDialogOpen(true)}
+            />
         </div>
-        <Dialog onClose={() => setIsDialogOpen(false)} open={isDialogOpen}>
-              <DialogTitle><span className={robotoCondensed.className} style={{ fontSize: 24 }}>What is this?</span></DialogTitle>
-              <DialogContent>
-                <DialogContentText>
-                  <span className={robotoCondensed.className} style={{ fontSize: 18 }}>This website is a (currently) untitled and unaffiliated list builder meant to be used to conveniently create lists for the Retcon Open tournament. It will be temporarily called Project Rho. The Retcon Open tournament rules are simple: No cards only found in wave 8.</span>
-                </DialogContentText>
-                <br />
-                <DialogContentText>
-                  <span className={robotoCondensed.className} style={{ fontSize: 18 }}>Questions, inquiries, feedback, bug reports, and feature requests may be emailed to <a style={{ color: '#a5d6ff' }} href="mailto:contact@legion-hq.com">contact@legion-hq.com</a> or may be sent in a direct message to nick on the Armada Hub discord server.</span>
-                </DialogContentText>
-                <br />
-                <DialogContentText>
-                  <span className={robotoCondensed.className} style={{ fontSize: 18 }}>This website is an unofficial fan creation. All images, game symbols, and text is copyright Lucasfilm Ltd. and Fantasy Flight Games / Atomic Mass Games. This website is not affiliated or sponsored by Atomic Mass Games.</span>
-                </DialogContentText>
-              </DialogContent>
+        <Dialog onClose={() => setIsAboutUsDialogOpen(false)} open={isAboutUsDialogOpen}>
+            <DialogTitle><span className={robotoCondensed.className} style={{ fontSize: 24 }}>What is this?</span></DialogTitle>
+            <DialogContent>
+              <DialogContentText>
+                <span className={robotoCondensed.className} style={{ fontSize: 18 }}>This website is a (currently) untitled and unaffiliated list builder meant to be used to conveniently create lists for the Retcon Open tournament. It will be temporarily called Project Rho. The Retcon Open tournament rules are simple: No cards only found in wave 8.</span>
+              </DialogContentText>
+              <br />
+              <DialogContentText>
+                <span className={robotoCondensed.className} style={{ fontSize: 18 }}>This website is an unofficial fan creation. All images, game symbols, and text is copyright Lucasfilm Ltd. and Fantasy Flight Games / Atomic Mass Games. This website is not affiliated or sponsored by Atomic Mass Games.</span>
+              </DialogContentText>
+            </DialogContent>
+        </Dialog>
+        <Dialog onClose={() => setIsContactDialogOpen(false)} open={isContactDialogOpen}>
+            <DialogTitle><span className={robotoCondensed.className} style={{ fontSize: 24 }}>Contact Us</span></DialogTitle>
+            <DialogContent>
+              <DialogContentText>
+              <span className={robotoCondensed.className} style={{ fontSize: 18 }}>Questions, inquiries, feedback, bug reports, and feature requests may be emailed to <a style={{ color: '#a5d6ff' }} href="mailto:contact@legion-hq.com">contact@legion-hq.com</a> or may be sent in a direct message to nick on the Armada Hub discord server.</span>
+              </DialogContentText>
+            </DialogContent>
         </Dialog>
     </div>
   )
