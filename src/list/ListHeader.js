@@ -79,8 +79,8 @@ function ListHeader({
                             ))}
                         </Select>
                     </FormControl>
-                    <Paper style={{ marginTop: 8, padding: 12 }} className={robotoCondensed.className}>
-                        <Typography variant="h5" className={robotoCondensed.className}>Description</Typography>
+                    <Paper style={{ marginTop: 8, padding: 12 }}>
+                        <Typography variant="h5"><span className={robotoCondensed.className}>Description</span></Typography>
                         <div style={{ maxHeight: 600, overflowY: 'scroll' }}>
                             {versions[version].description ? (
                                 <Typography><span className={robotoCondensed.className}>{versions[version].description}</span></Typography>

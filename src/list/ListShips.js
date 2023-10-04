@@ -8,25 +8,30 @@ function ListShips({
     commander,
     shipPoints,
     removeShip,
+    copyShip,
     removeUpgrade,
     setEligibleShipsToAdd,
     setEligibleUpgradesToAdd,
-    handleSetZoomOnCard
+    handleSetZoomOnCard,
+    shiftShipInList
 }) {
     return (
         <div style={{ display: 'flex', flexFlow: 'column' }}>
             {ships.map((ship, index) =>
                 <ShipRow
                     version={version}
-                    key={ship.id}
+                    key={`${ship.id}_${index}`}
                     ship={ship}
                     commander={commander}
                     index={index}
+                    ships={ships}
+                    copyShip={copyShip}
                     shipPoints={shipPoints}
                     removeShip={removeShip}
                     removeUpgrade={removeUpgrade}
                     setEligibleUpgradesToAdd={setEligibleUpgradesToAdd}
                     handleSetZoomOnCard={handleSetZoomOnCard}
+                    shiftShipInList={shiftShipInList}
                 />
             )}
             <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>

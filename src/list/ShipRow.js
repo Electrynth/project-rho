@@ -1,13 +1,33 @@
 import Image from 'next/image';
 import { Button, Divider } from '@mui/material';
-import { Add, ContentCopy, Search, Clear, SwapHoriz } from '@mui/icons-material';
+import {
+    Add,
+    ContentCopy,
+    Search,
+    Clear,
+    SwapHoriz,
+    KeyboardArrowUp,
+    KeyboardArrowDown
+} from '@mui/icons-material';
 import DualHoverButton from 'src/common/DualHoverButton';
 import cards from 'config/cards';
 import robotoCondensed from 'config/font';
 import versions from 'config/versions';
 import UpgradeIcon from 'src/common/UpgradeIcon';
 
-function ShipRow({ index, version = 1, ship, commander, removeShip, removeUpgrade, setEligibleUpgradesToAdd, handleSetZoomOnCard }) {
+function ShipRow({
+    index,
+    version = 1,
+    ship,
+    ships,
+    commander,
+    removeShip,
+    copyShip,
+    removeUpgrade,
+    setEligibleUpgradesToAdd,
+    handleSetZoomOnCard,
+    shiftShipInList
+}) {
     const shipCard = cards.cardsById[ship.id];
     let upgradePoints = 0;
 
@@ -16,7 +36,7 @@ function ShipRow({ index, version = 1, ship, commander, removeShip, removeUpgrad
         if (upgrade.id && upgrade.id !== true) upgradePoints += cards.cardsById[upgrade.id].points;
     }
     return (
-        <div style={{ display: 'flex', flexFlow: 'column nowrap' }}>
+        <div style={{ display: 'flex', flexFlow: 'column nowrap', position: 'relative' }}>
             <DualHoverButton
                 buttonActions={(
                     <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
@@ -70,9 +90,24 @@ function ShipRow({ index, version = 1, ship, commander, removeShip, removeUpgrad
                         <div style={{ fontWeight: 300 }}>{shipCard.displayName ? shipCard.displayName : shipCard.cardName}</div>
                         <span style={{ flexGrow: 1 }} />
                         <div style={{ marginRight: 2, display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
+                            {index > 0 && (
+                                <KeyboardArrowUp
+                                    fontSize="small"
+                                    style={{ marginRight: 2, cursor: 'pointer' }}
+                                    onClick={() => shiftShipInList(index, -1)}
+                                />
+                            )}
+                            {index < ships.length && (
+                                <KeyboardArrowDown
+                                    fontSize="small"
+                                    style={{ marginRight: 2, cursor: 'pointer' }}
+                                    onClick={() => shiftShipInList(index, 1)}
+                                />
+                            )}
                             <ContentCopy
                                 fontSize="small"
                                 style={{ marginRight: 4, cursor: 'pointer' }}
+                                onClick={() => copyShip(index)}
                             />
                             <Clear
                                 onClick={() => removeShip(index)}

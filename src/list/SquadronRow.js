@@ -1,7 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
 import { Button, Divider } from '@mui/material';
-import { Add, Remove, SwapHoriz, Search, Clear } from '@mui/icons-material';
+import {
+    Add,
+    Remove,
+    SwapHoriz,
+    Search,
+    Clear,
+    KeyboardArrowDown,
+    KeyboardArrowUp
+} from '@mui/icons-material';
 import DualHoverButton from 'src/common/DualHoverButton';
 import cards from 'config/cards';
 import versions from 'config/versions';
@@ -16,7 +24,8 @@ function SquadronRow({
     incrementSquadron,
     decrementSquadron,
     setEligibleSquadronsToSwap,
-    handleSetZoomOnCard
+    handleSetZoomOnCard,
+    shiftSquadronInList
 }) {
     const squadronCard = cards.cardsById[squadron.id];
     const squadronPoints = squadronCard.points * squadron.count;
@@ -79,6 +88,14 @@ function SquadronRow({
                         </div>
                         <span style={{ flexGrow: 1 }} />
                         <div style={{ marginRight: 2, display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
+                            <KeyboardArrowUp
+                                style={{ marginRight: 4, cursor: 'pointer' }}
+                                onClick={() => shiftSquadronInList(index, -1)}
+                            />
+                            <KeyboardArrowDown
+                                style={{ marginRight: 4, cursor: 'pointer' }}
+                                onClick={() => shiftSquadronInList(index, 1)}
+                            />
                             {squadronCard.isUnique ? (
                                 undefined
                             ) : (

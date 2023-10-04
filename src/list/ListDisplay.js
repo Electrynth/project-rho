@@ -9,7 +9,7 @@ function ShipRows({ version, ships, handleSetZoomOnCard }) {
 
     return (
         <div>
-            {ships.map((ship) => {
+            {ships.map((ship, index) => {
                 const upgrades = ship.upgradesEquipped.map((upgrade) => {
                     if (upgrade.id && upgrade.id !== true) {
                         return <CardButton version={version} id={upgrade.id} key={upgrade.id} cardStyles={{ maxHeight: 200 }} onClick={() => handleSetZoomOnCard(upgrade.id)} />
@@ -18,7 +18,7 @@ function ShipRows({ version, ships, handleSetZoomOnCard }) {
                     }
                 });
                 return (
-                    <div key={ship.id} style={{ display: 'flex', flexFlow: 'row wrap' }}>
+                    <div key={`${ship.id}_${index}`} style={{ display: 'flex', flexFlow: 'row wrap' }}>
                         <CardButton version={version} id={ship.id} cardStyles={{ maxHeight: 300 }} onClick={() => handleSetZoomOnCard(ship.id)} />
                         {upgrades}
                     </div>

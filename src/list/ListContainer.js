@@ -29,8 +29,6 @@ import CardButton from 'src/common/CardButton';
 import versions from 'config/versions';
 import cards from 'config/cards.js';
 import { isUpgradeRequirementsMet } from 'src/utility';
-import { RefreshOutlined } from '@mui/icons-material';
-import { ClassNames } from '@emotion/react';
 
 const { cardsById } = cards;
 
@@ -124,6 +122,7 @@ function ListContainer({
                 }
             });
             lines.push(`= ${shipTotalPoints} Points`);
+            lines.push('');
             totalListPoints += shipTotalPoints;
         });
         lines.push('');
@@ -151,6 +150,22 @@ function ListContainer({
         return lines.join('\n');
     }
 
+    const copyShip = (index) => {
+        const ship = ships[index];
+        const newShip = { id: ship.id, hasModification: false };
+        newShip.upgradesEquipped = ship.upgradesEquipped.map(upgrade => {
+            const upgradeCard = cards.cardsById[upgrade.id];
+            if (upgradeCard && upgradeCard.isModification) newShip.hasModification = true;
+            return {
+                id: (upgradeCard && !upgradeCard.isUnique) ? upgrade.id : undefined,
+                upgradeType: upgrade.upgradeType
+            };
+        });
+        let newShips = [...ships];
+        newShips.splice(index + 1, 0, newShip);
+        setShips([...newShips]);
+    }
+
     const addShip = (id) => {
         const newShip = { id };
         const card = cards.cardsById[id];
@@ -162,6 +177,18 @@ function ListContainer({
         setCardComponentProps([]);
         setRightPaneText('');
     }
+
+    const shiftShipInList = (index, shiftValue) => {
+        const newShips = [...ships];
+        if (shiftValue > 0 && index + 1 < ships.length) {
+            [newShips[index], newShips[index + 1]] = [newShips[index + 1], newShips[index]];
+        } else if (shiftValue < 0 && index - 1 > -1) {
+            [newShips[index - 1], newShips[index]] = [newShips[index], newShips[index - 1]];
+        }
+
+        setShips([...newShips]);
+    }
+
     const addUpgrade = (shipIndex, upgradeIndex, id) => {
         const newShips = [...ships];
         const newShip = newShips[shipIndex];
@@ -226,6 +253,17 @@ function ListContainer({
         setCardComponentProps([]);
         setRightPaneText('');
         setIsCardPropsDelimited(false);
+    }
+
+    const shiftSquadronInList = (index, shiftValue) => {
+        const newSquadrons = [...squadrons];
+        if (shiftValue > 0 && index + 1 < squadrons.length) {
+            [newSquadrons[index], newSquadrons[index + 1]] = [newSquadrons[index + 1], newSquadrons[index]];
+        } else if (shiftValue < 0 && index - 1 > -1) {
+            [newSquadrons[index - 1], newSquadrons[index]] = [newSquadrons[index], newSquadrons[index - 1]];
+        }
+
+        setSquadrons([...newSquadrons]);
     }
 
     const swapSquadron = (index, id) => {
@@ -564,10 +602,12 @@ function ListContainer({
                     ships={ships}
                     shipPoints={shipPoints}
                     removeShip={removeShip}
+                    copyShip={copyShip}
                     removeUpgrade={removeUpgrade}
                     setEligibleShipsToAdd={setEligibleShipsToAdd}
                     setEligibleUpgradesToAdd={setEligibleUpgradesToAdd}
                     handleSetZoomOnCard={(id) => setZoomDialogCard(id)}
+                    shiftShipInList={shiftShipInList}
                 />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListSquadrons
@@ -581,6 +621,7 @@ function ListContainer({
                     setEligibleSquadronsToSwap={setEligibleSquadronsToSwap}
                     setEligibleSquadronsToAdd={setEligibleSquadronsToAdd}
                     handleSetZoomOnCard={(id) => setZoomDialogCard(id)}
+                    shiftSquadronInList={shiftSquadronInList}
                 />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListObjectives
