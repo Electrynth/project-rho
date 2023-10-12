@@ -52,7 +52,7 @@ function SquadronRow({
                             />
                         </div>
                         <div style={{ fontWeight: 300 }}>
-                            {squadron.count > 1 ? `${squadron.count} × ${squadronCard.cardName}` : squadronCard.cardName}
+                            {squadron.count > 1 ? `${squadron.count} × ` : ''}{squadronCard.displayName ? squadronCard.displayName : squadronCard.cardName}
                         </div>
                         <span style={{ flexGrow: 1 }} />
                         <div style={{ marginRight: 8 }}>
@@ -84,7 +84,7 @@ function SquadronRow({
                             />
                         </div>
                         <div style={{ fontWeight: 300 }}>
-                        {squadron.count > 1 ? `${squadron.count} × ${squadronCard.cardName}` : squadronCard.cardName}
+                        {squadron.count > 1 ? `${squadron.count} × ` : ''}{squadronCard.displayName ? squadronCard.displayName : squadronCard.cardName}
                         </div>
                         <span style={{ flexGrow: 1 }} />
                         <div style={{ marginRight: 2, display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>

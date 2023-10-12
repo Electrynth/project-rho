@@ -1475,7 +1475,7 @@
     "id": "dy"
   },
   "dz": {
-    "displayName": "Hera Syndulla",
+    "displayName": "Hera Syndulla (Ghost)",
     "cardName": "Hera Syndulla Ghost",
     "faction": "rebels",
     "points": 28,
@@ -1488,7 +1488,7 @@
     "id": "dz"
   },
   "ea": {
-    "displayName": "Hera Syndulla",
+    "displayName": "Hera Syndulla (X-Wing)",
     "cardName": "Hera Syndulla X-Wing",
     "faction": "rebels",
     "points": 23,
@@ -2144,7 +2144,7 @@
     "id": "gc"
   },
   "gd": {
-    "displayName": "Darth Vader",
+    "displayName": "Darth Vader (TIE Advanced)",
     "cardName": "Darth Vader TIE Advanced",
     "faction": "empire",
     "points": 21,
@@ -2156,7 +2156,7 @@
     "id": "gd"
   },
   "ge": {
-    "displayName": "Darth Vader",
+    "displayName": "Darth Vader (TIE Defender)",
     "cardName": "Darth Vader TIE Defender",
     "faction": "empire",
     "points": 25,
@@ -2801,6 +2801,7 @@
     "cardType": "upgrade"
   },
   "ie": {
+    "displayName": "Kyrsta Agate",
     "cardName": "Kyrsta Agate Admiral",
     "points": 25,
     "isUnique": true,
