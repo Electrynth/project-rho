@@ -156,7 +156,7 @@ function ShipRow({
                                                 style={{ margin: '-75px 0px 0px -60px', transform: 'scale(0.45)' }}
                                             />
                                         </div>
-                                        <div style={{ fontWeight: 300 }}>{upgradeCard.cardName}</div>
+                                        <div style={{ fontWeight: 300 }}>{upgradeCard.displayName ? upgradeCard.displayName : upgradeCard.cardName}</div>
                                         <span style={{ flexGrow: 1 }} />
                                         <div style={{ marginRight: 8 }}>
                                             {upgradeCard.id in versions[version].pointDeltas ? upgradeCard.points + versions[version].pointDeltas[upgradeCard.id] : upgradeCard.points}
