@@ -6901,6 +6901,7 @@
     "cardType": "upgrade"
   },
   "sy": {
+    "displayName": "\"Matchstick\"",
     "cardName": "Matchstick",
     "faction": "republic",
     "points": 16,

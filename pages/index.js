@@ -40,8 +40,6 @@ export default function Home() {
             <span style={{ fontSize: 16 }}>
               <span className={robotoCondensed.className} style={{ fontSize: 18 }}>Major features coming soon:</span>
               <li className={robotoCondensed.className}>Upgrade swap button</li>
-              <li className={robotoCondensed.className}>Ship copy button</li>
-              <li className={robotoCondensed.className}>List exporting</li>
               <li className={robotoCondensed.className}>Free user accounts to save lists</li>
               <li className={robotoCondensed.className}>Various performance and quality of life enhancements</li>
               <li className={robotoCondensed.className}>UI Tweaks</li>
