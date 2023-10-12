@@ -581,7 +581,7 @@ function ListContainer({
 
             if (card.faction !== '' && card.faction !== faction) continue;
             if (!card.upgradeSlots.includes(upgradeType)) continue;
-            if (!isUpgradeRequirementsMet(card.requirements, { ...shipCard, faction, flagship: true })) continue;
+            if (!isUpgradeRequirementsMet(card.requirements, { ...shipCard, faction, flagship: ships[shipIndex].flagship ? ships[shipIndex].flagship : false })) continue;
             if (card.upgradeSlots.length > 1 && !(openUpgradeSlots['weapons team'] > 0 && openUpgradeSlots['offensive retrofit'] > 0)) continue;
             if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
             let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.displayName ? card.displayName : card.cardName);
