@@ -663,7 +663,7 @@
     "id": "bj"
   },
   "bk": {
-    "displayName": "Modified Pelta Command Ship",
+    "displayName": "Pelta Command Ship",
     "cardName": "Modified Pelta-class Command Ship",
     "faction": "rebels",
     "cardType": "ship",
@@ -700,7 +700,7 @@
     "id": "bl"
   },
   "bm": {
-    "displayName": "Modified Pelta Assault Ship",
+    "displayName": "Pelta Assault Ship",
     "cardName": "Modified Pelta-class Assault Ship",
     "faction": "rebels",
     "cardType": "ship",
@@ -6976,5 +6976,17 @@
     "isModification": false,
     "id": "td",
     "cardType": "upgrade"
+  },
+  "te": {
+    "cardName": "Vult Skerris",
+    "faction": "empire",
+    "points": 18,
+    "isUnique": true,
+    "keywords": [
+      "Counter",
+      "Swarm"
+    ],
+    "cardType": "squadron",
+    "id": "te"
   }
 }
