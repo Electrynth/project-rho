@@ -1054,7 +1054,7 @@
     "faction": "empire",
     "cardType": "ship",
     "shipSize": "large",
-    "points": 96,
+    "points": 116,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -1112,7 +1112,7 @@
     "faction": "empire",
     "cardType": "ship",
     "shipSize": "large",
-    "points": 110,
+    "points": 120,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -2802,7 +2802,7 @@
   },
   "ie": {
     "cardName": "Kyrsta Agate",
-    "points": 20,
+    "points": 25,
     "isUnique": true,
     "faction": "rebels",
     "upgradeSlots": [
@@ -2947,7 +2947,7 @@
   },
   "ip": {
     "cardName": "General Romodi",
-    "points": 20,
+    "points": 28,
     "isUnique": true,
     "faction": "empire",
     "upgradeSlots": [
@@ -3702,7 +3702,7 @@
   },
   "kv": {
     "cardName": "Wat Tambor",
-    "points": 5,
+    "points": 9,
     "isUnique": true,
     "faction": "separatists",
     "upgradeSlots": [
@@ -6015,7 +6015,7 @@
   },
   "qn": {
     "cardName": "Tranquility",
-    "points": 3,
+    "points": 7,
     "isUnique": true,
     "faction": "republic",
     "upgradeSlots": [
@@ -6078,6 +6078,7 @@
         "cardName": "Nebulon"
       }
     ],
+    "addsUpgradeSlot": "weapons team",
     "id": "qq",
     "cardType": "upgrade"
   },
@@ -6888,7 +6889,7 @@
   "sx": {
     "displayName": "Anakin Skywalker",
     "cardName": "Anakin Skywalker Admiral",
-    "points": 29,
+    "points": 31,
     "isUnique": true,
     "faction": "republic",
     "upgradeSlots": [
@@ -6902,7 +6903,7 @@
   "sy": {
     "cardName": "Matchstick",
     "faction": "republic",
-    "points": 14,
+    "points": 16,
     "isUnique": true,
     "keywords": [
       "Bomber"
@@ -6926,11 +6927,12 @@
   "ta": {
     "cardName": "Wat Tambor",
     "faction": "separatists",
-    "points": 20,
+    "points": 18,
     "isUnique": true,
     "keywords": [
       "Escort",
-      "Screen"
+      "Screen",
+      "Relay"
     ],
     "cardType": "squadron",
     "id": "ta"
