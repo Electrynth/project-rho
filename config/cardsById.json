@@ -3414,7 +3414,8 @@
     "cardType": "upgrade"
   },
   "jz": {
-    "cardName": "General Draven",
+    "displayName": "General Draven",
+    "cardName": "General Draven Officer",
     "points": 3,
     "isUnique": true,
     "faction": "rebels",
@@ -6862,7 +6863,7 @@
     "id": "su"
   },
   "sv": {
-    "cardName": "General Draven Admiral",
+    "cardName": "General Draven",
     "points": 28,
     "isUnique": true,
     "faction": "rebels",
