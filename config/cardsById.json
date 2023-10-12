@@ -4037,6 +4037,7 @@
     "upgradeSlots": [
       "offensive retrofit"
     ],
+    "addsUpgradeSlot": "fleet command",
     "requirements": [
       "AND",
       {

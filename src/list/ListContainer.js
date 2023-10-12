@@ -312,7 +312,10 @@ function ListContainer({
         const upgradeCard = cards.cardsById[id];
 
         if (upgradeCard.isUnique) setUniques([...uniques, upgradeCard.displayName ? upgradeCard.displayName : upgradeCard.cardName]);
-        if (upgradeCard.upgradeSlots.includes('commander')) setCommander(id);
+        if (upgradeCard.upgradeSlots.includes('commander')) {
+            setCommander(id);
+            newShip.flagship = true;
+        }
         if (upgradeCard.isModification) newShip.hasModification = true;
         if (upgradeCard.upgradeSlots.length > 1) {
             const upgradeSlotDict = {};
@@ -463,7 +466,10 @@ function ListContainer({
         const uniqueIdIndex = uniques.indexOf(upgradeCard.displayName ? upgradeCard.displayName : upgradeCard.cardName);
         if (upgradeCard.isModification) newShip.hasModification = false;
         if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
-        if (upgradeCard.upgradeSlots.includes('commander')) setCommander('');
+        if (upgradeCard.upgradeSlots.includes('commander')) {
+            setCommander('');
+            newShip.flagship = false;
+        }
         if (upgradeCard.upgradeSlots.length > 1) {
             for (let i = 0; i < Object.keys(upgrade.upgradeSlotDict).length; i++) {
                 const key = Object.keys(upgrade.upgradeSlotDict)[i];
@@ -572,9 +578,10 @@ function ListContainer({
         for (let i = 0; i < cards.upgradeIdList.length; i++) {
             const id = cards.upgradeIdList[i];
             const card = cards.cardsById[id];
+
             if (card.faction !== '' && card.faction !== faction) continue;
             if (!card.upgradeSlots.includes(upgradeType)) continue;
-            if (!isUpgradeRequirementsMet(card.requirements, { ...shipCard, faction })) continue;
+            if (!isUpgradeRequirementsMet(card.requirements, { ...shipCard, faction, flagship: true })) continue;
             if (card.upgradeSlots.length > 1 && !(openUpgradeSlots['weapons team'] > 0 && openUpgradeSlots['offensive retrofit'] > 0)) continue;
             if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
             let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.displayName ? card.displayName : card.cardName);
@@ -700,8 +707,6 @@ function ListContainer({
         }
     }
 
-
-    console.log(primaryPaneStyles);
     return (
         <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
             <div style={{ ...primaryPaneStyles }}>
