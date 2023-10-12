@@ -1,12 +1,16 @@
 import { useState, useMemo } from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
 import { useRouter } from 'next/router';
 import { Box, Button, IconButton, Dialog, DialogTitle, DialogContent, DialogActions, TextField } from '@mui/material';
-import { Print, OpenInNew, FileCopy, Delete } from '@mui/icons-material';
+import { Print, OpenInNew, FileCopy, Clear } from '@mui/icons-material';
 import robotoCondensed from 'config/font';
 
-function ListFooter({ generateExportedListText }) {
+function ListFooter({ listId, saveList, deleteList, generateExportedListText }) {
+    const { user } = useAuth0();
+
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const [copySuccess, setCopySuccess] = useState(false);
+    const [saveSuccess, setSaveSuccess] = useState(false);
     const centerAlignedRowStyles = {
         display: 'flex', flexFlow: 'nowrap', alignItems: 'center'
     };
@@ -18,13 +22,18 @@ function ListFooter({ generateExportedListText }) {
         <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
             <div style={{ ...centerAlignedRowStyles }}>
                 <Button
-                    disabled
+                    disabled={saveSuccess || !(user && user.email)}
                     disableRipple
                     disableElevation
                     variant="contained"
+                    onClick={() => {
+                        setSaveSuccess(true);
+                        setTimeout(() => setSaveSuccess(false), 500);
+                        saveList();
+                    }}
                 >
                     <span className={robotoCondensed.className}>
-                        Save
+                        {saveSuccess ? 'Saved!' : 'Save'}
                     </span>
                 </Button>
                 <Button
@@ -42,11 +51,23 @@ function ListFooter({ generateExportedListText }) {
             </div>
             <div style={{ flexGrow: 1 }} />
             <div style={{ ...centerAlignedRowStyles }}>
-                
                 <IconButton size="small" style={{ marginRight: 2, cursor: 'pointer' }} onClick={() => setIsDialogOpen(true)}>
                     <OpenInNew fontSize="inherit" />
                 </IconButton>
-                
+                {listId ? (
+                    <IconButton disabled size="small" style={{ marginRight: 2, cursor: 'pointer' }} onClick={() => {}}>
+                        <FileCopy fontSize="inherit" />
+                    </IconButton>
+                ) : (
+                    undefined
+                )}
+                {listId ? (
+                    <IconButton size="small" style={{ marginRight: 2, cursor: 'pointer' }} onClick={deleteList}>
+                        <Clear fontSize="inherit" />
+                    </IconButton>
+                ) : (
+                    undefined
+                )}
             </div>
             <Dialog fullWidth maxWidth="sm" onClose={() => setIsDialogOpen(false)} open={isDialogOpen}>
                 <DialogTitle>

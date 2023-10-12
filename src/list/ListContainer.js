@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import _ from 'lodash';
+import { useAuth0 } from '@auth0/auth0-react';
+import axios from 'axios';
 import Image from 'next/image';
 import styles from 'styles/ListContainer.module.css';
 import robotoCondensed from 'config/font';
@@ -29,6 +31,7 @@ import CardButton from 'src/common/CardButton';
 import versions from 'config/versions';
 import cards from 'config/cards.js';
 import { isUpgradeRequirementsMet } from 'src/utility';
+import urls from 'config/urls';
 
 const { cardsById } = cards;
 
@@ -66,17 +69,14 @@ function ListContainer({
     handleSetRightPaneFocus
 }) {
     const router = useRouter();
+    const { user } = useAuth0();
     const query = router.query;
 
-    useEffect(() => {
-        setFaction(query.faction);
-    }, [query]);
-
+    const [listId, setListId] = useState();
     const [version, setVersion] = useState(0);
     const [title, setTitle] = useState('');
     const [faction, setFaction] = useState('');
     const [commander, setCommander] = useState('');
-    const [hash, setHash] = useState('');
     const [redObjId, setRedObjId] = useState('');
     const [blueObjId, setBlueObjId] = useState('');
     const [yellowObjId, setYellowObjId] = useState('');
@@ -89,7 +89,124 @@ function ListContainer({
 
     const [zoomDialogCard, setZoomDialogCard] = useState();
 
-    const handleSetTitleFromEvent = (event) => setTitle(event.target.value);
+
+
+    useEffect(() => {
+        if (['rebels', 'empire', 'republic', 'separatists'].includes(query.faction)) {
+            setFaction(query.faction);
+        } else {
+            axios.get(`${urls.api}/lists/${query.faction}`).then(foundList => {
+                if (foundList.data) {
+                    const {
+                        listId,
+                        version,
+                        title,
+                        faction,
+                        commander,
+                        uniques,
+                        ships,
+                        squadrons,
+                        redObjId,
+                        yellowObjId,
+                        blueObjId
+                    } = foundList.data;
+                    setListId(listId);
+                    setVersion(version);
+                    setTitle(title);
+                    setFaction(faction);
+                    setCommander(commander);
+                    setUniques(uniques);
+                    setShips(ships);
+                    setSquadrons(squadrons);
+                    setRedObjId(redObjId);
+                    setYellowObjId(yellowObjId);
+                    setBlueObjId(blueObjId);
+                } else {
+                    router.push('/');
+                }
+            });
+        }
+    }, [query]);
+
+    const deleteList = () => {
+        if (listId) {
+            axios.delete(`${urls.api}/lists/${listId}`).then(deletedList => {
+                router.push('/');
+            })
+        }
+    }
+
+    const saveList = () => {
+        const list = {
+            version,
+            title,
+            faction,
+            commander,
+            uniques,
+            ships,
+            squadrons,
+            redObjId,
+            yellowObjId,
+            blueObjId
+        };
+        let points = 0;
+        ships.forEach(ship => {
+            const shipCard = cards.cardsById[ship.id];
+            points += shipCard.points;
+            ship.upgradesEquipped.forEach(upgrade => {
+                if (upgrade.id && upgrade.id !== true) {
+                    const upgradeCard = cards.cardsById[upgrade.id];
+                    points += upgradeCard.points;
+                }
+            });
+        });
+        squadrons.forEach(squadron => {
+            const squadronCard = cards.cardsById[squadron.id];
+            points += squadronCard.points * squadron.count;
+        });
+        if (listId && user.email) {
+            axios.put(`${urls.api}/lists/${listId}`, { ...list, points, listId, email: user.email }).then(modifiedList => {
+                const {
+                    listId,
+                    version,
+                    title,
+                    faction,
+                    commander,
+                    uniques,
+                    ships,
+                    squadrons,
+                    redObjId,
+                    yellowObjId,
+                    blueObjId
+                } = modifiedList.data;
+                setListId(listId);
+                setVersion(version);
+                setTitle(title);
+                setFaction(faction);
+                setCommander(commander);
+                setUniques(uniques);
+                setShips(ships);
+                setSquadrons(squadrons);
+                setRedObjId(redObjId);
+                setYellowObjId(yellowObjId);
+                setBlueObjId(blueObjId);
+            }).catch(e => {
+                console.error(e.message);
+            });
+        } else if (user.email) {
+            axios.post(`${urls.api}/lists`, { ...list, points, email: user.email }).then(createdList => {
+                setListId(createdList.data.listId);
+            }).catch(e => {
+                console.error(e.message);
+            });
+        }
+    }
+
+
+
+    const handleSetTitleFromEvent = (event) => {
+        if (title.length < 100) setTitle(event.target.value);
+    }
     const handleSetVersionFromEvent = (event) => setVersion(event.target.value);
 
     const generateExportedListText = () => {
@@ -478,7 +595,6 @@ function ListContainer({
         setIsCardPropsDelimited(true);
     }
 
-
     const setEligibleSquadronsToAdd = () => {
         const newCardComponentProps = [];
         for (let i = 0; i < cards.squadronIdList.length; i++) {
@@ -584,31 +700,44 @@ function ListContainer({
         }
     }
 
+
+    console.log(primaryPaneStyles);
     return (
         <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
             <div style={{ ...primaryPaneStyles }}>
-                <ListHeader
-                    title={title}
-                    faction={faction}
-                    version={version}
-                    points={shipPoints + squadronPoints}
-                    handleSetTitle={handleSetTitleFromEvent}
-                    handleSetVersion={handleSetVersionFromEvent}
-                />
-                <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
-                <ListShips
-                    version={version}
-                    commander={commander}
-                    ships={ships}
-                    shipPoints={shipPoints}
-                    removeShip={removeShip}
-                    copyShip={copyShip}
-                    removeUpgrade={removeUpgrade}
-                    setEligibleShipsToAdd={setEligibleShipsToAdd}
-                    setEligibleUpgradesToAdd={setEligibleUpgradesToAdd}
-                    handleSetZoomOnCard={(id) => setZoomDialogCard(id)}
-                    shiftShipInList={shiftShipInList}
-                />
+                <div
+                    style={{
+                        position: 'fixed',
+                        zIndex: 1,
+                        width: primaryPaneStyles.width === '100%' ? 'calc(100% - 40px)' : primaryPaneStyles.width - 40,
+                        background: '#121212'
+                    }}
+                >
+                    <ListHeader
+                        title={title}
+                        faction={faction}
+                        version={version}
+                        points={shipPoints + squadronPoints}
+                        handleSetTitle={handleSetTitleFromEvent}
+                        handleSetVersion={handleSetVersionFromEvent}
+                    />
+                    <Divider variant="middle" style={{ marginTop: 20, color: '#eee' }} />
+                </div>
+                <div style={{ paddingTop: 110, zIndex: 0 }}>
+                    <ListShips
+                        version={version}
+                        commander={commander}
+                        ships={ships}
+                        shipPoints={shipPoints}
+                        removeShip={removeShip}
+                        copyShip={copyShip}
+                        removeUpgrade={removeUpgrade}
+                        setEligibleShipsToAdd={setEligibleShipsToAdd}
+                        setEligibleUpgradesToAdd={setEligibleUpgradesToAdd}
+                        handleSetZoomOnCard={(id) => setZoomDialogCard(id)}
+                        shiftShipInList={shiftShipInList}
+                    />
+                </div>
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListSquadrons
                     version={version}
@@ -635,6 +764,9 @@ function ListContainer({
                 />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListFooter
+                    listId={listId}
+                    saveList={saveList}
+                    deleteList={deleteList}
                     generateExportedListText={generateExportedListText}
                 />
             </div>

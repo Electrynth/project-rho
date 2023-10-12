@@ -4971,6 +4971,7 @@
     "upgradeSlots": [
       "title"
     ],
+    "addsUpgradeSlot": "fleet command",
     "requirements": [
       "OR",
       {

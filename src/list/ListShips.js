@@ -16,7 +16,7 @@ function ListShips({
     shiftShipInList
 }) {
     return (
-        <div style={{ display: 'flex', flexFlow: 'column' }}>
+        <div style={{ display: 'flex', flexFlow: 'column', paddingTop: 20 }}>
             {ships.map((ship, index) =>
                 <ShipRow
                     version={version}

@@ -19,7 +19,9 @@ function List() {
         width: '100%',
         height: '100vh',
         overflowY: 'scroll',
-        padding: 20,
+        paddingBottom: 20,
+        paddingLeft: 20,
+        paddingRight: 20,
         display: 'flex',
         flexFlow: 'column nowrap'
     };
