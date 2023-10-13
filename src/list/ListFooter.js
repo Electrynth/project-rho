@@ -5,7 +5,7 @@ import { Box, Button, IconButton, Dialog, DialogTitle, DialogContent, DialogActi
 import { Print, OpenInNew, FileCopy, Clear } from '@mui/icons-material';
 import robotoCondensed from 'config/font';
 
-function ListFooter({ listId, saveList, deleteList, generateExportedListText }) {
+function ListFooter({ listId, listEmail, saveList, deleteList, generateExportedListText }) {
     const { user } = useAuth0();
 
     const [isDialogOpen, setIsDialogOpen] = useState(false);
@@ -62,7 +62,12 @@ function ListFooter({ listId, saveList, deleteList, generateExportedListText }) 
                     undefined
                 )}
                 {listId ? (
-                    <IconButton size="small" style={{ marginRight: 2, cursor: 'pointer' }} onClick={deleteList}>
+                    <IconButton
+                        disabled={!(user && user.email === listEmail)}
+                        size="small"
+                        style={{ marginRight: 2, cursor: 'pointer' }}
+                        onClick={deleteList}
+                    >
                         <Clear fontSize="inherit" />
                     </IconButton>
                 ) : (

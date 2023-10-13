@@ -73,6 +73,7 @@ function ListContainer({
     const query = router.query;
 
     const [listId, setListId] = useState();
+    const [listEmail, setListEmail] = useState('');
     const [version, setVersion] = useState(0);
     const [title, setTitle] = useState('');
     const [faction, setFaction] = useState('');
@@ -108,8 +109,10 @@ function ListContainer({
                         squadrons,
                         redObjId,
                         yellowObjId,
-                        blueObjId
+                        blueObjId,
+                        email
                     } = foundList.data;
+                    setListEmail(email);
                     setListId(listId);
                     setVersion(version);
                     setTitle(title);
@@ -164,7 +167,8 @@ function ListContainer({
             const squadronCard = cards.cardsById[squadron.id];
             points += squadronCard.points * squadron.count;
         });
-        if (listId && user.email) {
+        console.log(user.email, listEmail);
+        if (listId && user.email && listEmail === user.email) {
             axios.put(`${urls.api}/lists/${listId}`, { ...list, points, listId, email: user.email }).then(modifiedList => {
                 const {
                     listId,
@@ -177,9 +181,11 @@ function ListContainer({
                     squadrons,
                     redObjId,
                     yellowObjId,
-                    blueObjId
+                    blueObjId,
+                    email
                 } = modifiedList.data;
                 setListId(listId);
+                setListEmail(email);
                 setVersion(version);
                 setTitle(title);
                 setFaction(faction);
@@ -195,7 +201,9 @@ function ListContainer({
             });
         } else if (user.email) {
             axios.post(`${urls.api}/lists`, { ...list, points, email: user.email }).then(createdList => {
+                console.log(createdList);
                 setListId(createdList.data.listId);
+                setListEmail(createdList.data.email);
             }).catch(e => {
                 console.error(e.message);
             });
@@ -432,9 +440,9 @@ function ListContainer({
     }
 
     const removeObjective = (objectiveType) => {
-        if (objectiveType === 'assault') setRedObjId();
-        if (objectiveType === 'defense') setYellowObjId();
-        if (objectiveType === 'navigation') setBlueObjId();
+        if (objectiveType === 'assault') setRedObjId('');
+        if (objectiveType === 'defense') setYellowObjId('');
+        if (objectiveType === 'navigation') setBlueObjId('');
     }
 
     const removeShip = (index) => {
@@ -769,6 +777,7 @@ function ListContainer({
                 />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
                 <ListFooter
+                    listEmail={listEmail}
                     listId={listId}
                     saveList={saveList}
                     deleteList={deleteList}
