@@ -373,7 +373,7 @@ function ListContainer({
         }
         if (!isSquadronAlreadyInList) {
             const card = cardsById[id];
-            if (cards.cardsById[id].isUnique) setUniques([...uniques, card.displayName ? card.displayName : card.cardName]);
+            if (cards.cardsById[id].isUnique) setUniques([...uniques, card.cardName]);
             newSquadrons.push({ id, count: 1 });
         }
         setSquadrons(newSquadrons);
