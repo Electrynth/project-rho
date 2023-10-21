@@ -832,7 +832,7 @@ function ListContainer({
                 <DialogContent>
                     {zoomDialogCard ? (
                         <Image
-                            src={cards.getCardImageUrl(cards.cardsById[zoomDialogCard].cardName, cards.cardsById[zoomDialogCard].cardType)}
+                            src={cards.getCardImageUrl(cards.cardsById[zoomDialogCard].imageName ? cards.cardsById[zoomDialogCard].imageName : cards.cardsById[zoomDialogCard].cardName, cards.cardsById[zoomDialogCard].cardType)}
                             width={400}
                             height={cards.cardsById[zoomDialogCard].cardType === 'ship' ? 688 : 556}
                             alt={cards.cardsById[zoomDialogCard].cardName}
