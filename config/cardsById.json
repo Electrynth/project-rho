@@ -4493,7 +4493,7 @@
       "ordnance"
     ],
     "requirements": [],
-    "isModification": true,
+    "isModification": false,
     "id": "my",
     "cardType": "upgrade"
   },
