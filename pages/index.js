@@ -176,7 +176,9 @@ export default function Home() {
             <DialogTitle><span className={robotoCondensed.className} style={{ fontSize: 24 }}>What is this?</span></DialogTitle>
             <DialogContent>
               <DialogContentText>
-                <span className={robotoCondensed.className} style={{ fontSize: 18 }}>This website is a (currently) untitled and unaffiliated list builder meant to be used to conveniently create lists for the Retcon Open tournament. The Retcon Open tournament is a reoccuring tournament using Tabletop Simulator that may use alternative rulesets. It may also be used as a stopgap to wait for Kingston's builder to be updated if or when AMG makes changes to cards.</span>
+                <span className={robotoCondensed.className} style={{ fontSize: 18 }}>
+                  This website is a (currently) untitled and unaffiliated list builder meant to be used to conveniently create lists for the Retcon Open tournament. The Retcon Open tournament is a reoccuring tournament using Tabletop Simulator that may use alternative rulesets. It may also be used as a stopgap to wait for Kingston&apos;s builder to be updated if or when AMG makes changes to cards.
+                  </span>
               </DialogContentText>
               <br />
               <DialogContentText>
