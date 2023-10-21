@@ -50,7 +50,7 @@ function ShipRow({
                             }}
                         >
                             <Image
-                                src={cards.getCardImageUrl(shipCard.cardName, 'ship')}
+                                src={cards.getCardImageUrl(shipCard.imageName ? shipCard.imageName : shipCard.cardName, 'ship')}
                                 width={240}
                                 height={412}
                                 alt={shipCard.cardName}
@@ -80,7 +80,7 @@ function ShipRow({
                                 style={{ zIndex: 1, marginLeft: 30, marginTop: 10, position: 'absolute', cursor: 'pointer' }}
                             />
                             <Image
-                                src={cards.getCardImageUrl(shipCard.cardName, 'ship')}
+                                src={cards.getCardImageUrl(shipCard.imageName ? shipCard.imageName : shipCard.cardName, 'ship')}
                                 width={240}
                                 height={412}
                                 alt={shipCard.cardName}
@@ -149,7 +149,7 @@ function ShipRow({
                                             }}
                                         >
                                             <Image
-                                                src={cards.getCardImageUrl(upgradeCard.cardName, 'upgrade')}
+                                                src={cards.getCardImageUrl(upgradeCard.imageName ? upgradeCard.imageName : upgradeCard.cardName, 'upgrade')}
                                                 width={180}
                                                 height={259}
                                                 alt={upgradeCard.cardName}
@@ -179,7 +179,7 @@ function ShipRow({
                                                 style={{ zIndex: 1, marginLeft: 20, marginTop: 10, position: 'absolute', cursor: 'pointer' }}
                                             />
                                             <Image
-                                                src={cards.getCardImageUrl(upgradeCard.cardName, 'upgrade')}
+                                                src={cards.getCardImageUrl(upgradeCard.imageName ? upgradeCard.imageName : upgradeCard.cardName, 'upgrade')}
                                                 width={180}
                                                 height={259}
                                                 alt={upgradeCard.cardName}

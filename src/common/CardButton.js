@@ -21,7 +21,7 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = {} }) {
             <CardActionArea style={{ display: 'flex', justifyContent: 'flex-end' }}>
                 <CardMedia
                     component="img"
-                    image={cards.getCardImageUrl(card.cardName, card.cardType)}
+                    image={cards.getCardImageUrl(card.imageName ? card.imageName : card.cardName, card.cardType)}
                     alt={card.cardName}
                     style={{ maxHeight: card.cardType === 'upgrade' ? 300 : 340, opacity: isDisabled ? '0.25' : '1.0', ...cardStyles }}
                 />

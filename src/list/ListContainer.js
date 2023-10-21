@@ -319,7 +319,7 @@ function ListContainer({
         const newShip = newShips[shipIndex];
         const upgradeCard = cards.cardsById[id];
 
-        if (upgradeCard.isUnique) setUniques([...uniques, upgradeCard.displayName ? upgradeCard.displayName : upgradeCard.cardName]);
+        if (upgradeCard.isUnique) setUniques([...uniques, upgradeCard.cardName]);
         if (upgradeCard.upgradeSlots.includes('commander')) {
             setCommander(id);
             newShip.flagship = true;
@@ -401,9 +401,9 @@ function ListContainer({
         const newSquadronCard = cards.cardsById[id];
         const newUniques = [...uniques];
         const oldSquadronCard = cardsById[squadron.id];
-        const uniqueIdIndex = uniques.indexOf(oldSquadronCard.displayName ? oldSquadronCard.displayName : oldSquadronCard.cardName);
+        const uniqueIdIndex = uniques.indexOf(oldSquadronCard.cardName);
         if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
-        if (newSquadronCard.isUnique) newUniques.push(newSquadronCard.displayName ? newSquadronCard.displayName : newSquadronCard.cardName);
+        if (newSquadronCard.isUnique) newUniques.push(newSquadronCard.cardName);
         newSquadrons[index] = newSquadron;
         setSquadrons(newSquadrons);
         setUniques(newUniques);
@@ -450,14 +450,14 @@ function ListContainer({
         const { id } = ship;
         const card = cardsById[id];
         const newUniques = [...uniques];
-        const uniqueIdIndex = newUniques.indexOf(card.displayName ? card.displayName : card.cardName);
+        const uniqueIdIndex = newUniques.indexOf(card.cardName);
         if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
-        for (let i = 0; i < ship.upgradesEquipped.length; i++) {
+        for (let i = ship.upgradesEquipped.length - 1; i > -1; i--) {
             const upgrade = ship.upgradesEquipped[i];
             const upgradeId = upgrade.id;
             const upgradeCard = cards.cardsById[upgradeId];
             if (upgradeId && upgradeId !== true && upgradeCard.upgradeSlots.includes('commander')) setCommander('');
-            if (upgradeId && upgradeId !== true && newUniques.indexOf(upgradeCard.displayName ? upgradeCard.displayName : upgradeCard.cardName) > -1) newUniques.splice(uniqueIdIndex, 1);
+            if (upgradeId && upgradeId !== true && newUniques.indexOf(upgradeCard.cardName) > -1) newUniques.splice(uniqueIdIndex, 1);
         }
         const newShips = [...ships];
         newShips.splice(index, 1);
@@ -471,7 +471,7 @@ function ListContainer({
         const newShip = newShips[shipIndex];
         const upgrade = newShip.upgradesEquipped[upgradeIndex];
         const upgradeCard = cards.cardsById[upgrade.id];
-        const uniqueIdIndex = uniques.indexOf(upgradeCard.displayName ? upgradeCard.displayName : upgradeCard.cardName);
+        const uniqueIdIndex = uniques.indexOf(upgradeCard.cardName);
         if (upgradeCard.isModification) newShip.hasModification = false;
         if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
         if (upgradeCard.upgradeSlots.includes('commander')) {
@@ -511,7 +511,7 @@ function ListContainer({
         const newUniques = [...uniques];
         const squadron = newSquadrons[index];
         const card = cardsById[squadron.id];
-        const uniqueIdIndex = uniques.indexOf(card.displayName ? card.displayName : card.cardName);
+        const uniqueIdIndex = uniques.indexOf(card.cardName);
         if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
         newSquadrons.splice(index, 1);
         setSquadrons(newSquadrons);

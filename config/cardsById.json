@@ -37,7 +37,8 @@
   },
   "ac": {
     "displayName": "Gozanti Cruisers",
-    "cardName": "Gozanti-class Cruisers Separatists",
+    "cardName": "Gozanti-class Cruisers",
+    "imageName": "Gozanti-class Cruisers Separatists",
     "faction": "separatists",
     "cardType": "ship",
     "shipSize": "small",
@@ -207,7 +208,8 @@
   },
   "al": {
     "displayName": "Victory I",
-    "cardName": "Victory I-class Star Destroyer Republic",
+    "cardName": "Victory I-class Star Destroyer",
+    "imageName": "Victory I-class Star Destroyer Republic",
     "faction": "republic",
     "cardType": "ship",
     "shipSize": "medium",
@@ -455,7 +457,7 @@
     "id": "ay"
   },
   "az": {
-    "displayName": "Assault Frigate MkII A",
+    "displayName": "Assault Frigate Mk2 A",
     "cardName": "Assault Frigate Mark II A",
     "faction": "rebels",
     "cardType": "ship",
@@ -474,7 +476,7 @@
     "id": "az"
   },
   "ba": {
-    "displayName": "Assault Frigate MkII B",
+    "displayName": "Assault Frigate Mk2 B",
     "cardName": "Assault Frigate Mark II B",
     "faction": "rebels",
     "cardType": "ship",
@@ -584,7 +586,7 @@
     "id": "bf"
   },
   "bg": {
-    "displayName": "Stawhawk Battleship MkI",
+    "displayName": "Stawhawk Battleship Mk I",
     "cardName": "Starhawk-class Battleship Mark I",
     "faction": "rebels",
     "cardType": "ship",
@@ -605,7 +607,7 @@
     "id": "bg"
   },
   "bh": {
-    "displayName": "Starhawk Battleship MkII",
+    "displayName": "Starhawk Battleship Mk II",
     "cardName": "Starhawk-class Battleship Mark II",
     "faction": "rebels",
     "cardType": "ship",
@@ -1088,7 +1090,8 @@
   },
   "ch": {
     "displayName": "Venator II",
-    "cardName": "Venator II-class Star Destroyer Empire",
+    "cardName": "Venator II-class Star Destroyer",
+    "imageName": "Venator II-class Star Destroyer Empire",
     "faction": "empire",
     "cardType": "ship",
     "shipSize": "large",
@@ -1226,7 +1229,8 @@
   },
   "cn": {
     "displayName": "Providence Carrier",
-    "cardName": "Providence-class Carrier Rebels",
+    "cardName": "Providence-class Carrier",
+    "imageName": "Providence-class Carrier Rebels",
     "faction": "rebels",
     "cardType": "ship",
     "shipSize": "large",
@@ -1476,7 +1480,8 @@
   },
   "dz": {
     "displayName": "Hera Syndulla (Ghost)",
-    "cardName": "Hera Syndulla Ghost",
+    "cardName": "Hera Syndulla",
+    "imageName": "Hera Syndulla Ghost",
     "faction": "rebels",
     "points": 28,
     "isUnique": true,
@@ -1489,7 +1494,8 @@
   },
   "ea": {
     "displayName": "Hera Syndulla (X-Wing)",
-    "cardName": "Hera Syndulla X-Wing",
+    "cardName": "Hera Syndulla",
+    "imageName": "Hera Syndulla X-Wing",
     "faction": "rebels",
     "points": 23,
     "isUnique": true,
@@ -1952,6 +1958,7 @@
     "id": "fm"
   },
   "fn": {
+    "displayName": "Lambda Shuttle",
     "cardName": "Lambda-class Shuttle",
     "faction": "empire",
     "points": 15,
@@ -2145,7 +2152,8 @@
   },
   "gd": {
     "displayName": "Darth Vader (TIE Advanced)",
-    "cardName": "Darth Vader TIE Advanced",
+    "cardName": "Darth Vader",
+    "imageName": "Darth Vader TIE Advanced",
     "faction": "empire",
     "points": 21,
     "isUnique": true,
@@ -2157,7 +2165,8 @@
   },
   "ge": {
     "displayName": "Darth Vader (TIE Defender)",
-    "cardName": "Darth Vader TIE Defender",
+    "cardName": "Darth Vader",
+    "imageName": "Darth Vader TIE Defender",
     "faction": "empire",
     "points": 25,
     "isUnique": true,
@@ -2457,7 +2466,8 @@
   },
   "hd": {
     "displayName": "Anakin Skywalker",
-    "cardName": "Anakin Skywalker BTL-B",
+    "cardName": "Anakin Skywalker",
+    "imageName": "Anakin Skywalker BTL-B",
     "faction": "republic",
     "points": 19,
     "isUnique": true,
@@ -2471,7 +2481,8 @@
   },
   "he": {
     "displayName": "Anakin Skywalker",
-    "cardName": "Anakin Skywalker Delta",
+    "cardName": "Anakin Skywalker",
+    "imageName": "Anakin Skywalker Delta",
     "faction": "republic",
     "points": 24,
     "isUnique": true,
@@ -2582,6 +2593,7 @@
     "id": "hm"
   },
   "hn": {
+    "displayName": "Hyena Droid Bomber Squadron",
     "cardName": "Hyena-class Droid Bomber Squadron",
     "faction": "separatists",
     "points": 11,
@@ -2595,6 +2607,7 @@
     "id": "hn"
   },
   "ho": {
+    "displayName": "Vulture Droid Bomber Squadron",
     "cardName": "Vulture-class Droid Fighter Squadron",
     "faction": "separatists",
     "points": 8,
@@ -2801,8 +2814,8 @@
     "cardType": "upgrade"
   },
   "ie": {
-    "displayName": "Kyrsta Agate",
-    "cardName": "Kyrsta Agate Admiral",
+    "cardName": "Kyrsta Agate",
+    "imageName": "Kyrsta Agate Admiral",
     "points": 25,
     "isUnique": true,
     "faction": "rebels",
@@ -2815,8 +2828,8 @@
     "cardType": "upgrade"
   },
   "if": {
-    "displayName": "Leia Organa",
-    "cardName": "Leia Organa Admiral",
+    "cardName": "Leia Organa",
+    "imageName": "Leia Organa Admiral",
     "points": 28,
     "isUnique": true,
     "faction": "rebels",
@@ -2920,8 +2933,8 @@
     "cardType": "upgrade"
   },
   "in": {
-    "displayName": "Darth Vader",
-    "cardName": "Darth Vader Admiral",
+    "cardName": "Darth Vader",
+    "imageName": "Darth Vader Admiral",
     "points": 36,
     "isUnique": true,
     "faction": "empire",
@@ -3415,8 +3428,8 @@
     "cardType": "upgrade"
   },
   "jz": {
-    "displayName": "General Draven",
-    "cardName": "General Draven Officer",
+    "cardName": "General Draven",
+    "imageName": "General Draven Officer",
     "points": 3,
     "isUnique": true,
     "faction": "rebels",
@@ -3559,8 +3572,8 @@
     "cardType": "upgrade"
   },
   "kk": {
-    "displayName": "Ahsoka Tano",
-    "cardName": "Ahsoka Tano Republic",
+    "cardName": "Ahsoka Tano",
+    "imageName": "Ahsoka Tano Republic",
     "points": 6,
     "isUnique": true,
     "faction": "republic",
@@ -3927,8 +3940,8 @@
     "cardType": "upgrade"
   },
   "lm": {
-    "displayName": "Darth Vader",
-    "cardName": "Darth Vader Boarding Team",
+    "cardName": "Darth Vader",
+    "imageName": "Darth Vader Boarding Team",
     "points": 3,
     "isUnique": true,
     "faction": "empire",
@@ -4685,7 +4698,7 @@
     "cardType": "upgrade"
   },
   "no": {
-    "cardName": "Linked Turbolaser Turrets",
+    "cardName": "Linked Turbolaser Towers",
     "points": 7,
     "isUnique": false,
     "faction": "",
@@ -6232,8 +6245,8 @@
     "cardType": "upgrade"
   },
   "ra": {
-    "displayName": "Admiral Ozzel",
-    "cardName": "Admiral Ozzel Officer",
+    "cardName": "Admiral Ozzel",
+    "imageName": "Admiral Ozzel Officer",
     "points": 2,
     "isUnique": true,
     "faction": "empire",
@@ -6363,8 +6376,8 @@
     "cardType": "upgrade"
   },
   "rk": {
-    "displayName": "Darth Vader",
-    "cardName": "Darth Vader Officer",
+    "cardName": "Darth Vader",
+    "imageName": "Darth Vader Officer",
     "points": 1,
     "isUnique": true,
     "faction": "empire",
@@ -6403,8 +6416,8 @@
     "cardType": "upgrade"
   },
   "rn": {
-    "displayName": "Emperor Palpatine",
-    "cardName": "Emperor Palpatine Officer",
+    "cardName": "Emperor Palpatine",
+    "imageName": "Emperor Palpatine Officer",
     "points": 3,
     "isUnique": true,
     "faction": "empire",
@@ -6891,8 +6904,8 @@
     "cardType": "upgrade"
   },
   "sx": {
-    "displayName": "Anakin Skywalker",
-    "cardName": "Anakin Skywalker Admiral",
+    "cardName": "Anakin Skywalker",
+    "imageName": "Anakin Skywalker Admiral",
     "points": 31,
     "isUnique": true,
     "faction": "republic",

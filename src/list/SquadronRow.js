@@ -44,7 +44,7 @@ function SquadronRow({
                             }}
                         >
                             <Image
-                                src={cards.getCardImageUrl(squadronCard.cardName, 'squadron')}
+                                src={cards.getCardImageUrl(squadronCard.imageName ? squadronCard.imageName : squadronCard.cardName, 'squadron')}
                                 width={256}
                                 height={357}
                                 alt={squadronCard.cardName}
@@ -76,7 +76,7 @@ function SquadronRow({
                                 style={{ zIndex: 1, marginLeft: 30, marginTop: 10, position: 'absolute', cursor: 'pointer' }}
                             />
                             <Image
-                                src={cards.getCardImageUrl(squadronCard.cardName, 'squadron')}
+                                src={cards.getCardImageUrl(squadronCard.imageName ? squadronCard.imageName : squadronCard.cardName, 'squadron')}
                                 width={256}
                                 height={357}
                                 alt={squadronCard.cardName}
