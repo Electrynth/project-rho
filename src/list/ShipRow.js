@@ -46,7 +46,7 @@ function ShipRow({
                                 width: 80,
                                 height: 40,
                                 borderRadius: 5,
-                                marginRight: 8
+                                marginRight: 6
                             }}
                         >
                             <Image
@@ -72,7 +72,7 @@ function ShipRow({
                                 width: 80,
                                 height: 40,
                                 borderRadius: 5,
-                                marginRight: 8
+                                marginRight: 6
                             }}
                             onClick={() => handleSetZoomOnCard(shipCard.id)}
                         >
@@ -123,7 +123,7 @@ function ShipRow({
                     const upgradeCard = cards.cardsById[upgrade.id];
                     return (
                         <div key={`${upgrade.id}_${i}`} style={{ display: 'flex', position: 'relative', flexFlow: 'row nowrap', marginTop: 4 }}>
-                            <span style={{ minWidth: 20 }} />
+                            <span style={{ minWidth: 15 }} />
                             <UpgradeIcon
                                 key={`${upgrade.upgradeType}_${i}`}
                                 upgradeType={upgrade.upgradeType}
@@ -132,7 +132,7 @@ function ShipRow({
                                     width: 22.5,
                                     zIndex: 1,
                                     marginTop: 9,
-                                    marginLeft: 5,
+                                    marginLeft: 0,
                                     position: 'absolute'
                                 }}
                             />
@@ -142,10 +142,10 @@ function ShipRow({
                                         <div
                                             style={{
                                                 overflow: 'hidden',
-                                                width: 60,
+                                                width: 65,
                                                 height: 40,
                                                 borderRadius: 5,
-                                                marginRight: 8
+                                                marginRight: 6
                                             }}
                                         >
                                             <Image
@@ -168,15 +168,15 @@ function ShipRow({
                                         <div
                                             style={{
                                                 overflow: 'hidden',
-                                                width: 60,
+                                                width: 65,
                                                 height: 40,
                                                 borderRadius: 5,
-                                                marginRight: 8
+                                                marginRight: 6
                                             }}
                                             onClick={() => handleSetZoomOnCard(upgradeCard.id)}
                                         >
                                             <Search
-                                                style={{ zIndex: 1, marginLeft: 20, marginTop: 10, position: 'absolute', cursor: 'pointer' }}
+                                                style={{ zIndex: 1, marginLeft: 22.5, marginTop: 10, position: 'absolute', cursor: 'pointer' }}
                                             />
                                             <Image
                                                 src={cards.getCardImageUrl(upgradeCard.imageName ? upgradeCard.imageName : upgradeCard.cardName, 'upgrade')}
@@ -218,7 +218,7 @@ function ShipRow({
                                 <Add />
                                 <div
                                     className={robotoCondensed.className}
-                                    style={{ width: 110, marginLeft: 4, position: 'absolute', left: 60 }}
+                                    style={{ width: 110, marginLeft: 0, position: 'absolute', left: 60 }}
                                 >
                                     Add Upgrade
                                 </div>

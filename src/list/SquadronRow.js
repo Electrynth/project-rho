@@ -40,7 +40,7 @@ function SquadronRow({
                                 width: 80,
                                 height: 40,
                                 borderRadius: 5,
-                                marginRight: 8
+                                marginRight: 6
                             }}
                         >
                             <Image
@@ -68,7 +68,7 @@ function SquadronRow({
                                 width: 80,
                                 height: 40,
                                 borderRadius: 5,
-                                marginRight: 8
+                                marginRight: 6
                             }}
                             onClick={() => handleSetZoomOnCard(squadronCard.id)}
                         >
