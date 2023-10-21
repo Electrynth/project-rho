@@ -498,7 +498,9 @@ function ListContainer({
                         // TODO: rework this
                         // have to start the whole new upgrade removal process... 
                         const secondUpgradeCard = cards.cardsById[newShip.upgradesEquipped[i].id];
-
+                        if (secondUpgradeCard.isUnique) {
+                            newUniques.splice(newUniques.indexOf(secondUpgradeCard.id), 1);
+                        }
                         if (secondUpgradeCard.isModification) newShip.hasModification = false;
                     }
                 }
