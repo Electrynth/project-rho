@@ -6918,8 +6918,8 @@
     "cardType": "upgrade"
   },
   "sy": {
-    "displayName": "\"Matchstick\"",
-    "cardName": "Matchstick",
+    "cardName": "\"Matchstick\"",
+    "imageName": "Matchstick",
     "faction": "republic",
     "points": 16,
     "isUnique": true,

@@ -449,16 +449,20 @@ function ListContainer({
         const ship = ships[index];
         const { id } = ship;
         const card = cardsById[id];
-        const newUniques = [...uniques];
-        const uniqueIdIndex = newUniques.indexOf(card.cardName);
-        if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
+        //const newUniques = [...uniques];
+        const uniquesToRemove = [];
+        if (card.isUnique) uniquesToRemove.push(card.cardName);
+        // if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
         for (let i = ship.upgradesEquipped.length - 1; i > -1; i--) {
             const upgrade = ship.upgradesEquipped[i];
             const upgradeId = upgrade.id;
             const upgradeCard = cards.cardsById[upgradeId];
             if (upgradeId && upgradeId !== true && upgradeCard.upgradeSlots.includes('commander')) setCommander('');
-            if (upgradeId && upgradeId !== true && newUniques.indexOf(upgradeCard.cardName) > -1) newUniques.splice(uniqueIdIndex, 1);
+            if (upgradeId && upgradeId !== true && upgradeCard.isUnique) uniquesToRemove.push(upgradeCard.cardName);
+            //if (upgradeId && upgradeId !== true && newUniques.indexOf(upgradeCard.cardName) > -1) newUniques.splice(uniqueIdIndex, 1);
         }
+
+        const newUniques = uniques.filter(uniqueCardName => (!uniquesToRemove.includes(uniqueCardName)));
         const newShips = [...ships];
         newShips.splice(index, 1);
         setShips(newShips);
