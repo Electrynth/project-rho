@@ -537,7 +537,7 @@ function ListContainer({
                 id,
                 key: id,
                 version,
-                isDisabled: uniques.includes(card.displayName ? card.displayName : card.cardName),
+                isDisabled: uniques.includes(card.cardName),
                 onClick: () => addShip(id)
             });
         }
@@ -598,7 +598,7 @@ function ListContainer({
             if (!isUpgradeRequirementsMet(card.requirements, { ...shipCard, faction, flagship: ships[shipIndex].flagship ? ships[shipIndex].flagship : false })) continue;
             if (card.upgradeSlots.length > 1 && !(openUpgradeSlots['weapons team'] > 0 && openUpgradeSlots['offensive retrofit'] > 0)) continue;
             if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
-            let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.displayName ? card.displayName : card.cardName);
+            let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.cardName);
             ship.upgradesEquipped.forEach(upgrade => {
                 if (upgrade.id !== true && upgrade.id === id) isDisabled = true;
             })
@@ -628,7 +628,7 @@ function ListContainer({
                 id,
                 key: id,
                 version,
-                isDisabled: uniques.includes(card.displayName ? card.displayName : card.cardName),
+                isDisabled: uniques.includes(card.cardName),
                 onClick: () => addSquadron(id)
             });
         }
