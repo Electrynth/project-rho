@@ -52,8 +52,8 @@ function ObjectivesRow({
     return (
         <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
             {redObjId && <CardButton version={version} id={redObjId} cardStyles={{ maxHeight: 240 }} onClick={() => handleSetZoomOnCard(redObjId)} />}
-            {blueObjId && <CardButton version={version} id={blueObjId} cardStyles={{ maxHeight: 240 }} onClick={() => handleSetZoomOnCard(blueObjId)} />}
             {yellowObjId && <CardButton version={version} id={yellowObjId} cardStyles={{ maxHeight: 240 }} onClick={() => handleSetZoomOnCard(yellowObjId)} />}
+            {blueObjId && <CardButton version={version} id={blueObjId} cardStyles={{ maxHeight: 240 }} onClick={() => handleSetZoomOnCard(blueObjId)} />}
         </div>
     );
 }
