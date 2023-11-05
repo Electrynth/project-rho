@@ -23,7 +23,7 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = {} }) {
                     component="img"
                     image={cards.getCardImageUrl(card.imageName ? card.imageName : card.cardName, card.cardType)}
                     alt={card.cardName}
-                    style={{ maxHeight: card.cardType === 'upgrade' ? 300 : 340, opacity: isDisabled ? '0.25' : '1.0', ...cardStyles }}
+                    style={{ maxHeight: card.cardType === 'upgrade' ? 245 : 290, opacity: isDisabled ? '0.25' : '1.0', ...cardStyles }}
                 />
                 <Box
                     style={{
