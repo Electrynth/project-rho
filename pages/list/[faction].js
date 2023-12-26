@@ -1,6 +1,6 @@
-import Head from 'next/head'
 import { useState } from 'react';
 import ListContainer from 'src/list/ListContainer';
+import Head from 'next/head';
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 
@@ -45,8 +45,8 @@ function List() {
     return (
         <div>
             <Head>
-                <title>Project Rho</title>
-                <meta name="description" content="Armada list builder" />
+                <title>HoloFoundry.net</title>
+                <meta name="description" content="Star Wars: Armada Content Platform" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <ListContainer

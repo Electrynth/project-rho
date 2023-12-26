@@ -7005,5 +7005,16 @@
     ],
     "cardType": "squadron",
     "id": "te"
+  },
+  "tf": {
+    "id": "tf",
+    "cardName": "Hyperspace Rings",
+    "faction": "republic",
+    "points": 3,
+    "cardType": "upgrade",
+    "upgradeSlots": ["offensive retrofit"],
+    "requirements": [],
+    "isModification": false,
+    "isUnique": false
   }
 }

@@ -167,7 +167,7 @@ function ListContainer({
             const squadronCard = cards.cardsById[squadron.id];
             points += squadronCard.points * squadron.count;
         });
-        console.log(user.email, listEmail);
+
         if (listId && user.email && listEmail === user.email) {
             axios.put(`${urls.api}/lists/${listId}`, { ...list, points, listId, email: user.email }).then(modifiedList => {
                 const {

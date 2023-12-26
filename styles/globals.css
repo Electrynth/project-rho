@@ -23,6 +23,54 @@ body {
   background: #121212;
 }
 
+@font-face {
+  font-family: 'Aero Matics';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Aero Matics Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Aero Matics Bold';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Aero Matics Bold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Aero Matics Display Bold';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Aero Matics Display Bold.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Armada Icons';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Armada Icons.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Armada Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Armada Regular.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Armada Ship Icons';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Armada Ship Icons.ttf') format('truetype')
+}
+
+@font-face {
+  font-family: 'Optima';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Optima.ttf') format('truetype')
+}
 
 ::-webkit-scrollbar {
   display: none;

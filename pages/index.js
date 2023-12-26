@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Head from 'next/head'
 import { useAuth0 } from '@auth0/auth0-react';
 import { useRouter } from 'next/router';
-import Dialog from '@mui/material/Dialog';
-import DialogTitle from '@mui/material/DialogTitle';
-import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
+import Image from 'next/image';
 import {
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
   IconButton,
   Divider,
   Chip,
@@ -19,6 +19,8 @@ import {
   CardHeader,
   CardContent
 } from '@mui/material';
+
+import NextHead from 'src/common/NextHead';
 import FactionIcon from 'src/common/FactionIcon';
 import robotoCondensed from 'config/font';
 import urls from 'config/urls.json';
@@ -88,10 +90,10 @@ export default function Home() {
   } = useAuth0();
 
   const [userLists, setUserLists] = useState([]);
-
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isAboutUsDialogOpen, setIsAboutUsDialogOpen] = useState(false);
   const [isContactDialogOpen, setIsContactDialogOpen] = useState(false);
-
+  const router = useRouter();
   useEffect(() => {
     if (user && user.email) {
       axios.get(`${urls.api}/users?email=${user.email}`).then(foundUser => {
@@ -104,11 +106,7 @@ export default function Home() {
 
   return (
     <div>
-      <Head>
-        <title>Project Rho</title>
-        <meta name="description" content="Star Wars: Armada list builder" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <NextHead />
       <div style={{ padding: 20, display: 'flex', flexFlow: 'column nowrap', justifyContent: 'center', alignItems: 'center' }}>
           <Card sx={{ maxWidth: 340, marginTop: 2, marginBottom: 2 }}>
             <CardHeader
@@ -150,39 +148,21 @@ export default function Home() {
               <FactionLinkButton isAuthenticated={isAuthenticated} faction="republic" lists={userLists} />
               <FactionLinkButton isAuthenticated={isAuthenticated} faction="separatists" lists={userLists} />
           </div>
-          <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
-            <Chip
-              clickable={!isLoading}
-              label={
-                <span className={robotoCondensed.className} style={{ fontSize: 16 }}>
-                  {isAuthenticated ? `Logout (${user.email})` : 'Login'}
-                </span>
-              }
-              className={robotoCondensed.className}
-              onClick={() => {
-                isAuthenticated ? (
-                    logout({
-                      logoutParams: {
-                        returnTo: typeof window !== 'undefined' ? window.location.origin : undefined
-                      }
-                    })
-                  ) : (
-                    loginWithRedirect()
-                  )
-              }}
-            />
+		  <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
         </div>
         <Dialog onClose={() => setIsAboutUsDialogOpen(false)} open={isAboutUsDialogOpen}>
             <DialogTitle><span className={robotoCondensed.className} style={{ fontSize: 24 }}>What is this?</span></DialogTitle>
             <DialogContent>
               <DialogContentText>
                 <span className={robotoCondensed.className} style={{ fontSize: 18 }}>
-                  This website is a (currently) untitled and unaffiliated list builder meant to be used to conveniently create lists for the Retcon Open tournament. The Retcon Open tournament is a reoccuring tournament using Tabletop Simulator that may use alternative rulesets. It may also be used as a stopgap to wait for Kingston&apos;s builder to be updated if or when AMG makes changes to cards.
-                  </span>
+                  This website is an unofficial fan creation that is intended to act as platform for fan content for Star Wars: Armada. Features include a list builder and a homebrew card creator.
+                </span>
               </DialogContentText>
               <br />
               <DialogContentText>
-                <span className={robotoCondensed.className} style={{ fontSize: 18 }}>This website is an unofficial fan creation. All images, game symbols, and text is copyright Lucasfilm Ltd. and Fantasy Flight Games / Atomic Mass Games. This website is not affiliated or sponsored by Atomic Mass Games.</span>
+                <span className={robotoCondensed.className} style={{ fontSize: 18 }}>
+                  All images, game symbols, and text is copyright Lucasfilm Ltd. and Atomic Mass Games. This website is not affiliated or sponsored by Atomic Mass Games.
+                </span>
               </DialogContentText>
             </DialogContent>
         </Dialog>
