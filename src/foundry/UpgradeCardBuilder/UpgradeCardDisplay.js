@@ -81,7 +81,7 @@ function ForegroundImageElement({ alt, src, height, width = 50, top = 0, left = 
     return <Image alt={alt} src={src} style={style} />;
 }
 
-function ForegroundWrapperElement({ height, width, top, left, otherStyles }) {
+function ForegroundWrapperElement({ children, height, width, top, left, otherStyles }) {
     const style = {
         top,
         left,
