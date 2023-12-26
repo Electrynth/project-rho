@@ -6,6 +6,12 @@ import { commandIcons, barNumbers, armadaShipFontIcons, armadaFontIcons, upgrade
 
 
 function CardAbilityText({ cardText, fontSize = 18 }) {
+    const baseStyles = {
+        fontSize,
+        color: 'black',
+        lineHeight: 'normal'
+    };
+
     return (
         <Markdown
             allowedElements={['p', 'li', 'ol', 'ul', 'em', 'code', 'strong']}
@@ -13,7 +19,7 @@ function CardAbilityText({ cardText, fontSize = 18 }) {
                 li(props) {
                     const { children, ...rest } = props;
                     return (
-                        <li {...rest} style={{ color: 'black', fontFamily: 'Optima', fontSize }}>
+                        <li {...rest} style={{ ...baseStyles, fontFamily: 'Optima' }}>
                             {children}
                         </li>
                     );
@@ -21,7 +27,7 @@ function CardAbilityText({ cardText, fontSize = 18 }) {
                 p(props) {
                     const { children, ...rest } = props;
                     return (
-                        <p {...rest} style={{ color: 'black', fontFamily: 'Optima', fontSize, marginTop: 0, textAlign: 'center' }}>
+                        <p {...rest} style={{ ...baseStyles, fontFamily: 'Optima', marginTop: 0, textAlign: 'center' }}>
                             {children}
                         </p>
                     );
@@ -29,14 +35,14 @@ function CardAbilityText({ cardText, fontSize = 18 }) {
                 code(props) {
                     const { children, ...rest } = props;
                     if (typeof children === 'string' && armadaFontIcons[children]) {
-                        return <span {...rest} style={{ color: 'black', fontFamily: 'Armada Icons', fontWeight: 'normal', fontSize: fontSize + 2 }}>{armadaFontIcons[children]}</span>
+                        return <span {...rest} style={{ ...baseStyles, fontFamily: 'Armada Icons', fontSize: fontSize + 2 }}>{armadaFontIcons[children]}</span>
                     }
                     return undefined;
                 },
                 strong(props) {
                     const { children, ...rest } = props;
                     return (
-                        <strong {...rest} style={{ color: 'black', fontFamily: 'Aero Matics Display Bold', fontSize }}>
+                        <strong {...rest} style={{ ...baseStyles, fontFamily: 'Aero Matics Display Bold' }}>
                             {children}
                         </strong>
                     );
