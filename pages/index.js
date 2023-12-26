@@ -149,6 +149,26 @@ export default function Home() {
               <FactionLinkButton isAuthenticated={isAuthenticated} faction="separatists" lists={userLists} />
           </div>
 		  <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
+      <Chip
+              clickable={!isLoading}
+              label={
+                <span className={robotoCondensed.className} style={{ fontSize: 16 }}>
+                  {isAuthenticated ? `Logout (${user.email})` : 'Login'}
+                </span>
+              }
+              className={robotoCondensed.className}
+              onClick={() => {
+                isAuthenticated ? (
+                    logout({
+                      logoutParams: {
+                        returnTo: typeof window !== 'undefined' ? window.location.origin : undefined
+                      }
+                    })
+                  ) : (
+                    loginWithRedirect()
+                  )
+              }}
+            />
         </div>
         <Dialog onClose={() => setIsAboutUsDialogOpen(false)} open={isAboutUsDialogOpen}>
             <DialogTitle><span className={robotoCondensed.className} style={{ fontSize: 24 }}>What is this?</span></DialogTitle>
