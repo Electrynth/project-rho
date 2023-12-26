@@ -8,7 +8,6 @@ import { commandIcons, barNumbers, armadaShipFontIcons, armadaFontIcons, upgrade
 function CardAbilityText({ cardText, fontSize = 18 }) {
     return (
         <Markdown
-            children={cardText}
             allowedElements={['p', 'li', 'ol', 'ul', 'em', 'code', 'strong']}
             components={{
                 li(props) {
@@ -44,7 +43,9 @@ function CardAbilityText({ cardText, fontSize = 18 }) {
                 },
 
             }}
-        />
+        >
+            {cardText}
+        </Markdown>
     );
 }
 
