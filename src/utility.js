@@ -191,6 +191,37 @@ const armadaFontIcons = {
     'super weapon': '\u004E'
 };
 
+const armadaShipFontSizeFactor = {
+    'Acclamator-class Assault Ship': .8,
+    'Arquitens-class Cruiser': .9,
+    'Assault Frigate Mark II': .6,
+    'CR90 Corvette': .75,
+    'Consular Cruiser': .65,
+    'GR75 Transports': .9,
+    'Gladiator-class Star Destroyer': .75,
+    'Gozanti-class Cruisers': 0.9,
+    'Hammerhead-class Corvette': 0.6,
+    'Hardcell-class Transport': 0.8,
+    'Imperial-class Star Destroyer': 1,
+    'Interdictor': 1,
+    'MC30c Frigate': 1,
+    'MC75 Cruiser': .75,
+    'MC80 Home One type': 1,
+    'MC80 Liberty type': 1,
+    'Modified Pelta-class Ship': .8,
+    'Munificent-class Frigate': .9,
+    'Nebulon Frigate': .65,
+    'Onager-class Ship': .75,
+    'Pelta-class Frigate': .8,
+    'Providence-class Carrier': .7,
+    'Quasar Fire-class Cruiser-Carrier': .8,
+    'Raider-class Corvette': 1,
+    'Recusant-class Destroyer': 1,
+    'Starhawk Battlecruiser': .75,
+    'Venator-class Star Destroyer': 1,
+    'Victory-class Star Destroyer': .8
+};
+
 const armadaShipFontIcons = {
     'rebels': {
         'CR90 Corvette': '\u004E',
@@ -203,7 +234,7 @@ const armadaShipFontIcons = {
         'Modified Pelta-class Ship': '\u0055',
         'Hammerhead-class Corvette': '\u0056',
         'MC75 Cruiser': '\u0057',
-        'Starhawk Battlecruiser': '\u0058',
+        'Starhawk Battlecruiser': '\u0058'
     },
     'empire': {
         'Victory-class Star Destroyer': '\u0041',
@@ -214,13 +245,13 @@ const armadaShipFontIcons = {
         'Interdictor': '\u0046',
         'Arquitens-class Cruiser': '\u0047',
         'Quasar Fire-class Cruiser-Carrier': '\u0048',
-        'Onager-class Ship': '\u004A',
+        'Onager-class Ship': '\u004A'
     },
     'republic': {
         'Consular Cruiser': '\u0061',
         'Acclamator-class Assault Ship': '\u0062',
         'Venator-class Star Destroyer': '\u0063',
-        'Pelta-class Frigate': '\u0064',
+        'Pelta-class Frigate': '\u0064'
     },
     'separatists': {
         'Munificent-class Frigate': '\u006E',
@@ -291,6 +322,7 @@ const isUpgradeRequirementsMet = (requirements, shipCard) => {
 
 export {
     isUpgradeRequirementsMet,
+    armadaShipFontSizeFactor,
     armadaShipFontIcons,
     commandIcons,
     barNumbers,

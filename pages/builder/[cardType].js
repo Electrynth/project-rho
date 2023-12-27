@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useTheme, useMediaQuery } from '@mui/material';
 import NextHead from 'src/common/NextHead';
-import FoundryContainer from 'src/foundry/FoundryContainer';
+import BuilderContainer from 'src/builder/BuilderContainer';
 
-export default function Foundry() {
+export default function Builder() {
     const theme = useTheme();
     const breakpoints = {
         sm: useMediaQuery(theme.breakpoints.up('sm')),
@@ -14,9 +14,7 @@ export default function Foundry() {
     return (
         <div>
             <NextHead />
-            <FoundryContainer
-                breakpoints={breakpoints}
-            />
+            <BuilderContainer breakpoints={breakpoints} />
         </div>
     );
 }

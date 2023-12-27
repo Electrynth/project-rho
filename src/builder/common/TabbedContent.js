@@ -19,7 +19,14 @@ export default function TabbedContent({
     return (
         <Box sx={{ width: '100%' }}>
             <Box sx={{ display: orientation === 'horizontal' ? 'block' : 'flex' }}>
-                <Tabs visibleScrollbar variant="scrollable" orientation={orientation} value={activeTab} onChange={(e, v) => setActiveTab(v)}>
+                <Tabs
+                    visibleScrollbar
+                    allowScrollButtonsMobile
+                    variant="scrollable"
+                    orientation={orientation}
+                    value={activeTab}
+                    onChange={(e, v) => setActiveTab(v)}
+                >
                     {tabHeaderItems.map(({ key, label }) => (
                         <Tab key={key ? key : label} label={label} />
                     ))}

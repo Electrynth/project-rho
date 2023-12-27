@@ -6,9 +6,8 @@ import {
     TableRow,
     Paper
 } from '@mui/material';
-import { armadaFontIcons, upgradeTypeItems } from '../../utility';
+import { armadaFontIcons } from 'src/utility';
 import TabbedContent from '../common/TabbedContent';
-
 
 function TableCellWithArmadaIcons({ children }) {
     return (
@@ -43,7 +42,8 @@ function ArmadaTable({ label, rowData }) {
     );
 }
 
-export default function CardTextLegend() {
+export default function MarkupLegend() {
+
     const legendTables = [
         {
             label: 'Command Icons',
@@ -66,7 +66,7 @@ export default function CardTextLegend() {
             rowData: ['hit', 'crit', 'acc']
         }
     ];
-    
+
     return (
         <TabbedContent
             orientation="vertical"

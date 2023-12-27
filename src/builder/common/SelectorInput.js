@@ -11,14 +11,19 @@ export default function SelectorInput({
     label,
     items,
     value,
+    error = false,
     handleChange,
+    isDisabled = false,
     isMultiSelect = false,
     ...props
 }) {
+
     return (
         <FormControl size="small" {...props}>
             <InputLabel id={`${elementId}-label`}>{label}</InputLabel>
             <Select
+                error={error}
+                disabled={isDisabled}
                 multiple={isMultiSelect}
                 label={label}
                 labelId={`${elementId}-label`}

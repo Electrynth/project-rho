@@ -88,17 +88,17 @@ export default function NextHead() {
                     </ListItem>
                     <Divider />
                     <ListItem disablePadding>
-                    <ListItemButton onClick={() => { router.push('/foundry/upgrade'); setIsDrawerOpen(false); }}>
+                    <ListItemButton onClick={() => { router.push('/builder/upgrade'); setIsDrawerOpen(false); }}>
                         <ListItemText primary={<span className={robotoCondensed.className}>Upgrade Card Builder</span>} />
                     </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                    <ListItemButton onClick={() => { router.push('/foundry/squadron'); setIsDrawerOpen(false); }}>
+                    <ListItemButton onClick={() => { router.push('/builder/squadron'); setIsDrawerOpen(false); }}>
                         <ListItemText primary={<span className={robotoCondensed.className}>Squadron Card Builder</span>} />
                     </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                    <ListItemButton onClick={() => { router.push('/foundry/ship'); setIsDrawerOpen(false); }}>
+                    <ListItemButton onClick={() => { router.push('/builder/ship'); setIsDrawerOpen(false); }}>
                         <ListItemText primary={<span className={robotoCondensed.className}>Ship Card builder</span>} />
                     </ListItemButton>
                     </ListItem>
