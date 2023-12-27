@@ -132,7 +132,7 @@ export default function UpgradeBuilder({
                         handleChange={e => {
                             if (e.target.value.length < 3) setUpgradeTypes(e.target.value);
                         }}
-                        style={{ minWidth: 360 }}
+                        style={{ flexGrow: 1 }}
                     />
                     <SelectorInput
                         error={upgradeTypes.length > 0 && upgradeTypes[0] === 'title' && !titledShip}
@@ -147,7 +147,7 @@ export default function UpgradeBuilder({
                             ...Object.keys(armadaShipFontIcons.separatists)
                         ].sort().map(item => ({ label: item, value: item }))}
                         handleChange={e => setTitledShip(e.target.value)}
-                        style={{ minWidth: 240 }}
+                        style={{ flexGrow: 1 }}
                     />
                 </div>
                 <div style={{ display: 'flex', flexFlow: 'column nowrap', width: '100%', gap: 8 }}>
