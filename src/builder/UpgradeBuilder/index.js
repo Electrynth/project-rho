@@ -2,7 +2,6 @@ import { useState } from 'react';
 import {
     IconButton,
     Typography,
-    Divider,
     Dialog,
     DialogTitle,
     DialogContent
@@ -49,7 +48,7 @@ export default function UpgradeBuilder({
     
     return (
         <div style={{ display: 'flex', flexFlow: `${breakpoints.lg ? 'row' : 'column'} nowrap`, alignItems: `${breakpoints.lg ? 'flex-start' : 'center'}`, gap: 8 }}>
-            <div style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'flex-start', gap: 8, margin: 8 }}>
+            <div style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'flex-start', gap: 16, margin: 8 }}>
                 <TextInput
                     fullWidth
                     elementId="card-name-input"
@@ -57,7 +56,6 @@ export default function UpgradeBuilder({
                     value={cardName}
                     handleChange={e => setCardName(e.target.value)}
                 />
-                <Divider />
                 <div style={{ display: 'flex', flexFlow: 'row nowrap', width: '100%', gap: 8 }}>
                     <SelectorInput
                         elementId="card-name-font-size-input"
@@ -124,7 +122,6 @@ export default function UpgradeBuilder({
                         style={{ width: 80 }}
                     />
                 </div>
-                <Divider />
                 <div style={{ display: 'flex', flexFlow: 'row nowrap', width: '100%', gap: 8 }}>
                     <SelectorInput
                         error={upgradeTypes.length === 0}
@@ -139,7 +136,6 @@ export default function UpgradeBuilder({
                         style={{ flexGrow: 1 }}
                     />
                 </div>
-                <Divider />
                 <div style={{ display: 'flex', flexFlow: 'row nowrap', width: '100%', gap: 8 }}>
                     <SelectorInput
                         error={upgradeTypes.length > 0 && upgradeTypes[0] === 'title' && !titledShip}
@@ -165,7 +161,6 @@ export default function UpgradeBuilder({
                         style={{ width: 160 }}
                     />
                 </div>
-                <Divider />
                 <div style={{ display: 'flex', flexFlow: 'column nowrap', width: '100%', gap: 8 }}>
                     <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', gap: 8 }}>
                         <Typography variant="subtitle1">Starting Resources</Typography>
@@ -223,7 +218,6 @@ export default function UpgradeBuilder({
                         style={{ maxWidth: 560 }}
                     />
                 </div>
-                <Divider />
                 <div style={{ display: 'flex', flexFlow: 'column nowrap', width: '100%', gap: 8 }}>
                     <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', gap: 8 }}>
                         <Typography variant="subtitle1"> Recur Cost</Typography>
@@ -293,7 +287,6 @@ export default function UpgradeBuilder({
                         style={{ maxWidth: 560 }}
                     />
                 </div>
-                <Divider />
                 <div style={{ display: 'flex', flexFlow: 'row nowrap', gap: 8 }}>
                     <ImageUploadButton
                         uploadedImage={uploadedImage}
@@ -336,7 +329,6 @@ export default function UpgradeBuilder({
                         style={{ width: 100 }}
                     />
                 </div>
-                <Divider />
                 <div style={{ display: 'flex', flexflow: 'row nowrap', width: '100%', gap: 8 }}>
                     <IconButton size="small" onClick={() => setIsLegendDialogOpen(true)}>
                         <InfoIcon />
