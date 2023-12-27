@@ -1,7 +1,7 @@
 export default function ShipBuilder() {
     return (
         <div>
-            ShipBuilder
+            Coming Soon!
         </div>
     );
 }

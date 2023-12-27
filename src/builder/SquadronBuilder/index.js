@@ -1,7 +1,7 @@
 export default function SquadronBuilder() {
     return (
         <div>
-            SquadronBuilder
+            Coming Soon!
         </div>
     );
 }
