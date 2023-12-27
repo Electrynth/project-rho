@@ -31,16 +31,17 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18 }) {
                 code(props) {
                     const { children, ...rest } = props;
                     if (typeof children === 'string' && armadaFontIcons[children]) {
-                        return <span {...rest} style={{ ...baseStyles, fontFamily: 'Armada Icons', fontSize: fontSize + 2 }}>{armadaFontIcons[children]}</span>
+                        return <span {...rest} style={{ ...baseStyles, fontFamily: 'Armada Icons', fontSize: fontSize + 4, verticalAlign: 'middle' }}>{armadaFontIcons[children]}</span>
                     } else if (typeof children === 'string' && children === 'newline') {
-                        return <br />
+                        return <span><br /><br /></span>
+                    } else {
+                        return undefined;
                     }
-                    return undefined;
                 },
                 strong(props) {
                     const { children, ...rest } = props;
                     return (
-                        <strong {...rest} style={{ ...baseStyles, fontFamily: 'Aero Matics Display Bold', fontSize: fontSize + 2 }}>
+                        <strong {...rest} style={{ ...baseStyles, fontFamily: 'Aero Matics Display Bold', fontSize: fontSize + 1 }}>
                             {children}
                         </strong>
                     );

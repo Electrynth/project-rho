@@ -48,7 +48,7 @@ export default function UpgradeBuilder({
     
     return (
         <div style={{ display: 'flex', flexFlow: `${breakpoints.lg ? 'row' : 'column'} nowrap`, alignItems: `${breakpoints.lg ? 'flex-start' : 'center'}`, gap: 8 }}>
-            <div style={{ display: 'flex', flexFlow: 'column nowrap', maxWidth: 400, alignItems: 'flex-start', gap: 16, margin: 8 }}>
+            <div style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'flex-start', gap: 16, margin: 8 }}>
                 <TextInput
                     fullWidth
                     elementId="card-name-input"

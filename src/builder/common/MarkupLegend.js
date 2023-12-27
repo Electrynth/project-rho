@@ -95,6 +95,10 @@ export default function MarkupLegend() {
                                     <TableCell>* List Item 1 <br/>* List Item 2 <br />* List Item 3</TableCell>
                                     <TableCell><li>List Item 1</li><li>List Item 2</li><li>List Item 3</li></TableCell>
                                 </TableRow>
+                                <TableRow>
+                                    <TableCell>`newline`</TableCell>
+                                    <TableCell>Empty new line</TableCell>
+                                </TableRow>
                             </TableBody>
                         </Table>
                     </TableContainer>
