@@ -75,6 +75,7 @@ export default function UpgradeCardDisplay({
     startingTokens,
     readyCostTokenValue,
     readyCostTokens,
+    titledShipY,
     uploadedImage,
     uploadedImageStyles = {}
 }) {
@@ -89,11 +90,12 @@ export default function UpgradeCardDisplay({
         else if (faction === 'republic') cardElements.push(<BackgroundImageLayer key={baseImageKey} src={upgradeTemplateImages.republicCommander} />);
         else if (faction === 'separatists') cardElements.push(<BackgroundImageLayer key={baseImageKey} src={upgradeTemplateImages.separatistsCommander} />);
     } else if (upgradeTypes.length > 0) {
+        // Title
         cardElements.push(<BackgroundImageLayer key={baseImageKey} src={upgradeTemplateImages.baseGeneric} />);
         if (upgradeTypes[0] === 'title') {
             cardElements.push(<BackgroundImageLayer key="upgrade-type-icon" alt={upgradeTypes[0]} src={upgradeTemplateImages.titleSlot} />);
             cardElements.push(
-                <ForegroundWrapperElement key="titled-ship-icon" height={50} width={100} top={557} left={10}>
+                <ForegroundWrapperElement key="titled-ship-icon" height={50} width={100} top={Number(titledShipY) ? Number.parseInt(titledShipY) + 557 : 557} left={10}>
                     <span style={{ fontSize: armadaShipFontSizeFactor[titledShip] ? 64 * armadaShipFontSizeFactor[titledShip] : 64, fontFamily: 'Armada Ship Icons', color: 'black' }}>
                         {{
                             ...armadaShipFontIcons.rebels,
@@ -180,6 +182,8 @@ export default function UpgradeCardDisplay({
                 <Image
                     alt="card portrait"
                     src={URL.createObjectURL(uploadedImage)}
+                    width={0}
+                    height={0}
                     style={{ ...uploadedImageStyles }}
                 />
             </div>

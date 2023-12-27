@@ -2,6 +2,7 @@ import { useState } from 'react';
 import {
     IconButton,
     Typography,
+    Divider,
     Dialog,
     DialogTitle,
     DialogContent
@@ -39,10 +40,11 @@ export default function UpgradeBuilder({
     const [startingTokens, setStartingTokens] = useState([]);
     const [startingTokenValue, setStartingTokenValue] = useState(0);
     const [uploadedImage, setUploadedImage] = useState();
+    const [titledShipY, setTitledShipY] = useState(0);
     const [portraitWidth, setPortraitWidth] = useState(450);
     const [portraitX, setPortraitX] = useState(0);
     const [portraitY, setPortraitY] = useState(0);
-    const [isPortraitMirroed, setIsPortraitMirrored] = useState(false);
+    const [isPortraitMirrored, setIsPortraitMirrored] = useState(false);
     const [isLegendDialogOpen, setIsLegendDialogOpen] = useState(false);
     
     return (
@@ -55,6 +57,7 @@ export default function UpgradeBuilder({
                     value={cardName}
                     handleChange={e => setCardName(e.target.value)}
                 />
+                <Divider />
                 <div style={{ display: 'flex', flexFlow: 'row nowrap', width: '100%', gap: 8 }}>
                     <SelectorInput
                         elementId="card-name-font-size-input"
@@ -118,9 +121,10 @@ export default function UpgradeBuilder({
                         numberRange={[-999, 999]}
                         value={points}
                         handleChange={e => setPoints(e.target.value)}
-                        style={{ width: 60 }}
+                        style={{ width: 80 }}
                     />
                 </div>
+                <Divider />
                 <div style={{ display: 'flex', flexFlow: 'row nowrap', width: '100%', gap: 8 }}>
                     <SelectorInput
                         error={upgradeTypes.length === 0}
@@ -134,9 +138,12 @@ export default function UpgradeBuilder({
                         }}
                         style={{ flexGrow: 1 }}
                     />
+                </div>
+                <Divider />
+                <div style={{ display: 'flex', flexFlow: 'row nowrap', width: '100%', gap: 8 }}>
                     <SelectorInput
                         error={upgradeTypes.length > 0 && upgradeTypes[0] === 'title' && !titledShip}
-                        isDisabled={upgradeTypes.length > 0 && upgradeTypes[0] !== 'title'}
+                        isDisabled={upgradeTypes.length === 0 || upgradeTypes.length > 0 && upgradeTypes[0] !== 'title'}
                         elementId="titled-ship-input"
                         label="Titled Ship Class"
                         value={titledShip}
@@ -149,7 +156,16 @@ export default function UpgradeBuilder({
                         handleChange={e => setTitledShip(e.target.value)}
                         style={{ flexGrow: 1 }}
                     />
+                    <TextInput
+                        elementId="titled-ship-y-offset-input"
+                        label="Title Ship Y Offset"
+                        isDisabled={upgradeTypes.length === 0 || upgradeTypes.length > 0 && upgradeTypes[0] !== 'title'}
+                        value={titledShipY}
+                        handleChange={e => setTitledShipY(e.target.value)}
+                        style={{ width: 160 }}
+                    />
                 </div>
+                <Divider />
                 <div style={{ display: 'flex', flexFlow: 'column nowrap', width: '100%', gap: 8 }}>
                     <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', gap: 8 }}>
                         <Typography variant="subtitle1">Starting Resources</Typography>
@@ -207,6 +223,7 @@ export default function UpgradeBuilder({
                         style={{ maxWidth: 560 }}
                     />
                 </div>
+                <Divider />
                 <div style={{ display: 'flex', flexFlow: 'column nowrap', width: '100%', gap: 8 }}>
                     <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', gap: 8 }}>
                         <Typography variant="subtitle1"> Recur Cost</Typography>
@@ -276,6 +293,7 @@ export default function UpgradeBuilder({
                         style={{ maxWidth: 560 }}
                     />
                 </div>
+                <Divider />
                 <div style={{ display: 'flex', flexFlow: 'row nowrap', gap: 8 }}>
                     <ImageUploadButton
                         uploadedImage={uploadedImage}
@@ -285,7 +303,7 @@ export default function UpgradeBuilder({
                         isDisabled={!Boolean(uploadedImage)}
                         elementId="image-mirror-input"
                         label="Mirror Portrait"
-                        value={isPortraitMirroed}
+                        value={isPortraitMirrored}
                         items={[
                             { label: 'No', value: false },
                             { label: 'Yes', value: true }
@@ -318,6 +336,7 @@ export default function UpgradeBuilder({
                         style={{ width: 100 }}
                     />
                 </div>
+                <Divider />
                 <div style={{ display: 'flex', flexflow: 'row nowrap', width: '100%', gap: 8 }}>
                     <IconButton size="small" onClick={() => setIsLegendDialogOpen(true)}>
                         <InfoIcon />
@@ -355,11 +374,13 @@ export default function UpgradeBuilder({
                 readyCostTokens={readyCostTokens}
                 readyCostTokenValue={readyCostTokenValue}
                 uploadedImage={uploadedImage}
+                titledShipY={titledShipY}
                 uploadedImageStyles={{
                     marginTop: Number(portraitY) ? Number.parseInt(portraitY) : 0,
                     marginLeft: Number(portraitX) ? Number.parseInt(portraitX) : 0,
                     width: Number(portraitWidth) ? Number.parseInt(portraitWidth) : 0,
-                    transform: `scaleX(${isPortraitMirroed ? '-1' : '1'})`
+                    height: 'auto',
+                    transform: `scaleX(${isPortraitMirrored ? '-1' : '1'})`
                 }}
             />
         </div>
