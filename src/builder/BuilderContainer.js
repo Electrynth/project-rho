@@ -12,14 +12,14 @@ const builderTheme = createTheme({
     }
 });
 
-export default function Builder() {
+export default function Builder({ breakpoints }) {
     const router = useRouter();
     const query = router.query;
 
     const routes = {
-        'upgrade': <UpgradeBuilder />,
-        'squadron': <SquadronBuilder />,
-        'ship': <ShipBuilder />
+        'upgrade': <UpgradeBuilder breakpoints={breakpoints} />,
+        'squadron': <SquadronBuilder breakpoints={breakpoints} />,
+        'ship': <ShipBuilder breakpoints={breakpoints} />
     };
 
     return (

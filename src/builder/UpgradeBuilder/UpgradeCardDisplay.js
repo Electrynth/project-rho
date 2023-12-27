@@ -5,6 +5,7 @@ import {
     barNumbers,
     upgradeTypeIcons,
     upgradeTemplateImages,
+    armadaShipFontIcons,
     armadaShipFontSizeFactor
 } from 'src/utility';
 import SideBarTokenColumn from '../common/SideBarTokenColumn.js';
@@ -94,7 +95,12 @@ export default function UpgradeCardDisplay({
             cardElements.push(
                 <ForegroundWrapperElement key="titled-ship-icon" height={50} width={100} top={557} left={10}>
                     <span style={{ fontSize: armadaShipFontSizeFactor[titledShip] ? 64 * armadaShipFontSizeFactor[titledShip] : 64, fontFamily: 'Armada Ship Icons', color: 'black' }}>
-                        {titledShipDictionary[titledShip]}
+                        {{
+                            ...armadaShipFontIcons.rebels,
+                            ...armadaShipFontIcons.empire,
+                            ...armadaShipFontIcons.republic,
+                            ...armadaShipFontIcons.separatists
+                        }[titledShip]}
                     </span>
                 </ForegroundWrapperElement>
             );
