@@ -11,7 +11,7 @@ import TabbedContent from '../common/TabbedContent';
 
 function TableCellWithArmadaIcons({ children }) {
     return (
-        <TableCell style={{ fontFamily: 'Armada Icons', fontSize: 16 }}>
+        <TableCell style={{ fontFamily: 'Armada Icons', fontSize: 32 }}>
             {children}
         </TableCell>
     );
