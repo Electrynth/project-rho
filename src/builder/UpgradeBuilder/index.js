@@ -48,7 +48,7 @@ export default function UpgradeBuilder({
     
     return (
         <div style={{ display: 'flex', flexFlow: `${breakpoints.lg ? 'row' : 'column'} nowrap`, alignItems: `${breakpoints.lg ? 'flex-start' : 'center'}`, gap: 8 }}>
-            <div style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'flex-start', gap: 16, margin: 8 }}>
+            <div style={{ display: 'flex', flexFlow: 'column nowrap', maxWidth: 400, alignItems: 'flex-start', gap: 16, margin: 8 }}>
                 <TextInput
                     fullWidth
                     elementId="card-name-input"
@@ -56,7 +56,7 @@ export default function UpgradeBuilder({
                     value={cardName}
                     handleChange={e => setCardName(e.target.value)}
                 />
-                <div style={{ display: 'flex', flexFlow: 'row nowrap', width: '100%', gap: 8 }}>
+                <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', gap: 8 }}>
                     <SelectorInput
                         elementId="card-name-font-size-input"
                         label="Name Font Size"
@@ -287,7 +287,7 @@ export default function UpgradeBuilder({
                         style={{ maxWidth: 560 }}
                     />
                 </div>
-                <div style={{ display: 'flex', flexFlow: 'row nowrap', gap: 8 }}>
+                <div style={{ display: 'flex', flexFlow: 'row wrap', gap: 8 }}>
                     <ImageUploadButton
                         uploadedImage={uploadedImage}
                         handleSetUploadedImage={file => setUploadedImage(file)}
