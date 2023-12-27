@@ -63,11 +63,12 @@ export default function UpgradeBuilder({
                         value={cardNameFontSize}
                         handleChange={e => setCardNameFontSize(e.target.value)}
                         items={[
-                            { label: '44', value: 44 },
                             { label: '46', value: 46 },
                             { label: '48', value: 48 },
                             { label: '50', value: 50 },
-                            { label: '52', value: 52 }
+                            { label: '52', value: 52 },
+                            { label: '54', value: 54 },
+                            { label: '56', value: 56 }
                         ]}
                         style={{ width: 110 }}
                     />
