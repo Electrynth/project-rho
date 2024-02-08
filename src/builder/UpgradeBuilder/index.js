@@ -112,7 +112,7 @@ export default function UpgradeBuilder({
                             { label: 'Republic', value: 'republic' },
                             { label: 'Separatists', value: 'separatists' }
                         ]}
-                        style={{ width: 120 }}
+                        style={{ width: 130 }}
                     />
                     <TextInput
                         elementId="card-points-input"
@@ -331,9 +331,11 @@ export default function UpgradeBuilder({
                     />
                 </div>
                 <div style={{ display: 'flex', flexflow: 'row nowrap', width: '100%', gap: 8 }}>
-                    <IconButton size="small" onClick={() => setIsLegendDialogOpen(true)}>
-                        <InfoIcon />
-                    </IconButton>
+                    <div>
+                        <IconButton size="small" onClick={() => setIsLegendDialogOpen(true)}>
+                            <InfoIcon />
+                        </IconButton>
+                    </div>
                     <TextInput
                         fullWidth
                         multiline

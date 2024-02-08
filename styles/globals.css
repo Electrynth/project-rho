@@ -66,6 +66,13 @@ body {
 }
 
 @font-face {
+  font-family: 'Armada Squadron Icons';
+  font-weight: 400;
+  font-style: normal;
+  src: url('/fonts/Armada Squadron Icons.ttf') format('truetype')
+}
+
+@font-face {
   font-family: 'Optima';
   font-weight: 400;
   font-style: normal;

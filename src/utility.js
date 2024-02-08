@@ -261,6 +261,42 @@ const armadaShipFontIcons = {
     }
 };
 
+const armadaSquadronFontIcons = {
+    'Vulture Squadron': '\u0021',
+    'Belbullab-22 Squadron': '\u0023',
+    'Tri-fighter Squadron': '\u0024',
+    'V-19 Torrent Squadron': '\u0030',
+    'Delta-7 Aethersprite Squadron': '\u0031',
+    'BTL-B Y-Wing Squadron': '\u0032',
+    'ARC-170 Squadron': '\u0033',
+    'Hyena Squadron': '\u0040',
+    'TIE Fighter Squadron': '\u0041',
+    'TIE Advanced Squadron': '\u0042',
+    'TIE Bomber Squadron': '\u0043',
+    'TIE Interceptor Squadron': '\u0044',
+    'Firespray-31': '\u0045',
+    'Aggressor Assault Fighter': '\u0046',
+    'JumpMaster 5000': '\u0047',
+    'YV-666': '\u0048',
+    'TIE Defender Squadron': '\u0049',
+    'TIE Phantom Squadron': '\u004A',
+    'Lambda Shuttle': '\u004B',
+    'VT-49 Decimator': '\u004C',
+    'Mandalorian Gauntlet Fighter': '\u004D',
+    'X-Wing Squadron': '\u0061',
+    'A-Wing Squadron': '\u0062',
+    'B-Wing Squadron': '\u0063',
+    'Y-Wing Squadron': '\u0064',
+    'YT-1300': '\u0065',
+    'YT-2400': '\u0066',
+    'Scurrg H-6 Bomber': '\u0067',
+    'HWK-290': '\u0068',
+    'VCX-100 Freighter': '\u0069',
+    'Lancer Pursuit Craft': '\u006A',
+    'Z-95 Headhunter Squadron': '\u006B',
+    'E-Wing Squadron': '\u006C'
+};
+
 const checkIsMatch = (object, source) => {
     let matchingProperties = 0;
 
@@ -324,6 +360,7 @@ export {
     isUpgradeRequirementsMet,
     armadaShipFontSizeFactor,
     armadaShipFontIcons,
+    armadaSquadronFontIcons,
     commandIcons,
     barNumbers,
     upgradeTypeIcons,

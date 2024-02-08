@@ -40,8 +40,7 @@ function ForegroundImageElement({ alt, src, height, width = 50, top = 0, left = 
         left,
         ...otherStyles
     };
-
-    return <Image alt={alt} src={src} style={style} />;
+    return <img alt={alt} src={src.src} style={style} />;
 }
 
 function ForegroundWrapperElement({ children, height, width, top, left, otherStyles }) {
@@ -90,7 +89,7 @@ export default function UpgradeCardDisplay({
         else if (faction === 'republic') cardElements.push(<BackgroundImageLayer key={baseImageKey} src={upgradeTemplateImages.republicCommander} />);
         else if (faction === 'separatists') cardElements.push(<BackgroundImageLayer key={baseImageKey} src={upgradeTemplateImages.separatistsCommander} />);
     } else if (upgradeTypes.length > 0) {
-        // Title
+        // Title icon
         cardElements.push(<BackgroundImageLayer key={baseImageKey} src={upgradeTemplateImages.baseGeneric} />);
         if (upgradeTypes[0] === 'title') {
             cardElements.push(<BackgroundImageLayer key="upgrade-type-icon" alt={upgradeTypes[0]} src={upgradeTemplateImages.titleSlot} />);
@@ -190,7 +189,7 @@ export default function UpgradeCardDisplay({
         );
     }
 
-    const elementRef = useRef(null);
+    let elementRef = useRef(null);
     const htmlToImageConvert = () => {
         toPng(elementRef.current, { cacheBust: false }).then(dataUrl => {
             const link = document.createElement('a');
@@ -198,16 +197,19 @@ export default function UpgradeCardDisplay({
             link.href = dataUrl;
             link.click();
         }).catch(err => {
-            console.log(err);
+            console.error(err);
         });
     }
+
 
     return (
         <div style={{ display: 'flex', flexFlow: 'column nowrap' }}>
             <div id="image-wrapper" ref={elementRef} style={{ display: 'block', position: 'relative', width: 450, height: 640 }}>
                 {upgradeTypes.length > 0 ? cardElements : undefined}
             </div>
-            <button onClick={htmlToImageConvert} style={{ marginTop: 8 }}>Download Image</button>
+            <button onClick={htmlToImageConvert} style={{ marginTop: 8 }}>
+                Download Image
+            </button>
         </div>
     );
 }

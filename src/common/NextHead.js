@@ -88,7 +88,7 @@ export default function NextHead() {
                     </ListItem>
                     <Divider />
                     <ListItem disablePadding>
-                    <ListItemButton onClick={() => { router.push('/builder/upgrade'); setIsDrawerOpen(false); }}>
+                    <ListItemButton onClick={() => { router.push('/builder/upgrade/'); setIsDrawerOpen(false); }}>
                         <ListItemText primary={<span className={robotoCondensed.className}>Upgrade Card Builder</span>} />
                     </ListItemButton>
                     </ListItem>
