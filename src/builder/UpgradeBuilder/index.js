@@ -27,11 +27,15 @@ const sizeMultiplier = 0.8;
 
 export default function UpgradeBuilder({ breakpoints }) {
     const { user } = useAuth0();
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
+        setIsLoading(false);
         if (user && user.email) {
+            setIsLoading(true);
             axios.get(`${urls.api}/users?email=${user.email}`).then(({ data }) => {
                 if (data.settings && data.settings.builderAccess) setBuilderAccess(data.settings.builderAccess);
+                setIsLoading(false);
             });
         }
     }, [user]);
@@ -62,7 +66,13 @@ export default function UpgradeBuilder({ breakpoints }) {
     const [isLegendDialogOpen, setIsLegendDialogOpen] = useState(false);
     const [builderAccess, setBuilderAccess] = useState(false);
     
-    if (!builderAccess) {
+    if (isLoading) {
+        return (
+            <Typography style={{ margin: 16 }}>
+                Loading...
+            </Typography>
+        );
+    } else if (!isLoading && !builderAccess) {
         return (
             <Typography style={{ margin: 16 }}>
                 Please donate to use this feature! After donation access will be granted within 24 hours. Email admin@legion-hq.com for expedited access.
