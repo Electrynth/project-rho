@@ -155,7 +155,7 @@ export default function SquadronCardDisplay({
     // Defense tokens
     if (firstDefenseToken) {
         cardElements.push(
-            <ForegroundWrapperElement key="squadron-first-defense-token" height={35 * sizeMultiplier} width={50 * sizeMultiplier} top={firstDefenseToken === 'brace' ? 577 * sizeMultiplier : 576 * sizeMultiplier} left={secondDefenseToken === 'none' ? 202 * sizeMultiplier : 175 * sizeMultiplier}>
+            <ForegroundWrapperElement key="squadron-first-defense-token" height={35 * sizeMultiplier} width={50 * sizeMultiplier} top={faction === 'rebels' ? 577 * sizeMultiplier : 575 * sizeMultiplier} left={secondDefenseToken === 'none' ? 202 * sizeMultiplier : 175 * sizeMultiplier}>
                 <span style={{ marginRight: 2, fontSize: firstDefenseToken === 'brace' ? 36 * sizeMultiplier : 32 * sizeMultiplier, fontFamily: 'Armada Icons', color: 'white', display: 'flex', alignItems: 'center' }}>
                     {armadaFontIcons[firstDefenseToken]}
                 </span>
@@ -164,7 +164,7 @@ export default function SquadronCardDisplay({
     }
     if (secondDefenseToken) {
         cardElements.push(
-            <ForegroundWrapperElement key="squadron-second-defense-token" height={35 * sizeMultiplier} width={50 * sizeMultiplier} top={secondDefenseToken === 'brace' ? 577 * sizeMultiplier : 576 * sizeMultiplier} left={230 * sizeMultiplier}>
+            <ForegroundWrapperElement key="squadron-second-defense-token" height={35 * sizeMultiplier} width={50 * sizeMultiplier} top={faction === 'rebels' ? 577 * sizeMultiplier : 575 * sizeMultiplier} left={230 * sizeMultiplier}>
                 <span style={{ marginRight: 2, fontSize: secondDefenseToken === 'brace' ? 36 * sizeMultiplier : 32 * sizeMultiplier, fontFamily: 'Armada Icons', color: 'white', display: 'flex', alignItems: 'center' }}>
                     {armadaFontIcons[secondDefenseToken]}
                 </span>
