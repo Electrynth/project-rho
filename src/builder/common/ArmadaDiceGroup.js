@@ -43,7 +43,7 @@ export default function ArmadaDiceGroup({ sizeMultiplier, diceCounts, maxDicePer
                 {allDice.length > 0 ? firstRow : <div style={{ color: 'black', fontSize: 48 * sizeMultiplier }}>-</div>}
             </div>
             {secondRow.length > 0 ? (
-                <div style={{ marginTop: 2 * sizeMultiplier, marginLeft: secondRow.length > 1 ? 16 * sizeMultiplier : 0 * sizeMultiplier, display: 'flex', flexFlow: 'row nowrap', gap: 7 * sizeMultiplier }}>
+                <div style={{ marginTop: 2 * sizeMultiplier, marginLeft: secondRow.length > 1 ? 16 * sizeMultiplier : 0 * sizeMultiplier, display: 'flex', flexFlow: 'row nowrap', gap: 6 * sizeMultiplier }}>
                     {secondRow}
                 </div>
             ) : undefined}
