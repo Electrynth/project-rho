@@ -86,14 +86,40 @@ export default function Home() {
     isAuthenticated,
     isLoading,
     loginWithRedirect,
+    getAccessTokenSilently,
     logout
   } = useAuth0();
 
   const [userLists, setUserLists] = useState([]);
-  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isAboutUsDialogOpen, setIsAboutUsDialogOpen] = useState(false);
   const [isContactDialogOpen, setIsContactDialogOpen] = useState(false);
+  const [userMetadata, setUserMetadata] = useState();
+  console.log(userMetadata);
+  
   const router = useRouter();
+
+  useEffect(() => {
+    const getUserMetadata = async () => {
+      try {
+        const accessToken = await getAccessTokenSilently({
+          authorizationParams: {
+            audience: `${urls.authDomain}/api/v2/`,
+            scope: 'read:current_user'
+          }
+        });
+        const userDetailsByIdUrl = `${urls.authDomain}/api/v2/users/${user.sub}`
+        const metadataResponse = await fetch(userDetailsByIdUrl, {
+          headers: { Authorization: `Bearer ${accessToken}` }
+        });
+        const { user_metadata } = await metadataResponse.json();
+        setUserMetadata(user_metadata);
+      } catch (e) {
+        console.error(e.message);
+      }
+    }
+    if (user) getUserMetadata();
+  }, [getAccessTokenSilently, user]);
+
   useEffect(() => {
     if (user && user.email) {
       axios.get(`${urls.api}/users?email=${user.email}`).then(foundUser => {

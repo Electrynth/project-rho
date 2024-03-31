@@ -1,3 +1,4 @@
 {
-    "api": "https://api.legion-hq.com:3002"
+    "api": "https://api.legion-hq.com:3002",
+    "authDomain": "https://armada-hub.us.auth0.com"
 }
