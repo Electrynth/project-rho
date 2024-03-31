@@ -193,6 +193,21 @@ export default function SquadronCardDisplay({
         </ForegroundWrapperElement>
     );
 
+    // Card Portrait
+    if (uploadedImage) {
+
+        cardElements.push(
+            <div key="card-portrait" style={{ zIndex: -1, position: 'absolute', width: 450 * sizeMultiplier, height: 640 * sizeMultiplier, overflow: 'hidden' }} >
+                <Image
+                    alt="card portrait"
+                    src={URL.createObjectURL(uploadedImage)}
+                    width={0}
+                    height={0}
+                    style={{ ...uploadedImageStyles }}
+                />
+            </div>
+        );
+    }
 
     let elementRef = useRef(null);
     const htmlToImageConvert = () => {
