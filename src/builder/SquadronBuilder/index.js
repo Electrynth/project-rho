@@ -25,7 +25,7 @@ const sizeMultiplier = 1;
 export default function SquadronBuilder({ breakpoints }) {
     const [points, setPoints] = useState(0);
     const [faction, setFaction] = useState('rebels');
-    const [maxNumAllowed, setMaxNumAllowed] = useState(0);
+    const [maxNumAllowed, setMaxNumAllowed] = useState(1);
     const [squadronName, setSquadronName] = useState('');
     const [squadronChassis, setSquadronChassis] = useState('');
     const [isChassisItalic, setIsChassisItalic] = useState(false);
@@ -48,8 +48,8 @@ export default function SquadronBuilder({ breakpoints }) {
 
     return (
         <div style={{ display: 'flex', flexFlow: `${breakpoints.lg ? 'row' : 'column'} nowrap`, alignItems: `${breakpoints.lg ? 'flex-start' : 'center'}`, gap: 8 }}>
-            <div style={{ display: 'flex', flexFlow: 'column nowrap', gap: 16, margin: 8 }}>
-                <div style={{ display: 'flex', flexFlow: 'row nowrap', gap: 8 }}>
+            <div style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'flex-start', gap: 16, margin: 8 }}>
+                <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', gap: 8 }}>
                     <SelectorInput
                         elementId="faction-input"
                         label="Faction"
@@ -69,7 +69,7 @@ export default function SquadronBuilder({ breakpoints }) {
                         value={points}
                         numberRange={[-999, 999]}
                         handleChange={e => setPoints(e.target.value)}
-                        style={{ width: 60, marginRight: 6 }}
+                        style={{ width: 60 }}
                     />
                     <SelectorInput
                         elementId="squadron-speed-input"
@@ -83,7 +83,7 @@ export default function SquadronBuilder({ breakpoints }) {
                             { label: '4', value: 4 },
                             { label: '5', value: 5 },
                         ]}
-                        style={{ width: 60, marginRight: 8 }}
+                        style={{ width: 60  }}
                     />
                     <SelectorInput
                         elementId="squadron-hull-input"
@@ -102,6 +102,28 @@ export default function SquadronBuilder({ breakpoints }) {
                         style={{ width: 60 }}
                     />
                 </div>
+                <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', gap: 8 }}>
+                    <SelectorInput
+                        elementId="max-allowed-input"
+                        label="Max # Allowed"
+                        value={maxNumAllowed}
+                        handleChange={e => setMaxNumAllowed(e.target.value)}
+                        items={[
+                            { label: 'Any', value: 0 },
+                            { label: '1', value: 1 },
+                            { label: '2', value: 2 },
+                            { label: '3', value: 3 },
+                        ]}
+                        style={{ width: 110 }}
+                    />
+                    <TextInput
+                        elementId="squadron-name-input"
+                        label="Squadron Ace Name (if any)"
+                        value={squadronName}
+                        handleChange={e => setSquadronName(e.target.value)}
+                        style={{ flexGrow: 1 }}
+                    />
+                </div>
                 <SelectorInput
                     fullWidth
                     elementId="squadron-icon-input"
@@ -109,38 +131,8 @@ export default function SquadronBuilder({ breakpoints }) {
                     value={squadronIcon}
                     handleChange={e => setSquadronIcon(e.target.value)}
                     items={Object.keys(armadaSquadronFontIcons).sort().map(sqdName => ({ label: sqdName, value: sqdName }))}
-                    style={{ width: 240 }}
                 />
-                <SelectorInput
-                    elementId="max-allowed-input"
-                    label="Max # Allowed"
-                    value={maxNumAllowed}
-                    handleChange={e => setMaxNumAllowed(e.target.value)}
-                    items={[
-                        { label: 'Any', value: 0 },
-                        { label: '1', value: 1 },
-                        { label: '2', value: 2 },
-                        { label: '3', value: 3 },
-                    ]}
-                    style={{ width: 110 }}
-                />
-                <TextInput
-                    elementId="squadron-name-input"
-                    label="Squadron Ace Name"
-                    value={squadronName}
-                    handleChange={e => setSquadronName(e.target.value)}
-                    style={{ width: 260 }}
-                />
-                <TextInput
-                    required
-                    error={squadronChassis === ''}
-                    elementId="squadron-chassis-input"
-                    label="Squadron Chassis Name"
-                    value={squadronChassis}
-                    handleChange={e => setSquadronChassis(e.target.value)}
-                    style={{ width: 260 }}
-                />
-                <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
+                <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', gap: 8 }}>
                     <SelectorInput
                         elementId="italic-chassis"
                         label="Italicize Chassis Name"
@@ -150,11 +142,19 @@ export default function SquadronBuilder({ breakpoints }) {
                             { label: 'No', value: false },
                             { label: 'Yes', value: true }
                         ]}
-                        style={{ width: 150, marginRight: 8 }}
+                        style={{ width: 150  }}
                     />
-                    
+                    <TextInput
+                        required
+                        error={squadronChassis === ''}
+                        elementId="squadron-chassis-input"
+                        label="Squadron Chassis Name"
+                        value={squadronChassis}
+                        handleChange={e => setSquadronChassis(e.target.value)}
+                        style={{ flexGrow: 1 }}
+                    />
                 </div>
-                <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
+                <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', gap: 8 }}>
                     <SelectorInput
                         elementId="first-defense-token-input"
                         label="First Defense Token"
@@ -166,7 +166,7 @@ export default function SquadronBuilder({ breakpoints }) {
                             { label: 'Evade', value: 'evade' },
                             { label: 'Scatter', value: 'scatter' }
                         ]}
-                        style={{ width: 150, marginRight: 8 }}
+                        style={{ width: 150 }}
                     />
                     {firstDefenseToken !== 'none' ? (
                         <SelectorInput
@@ -184,10 +184,9 @@ export default function SquadronBuilder({ breakpoints }) {
                         />
                     ) : undefined}
                 </div>
-                <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
-                    <Typography style={{ marginRight: 8 }}>
-                        Squadron Armament (max 4)
-                    </Typography>
+                <div style={{ display: 'flex', flexFlow: 'row wrap', alignItems: 'center', width: '100%', gap: 4 }}>
+                    <Typography>Squadron Armament</Typography>
+                    <div style={{ flexGrow: 1 }} />
                     <SelectorInput
                         elementId="vs-squadron-red-input"
                         label="Reds"
@@ -200,7 +199,7 @@ export default function SquadronBuilder({ breakpoints }) {
                             { label: '4', value: 4 }
                         ]}
                         handleChange={e => setVsSquadronArmament([e.target.value, vsSquadronArmament[1], vsSquadronArmament[2]])}
-                        style={{ width: 65, marginRight: 4 }}
+                        style={{ width: 65 }}
                     />
                     <SelectorInput
                         elementId="vs-squadron-blue-input"
@@ -214,7 +213,7 @@ export default function SquadronBuilder({ breakpoints }) {
                             { label: '4', value: 4 }
                         ]}
                         handleChange={e => setVsSquadronArmament([vsSquadronArmament[0], e.target.value, vsSquadronArmament[2]])}
-                        style={{ width: 65, marginRight: 4 }}
+                        style={{ width: 65 }}
                     />
                     <SelectorInput
                         elementId="vs-squadron-black-input"
@@ -231,10 +230,9 @@ export default function SquadronBuilder({ breakpoints }) {
                         style={{ width: 65 }}
                     />
                 </div>
-                <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
-                    <Typography style={{ marginRight: 8 }}>
-                        Squadron Battery (max 4)
-                    </Typography>
+                <div style={{ display: 'flex', flexFlow: 'row wrap', alignItems: 'center', width: '100%', gap: 4 }}>
+                    <Typography>Squadron Battery</Typography>
+                    <div style={{ flexGrow: 1 }} />
                     <SelectorInput
                         elementId="vs-ship-red-input"
                         label="Reds"
@@ -247,7 +245,7 @@ export default function SquadronBuilder({ breakpoints }) {
                             { label: '4', value: 4 }
                         ]}
                         handleChange={e => setVsShipArmament([e.target.value, vsShipArmament[1], vsShipArmament[2]])}
-                        style={{ width: 65, marginRight: 4 }}
+                        style={{ width: 65 }}
                     />
                     <SelectorInput
                         elementId="vs-ship-blue-input"
@@ -261,7 +259,7 @@ export default function SquadronBuilder({ breakpoints }) {
                             { label: '4', value: 4 }
                         ]}
                         handleChange={e => setVsShipArmament([vsShipArmament[0], e.target.value, vsShipArmament[2]])}
-                        style={{ width: 65, marginRight: 4 }}
+                        style={{ width: 65 }}
                     />
                     <SelectorInput
                         elementId="vs-ship-black-input"
@@ -278,7 +276,7 @@ export default function SquadronBuilder({ breakpoints }) {
                         style={{ width: 65 }}
                     />
                 </div>
-                <div style={{ display: 'flex', flexFlow: 'row nowrap', gap: 8}}>
+                <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', gap: 8}}>
                     <ImageUploadButton
                         uploadedImage={uploadedImage}
                         handleSetUploadedImage={file => setUploadedImage(file)}
@@ -320,7 +318,7 @@ export default function SquadronBuilder({ breakpoints }) {
                             style={{ width: 100 }}
                         />
                 </div>
-                <div style={{ display: 'flex', flexFlow: 'column nowrap', gap: 16, margin: 8 }}>
+                <div style={{ display: 'flex', flexFlow: 'column nowrap', width: '100%', gap: 8}}>
                     <SelectorInput
                         elementId="card-text-font-size-input"
                         label="Card Text Font Size"
@@ -335,7 +333,8 @@ export default function SquadronBuilder({ breakpoints }) {
                         handleChange={e => setCardTextFontSize(e.target.value)}
                         style={{ width: 130 }}
                     />
-                    <div style={{ display: 'flex', flexFlow: 'row nowrap', gap: 16, margin: 8 }}>
+                </div>
+                <div style={{ display: 'flex', flexFlow: 'row nowrap', width: '100%', gap: 8  }}>
                         <IconButton size="small" onClick={() => setIsLegendDialogOpen(true)}>
                             <InfoIcon />
                         </IconButton>
@@ -346,11 +345,10 @@ export default function SquadronBuilder({ breakpoints }) {
                             label="Card Ability Text"
                             value={cardText}
                             handleChange={e => setCardText(e.target.value)}
-                            style={{ minWidth: 360 }}
+                            style={{ flexGrow: 1 }}
                         />
 
                     </div>
-                </div>
             </div>
             <Dialog open={isLegendDialogOpen} onClose={() => setIsLegendDialogOpen(false)}>
                 <DialogTitle>Ability Text Markup Legend</DialogTitle>
