@@ -20,7 +20,7 @@ import MarkupLegend from '../common/MarkupLegend';
 import SelectorInput from '../common/SelectorInput';
 import SquadronCardDisplay from './SquadronCardDisplay';
 
-const sizeMultiplier = 1;
+const sizeMultiplier = 0.8;
 
 export default function SquadronBuilder({ breakpoints }) {
     const [points, setPoints] = useState(0);
@@ -335,20 +335,20 @@ export default function SquadronBuilder({ breakpoints }) {
                     />
                 </div>
                 <div style={{ display: 'flex', flexFlow: 'row nowrap', width: '100%', gap: 8  }}>
-                        <IconButton size="small" onClick={() => setIsLegendDialogOpen(true)}>
-                            <InfoIcon />
-                        </IconButton>
-                        <TextInput
-                            fullWidth
-                            multiline
-                            elementId="card-text-input"
-                            label="Card Ability Text"
-                            value={cardText}
-                            handleChange={e => setCardText(e.target.value)}
-                            style={{ flexGrow: 1 }}
-                        />
+                    <IconButton size="small" onClick={() => setIsLegendDialogOpen(true)}>
+                        <InfoIcon />
+                    </IconButton>
+                    <TextInput
+                        fullWidth
+                        multiline
+                        elementId="card-text-input"
+                        label="Card Ability Text"
+                        value={cardText}
+                        handleChange={e => setCardText(e.target.value)}
+                        style={{ flexGrow: 1 }}
+                    />
 
-                    </div>
+                </div>
             </div>
             <Dialog open={isLegendDialogOpen} onClose={() => setIsLegendDialogOpen(false)}>
                 <DialogTitle>Ability Text Markup Legend</DialogTitle>
