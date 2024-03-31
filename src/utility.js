@@ -51,6 +51,23 @@ import blue4 from 'public/images/templates/upgrade/bar numbers/blue4.png';
 import blue5 from 'public/images/templates/upgrade/bar numbers/blue5.png';
 import blue6 from 'public/images/templates/upgrade/bar numbers/blue6.png';
 
+import empireGenericSquad from 'public/images/templates/squadron/empire generic.png';
+import empireAce0 from 'public/images/templates/squadron/empire ace0.png';
+import empireAce1 from 'public/images/templates/squadron/rebels ace1.png';
+import empireAce2 from 'public/images/templates/squadron/empire ace2.png';
+import rebelsGenericSquad from 'public/images/templates/squadron/rebels generic.png';
+import rebelsAce0 from 'public/images/templates/squadron/rebels ace0.png';
+import rebelsAce1 from 'public/images/templates/squadron/rebels ace1.png';
+import rebelsAce2 from 'public/images/templates/squadron/rebels ace2.png';
+import republicGenericSquad from 'public/images/templates/squadron/republic generic.png';
+import republicAce0 from 'public/images/templates/squadron/republic ace0.png';
+import republicAce1 from 'public/images/templates/squadron/rebels ace1.png';
+import republicAce2 from 'public/images/templates/squadron/republic ace2.png';
+import separatistsGenericSquad from 'public/images/templates/squadron/separatists generic.png';
+import separatistsAce0 from 'public/images/templates/squadron/separatists ace0.png';
+import separatistsAce1 from 'public/images/templates/squadron/rebels ace1.png';
+import separatistsAce2 from 'public/images/templates/squadron/separatists ace2.png';
+
 
 const commandIcons = {
     'any token': any,
@@ -98,6 +115,33 @@ const upgradeTypeIcons = {
     'fleet command': fleetCommand,
     'experimental retrofit': experimentalRetrofit,
     'super weapon': superWeapon
+};
+
+const squadronTemplateImages = {
+    rebels: {
+        generic: rebelsGenericSquad,
+        ace0: rebelsAce0,
+        ace1: rebelsAce1,
+        ace2: rebelsAce2
+    },
+    empire: {
+        generic: empireGenericSquad,
+        ace0: empireAce0,
+        ace1: empireAce1,
+        ace2: empireAce2
+    },
+    republic: {
+        generic: republicGenericSquad,
+        ace0: republicAce0,
+        ace1: republicAce1,
+        ace2: republicAce2
+    },
+    separatists: {
+        generic: separatistsGenericSquad,
+        ace0: separatistsAce0,
+        ace1: separatistsAce1,
+        ace2: separatistsAce2
+    }
 };
 
 const upgradeTemplateImages = {
@@ -366,5 +410,6 @@ export {
     upgradeTypeIcons,
     upgradeTypeItems,
     armadaFontIcons,
-    upgradeTemplateImages
+    upgradeTemplateImages,
+    squadronTemplateImages
 }

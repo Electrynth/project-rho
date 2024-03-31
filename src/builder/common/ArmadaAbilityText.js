@@ -1,7 +1,7 @@
 import Markdown from 'react-markdown';
 import { armadaFontIcons } from '../../utility.js';
 
-export default function ArmadaAbilityText({ cardText, fontSize = 18 }) {
+export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign = 'center', isSquadronText = false }) {
     const baseStyles = {
         fontSize,
         color: 'black',
@@ -23,7 +23,7 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18 }) {
                 p(props) {
                     const { children, ...rest } = props;
                     return (
-                        <p {...rest} style={{ ...baseStyles, fontFamily: 'Optima', marginTop: 0, marginBottom: 0, textAlign: 'center' }}>
+                        <p {...rest} style={{ ...baseStyles, fontFamily: 'Optima', marginTop: 0, marginBottom: 0, textAlign }}>
                             {children}
                         </p>
                     );
@@ -31,9 +31,10 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18 }) {
                 code(props) {
                     const { children, ...rest } = props;
                     if (typeof children === 'string' && armadaFontIcons[children]) {
-                        return <span {...rest} style={{ ...baseStyles, fontFamily: 'Armada Icons', fontSize: fontSize + 1, verticalAlign: 'middle' }}>{armadaFontIcons[children]}</span>
+                        return <span {...rest} style={{ ...baseStyles, fontFamily: 'Armada Icons', fontSize: isSquadronText ? fontSize + 3 : fontSize + 1, verticalAlign: isSquadronText ? undefined : 'middle', fontStyle: 'strong ' }}>{armadaFontIcons[children]}</span>
                     } else if (typeof children === 'string' && children === 'newline') {
-                        return <span><br /><br /></span>
+                        if (isSquadronText) return <span><br /></span>
+                        else return <span><br /><br /></span>
                     } else {
                         return undefined;
                     }
@@ -41,7 +42,7 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18 }) {
                 strong(props) {
                     const { children, ...rest } = props;
                     return (
-                        <strong {...rest} style={{ ...baseStyles, fontFamily: 'Aero Matics Display Bold', fontSize: fontSize - 2 }}>
+                        <strong {...rest} style={{ ...baseStyles, fontFamily: 'Aero Matics Display Bold', fontSize: isSquadronText ? fontSize + 2 : fontSize, fontWeight: 400 }}>
                             {children}
                         </strong>
                     );

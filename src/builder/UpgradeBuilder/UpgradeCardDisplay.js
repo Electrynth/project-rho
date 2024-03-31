@@ -12,19 +12,6 @@ import SideBarTokenColumn from '../common/SideBarTokenColumn.js';
 import ArmadaAbilityText from '../common/ArmadaAbilityText.js';
 
 
-function BackgroundImageLayer({ src, otherStyles }) {
-    const style = {
-        zIndex: 0,
-        width: 450,
-        height: 640,
-        position: 'absolute',
-        backgroundSize: 'contain',
-        backgroundImage: `url('${src.src}')`,
-        ...otherStyles
-    };
-
-    return <div style={style} />;
-}
 
 function ForegroundImageElement({ alt, src, height, width = 50, top = 0, left = 0, otherStyles }) {
     const style = {
@@ -68,6 +55,7 @@ export default function UpgradeCardDisplay({
     faction,
     cardText,
     cardTextFontSize,
+    cardFooterText,
     upgradeTypes = [],
     isExhaust,
     startingTokenValue,
@@ -76,11 +64,27 @@ export default function UpgradeCardDisplay({
     readyCostTokens,
     titledShipY,
     uploadedImage,
+    sizeMultiplier,
     uploadedImageStyles = {}
 }) {
     const cardElements = [];
     const baseImageKey = "base-image";
     const factionImageKey = "faction-icon";
+
+
+    function BackgroundImageLayer({ src, otherStyles }) {
+        const style = {
+            zIndex: 0,
+            width: 450 * sizeMultiplier,
+            height: 640 * sizeMultiplier,
+            position: 'absolute',
+            backgroundSize: 'contain',
+            backgroundImage: `url('${src.src}')`,
+            ...otherStyles
+        };
+    
+        return <div style={style} />;
+    }
 
     if (upgradeTypes.length > 0 && upgradeTypes[0] === 'commander') {
         // Commander
@@ -94,8 +98,8 @@ export default function UpgradeCardDisplay({
         if (upgradeTypes[0] === 'title') {
             cardElements.push(<BackgroundImageLayer key="upgrade-type-icon" alt={upgradeTypes[0]} src={upgradeTemplateImages.titleSlot} />);
             cardElements.push(
-                <ForegroundWrapperElement key="titled-ship-icon" height={50} width={100} top={Number(titledShipY) ? Number.parseInt(titledShipY) + 557 : 557} left={10}>
-                    <span style={{ fontSize: armadaShipFontSizeFactor[titledShip] ? 64 * armadaShipFontSizeFactor[titledShip] : 64, fontFamily: 'Armada Ship Icons', color: 'black' }}>
+                <ForegroundWrapperElement key="titled-ship-icon" height={50 * sizeMultiplier} width={100 * sizeMultiplier} top={Number(titledShipY) ? (Number.parseInt(titledShipY) + 557) * sizeMultiplier : 557 * sizeMultiplier} left={10 * sizeMultiplier}>
+                    <span style={{ fontSize: armadaShipFontSizeFactor[titledShip] ? 64 * armadaShipFontSizeFactor[titledShip] * sizeMultiplier : 64 * sizeMultiplier, fontFamily: 'Armada Ship Icons', color: 'black' }}>
                         {{
                             ...armadaShipFontIcons.rebels,
                             ...armadaShipFontIcons.empire,
@@ -107,10 +111,10 @@ export default function UpgradeCardDisplay({
             );
         } else if (upgradeTypes.length === 2) {
             cardElements.push(<BackgroundImageLayer key="double-upgrade-slot" alt="double upgrade slot" src={upgradeTemplateImages.doubleSlot} />);
-            cardElements.push(<ForegroundImageElement key="upgrade-type-icon-1" alt={upgradeTypes[0]} src={upgradeTypeIcons[upgradeTypes[0]]} top={564} left={19} height={40} width={40} />);
-            cardElements.push(<ForegroundImageElement key="upgrade-type-icon-2" alt={upgradeTypes[1]} src={upgradeTypeIcons[upgradeTypes[1]]} top={564} left={60.5} height={40} width={40} />);
+            cardElements.push(<ForegroundImageElement key="upgrade-type-icon-1" alt={upgradeTypes[0]} src={upgradeTypeIcons[upgradeTypes[0]]} top={564 * sizeMultiplier} left={19 * sizeMultiplier} height={40 * sizeMultiplier} width={40 * sizeMultiplier} />);
+            cardElements.push(<ForegroundImageElement key="upgrade-type-icon-2" alt={upgradeTypes[1]} src={upgradeTypeIcons[upgradeTypes[1]]} top={564 * sizeMultiplier} left={60.5 * sizeMultiplier} height={40 * sizeMultiplier} width={40 * sizeMultiplier} />);
         } else {
-            cardElements.push(<ForegroundImageElement key="upgrade-type-icon" alt={upgradeTypes[0]} src={upgradeTypeIcons[upgradeTypes[0]]} top={564} left={19} height={40} width={40} />);
+            cardElements.push(<ForegroundImageElement key="upgrade-type-icon" alt={upgradeTypes[0]} src={upgradeTypeIcons[upgradeTypes[0]]} top={564 * sizeMultiplier} left={19 * sizeMultiplier} height={40 * sizeMultiplier} width={40 * sizeMultiplier} />);
         }
 
         // Upgrade Faction icon
@@ -123,9 +127,9 @@ export default function UpgradeCardDisplay({
     // Card Name
     let isTitleItalic = upgradeTypes.length > 0 && upgradeTypes[0] === 'title' && maxNumAllowed > 0;
     cardElements.push(
-        <ForegroundWrapperElement key="card-name" height={45} width={350} top={262} left={readyCostTokenValue > 0 || isExhaust ? 36 : 51}>
-            <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Regular', fontStyle: isTitleItalic ? 'italic' : 'normal', fontSize: cardNameFontSize, display: 'flex', alignItems: 'center' }}>
-                <span style={{ marginRight: 2, fontSize: 24, fontFamily: 'Armada Icons', color: 'black' }}>{Array(maxNumAllowed).fill().map((_, i) => '\u0078' )}</span>
+        <ForegroundWrapperElement key="card-name" height={45 * sizeMultiplier} width={350 * sizeMultiplier} top={262 * sizeMultiplier} left={readyCostTokenValue > 0 || isExhaust ? 36 * sizeMultiplier : 51 * sizeMultiplier}>
+            <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Regular', fontStyle: isTitleItalic ? 'italic' : 'normal', fontSize: cardNameFontSize * sizeMultiplier, display: 'flex', alignItems: 'center' }}>
+                <span style={{ marginRight: 2, fontSize: 24 * sizeMultiplier, fontFamily: 'Armada Icons', color: 'black' }}>{Array(maxNumAllowed).fill().map((_, i) => '\u0078' )}</span>
                 {cardName}
             </span>
         </ForegroundWrapperElement>
@@ -133,15 +137,21 @@ export default function UpgradeCardDisplay({
 
     // Points
     cardElements.push(
-        <ForegroundWrapperElement key="points-text" height={30} width={40} top={572} left={383}>
-            <span style={{ fontSize: 20, fontFamily: 'Aero Matics', color: 'black' }}>{points}</span>
+        <ForegroundWrapperElement key="points-text" height={30 * sizeMultiplier} width={40 * sizeMultiplier} top={572 * sizeMultiplier} left={383 * sizeMultiplier}>
+            <span style={{ fontSize: 20 * sizeMultiplier, fontFamily: 'Aero Matics', color: 'black' }}>{points}</span>
         </ForegroundWrapperElement>
     );
 
     // Card ability text
     cardElements.push(
-        <ForegroundWrapperElement key="card-body-text" height={240} width={330} top={328} left={59} otherStyles={{ alignItems: 'baseline' }}>
-            <span style={{ zIndex: 1 }}><ArmadaAbilityText cardText={cardText} fontSize={cardTextFontSize} /></span>
+        <ForegroundWrapperElement key="card-body-text" height={240 * sizeMultiplier} width={330 * sizeMultiplier} top={328 * sizeMultiplier} left={59 * sizeMultiplier} otherStyles={{ alignItems: 'baseline' }}>
+            <span style={{ zIndex: 1 }}><ArmadaAbilityText cardText={cardText} fontSize={cardTextFontSize * sizeMultiplier} /></span>
+        </ForegroundWrapperElement>
+    );
+    // Card footer text
+    cardElements.push(
+        <ForegroundWrapperElement key="card-body-text" height={240 * sizeMultiplier} width={330 * sizeMultiplier} top={580 * sizeMultiplier} left={59 * sizeMultiplier} otherStyles={{ alignItems: 'baseline' }}>
+            <span style={{ zIndex: 1 }}><ArmadaAbilityText cardText={cardFooterText} fontSize={14 * sizeMultiplier} /></span>
         </ForegroundWrapperElement>
     );
 
@@ -177,7 +187,7 @@ export default function UpgradeCardDisplay({
     if (uploadedImage) {
 
         cardElements.push(
-            <div key="card-portrait" style={{ zIndex: -1, position: 'absolute', width: 450, height: 640, overflow: 'hidden' }} >
+            <div key="card-portrait" style={{ zIndex: -1, position: 'absolute', width: 450 * sizeMultiplier, height: 640 * sizeMultiplier, overflow: 'hidden' }} >
                 <Image
                     alt="card portrait"
                     src={URL.createObjectURL(uploadedImage)}
@@ -204,7 +214,7 @@ export default function UpgradeCardDisplay({
 
     return (
         <div style={{ display: 'flex', flexFlow: 'column nowrap' }}>
-            <div id="image-wrapper" ref={elementRef} style={{ display: 'block', position: 'relative', width: 450, height: 640 }}>
+            <div id="image-wrapper" ref={elementRef} style={{ display: 'block', position: 'relative', width: 450 * sizeMultiplier, height: 640 * sizeMultiplier }}>
                 {upgradeTypes.length > 0 ? cardElements : undefined}
             </div>
             <button onClick={htmlToImageConvert} style={{ marginTop: 8 }}>

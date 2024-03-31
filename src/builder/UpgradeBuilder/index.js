@@ -16,19 +16,19 @@ import TextInput from '../common/TextInput';
 import MarkupLegend from '../common/MarkupLegend';
 import {
     armadaShipFontIcons,
-    armadaShipFontSizeFactor,
     upgradeTypeItems
 } from 'src/utility';
 import UpgradeCardDisplay from './UpgradeCardDisplay';
 
-export default function UpgradeBuilder({
-    breakpoints
-}) {
+const sizeMultiplier = 0.8;
+
+export default function UpgradeBuilder({ breakpoints }) {
     const [points, setPoints] = useState(0);
     const [maxNumAllowed, setMaxNumAllowed] = useState(0);
     const [cardName, setCardName] = useState('Untitled');
     const [cardNameFontSize, setCardNameFontSize] = useState(52);
     const [faction, setFaction] = useState('any');
+    const [cardFooterText, setCardFooterText] = useState('');
     const [cardText, setCardText] = useState('');
     const [cardTextFontSize, setCardTextFontSize] = useState(18);
     const [titledShip, setTitledShip] = useState('');
@@ -40,7 +40,7 @@ export default function UpgradeBuilder({
     const [startingTokenValue, setStartingTokenValue] = useState(0);
     const [uploadedImage, setUploadedImage] = useState();
     const [titledShipY, setTitledShipY] = useState(0);
-    const [portraitWidth, setPortraitWidth] = useState(450);
+    const [portraitWidth, setPortraitWidth] = useState(450 * sizeMultiplier);
     const [portraitX, setPortraitX] = useState(0);
     const [portraitY, setPortraitY] = useState(0);
     const [isPortraitMirrored, setIsPortraitMirrored] = useState(false);
@@ -95,7 +95,7 @@ export default function UpgradeBuilder({
                             { label: 'Any', value: 0 },
                             { label: '1', value: 1 },
                             { label: '2', value: 2 },
-                            { label: '3', value: 3 },
+                            { label: '3', value: 3 }
                         ]}
                         style={{ width: 110 }}
                     />
@@ -346,6 +346,14 @@ export default function UpgradeBuilder({
                         style={{ minWidth: 360 }}
                     />  
                 </div>
+                <TextInput
+                    fullWidth
+                    elementId="card-footer-text-input"
+                    label="Card Footer Text (optional)"
+                    value={cardFooterText}
+                    handleChange={e => setCardFooterText(e.target.value)}
+                    style={{ minWidth: 360 }}
+                />
             </div>
             <Dialog open={isLegendDialogOpen} onClose={() => setIsLegendDialogOpen(false)}>
                 <DialogTitle>Ability Text Markup Legend</DialogTitle>
@@ -354,6 +362,7 @@ export default function UpgradeBuilder({
                 </DialogContent>
             </Dialog>
             <UpgradeCardDisplay
+                sizeMultiplier={sizeMultiplier}
                 maxNumAllowed={maxNumAllowed}
                 points={points}
                 faction={faction}
@@ -370,10 +379,11 @@ export default function UpgradeBuilder({
                 readyCostTokenValue={readyCostTokenValue}
                 uploadedImage={uploadedImage}
                 titledShipY={titledShipY}
+                cardFooterText={cardFooterText}
                 uploadedImageStyles={{
-                    marginTop: Number(portraitY) ? Number.parseInt(portraitY) : 0,
-                    marginLeft: Number(portraitX) ? Number.parseInt(portraitX) : 0,
-                    width: Number(portraitWidth) ? Number.parseInt(portraitWidth) : 0,
+                    marginTop: Number(portraitY) ? Number.parseInt(portraitY) * sizeMultiplier : 0,
+                    marginLeft: Number(portraitX) ? Number.parseInt(portraitX) * sizeMultiplier : 0,
+                    width: Number(portraitWidth) ? Number.parseInt(portraitWidth) * sizeMultiplier : 0,
                     height: 'auto',
                     transform: `scaleX(${isPortraitMirrored ? '-1' : '1'})`
                 }}
