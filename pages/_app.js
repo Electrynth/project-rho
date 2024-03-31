@@ -6,6 +6,7 @@ import { lightTheme, darkTheme } from 'config/muiThemes';
 import robotoCondensed from 'config/font';
 import { Analytics } from '@vercel/analytics/react';
 import 'styles/globals.css'
+import urls from 'config/urls.json';
 
 // <ThemeProvider theme={prefersDarkMode ? darkTheme : lightTheme}>
 
@@ -16,8 +17,11 @@ function MyApp({ Component, pageProps }) {
             domain="armada-hub.us.auth0.com"
             clientId="vv0GnNycfl6htKsc2rTHjAhTBnWrPGzy"
             authorizationParams={{
+                audience: urls.authDomain,
+                scope: 'read:current_user update:current_user_metadata',
                 redirect_uri: typeof window !== 'undefined' ? window.location.origin : undefined
             }}
+
         >
             <ThemeProvider theme={darkTheme}>
                 <CssBaseline />

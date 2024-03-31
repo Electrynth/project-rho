@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useAuth0 } from '@auth0/auth0-react';
 import { useRouter } from 'next/router';
-import Image from 'next/image';
 import {
   Dialog,
   DialogTitle,
@@ -95,7 +94,7 @@ export default function Home() {
   const [isContactDialogOpen, setIsContactDialogOpen] = useState(false);
   const [userMetadata, setUserMetadata] = useState();
   console.log(userMetadata);
-  
+
   const router = useRouter();
 
   useEffect(() => {
