@@ -1,4 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import { useAuth0 } from '@auth0/auth0-react';
 import {
     IconButton,
     Typography,
@@ -19,10 +21,22 @@ import TextInput from '../common/TextInput';
 import MarkupLegend from '../common/MarkupLegend';
 import SelectorInput from '../common/SelectorInput';
 import SquadronCardDisplay from './SquadronCardDisplay';
+import urls from 'config/urls.json';
 
 const sizeMultiplier = 0.8;
 
 export default function SquadronBuilder({ breakpoints }) {
+    const { user } = useAuth0();
+    const [builderAccess, setBuilderAccess] = useState(false);
+
+    useEffect(() => {
+        if (user && user.email) {
+            axios.get(`${urls.api}/users?email=${user.email}`).then(({ data }) => {
+                if (data.settings && data.settings.builderAccess) setBuilderAccess(data.settings.builderAccess);
+            });
+        }
+    }, [user]);
+
     const [points, setPoints] = useState(0);
     const [faction, setFaction] = useState('rebels');
     const [maxNumAllowed, setMaxNumAllowed] = useState(1);
@@ -46,6 +60,13 @@ export default function SquadronBuilder({ breakpoints }) {
     const [isPortraitMirrored, setIsPortraitMirrored] = useState(false);
     const [isLegendDialogOpen, setIsLegendDialogOpen] = useState(false);
 
+    if (!builderAccess) {
+        return (
+            <Typography style={{ margin: 16 }}>
+                Please donate to use this feature! After donation access will be granted within 24 hours. Email admin@legion-hq.com for expedited access.
+            </Typography>
+        );
+    }
     return (
         <div style={{ display: 'flex', flexFlow: `${breakpoints.lg ? 'row' : 'column'} nowrap`, alignItems: `${breakpoints.lg ? 'flex-start' : 'center'}`, gap: 8 }}>
             <div style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'flex-start', gap: 16, margin: 8 }}>
