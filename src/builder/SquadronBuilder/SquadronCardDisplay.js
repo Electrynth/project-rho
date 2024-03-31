@@ -98,7 +98,7 @@ export default function SquadronCardDisplay({
     // Squad Name
     if (squadronName) {
         cardElements.push(
-            <ForegroundWrapperElement key="squadron-name" height={45 * sizeMultiplier} width={450 * sizeMultiplier} top={188 * sizeMultiplier} left={0 * sizeMultiplier}>
+            <ForegroundWrapperElement key="squadron-name" height={45 * sizeMultiplier} width={450 * sizeMultiplier} top={188 * sizeMultiplier} left={9 * sizeMultiplier}>
                 <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Regular', fontStyle: 'normal', fontSize: 38 * sizeMultiplier, display: 'flex', alignItems: 'center' }}>
                     <span style={{ marginRight: 2, fontSize: 24 * sizeMultiplier, fontFamily: 'Armada Icons', color: 'black' }}>{Array(maxNumAllowed).fill().map((_, i) => '\u0078' )}</span>
                     {squadronName}
@@ -109,7 +109,7 @@ export default function SquadronCardDisplay({
 
     // Squad chassis
     cardElements.push(
-        <ForegroundWrapperElement key="squadron-chassis" height={45 * sizeMultiplier} width={450 * sizeMultiplier} top={232 * sizeMultiplier} left={0 * sizeMultiplier}>
+        <ForegroundWrapperElement key="squadron-chassis" height={45 * sizeMultiplier} width={450 * sizeMultiplier} top={232 * sizeMultiplier} left={9 * sizeMultiplier}>
             <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Regular', fontStyle: isChassisItalic ? 'italic' : 'normal', fontSize: 44 * sizeMultiplier, display: 'flex', alignItems: 'center' }}>
                 {squadronChassis}
             </span>
