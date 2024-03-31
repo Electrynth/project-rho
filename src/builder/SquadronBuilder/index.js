@@ -6,9 +6,11 @@ import {
     Typography,
     Dialog,
     DialogTitle,
-    DialogContent
+    DialogContent,
+    Button
 } from '@mui/material';
 import {
+    LocalCafe as CoffeeIcon,
     Info as InfoIcon
 } from '@mui/icons-material';
 import {
@@ -72,9 +74,19 @@ export default function SquadronBuilder({ breakpoints }) {
         );
     } else if (!isLoading && !builderAccess) {
         return (
-            <Typography style={{ margin: 16 }}>
-                Please donate to use this feature! After donation access will be granted within 24 hours. Email admin@legion-hq.com for expedited access.
-            </Typography>
+            <div style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'center' }}>
+                <Typography style={{ margin: 16 }}>
+                    Monetary contribution is required to access this feature. A one-time contribution of $3 or more will grant permanent access to every feature on this platform.
+                </Typography>
+                <Button
+                    variant="contained"
+                    href="https://www.buymeacoffee.com/holofoundry"
+                    startIcon={<CoffeeIcon />}
+                    target="_blank"
+                >
+                    Buy me a coffee
+                </Button>
+            </div>
         );
     }
     return (
