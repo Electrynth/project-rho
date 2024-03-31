@@ -190,7 +190,7 @@ export default function SquadronCardDisplay({
 
      // Card ability text
      cardElements.push(
-        <ForegroundWrapperElement key="card-body-text" height={185 * sizeMultiplier} width={370 * sizeMultiplier} top={380 * sizeMultiplier} left={40 * sizeMultiplier} otherStyles={{ justifyContent: 'left', alignItems: 'baseline' }}>
+        <ForegroundWrapperElement key="card-body-text" height={185 * sizeMultiplier} width={370 * sizeMultiplier} top={379 * sizeMultiplier} left={40 * sizeMultiplier} otherStyles={{ justifyContent: 'left', alignItems: 'baseline' }}>
             <span style={{ zIndex: 1 }}><ArmadaAbilityText isSquadronText={true} textAlign="left" cardText={cardText} fontSize={cardTextFontSize * sizeMultiplier} /></span>
         </ForegroundWrapperElement>
     );

@@ -367,11 +367,11 @@ export default function SquadronBuilder({ breakpoints }) {
                         label="Card Text Font Size"
                         value={cardTextFontSize}
                         items={[
-                            { label: '14', value: 14 },
-                            { label: '15', value: 15 },
                             { label: '16', value: 16 },
                             { label: '17', value: 17 },
-                            { label: '18', value: 18 }
+                            { label: '18', value: 18 },
+                            { label: '19', value: 19 },
+                            { label: '20', value: 20 }
                         ]}
                         handleChange={e => setCardTextFontSize(e.target.value)}
                         style={{ width: 130 }}
