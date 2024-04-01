@@ -150,7 +150,7 @@ export default function UpgradeCardDisplay({
     );
     // Card footer text
     cardElements.push(
-        <ForegroundWrapperElement key="card-body-text" height={240 * sizeMultiplier} width={330 * sizeMultiplier} top={580 * sizeMultiplier} left={59 * sizeMultiplier} otherStyles={{ alignItems: 'baseline' }}>
+        <ForegroundWrapperElement key="card-footer-text" height={25 * sizeMultiplier} width={330 * sizeMultiplier} top={580 * sizeMultiplier} left={59 * sizeMultiplier} otherStyles={{ alignItems: 'baseline' }}>
             <span style={{ zIndex: 1 }}><ArmadaAbilityText cardText={cardFooterText} fontSize={14 * sizeMultiplier} /></span>
         </ForegroundWrapperElement>
     );
