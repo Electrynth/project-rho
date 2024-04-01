@@ -1,15 +1,15 @@
 import Image from 'next/image';
 import { commandIcons } from 'src/utility';
 
-export default function SideBarTokenColumn({ cardWidth = 450, color, commandTokens }) {
+export default function SideBarTokenColumn({ cardWidth = 450, sizeMultiplier, color, commandTokens }) {
     const column = [];
 
-    let tokenLeftMargin = 16;
-    let dividerLeftMargin = 22;
+    let tokenLeftMargin = 16 * sizeMultiplier;
+    let dividerLeftMargin = 22 * sizeMultiplier;
 
     if (color === 'red') {
-        tokenLeftMargin = 403;
-        dividerLeftMargin = 409;
+        tokenLeftMargin = 403 * sizeMultiplier;
+        dividerLeftMargin = 409 * sizeMultiplier;
     }
 
     commandTokens.forEach((token, i) => {
@@ -25,9 +25,9 @@ export default function SideBarTokenColumn({ cardWidth = 450, color, commandToke
                     flexFlow: 'row nowrap',
                     justifyContent: 'center',
                     alignItems: 'center',
-                    height: 30,
-                    width: 30,
-                    top: 379 + i * 43,
+                    height: 30 * sizeMultiplier,
+                    width: 30 * sizeMultiplier,
+                    top: (379 + i * 43) * sizeMultiplier,
                     left: tokenLeftMargin,
                 }}
             />
@@ -39,10 +39,10 @@ export default function SideBarTokenColumn({ cardWidth = 450, color, commandToke
                     key={`${token}-separator`}
                     style={{
                         position: 'absolute',
-                        top: 414 + i * 43,
+                        top: (414 + i * 43) * sizeMultiplier,
                         left: dividerLeftMargin,
-                        width: 19,
-                        height: 4,
+                        width: 19 * sizeMultiplier,
+                        height: 4 * sizeMultiplier,
                         backgroundColor: 'rgb(20, 20, 20)',
                         borderRadius: 1
                     }}

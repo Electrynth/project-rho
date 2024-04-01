@@ -164,7 +164,7 @@ export default function UpgradeCardDisplay({
         }
 
         cardElements.push(<BackgroundImageLayer key="starting-token-value" src={barNumbers.blue[startingTokenValue - 1]} />);
-        cardElements.push(<SideBarTokenColumn commandTokens={startingTokens} color="blue" />);
+        cardElements.push(<SideBarTokenColumn sizeMultiplier={sizeMultiplier} commandTokens={startingTokens} color="blue" />);
     }
 
     // Ready cost tokens
@@ -175,7 +175,7 @@ export default function UpgradeCardDisplay({
         cardElements.push(
             <BackgroundImageLayer key="ready-cost-token-value" src={barNumbers.red[readyCostTokenValue - 1]} />
         );
-        cardElements.push(<SideBarTokenColumn commandTokens={readyCostTokens} color="red" />);
+        cardElements.push(<SideBarTokenColumn sizeMultiplier={sizeMultiplier} commandTokens={readyCostTokens} color="red" />);
     } else if (isExhaust) {
     // Exhaustible
         cardElements.push(
