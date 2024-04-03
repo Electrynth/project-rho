@@ -23,7 +23,7 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign =
                 li(props) {
                     const { children, ...rest } = props;
                     return (
-                        <li {...rest} style={{ ...baseStyles, fontFamily: 'Optima' }}>
+                        <li {...rest} style={{ ...baseStyles, fontFamily: 'Optima', marginBottom: 8 }}>
                             {children}
                         </li>
                     );
@@ -36,7 +36,7 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign =
                         lineHeight = `${foundNumber}%`;
                     }
                     return (
-                        <p {...rest} style={{ ...baseStyles, fontFamily: isSquadronText ? 'Armada Regular' :'Optima', marginTop: 0, marginBottom: 0, lineHeight, textAlign }}>
+                        <p {...rest} style={{ ...baseStyles, fontFamily: isSquadronText ? 'Armada Regular' :'Optima', marginTop: 0, marginBottom: 8, lineHeight, textAlign }}>
                             {children}
                         </p>
                     );
