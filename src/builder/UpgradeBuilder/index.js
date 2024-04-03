@@ -60,7 +60,6 @@ export default function UpgradeBuilder({ breakpoints }) {
     const [startingTokens, setStartingTokens] = useState([]);
     const [startingTokenValue, setStartingTokenValue] = useState(0);
     const [uploadedImage, setUploadedImage] = useState();
-    const [titledShipY, setTitledShipY] = useState(0);
     const [portraitWidth, setPortraitWidth] = useState(450 * sizeMultiplier);
     const [portraitX, setPortraitX] = useState(0);
     const [portraitY, setPortraitY] = useState(0);
@@ -199,14 +198,6 @@ export default function UpgradeBuilder({ breakpoints }) {
                         ].sort().map(item => ({ label: item, value: item }))}
                         handleChange={e => setTitledShip(e.target.value)}
                         style={{ flexGrow: 1 }}
-                    />
-                    <TextInput
-                        elementId="titled-ship-y-offset-input"
-                        label="Title Ship Y Offset"
-                        isDisabled={upgradeTypes.length === 0 || upgradeTypes.length > 0 && upgradeTypes[0] !== 'title'}
-                        value={titledShipY}
-                        handleChange={e => setTitledShipY(e.target.value)}
-                        style={{ width: 160 }}
                     />
                 </div>
                 <div style={{ display: 'flex', flexFlow: 'column nowrap', width: '100%', gap: 8 }}>
@@ -425,7 +416,6 @@ export default function UpgradeBuilder({ breakpoints }) {
                 readyCostTokens={readyCostTokens}
                 readyCostTokenValue={readyCostTokenValue}
                 uploadedImage={uploadedImage}
-                titledShipY={titledShipY}
                 cardFooterText={cardFooterText}
                 uploadedImageStyles={{
                     marginTop: Number(portraitY) ? Number.parseInt(portraitY) * sizeMultiplier : 0,

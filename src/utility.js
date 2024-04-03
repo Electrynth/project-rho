@@ -305,6 +305,40 @@ const armadaShipFontIcons = {
     }
 };
 
+const armadaShipIconOffset = {
+    'CR90 Corvette': 0,
+    'Nebulon Frigate': -2,
+    'Assault Frigate Mark II': -1,
+    'MC30c Frigate': -2,
+    'MC80 Home One type': -1,
+    'MC80 Liberty type': -2,
+    'GR75 Transports': -2,
+    'Modified Pelta-class Ship': 0,
+    'Hammerhead-class Corvette': -1,
+    'MC75 Cruiser': -1,
+    'Starhawk Battlecruiser': -4,
+
+    'Victory-class Star Destroyer': -1,
+    'Gladiator-class Star Destroyer': -1,
+    'Imperial-class Star Destroyer': -1,
+    'Raider-class Corvette': -2,
+    'Gozanti-class Cruisers': -3,
+    'Interdictor': 2,
+    'Arquitens-class Cruiser': 1,
+    'Quasar Fire-class Cruiser-Carrier': -3,
+    'Onager-class Ship': -3,
+
+    'Consular Cruiser': -2,
+    'Acclamator-class Assault Ship': 0,
+    'Venator-class Star Destroyer': -2,
+    'Pelta-class Frigate': -4,
+
+    'Munificent-class Frigate': 0,
+    'Hardcell-class Transport': -2,
+    'Providence-class Carrier': -3,
+    'Recusant-class Destroyer': -6
+};
+
 const armadaSquadronFontIcons = {
     'Vulture Squadron': '\u0021',
     'Belbullab-22 Squadron': '\u0023',
@@ -339,6 +373,78 @@ const armadaSquadronFontIcons = {
     'Lancer Pursuit Craft': '\u006A',
     'Z-95 Headhunter Squadron': '\u006B',
     'E-Wing Squadron': '\u006C'
+};
+
+const armadaSquadronFontSizeFactor = {
+    'Vulture Squadron': 1.2,
+    'Belbullab-22 Squadron': 1.1,
+    'Tri-fighter Squadron': 1,
+    'V-19 Torrent Squadron': 2,
+    'Delta-7 Aethersprite Squadron': 1,
+    'BTL-B Y-Wing Squadron': 1,
+    'ARC-170 Squadron': 1.1,
+    'Hyena Squadron': 1.2,
+    'TIE Fighter Squadron': 1,
+    'TIE Advanced Squadron': 1,
+    'TIE Bomber Squadron': 1,
+    'TIE Interceptor Squadron': 1,
+    'Firespray-31': 1.1,
+    'Aggressor Assault Fighter': 1.2,
+    'JumpMaster 5000': 1.1,
+    'YV-666': 1.1,
+    'TIE Defender Squadron': 1,
+    'TIE Phantom Squadron': 1,
+    'Lambda Shuttle': 1,
+    'VT-49 Decimator': 1.15,
+    'Mandalorian Gauntlet Fighter': 1,
+    'X-Wing Squadron': 1.1,
+    'A-Wing Squadron': 1.1,
+    'B-Wing Squadron': 1.25,
+    'Y-Wing Squadron': 1.1,
+    'YT-1300': 1.1,
+    'YT-2400': 1.2,
+    'Scurrg H-6 Bomber': 1,
+    'HWK-290': 1.1,
+    'VCX-100 Freighter': 1,
+    'Lancer Pursuit Craft': 1,
+    'Z-95 Headhunter Squadron': 1.1,
+    'E-Wing Squadron': 1.1
+};
+
+const armadaSquadronIconOffset = {
+    'Vulture Squadron': -5,
+    'Belbullab-22 Squadron': 0,
+    'Tri-fighter Squadron': 0,
+    'V-19 Torrent Squadron': 1,
+    'Delta-7 Aethersprite Squadron': 0,
+    'BTL-B Y-Wing Squadron': 0,
+    'ARC-170 Squadron': -4,
+    'Hyena Squadron': -6,
+    'TIE Fighter Squadron': 0,
+    'TIE Advanced Squadron': 0,
+    'TIE Bomber Squadron': 0,
+    'TIE Interceptor Squadron': 0,
+    'Firespray-31': -1,
+    'Aggressor Assault Fighter': -2,
+    'JumpMaster 5000': -2,
+    'YV-666': 0,
+    'TIE Defender Squadron': 0,
+    'TIE Phantom Squadron': 0,
+    'Lambda Shuttle': -3,
+    'VT-49 Decimator': -1,
+    'Mandalorian Gauntlet Fighter': 0,
+    'X-Wing Squadron': 2,
+    'A-Wing Squadron': -2,
+    'B-Wing Squadron': 0,
+    'Y-Wing Squadron': 0,
+    'YT-1300': 0,
+    'YT-2400': 0,
+    'Scurrg H-6 Bomber': 0,
+    'HWK-290': -1,
+    'VCX-100 Freighter': 0,
+    'Lancer Pursuit Craft': 0,
+    'Z-95 Headhunter Squadron': 0,
+    'E-Wing Squadron': -1
 };
 
 const checkIsMatch = (object, source) => {
@@ -403,7 +509,10 @@ const isUpgradeRequirementsMet = (requirements, shipCard) => {
 export {
     isUpgradeRequirementsMet,
     armadaShipFontSizeFactor,
+    armadaSquadronFontSizeFactor,
+    armadaSquadronIconOffset,
     armadaShipFontIcons,
+    armadaShipIconOffset,
     armadaSquadronFontIcons,
     commandIcons,
     barNumbers,

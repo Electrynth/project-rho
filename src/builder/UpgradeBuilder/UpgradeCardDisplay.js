@@ -6,7 +6,8 @@ import {
     upgradeTypeIcons,
     upgradeTemplateImages,
     armadaShipFontIcons,
-    armadaShipFontSizeFactor
+    armadaShipFontSizeFactor,
+    armadaShipIconOffset
 } from 'src/utility';
 import SideBarTokenColumn from '../common/SideBarTokenColumn.js';
 import ArmadaAbilityText from '../common/ArmadaAbilityText.js';
@@ -62,7 +63,6 @@ export default function UpgradeCardDisplay({
     startingTokens,
     readyCostTokenValue,
     readyCostTokens,
-    titledShipY,
     uploadedImage,
     sizeMultiplier,
     uploadedImageStyles = {}
@@ -98,7 +98,7 @@ export default function UpgradeCardDisplay({
         if (upgradeTypes[0] === 'title') {
             cardElements.push(<BackgroundImageLayer key="upgrade-type-icon" alt={upgradeTypes[0]} src={upgradeTemplateImages.titleSlot} />);
             cardElements.push(
-                <ForegroundWrapperElement key="titled-ship-icon" height={50 * sizeMultiplier} width={100 * sizeMultiplier} top={Number(titledShipY) ? (Number.parseInt(titledShipY) + 557) * sizeMultiplier : 557 * sizeMultiplier} left={10 * sizeMultiplier}>
+                <ForegroundWrapperElement key="titled-ship-icon" height={50 * sizeMultiplier} width={100 * sizeMultiplier} top={armadaShipIconOffset[titledShip] + 557 * sizeMultiplier} left={10 * sizeMultiplier}>
                     <span style={{ fontSize: armadaShipFontSizeFactor[titledShip] ? 64 * armadaShipFontSizeFactor[titledShip] * sizeMultiplier : 64 * sizeMultiplier, fontFamily: 'Armada Ship Icons', color: 'black' }}>
                         {{
                             ...armadaShipFontIcons.rebels,

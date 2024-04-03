@@ -4,7 +4,9 @@ import { toPng } from 'html-to-image';
 import {
     squadronTemplateImages,
     armadaFontIcons,
-    armadaSquadronFontIcons
+    armadaSquadronFontIcons,
+    armadaSquadronFontSizeFactor,
+    armadaSquadronIconOffset
 } from 'src/utility.js';
 import ArmadaAbilityText from '../common/ArmadaAbilityText.js';
 import ArmadaDiceGroup from '../common/ArmadaDiceGroup.js';
@@ -152,8 +154,8 @@ export default function SquadronCardDisplay({
 
     // Chassis Icon
     cardElements.push(
-        <ForegroundWrapperElement key="squadron-chassis-icon" height={20 * sizeMultiplier} width={50 * sizeMultiplier} top={581 * sizeMultiplier} left={6 * sizeMultiplier}>
-            <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Squadron Icons', fontStyle: 'normal', fontSize: 42 * sizeMultiplier, display: 'flex', alignItems: 'center' }}>
+        <ForegroundWrapperElement key="squadron-chassis-icon" height={20 * sizeMultiplier} width={50 * sizeMultiplier} top={armadaSquadronIconOffset[squadronIcon] + (580 * sizeMultiplier)} left={6 * sizeMultiplier}>
+            <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Squadron Icons', fontStyle: 'normal', fontSize: 42 * sizeMultiplier * armadaSquadronFontSizeFactor[squadronIcon], display: 'flex', alignItems: 'center' }}>
                 {armadaSquadronFontIcons[squadronIcon]}
             </span>
         </ForegroundWrapperElement>

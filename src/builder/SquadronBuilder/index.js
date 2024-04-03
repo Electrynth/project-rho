@@ -14,8 +14,6 @@ import {
     Info as InfoIcon
 } from '@mui/icons-material';
 import {
-    armadaFontIcons,
-    squadronTemplateImages,
     armadaSquadronFontIcons
 } from 'src/utility';
 import ImageUploadButton from '../common/ImageUploadButton';
@@ -144,8 +142,6 @@ export default function SquadronBuilder({ breakpoints }) {
                         ]}
                         style={{ width: 60 }}
                     />
-                </div>
-                <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', gap: 8 }}>
                     <SelectorInput
                         elementId="max-allowed-input"
                         label="Max # Allowed"
@@ -159,6 +155,8 @@ export default function SquadronBuilder({ breakpoints }) {
                         ]}
                         style={{ width: 110 }}
                     />
+                </div>
+                <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', gap: 8 }}>
                     <TextInput
                         elementId="squadron-name-input"
                         label="Squadron Ace Name (if any)"
@@ -167,15 +165,45 @@ export default function SquadronBuilder({ breakpoints }) {
                         style={{ flexGrow: 1 }}
                     />
                 </div>
-                <SelectorInput
-                    fullWidth
-                    elementId="squadron-icon-input"
-                    label="Squadron Icon"
-                    value={squadronIcon}
-                    handleChange={e => setSquadronIcon(e.target.value)}
-                    items={Object.keys(armadaSquadronFontIcons).sort().map(sqdName => ({ label: sqdName, value: sqdName }))}
-                />
                 <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', gap: 8 }}>
+                    <IconButton size="small" onClick={() => setIsLegendDialogOpen(true)}>
+                        <InfoIcon />
+                    </IconButton>
+                    <TextInput
+                        required
+                        error={squadronChassis === ''}
+                        elementId="squadron-chassis-input"
+                        label="Squadron Chassis Name"
+                        value={squadronChassis}
+                        handleChange={e => setSquadronChassis(e.target.value)}
+                        style={{ flexGrow: 1 }}
+                    />
+                </div>
+                <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', gap: 8 }}>
+                    <SelectorInput
+                        elementId="squadron-icon-input"
+                        label="Squadron Icon"
+                        value={squadronIcon}
+                        handleChange={e => setSquadronIcon(e.target.value)}
+                        items={Object.keys(armadaSquadronFontIcons).sort().map(sqdName => ({ label: sqdName, value: sqdName }))}
+                        style={{ flexGrow: 1 }}
+                    />
+                </div>
+                <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', gap: 8 }}>
+                    <SelectorInput
+                        elementId="card-text-font-size-input"
+                        label="Card Text Font Size"
+                        value={cardTextFontSize}
+                        items={[
+                            { label: '16', value: 16 },
+                            { label: '17', value: 17 },
+                            { label: '18', value: 18 },
+                            { label: '19', value: 19 },
+                            { label: '20', value: 20 }
+                        ]}
+                        handleChange={e => setCardTextFontSize(e.target.value)}
+                        style={{ width: 130 }}
+                    />
                     <SelectorInput
                         elementId="chassis-font-text-size-input"
                         label="Chassis Font Size"
@@ -189,18 +217,6 @@ export default function SquadronBuilder({ breakpoints }) {
                             { label: '44', value: 44 },
                         ]}
                         style={{ width: 125 }}
-                    />
-                    <IconButton size="small" onClick={() => setIsLegendDialogOpen(true)}>
-                        <InfoIcon />
-                    </IconButton>
-                    <TextInput
-                        required
-                        error={squadronChassis === ''}
-                        elementId="squadron-chassis-input"
-                        label="Squadron Chassis Name"
-                        value={squadronChassis}
-                        handleChange={e => setSquadronChassis(e.target.value)}
-                        style={{ flexGrow: 1 }}
                     />
                 </div>
                 <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', gap: 8 }}>
@@ -366,22 +382,6 @@ export default function SquadronBuilder({ breakpoints }) {
                             handleChange={e => setPortraitY(e.target.value)}
                             style={{ width: 100 }}
                         />
-                </div>
-                <div style={{ display: 'flex', flexFlow: 'column nowrap', width: '100%', gap: 8}}>
-                    <SelectorInput
-                        elementId="card-text-font-size-input"
-                        label="Card Text Font Size"
-                        value={cardTextFontSize}
-                        items={[
-                            { label: '16', value: 16 },
-                            { label: '17', value: 17 },
-                            { label: '18', value: 18 },
-                            { label: '19', value: 19 },
-                            { label: '20', value: 20 }
-                        ]}
-                        handleChange={e => setCardTextFontSize(e.target.value)}
-                        style={{ width: 130 }}
-                    />
                 </div>
                 <div style={{ display: 'flex', flexFlow: 'row nowrap', width: '100%', gap: 8  }}>
                     <IconButton size="small" onClick={() => setIsLegendDialogOpen(true)}>
