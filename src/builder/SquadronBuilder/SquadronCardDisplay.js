@@ -48,7 +48,6 @@ export default function SquadronCardDisplay({
     faction,
     squadronName,
     squadronChassis,
-    isChassisItalic,
     squadronHull,
     squadronIcon,
     squadronSpeed,
@@ -58,6 +57,7 @@ export default function SquadronCardDisplay({
     sizeMultiplier,
     cardText,
     cardTextFontSize,
+    chassisTextFontSize,
     vsSquadronArmament,
     vsShipArmament,
     uploadedImage,
@@ -98,7 +98,7 @@ export default function SquadronCardDisplay({
     // Squad Name
     if (squadronName) {
         cardElements.push(
-            <ForegroundWrapperElement key="squadron-name" height={45 * sizeMultiplier} width={450 * sizeMultiplier} top={188 * sizeMultiplier} left={9 * sizeMultiplier}>
+            <ForegroundWrapperElement key="squadron-name" height={45 * sizeMultiplier} width={450 * sizeMultiplier} top={188 * sizeMultiplier} left={8 * sizeMultiplier}>
                 <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Regular', fontStyle: 'normal', fontSize: 38 * sizeMultiplier, display: 'flex', alignItems: 'center' }}>
                     <span style={{ marginRight: 2, fontSize: 24 * sizeMultiplier, fontFamily: 'Armada Icons', color: 'black' }}>{Array(maxNumAllowed).fill().map((_, i) => '\u0078' )}</span>
                     {squadronName}
@@ -108,18 +108,25 @@ export default function SquadronCardDisplay({
     }
 
     // Squad chassis
+    // cardElements.push(
+    //     <ForegroundWrapperElement key="squadron-chassis" height={45 * sizeMultiplier} width={450 * sizeMultiplier} top={233 * sizeMultiplier} left={1 * sizeMultiplier}>
+    //         <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Regular', fontStyle: isChassisItalic ? 'italic' : 'normal', fontSize: 44 * sizeMultiplier, display: 'flex', alignItems: 'center' }}>
+    //             {squadronChassis}
+    //         </span>
+    //     </ForegroundWrapperElement>
+    // );
     cardElements.push(
-        <ForegroundWrapperElement key="squadron-chassis" height={45 * sizeMultiplier} width={450 * sizeMultiplier} top={232 * sizeMultiplier} left={9 * sizeMultiplier}>
-            <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Regular', fontStyle: isChassisItalic ? 'italic' : 'normal', fontSize: 44 * sizeMultiplier, display: 'flex', alignItems: 'center' }}>
-                {squadronChassis}
+        <ForegroundWrapperElement key="squadron-chassis" height={45 * sizeMultiplier} width={450 * sizeMultiplier} top={233 * sizeMultiplier} left={1 * sizeMultiplier}>
+            <span style={{ zIndex: 1 }}>
+                <ArmadaAbilityText isSquadronText={true} textAlign="left" cardText={squadronChassis} fontSize={chassisTextFontSize * sizeMultiplier} />
             </span>
         </ForegroundWrapperElement>
     );
 
     // Squad Points
     cardElements.push(
-        <ForegroundWrapperElement key="squadron-points" height={20 * sizeMultiplier} width={50 * sizeMultiplier} top={587 * sizeMultiplier} left={386 * sizeMultiplier}>
-            <span style={{ zIndex: 1, color: 'black', fontFamily: 'Aero Matics', fontStyle: 'normal', fontSize: 16 * sizeMultiplier, display: 'flex', alignItems: 'center' }}>
+        <ForegroundWrapperElement key="squadron-points" height={20 * sizeMultiplier} width={50 * sizeMultiplier} top={589 * sizeMultiplier} left={386 * sizeMultiplier}>
+            <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Regular', fontSize: 24 * sizeMultiplier }}>
                 {points}
             </span>
         </ForegroundWrapperElement>
@@ -127,8 +134,8 @@ export default function SquadronCardDisplay({
 
     // Squad Speed
     cardElements.push(
-        <ForegroundWrapperElement key="squadron-speed" height={40 * sizeMultiplier} width={30 * sizeMultiplier} top={303 * sizeMultiplier} left={72 * sizeMultiplier}>
-            <span style={{ zIndex: 1, color: '#fce404', fontFamily: 'Aero Matics', fontStyle: 'normal', fontSize: 36 * sizeMultiplier, display: 'flex', alignItems: 'center' }}>
+        <ForegroundWrapperElement key="squadron-speed" height={30 * sizeMultiplier} width={30 * sizeMultiplier} top={311 * sizeMultiplier} left={72 * sizeMultiplier}>
+            <span style={{ zIndex: 1, color: '#fde505', fontFamily: 'Armada Regular', fontStyle: 'normal', fontSize: 54 * sizeMultiplier, display: 'flex', textShadow: '2px 3px 1px #000' }}>
                 {squadronSpeed}
             </span>
         </ForegroundWrapperElement>
@@ -136,8 +143,8 @@ export default function SquadronCardDisplay({
 
     // Squad Hull
     cardElements.push(
-        <ForegroundWrapperElement key="squadron-hull" height={40 * sizeMultiplier} width={30 * sizeMultiplier} top={303 * sizeMultiplier} left={177 * sizeMultiplier}>
-            <span style={{ zIndex: 1, color: '#efe8d5', fontFamily: 'Aero Matics', fontStyle: 'normal', fontSize: 36 * sizeMultiplier, display: 'flex', alignItems: 'center' }}>
+        <ForegroundWrapperElement key="squadron-hull" height={30 * sizeMultiplier} width={30 * sizeMultiplier} top={311 * sizeMultiplier} left={177 * sizeMultiplier}>
+            <span style={{ zIndex: 1, color: '#eee', fontFamily: 'Armada Regular', fontStyle: 'normal', fontSize: 54 * sizeMultiplier, display: 'flex', textShadow: '2px 3px 1px #000' }}>
                 {squadronHull}
             </span>
         </ForegroundWrapperElement>
@@ -175,7 +182,7 @@ export default function SquadronCardDisplay({
 
     // Vs Squadron armament
     cardElements.push(
-        <ForegroundWrapperElement key="vs-squadron-armament" height={33 * sizeMultiplier} width={41 * sizeMultiplier} top={307 * sizeMultiplier} left={276 * sizeMultiplier}>
+        <ForegroundWrapperElement key="vs-squadron-armament" height={33 * sizeMultiplier} width={41 * sizeMultiplier} top={307 * sizeMultiplier} left={276.5 * sizeMultiplier}>
             <ArmadaDiceGroup diceCounts={vsSquadronArmament} height={33 * sizeMultiplier} width={41 * sizeMultiplier} sizeMultiplier={sizeMultiplier} />
         </ForegroundWrapperElement>
     );
@@ -190,8 +197,8 @@ export default function SquadronCardDisplay({
 
      // Card ability text
      cardElements.push(
-        <ForegroundWrapperElement key="card-body-text" height={185 * sizeMultiplier} width={370 * sizeMultiplier} top={379 * sizeMultiplier} left={40 * sizeMultiplier} otherStyles={{ justifyContent: 'left', alignItems: 'baseline' }}>
-            <span style={{ zIndex: 1 }}><ArmadaAbilityText isSquadronText={true} textAlign="left" cardText={cardText} fontSize={cardTextFontSize * sizeMultiplier} /></span>
+        <ForegroundWrapperElement key="card-body-text" height={185 * sizeMultiplier} width={374 * sizeMultiplier} top={375 * sizeMultiplier} left={38 * sizeMultiplier} otherStyles={{ justifyContent: 'left', alignItems: 'baseline' }}>
+            <span style={{ zIndex: 1 }}><ArmadaAbilityText textAlign="left" cardText={cardText} fontSize={cardTextFontSize * sizeMultiplier} /></span>
         </ForegroundWrapperElement>
     );
 

@@ -25,7 +25,7 @@ import {
 import UpgradeCardDisplay from './UpgradeCardDisplay';
 import urls from 'config/urls.json';
 
-const sizeMultiplier = 0.8;
+const sizeMultiplier = 1.25;
 
 export default function UpgradeBuilder({ breakpoints }) {
     const { user } = useAuth0();
@@ -109,12 +109,13 @@ export default function UpgradeBuilder({ breakpoints }) {
                         value={cardNameFontSize}
                         handleChange={e => setCardNameFontSize(e.target.value)}
                         items={[
+                            { label: '40', value: 40 },
+                            { label: '42', value: 42 },
+                            { label: '44', value: 44 },
                             { label: '46', value: 46 },
                             { label: '48', value: 48 },
                             { label: '50', value: 50 },
-                            { label: '52', value: 52 },
-                            { label: '54', value: 54 },
-                            { label: '56', value: 56 }
+                            { label: '52', value: 52 }
                         ]}
                         style={{ width: 110 }}
                     />

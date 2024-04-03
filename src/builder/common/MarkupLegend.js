@@ -96,8 +96,16 @@ export default function MarkupLegend() {
                                     <TableCell><li>List Item 1</li><li>List Item 2</li><li>List Item 3</li></TableCell>
                                 </TableRow>
                                 <TableRow>
-                                    <TableCell>`newline`</TableCell>
-                                    <TableCell>Empty new line</TableCell>
+                                    <TableCell>`newline##`</TableCell>
+                                    <TableCell>Empty new line with line height % (newline10, newline20, newline30, etc)</TableCell>
+                                </TableRow>
+                                <TableRow>
+                                    <TableCell></TableCell>
+                                    <TableCell>There must be an empty line above and below the line with `newline##`</TableCell>
+                                </TableRow>
+                                <TableRow>
+                                    <TableCell></TableCell>
+                                    <TableCell>TIP: Use `newline100` for upgrades and `newline50` for squadron cards</TableCell>
                                 </TableRow>
                             </TableBody>
                         </Table>

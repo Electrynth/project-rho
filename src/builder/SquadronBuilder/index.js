@@ -25,7 +25,7 @@ import SelectorInput from '../common/SelectorInput';
 import SquadronCardDisplay from './SquadronCardDisplay';
 import urls from 'config/urls.json';
 
-const sizeMultiplier = 0.8;
+const sizeMultiplier = 1.25;
 
 export default function SquadronBuilder({ breakpoints }) {
     const { user } = useAuth0();
@@ -48,12 +48,12 @@ export default function SquadronBuilder({ breakpoints }) {
     const [maxNumAllowed, setMaxNumAllowed] = useState(1);
     const [squadronName, setSquadronName] = useState('');
     const [squadronChassis, setSquadronChassis] = useState('');
-    const [isChassisItalic, setIsChassisItalic] = useState(false);
     const [squadronIcon, setSquadronIcon] = useState('');
     const [squadronSpeed, setSquadronSpeed] = useState(1);
     const [squadronHull, setSquadronHull] = useState(2);
     const [cardText, setCardText] = useState('');
     const [cardTextFontSize, setCardTextFontSize] = useState(16);
+    const [chassisTextFontSize, setChassisTextFontSize] = useState(44);
     const [vsSquadronArmament, setVsSquadronArmament] = useState([0, 0, 0]);
     const [vsShipArmament, setVsShipArmament] = useState([0, 0, 0]);
     const [firstDefenseToken, setFirstDefenseToken] = useState('none');
@@ -177,16 +177,22 @@ export default function SquadronBuilder({ breakpoints }) {
                 />
                 <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', gap: 8 }}>
                     <SelectorInput
-                        elementId="italic-chassis"
-                        label="Italicize Chassis Name"
-                        value={isChassisItalic}
-                        handleChange={e => setIsChassisItalic(e.target.value)}
+                        elementId="chassis-font-text-size-input"
+                        label="Chassis Font Size"
+                        value={chassisTextFontSize}
+                        handleChange={e => setChassisTextFontSize(e.target.value)}
                         items={[
-                            { label: 'No', value: false },
-                            { label: 'Yes', value: true }
+                            { label: '36', value: 36 },
+                            { label: '38', value: 38 },
+                            { label: '40', value: 40 },
+                            { label: '42', value: 42 },
+                            { label: '44', value: 44 },
                         ]}
-                        style={{ width: 150  }}
+                        style={{ width: 125 }}
                     />
+                    <IconButton size="small" onClick={() => setIsLegendDialogOpen(true)}>
+                        <InfoIcon />
+                    </IconButton>
                     <TextInput
                         required
                         error={squadronChassis === ''}
@@ -401,7 +407,7 @@ export default function SquadronBuilder({ breakpoints }) {
             </Dialog>
             <SquadronCardDisplay
                 sizeMultiplier={sizeMultiplier}
-                isChassisItalic={isChassisItalic}
+                chassisTextFontSize={chassisTextFontSize}
                 points={points}
                 faction={faction}
                 squadronName={squadronName}

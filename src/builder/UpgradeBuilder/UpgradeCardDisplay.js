@@ -127,7 +127,7 @@ export default function UpgradeCardDisplay({
     // Card Name
     let isTitleItalic = upgradeTypes.length > 0 && upgradeTypes[0] === 'title' && maxNumAllowed > 0;
     cardElements.push(
-        <ForegroundWrapperElement key="card-name" height={45 * sizeMultiplier} width={350 * sizeMultiplier} top={262 * sizeMultiplier} left={readyCostTokenValue > 0 || isExhaust ? 36 * sizeMultiplier : 51 * sizeMultiplier}>
+        <ForegroundWrapperElement key="card-name" height={45 * sizeMultiplier} width={350 * sizeMultiplier} top={262 * sizeMultiplier} left={readyCostTokenValue > 0 || isExhaust ? 37 * sizeMultiplier : 50 * sizeMultiplier}>
             <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Regular', fontStyle: isTitleItalic ? 'italic' : 'normal', fontSize: cardNameFontSize * sizeMultiplier, display: 'flex', alignItems: 'center' }}>
                 <span style={{ marginRight: 2, fontSize: 24 * sizeMultiplier, fontFamily: 'Armada Icons', color: 'black' }}>{Array(maxNumAllowed).fill().map((_, i) => '\u0078' )}</span>
                 {cardName}
@@ -169,18 +169,12 @@ export default function UpgradeCardDisplay({
 
     // Ready cost tokens
     if (readyCostTokenValue > 0 && readyCostTokens.length > 0) {
-        cardElements.push(
-            <BackgroundImageLayer key="red-part" src={upgradeTemplateImages.red} />
-        );
-        cardElements.push(
-            <BackgroundImageLayer key="ready-cost-token-value" src={barNumbers.red[readyCostTokenValue - 1]} />
-        );
+        cardElements.push(<BackgroundImageLayer key="red-part" src={upgradeTemplateImages.red} />);
+        cardElements.push(<BackgroundImageLayer key="ready-cost-token-value" src={barNumbers.red[readyCostTokenValue - 1]} />);
         cardElements.push(<SideBarTokenColumn sizeMultiplier={sizeMultiplier} commandTokens={readyCostTokens} color="red" />);
     } else if (isExhaust) {
     // Exhaustible
-        cardElements.push(
-            <BackgroundImageLayer key="exhaust-part" src={upgradeTemplateImages.exhaust} />
-        );
+        cardElements.push(<BackgroundImageLayer key="exhaust-part" src={upgradeTemplateImages.exhaust} />);
     }
     
     // Card Portrait

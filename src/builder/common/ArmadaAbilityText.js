@@ -3,15 +3,23 @@ import { armadaFontIcons } from '../../utility.js';
 
 export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign = 'center', isSquadronText = false }) {
     const baseStyles = {
-        fontSize,
+        fontSize: fontSize,
         color: 'black',
-        lineHeight: 'normal'
+        lineHeight: '1em'
     };
-
+    const newlineRegex = /^newline[0-9]{2}/;
     return (
         <Markdown
             allowedElements={['p', 'li', 'ol', 'ul', 'em', 'code', 'strong']}
             components={{
+                em(props) {
+                    const { children, ...rest } = props;
+                    return (
+                        <em {...rest} style={{ ...baseStyles, fontFamily: isSquadronText ? 'Armada Regular' : 'Optima' }}>
+                            {children}
+                        </em>
+                    );
+                },
                 li(props) {
                     const { children, ...rest } = props;
                     return (
@@ -22,8 +30,13 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign =
                 },
                 p(props) {
                     const { children, ...rest } = props;
+                    let lineHeight = '1em';
+                    if (children.props && children.props.children && newlineRegex.test(children.props.children)) {
+                        const foundNumber = children.props.children.match(/[0-9]{2,3}/);
+                        lineHeight = `${foundNumber}%`;
+                    }
                     return (
-                        <p {...rest} style={{ ...baseStyles, fontFamily: 'Optima', marginTop: 0, marginBottom: 0, textAlign }}>
+                        <p {...rest} style={{ ...baseStyles, fontFamily: isSquadronText ? 'Armada Regular' :'Optima', marginTop: 0, marginBottom: 0, lineHeight, textAlign }}>
                             {children}
                         </p>
                     );
@@ -31,18 +44,21 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign =
                 code(props) {
                     const { children, ...rest } = props;
                     if (typeof children === 'string' && armadaFontIcons[children]) {
-                        return <span {...rest} style={{ ...baseStyles, fontFamily: 'Armada Icons', fontSize: isSquadronText ? fontSize + 4 : fontSize + 2, verticalAlign: isSquadronText ? undefined : 'middle', fontStyle: 'strong', lineHeight: isSquadronText ? '1.2em' : undefined }}>{armadaFontIcons[children]}</span>
-                    } else if (typeof children === 'string' && children === 'newline') {
-                        if (isSquadronText) return <span ><br /></span>
-                        else return <span><br /><br /></span>
-                    } else {
+                        return (
+                            <span {...rest} style={{ ...baseStyles, fontFamily: 'Armada Icons', fontSize: fontSize + 1, verticalAlign: isSquadronText ? undefined : 'middle', fontStyle: 'strong' }}>
+                                {armadaFontIcons[children]}
+                            </span>
+                        );
+                    } else if (typeof children === 'string' && newlineRegex.test(children)) {
+                        return <br />;
+                    } else { 
                         return undefined;
                     }
                 },
                 strong(props) {
                     const { children, ...rest } = props;
                     return (
-                        <strong {...rest} style={{ ...baseStyles, fontFamily: 'Aero Matics Display Bold', fontSize: isSquadronText ? fontSize + 2 : fontSize + 1, fontWeight: 400 }}>
+                        <strong {...rest} style={{ ...baseStyles, fontFamily: 'Aero Matics Display Bold', fontSize: fontSize + 2, fontWeight: 400 }}>
                             {children}
                         </strong>
                     );

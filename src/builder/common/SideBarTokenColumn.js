@@ -1,23 +1,22 @@
-import Image from 'next/image';
 import { commandIcons } from 'src/utility';
 
-export default function SideBarTokenColumn({ cardWidth = 450, sizeMultiplier, color, commandTokens }) {
+export default function SideBarTokenColumn({ sizeMultiplier, color, commandTokens }) {
     const column = [];
 
-    let tokenLeftMargin = 16 * sizeMultiplier;
+    let tokenLeftMargin = 16.5 * sizeMultiplier;
     let dividerLeftMargin = 22 * sizeMultiplier;
 
     if (color === 'red') {
-        tokenLeftMargin = 403 * sizeMultiplier;
+        tokenLeftMargin = 403.5 * sizeMultiplier;
         dividerLeftMargin = 409 * sizeMultiplier;
     }
 
     commandTokens.forEach((token, i) => {
         column.push(
-            <Image
+            <img
                 key={token}
                 alt={token}
-                src={commandIcons[token]}
+                src={commandIcons[token].src}
                 style={{
                     zIndex: 1,
                     position: 'absolute',

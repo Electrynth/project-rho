@@ -1,13 +1,14 @@
 function ArmadaDie({ sizeMultiplier, color }) {
     const colors = {
-        red: '#b53633',
-        blue: '#04adf0',
-        black: '#24292b'
+        red: '#b21d22',
+        blue: '#00b0ef',
+        black: '#000'
     };
 
     const dieStyles = {
-        width: 9 * sizeMultiplier,
-        height: 9 * sizeMultiplier,
+        width: 10 * sizeMultiplier,
+        height: 10 * sizeMultiplier,
+        margin: 1,
         transform: 'rotate(45deg)',
         backgroundColor: colors[color]
     };
@@ -39,11 +40,11 @@ export default function ArmadaDiceGroup({ sizeMultiplier, diceCounts, maxDicePer
 
     return (
         <div style={{ width: '100%', height: '100%', display: 'flex', flexFlow: 'column nowrap', justifyContent: 'center', alignItems: 'center', marginLeft: secondRow.length > 1 ? -6 * sizeMultiplier : 0 * sizeMultiplier }}>
-            <div style={{ display: 'flex', flexFlow: 'row nowrap', gap: 7 * sizeMultiplier }}>
-                {allDice.length > 0 ? firstRow : <div style={{ color: 'black', fontSize: 48 * sizeMultiplier }}>-</div>}
+            <div style={{ display: 'flex', flexFlow: 'row nowrap', gap: 5 * sizeMultiplier }}>
+                {allDice.length > 0 ? firstRow : <div style={{ color: 'black', marginBottom: 4 * sizeMultiplier, fontSize: 48 * sizeMultiplier }}>-</div>}
             </div>
             {secondRow.length > 0 ? (
-                <div style={{ marginTop: 2 * sizeMultiplier, marginLeft: secondRow.length > 1 ? 16 * sizeMultiplier : 0 * sizeMultiplier, display: 'flex', flexFlow: 'row nowrap', gap: 6 * sizeMultiplier }}>
+                <div style={{ marginTop: 1 * sizeMultiplier, marginLeft: secondRow.length > 1 ? 14 * sizeMultiplier : 0 * sizeMultiplier, display: 'flex', flexFlow: 'row nowrap', gap: 5 * sizeMultiplier }}>
                     {secondRow}
                 </div>
             ) : undefined}
