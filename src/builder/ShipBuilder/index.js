@@ -45,7 +45,7 @@ export default function ShipBuilder({ breakpoints }) {
     
     
 
-    const [nameFontSize, setNameFontSize] = useState(48);
+    const [nameFontSize, setNameFontSize] = useState(46);
     const [name, setName] = useState('Untitled Ship');
     const [traitText, setTraitText] = useState('');
     const [maxNumAllowed, setMaxNumAllowed] = useState(0);
@@ -179,8 +179,7 @@ export default function ShipBuilder({ breakpoints }) {
                             { label: '40', value: 40 },
                             { label: '42', value: 42 },
                             { label: '44', value: 44 },
-                            { label: '46', value: 46 },
-                            { label: '48', value: 48 }
+                            { label: '46', value: 46 }
                         ]}
                         style={{ width: 110 }}
                     />
