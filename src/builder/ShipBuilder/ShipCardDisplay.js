@@ -224,21 +224,21 @@ export default function ShipCardDisplay({
 
     // Shield values
     cardElements.push(
-        <ForegroundWrapperElement key="front-shield-value" height={50 * sizeMultiplier} width={50 * sizeMultiplier} top={414 * sizeMultiplier} left={339 * sizeMultiplier}>
+        <ForegroundWrapperElement key="front-shield-value" height={50 * sizeMultiplier} width={50 * sizeMultiplier} top={414 * sizeMultiplier} left={337 * sizeMultiplier}>
             <span style={{ zIndex: 1, color: '#2a5884', fontFamily: 'Armada Regular', fontStyle: 'normal', fontSize: 50 * sizeMultiplier }}>
                 {frontShieldValue}
             </span>
         </ForegroundWrapperElement>
     );
     cardElements.push(
-        <ForegroundWrapperElement key="left-shield-value" height={50 * sizeMultiplier} width={50 * sizeMultiplier} top={584 * sizeMultiplier} left={220 * sizeMultiplier}>
+        <ForegroundWrapperElement key="left-shield-value" height={50 * sizeMultiplier} width={50 * sizeMultiplier} top={584 * sizeMultiplier} left={219 * sizeMultiplier}>
             <span style={{ zIndex: 1, color: '#2a5884', fontFamily: 'Armada Regular', fontStyle: 'normal', fontSize: 50 * sizeMultiplier }}>
                 {sideShieldValue}
             </span>
         </ForegroundWrapperElement>
     );
     cardElements.push(
-        <ForegroundWrapperElement key="right-shield-value" height={50 * sizeMultiplier} width={50 * sizeMultiplier} top={584 * sizeMultiplier} left={372 * sizeMultiplier}>
+        <ForegroundWrapperElement key="right-shield-value" height={50 * sizeMultiplier} width={50 * sizeMultiplier} top={584 * sizeMultiplier} left={371 * sizeMultiplier}>
             <span style={{ zIndex: 1, color: '#2a5884', fontFamily: 'Armada Regular', fontStyle: 'normal', fontSize: 50 * sizeMultiplier }}>
                 {sideShieldValue}
             </span>
