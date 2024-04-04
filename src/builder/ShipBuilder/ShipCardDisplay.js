@@ -211,7 +211,7 @@ export default function ShipCardDisplay({
         if (defenseToken === '') return;
 
         const defenseTokenY = 360 + Math.floor(i / 2) * 45;
-        const defenseTokenX = i % 2 === 0 ? 42 : 115;
+        const defenseTokenX = i % 2 === 0 ? 43 : 116;
 
         cardElements.push(
             <ForegroundWrapperElement key={`${defenseToken}-${i}`} height={40 * sizeMultiplier} width={40 * sizeMultiplier} top={defenseTokenYOffset + defenseTokenY * sizeMultiplier} left={defenseTokenX * sizeMultiplier} otherStyles={{ zIndex: 1 }}>
