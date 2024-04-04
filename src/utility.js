@@ -281,7 +281,10 @@ const armadaShipFontSizeFactor = {
     'Recusant-class Destroyer': 1,
     'Starhawk Battlecruiser': .75,
     'Venator-class Star Destroyer': 1,
-    'Victory-class Star Destroyer': .8
+    'Victory-class Star Destroyer': .8,
+    'DP-20 Frigate': .8,
+    'Dreadnought-class Heavy Cruiser': .9,
+    'DH-Omni Support Ship': 0.75
 };
 
 const armadaShipFontIcons = {
@@ -307,19 +310,22 @@ const armadaShipFontIcons = {
         'Interdictor': '\u0046',
         'Arquitens-class Cruiser': '\u0047',
         'Quasar Fire-class Cruiser-Carrier': '\u0048',
-        'Onager-class Ship': '\u004A'
+        'Onager-class Ship': '\u004A',
+        'Dreadnought-class Heavy Cruiser': '\u0031'
     },
     'republic': {
         'Consular Cruiser': '\u0061',
         'Acclamator-class Assault Ship': '\u0062',
         'Venator-class Star Destroyer': '\u0063',
-        'Pelta-class Frigate': '\u0064'
+        'Pelta-class Frigate': '\u0064',
+        'DP-20 Frigate': '\u0030'
     },
     'separatists': {
         'Munificent-class Frigate': '\u006E',
         'Hardcell-class Transport': '\u006F',
         'Providence-class Carrier': '\u0070',
-        'Recusant-class Destroyer': '\u0071'
+        'Recusant-class Destroyer': '\u0071',
+        'DH-Omni Support Ship': '\u0072'
     }
 };
 
@@ -345,16 +351,19 @@ const armadaShipIconOffset = {
     'Arquitens-class Cruiser': 1,
     'Quasar Fire-class Cruiser-Carrier': -3,
     'Onager-class Ship': -3,
+    'Dreadnought-class Heavy Cruiser': -2,
 
     'Consular Cruiser': -2,
     'Acclamator-class Assault Ship': 0,
     'Venator-class Star Destroyer': 0,
     'Pelta-class Frigate': -4,
+    'DP-20 Frigate': 0,
 
     'Munificent-class Frigate': 0,
     'Hardcell-class Transport': -2,
     'Providence-class Carrier': -3,
-    'Recusant-class Destroyer': -6
+    'Recusant-class Destroyer': -6,
+    'DH-Omni Support Ship': -3
 };
 
 const armadaSquadronFontIcons = {
@@ -390,14 +399,32 @@ const armadaSquadronFontIcons = {
     'VCX-100 Freighter': '\u0069',
     'Lancer Pursuit Craft': '\u006A',
     'Z-95 Headhunter Squadron': '\u006B',
-    'E-Wing Squadron': '\u006C'
+
+    'E-Wing Squadron': '\u006C',
+    'TIE Advanced v1 Squadron': '\u004E',
+    'TIE Punisher Squadron': '\u004F',
+    'TIE Reaper': '\u0050',
+    'Fang Fighter': '\u006D',
+    'K-Wing Squadron': '\u006E',
+    'U-Wing Squadron': '\u006F',
+    'Nantex Starfighter Squadron': '\u0025',
+    'HMP Droid Gunship': '\u0026',
+    'Porax-38 Starfighter': '\u0027',
+    'Fanblade Starfighter': '\u0028',
+    'Star Courier': '\u0029',
+    'Mankvim Interceptor Squadron': '\u002A',
+    'N-1 Starfighter': '\u0034',
+    'Eta-2 Actis Squadron': '\u0035',
+    'LAAT Gunship': '\u0036',
+    'Eta-class Shuttle': '\u0037',
+    'V-Wing Squadron': '\u0038'
 };
 
 const armadaSquadronFontSizeFactor = {
     'Vulture Squadron': 1.2,
     'Belbullab-22 Squadron': 1.1,
-    'Tri-fighter Squadron': 1,
-    'V-19 Torrent Squadron': 2,
+    'Tri-fighter Squadron': .9,
+    'V-19 Torrent Squadron': 1.3,
     'Delta-7 Aethersprite Squadron': 1,
     'BTL-B Y-Wing Squadron': 1,
     'ARC-170 Squadron': 1.1,
@@ -409,7 +436,7 @@ const armadaSquadronFontSizeFactor = {
     'Firespray-31': 1.1,
     'Aggressor Assault Fighter': 1.2,
     'JumpMaster 5000': 1.1,
-    'YV-666': 1.1,
+    'YV-666': 1.25,
     'TIE Defender Squadron': 1,
     'TIE Phantom Squadron': 1,
     'Lambda Shuttle': 1,
@@ -425,44 +452,80 @@ const armadaSquadronFontSizeFactor = {
     'HWK-290': 1.1,
     'VCX-100 Freighter': 1,
     'Lancer Pursuit Craft': 1,
-    'Z-95 Headhunter Squadron': 1.1,
-    'E-Wing Squadron': 1.1
+    'Z-95 Headhunter Squadron': 1.2,
+    'E-Wing Squadron': 1.1,
+
+    'TIE Advanced v1 Squadron': 1,
+    'TIE Punisher Squadron': 1,
+    'TIE Reaper': .9,
+    'Fang Fighter': .9,
+    'K-Wing Squadron': .9,
+    'U-Wing Squadron': .9,
+    'Nantex Starfighter Squadron': 1,
+    'HMP Droid Gunship': 1,
+    'Porax-38 Starfighter': .9,
+    'Fanblade Starfighter': 0.7,
+    'Star Courier': .9,
+    'Mankvim Interceptor Squadron': .8,
+    'N-1 Starfighter': .8,
+    'Eta-2 Actis Squadron': 1,
+    'LAAT Gunship': .8,
+    'Eta-class Shuttle': .9,
+    'V-Wing Squadron': .8
 };
 
 const armadaSquadronIconOffset = {
-    'Vulture Squadron': -5,
+    'Vulture Squadron': -2,
     'Belbullab-22 Squadron': 0,
-    'Tri-fighter Squadron': 0,
-    'V-19 Torrent Squadron': 1,
-    'Delta-7 Aethersprite Squadron': 0,
+    'Tri-fighter Squadron': 8,
+    'V-19 Torrent Squadron': -4,
+    'Delta-7 Aethersprite Squadron': 3,
     'BTL-B Y-Wing Squadron': 0,
-    'ARC-170 Squadron': -4,
-    'Hyena Squadron': -6,
-    'TIE Fighter Squadron': 0,
-    'TIE Advanced Squadron': 0,
-    'TIE Bomber Squadron': 0,
-    'TIE Interceptor Squadron': 0,
-    'Firespray-31': -1,
-    'Aggressor Assault Fighter': -2,
-    'JumpMaster 5000': -2,
-    'YV-666': 0,
+    'ARC-170 Squadron': 0,
+    'Hyena Squadron': -4,
+    'TIE Fighter Squadron': 3,
+    'TIE Advanced Squadron': 2,
+    'TIE Bomber Squadron': 1,
+    'TIE Interceptor Squadron': 2,
+    'Firespray-31': 1,
+    'Aggressor Assault Fighter': 2,
+    'JumpMaster 5000': 0,
+    'YV-666': 1,
     'TIE Defender Squadron': 0,
-    'TIE Phantom Squadron': 0,
-    'Lambda Shuttle': -3,
-    'VT-49 Decimator': -1,
-    'Mandalorian Gauntlet Fighter': 0,
-    'X-Wing Squadron': 2,
-    'A-Wing Squadron': -2,
-    'B-Wing Squadron': 0,
-    'Y-Wing Squadron': 0,
-    'YT-1300': 0,
-    'YT-2400': 0,
+    'TIE Phantom Squadron': 1,
+    'Lambda Shuttle': 0,
+    'VT-49 Decimator': 1,
+    'Mandalorian Gauntlet Fighter': 2,
+    'X-Wing Squadron': 4,
+    'A-Wing Squadron': 0,
+    'B-Wing Squadron': 1,
+    'Y-Wing Squadron': 2,
+    'YT-1300': 2,
+    'YT-2400': 2,
     'Scurrg H-6 Bomber': 0,
     'HWK-290': -1,
-    'VCX-100 Freighter': 0,
+    'VCX-100 Freighter': 2,
     'Lancer Pursuit Craft': 0,
-    'Z-95 Headhunter Squadron': 0,
-    'E-Wing Squadron': -1
+    'Z-95 Headhunter Squadron': 3,
+    'E-Wing Squadron': 0,
+
+    'TIE Advanced v1 Squadron': 4,
+    'TIE Punisher Squadron': 5,
+    'TIE Reaper': 6,
+    'Fang Fighter': 10,
+    'K-Wing Squadron': 5,
+    'U-Wing Squadron': 5,
+    'Nantex Starfighter Squadron': 3,
+    'HMP Droid Gunship': 5,
+    'Porax-38 Starfighter': 5,
+    'Fanblade Starfighter': 9,
+    'Star Courier': 6,
+    'Mankvim Interceptor Squadron': 5,
+    'N-1 Starfighter': 4,
+    'Eta-2 Actis Squadron': 5,
+    'LAAT Gunship': 5,
+    'Eta-class Shuttle': 5,
+    'V-Wing Squadron': 6
 };
 
 const checkIsMatch = (object, source) => {
