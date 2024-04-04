@@ -43,31 +43,6 @@ export default function ShipBuilder({ breakpoints }) {
         }
     }, [user]);
     
-
-    
-    if (isLoading) {
-        return (
-            <Typography style={{ margin: 16 }}>
-                Loading...
-            </Typography>
-        );
-    } else if (!isLoading && !builderAccess) {
-        return (
-            <div style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'center' }}>
-                <Typography style={{ margin: 16 }}>
-                Monetary contribution and creating an account is required to access this feature. A one-time contribution of $3 or more will grant permanent access to every feature on this platform.
-                </Typography>
-                <Button
-                    variant="contained"
-                    href="https://www.buymeacoffee.com/holofoundry"
-                    startIcon={<CoffeeIcon />}
-                    target="_blank"
-                >
-                    Buy me a coffee
-                </Button>
-            </div>
-        );
-    }
     
 
     const [nameFontSize, setNameFontSize] = useState(48);
@@ -116,7 +91,29 @@ export default function ShipBuilder({ breakpoints }) {
     const [isPortraitMirrored, setIsPortraitMirrored] = useState(false);
 
 
-
+    if (isLoading) {
+        return (
+            <Typography style={{ margin: 16 }}>
+                Loading...
+            </Typography>
+        );
+    } else if (!isLoading && !builderAccess) {
+        return (
+            <div style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'center' }}>
+                <Typography style={{ margin: 16 }}>
+                Monetary contribution and creating an account is required to access this feature. A one-time contribution of $3 or more will grant permanent access to every feature on this platform.
+                </Typography>
+                <Button
+                    variant="contained"
+                    href="https://www.buymeacoffee.com/holofoundry"
+                    startIcon={<CoffeeIcon />}
+                    target="_blank"
+                >
+                    Buy me a coffee
+                </Button>
+            </div>
+        );
+    }
 
     return (
         <div style={{ display: 'flex', flexFlow: `${breakpoints.lg ? 'row' : 'column'} nowrap`, alignItems: `${breakpoints.lg ? 'flex-start' : 'center'}`, gap: 8, margin: 8 }}>
