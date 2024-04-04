@@ -206,6 +206,7 @@ export default function ShipCardDisplay({
         return -1;
     });
     
+    let defenseTokenYOffset = -2;
     orderedDefenseTokens.forEach((defenseToken, i) => {
         if (defenseToken === '') return;
 
@@ -213,7 +214,7 @@ export default function ShipCardDisplay({
         const defenseTokenX = i % 2 === 0 ? 42 : 115;
 
         cardElements.push(
-            <ForegroundWrapperElement key={`${defenseToken}-${i}`} height={40 * sizeMultiplier} width={40 * sizeMultiplier} top={defenseTokenY * sizeMultiplier} left={defenseTokenX * sizeMultiplier} otherStyles={{ zIndex: 1 }}>
+            <ForegroundWrapperElement key={`${defenseToken}-${i}`} height={40 * sizeMultiplier} width={40 * sizeMultiplier} top={defenseTokenYOffset + defenseTokenY * sizeMultiplier} left={defenseTokenX * sizeMultiplier} otherStyles={{ zIndex: 1 }}>
                 <span style={{ zIndex: 1, fontFamily: 'Armada Icons', color: 'white', fontSize: 38 * sizeMultiplier }}>
                     {armadaFontIcons[defenseToken]}
                 </span>
@@ -339,10 +340,12 @@ export default function ShipCardDisplay({
         );
     }
 
+    let speedTickYOffset = -2;
+
     for (let i = 0; i < maxSpeed; i++) {
         if (i === 0) {
             cardElements.push(
-                <ForegroundWrapperElement key="speed-1-1" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={623 * sizeMultiplier} left={30 * sizeMultiplier}>
+                <ForegroundWrapperElement key="speed-1-1" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={speedTickYOffset + 623 * sizeMultiplier} left={30 * sizeMultiplier}>
                     <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Icons', fontSize: 21 * sizeMultiplier }}>
                         {ticksToYaw(speed1Chart[0])}
                     </span>
@@ -350,14 +353,14 @@ export default function ShipCardDisplay({
             );
         } else if (i === 1) {
             cardElements.push(
-                <ForegroundWrapperElement key="speed-2-1" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={583 * sizeMultiplier} left={67 * sizeMultiplier}>
+                <ForegroundWrapperElement key="speed-2-1" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={speedTickYOffset + 583 * sizeMultiplier} left={67 * sizeMultiplier}>
                     <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Icons', fontSize: 21 * sizeMultiplier }}>
                         {ticksToYaw(speed2Chart[1])}
                     </span>
                 </ForegroundWrapperElement>
             );
             cardElements.push(
-                <ForegroundWrapperElement key="speed-2-2" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={623 * sizeMultiplier} left={67 * sizeMultiplier}>
+                <ForegroundWrapperElement key="speed-2-2" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={speedTickYOffset + 623 * sizeMultiplier} left={67 * sizeMultiplier}>
                     <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Icons', fontSize: 21 * sizeMultiplier }}>
                         {ticksToYaw(speed2Chart[0])}
                     </span>
@@ -365,21 +368,21 @@ export default function ShipCardDisplay({
             );
         } else if (i === 2) {
             cardElements.push(
-                <ForegroundWrapperElement key="speed-3-1" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={543 * sizeMultiplier} left={104 * sizeMultiplier}>
+                <ForegroundWrapperElement key="speed-3-1" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={speedTickYOffset + 543 * sizeMultiplier} left={104 * sizeMultiplier}>
                     <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Icons', fontSize: 21 * sizeMultiplier }}>
                         {ticksToYaw(speed3Chart[2])}
                     </span>
                 </ForegroundWrapperElement>
             );
             cardElements.push(
-                <ForegroundWrapperElement key="speed-3-2" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={583 * sizeMultiplier} left={104 * sizeMultiplier}>
+                <ForegroundWrapperElement key="speed-3-2" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={speedTickYOffset + 583 * sizeMultiplier} left={104 * sizeMultiplier}>
                     <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Icons', fontSize: 21 * sizeMultiplier }}>
                         {ticksToYaw(speed3Chart[1])}
                     </span>
                 </ForegroundWrapperElement>
             );
             cardElements.push(
-                <ForegroundWrapperElement key="speed-3-2" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={623 * sizeMultiplier} left={104 * sizeMultiplier}>
+                <ForegroundWrapperElement key="speed-3-2" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={speedTickYOffset + 623 * sizeMultiplier} left={104 * sizeMultiplier}>
                     <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Icons', fontSize: 21 * sizeMultiplier }}>
                         {ticksToYaw(speed3Chart[0])}
                     </span>
@@ -387,28 +390,28 @@ export default function ShipCardDisplay({
             );
         } else if (i === 3) {
             cardElements.push(
-                <ForegroundWrapperElement key="speed-4-1" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={503 * sizeMultiplier} left={141 * sizeMultiplier}>
+                <ForegroundWrapperElement key="speed-4-1" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={speedTickYOffset + 503 * sizeMultiplier} left={141 * sizeMultiplier}>
                     <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Icons', fontSize: 21 * sizeMultiplier }}>
                         {ticksToYaw(speed4Chart[3])}
                     </span>
                 </ForegroundWrapperElement>
             );
             cardElements.push(
-                <ForegroundWrapperElement key="speed-4-2" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={543 * sizeMultiplier} left={141 * sizeMultiplier}>
+                <ForegroundWrapperElement key="speed-4-2" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={speedTickYOffset + 543 * sizeMultiplier} left={141 * sizeMultiplier}>
                     <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Icons', fontSize: 21 * sizeMultiplier }}>
                         {ticksToYaw(speed4Chart[2])}
                     </span>
                 </ForegroundWrapperElement>
             );
             cardElements.push(
-                <ForegroundWrapperElement key="speed-4-3" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={583 * sizeMultiplier} left={141 * sizeMultiplier}>
+                <ForegroundWrapperElement key="speed-4-3" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={speedTickYOffset + 583 * sizeMultiplier} left={141 * sizeMultiplier}>
                     <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Icons', fontSize: 21 * sizeMultiplier }}>
                         {ticksToYaw(speed4Chart[1])}
                     </span>
                 </ForegroundWrapperElement>
             );
             cardElements.push(
-                <ForegroundWrapperElement key="speed-4-4" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={623 * sizeMultiplier} left={141 * sizeMultiplier}>
+                <ForegroundWrapperElement key="speed-4-4" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={speedTickYOffset + 623 * sizeMultiplier} left={141 * sizeMultiplier}>
                     <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Icons', fontSize: 21 * sizeMultiplier }}>
                         {ticksToYaw(speed4Chart[0])}
                     </span>
