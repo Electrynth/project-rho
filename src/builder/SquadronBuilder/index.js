@@ -108,7 +108,7 @@ export default function SquadronBuilder({ breakpoints }) {
                         elementId="points-input"
                         label="Points"
                         value={points}
-                        numberRange={[-999, 999]}
+                        numberRange={[0, 999]}
                         handleChange={e => setPoints(e.target.value)}
                         style={{ width: 60 }}
                     />

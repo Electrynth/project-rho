@@ -68,6 +68,24 @@ import separatistsAce0 from 'public/images/templates/squadron/separatists ace0.p
 import separatistsAce1 from 'public/images/templates/squadron/rebels ace1.png';
 import separatistsAce2 from 'public/images/templates/squadron/separatists ace2.png';
 
+import rebelShip from 'public/images/templates/ship/rebel ship.png';
+import empireShip from 'public/images/templates/ship/empire ship.png';
+import republicShip from 'public/images/templates/ship/republic ship.png';
+import separatistsShip from 'public/images/templates/ship/separatists ship.png';
+import speed2 from 'public/images/templates/ship/speed2.png';
+import speed3 from 'public/images/templates/ship/speed3.png';
+import speed4 from 'public/images/templates/ship/speed4.png';
+
+
+const shipTemplates = {
+    rebels: rebelShip,
+    empire: empireShip,
+    republic: republicShip,
+    separatists: separatistsShip,
+    speed2,
+    speed3,
+    speed4
+};
 
 const commandIcons = {
     'any token': any,
@@ -520,5 +538,6 @@ export {
     upgradeTypeItems,
     armadaFontIcons,
     upgradeTemplateImages,
-    squadronTemplateImages
+    squadronTemplateImages,
+    shipTemplates
 }

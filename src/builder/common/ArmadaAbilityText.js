@@ -15,7 +15,7 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign =
                 em(props) {
                     const { children, ...rest } = props;
                     return (
-                        <em {...rest} style={{ ...baseStyles, fontFamily: isSquadronText ? 'Armada Regular' : 'Optima' }}>
+                        <em {...rest} style={{ ...baseStyles, fontFamily: isSquadronText ? 'Armada Regular' : 'Optima', marginRight: isSquadronText ? 4 : 0 }}>
                             {children}
                         </em>
                     );

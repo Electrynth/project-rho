@@ -116,7 +116,7 @@ export default function UpgradeBuilder({ breakpoints }) {
                             { label: '50', value: 50 },
                             { label: '52', value: 52 }
                         ]}
-                        style={{ width: 110 }}
+                        style={{ width: 120 }}
                     />
                     <SelectorInput
                         elementId="card-text-font-size-input"
@@ -163,10 +163,9 @@ export default function UpgradeBuilder({ breakpoints }) {
                     <TextInput
                         elementId="card-points-input"
                         label="Points"
-                        numberRange={[-999, 999]}
                         value={points}
                         handleChange={e => setPoints(e.target.value)}
-                        style={{ width: 80 }}
+                        style={{ width: 60 }}
                     />
                 </div>
                 <div style={{ display: 'flex', flexFlow: 'row nowrap', width: '100%', gap: 8 }}>
