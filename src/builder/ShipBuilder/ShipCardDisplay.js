@@ -118,7 +118,7 @@ export default function ShipCardDisplay({
 
     // Ship Name
     cardElements.push(
-        <ForegroundWrapperElement key="ship-name" height={80 * sizeMultiplier} width={450 * sizeMultiplier} top={160 * sizeMultiplier} left={1 * sizeMultiplier}>
+        <ForegroundWrapperElement key="ship-name" height={40 * sizeMultiplier} width={380 * sizeMultiplier} top={180 * sizeMultiplier} left={60 * sizeMultiplier}>
             <span style={{ zIndex: 1, display: 'flex', flexFlow: 'row nowrap' }}>
                 <span style={{ fontSize: (nameFontSize / 2) * sizeMultiplier, fontFamily: 'Armada Icons', color: 'black' }}>
                     {Array(maxNumAllowed).fill().map((_, i) => '\u0078' )}
