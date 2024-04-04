@@ -206,7 +206,7 @@ export default function ShipCardDisplay({
         return -1;
     });
     
-    let defenseTokenYOffset = -2;
+    let defenseTokenYOffset = -4;
     orderedDefenseTokens.forEach((defenseToken, i) => {
         if (defenseToken === '') return;
 
