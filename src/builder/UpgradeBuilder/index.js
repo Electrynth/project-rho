@@ -130,7 +130,7 @@ export default function UpgradeBuilder({ breakpoints }) {
                             { label: '20', value: 20 }
                         ]}
                         handleChange={e => setCardTextFontSize(e.target.value)}
-                        style={{ width: 130 }}
+                        style={{ width: 140 }}
                     />
                     <SelectorInput
                         elementId="max-allowed-input"

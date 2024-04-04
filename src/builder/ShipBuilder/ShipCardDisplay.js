@@ -203,6 +203,7 @@ export default function ShipCardDisplay({
         else if (a === 'brace' && (b === 'scatter' || b === 'evade')) return 1;
         else if (a === 'redirect' && (b === 'scatter' || b === 'evade' || b === 'brace')) return 1;
         else if (a === 'contain' && (b === 'redirect' || b === 'scatter' || b === 'evade' || b === 'brace')) return 1;
+        else if (a === 'salvo') return -1;
         return -1;
     });
     
@@ -382,7 +383,7 @@ export default function ShipCardDisplay({
                 </ForegroundWrapperElement>
             );
             cardElements.push(
-                <ForegroundWrapperElement key="speed-3-2" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={speedTickYOffset + 623 * sizeMultiplier} left={104 * sizeMultiplier}>
+                <ForegroundWrapperElement key="speed-3-3" height={35 * sizeMultiplier} width={35 * sizeMultiplier} top={speedTickYOffset + 623 * sizeMultiplier} left={104 * sizeMultiplier}>
                     <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Icons', fontSize: 21 * sizeMultiplier }}>
                         {ticksToYaw(speed3Chart[0])}
                     </span>

@@ -183,7 +183,7 @@ export default function ShipBuilder({ breakpoints }) {
                             { label: '44', value: 44 },
                             { label: '46', value: 46 }
                         ]}
-                        style={{ width: 110 }}
+                        style={{ width: 140 }}
                     />
                     <SelectorInput
                         elementId="ship-avatar-input"
@@ -943,7 +943,7 @@ export default function ShipBuilder({ breakpoints }) {
                             { label: '1', value: 1 }
                         ]}
                         handleChange={e => setSuperWeaponSlots(e.target.value)}
-                        style={{ width: 110 }}
+                        style={{ width: 120 }}
                     />
                 </div>
                 <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', alignItems: 'center', gap: 8 }}>

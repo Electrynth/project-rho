@@ -202,7 +202,7 @@ export default function SquadronBuilder({ breakpoints }) {
                             { label: '20', value: 20 }
                         ]}
                         handleChange={e => setCardTextFontSize(e.target.value)}
-                        style={{ width: 130 }}
+                        style={{ width: 140 }}
                     />
                     <SelectorInput
                         elementId="chassis-font-text-size-input"
