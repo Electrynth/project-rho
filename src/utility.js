@@ -348,7 +348,7 @@ const armadaShipIconOffset = {
 
     'Consular Cruiser': -2,
     'Acclamator-class Assault Ship': 0,
-    'Venator-class Star Destroyer': -2,
+    'Venator-class Star Destroyer': 0,
     'Pelta-class Frigate': -4,
 
     'Munificent-class Frigate': 0,
