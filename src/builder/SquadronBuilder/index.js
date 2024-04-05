@@ -3,13 +3,16 @@ import axios from 'axios';
 import { useAuth0 } from '@auth0/auth0-react';
 import {
     IconButton,
+    Button,
+    Menu,
+    MenuItem,
     Typography,
     Dialog,
     DialogTitle,
-    DialogContent,
-    Button
+    DialogContent
 } from '@mui/material';
 import {
+    Add,
     LocalCafe as CoffeeIcon,
     Info as InfoIcon
 } from '@mui/icons-material';
@@ -22,6 +25,7 @@ import MarkupLegend from '../common/MarkupLegend';
 import SelectorInput from '../common/SelectorInput';
 import SquadronCardDisplay from './SquadronCardDisplay';
 import urls from 'config/urls.json';
+import keywords from './keywords.json';
 
 const sizeMultiplier = 1.25;
 
@@ -64,6 +68,8 @@ export default function SquadronBuilder({ breakpoints }) {
     const [portraitY, setPortraitY] = useState(0);
     const [isPortraitMirrored, setIsPortraitMirrored] = useState(false);
     const [isLegendDialogOpen, setIsLegendDialogOpen] = useState(false);
+
+    const [menuAnchorEl, setMenuAnchorEl] = useState(null);
 
     if (isLoading) {
         return (
@@ -405,6 +411,31 @@ export default function SquadronBuilder({ breakpoints }) {
                         style={{ flexGrow: 1 }}
                     />
 
+                </div>
+                <div style={{ display: 'flex', flexFlow: 'row nowrap', width: '100%', gap: 8 }}>
+                    <Button
+                        startIcon={<Add />}
+                        variant="contained"
+                        onClick={e => setMenuAnchorEl(e.currentTarget)}
+                    >
+                        Add Keyword From Library
+                    </Button>
+                    <Menu
+                        open={Boolean(menuAnchorEl)}
+                        anchorEl={menuAnchorEl}
+                        onClick={() => setMenuAnchorEl(null)}
+                    >
+                        {Object.keys(keywords).map(keyword => {
+                            return (
+                                <MenuItem
+                                    key={keyword}
+                                    onClick={() => setCardText(cardText + keywords[keyword])}
+                                >
+                                    {keyword}
+                                </MenuItem>
+                            );
+                        })}
+                    </Menu>
                 </div>
             </div>
             <Dialog open={isLegendDialogOpen} onClose={() => setIsLegendDialogOpen(false)}>

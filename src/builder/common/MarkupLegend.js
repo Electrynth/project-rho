@@ -50,8 +50,8 @@ export default function MarkupLegend() {
             rowData: ['nav', 'con fire', 'squad', 'repair', 'nav raid', 'con fire raid', 'squad raid', 'repair raid']
         },
         {
-            label: 'Squadron Keywords',
-            rowData: ['counter', 'grit', 'heavy', 'bomber', 'escort', 'rogue', 'swarm', 'snipe', 'adept', 'dodge', 'intel', 'cloak', 'relay', 'assault', 'scout', 'ai', 'screen', 'strategic']
+            label: 'Squadron Keyword Icons',
+            rowData: ['counter', 'grit', 'heavy', 'bomber', 'escort', 'rogue', 'swarm', 'snipe', 'slam', 'adept', 'dodge', 'intel', 'cloak', 'relay', 'assault', 'scout', 'ai', 'screen', 'strategic']
         },
         {
             label: 'Upgrade Icons',

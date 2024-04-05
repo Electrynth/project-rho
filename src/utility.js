@@ -212,6 +212,7 @@ const armadaFontIcons = {
     'scout': '\u0070',
     'ai': '\u0071',
     'screen': '\u0072',
+    'slam': '\u0073',
     'strategic': '\u006C',
     'fringe': '\u007B',
     'rebels': '\u005B',

@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useState, useRef } from 'react';
 import Image from 'next/image.js';
 import { toPng } from 'html-to-image';
 import {
