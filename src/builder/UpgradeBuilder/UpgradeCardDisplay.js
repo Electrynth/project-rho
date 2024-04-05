@@ -130,7 +130,7 @@ export default function UpgradeCardDisplay({
     cardElements.push(
         <ForegroundWrapperElement key="card-name" height={45 * sizeMultiplier} width={350 * sizeMultiplier} top={262 * sizeMultiplier} left={readyCostTokenValue > 0 || isExhaust ? 37 * sizeMultiplier : 50 * sizeMultiplier}>
             <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Regular', fontStyle: isTitleItalic ? 'italic' : 'normal', fontSize: cardNameFontSize * sizeMultiplier, display: 'flex', alignItems: 'center' }}>
-                <span style={{ marginRight: 2, fontSize: 24 * sizeMultiplier, fontFamily: 'Armada Icons', color: 'black' }}>{Array(maxNumAllowed).fill().map((_, i) => '\u0078' )}</span>
+                <span style={{ marginRight: 2, marginBottom: 4 * sizeMultiplier, fontSize: 24 * sizeMultiplier, fontFamily: 'Armada Icons', color: 'black' }}>{Array(maxNumAllowed).fill().map((_, i) => '\u0078' )}</span>
                 {cardName}
             </span>
         </ForegroundWrapperElement>
