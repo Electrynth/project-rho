@@ -46,6 +46,7 @@ export default function SquadronBuilder({ breakpoints }) {
     const [maxNumAllowed, setMaxNumAllowed] = useState(1);
     const [squadronName, setSquadronName] = useState('');
     const [squadronChassis, setSquadronChassis] = useState('');
+    const [chassisIconYOffset, setChassisIconYOffset] = useState(-6);
     const [squadronIcon, setSquadronIcon] = useState('');
     const [squadronSpeed, setSquadronSpeed] = useState(1);
     const [squadronHull, setSquadronHull] = useState(2);
@@ -217,6 +218,13 @@ export default function SquadronBuilder({ breakpoints }) {
                             { label: '44', value: 44 },
                         ]}
                         style={{ width: 125 }}
+                    />
+                    <TextInput
+                        elementId="portrait-width-input"
+                        label="Chassis Icon Y Offset"
+                        value={chassisIconYOffset}
+                        handleChange={e => setChassisIconYOffset(e.target.value)}
+                        style={{ width: 170 }}
                     />
                 </div>
                 <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', gap: 8 }}>
@@ -412,6 +420,7 @@ export default function SquadronBuilder({ breakpoints }) {
                 faction={faction}
                 squadronName={squadronName}
                 squadronChassis={squadronChassis}
+                chassisIconYOffset={Number(chassisIconYOffset) ? Number.parseInt(chassisIconYOffset) * sizeMultiplier : 0}
                 squadronIcon={squadronIcon}
                 squadronHull={squadronHull}
                 squadronSpeed={squadronSpeed}

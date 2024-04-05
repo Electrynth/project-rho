@@ -50,6 +50,7 @@ export default function SquadronCardDisplay({
     faction,
     squadronName,
     squadronChassis,
+    chassisIconYOffset,
     squadronHull,
     squadronIcon,
     squadronSpeed,
@@ -146,7 +147,7 @@ export default function SquadronCardDisplay({
 
     // Chassis Icon
     cardElements.push(
-        <ForegroundWrapperElement key="squadron-chassis-icon" height={20 * sizeMultiplier} width={50 * sizeMultiplier} top={(armadaSquadronIconOffset[squadronIcon] ? armadaSquadronIconOffset[squadronIcon] : 0) + (580 * sizeMultiplier)} left={6 * sizeMultiplier}>
+        <ForegroundWrapperElement key="squadron-chassis-icon" height={20 * sizeMultiplier} width={50 * sizeMultiplier} top={(armadaSquadronIconOffset[squadronIcon] ? armadaSquadronIconOffset[squadronIcon] : 0) + chassisIconYOffset + (580 * sizeMultiplier)} left={6 * sizeMultiplier}>
             <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Squadron Icons', fontStyle: 'normal', fontSize: 42 * sizeMultiplier * (armadaSquadronFontSizeFactor[squadronIcon] ? armadaSquadronFontSizeFactor[squadronIcon] : 1), display: 'flex', alignItems: 'center' }}>
                 {armadaSquadronFontIcons[squadronIcon]}
             </span>
