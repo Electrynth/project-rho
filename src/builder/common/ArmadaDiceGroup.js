@@ -34,28 +34,18 @@ export default function ArmadaDiceGroup({ sizeMultiplier, diceCounts }) {
         let i = 0;
         for (; i < numDiceInFirstRow; i++) {
             firstRow.push(
-                <ArmadaDie
-                    color={allDice[i]}
-                    sizeMultiplier={sizeMultiplier}
-                />
+                <ArmadaDie color={allDice[i]} sizeMultiplier={sizeMultiplier} />
             );
         }
         for (; i < allDice.length; i++) {
             secondRow.push(
-                <ArmadaDie
-                    color={allDice[i]}
-                    sizeMultiplier={sizeMultiplier}
-                />
+                <ArmadaDie color={allDice[i]} sizeMultiplier={sizeMultiplier} />
             );
         }
     } else {
         firstRow = [[
             allDice.map((color, i) => (
-                <ArmadaDie
-                    key={`${color}-${i}`}
-                    color={color}
-                    sizeMultiplier={sizeMultiplier}
-                />
+                <ArmadaDie key={`${color}-${i}`} color={color} sizeMultiplier={sizeMultiplier} />
             ))
         ]]
     }
@@ -67,7 +57,7 @@ export default function ArmadaDiceGroup({ sizeMultiplier, diceCounts }) {
                 {allDice.length > 0 ? firstRow : <div style={{ color: 'black', marginBottom: 4 * sizeMultiplier, fontSize: 48 * sizeMultiplier }}>-</div>}
             </div>
             {secondRow.length > 0 ? (
-                <div style={{ marginTop: 0.75 * sizeMultiplier, marginLeft: firstRow.length === secondRow.length ? 16 * sizeMultiplier : 0, display: 'flex', flexFlow: 'row nowrap', gap: 5 * sizeMultiplier }}>
+                <div style={{ marginTop: 0.75 * sizeMultiplier, marginLeft: firstRow.length === secondRow.length ? 16 * sizeMultiplier : 0.15 * sizeMultiplier, display: 'flex', flexFlow: 'row nowrap', gap: 5 * sizeMultiplier }}>
                     {secondRow}
                 </div>
             ) : undefined}

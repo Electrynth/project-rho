@@ -110,7 +110,7 @@ export default function SquadronCardDisplay({
     }
 
     cardElements.push(
-        <ForegroundWrapperElement key="squadron-chassis" height={45 * sizeMultiplier} width={450 * sizeMultiplier} top={235 * sizeMultiplier} left={1 * sizeMultiplier}>
+        <ForegroundWrapperElement key="squadron-chassis" height={45 * sizeMultiplier} width={450 * sizeMultiplier} top={235 * sizeMultiplier} left={8 * sizeMultiplier}>
             <span style={{ zIndex: 1 }}>
                 <ArmadaAbilityText isSquadronText={true} textAlign="left" cardText={squadronChassis} fontSize={chassisTextFontSize * sizeMultiplier} />
             </span>
