@@ -223,7 +223,7 @@ export default function ShipCardDisplay({
         );
     });
 
-    // Shield values
+    // Front shields
     cardElements.push(
         <ForegroundWrapperElement key="front-shield-value" height={50 * sizeMultiplier} width={50 * sizeMultiplier} top={414 * sizeMultiplier} left={337 * sizeMultiplier}>
             <span style={{ zIndex: 1, color: '#2a5884', fontFamily: 'Armada Regular', fontStyle: 'normal', fontSize: 50 * sizeMultiplier }}>
@@ -231,6 +231,8 @@ export default function ShipCardDisplay({
             </span>
         </ForegroundWrapperElement>
     );
+
+    // Left and right (sides) shields
     cardElements.push(
         <ForegroundWrapperElement key="left-shield-value" height={50 * sizeMultiplier} width={50 * sizeMultiplier} top={584 * sizeMultiplier} left={219 * sizeMultiplier}>
             <span style={{ zIndex: 1, color: '#2a5884', fontFamily: 'Armada Regular', fontStyle: 'normal', fontSize: 50 * sizeMultiplier }}>
@@ -245,6 +247,8 @@ export default function ShipCardDisplay({
             </span>
         </ForegroundWrapperElement>
     );
+
+    // Rear shields
     cardElements.push(
         <ForegroundWrapperElement key="rear-shield-value" height={50 * sizeMultiplier} width={50 * sizeMultiplier} top={653 * sizeMultiplier} left={337 * sizeMultiplier}>
             <span style={{ zIndex: 1, color: '#2a5884', fontFamily: 'Armada Regular', fontStyle: 'normal', fontSize: 50 * sizeMultiplier }}>
@@ -255,26 +259,30 @@ export default function ShipCardDisplay({
 
 
     // Front armament
+    let numDice = frontArmamentValue.reduce((sum, current) => sum + current, 0);
     cardElements.push(
-        <ForegroundWrapperElement key="front-armament" height={40 * sizeMultiplier} width={80 * sizeMultiplier} top={416.5 * sizeMultiplier} left={256 * sizeMultiplier} otherStyles={{ zIndex: 1 }}>
+        <ForegroundWrapperElement key="front-armament" height={40 * sizeMultiplier} width={80 * sizeMultiplier} top={416.5 * sizeMultiplier} left={(numDice % 2 === 0 ? 0 : 4) + 256 * sizeMultiplier} otherStyles={{ zIndex: 1 }}>
             <ArmadaDiceGroup diceCounts={frontArmamentValue} height={33 * sizeMultiplier} width={41 * sizeMultiplier} sizeMultiplier={sizeMultiplier} />
         </ForegroundWrapperElement>
     );
-    // Left armament
+
+    // Left and right (sides) armament
+    numDice = sideArmamentValue.reduce((sum, current) => sum + current, 0);
     cardElements.push(
-        <ForegroundWrapperElement key="left-armament" height={40 * sizeMultiplier} width={80 * sizeMultiplier} top={519 * sizeMultiplier} left={205 * sizeMultiplier} otherStyles={{ zIndex: 1, transform: 'rotate(90deg)' }}>
+        <ForegroundWrapperElement key="left-armament" height={40 * sizeMultiplier} width={80 * sizeMultiplier} top={(numDice % 2 === 0 ? 0 : 4) + 519 * sizeMultiplier} left={205 * sizeMultiplier} otherStyles={{ zIndex: 1, transform: 'rotate(90deg)' }}>
             <ArmadaDiceGroup diceCounts={sideArmamentValue} height={33 * sizeMultiplier} width={41 * sizeMultiplier} sizeMultiplier={sizeMultiplier} />
         </ForegroundWrapperElement>
     );
-    // Right armament
     cardElements.push(
-        <ForegroundWrapperElement key="right-armament" height={40 * sizeMultiplier} width={80 * sizeMultiplier} top={519 * sizeMultiplier} left={357 * sizeMultiplier} otherStyles={{ zIndex: 1, transform: 'rotate(90deg)' }}>
+        <ForegroundWrapperElement key="right-armament" height={40 * sizeMultiplier} width={80 * sizeMultiplier} top={(numDice % 2 === 0 ? 0 : 4) + 519 * sizeMultiplier} left={357 * sizeMultiplier} otherStyles={{ zIndex: 1, transform: 'rotate(90deg)' }}>
             <ArmadaDiceGroup diceCounts={sideArmamentValue} height={33 * sizeMultiplier} width={41 * sizeMultiplier} sizeMultiplier={sizeMultiplier} />
         </ForegroundWrapperElement>
     );
+
     // Rear armament
+    numDice = rearArmamentValue.reduce((sum, current) => sum + current, 0);
     cardElements.push(
-        <ForegroundWrapperElement key="rear-armament" height={40 * sizeMultiplier} width={80 * sizeMultiplier} top={655 * sizeMultiplier} left={256 * sizeMultiplier} otherStyles={{ zIndex: 1 }}>
+        <ForegroundWrapperElement key="rear-armament" height={40 * sizeMultiplier} width={80 * sizeMultiplier} top={655 * sizeMultiplier} left={(numDice % 2 === 0 ? 0 : 4) + 256 * sizeMultiplier} otherStyles={{ zIndex: 1 }}>
             <ArmadaDiceGroup diceCounts={rearArmamentValue} height={33 * sizeMultiplier} width={41 * sizeMultiplier} sizeMultiplier={sizeMultiplier} />
         </ForegroundWrapperElement>
     );
