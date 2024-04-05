@@ -51,6 +51,7 @@ export default function UpgradeCardDisplay({
     maxNumAllowed,
     points,
     titledShip,
+    shipIconYOffset,
     cardName,
     cardNameFontSize,
     faction,
@@ -98,7 +99,7 @@ export default function UpgradeCardDisplay({
         if (upgradeTypes[0] === 'title') {
             cardElements.push(<BackgroundImageLayer key="upgrade-type-icon" alt={upgradeTypes[0]} src={upgradeTemplateImages.titleSlot} />);
             cardElements.push(
-                <ForegroundWrapperElement key="titled-ship-icon" height={50 * sizeMultiplier} width={100 * sizeMultiplier} top={(armadaShipIconOffset[titledShip] ? armadaShipIconOffset[titledShip] : 0) + 562 * sizeMultiplier} left={10 * sizeMultiplier}>
+                <ForegroundWrapperElement key="titled-ship-icon" height={50 * sizeMultiplier} width={100 * sizeMultiplier} top={(armadaShipIconOffset[titledShip] ? armadaShipIconOffset[titledShip] : 0) + (shipIconYOffset + 562) * sizeMultiplier} left={10 * sizeMultiplier}>
                     <span style={{ fontSize: armadaShipFontSizeFactor[titledShip] ? 64 * armadaShipFontSizeFactor[titledShip] * sizeMultiplier : 64 * sizeMultiplier, fontFamily: 'Armada Ship Icons', color: 'black' }}>
                         {{
                             ...armadaShipFontIcons.rebels,

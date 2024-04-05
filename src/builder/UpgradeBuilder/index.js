@@ -53,6 +53,7 @@ export default function UpgradeBuilder({ breakpoints }) {
     const [cardText, setCardText] = useState('');
     const [cardTextFontSize, setCardTextFontSize] = useState(18);
     const [titledShip, setTitledShip] = useState('');
+    const [shipIconYOffset, setShipIconYOffset] = useState(5);
     const [isExhaust, setIsExhaust] = useState(false);
     const [upgradeTypes, setUpgradeTypes] = useState([]);
     const [readyCostTokens, setReadyCostTokens] = useState([]);
@@ -183,6 +184,14 @@ export default function UpgradeBuilder({ breakpoints }) {
                     />
                 </div>
                 <div style={{ display: 'flex', flexFlow: 'row nowrap', width: '100%', gap: 8 }}>
+                    <TextInput
+                        isDisabled={upgradeTypes.length === 0 || upgradeTypes.length > 0 && upgradeTypes[0] !== 'title'}
+                        elementId="titled-ship-icon-offset-input"
+                        label="Ship Icon Y Offset"
+                        value={points}
+                        handleChange={e => setShipIconYOffset(e.target.value)}
+                        style={{ width: 140 }}
+                    />
                     <SelectorInput
                         error={upgradeTypes.length > 0 && upgradeTypes[0] === 'title' && !titledShip}
                         isDisabled={upgradeTypes.length === 0 || upgradeTypes.length > 0 && upgradeTypes[0] !== 'title'}
@@ -404,6 +413,7 @@ export default function UpgradeBuilder({ breakpoints }) {
                 points={points}
                 faction={faction}
                 titledShip={titledShip}
+                shipIconYOffset={Number(shipIconYOffset) ? Number.parseInt(shipIconYOffset) * sizeMultiplier : 0}
                 cardName={cardName}
                 cardNameFontSize={cardNameFontSize}
                 cardText={cardText}
