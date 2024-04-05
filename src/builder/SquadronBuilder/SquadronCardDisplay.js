@@ -217,7 +217,7 @@ export default function SquadronCardDisplay({
     const htmlToImageConvert = () => {
         toPng(elementRef.current, { cacheBust: false }).then(dataUrl => {
             const link = document.createElement('a');
-            link.download = `${squadronName ? squadronName : 'Unnamed'}.png`;
+            link.download = `${squadronName ? `${squadronName} (${squadronChassis})` : squadronChassis}.png`;
             link.href = dataUrl;
             link.click();
         }).catch(err => {
