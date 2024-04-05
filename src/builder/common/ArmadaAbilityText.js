@@ -36,7 +36,7 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign =
                         lineHeight = `${foundNumber}%`;
                     }
                     return (
-                        <p {...rest} style={{ ...baseStyles, fontFamily: isSquadronText ? 'Armada Regular' :'Optima', marginTop: 0, marginBottom: 8, lineHeight, textAlign }}>
+                        <p {...rest} style={{ ...baseStyles, fontFamily: isSquadronText ? 'Armada Regular' : 'Optima', marginTop: 0, marginBottom: 8, lineHeight, textAlign }}>
                             {children}
                         </p>
                     );
@@ -45,7 +45,7 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign =
                     const { children, ...rest } = props;
                     if (typeof children === 'string' && armadaFontIcons[children]) {
                         return (
-                            <span {...rest} style={{ ...baseStyles, fontFamily: 'Armada Icons', fontSize: fontSize + 1, verticalAlign: isSquadronText ? undefined : 'middle', fontStyle: 'strong' }}>
+                            <span {...rest} style={{ ...baseStyles, fontFamily: 'Armada Icons', fontSize: fontSize + 1, verticalAlign: isSquadronText ? undefined : 'middle' }}>
                                 {armadaFontIcons[children]}
                             </span>
                         );
@@ -58,7 +58,7 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign =
                 strong(props) {
                     const { children, ...rest } = props;
                     return (
-                        <strong {...rest} style={{ ...baseStyles, fontFamily: 'Aero Matics Display Bold', fontSize: fontSize + 2, fontWeight: 400 }}>
+                        <strong {...rest} style={{ ...baseStyles, fontFamily: 'Aero Matics Display Bold', fontSize: fontSize + 2, fontWeight: 600 }}>
                             {children}
                         </strong>
                     );
