@@ -5,7 +5,7 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign =
     const baseStyles = {
         fontSize: fontSize,
         color: 'black',
-        lineHeight: '1em'
+        lineHeight: '1.1em'
     };
     const newlineRegex = /^newline[0-9]{2}/;
     return (
