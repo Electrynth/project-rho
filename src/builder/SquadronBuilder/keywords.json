@@ -6,7 +6,7 @@
     "Bomber": "`bomber` **Bomber.** *(While attacking a ship, each of your `crit` icons adds 1 damage to the damage total and you can resolve a critical effect.)*",
     "Cloak": "`cloak` **Cloak.** *(At the end of the Squadron Phase, you may move up to distance 1, even if you are engaged.)*",
     "Counter 2": "`counter` **Counter 2.** *(After a squadron performs a non-**counter** attack against you, you may attack that squadron with an anti-squadron armament of 2 blue dice, even if you are destroyed.)*",
-    "Dodge 1": "`dodge` **Dodge.** *(While you are defending against a squadron, during the Spend Defense Tokens step, you may choose 1 die to be rerolled.)*",
+    "Dodge 1": "`dodge` **Dodge 1.** *(While you are defending against a squadron, during the Spend Defense Tokens step, you may choose 1 die to be rerolled.)*",
     "Escort": "`escort` **Escort.** *(Squadrons you are engaged with cannot attack squadrons that lack **escort** unless performing a **counter** attack.)*",
     "Grit": "`grit` **Grit.** *(You are not prevented from moving while you are engaged by only 1 squadron.)*",
     "Heavy": "`heavy` **Heavy.** *(You do not prevent engaged squadrons from attacking ships or moving.)*",

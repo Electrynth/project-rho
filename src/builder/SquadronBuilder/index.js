@@ -429,7 +429,10 @@ export default function SquadronBuilder({ breakpoints }) {
                             return (
                                 <MenuItem
                                     key={keyword}
-                                    onClick={() => setCardText(cardText + keywords[keyword])}
+                                    onClick={() => {
+                                        if (cardText === '') setCardText(cardText + keywords[keyword]);
+                                        else setCardText(cardText + '\n\n' + keywords[keyword]);
+                                    }}
                                 >
                                     {keyword}
                                 </MenuItem>
