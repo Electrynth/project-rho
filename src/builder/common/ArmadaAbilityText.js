@@ -4,8 +4,7 @@ import { armadaFontIcons } from '../../utility.js';
 export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign = 'center', isSquadronText = false }) {
     const baseStyles = {
         fontSize: fontSize,
-        color: 'black',
-        lineHeight: '1.1em'
+        color: 'black'
     };
     const newlineRegex = /^newline[0-9]{2}/;
     return (
@@ -30,7 +29,7 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign =
                 },
                 p(props) {
                     const { children, ...rest } = props;
-                    let lineHeight = '1em';
+                    let lineHeight = '1.1em';
                     if (children.props && children.props.children && newlineRegex.test(children.props.children)) {
                         const foundNumber = children.props.children.match(/[0-9]{2,3}/);
                         lineHeight = `${foundNumber}%`;
