@@ -188,7 +188,7 @@ export default function UpgradeBuilder({ breakpoints }) {
                         isDisabled={upgradeTypes.length === 0 || upgradeTypes.length > 0 && upgradeTypes[0] !== 'title'}
                         elementId="titled-ship-icon-offset-input"
                         label="Ship Icon Y Offset"
-                        value={points}
+                        value={shipIconYOffset}
                         handleChange={e => setShipIconYOffset(e.target.value)}
                         style={{ width: 140 }}
                     />
