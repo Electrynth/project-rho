@@ -177,7 +177,7 @@ export default function SquadronCardDisplay({
 
     // Vs Squadron armament
     cardElements.push(
-        <ForegroundWrapperElement key="vs-squadron-armament" height={33 * sizeMultiplier} width={41 * sizeMultiplier} top={307 * sizeMultiplier} left={276 * sizeMultiplier}>
+        <ForegroundWrapperElement key="vs-squadron-armament" height={33 * sizeMultiplier} width={41 * sizeMultiplier} top={307 * sizeMultiplier} left={275 * sizeMultiplier}>
             <ArmadaDiceGroup diceCounts={vsSquadronArmament} height={33 * sizeMultiplier} width={41 * sizeMultiplier} sizeMultiplier={sizeMultiplier} />
         </ForegroundWrapperElement>
     );
@@ -185,7 +185,7 @@ export default function SquadronCardDisplay({
 
     // Vs Ship Armament
     cardElements.push(
-        <ForegroundWrapperElement key="vs-ship-armament" height={33 * sizeMultiplier} width={41 * sizeMultiplier} top={307 * sizeMultiplier} left={380 * sizeMultiplier}>
+        <ForegroundWrapperElement key="vs-ship-armament" height={33 * sizeMultiplier} width={41 * sizeMultiplier} top={307 * sizeMultiplier} left={379 * sizeMultiplier}>
             <ArmadaDiceGroup diceCounts={vsShipArmament} height={33 * sizeMultiplier} width={41 * sizeMultiplier} sizeMultiplier={sizeMultiplier} />
         </ForegroundWrapperElement>
     );
