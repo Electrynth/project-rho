@@ -7,7 +7,9 @@ import {
     Dialog,
     DialogTitle,
     DialogContent,
-    Button
+    Button,
+    Tabs,
+    Tab
 } from '@mui/material';
 import {
     LocalCafe as CoffeeIcon,
@@ -23,13 +25,28 @@ import {
 } from 'src/utility';
 import urls from 'config/urls.json';
 import ShipCardDisplay from './ShipCardDisplay';
+import ShipTokenDisplay from './ShipTokenDisplay';
 
 const sizeMultiplier = 1.25;
+
+function TabContent(props) {
+    const { children, value, index, ...other } = props;
+  
+    return (
+      <div
+        role="tabpanel"
+        hidden={value !== index}
+        {...other}
+      >
+        {value === index && children}
+      </div>
+    );
+}
 
 export default function ShipBuilder({ breakpoints }) {
     const { user } = useAuth0();
     const [isLoading, setIsLoading] = useState(true);
-    const [builderAccess, setBuilderAccess] = useState(false);
+    const [builderAccess, setBuilderAccess] = useState(true);
 
     
     useEffect(() => {
@@ -44,7 +61,7 @@ export default function ShipBuilder({ breakpoints }) {
     }, [user]);
     
     
-
+    const [size, setSize] = useState('small');
     const [nameFontSize, setNameFontSize] = useState(46);
     const [name, setName] = useState('Untitled Ship');
     const [traitText, setTraitText] = useState('');
@@ -90,6 +107,7 @@ export default function ShipBuilder({ breakpoints }) {
     const [portraitY, setPortraitY] = useState(0);
     const [isPortraitMirrored, setIsPortraitMirrored] = useState(false);
 
+    const [currentTabIndex, setCurrentTabIndex] = useState(0);
 
     if (isLoading) {
         return (
@@ -164,6 +182,18 @@ export default function ShipBuilder({ breakpoints }) {
                         ]}
                         handleChange={e => setMaxSpeed(e.target.value)}
                         style={{ width: 90 }}
+                    />
+                    <SelectorInput
+                        elementId="size-input"
+                        label="Size"
+                        value={size}
+                        items={[
+                            { label: 'Small', value: 'small' },
+                            { label: 'Medium', value: 'medium' },
+                            { label: 'Large', value: 'large' }
+                        ]}
+                        handleChange={e => setSize(e.target.value)}
+                        style={{ width: 110 }}
                     />
                 </div>
                 <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', gap: 8 }}>
@@ -995,58 +1025,80 @@ export default function ShipBuilder({ breakpoints }) {
                     </DialogContent>
                 </Dialog>
             </div>
-            <ShipCardDisplay
-                sizeMultiplier={sizeMultiplier}
-                nameFontSize={nameFontSize}
-                name={name}
-                traitText={traitText}
-                maxNumAllowed={maxNumAllowed}
-                points={points}
-                faction={faction}
-                commandValue={commandValue}
-                squadronValue={squadronValue}
-                engineeringValue={engineeringValue}
-                hullValue={hullValue}
-                squadArmament={squadArmament}
-                frontShieldValue={frontShieldValue}
-                frontArmamentValue={frontArmamentValue}
-                sideShieldValue={sideShieldValue}
-                sideArmamentValue={sideArmamentValue}
-                rearShieldValue={rearShieldValue}
-                rearArmamentValue={rearArmamentValue}
-                numTitleSlots={numTitleSlots}
-                numOfficerSlots={numOfficerSlots}
-                numWeaponTeamSlots={numWeaponTeamSlots}
-                numSupportTeamSlots={numSupportTeamSlots}
-                numOffRetrofitSlots={numOffRetrofitSlots}
-                numDefRetrofitSlots={numDefRetrofitSlots}
-                numOrdnanceSlots={numOrdnanceSlots}
-                numIonCannonSlots={numIonCannonSlots}
-                numTurbolaserSlots={numTurbolaserSlots}
-                numFleetCommandSlots={numFleetCommandSlots}
-                numFleetSupportSlots={numFleetSupportSlots}
-                numExperimentalSlots={numExperimentalSlots}
-                numSuperWeaponSlots={numSuperWeaponSlots}
-                defenseTokens={defenseTokens}
-                maxSpeed={maxSpeed}
-                speed1Chart={speed1Chart}
-                speed2Chart={speed2Chart}
-                speed3Chart={speed3Chart}
-                speed4Chart={speed4Chart}
-                shipAvatar={shipAvatar}
-                uploadedShipPortrait={uploadedShipPortrait}
-                portraitWidth={portraitWidth}
-                portraitX={portraitX}
-                portraitY={portraitY}
-                isPortraitMirrored={isPortraitMirrored}
-                uploadedShipPortraitStyles={{
-                    marginTop: Number(portraitY) ? Number.parseInt(portraitY) * sizeMultiplier : 0,
-                    marginLeft: Number(portraitX) ? Number.parseInt(portraitX) * sizeMultiplier : 0,
-                    width: Number(portraitWidth) ? Number.parseInt(portraitWidth) * sizeMultiplier : 0,
-                    height: 'auto',
-                    transform: `scaleX(${isPortraitMirrored ? '-1' : '1'})`
-                }}
-            />
+            <div style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'flex-start', gap: 8, margin: 8, width: '100%' }}>
+                <Tabs value={currentTabIndex} onChange={(e, newValue) => setCurrentTabIndex(newValue)}>
+                    <Tab label="Ship Card" />
+                    <Tab label="Ship Token" />
+                </Tabs>
+                <TabContent index={0} value={currentTabIndex}>
+                    <ShipCardDisplay
+                        sizeMultiplier={sizeMultiplier}
+                        nameFontSize={nameFontSize}
+                        name={name}
+                        traitText={traitText}
+                        maxNumAllowed={maxNumAllowed}
+                        points={points}
+                        faction={faction}
+                        commandValue={commandValue}
+                        squadronValue={squadronValue}
+                        engineeringValue={engineeringValue}
+                        hullValue={hullValue}
+                        squadArmament={squadArmament}
+                        frontShieldValue={frontShieldValue}
+                        frontArmamentValue={frontArmamentValue}
+                        sideShieldValue={sideShieldValue}
+                        sideArmamentValue={sideArmamentValue}
+                        rearShieldValue={rearShieldValue}
+                        rearArmamentValue={rearArmamentValue}
+                        numTitleSlots={numTitleSlots}
+                        numOfficerSlots={numOfficerSlots}
+                        numWeaponTeamSlots={numWeaponTeamSlots}
+                        numSupportTeamSlots={numSupportTeamSlots}
+                        numOffRetrofitSlots={numOffRetrofitSlots}
+                        numDefRetrofitSlots={numDefRetrofitSlots}
+                        numOrdnanceSlots={numOrdnanceSlots}
+                        numIonCannonSlots={numIonCannonSlots}
+                        numTurbolaserSlots={numTurbolaserSlots}
+                        numFleetCommandSlots={numFleetCommandSlots}
+                        numFleetSupportSlots={numFleetSupportSlots}
+                        numExperimentalSlots={numExperimentalSlots}
+                        numSuperWeaponSlots={numSuperWeaponSlots}
+                        defenseTokens={defenseTokens}
+                        maxSpeed={maxSpeed}
+                        speed1Chart={speed1Chart}
+                        speed2Chart={speed2Chart}
+                        speed3Chart={speed3Chart}
+                        speed4Chart={speed4Chart}
+                        shipAvatar={shipAvatar}
+                        uploadedShipPortrait={uploadedShipPortrait}
+                        portraitWidth={portraitWidth}
+                        portraitX={portraitX}
+                        portraitY={portraitY}
+                        isPortraitMirrored={isPortraitMirrored}
+                        uploadedShipPortraitStyles={{
+                            marginTop: Number(portraitY) ? Number.parseInt(portraitY) * sizeMultiplier : 0,
+                            marginLeft: Number(portraitX) ? Number.parseInt(portraitX) * sizeMultiplier : 0,
+                            width: Number(portraitWidth) ? Number.parseInt(portraitWidth) * sizeMultiplier : 0,
+                            height: 'auto',
+                            transform: `scaleX(${isPortraitMirrored ? '-1' : '1'})`
+                        }}
+                    />
+                </TabContent>
+                <TabContent index={1} value={currentTabIndex} style={{ width: '100%' }}>
+                    <ShipTokenDisplay
+                        size={size}
+                        shipAvatar={shipAvatar}
+                        hullValue={hullValue}
+                        squadArmament={squadArmament}
+                        frontShieldValue={frontShieldValue}
+                        frontArmamentValue={frontArmamentValue}
+                        sideShieldValue={sideShieldValue}
+                        sideArmamentValue={sideArmamentValue}
+                        rearShieldValue={rearShieldValue}
+                        rearArmamentValue={rearArmamentValue}
+                    />
+                </TabContent>
+            </div>
         </div>
     );
 }

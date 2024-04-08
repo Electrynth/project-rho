@@ -66,7 +66,7 @@ export default function UpgradeBuilder({ breakpoints }) {
     const [portraitY, setPortraitY] = useState(0);
     const [isPortraitMirrored, setIsPortraitMirrored] = useState(false);
     const [isLegendDialogOpen, setIsLegendDialogOpen] = useState(false);
-    const [builderAccess, setBuilderAccess] = useState(false);
+    const [builderAccess, setBuilderAccess] = useState(true);
     
     if (isLoading) {
         return (
