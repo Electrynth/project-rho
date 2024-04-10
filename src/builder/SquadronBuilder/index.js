@@ -32,7 +32,7 @@ const sizeMultiplier = 1.25;
 export default function SquadronBuilder({ breakpoints }) {
     const { user } = useAuth0();
     const [isLoading, setIsLoading] = useState(true);
-    const [builderAccess, setBuilderAccess] = useState(true);
+    const [builderAccess, setBuilderAccess] = useState(false);
 
     useEffect(() => {
         setIsLoading(false);
