@@ -45,6 +45,7 @@ function TabContent(props) {
 
 export default function ShipBuilder({ breakpoints }) {
     const { user } = useAuth0();
+    console.log(user);
     const [isLoading, setIsLoading] = useState(true);
     const [builderAccess, setBuilderAccess] = useState(false);
 

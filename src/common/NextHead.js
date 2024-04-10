@@ -88,19 +88,30 @@ export default function NextHead() {
                     </ListItem>
                     <Divider />
                     <ListItem disablePadding>
-                    <ListItemButton onClick={() => { router.push('/builder/upgrade/'); setIsDrawerOpen(false); }}>
-                        <ListItemText primary={<span className={robotoCondensed.className}>Upgrade Card Builder</span>} />
-                    </ListItemButton>
+                        <ListItemButton onClick={() => { router.push('/builder/upgrade/'); setIsDrawerOpen(false); }}>
+                            <ListItemText primary={<span className={robotoCondensed.className}>Upgrade Card Builder</span>} />
+                        </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                    <ListItemButton onClick={() => { router.push('/builder/squadron'); setIsDrawerOpen(false); }}>
-                        <ListItemText primary={<span className={robotoCondensed.className}>Squadron Card Builder</span>} />
-                    </ListItemButton>
+                        <ListItemButton onClick={() => { router.push('/builder/squadron'); setIsDrawerOpen(false); }}>
+                            <ListItemText primary={<span className={robotoCondensed.className}>Squadron Card Builder</span>} />
+                        </ListItemButton>
                     </ListItem>
                     <ListItem disablePadding>
-                    <ListItemButton onClick={() => { router.push('/builder/ship'); setIsDrawerOpen(false); }}>
-                        <ListItemText primary={<span className={robotoCondensed.className}>Ship Card builder</span>} />
-                    </ListItemButton>
+                        <ListItemButton onClick={() => { router.push('/builder/ship'); setIsDrawerOpen(false); }}>
+                            <ListItemText primary={<span className={robotoCondensed.className}>Ship Card builder</span>} />
+                        </ListItemButton>
+                    </ListItem>
+                    <Divider />
+                    <ListItem disablePadding>
+                        <ListItemButton onClick={() => { router.push('/privacy'); setIsDrawerOpen(false); }}>
+                            <ListItemText primary={<span className={robotoCondensed.className}>Privacy Policy</span>} />
+                        </ListItemButton>
+                    </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton onClick={() => { router.push('/deletion'); setIsDrawerOpen(false); }}>
+                            <ListItemText primary={<span className={robotoCondensed.className}>Data Deletion</span>} />
+                        </ListItemButton>
                     </ListItem>
                 </List>
                 </Box>
