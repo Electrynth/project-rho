@@ -17,7 +17,7 @@ import versions from 'config/versions';
 function PointDeltaList({ version = 0, pointDeltas = {} }) {
     const shipChanges = [], squadronChanges = [], upgradeChanges = [];
     shipChanges.push(
-        <div>
+        <div key="ship-header">
             <Typography variant="h6"><span className={robotoCondensed.className}>Ship Changes:</span></Typography>
         </div>
     );
@@ -31,7 +31,7 @@ function PointDeltaList({ version = 0, pointDeltas = {} }) {
     });
 
     squadronChanges.push(
-        <div>
+        <div key="squadron-header">
             <Typography variant="h6"><span className={robotoCondensed.className}>Squadron Changes:</span></Typography>
         </div>
     );
@@ -45,7 +45,7 @@ function PointDeltaList({ version = 0, pointDeltas = {} }) {
     });
 
     upgradeChanges.push(
-        <div>
+        <div key="upgrade-header">
             <Typography variant="h6"><span className={robotoCondensed.className}>Upgrade Changes:</span></Typography>
         </div>
     );
@@ -57,7 +57,7 @@ function PointDeltaList({ version = 0, pointDeltas = {} }) {
             </li>
         );
     });
-    return [...shipChanges, <br />, ...squadronChanges, <br />, ...upgradeChanges];
+    return [...shipChanges, <br key="linebreak-1" />, ...squadronChanges, <br key="linebreak-2" />, ...upgradeChanges];
 }
 
 function ListHeader({
