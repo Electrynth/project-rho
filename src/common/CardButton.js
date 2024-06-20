@@ -42,7 +42,7 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = {} }) {
                         variant="body2"
                         style={{ padding: '1px 3px', color: '#333', fontWeight: 'bold' }}
                     >
-                        {card.points}
+                        {versions[version].pointDeltas[id] ? card.points + versions[version].pointDeltas[id] : card.points}
                     </Typography>
                 </Box>
             </CardActionArea>

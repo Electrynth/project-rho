@@ -14,6 +14,52 @@ import robotoCondensed from 'config/font';
 import cards from 'config/cards.js';
 import versions from 'config/versions';
 
+function PointDeltaList({ version = 0, pointDeltas = {} }) {
+    const shipChanges = [], squadronChanges = [], upgradeChanges = [];
+    shipChanges.push(
+        <div>
+            <Typography variant="h6"><span className={robotoCondensed.className}>Ship Changes:</span></Typography>
+        </div>
+    );
+    Object.keys(pointDeltas).filter(id => cards.cardsById[id].cardType === 'ship').map(id => {
+        const card = cards.cardsById[id];
+        shipChanges.push(
+            <li key={id} className={robotoCondensed.className}>
+                {card.cardName} ({card.cardType}): {card.points} {'->'} {card.points + versions[version].pointDeltas[id]}
+            </li>
+        );
+    });
+
+    squadronChanges.push(
+        <div>
+            <Typography variant="h6"><span className={robotoCondensed.className}>Squadron Changes:</span></Typography>
+        </div>
+    );
+    Object.keys(pointDeltas).filter(id => cards.cardsById[id].cardType === 'squadron').map(id => {
+        const card = cards.cardsById[id];
+        squadronChanges.push(
+            <li key={id} className={robotoCondensed.className}>
+                {card.cardName} ({card.cardType}): {card.points} {'->'} {card.points + versions[version].pointDeltas[id]}
+            </li>
+        );
+    });
+
+    upgradeChanges.push(
+        <div>
+            <Typography variant="h6"><span className={robotoCondensed.className}>Upgrade Changes:</span></Typography>
+        </div>
+    );
+    Object.keys(pointDeltas).filter(id => cards.cardsById[id].cardType === 'upgrade').map(id => {
+        const card = cards.cardsById[id];
+        upgradeChanges.push(
+            <li key={id} className={robotoCondensed.className}>
+                {card.cardName} ({card.cardType}): {card.points} {'->'} {card.points + versions[version].pointDeltas[id]}
+            </li>
+        );
+    });
+    return [...shipChanges, <br />, ...squadronChanges, <br />, ...upgradeChanges];
+}
+
 function ListHeader({
     title,
     faction,
@@ -90,6 +136,16 @@ function ListHeader({
                         </div>
                     </Paper>
                     <Paper style={{ marginTop: 8, padding: 12 }} className={robotoCondensed.className}>
+                        <Typography variant="h5"><span className={robotoCondensed.className}>Point Changes</span></Typography>
+                        <div style={{ maxHeight: 600, overflowY: 'scroll' }}>
+                            {Object.keys(versions[version].pointDeltas).length > 0 ? (
+                                <PointDeltaList version={version} pointDeltas={versions[version].pointDeltas} />
+                            ) : (
+                                <Typography><span className={robotoCondensed.className}>None</span></Typography>
+                            )}
+                        </div>
+                    </Paper>
+                    <Paper style={{ marginTop: 8, padding: 12 }} className={robotoCondensed.className}>
                         <Typography variant="h5"><span className={robotoCondensed.className}>Omitted Cards</span></Typography>
                         <div style={{ maxHeight: 600, overflowY: 'scroll' }}>
                             {versions[version].omittedCards.length > 0 ? (
@@ -98,23 +154,6 @@ function ListHeader({
                                     return (
                                         <li key={id} className={robotoCondensed.className}>
                                             {card.displayName ? card.displayName : card.cardName} ({`${card.cardType === 'upgrade' ? card.upgradeSlots.map(upgrade => (upgrade)) : card.cardType}`})
-                                        </li>
-                                    );
-                                })
-                            ) : (
-                                <Typography><span className={robotoCondensed.className}>None</span></Typography>
-                            )}
-                        </div>
-                    </Paper>
-                    <Paper style={{ marginTop: 8, padding: 12 }} className={robotoCondensed.className}>
-                        <Typography variant="h5"><span className={robotoCondensed.className}>Point Changes</span></Typography>
-                        <div style={{ maxHeight: 600, overflowY: 'scroll' }}>
-                            {Object.keys(versions[version].pointDeltas).length > 0 ? (
-                                Object.keys(versions[version].pointDeltas).map(id => {
-                                    const card = cards.cardsById[id];
-                                    return (
-                                        <li key={id} className={robotoCondensed.className}>
-                                            {card.cardName} ({card.cardType}): {card.points} {'->'} {card.points + versions[version].pointDeltas[id]}
                                         </li>
                                     );
                                 })
