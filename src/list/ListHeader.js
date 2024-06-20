@@ -9,10 +9,28 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import {
+    red,
+    green
+} from '@mui/material/colors'
 import FactionIcon from 'src/common/FactionIcon';
 import robotoCondensed from 'config/font';
 import cards from 'config/cards.js';
 import versions from 'config/versions';
+
+import {
+    KeyboardArrowUp as ArrowUpIcon,
+    KeyboardDoubleArrowUp as DoubleArrowUpIcon,
+    KeyboardArrowDown as ArrowDownIcon,
+    KeyboardDoubleArrowDown as DoubleArrowDownIcon
+} from '@mui/icons-material'
+
+function PointsDeltaArrowIcon({ pointDelta }) {
+    if (pointDelta > 4) return <DoubleArrowUpIcon sx={{ color: red[500] }} />;
+    else if (pointDelta > 0) return <ArrowUpIcon sx={{ color: red[500] }} />;
+    else if (pointDelta < -4) return <DoubleArrowDownIcon sx={{ color: green[500] }} />;
+    else if (pointDelta < 0) return <ArrowDownIcon sx={{ color: green[500] }} />;
+}
 
 function PointDeltaList({ version = 0, pointDeltas = {} }) {
     const shipChanges = [], squadronChanges = [], upgradeChanges = [];
@@ -24,8 +42,9 @@ function PointDeltaList({ version = 0, pointDeltas = {} }) {
     Object.keys(pointDeltas).filter(id => cards.cardsById[id].cardType === 'ship').map(id => {
         const card = cards.cardsById[id];
         shipChanges.push(
-            <li key={id} className={robotoCondensed.className}>
-                {card.cardName} ({card.cardType}): {card.points} {'->'} {card.points + versions[version].pointDeltas[id]}
+            <li key={id} className={robotoCondensed.className} style={{ display: 'flex', alignItems: 'center' }}>
+                - {card.cardName} ({card.cardType}): {card.points} {'->'} {card.points + versions[version].pointDeltas[id]}
+                <PointsDeltaArrowIcon pointDelta={versions[version].pointDeltas[id]} style={{ marginLeft: 4 }} />
             </li>
         );
     });
@@ -38,8 +57,9 @@ function PointDeltaList({ version = 0, pointDeltas = {} }) {
     Object.keys(pointDeltas).filter(id => cards.cardsById[id].cardType === 'squadron').map(id => {
         const card = cards.cardsById[id];
         squadronChanges.push(
-            <li key={id} className={robotoCondensed.className}>
-                {card.cardName} ({card.cardType}): {card.points} {'->'} {card.points + versions[version].pointDeltas[id]}
+            <li key={id} className={robotoCondensed.className} style={{ display: 'flex', alignItems: 'center' }}>
+                - {card.cardName} ({card.cardType}): {card.points} {'->'} {card.points + versions[version].pointDeltas[id]}
+                <PointsDeltaArrowIcon pointDelta={versions[version].pointDeltas[id]} style={{ marginLeft: 4 }} />
             </li>
         );
     });
@@ -52,8 +72,9 @@ function PointDeltaList({ version = 0, pointDeltas = {} }) {
     Object.keys(pointDeltas).filter(id => cards.cardsById[id].cardType === 'upgrade').map(id => {
         const card = cards.cardsById[id];
         upgradeChanges.push(
-            <li key={id} className={robotoCondensed.className}>
-                {card.cardName} ({card.cardType}): {card.points} {'->'} {card.points + versions[version].pointDeltas[id]}
+            <li key={id} className={robotoCondensed.className} style={{ display: 'flex', alignItems: 'center' }}>
+                - {card.cardName} ({card.cardType === 'upgrade' ? card.upgradeSlots.join(',') : card.cardType }): {card.points} {'->'} {card.points + versions[version].pointDeltas[id]}
+                <PointsDeltaArrowIcon pointDelta={versions[version].pointDeltas[id]} style={{ marginLeft: 4 }} />
             </li>
         );
     });
