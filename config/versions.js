@@ -129,7 +129,8 @@ const versions = [
             'ht': -2,
             'hu': -3,
             'hv': -1,
-            'hl': -1
+            'hl': -1,
+            'ng': 2
         },
         omittedCards: [
             
