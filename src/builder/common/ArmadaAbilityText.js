@@ -21,8 +21,9 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign =
                 },
                 li(props) {
                     const { children, ...rest } = props;
+                    let lineHeight = '1.1em';
                     return (
-                        <li {...rest} style={{ ...baseStyles, fontFamily: 'Optima', marginBottom: 8 }}>
+                        <li {...rest} style={{ ...baseStyles, fontFamily: 'Optima', lineHeight, marginBottom: 8 }}>
                             {children}
                         </li>
                     );

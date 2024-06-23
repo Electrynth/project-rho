@@ -145,7 +145,7 @@ export default function UpgradeCardDisplay({
 
     // Card ability text
     cardElements.push(
-        <ForegroundWrapperElement key="card-body-text" height={240 * sizeMultiplier} width={330 * sizeMultiplier} top={328 * sizeMultiplier} left={59 * sizeMultiplier} otherStyles={{ alignItems: 'baseline' }}>
+        <ForegroundWrapperElement key="card-body-text" height={240 * sizeMultiplier} width={330 * sizeMultiplier} top={323 * sizeMultiplier} left={59 * sizeMultiplier} otherStyles={{ alignItems: 'baseline' }}>
             <span style={{ zIndex: 1 }}><ArmadaAbilityText cardText={cardText} fontSize={cardTextFontSize * sizeMultiplier} /></span>
         </ForegroundWrapperElement>
     );

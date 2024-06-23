@@ -28,7 +28,9 @@ function SquadronRow({
     shiftSquadronInList
 }) {
     const squadronCard = cards.cardsById[squadron.id];
-    const squadronPoints = squadronCard.points * squadron.count;
+    const squadronPoints = versions[version].pointDeltas[squadron.id] ?
+        (squadronCard.points + versions[version].pointDeltas[squadron.id]) * squadron.count :
+        squadronCard.points * squadron.count;
     return (
         <div style={{ display: 'flex', flexFlow: 'column nowrap' }}>
             <DualHoverButton
@@ -56,12 +58,12 @@ function SquadronRow({
                         </div>
                         <span style={{ flexGrow: 1 }} />
                         <div style={{ marginRight: 8 }}>
-                            {squadron.id in versions[version].pointDeltas ? versions[version].pointDeltas[squadron.id] + squadronPoints : squadronPoints}
+                            {squadronPoints}
                         </div>
                     </div>
                 )}
                 hoverActions={(
-                    <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', position: 'relative', backgroundColor: 'rgba(0, 0, 0, .12)' }}>
+                    <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', position: 'relative' }}>
                         <div
                             style={{
                                 overflow: 'hidden',
@@ -87,7 +89,7 @@ function SquadronRow({
                         {squadron.count > 1 ? `${squadron.count} × ` : ''}{squadronCard.displayName ? squadronCard.displayName : squadronCard.cardName}
                         </div>
                         <span style={{ flexGrow: 1 }} />
-                        <div style={{ marginRight: 2, display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
+                        <div style={{ marginRight: 2, display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', position: 'absolute', right: 0, height: '100%', backgroundColor: 'rgb(47, 47, 47)' }}>
                             <KeyboardArrowUp
                                 style={{ marginRight: 4, cursor: 'pointer' }}
                                 onClick={() => shiftSquadronInList(index, -1)}

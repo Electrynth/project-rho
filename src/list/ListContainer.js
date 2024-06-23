@@ -648,6 +648,7 @@ function ListContainer({
             newCardComponentProps.push({
                 id,
                 key: id,
+                version,
                 isDisabled: uniques.includes(card.displayName ? card.displayName : card.cardName),
                 onClick: () => swapSquadron(index, id)
             });
