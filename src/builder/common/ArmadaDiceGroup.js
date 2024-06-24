@@ -15,38 +15,37 @@ function ArmadaDie({ sizeMultiplier, color }) {
     return <span style={dieStyles} />;
 }
 
-export default function ArmadaDiceGroup({ sizeMultiplier, diceCounts }) {
+export default function ArmadaDiceGroup({ sizeMultiplier, diceCounts, isRowConfiguration = false }) {
     
 
     let allDice = [];
     let numRedDice = diceCounts[0]
     let numBlueDice = diceCounts[1];
     let numBlackDice = diceCounts[2];
-    for (let i = 0; i < numBlackDice; i++) allDice.push('black');
-    for (let i = 0; i < numBlueDice; i++) allDice.push('blue');
+    const numAllDice = numRedDice + numBlackDice + numBlueDice;
+
     for (let i = 0; i < numRedDice; i++) allDice.push('red');
+    for (let i = 0; i < numBlueDice; i++) allDice.push('blue');
+    for (let i = 0; i < numBlackDice; i++) allDice.push('black');
 
     const numDiceInFirstRow = allDice.length > 2 ? allDice.length / 2 : 2;
 
     let firstRow = [];
     let secondRow = [];
     if (allDice.length > numDiceInFirstRow) {
-        let i = 0;
-        for (; i < numDiceInFirstRow; i++) {
-            firstRow.push(
-                <ArmadaDie color={allDice[i]} sizeMultiplier={sizeMultiplier} />
-            );
-        }
-        for (; i < allDice.length; i++) {
-            secondRow.push(
-                <ArmadaDie color={allDice[i]} sizeMultiplier={sizeMultiplier} />
-            );
+        if (isRowConfiguration) {
+            let i = 0;
+            for (; i < numDiceInFirstRow; i++) firstRow.push(<ArmadaDie color={allDice[i]} sizeMultiplier={sizeMultiplier} />);
+            for (; i < allDice.length; i++) secondRow.push(<ArmadaDie color={allDice[i]} sizeMultiplier={sizeMultiplier} />);
+        } else {
+            for (let i = 0; i < allDice.length; i++) {
+                if (i % 2 === 0) firstRow.push(<ArmadaDie color={allDice[i]} sizeMultiplier={sizeMultiplier} />);
+                else secondRow.push(<ArmadaDie color={allDice[i]} sizeMultiplier={sizeMultiplier} />);
+            }
         }
     } else {
         firstRow = [[
-            allDice.map((color, i) => (
-                <ArmadaDie key={`${color}-${i}`} color={color} sizeMultiplier={sizeMultiplier} />
-            ))
+            allDice.map((color, i) => (<ArmadaDie key={`${color}-${i}`} color={color} sizeMultiplier={sizeMultiplier} />))
         ]]
     }
 

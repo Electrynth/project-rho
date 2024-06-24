@@ -269,12 +269,12 @@ export default function ShipCardDisplay({
     // Left and right (sides) armament
     numDice = sideArmamentValue.reduce((sum, current) => sum + current, 0);
     cardElements.push(
-        <ForegroundWrapperElement key="left-armament" height={40 * sizeMultiplier} width={80 * sizeMultiplier} top={(numDice % 2 === 0 ? 0 : 4) + 519 * sizeMultiplier} left={205 * sizeMultiplier} otherStyles={{ zIndex: 1, transform: 'rotate(90deg)' }}>
+        <ForegroundWrapperElement key="left-armament" height={60 * sizeMultiplier} width={80 * sizeMultiplier} top={(numDice % 2 === 0 ? 0 : 3) + 510 * sizeMultiplier} left={205 * sizeMultiplier} otherStyles={{ zIndex: 1, transform: 'rotate(90deg)' }}>
             <ArmadaDiceGroup diceCounts={sideArmamentValue} height={33 * sizeMultiplier} width={41 * sizeMultiplier} sizeMultiplier={sizeMultiplier} />
         </ForegroundWrapperElement>
     );
     cardElements.push(
-        <ForegroundWrapperElement key="right-armament" height={40 * sizeMultiplier} width={80 * sizeMultiplier} top={(numDice % 2 === 0 ? 0 : 4) + 519 * sizeMultiplier} left={357 * sizeMultiplier} otherStyles={{ zIndex: 1, transform: 'rotate(90deg)' }}>
+        <ForegroundWrapperElement key="right-armament" height={60 * sizeMultiplier} width={80 * sizeMultiplier} top={(numDice % 2 === 0 ? 0 : 3) + 510 * sizeMultiplier} left={357 * sizeMultiplier} otherStyles={{ zIndex: 1, transform: 'rotate(90deg)' }}>
             <ArmadaDiceGroup diceCounts={sideArmamentValue} height={33 * sizeMultiplier} width={41 * sizeMultiplier} sizeMultiplier={sizeMultiplier} />
         </ForegroundWrapperElement>
     );
