@@ -22,9 +22,9 @@ export default function ArmadaDiceGroup({ sizeMultiplier, diceCounts }) {
     let numRedDice = diceCounts[0]
     let numBlueDice = diceCounts[1];
     let numBlackDice = diceCounts[2];
-    for (let i = 0; i < numRedDice; i++) allDice.push('red');
-    for (let i = 0; i < numBlueDice; i++) allDice.push('blue');
     for (let i = 0; i < numBlackDice; i++) allDice.push('black');
+    for (let i = 0; i < numBlueDice; i++) allDice.push('blue');
+    for (let i = 0; i < numRedDice; i++) allDice.push('red');
 
     const numDiceInFirstRow = allDice.length > 2 ? allDice.length / 2 : 2;
 
