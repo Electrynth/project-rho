@@ -6,8 +6,8 @@ function ArmadaDie({ sizeMultiplier, color }) {
     };
 
     const dieStyles = {
-        width: 9 * sizeMultiplier,
-        height: 9 * sizeMultiplier,
+        width: 10 * sizeMultiplier,
+        height: 10 * sizeMultiplier,
         margin: 1,
         transform: 'rotate(45deg)',
         backgroundColor: colors[color]

@@ -11,7 +11,16 @@ const versions = [
         label: "Random Changes XDDD",
         description: "Totally for funsies changes",
         pointDeltas: {
-            "az": -4,
+            
+        },
+        omittedCards: [
+            
+        ]
+    }
+];
+
+/*
+"az": -4,
             "bn": -5,
             "bl": -5,
             "bd": -4,
@@ -88,11 +97,6 @@ const versions = [
             "mb": 1,
             "sz": -2,
             "nx": 10
-        },
-        omittedCards: [
-            
-        ]
-    }
-];
+*/
 
 export default versions
