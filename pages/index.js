@@ -199,7 +199,7 @@ export default function Home() {
             <DialogContent>
               <DialogContentText>
                 <span className={robotoCondensed.className} style={{ fontSize: 18 }}>
-                  This website is an unofficial fan creation that is intended to act as platform for fan content for Star Wars: Armada. Features include a list builder and a homebrew card creator.
+                  This website is an unofficial fan creation that is intended to act as platform for Star Wars: Armada content.
                 </span>
               </DialogContentText>
               <br />
