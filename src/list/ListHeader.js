@@ -17,6 +17,7 @@ import FactionIcon from 'src/common/FactionIcon';
 import robotoCondensed from 'config/font';
 import cards from 'config/cards.js';
 import versions from 'config/versions';
+import roles from 'config/roles';
 
 import {
     KeyboardArrowUp as ArrowUpIcon,
@@ -82,6 +83,7 @@ function PointDeltaList({ version = 0, pointDeltas = {} }) {
 }
 
 function ListHeader({
+    email,
     title,
     faction,
     version,
@@ -137,13 +139,29 @@ function ListHeader({
                             label="Version"
                             onChange={handleSetVersion}
                         >
-                            {versions.map(version => (
-                                <MenuItem key={version.id} value={version.id}>
-                                    <span className={robotoCondensed.className}>
-                                        {version.label}
-                                    </span>
-                                </MenuItem>
-                            ))}
+                            {versions.map(version => {
+                                const userRoles = [];
+                                Object.keys(roles).forEach(roleKey => {
+                                    if (email && roles[roleKey].userEmails.includes(email)) userRoles.push(roleKey);
+                                });
+
+                                let hasAccess = false;
+                                userRoles.forEach(userRole => {
+                                    if (version.roles.includes(userRole)) hasAccess = true
+                                });
+
+                                if (version.roles.includes('everyone') || hasAccess) {
+                                    return (
+                                        <MenuItem key={version.id} value={version.id}>
+                                            <span className={robotoCondensed.className}>
+                                                {version.label}
+                                            </span>
+                                        </MenuItem>
+                                    );
+                                } else {
+                                    return undefined;
+                                }
+                            })}
                         </Select>
                     </FormControl>
                     <Paper style={{ marginTop: 8, padding: 12 }}>
@@ -161,6 +179,23 @@ function ListHeader({
                         <div style={{ maxHeight: 600, overflowY: 'scroll' }}>
                             {Object.keys(versions[version].pointDeltas).length > 0 ? (
                                 <PointDeltaList version={version} pointDeltas={versions[version].pointDeltas} />
+                            ) : (
+                                <Typography><span className={robotoCondensed.className}>None</span></Typography>
+                            )}
+                        </div>
+                    </Paper>
+                    <Paper style={{ marginTop: 8, padding: 12 }} className={robotoCondensed.className}>
+                        <Typography variant="h5"><span className={robotoCondensed.className}>Enabled Cards</span></Typography>
+                        <div style={{ maxHeight: 600, overflowY: 'scroll' }}>
+                            {versions[version].enabledCards.length > 0 ? (
+                                versions[version].enabledCards.map(id => {
+                                    const card = cards.cardsById[id];
+                                    return (
+                                        <li key={id} className={robotoCondensed.className}>
+                                            {card.displayName ? card.displayName : card.cardName} ({`${card.cardType === 'upgrade' ? card.upgradeSlots.map(upgrade => (upgrade)) : card.cardType}`})
+                                        </li>
+                                    );
+                                })
                             ) : (
                                 <Typography><span className={robotoCondensed.className}>None</span></Typography>
                             )}

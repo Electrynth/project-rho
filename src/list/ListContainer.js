@@ -740,6 +740,7 @@ function ListContainer({
                         points={shipPoints + squadronPoints}
                         handleSetTitle={handleSetTitleFromEvent}
                         handleSetVersion={handleSetVersionFromEvent}
+                        email={user ? user.email : undefined}
                     />
                     <Divider variant="middle" style={{ marginTop: 20, color: '#eee' }} />
                 </div>
