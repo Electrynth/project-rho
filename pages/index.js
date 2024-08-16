@@ -60,6 +60,10 @@ function FactionLinkButton({
           anchorEl={anchorEl}
           onClose={() => setAnchorEl(null)}
         >
+          <MenuItem onClick={() => router.push(`/list/${faction}`) }>
+            <span className={robotoCondensed.className}>Create New List</span>
+          </MenuItem>
+          <Divider />
           {factionLists.map((list, index) => {
             return (
               <MenuItem
@@ -70,10 +74,6 @@ function FactionLinkButton({
               </MenuItem>
             );
           })}
-          <Divider />
-          <MenuItem onClick={() => router.push(`/list/${faction}`) }>
-            <span className={robotoCondensed.className}>Create New List</span>
-          </MenuItem>
         </Menu>
       </>
   );
