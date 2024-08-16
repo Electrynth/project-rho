@@ -78,16 +78,8 @@ export default function UpgradeBuilder({ breakpoints }) {
         return (
             <div style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'center' }}>
                 <Typography style={{ margin: 16 }}>
-                    Monetary contribution and creating an account is required to access this feature. A one-time contribution of $3 or more will grant permanent access to every feature on this platform.
+                    Currently not accessible
                 </Typography>
-                <Button
-                    variant="contained"
-                    href="https://www.buymeacoffee.com/holofoundry"
-                    startIcon={<CoffeeIcon />}
-                    target="_blank"
-                >
-                    Buy me a coffee
-                </Button>
             </div>
         );
     }
