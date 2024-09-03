@@ -2299,7 +2299,7 @@
   },
   "gp": {
     "cardName": "Moralo Eval",
-    "faction": "empire",
+    "faction": "separatists",
     "points": 22,
     "isUnique": true,
     "keywords": [
@@ -7016,5 +7016,86 @@
     "requirements": [],
     "isModification": false,
     "isUnique": false
+  },
+  "tg": {
+    "cardName": "YV-666",
+    "faction": "separatists",
+    "points": 15,
+    "isUnique": false,
+    "keywords": [
+      "Grit",
+      "Heavy",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "tg"
+  },
+  "th": {
+    "cardName": "Generous Benefactor",
+    "points": 5,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Munificent"
+      }
+    ],
+    "isModification": false,
+    "id": "th",
+    "cardType": "upgrade"
+  },
+  "ti": {
+    "cardName": "Force of Commerce",
+    "points": 5,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Munificent"
+      }
+    ],
+    "isModification": false,
+    "id": "ti",
+    "cardType": "upgrade"
+  },
+  "tj": {
+    "cardName": "Enduring Fealty",
+    "points": 3,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Hardcell"
+      }
+    ],
+    "isModification": false,
+    "id": "tj",
+    "cardType": "upgrade"
+  },
+  "tk": {
+    "cardName": "Skakoan Pride",
+    "points": 5,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Hardcell"
+      }
+    ],
+    "isModification": false,
+    "id": "tk",
+    "cardType": "upgrade"
   }
 }
