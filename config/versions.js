@@ -111,7 +111,12 @@ const versions = [
             "gp": ["Added to CIS"]
         },
         omittedCards: [],
-        enabledCards: []
+        enabledCards: [
+            "th",
+            "ti",
+            "tj",
+            "tk"
+        ]
     },
     {
         id: 2,

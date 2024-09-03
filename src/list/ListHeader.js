@@ -201,7 +201,15 @@ function ListHeader({
                             )}
                         </div>
                     </Paper>
-                    <Paper style={{ marginTop: 8, padding: 12 }} className={robotoCondensed.className}>
+                   
+                </div>
+            </Dialog>
+        </div>
+    );
+}
+
+/*
+ <Paper style={{ marginTop: 8, padding: 12 }} className={robotoCondensed.className}>
                         <Typography variant="h5"><span className={robotoCondensed.className}>Omitted Cards</span></Typography>
                         <div style={{ maxHeight: 600, overflowY: 'scroll' }}>
                             {versions[version].omittedCards.length > 0 ? (
@@ -218,10 +226,6 @@ function ListHeader({
                             )}
                         </div>
                     </Paper>
-                </div>
-            </Dialog>
-        </div>
-    );
-}
+*/
 
 export default ListHeader;
