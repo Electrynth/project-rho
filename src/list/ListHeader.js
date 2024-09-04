@@ -164,6 +164,7 @@ function ListHeader({
                             })}
                         </Select>
                     </FormControl>
+                    <Typography className={robotoCondensed.className}>*Changing the version will reset your list</Typography>
                     <Paper style={{ marginTop: 8, padding: 12 }}>
                         <Typography variant="h5"><span className={robotoCondensed.className}>Description</span></Typography>
                         <div style={{ maxHeight: 600, overflowY: 'scroll' }}>

@@ -201,7 +201,6 @@ function ListContainer({
             });
         } else if (user.email) {
             axios.post(`${urls.api}/lists`, { ...list, points, email: user.email }).then(createdList => {
-                console.log(createdList);
                 setListId(createdList.data.listId);
                 setListEmail(createdList.data.email);
             }).catch(e => {
@@ -210,12 +209,13 @@ function ListContainer({
         }
     }
 
-
-
     const handleSetTitleFromEvent = (event) => {
         if (title.length < 100) setTitle(event.target.value);
     }
-    const handleSetVersionFromEvent = (event) => setVersion(event.target.value);
+    const handleSetVersionFromEvent = (event) => {
+        clearList();
+        setVersion(event.target.value);
+    }
 
     const generateExportedListText = () => {
         let totalListPoints = 0;
@@ -312,6 +312,16 @@ function ListContainer({
         }
 
         setShips([...newShips]);
+    }
+
+    const clearList = () => {
+        setCommander('');
+        setShips([]);
+        setSquadrons([]);
+        setUniques([]);
+        setRedObjId('');
+        setYellowObjId('');
+        setBlueObjId('');
     }
 
     const addUpgrade = (shipIndex, upgradeIndex, id) => {
