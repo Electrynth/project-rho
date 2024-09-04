@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import {
     Box,
     Typography,
@@ -5,17 +6,26 @@ import {
     Card,
     CardActionArea,
     CardMedia,
-    CardActions
+    CardActions,
+    Dialog,
+    DialogTitle,
+    DialogContent
 } from '@mui/material';
+import SearchIcon from '@mui/icons-material/Search';
 import cards from 'config/cards.js';
 import versions from 'config/versions';
 
 
-function CardButton({ id, version, isDisabled, onClick, cardStyles = {} }) {
+function CardButton({ id, version, isDisabled, onClick, cardStyles = { } }) {
+    const [isDialogOpen, setIsDialogOpen] = useState(false);
     if (id === true) return undefined;
     const card = cards.cardsById[id];
-    const { footnoteChanges } = versions[version];
+    const { footnoteChanges, textChanges } = versions[version];
     const footnoteActions = []; // not actually "actions", more just notes
+
+    const handleSetDialogOpen = () => setIsDialogOpen(true);
+    const handleSetDialogClose = () => setIsDialogOpen(false);
+
     if (id in footnoteChanges && footnoteChanges[id].length > 0) {
         footnoteChanges[id].forEach((footnote, i) => {
             footnoteActions.push(
@@ -44,10 +54,9 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = {} }) {
     return (
         <Card
             sx={{ marginRight: 1, marginBottom: 1 }}
-            onClick={isDisabled ? undefined : onClick}
             style={{ ...cardStyles }}
         >
-            <CardActionArea style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <CardActionArea onClick={isDisabled ? undefined : onClick} style={{ display: 'flex', justifyContent: 'flex-end' }}>
                 <CardMedia
                     component="img"
                     image={cards.getCardImageUrl(card.imageName ? card.imageName : card.cardName, card.cardType)}
@@ -77,9 +86,23 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = {} }) {
             </CardActionArea>
             {version > 0 ? (
                 <CardActions>
-                    {footnoteActions.length > 0 ? footnoteActions : <Chip size="small" label="Unchanged" />}
+                    {textChanges[id] && textChanges[id].length > 0 ? <Chip icon={<SearchIcon />} size="small" label="Text Change" onClick={handleSetDialogOpen} /> : undefined}
+                    {footnoteActions.length > 0 ? footnoteActions : undefined}
+                    {footnoteActions.length === 0 && !textChanges[id] ? <Chip size="small" label="Unchanged" /> : undefined}
                 </CardActions>
             ) : undefined}
+            <Dialog open={isDialogOpen} onClose={handleSetDialogClose}>
+                <DialogTitle>{card.cardName}</DialogTitle>
+                <DialogContent>
+                    {textChanges[id] && textChanges[id].length > 0 ? textChanges[id].map((line, i) => {
+                        return (
+                            <Typography key={`line-${i}`}>
+                                {line} <br/> <br/>
+                            </Typography>
+                        );
+                    }) : undefined}
+                </DialogContent>
+            </Dialog>
         </Card>
     );
 }

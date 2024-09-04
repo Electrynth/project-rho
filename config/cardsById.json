@@ -3586,7 +3586,7 @@
     "cardType": "upgrade"
   },
   "kl": {
-    "cardName": "Barris Offee",
+    "cardName": "Barriss Offee",
     "points": 6,
     "isUnique": true,
     "faction": "republic",
@@ -3612,7 +3612,7 @@
     "cardType": "upgrade"
   },
   "kn": {
-    "cardName": "Clone Commander Wolfee",
+    "cardName": "Clone Commander Wolffe",
     "points": 6,
     "isUnique": true,
     "faction": "republic",
