@@ -25,28 +25,6 @@ import {
 } from '@mui/icons-material'
 import logo from 'public/images/logo.png';
 
-/*
-<Button
-                    color="secondary"
-                    disabled={isLoading}
-                    onClick={() => {
-                        isAuthenticated ? (
-                            logout({
-                            logoutParams: {
-                                returnTo: typeof window !== 'undefined' ? window.location.origin : undefined
-                            }
-                            })
-                        ) : (
-                            loginWithRedirect()
-                        )
-                    }}
-                    >
-                        <span className={robotoCondensed.className}>
-                        {isAuthenticated ? `Logout (${user.email})` : 'Login'}
-                        </span>
-                    </Button>
-*/
-
 export default function NextHead() {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
     const router = useRouter();

@@ -85,6 +85,7 @@ export default function Home() {
     isAuthenticated,
     isLoading,
     loginWithRedirect,
+    loginWithPopup,
     logout
   } = useAuth0();
 
@@ -94,28 +95,6 @@ export default function Home() {
   // const [builderAccess, setBuilderAccess] = useState(false);
 
   const router = useRouter();
-
-  // useEffect(() => {
-  //   const getUserMetadata = async () => {
-  //     try {
-  //       const accessToken = await getAccessTokenSilently({
-  //         authorizationParams: {
-  //           audience: `${urls.authDomain}/api/v2/`,
-  //           scope: 'read:current_user'
-  //         }
-  //       });
-  //       const userDetailsByIdUrl = `${urls.authDomain}/api/v2/users/${user.sub}`
-  //       const metadataResponse = await fetch(userDetailsByIdUrl, {
-  //         headers: { Authorization: `Bearer ${accessToken}` }
-  //       });
-  //       const { user_metadata } = await metadataResponse.json();
-  //       setUserMetadata(user_metadata);
-  //     } catch (e) {
-  //       console.error(e.message);
-  //     }
-  //   }
-  //   if (user) getUserMetadata();
-  // }, [getAccessTokenSilently, user]);
 
   useEffect(() => {
     if (user && user.email) {
@@ -189,7 +168,7 @@ export default function Home() {
                   }
                 })
               ) : (
-                loginWithRedirect()
+                loginWithPopup()
               )
           }}
         />
