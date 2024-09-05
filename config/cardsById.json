@@ -1480,6 +1480,7 @@
   },
   "dz": {
     "displayName": "Hera Syndulla (Ghost)",
+    "title": "Ghost",
     "cardName": "Hera Syndulla",
     "imageName": "Hera Syndulla Ghost",
     "faction": "rebels",
@@ -1711,6 +1712,7 @@
   },
   "es": {
     "cardName": "Dash Rendar",
+    "title": "Outrider",
     "faction": "rebels",
     "points": 24,
     "isUnique": true,
@@ -1735,6 +1737,7 @@
   },
   "eu": {
     "cardName": "Han Solo",
+    "title": "Millennium Falcon",
     "faction": "rebels",
     "points": 26,
     "isUnique": true,
@@ -1747,6 +1750,7 @@
   },
   "ev": {
     "cardName": "Jan Ors",
+    "title": "Moldy Crow",
     "faction": "rebels",
     "points": 19,
     "isUnique": true,
@@ -1772,6 +1776,7 @@
   },
   "ex": {
     "cardName": "Ketsu Onyo",
+    "title": "Shadow Caster",
     "faction": "rebels",
     "points": 22,
     "isUnique": true,
@@ -1796,6 +1801,7 @@
   },
   "ez": {
     "cardName": "Lando Calrissian",
+    "title": "Millennium Falcon",
     "faction": "rebels",
     "points": 23,
     "isUnique": true,
@@ -1843,6 +1849,7 @@
   },
   "fd": {
     "cardName": "Mart Mattin",
+    "title": "Sato's Hammer",
     "faction": "rebels",
     "points": 22,
     "isUnique": true,
@@ -1866,6 +1873,7 @@
   },
   "ff": {
     "cardName": "Nym",
+    "title": "Havoc",
     "faction": "rebels",
     "points": 21,
     "isUnique": true,
@@ -2091,6 +2099,7 @@
   },
   "fy": {
     "cardName": "Boba Fett",
+    "title": "Slave I",
     "faction": "empire",
     "points": 26,
     "isUnique": true,
@@ -2103,6 +2112,7 @@
   },
   "fz": {
     "cardName": "Bossk",
+    "title": "Hound's Tooth",
     "faction": "empire",
     "points": 23,
     "isUnique": true,
@@ -2180,6 +2190,7 @@
   },
   "gf": {
     "cardName": "Dengar",
+    "title": "Punishing One",
     "faction": "empire",
     "points": 20,
     "isUnique": true,
@@ -2216,6 +2227,7 @@
   },
   "gi": {
     "cardName": "Hondo Ohnaka",
+    "title": "Slave I",
     "faction": "empire",
     "points": 24,
     "isUnique": true,
@@ -2240,6 +2252,7 @@
   },
   "gk": {
     "cardName": "IG-88",
+    "title": "IG-2000",
     "faction": "empire",
     "points": 21,
     "isUnique": true,
@@ -2252,6 +2265,7 @@
   },
   "gl": {
     "cardName": "IG-88B",
+    "title": "IG-2000B",
     "faction": "empire",
     "points": 21,
     "isUnique": true,
@@ -7097,5 +7111,18 @@
     "isModification": false,
     "id": "tk",
     "cardType": "upgrade"
+  },
+  "tl": {
+    "cardName": "Bossk",
+    "title": "Hound's Tooth",
+    "faction": "separatists",
+    "points": 23,
+    "isUnique": true,
+    "keywords": [
+      "Grit",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "tl"
   }
 }

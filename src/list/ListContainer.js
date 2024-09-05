@@ -82,6 +82,7 @@ function ListContainer({
     const [blueObjId, setBlueObjId] = useState('');
     const [yellowObjId, setYellowObjId] = useState('');
     const [uniques, setUniques] = useState([]);
+    const [squadronTitles, setSquadronTitles] = useState([]);
     const [ships, setShips] = useState([]);
     const [squadrons, setSquadrons] = useState([]);
     const [cardComponentProps, setCardComponentProps] = useState([]);
@@ -383,7 +384,8 @@ function ListContainer({
         }
         if (!isSquadronAlreadyInList) {
             const card = cardsById[id];
-            if (cards.cardsById[id].isUnique) setUniques([...uniques, card.cardName]);
+            if (cardsById[id].isUnique) setUniques([...uniques, card.cardName]);
+            if (cardsById[id].title) setSquadronTitles([...squadronTitles, card.title]);
             newSquadrons.push({ id, count: 1 });
         }
         setSquadrons(newSquadrons);
@@ -406,17 +408,23 @@ function ListContainer({
 
     const swapSquadron = (index, id) => {
         const newSquadrons = [...squadrons];
+        const newSquadronTitles = [...squadronTitles];
         const squadron = newSquadrons[index];
         const newSquadron = { id, count: 1 };
         const newSquadronCard = cards.cardsById[id];
         const newUniques = [...uniques];
         const oldSquadronCard = cardsById[squadron.id];
+        if (oldSquadronCard.title) {
+            const squadronTitleIndex = squadronTitles.indexOf(oldSquadronCard.title);
+            newSquadronTitles.splice(squadronTitleIndex, 1);
+        }
         const uniqueIdIndex = uniques.indexOf(oldSquadronCard.cardName);
         if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
         if (newSquadronCard.isUnique) newUniques.push(newSquadronCard.cardName);
         newSquadrons[index] = newSquadron;
         setSquadrons(newSquadrons);
         setUniques(newUniques);
+        setSquadronTitles(newSquadronTitles);
         handleSetRightPaneFocus(false);
         setCardComponentProps([]);
         setRightPaneText('');
@@ -525,11 +533,17 @@ function ListContainer({
     const removeSquadron = (index) => {
         const newSquadrons = [...squadrons];
         const newUniques = [...uniques];
+        const newSquadronTitles = [...squadronTitles];
         const squadron = newSquadrons[index];
         const card = cardsById[squadron.id];
         const uniqueIdIndex = uniques.indexOf(card.cardName);
         if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
+        if (card.title) {
+            const squadronTitleIndex = squadronTitles.indexOf(card.title);
+            newSquadronTitles.splice(squadronTitleIndex, 1);
+        }
         newSquadrons.splice(index, 1);
+        setSquadronTitles(newSquadronTitles);
         setSquadrons(newSquadrons);
         setUniques(newUniques);
     }
@@ -638,7 +652,7 @@ function ListContainer({
                 id,
                 key: id,
                 version,
-                isDisabled: uniques.includes(card.cardName),
+                isDisabled: uniques.includes(card.displayName ? card.displayName : card.cardName) || squadronTitles.includes(card.title),
                 onClick: () => addSquadron(id)
             });
         }
@@ -659,7 +673,7 @@ function ListContainer({
                 id,
                 key: id,
                 version,
-                isDisabled: uniques.includes(card.displayName ? card.displayName : card.cardName),
+                isDisabled: uniques.includes(card.displayName ? card.displayName : card.cardName) || squadronTitles.includes(card.title),
                 onClick: () => swapSquadron(index, id)
             });
         }

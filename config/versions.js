@@ -13,6 +13,7 @@ const versions = [
         pointDeltas: {},
         footnoteChanges: {},
         omittedCards: [
+            "tl", // bossk for CIS
             "tg", // yv 666 for CIS
             "gp", // moralo eval for CIS
             "th", // generous benefector
@@ -116,14 +117,16 @@ const versions = [
             "ht": ["+Rogue"],
             "hl": ["+Rogue"],
             "tg": ["Added to CIS"],
-            "gp": ["Added to CIS"]
+            "gp": ["Added to CIS"],
+            "tl": ["Added to CIS"]
         },
         omittedCards: [],
         enabledCards: [
             "th",
             "ti",
             "tj",
-            "tk"
+            "tk",
+            "tl"
         ],
         textChanges: {
             "no": [
