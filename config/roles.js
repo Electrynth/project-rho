@@ -5,7 +5,8 @@ const roles = {
             'nbrown4296@gmail.com',
             'dallalanamackenzie@gmail.com',
             'larson.n12@gmail.com',
-            'simon.girard@gmail.com'
+            'simon.girard@gmail.com',
+            'patrickryandoupe@gmail.com',
         ]
     },
     'playtester': {
@@ -18,7 +19,6 @@ const roles = {
             'thomsonjohn1988@gmail.com',
             'seb.legare@gmail.com',
             'mksmith7789@gmail.com',
-            'patrickryandoupe@gmail.com',
             'andrewjgraber@gmail.com'
         ]
     }

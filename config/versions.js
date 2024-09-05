@@ -8,17 +8,17 @@ const versions = [
     {
         id: 0,
         label: "Official Game",
-        description: "Current official points for organized play.",
+        description: "Current official ruleset for organized play.",
         roles: ["everyone"],
         pointDeltas: {},
         footnoteChanges: {},
         omittedCards: [
-            "tg",
-            "gp",
-            "th",
-            "ti",
-            "tj",
-            "tk"
+            "tg", // yv 666 for CIS
+            "gp", // moralo eval for CIS
+            "th", // generous benefector
+            "ti", // force of commerce
+            "tj", // enduring fealty
+            "tk" // skakoan pride
         ],
         enabledCards: [],
         textChanges: {}
@@ -26,7 +26,7 @@ const versions = [
     {
         id: 1,
         label: "ARC Core Playtesting",
-        description: "Playtesting package for Core members",
+        description: "Playtesting package for CORE members",
         roles: ["core"],
         pointDeltas: {
             "az": -4,
@@ -112,9 +112,9 @@ const versions = [
             "sz": -2
         },
         footnoteChanges: {
-            "ta": ["+ Rogue"],
-            "ht": ["+ Rogue"],
-            "hl": ["+ Rogue"],
+            "ta": ["+Rogue"],
+            "ht": ["+Rogue"],
+            "hl": ["+Rogue"],
             "tg": ["Added to CIS"],
             "gp": ["Added to CIS"]
         },
@@ -180,7 +180,7 @@ const versions = [
     {
         id: 2,
         label: "ARC Playtesting",
-        description: "Playtesting package",
+        description: "ARC Playtesting package",
         roles: ["core", "playtester"],
         pointDeltas: {},
         footnoteChanges: {},

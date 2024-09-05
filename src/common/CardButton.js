@@ -43,11 +43,7 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = { } }) {
             <Chip
                 size="small"
                 key="pt-change-footnote"
-                label={pointDelta > 0 ? (
-                    `Points: ${card.points} -> ${card.points + pointDelta}`
-                ) : (
-                    `Points: ${card.points} -> ${card.points + pointDelta}`
-                )}
+                label={`Points: ${card.points}->${card.points + pointDelta}`}
             />
         );
     }
