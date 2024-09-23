@@ -23,7 +23,7 @@ const roles = {
             "aron.huckaba@gmail.com",
             "nicholas.parrott1902@gmail.com",
             "fedie315@gmail.com",
-            "admiraltatersshipshop@gmail.com",
+            "admiraltatershipshop@gmail.com",
             "jbc98k@yahoo.com",
             "reubenflmng@gmail.com",
             "semperlooney@gmail.com",
