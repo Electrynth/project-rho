@@ -25,7 +25,15 @@ const roles = {
             "fedie315@gmail.com",
             "admiraltatersshipshop@gmail.com",
             "jbc98k@yahoo.com",
-            "reubenflmng@gmail.com"
+            "reubenflmng@gmail.com",
+            "semperlooney@gmail.com",
+            "stewbucket96@gmail.com",
+            "hschnabel2@gmail.com",
+            "skycake21@gmail.com",
+            "mrnubs.dunn@gmail.com",
+            "mamoncrief@gmail.com",
+            "j24blondmac@hotmail.com",
+            "chris.mcw@live.co.uk"
         ]
     }
 };
