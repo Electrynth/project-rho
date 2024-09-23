@@ -188,8 +188,7 @@ const versions = [
         pointDeltas: {},
         footnoteChanges: {},
         omittedCards: [
-            "tl", // bossk for CIS
-            "tg", // yv 666 for CIS
+            "gp", // yv 666 for CIS
             "tj", // enduring fealty
         ],
         enabledCards: [],
