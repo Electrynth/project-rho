@@ -215,6 +215,9 @@ function ListContainer({
     }
     const handleSetVersionFromEvent = (event) => {
         clearList();
+        handleSetRightPaneFocus(false);
+        setCardComponentProps([]);
+        setRightPaneText('');
         setVersion(event.target.value);
     }
 
@@ -487,6 +490,30 @@ function ListContainer({
         setUniques(newUniques);
     }
 
+    // WIP
+    const swapUpgrade = (shipIndex, upgradeIndex, id) => {
+        const newShips = [...ships];
+        const newUniques = [...uniques];
+        const newShip = newShips[shipIndex];
+        const newUpgradeCard = cardsById[id];
+        const oldUpgradeCard = cardsById[newShip.upgradesEquipped[upgradeIndex].id];
+
+        if (oldUpgradeCard.isUnique) {
+            const uniqueIdIndex = uniques.indexOf(oldUpgradeCard.cardName);
+            newUniques.splice(uniqueIdIndex, 1);
+        }
+
+        if (newUpgradeCard.isUnique) {
+            newUniques.push(newUpgradeCard.cardName);
+        }
+
+        if (oldUpgradeCard.isModification && !newUpgradeCard.isModification) {
+            newShip.hasModification = false;
+        } else if (!newShip.hasModification && newUpgradeCard.isModification) {
+            newShip.hasModification = true;
+        }
+    }
+
     const removeUpgrade = (shipIndex, upgradeIndex) => {
         const newShips = [...ships];
         const newUniques = [...uniques];
@@ -605,6 +632,8 @@ function ListContainer({
         const upgradeType = ships[shipIndex].upgradesEquipped[upgradeIndex].upgradeType;
         const newCardComponentProps = [];
 
+        // count how many of each upgrade type are available for the purposes
+        // of showing eligible-to-equip multi-slot upgrades
         const openUpgradeSlots = {};
         for (let i = 0; i < ships[shipIndex].upgradesEquipped.length; i++) {
             const upgrade = ships[shipIndex].upgradesEquipped[i];
@@ -613,15 +642,28 @@ function ListContainer({
                 else openUpgradeSlots[upgrade.upgradeType] = 1;
             }
         }
+
+        // Go through each card to see if its eligible to equip
         for (let i = 0; i < cards.upgradeIdList.length; i++) {
             const id = cards.upgradeIdList[i];
             const card = cards.cardsById[id];
 
+            // Check if faction is restricted
             if (card.faction !== '' && card.faction !== faction) continue;
+
+            // Check if its a matching upgrade type to the slot
             if (!card.upgradeSlots.includes(upgradeType)) continue;
+
+            // Check if there are other requirements for this upgrade card to be met
             if (!isUpgradeRequirementsMet(card.requirements, { ...shipCard, faction, flagship: ships[shipIndex].flagship ? ships[shipIndex].flagship : false })) continue;
+
+            // Check if boarding teams type upgrade can be equipped
             if (card.upgradeSlots.length > 1 && !(openUpgradeSlots['weapons team'] > 0 && openUpgradeSlots['offensive retrofit'] > 0)) continue;
+
+            // Check if the card is omitted per the version of the list
             if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
+
+            // Check if ship already has a modification upgrade or fails uniqueness check
             let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.cardName);
             ship.upgradesEquipped.forEach(upgrade => {
                 if (upgrade.id !== true && upgrade.id === id) isDisabled = true;
@@ -639,6 +681,39 @@ function ListContainer({
         handleSetRightPaneFocus(true);
         setIsCardPropsDelimited(true);
     }
+
+    const setEligibleUpgradesToSwap = (shipIndex, upgradeIndex) => {
+        const ship = ships[shipIndex];
+        const shipCard = cardsById[ships[shipIndex].id];
+        const upgradeType = ship.upgradesEquipped[upgradeIndex].upgradeType;
+        const upgradeCard = ship.upgradesEquipped[upgradeIndex].id;
+        const newCardComponentProps = [];
+
+        for (let i = 0; i < cards.upgradeIdList.length; i++) {
+            const id = cards.upgradeIdList[i];
+            const card = cardsById[id];
+
+            if (card.faction !== '' && card.faction !== faction) continue;
+            if (!card.upgradeSlots.includes(upgradeType)) continue;
+            if (!isUpgradeRequirementsMet(card.requirements, { ...shipCard, faction, flagship: ships[shipIndex].flagship ? ships[shipIndex].flagship : false })) continue;
+            if (card.upgradeSlots.length > 1) continue; // no swapping multi-slot upgrades
+            if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
+            let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.cardName) || upgradeCard.id === id;
+
+            newCardComponentProps.push({
+                id,
+                key: id,
+                version,
+                isDisabled,
+                onClick: () => swapUpgrade(shipIndex, upgradeIndex, id)
+            });
+        }
+        setRightPaneText('Swap Upgrade');
+        setCardComponentProps(newCardComponentProps);
+        handleSetRightPaneFocus(true);
+        setIsCardPropsDelimited(true);
+    }
+
 
     const setEligibleSquadronsToAdd = () => {
         const newCardComponentProps = [];

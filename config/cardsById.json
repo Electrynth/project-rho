@@ -432,8 +432,8 @@
     "upgradeSlots": [
       "commander",
       "officer",
-      "offensive retrofit",
       "weapons team",
+      "offensive retrofit",
       "turbolasers",
       "title"
     ],
@@ -449,8 +449,8 @@
     "upgradeSlots": [
       "commander",
       "officer",
-      "offensive retrofit",
       "weapons team",
+      "offensive retrofit",
       "ordnance",
       "title"
     ],

@@ -19,7 +19,13 @@ const roles = {
             'thomsonjohn1988@gmail.com',
             'seb.legare@gmail.com',
             'mksmith7789@gmail.com',
-            'andrewjgraber@gmail.com'
+            'andrewjgraber@gmail.com',
+            "aron.huckaba@gmail.com",
+            "nicholas.parrott1902@gmail.com",
+            "fedie315@gmail.com",
+            "admiraltatersshipshop@gmail.com",
+            "jbc98k@yahoo.com",
+            "reubenflmng@gmail.com"
         ]
     }
 };

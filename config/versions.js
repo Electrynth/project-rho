@@ -30,6 +30,7 @@ const versions = [
         description: "Playtesting package for CORE members",
         roles: ["core"],
         pointDeltas: {
+            "fw": -1,
             "az": -4,
             "bl": -5,
             "bn": -5,
@@ -124,7 +125,6 @@ const versions = [
         enabledCards: [
             "th",
             "ti",
-            "tj",
             "tk",
             "tl"
         ],

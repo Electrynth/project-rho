@@ -35,6 +35,7 @@ function ShipRow({
         const upgrade = ship.upgradesEquipped[i];
         if (upgrade.id && upgrade.id !== true) upgradePoints += cards.cardsById[upgrade.id].points;
     }
+
     return (
         <div style={{ display: 'flex', flexFlow: 'column nowrap', position: 'relative' }}>
             <DualHoverButton
@@ -121,6 +122,7 @@ function ShipRow({
                 {ship.upgradesEquipped.map((upgrade, i) => {
                     if (!upgrade.id || upgrade.id === true) return undefined;
                     const upgradeCard = cards.cardsById[upgrade.id];
+                    const canBeSwapped = !(upgradeCard.upgradeSlots.length > 1 || upgradeCard.addsUpgradeSlot);
                     return (
                         <div key={`${upgrade.id}_${i}`} style={{ display: 'flex', position: 'relative', flexFlow: 'row nowrap', marginTop: 4 }}>
                             <span style={{ minWidth: 15 }} />
@@ -189,9 +191,11 @@ function ShipRow({
                                         <div style={{ fontWeight: 300 }}>{upgradeCard.cardName}</div>
                                         <span style={{ flexGrow: 1 }} />
                                         <div style={{ marginRight: 2, display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
-                                            <SwapHoriz
-                                                style={{ marginRight: 4, cursor: 'pointer' }}
-                                            />
+                                            {false ? (
+                                                <SwapHoriz
+                                                    style={{ marginRight: 4, cursor: 'pointer' }}
+                                                />
+                                            ) : undefined}
                                             <Clear
                                                 onClick={() => removeUpgrade(index, i)}
                                                 style={{ marginRight: 2, cursor: 'pointer' }}
