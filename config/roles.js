@@ -37,7 +37,7 @@ const roles = {
             'elr3dnimrais@gmail.com',
             's.demey75013@gmail.com',
             'yetiapoilblanc@hotmail.com',
-            'skybloud@hotmail.fr'
+            'skybloub@hotmail.fr'
         ]
     }
 };
