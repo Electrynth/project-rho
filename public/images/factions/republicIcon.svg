@@ -2,22 +2,13 @@
 <!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 2000 2000" style="enable-background:new 0 0 2000 2000;" xml:space="preserve">
-<style type="text/css">
-	.st1 { fill: black; stroke: white; }
-	.st2 { fill: none; stroke: black; stroke-width: 70; }
-	@media (prefers-color-scheme: dark) {
-		.st0 { fill: white; stroke: white; stroke-miterlimit: 10; }
-		.st1 { fill: white; stroke: white; }
-		.st2 { fill: none; stroke: white; stroke-width: 70; }
-	}
-</style>
 <g id="Layer_1">
 	<g>
 		<g>
 			<g>
 				<g id="layer1_2_" transform="translate(-74.28567,-298.07647)">
 					<g id="g3191_2_" transform="translate(-160,277.14286)">
-						<path id="path2176_2_" class="st0" d="M1349.21,141.93v103.62c129.43,19.28,248.55,70.34,349.17,145.38l72.64-73.07
+						<path id="path2176_2_" class="st0" fill="white" stroke="white" stroke-miterlimit="10" d="M1349.21,141.93v103.62c129.43,19.28,248.55,70.34,349.17,145.38l72.64-73.07
 							C1650.93,225.03,1506.59,162.63,1349.21,141.93z M1119.59,143.31c-157.28,20.81-301.48,83.34-421.49,176.15l72.21,73.07h0.33
 							C871.21,317.44,990.2,266,1119.59,246.61V143.31z M1167.48,353.33v349.95c0,0-79.43,24.96-113.88,47.99L808.65,505.01
 							L717,597.19l245.17,246.58c-22.84,34.61-39.48,73.95-47.93,114.71h-347.2v133.53h347.93c8.49,42.03,25.22,81.02,48.16,115.56
@@ -37,10 +28,10 @@
 				</g>
 			</g>
 		</g>
-		<path class="st1" d="M414.5,200.5"/>
+		<path class="st1" fill="white" stroke="white" d="M414.5,200.5"/>
 	</g>
 </g>
 <g id="Layer_2">
-	<ellipse class="st2" cx="1001.33" cy="1000" rx="958.67" ry="960"/>
+	<ellipse class="st2" fill="none" stroke="white" stroke-width="70" cx="1001.33" cy="1000" rx="958.67" ry="960"/>
 </g>
 </svg>

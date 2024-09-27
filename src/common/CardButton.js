@@ -47,10 +47,13 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = { } }) {
             />
         );
     }
+
+    const maxWidth = '45%';
+
     return (
         <Card
             sx={{ marginRight: 1, marginBottom: 1 }}
-            style={{ ...cardStyles }}
+            style={{ maxWidth, ...cardStyles }}
         >
             <CardActionArea onClick={isDisabled ? undefined : onClick} style={{ display: 'flex', justifyContent: 'flex-end' }}>
                 <CardMedia
