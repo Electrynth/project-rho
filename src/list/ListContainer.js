@@ -13,12 +13,14 @@ import {
     IconButton,
     Typography,
     cardMediaClasses,
+    useMediaQuery,
     Dialog,
     DialogTitle,
     DialogContent,
     DialogContentText,
     DialogActions
 } from '@mui/material';
+import { useTheme } from '@mui/material/styles';
 import Clear from '@mui/icons-material/Clear';
 import ListHeader from './ListHeader';
 import ListShips from './ListShips';
@@ -91,6 +93,13 @@ function ListContainer({
 
     const [zoomDialogCard, setZoomDialogCard] = useState();
 
+
+    const theme = useTheme();
+    const breakpoints = {
+        sm: useMediaQuery(theme.breakpoints.up('sm')),
+        md: useMediaQuery(theme.breakpoints.up('md')),
+        lg: useMediaQuery(theme.breakpoints.up('lg'))
+    };
 
 
     useEffect(() => {
@@ -926,19 +935,23 @@ function ListContainer({
                     />
                 )}
             </div>
-            <Dialog open={Boolean(zoomDialogCard)} onClose={() => setZoomDialogCard()}>
+            <Dialog
+                fullScreen={!breakpoints.md}
+                open={Boolean(zoomDialogCard)}
+                onClose={() => setZoomDialogCard()}
+            >
                 <DialogTitle>
                     <span className={robotoCondensed.className}>
                         {zoomDialogCard && (cards.cardsById[zoomDialogCard].displayName ? cards.cardsById[zoomDialogCard].displayName : cards.cardsById[zoomDialogCard].cardName)}
                     </span>
                 </DialogTitle>
-                <DialogContent>
+                <DialogContent style={{ position: 'relative', minHeight: breakpoints.md ? 500 : 0, minWidth: breakpoints.md ? 400 : 0 }}>
                     {zoomDialogCard ? (
                         <Image
+                            fill
                             src={cards.getCardImageUrl(cards.cardsById[zoomDialogCard].imageName ? cards.cardsById[zoomDialogCard].imageName : cards.cardsById[zoomDialogCard].cardName, cards.cardsById[zoomDialogCard].cardType)}
-                            width={400}
-                            height={cards.cardsById[zoomDialogCard].cardType === 'ship' ? 688 : 556}
                             alt={cards.cardsById[zoomDialogCard].cardName}
+                            style={{ objectFit: 'contain' }}
                         />
                     ) : undefined}
                 </DialogContent>
