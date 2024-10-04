@@ -45,7 +45,7 @@ export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign =
                     const { children, ...rest } = props;
                     if (typeof children === 'string' && armadaFontIcons[children]) {
                         return (
-                            <span {...rest} style={{ ...baseStyles, fontFamily: 'Armada Icons', fontSize: fontSize + 1, verticalAlign: isSquadronText ? undefined : 'middle' }}>
+                            <span {...rest} style={{ ...baseStyles, fontStyle: 'normal', fontFamily: 'Armada Icons', fontSize: fontSize + 1, verticalAlign: isSquadronText ? undefined : 'middle' }}>
                                 {armadaFontIcons[children]}
                             </span>
                         );
