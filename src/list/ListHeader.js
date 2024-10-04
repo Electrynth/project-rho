@@ -59,7 +59,7 @@ function PointDeltaList({ version = 0, pointDeltas = {} }) {
         const card = cards.cardsById[id];
         squadronChanges.push(
             <li key={id} className={robotoCondensed.className} style={{ display: 'flex', alignItems: 'center' }}>
-                - {card.cardName} ({card.cardType}): {card.points} {'->'} {card.points + versions[version].pointDeltas[id]}
+                - {card.cardName} ({card.faction} {card.cardType}): {card.points} {'->'} {card.points + versions[version].pointDeltas[id]}
                 <PointsDeltaArrowIcon pointDelta={versions[version].pointDeltas[id]} style={{ marginLeft: 4 }} />
             </li>
         );
@@ -193,7 +193,7 @@ function ListHeader({
                                     const card = cards.cardsById[id];
                                     return (
                                         <li key={id} className={robotoCondensed.className}>
-                                            {card.displayName ? card.displayName : card.cardName} ({`${card.cardType === 'upgrade' ? card.upgradeSlots.map(upgrade => (upgrade)) : card.cardType}`})
+                                            {card.displayName ? card.displayName : card.cardName} ({card.faction ? card.faction : ''} {`${card.cardType === 'upgrade' ? card.upgradeSlots.map(upgrade => (upgrade)) : card.cardType}`})
                                         </li>
                                     );
                                 })
