@@ -185,13 +185,24 @@ const versions = [
         label: "ARC Playtesting",
         description: "ARC Playtesting package",
         roles: ["core", "playtester"],
-        pointDeltas: {},
-        footnoteChanges: {},
+        pointDeltas: {
+            "tg": -1
+        },
+        footnoteChanges: {
+            "tl": ["Added to CIS"],
+            "tg": ["Added to CIS"]
+        },
         omittedCards: [
             "gp", // yv 666 for CIS
             "tj", // enduring fealty
         ],
-        enabledCards: [],
+        enabledCards: [
+            "th",
+            "ti",
+            "tk",
+            "tl",
+            "tg"
+        ],
         textChanges: {}
     }
 ];
