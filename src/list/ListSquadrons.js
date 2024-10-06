@@ -19,7 +19,7 @@ function ListSquadrons({
     shiftSquadronInList
 }) {
     return (
-        <div style={{ display: 'flex', flexFlow: 'column' }}>
+        <div id="list-squadrons" style={{ display: 'flex', flexFlow: 'column' }}>
             {squadrons.map((squadron, index) =>
                 <SquadronRow
                     version={version}

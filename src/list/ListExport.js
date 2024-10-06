@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import domtoimage from 'dom-to-image-more';
 import {
     Box,
     IconButton,
@@ -17,7 +18,6 @@ import { useTheme } from '@mui/material/styles';
 import robotoCondensed from 'config/font';
 
 function CustomTabPanel({ children, value, tabIndex, ...other }) {
-
     return (
         <div
             role="tabpanel"
@@ -30,6 +30,24 @@ function CustomTabPanel({ children, value, tabIndex, ...other }) {
     );
 }
 
+function ImageExport({ breakpoints }) {
+    const [listSrc, setListSrc] = useState();
+    const options = {
+        quality: .85,
+        height: breakpoints.md ? 640 : 480,
+        style: {
+            width: '100%'
+        }
+    };
+    
+    if (!listSrc) {
+        const listNode = document.getElementById('list-text-export');
+        domtoimage.toJpeg(listNode, options).then(src => setListSrc(src));
+        return <span className={robotoCondensed.className}>Loading...</span>;
+    }
+    return <img alt="list-image" src={listSrc} style={{ objectFit: 'contain' }} />;
+}
+
 function ListExport({
     listText,
     copySuccess,
@@ -39,23 +57,25 @@ function ListExport({
 }) {
     const theme = useTheme();
     const [currentTabIndex, setCurrentTabIndex] = useState(0);
-    const [textFieldValue, setTextFieldValue] = useState(listText);
 
-    const isFullScreen = useMediaQuery(theme.breakpoints.down('md'));
+    const breakpoints = {
+        sm: useMediaQuery(theme.breakpoints.up('sm')),
+        md: useMediaQuery(theme.breakpoints.up('md')),
+        lg: useMediaQuery(theme.breakpoints.up('lg'))
+    };
 
 
     return (
         <Dialog
             fullWidth
             maxWidth="sm"
-            fullScreen={isFullScreen}
+            fullScreen={breakpoints.sm}
             onClose={() => setIsDialogOpen(false)} open={isDialogOpen}
-            PaperProps={{ classes: { '& .MuiPaper-root': { backgroundColor: 'red' } } }}
         >
             <DialogTitle style={{ display: 'flex', flexFlow: 'row nowrap', justifyContent: 'space-between'}}>
                 <Tabs value={currentTabIndex} onChange={(_, v) => setCurrentTabIndex(v)}>
                     <Tab label="Text Export" id="tab-0" />
-                    <Tab label="Image Export" id="tab-1" />
+                    <Tab disabled label="Image Export" id="tab-1" />
                 </Tabs>
                 <IconButton
                     size="large"
@@ -69,18 +89,22 @@ function ListExport({
                     tabIndex={0}
                     value={currentTabIndex}
                 >
+
                     <TextField
+                        id="list-text-export"
                         fullWidth
                         multiline
-                        value={textFieldValue}
-                        onChange={e => setTextFieldValue(e.target.value)}
+                        value={listText}
                     />
                 </CustomTabPanel>
                 <CustomTabPanel
                     tabIndex={1}
                     value={currentTabIndex}
+                    style={{ height: '100%' }}
                 >
-                    Image Export Panel
+                    <div id="list-image-export" style={{ }}>
+                        <ImageExport breakpoints={breakpoints} />
+                    </div>
                 </CustomTabPanel>
             </DialogContent>
             <DialogActions sx={{ paddingRight: 3 }}>

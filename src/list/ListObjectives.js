@@ -46,7 +46,7 @@ function ObjectiveButton({ children, iconStyle, cardId, setEligibleObjectiveToAd
 function ListObjectives({ redObjId, yellowObjId, blueObjId, removeObjective, setEligibleObjectiveToAdd, handleSetZoomOnCard }) {
 
     return (
-        <div style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'flex-start' }}>
+        <div id="list-objectives" style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'flex-start' }}>
             <ObjectiveButton
                 iconStyle={{ color: '#cc2b29' }}
                 cardId={redObjId}

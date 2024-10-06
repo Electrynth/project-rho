@@ -20,7 +20,7 @@ function ListFooter({ listId, listEmail, saveList, deleteList, generateExportedL
     const listText = useMemo(() => generateExportedListText(), [generateExportedListText]);
 
     return (
-        <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
+        <div id="list-footer" style={{ display: 'flex', flexFlow: 'row nowrap' }}>
             <div style={{ ...centerAlignedRowStyles }}>
                 <Button
                     disabled={saveSuccess || !(user && user.email)}

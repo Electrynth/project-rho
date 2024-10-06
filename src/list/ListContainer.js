@@ -37,6 +37,7 @@ import urls from 'config/urls';
 
 const { cardsById } = cards;
 
+
 function RightPaneHeader({ rightPaneText, isRightPaneFocused, handleSetRightPaneFocus }) {
     return (
         <Paper
@@ -115,6 +116,7 @@ function ListContainer({
     isRightPaneFocused,
     handleSetRightPaneFocus
 }) {
+
     const router = useRouter();
     const { user } = useAuth0();
     const query = router.query;
@@ -843,7 +845,7 @@ function ListContainer({
 
     return (
         <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
-            <div style={{ ...primaryPaneStyles }}>
+            <div id="list-primary-pane" style={{ ...primaryPaneStyles }}>
                 <div
                     style={{
                         position: 'fixed',
@@ -863,7 +865,7 @@ function ListContainer({
                     />
                     <Divider variant="middle" style={{ marginTop: 20, color: '#eee' }} />
                 </div>
-                <div style={{ paddingTop: 110, zIndex: 0 }}>
+                <div id="list-ships" style={{ paddingTop: 110, zIndex: 0 }}>
                     <ListShips
                         version={version}
                         commander={commander}

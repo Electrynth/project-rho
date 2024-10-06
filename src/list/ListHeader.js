@@ -95,7 +95,7 @@ function ListHeader({
     const handleOpen = () => setIsDialogOpen(true);
     const handleClose = () => setIsDialogOpen(false);
     return (
-        <div style={{ display: 'flex', flexFlow: 'column', paddingTop: 20 }}>
+        <div id="list-header" style={{ display: 'flex', flexFlow: 'column', paddingTop: 20 }}>
             <div className={robotoCondensed.className} style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', marginBottom: 8 }}>
                 <div style={{ display: 'flex', justifyContent: 'center', marginRight: 16 }}>
                     <FactionIcon faction={faction} style={{ width: 30, height: 30 }} />
