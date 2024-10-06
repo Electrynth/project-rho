@@ -53,7 +53,7 @@ import blue6 from 'public/images/templates/upgrade/bar numbers/blue6.png';
 
 import empireGenericSquad from 'public/images/templates/squadron/empire generic.png';
 import empireAce0 from 'public/images/templates/squadron/empire ace0.png';
-import empireAce1 from 'public/images/templates/squadron/rebels ace1.png';
+import empireAce1 from 'public/images/templates/squadron/empire ace2.png';
 import empireAce2 from 'public/images/templates/squadron/empire ace2.png';
 import rebelsGenericSquad from 'public/images/templates/squadron/rebels generic.png';
 import rebelsAce0 from 'public/images/templates/squadron/rebels ace0.png';

@@ -12,10 +12,10 @@
     "Heavy": "`heavy` **Heavy.** *(You do not prevent engaged squadrons from attacking ships or moving.)*",
     "Intel": "`intel` **Intel.** *(While a friendly squadron is at distance 1 of you, it has **grit**.)*",
     "Relay 2": "`relay` **Relay 2.** *(When a friendly ship resolves a `squad` command, if you are in range to be activated, up to 2 of the squadrons it activates can be at distance 1-3 of you.)*",
-    "Rogue": "`rogue` **Rogue.** *(You can move and attack duringn the Squadron Phase.)*",
+    "Rogue": "`rogue` **Rogue.** *(You can move and attack during the Squadron Phase.)*",
     "Screen": "`screen` **Screen.** *(While you are defending, for each other friendly squadron the attacker is engaged with that lacks **screen**, up to 3, you gain **dodge 1**.)*",
     "SLAM": "`slam` **SLAM.** *(When you activate, you may increase your speed by 1, to a maximum of 5, until the end of your activation. If you do, you cannot attack this activation.)*",
-    "Snipe 3": "`snipe` **Snipe.** *(You can attack squadrons at distance 2 with anti-squadron armament of 3 blue dice. This attack ignores the **Counter** keyword.)*",
+    "Snipe 3": "`snipe` **Snipe 3.** *(You can attack squadrons at distance 2 with anti-squadron armament of 3 blue dice. This attack ignores the **counter** keyword.)*",
     "Strategic": "`strategic` **Strategic.** *(When you end your movement at distance 1 of 1 or more objective tokens, you may move 1 of those tokens so that it is at distnace 1 of you.)*",
     "Swarm": "`swarm` **Swarm.** *(While attacking a squadron engaged with another squadron, you may reroll 1 die.)*"
 }

@@ -120,7 +120,7 @@ export default function SquadronCardDisplay({
 
     // Squad Points
     cardElements.push(
-        <ForegroundWrapperElement key="squadron-points" height={20 * sizeMultiplier} width={50 * sizeMultiplier} top={589 * sizeMultiplier} left={386 * sizeMultiplier}>
+        <ForegroundWrapperElement key="squadron-points" height={20 * sizeMultiplier} width={50 * sizeMultiplier} top={588 * sizeMultiplier} left={386 * sizeMultiplier}>
             <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Regular', fontSize: 24 * sizeMultiplier }}>
                 {points}
             </span>
@@ -177,8 +177,8 @@ export default function SquadronCardDisplay({
 
     // Vs Squadron armament
     cardElements.push(
-        <ForegroundWrapperElement key="vs-squadron-armament" height={33 * sizeMultiplier} width={41 * sizeMultiplier} top={307 * sizeMultiplier} left={275 * sizeMultiplier}>
-            <ArmadaDiceGroup diceCounts={vsSquadronArmament} height={33 * sizeMultiplier} width={41 * sizeMultiplier} sizeMultiplier={sizeMultiplier} />
+        <ForegroundWrapperElement key="vs-squadron-armament" height={33 * sizeMultiplier} width={41 * sizeMultiplier} top={307 * sizeMultiplier} left={276 * sizeMultiplier}>
+            <ArmadaDiceGroup diceCounts={vsSquadronArmament} height={33 * sizeMultiplier} width={41 * sizeMultiplier} sizeMultiplier={sizeMultiplier * .9} />
         </ForegroundWrapperElement>
     );
 
@@ -186,7 +186,7 @@ export default function SquadronCardDisplay({
     // Vs Ship Armament
     cardElements.push(
         <ForegroundWrapperElement key="vs-ship-armament" height={33 * sizeMultiplier} width={41 * sizeMultiplier} top={307 * sizeMultiplier} left={379 * sizeMultiplier}>
-            <ArmadaDiceGroup diceCounts={vsShipArmament} height={33 * sizeMultiplier} width={41 * sizeMultiplier} sizeMultiplier={sizeMultiplier} />
+            <ArmadaDiceGroup diceCounts={vsShipArmament} height={33 * sizeMultiplier} width={41 * sizeMultiplier} sizeMultiplier={sizeMultiplier * .9} />
         </ForegroundWrapperElement>
     );
 
