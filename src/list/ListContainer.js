@@ -64,6 +64,51 @@ function RightPaneHeader({ rightPaneText, isRightPaneFocused, handleSetRightPane
     );
 }
 
+function calculateSquadronPoints(squadrons, version) {
+    let squadronPoints = 0;
+
+    squadrons.forEach(squadron => {
+        const squadronCard = cards.cardsById[squadron.id];
+        const { points } = squadronCard
+
+        let delta = 0;
+        if (squadron.id in versions[version].pointDeltas) {
+            delta = versions[version].pointDeltas[squadron.id];
+        }
+
+        if (points) squadronPoints += (points + delta) * squadron.count;
+        else return 0;
+    });
+
+    return squadronPoints;
+}
+
+function calculateShipPoints(ships, version) {
+    let shipPoints = 0;
+
+    ships.forEach(ship => {
+        const shipCard = cards.cardsById[ship.id];
+        const { points } = shipCard;
+        shipPoints += points;
+        if (ship.id in versions[version].pointDeltas) {
+            shipPoints += versions[version].pointDeltas[ship.id];
+        }
+        for (let i = 0; i < ship.upgradesEquipped.length; i++) {
+            const upgrade = ship.upgradesEquipped[i];
+            if (upgrade.id && upgrade.id !== true) {
+                const upgradeCard = cards.cardsById[upgrade.id];
+                const { points } = upgradeCard;
+                shipPoints += points;
+                if (upgrade.id in versions[version].pointDeltas) {
+                    shipPoints += versions[version].pointDeltas[upgrade.id];
+                }
+            }
+        }
+    });
+
+    return shipPoints;
+}
+
 function ListContainer({
     primaryPaneStyles,
     secondaryPaneStyles,
@@ -100,6 +145,9 @@ function ListContainer({
         md: useMediaQuery(theme.breakpoints.up('md')),
         lg: useMediaQuery(theme.breakpoints.up('lg'))
     };
+
+    const shipPoints = calculateShipPoints(ships, version);
+    const squadronPoints = calculateSquadronPoints(squadrons, version);
 
 
     useEffect(() => {
@@ -162,21 +210,10 @@ function ListContainer({
             yellowObjId,
             blueObjId
         };
-        let points = 0;
-        ships.forEach(ship => {
-            const shipCard = cards.cardsById[ship.id];
-            points += shipCard.points;
-            ship.upgradesEquipped.forEach(upgrade => {
-                if (upgrade.id && upgrade.id !== true) {
-                    const upgradeCard = cards.cardsById[upgrade.id];
-                    points += upgradeCard.points;
-                }
-            });
-        });
-        squadrons.forEach(squadron => {
-            const squadronCard = cards.cardsById[squadron.id];
-            points += squadronCard.points * squadron.count;
-        });
+        
+        const shipPoints = calculateShipPoints(ships, version);
+        const squadronPoints = calculateSquadronPoints(squadrons, version);
+        const points = shipPoints + squadronPoints;
 
         if (listId && user.email && listEmail === user.email) {
             axios.put(`${urls.api}/lists/${listId}`, { ...list, points, listId, email: user.email }).then(modifiedList => {
@@ -280,6 +317,7 @@ function ListContainer({
                 }
             }
         });
+
         lines.push(`= ${totalSquadronPoints} Points`)
         lines.push('');
 
@@ -766,40 +804,6 @@ function ListContainer({
         handleSetRightPaneFocus(true);
         setIsCardPropsDelimited(true);
     }
-
-    let shipPoints = 0;
-    let squadronPoints = 0;
-    ships.forEach(ship => {
-        const shipCard = cards.cardsById[ship.id];
-        const { points } = shipCard;
-        shipPoints += points;
-        if (ship.id in versions[version].pointDeltas) {
-            shipPoints += versions[version].pointDeltas[ship.id];
-        }
-        for (let i = 0; i < ship.upgradesEquipped.length; i++) {
-            const upgrade = ship.upgradesEquipped[i];
-            if (upgrade.id && upgrade.id !== true) {
-                const upgradeCard = cards.cardsById[upgrade.id];
-                const { points } = upgradeCard;
-                shipPoints += points;
-                if (upgrade.id in versions[version].pointDeltas) {
-                    shipPoints += versions[version].pointDeltas[upgrade.id];
-                }
-            }
-        }
-    });
-    squadrons.forEach(squadron => {
-        const squadronCard = cards.cardsById[squadron.id];
-        const { points } = squadronCard
-
-        let delta = 0;
-        if (squadron.id in versions[version].pointDeltas) {
-            delta = versions[version].pointDeltas[squadron.id];
-        }
-
-        if (points) squadronPoints += (points + delta) * squadron.count;
-        else return 0;
-    });
 
     cardComponentProps.sort((a, b) => {
         const cardA = cards.cardsById[a.id];
