@@ -120,7 +120,7 @@ export default function SquadronCardDisplay({
 
     // Squad Points
     cardElements.push(
-        <ForegroundWrapperElement key="squadron-points" height={20 * sizeMultiplier} width={50 * sizeMultiplier} top={588 * sizeMultiplier} left={386 * sizeMultiplier}>
+        <ForegroundWrapperElement key="squadron-points" height={20 * sizeMultiplier} width={50 * sizeMultiplier} top={589 * sizeMultiplier} left={386 * sizeMultiplier}>
             <span style={{ zIndex: 1, color: 'black', fontFamily: 'Armada Regular', fontSize: 24 * sizeMultiplier }}>
                 {points}
             </span>
