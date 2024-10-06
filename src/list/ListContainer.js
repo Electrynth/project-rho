@@ -414,7 +414,7 @@ function ListContainer({
             newShip.upgradesEquipped[upgradeIndex].id = id;
         }
         if (upgradeCard.addsUpgradeSlot) {
-            if (upgradeCard.id === 'rr') {
+            if (upgradeCard.id === 'rr') { // only card that conditionally adds a slot
                 let hasDefensiveRetro = false;
                 newShip.upgradesEquipped.forEach(upgradeSlot => {
                     if (upgradeSlot.upgradeType === 'defensive retrofit') hasDefensiveRetro = true;
@@ -546,7 +546,6 @@ function ListContainer({
         setUniques(newUniques);
     }
 
-    // WIP
     const swapUpgrade = (shipIndex, upgradeIndex, id) => {
         const newShips = [...ships];
         const newUniques = [...uniques];
@@ -563,11 +562,24 @@ function ListContainer({
             newUniques.push(newUpgradeCard.cardName);
         }
 
+        setUniques([...newUniques]);
+
+        if (oldUpgradeCard.upgradeSlots.includes('commander')) {
+            setCommander(id); // set to new id
+        }
+
         if (oldUpgradeCard.isModification && !newUpgradeCard.isModification) {
             newShip.hasModification = false;
         } else if (!newShip.hasModification && newUpgradeCard.isModification) {
             newShip.hasModification = true;
         }
+
+        newShip.upgradesEquipped[upgradeIndex].id = id;
+
+        setShips(newShips);
+        handleSetRightPaneFocus(false);
+        setCardComponentProps([]);
+        setRightPaneText('');
     }
 
     const removeUpgrade = (shipIndex, upgradeIndex) => {
@@ -753,6 +765,7 @@ function ListContainer({
             if (!card.upgradeSlots.includes(upgradeType)) continue;
             if (!isUpgradeRequirementsMet(card.requirements, { ...shipCard, faction, flagship: ships[shipIndex].flagship ? ships[shipIndex].flagship : false })) continue;
             if (card.upgradeSlots.length > 1) continue; // no swapping multi-slot upgrades
+            if (card.addsUpgradeSlot) continue; // no cards that add upgrade slots
             if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
             let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.cardName) || upgradeCard.id === id;
 
@@ -876,6 +889,7 @@ function ListContainer({
                         removeUpgrade={removeUpgrade}
                         setEligibleShipsToAdd={setEligibleShipsToAdd}
                         setEligibleUpgradesToAdd={setEligibleUpgradesToAdd}
+                        setEligibleUpgradesToSwap={setEligibleUpgradesToSwap}
                         handleSetZoomOnCard={(id) => setZoomDialogCard(id)}
                         shiftShipInList={shiftShipInList}
                     />

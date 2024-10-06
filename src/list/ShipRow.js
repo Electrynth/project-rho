@@ -25,6 +25,7 @@ function ShipRow({
     copyShip,
     removeUpgrade,
     setEligibleUpgradesToAdd,
+    setEligibleUpgradesToSwap,
     handleSetZoomOnCard,
     shiftShipInList
 }) {
@@ -191,8 +192,9 @@ function ShipRow({
                                         <div style={{ fontWeight: 300 }}>{upgradeCard.cardName}</div>
                                         <span style={{ flexGrow: 1 }} />
                                         <div style={{ marginRight: 2, display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
-                                            {false ? (
+                                            {canBeSwapped ? (
                                                 <SwapHoriz
+                                                    onClick={() => setEligibleUpgradesToSwap(index, i)}
                                                     style={{ marginRight: 4, cursor: 'pointer' }}
                                                 />
                                             ) : undefined}
