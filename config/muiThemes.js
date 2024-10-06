@@ -15,11 +15,14 @@ const lightTheme = createTheme({
 const darkTheme = createTheme({
     palette: {
         mode: 'dark',
-        primary: {
-            main: '#333'
-        },
         secondary: {
             main: '#eee'
+        },
+        customGrey: {
+            main: '#333',
+            light: '#333',
+            dark: '#333',
+            contrastText: '#fff'
         }
     }
 });

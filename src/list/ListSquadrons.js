@@ -41,6 +41,7 @@ function ListSquadrons({
                 disableRipple
                 size="large"
                 variant="contained"
+                color="customGrey"
                 onClick={setEligibleSquadronsToAdd}
                 style={{ height: 40 }}
             >

@@ -41,6 +41,7 @@ function ListShips({
                     disableRipple
                     variant="contained"
                     size="large"
+                    color="customGrey"
                     onClick={setEligibleShipsToAdd}
                     style={{ height: 40 }}
                 >

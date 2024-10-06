@@ -2,8 +2,9 @@ import { useState, useMemo } from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 import { useRouter } from 'next/router';
 import { Box, Button, IconButton, Dialog, DialogTitle, DialogContent, DialogActions, TextField } from '@mui/material';
-import { Print, OpenInNew, FileCopy, Clear } from '@mui/icons-material';
+import { Print, OpenInNew, FileCopy, Delete } from '@mui/icons-material';
 import robotoCondensed from 'config/font';
+import ListExport from './ListExport';
 
 function ListFooter({ listId, listEmail, saveList, deleteList, generateExportedListText }) {
     const { user } = useAuth0();
@@ -26,6 +27,7 @@ function ListFooter({ listId, listEmail, saveList, deleteList, generateExportedL
                     disableRipple
                     disableElevation
                     variant="contained"
+                    color="customGrey"
                     onClick={() => {
                         setSaveSuccess(true);
                         setTimeout(() => setSaveSuccess(false), 500);
@@ -54,6 +56,9 @@ function ListFooter({ listId, listEmail, saveList, deleteList, generateExportedL
                 <IconButton size="small" style={{ marginRight: 2, cursor: 'pointer' }} onClick={() => setIsDialogOpen(true)}>
                     <OpenInNew fontSize="inherit" />
                 </IconButton>
+                <IconButton disabled size="small" style={{ marginRight: 2 }}>
+                    <Print fontSize="inherit" />
+                </IconButton>
                 {listId ? (
                     <IconButton disabled size="small" style={{ marginRight: 2, cursor: 'pointer' }} onClick={() => {}}>
                         <FileCopy fontSize="inherit" />
@@ -68,45 +73,19 @@ function ListFooter({ listId, listEmail, saveList, deleteList, generateExportedL
                         style={{ marginRight: 2, cursor: 'pointer' }}
                         onClick={deleteList}
                     >
-                        <Clear fontSize="inherit" />
+                        <Delete fontSize="inherit" />
                     </IconButton>
                 ) : (
                     undefined
                 )}
             </div>
-            <Dialog fullWidth maxWidth="sm" onClose={() => setIsDialogOpen(false)} open={isDialogOpen}>
-                <DialogTitle>
-                    <span className={robotoCondensed.className}>
-                        Text Export
-                    </span>
-                </DialogTitle>
-                <DialogContent>
-                    <TextField
-                        fullWidth
-                        multiline
-                        value={listText}
-                    />
-                </DialogContent>
-                <DialogActions>
-                    {(typeof window !== 'undefined') && window.isSecureContext ? (
-                        <Button
-                            size="large"
-                            color="secondary"
-                            variant="text"
-                            disabled={copySuccess}
-                            onClick={() => {
-                                navigator.clipboard.writeText(listText);
-                                setCopySuccess(true);
-                                setTimeout(() => setCopySuccess(false), 500);
-                            }}
-                        >
-                            <span className={robotoCondensed.className}>
-                                {copySuccess ? 'Copied to Clipboard!' : 'Copy to Clipboard'}
-                            </span>
-                        </Button>
-                    ) : undefined}
-                </DialogActions>
-            </Dialog>
+            <ListExport
+                listText={listText}
+                copySuccess={copySuccess}
+                isDialogOpen={isDialogOpen}
+                setIsDialogOpen={setIsDialogOpen}
+                setCopySuccess={setCopySuccess}
+            />
         </div>
     );
 }
