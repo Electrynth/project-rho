@@ -111,24 +111,17 @@ export default function Home() {
     <div>
       <NextHead />
       <div style={{ padding: 20, display: 'flex', flexFlow: 'column nowrap', justifyContent: 'center', alignItems: 'center' }}>
-          <Card sx={{ maxWidth: 340, marginTop: 2, marginBottom: 2 }}>
-            <CardHeader
-              title={<span className={robotoCondensed.className}>{changelog.news[0].title}</span>}
-              subheader={<span className={robotoCondensed.className}>{changelog.news[0].date}</span>}
-            />
-            <CardContent>
-              <span className={robotoCondensed.className}>{changelog.news[0].body}</span>
-            </CardContent>
-          </Card>
-          <Alert severity="info">
-            <AlertTitle sx={{ fontSize: 18 }}><span className={robotoCondensed.className}>Under Construction!</span></AlertTitle>
-            <span style={{ fontSize: 16 }}>
-              <span className={robotoCondensed.className} style={{ fontSize: 18 }}>Major features coming soon:</span>
-              <li className={robotoCondensed.className}>Upgrade swap button</li>
-              <li className={robotoCondensed.className}>Copying lists</li>
-              <li className={robotoCondensed.className}>Various UI Improvements</li>
-            </span>
-          </Alert>
+          {changelog.news[0].title ? (
+            <Card sx={{ maxWidth: 340, marginTop: 2, marginBottom: 2 }}>
+              <CardHeader
+                title={<span className={robotoCondensed.className}>{changelog.news[0].title}</span>}
+                subheader={<span className={robotoCondensed.className}>{changelog.news[0].date}</span>}
+              />
+              <CardContent>
+                <span className={robotoCondensed.className}>{changelog.news[0].body}</span>
+              </CardContent>
+            </Card>
+          ) : undefined}
           <div style={{ display: 'flex', flexFlow: 'row wrap', alignItems: 'center', marginTop: 18 }}>
             <Chip
               clickable
@@ -178,7 +171,7 @@ export default function Home() {
             <DialogContent>
               <DialogContentText>
                 <span className={robotoCondensed.className} style={{ fontSize: 18 }}>
-                  This website is an unofficial fan creation that is intended to act as platform for Star Wars: Armada content.
+                  This website is an unofficial fan creation that is intended to act as platform for unofficial, fan-created Star Wars: Armada content.
                 </span>
               </DialogContentText>
               <br />

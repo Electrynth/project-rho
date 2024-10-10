@@ -1,6 +1,9 @@
 {
     "news": [
         {
+            
+        },
+        {
             "date": "12 October 2023",
             "title": "User Accounts Rolled Out",
             "body": "User accounts are available to use. This is an unstable feature and is likely to still have bugs. Please direct bugs to the contacts found in the 'Contact Us' button"

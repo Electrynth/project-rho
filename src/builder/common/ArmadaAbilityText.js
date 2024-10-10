@@ -3,7 +3,7 @@ import { armadaFontIcons } from '../../utility.js';
 
 export default function ArmadaAbilityText({ cardText, fontSize = 18, textAlign = 'center', isSquadronText = false }) {
     const baseStyles = {
-        fontSize: fontSize,
+        fontSize,
         color: 'black'
     };
     const newlineRegex = /^newline[0-9]{2}/;

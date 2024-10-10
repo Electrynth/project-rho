@@ -55,7 +55,7 @@ export default function SquadronBuilder({ breakpoints }) {
     const [squadronSpeed, setSquadronSpeed] = useState(1);
     const [squadronHull, setSquadronHull] = useState(2);
     const [cardText, setCardText] = useState('');
-    const [cardTextFontSize, setCardTextFontSize] = useState(18);
+    const [cardTextFontSize, setCardTextFontSize] = useState(19);
     const [chassisTextFontSize, setChassisTextFontSize] = useState(44);
     const [vsSquadronArmament, setVsSquadronArmament] = useState([0, 0, 0]);
     const [vsShipArmament, setVsShipArmament] = useState([0, 0, 0]);

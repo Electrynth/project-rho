@@ -51,7 +51,7 @@ export default function UpgradeBuilder({ breakpoints }) {
     const [faction, setFaction] = useState('any');
     const [cardFooterText, setCardFooterText] = useState('');
     const [cardText, setCardText] = useState('');
-    const [cardTextFontSize, setCardTextFontSize] = useState(18);
+    const [cardTextFontSize, setCardTextFontSize] = useState(19);
     const [titledShip, setTitledShip] = useState('');
     const [shipIconYOffset, setShipIconYOffset] = useState(-5);
     const [isExhaust, setIsExhaust] = useState(false);
