@@ -61,11 +61,11 @@ import rebelsAce1 from 'public/images/templates/squadron/rebels ace1.png';
 import rebelsAce2 from 'public/images/templates/squadron/rebels ace2.png';
 import republicGenericSquad from 'public/images/templates/squadron/republic generic.png';
 import republicAce0 from 'public/images/templates/squadron/republic ace0.png';
-import republicAce1 from 'public/images/templates/squadron/rebels ace1.png';
+import republicAce1 from 'public/images/templates/squadron/republic ace2.png';
 import republicAce2 from 'public/images/templates/squadron/republic ace2.png';
 import separatistsGenericSquad from 'public/images/templates/squadron/separatists generic.png';
 import separatistsAce0 from 'public/images/templates/squadron/separatists ace0.png';
-import separatistsAce1 from 'public/images/templates/squadron/rebels ace1.png';
+import separatistsAce1 from 'public/images/templates/squadron/separatists ace2.png';
 import separatistsAce2 from 'public/images/templates/squadron/separatists ace2.png';
 
 import rebelShip from 'public/images/templates/ship/rebel ship.png';

@@ -8,7 +8,7 @@ export default function Privacy() {
             <p>Effective date: April 10, 2024</p>
 
 
-            <p>HoloFoundry (&#34us&#34, &#34we&#34, or &#34our&#34) operates the https://HoloFoundry.net/ website (hereinafter referred to as the &#34Service&#34).</p>
+            <p>HoloFoundry ("us", "we", or "our") operates the https://HoloFoundry.net/ website (hereinafter referred to as the "Service").</p>
 
             <p>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data. The Privacy Policy for HoloFoundry has been created with the help of <a href="https://www.termsfeed.com/privacy-policy-generator/">Privacy Policy Generator</a>.</p>
 
