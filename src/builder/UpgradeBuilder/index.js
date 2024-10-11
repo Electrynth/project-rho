@@ -61,7 +61,7 @@ export default function UpgradeBuilder({ breakpoints }) {
     const [startingTokens, setStartingTokens] = useState([]);
     const [startingTokenValue, setStartingTokenValue] = useState(0);
     const [uploadedImage, setUploadedImage] = useState();
-    const [portraitWidth, setPortraitWidth] = useState(450 * sizeMultiplier);
+    const [portraitWidth, setPortraitWidth] = useState(450);
     const [portraitX, setPortraitX] = useState(0);
     const [portraitY, setPortraitY] = useState(0);
     const [isPortraitMirrored, setIsPortraitMirrored] = useState(false);
