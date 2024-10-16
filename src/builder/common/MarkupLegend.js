@@ -103,10 +103,6 @@ export default function MarkupLegend() {
                                     <TableCell></TableCell>
                                     <TableCell>There must be an empty line above and below the line with `newline##`</TableCell>
                                 </TableRow>
-                                <TableRow>
-                                    <TableCell></TableCell>
-                                    <TableCell>TIP: Use `newline100` for upgrades and `newline50` for squadron cards</TableCell>
-                                </TableRow>
                             </TableBody>
                         </Table>
                     </TableContainer>
