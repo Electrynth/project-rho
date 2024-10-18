@@ -50,7 +50,7 @@ export default function SquadronBuilder({ breakpoints }) {
     const [maxNumAllowed, setMaxNumAllowed] = useState(1);
     const [squadronName, setSquadronName] = useState('');
     const [squadronChassis, setSquadronChassis] = useState('');
-    const [chassisIconYOffset, setChassisIconYOffset] = useState(-6);
+    const [chassisIconYOffset, setChassisIconYOffset] = useState(0);
     const [squadronIcon, setSquadronIcon] = useState('');
     const [squadronSpeed, setSquadronSpeed] = useState(1);
     const [squadronHull, setSquadronHull] = useState(2);
