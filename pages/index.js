@@ -122,7 +122,7 @@ export default function Home() {
               </CardContent>
             </Card>
           ) : undefined}
-          <div style={{ display: 'flex', flexFlow: 'row wrap', alignItems: 'center', marginTop: 18 }}>
+          <div style={{ display: 'flex', flexFlow: 'row wrap', alignItems: 'center', marginTop: 18, marginBottom: 18 }}>
             <Chip
               clickable
               label={<span className={robotoCondensed.className} style={{ fontSize: 16 }}>What is this?</span>}
@@ -137,6 +137,26 @@ export default function Home() {
               onClick={() => setIsContactDialogOpen(true)}
             />
           </div>
+          <Chip
+            clickable={!isLoading}
+            label={
+              <span className={robotoCondensed.className} style={{ fontSize: 16 }}>
+                {isAuthenticated ? `Logout (${user.email})` : 'Login'}
+              </span>
+            }
+            className={robotoCondensed.className}
+            onClick={() => {
+              isAuthenticated ? (
+                  logout({
+                    logoutParams: {
+                      returnTo: typeof window !== 'undefined' ? window.location.origin : undefined
+                    }
+                  })
+                ) : (
+                  loginWithPopup()
+                )
+            }}
+          />
           <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
           <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
               <FactionLinkButton isAuthenticated={isAuthenticated} faction="rebels" lists={userLists}/>
@@ -144,40 +164,20 @@ export default function Home() {
               <FactionLinkButton isAuthenticated={isAuthenticated} faction="republic" lists={userLists} />
               <FactionLinkButton isAuthenticated={isAuthenticated} faction="separatists" lists={userLists} />
           </div>
-		  <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
-        <Chip
-          clickable={!isLoading}
-          label={
-            <span className={robotoCondensed.className} style={{ fontSize: 16 }}>
-              {isAuthenticated ? `Logout (${user.email})` : 'Login'}
-            </span>
-          }
-          className={robotoCondensed.className}
-          onClick={() => {
-            isAuthenticated ? (
-                logout({
-                  logoutParams: {
-                    returnTo: typeof window !== 'undefined' ? window.location.origin : undefined
-                  }
-                })
-              ) : (
-                loginWithPopup()
-              )
-          }}
-        />
+		    <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
         </div>
         <Dialog onClose={() => setIsAboutUsDialogOpen(false)} open={isAboutUsDialogOpen}>
             <DialogTitle><span className={robotoCondensed.className} style={{ fontSize: 24 }}>What is this?</span></DialogTitle>
             <DialogContent>
               <DialogContentText>
                 <span className={robotoCondensed.className} style={{ fontSize: 18 }}>
-                  This website is an unofficial fan creation that is intended to act as platform for unofficial, fan-created Star Wars: Armada content.
+                  This website is an unofficial fan creation that is intended to act as platform for official, unofficial, and fan-created Star Wars: Armada content.
                 </span>
               </DialogContentText>
               <br />
               <DialogContentText>
                 <span className={robotoCondensed.className} style={{ fontSize: 18 }}>
-                  All images, game symbols, and text is copyright Lucasfilm Ltd. and Atomic Mass Games. This website is not affiliated or sponsored by Atomic Mass Games.
+                  All images, game symbols, and text is copyright Lucasfilm Ltd. and Atomic Mass Games. This website is NOT affiliated or sponsored by Atomic Mass Games.
                 </span>
               </DialogContentText>
             </DialogContent>
