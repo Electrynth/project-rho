@@ -420,10 +420,10 @@ function ListContainer({
                     if (upgradeSlot.upgradeType === 'defensive retrofit') hasDefensiveRetro = true;
                 })
                 if (!hasDefensiveRetro) {
-                    newShip.upgradesEquipped.push({ rootCardId: id, upgradeType: upgradeCard.addsUpgradeSlot, id: undefined });
+                    newShip.upgradesEquipped.push({ parentCardId: id, upgradeType: upgradeCard.addsUpgradeSlot, id: undefined });
                 }
             } else {
-                newShip.upgradesEquipped.push({ rootCardId: id, upgradeType: upgradeCard.addsUpgradeSlot, id: undefined });
+                newShip.upgradesEquipped.push({ parentCardId: id, upgradeType: upgradeCard.addsUpgradeSlot, id: undefined });
             }
         }
         setShips(newShips);
@@ -589,6 +589,7 @@ function ListContainer({
         const upgrade = newShip.upgradesEquipped[upgradeIndex];
         const upgradeCard = cards.cardsById[upgrade.id];
         const uniqueIdIndex = uniques.indexOf(upgradeCard.cardName);
+
         if (upgradeCard.isModification) newShip.hasModification = false;
         if (uniqueIdIndex > -1) newUniques.splice(uniqueIdIndex, 1);
         if (upgradeCard.upgradeSlots.includes('commander')) {
@@ -602,10 +603,12 @@ function ListContainer({
             }
           
         }
+
         if (upgradeCard.addsUpgradeSlot) {
             let secondUpgradeCardIndex;
             for (let i = 0; i < newShip.upgradesEquipped.length; i++) {
-                if (newShip.upgradesEquipped[i].rootCardId && newShip.upgradesEquipped[i].rootCardId === upgradeCard.id) {
+                console.log('\t', newShip.upgradesEquipped[i]);
+                if (newShip.upgradesEquipped[i].parentCardId && newShip.upgradesEquipped[i].parentCardId === upgradeCard.id) {
                     secondUpgradeCardIndex = i;
                     if (newShip.upgradesEquipped[i].id) {
                         // TODO: rework this
@@ -620,7 +623,13 @@ function ListContainer({
             }
             newShip.upgradesEquipped.splice(secondUpgradeCardIndex, 1);
         }
-        newShip.upgradesEquipped[upgradeIndex] = { upgradeType: upgrade.upgradeType, id: undefined };
+
+        if (upgrade.parentCardId) {
+            newShip.upgradesEquipped[upgradeIndex] = { parentCardId: upgrade.parentCardId, upgradeType: upgrade.upgradeType, id: undefined };
+        } else {
+            newShip.upgradesEquipped[upgradeIndex] = { upgradeType: upgrade.upgradeType, id: undefined };
+        }
+
         setUniques(newUniques);
         setShips(newShips);
     }
