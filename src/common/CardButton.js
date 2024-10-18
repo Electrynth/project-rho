@@ -83,7 +83,7 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = { } }) {
                     </Typography>
                 </Box>
             </CardActionArea>
-            {version > 0 ? (
+            {version >= 0 ? (
                 <CardActions>
                     {textChanges[id] && textChanges[id].length > 0 ? <Chip icon={<SearchIcon />} size="small" label="Text Change" onClick={handleSetDialogOpen} /> : undefined}
                     {footnoteActions.length > 0 ? footnoteActions : undefined}
