@@ -32,16 +32,22 @@ function CustomTabPanel({ children, value, tabIndex, ...other }) {
 
 function ImageExport({ breakpoints }) {
     const [listSrc, setListSrc] = useState();
-    const options = {
+    const options2 = {
         quality: .85,
         height: breakpoints.md ? 640 : 480,
         style: {
             width: '100%'
         }
     };
+
+    const options = {
+        quality: .5,
+        
+    };
     
     if (!listSrc) {
-        const listNode = document.getElementById('list-text-export');
+        //const listNode = document.getElementById('list-text-export');
+        const listNode = document.getElementById('list-ships');
         domtoimage.toJpeg(listNode, options).then(src => setListSrc(src));
         return <span className={robotoCondensed.className}>Loading...</span>;
     }
@@ -67,9 +73,8 @@ function ListExport({
 
     return (
         <Dialog
-            fullWidth
-            maxWidth="sm"
-            fullScreen={breakpoints.sm}
+            maxWidth="lg"
+            fullScreen={!breakpoints.md}
             onClose={() => setIsDialogOpen(false)} open={isDialogOpen}
         >
             <DialogTitle style={{ display: 'flex', flexFlow: 'row nowrap', justifyContent: 'space-between'}}>
@@ -102,7 +107,7 @@ function ListExport({
                     value={currentTabIndex}
                     style={{ height: '100%' }}
                 >
-                    <div id="list-image-export" style={{ }}>
+                    <div id="list-image-export">
                         <ImageExport breakpoints={breakpoints} />
                     </div>
                 </CustomTabPanel>
