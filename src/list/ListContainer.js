@@ -277,6 +277,7 @@ function ListContainer({
         lines.push(`Name: ${title}`);
         lines.push(`Faction: ${faction}`);
         lines.push(`Commander: ${commanderCard ? (commanderCard.displayName ? commanderCard.displayName : commanderCard.cardName) : ''}`);
+        lines.push(`Version: ${versions[version].label}`)
         lines.push('');
 
         const assaultObjectiveName = redObjId ? cards.cardsById[redObjId].cardName : '';
@@ -791,7 +792,6 @@ function ListContainer({
         handleSetRightPaneFocus(true);
         setIsCardPropsDelimited(true);
     }
-
 
     const setEligibleSquadronsToAdd = () => {
         const newCardComponentProps = [];
