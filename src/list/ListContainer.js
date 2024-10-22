@@ -357,7 +357,7 @@ function ListContainer({
         const card = cards.cardsById[id];
         newShip.upgradesEquipped = card.upgradeSlots.map(upgradeType => ({ upgradeType, id: undefined }));
         newShip.hasModification = false;
-        if (card.isUnique) setUniques([...uniques, card.displayName ? card.displayName : card.cardName]);
+        if (card.isUnique) setUniques([...uniques, card.cardName]);
         setShips([...ships, newShip]);
         handleSetRightPaneFocus(false);
         setCardComponentProps([]);
@@ -454,6 +454,7 @@ function ListContainer({
         setRightPaneText('');
         setIsCardPropsDelimited(false);
     }
+
 
     const shiftSquadronInList = (index, shiftValue) => {
         const newSquadrons = [...squadrons];
@@ -805,7 +806,7 @@ function ListContainer({
                 id,
                 key: id,
                 version,
-                isDisabled: uniques.includes(card.displayName ? card.displayName : card.cardName) || squadronTitles.includes(card.title),
+                isDisabled: uniques.includes(card.cardName) || squadronTitles.includes(card.title),
                 onClick: () => addSquadron(id)
             });
         }
@@ -826,7 +827,7 @@ function ListContainer({
                 id,
                 key: id,
                 version,
-                isDisabled: uniques.includes(card.displayName ? card.displayName : card.cardName) || squadronTitles.includes(card.title),
+                isDisabled: false,
                 onClick: () => swapSquadron(index, id)
             });
         }
