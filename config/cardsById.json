@@ -2479,7 +2479,6 @@
     "id": "hc"
   },
   "hd": {
-    "displayName": "Anakin Skywalker",
     "cardName": "Anakin Skywalker",
     "imageName": "Anakin Skywalker BTL-B",
     "faction": "republic",
@@ -2494,7 +2493,6 @@
     "id": "hd"
   },
   "he": {
-    "displayName": "Anakin Skywalker",
     "cardName": "Anakin Skywalker",
     "imageName": "Anakin Skywalker Delta",
     "faction": "republic",
