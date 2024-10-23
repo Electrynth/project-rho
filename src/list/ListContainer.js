@@ -379,6 +379,7 @@ function ListContainer({
         setCommander('');
         setShips([]);
         setSquadrons([]);
+        setSquadronTitles([]);
         setUniques([]);
         setRedObjId('');
         setYellowObjId('');
@@ -827,7 +828,7 @@ function ListContainer({
                 id,
                 key: id,
                 version,
-                isDisabled: false,
+                isDisabled: card.title ? squadronTitles.includes(card.title) : false,
                 onClick: () => swapSquadron(index, id)
             });
         }
