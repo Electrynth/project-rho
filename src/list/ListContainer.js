@@ -678,6 +678,34 @@ function ListContainer({
         setIsCardPropsDelimited(true)
     }
 
+    const setEligibleObjectiveToSwap = (objectiveType) => {
+        const newCardComponentProps = [];
+        for (let i = 0; i < cards.objectiveIdList.length; i++) {
+            const id = cards.objectiveIdList[i];
+            const card = cards.cardsById[id];
+            
+            if (card.cardType !== 'objective') continue;
+            if (card.objectiveType !== objectiveType) continue;
+            if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
+
+            let isDisabled = false;
+            if (objectiveType === 'assault' && redObjId === id) isDisabled = true;
+            if (objectiveType === 'defense' && yellowObjId === id) isDisabled = true;
+            if (objectiveType === 'navigation' && blueObjId === id) isDisabled = true;
+            newCardComponentProps.push({
+                id,
+                key: id,
+                version,
+                isDisabled,
+                onClick: () => addObjective(id, objectiveType)
+            });
+        }
+        setRightPaneText('Swap Objective');
+        setCardComponentProps(newCardComponentProps);
+        handleSetRightPaneFocus(true);
+        setIsCardPropsDelimited(false)
+    }
+
     const setEligibleObjectiveToAdd = (objectiveType) => {
         const newCardComponentProps = [];
         for (let i = 0; i < cards.objectiveIdList.length; i++) {
@@ -927,6 +955,7 @@ function ListContainer({
                     addObjective={addObjective}
                     removeObjective={removeObjective}
                     setEligibleObjectiveToAdd={setEligibleObjectiveToAdd}
+                    setEligibleObjectiveToSwap={setEligibleObjectiveToSwap}
                     handleSetZoomOnCard={(id) => setZoomDialogCard(id)}
                 />
                 <Divider variant="middle" style={{ margin: '20px 0px', color: '#eee' }} />
