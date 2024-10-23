@@ -39,6 +39,7 @@ function ListShips({
             <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
                 <Button
                     fullWidth
+                    disabled={ships.length > 49}
                     disableElevation
                     disableRipple
                     variant="contained"

@@ -37,6 +37,7 @@ function ListSquadrons({
             )}
             <Button
                 fullWidth
+                disabled={squadrons.length > 11}
                 disableElevation
                 disableRipple
                 size="large"

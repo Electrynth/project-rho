@@ -259,7 +259,7 @@ function ListContainer({
     }
 
     const handleSetTitleFromEvent = (event) => {
-        if (title.length < 100) setTitle(event.target.value);
+        if (title.length < 51 || event.target.value.length < title.length) setTitle(event.target.value);
     }
     const handleSetVersionFromEvent = (event) => {
         clearList();

@@ -39,6 +39,7 @@ function FactionLinkButton({
     if (list.faction === faction) factionLists.push(list);
   });
 
+
   return (
       <>
         <IconButton
@@ -60,9 +61,15 @@ function FactionLinkButton({
           anchorEl={anchorEl}
           onClose={() => setAnchorEl(null)}
         >
-          <MenuItem onClick={() => router.push(`/list/${faction}`) }>
-            <span className={robotoCondensed.className}>Create New List</span>
-          </MenuItem>
+          {factionLists.length < 12 ? (
+            <MenuItem onClick={() => router.push(`/list/${faction}`) }>
+              <span className={robotoCondensed.className}>Create New List</span>
+            </MenuItem>
+          ) : (
+            <MenuItem disabled>
+              <span className={robotoCondensed.className}>Max Number Lists</span>
+            </MenuItem>
+          )}
           <Divider />
           {factionLists.map((list, index) => {
             return (
