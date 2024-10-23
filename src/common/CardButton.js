@@ -87,7 +87,7 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = { } }) {
                 <CardActions>
                     {textChanges[id] && textChanges[id].length > 0 ? <Chip icon={<SearchIcon />} size="small" label="Text Change" onClick={handleSetDialogOpen} /> : undefined}
                     {footnoteActions.length > 0 ? footnoteActions : undefined}
-                    {footnoteActions.length === 0 && !textChanges[id] ? <Chip size="small" label="Unchanged" /> : undefined}
+                    {footnoteActions.length === 0 && !textChanges[id] ? <div /> : undefined}
                 </CardActions>
             ) : undefined}
             <Dialog open={isDialogOpen} onClose={handleSetDialogClose}>
