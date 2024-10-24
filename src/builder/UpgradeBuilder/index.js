@@ -78,7 +78,7 @@ export default function UpgradeBuilder({ breakpoints }) {
         return (
             <div style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'center' }}>
                 <Typography style={{ margin: 16 }}>
-                    Currently not accessible
+                    Not accessible
                 </Typography>
             </div>
         );

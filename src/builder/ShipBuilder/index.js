@@ -45,7 +45,6 @@ function TabContent(props) {
 
 export default function ShipBuilder({ breakpoints }) {
     const { user } = useAuth0();
-    console.log(user);
     const [isLoading, setIsLoading] = useState(true);
     const [builderAccess, setBuilderAccess] = useState(false);
 
@@ -120,7 +119,7 @@ export default function ShipBuilder({ breakpoints }) {
         return (
             <div style={{ display: 'flex', flexFlow: 'column nowrap', alignItems: 'center' }}>
                 <Typography style={{ margin: 16 }}>
-                    Currently not accessible
+                    Not accessible
                 </Typography>
             </div>
         );
