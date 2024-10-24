@@ -2313,7 +2313,7 @@
   },
   "gp": {
     "cardName": "Moralo Eval",
-    "faction": "separatists",
+    "faction": "empire",
     "points": 22,
     "isUnique": true,
     "keywords": [
@@ -7038,6 +7038,7 @@
     "isUnique": false
   },
   "tg": {
+    "hidden": true,
     "cardName": "YV-666",
     "faction": "separatists",
     "points": 15,
@@ -7051,6 +7052,7 @@
     "id": "tg"
   },
   "th": {
+    "hidden": true,
     "cardName": "Generous Benefactor",
     "points": 5,
     "isUnique": true,
@@ -7068,6 +7070,7 @@
     "cardType": "upgrade"
   },
   "ti": {
+    "hidden": true,
     "cardName": "Force of Commerce",
     "points": 9,
     "isUnique": true,
@@ -7085,6 +7088,7 @@
     "cardType": "upgrade"
   },
   "tj": {
+    "hidden": true,
     "cardName": "Enduring Fealty",
     "points": 3,
     "isUnique": true,
@@ -7102,6 +7106,7 @@
     "cardType": "upgrade"
   },
   "tk": {
+    "hidden": true,
     "cardName": "Skakoan Pride",
     "points": 5,
     "isUnique": true,
@@ -7119,6 +7124,7 @@
     "cardType": "upgrade"
   },
   "tl": {
+    "hidden": true,
     "cardName": "Bossk",
     "title": "Hound's Tooth",
     "faction": "separatists",
@@ -7130,5 +7136,18 @@
     ],
     "cardType": "squadron",
     "id": "tl"
+  },
+  "tm": {
+    "hidden": true,
+    "cardName": "Moralo Eval",
+    "faction": "separatists",
+    "points": 22,
+    "isUnique": true,
+    "keywords": [
+      "Grit",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "tm"
   }
 }

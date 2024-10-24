@@ -7,6 +7,7 @@ import styles from 'styles/ListContainer.module.css';
 import robotoCondensed from 'config/font';
 import { useRouter } from 'next/router';
 import {
+    Chip,
     Divider,
     Paper,
     Button,
@@ -18,7 +19,11 @@ import {
     DialogTitle,
     DialogContent,
     DialogContentText,
-    DialogActions
+    DialogActions,
+    FormControl,
+    InputLabel,
+    MenuItem,
+    Select
 } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import Clear from '@mui/icons-material/Clear';
@@ -37,8 +42,82 @@ import urls from 'config/urls';
 
 const { cardsById } = cards;
 
+const squadronKeywords = {
+    rebels: ['Assault', 'Bomber', 'Cloak', 'Counter', 'Dodge', 'Escort', 'Grit', 'Heavy', 'Intel', 'Relay', 'Rogue', 'Snipe', 'Strategic', 'Swarm'],
+    empire: ['Adept', 'Assault', 'Bomber', 'Cloak', 'Counter', 'Escort', 'Grit', 'Heavy', 'Intel', 'Relay', 'Rogue', 'Snipe', 'Strategic', 'Swarm'],
+    republic: ['Adept', 'Bomber', 'Counter', 'Dodge', 'Escort', 'Grit', 'Heavy', 'Intel', 'Swarm'],
+    separatists: ['Ai', 'Bomber', 'Counter', 'Heavy', 'Intel', 'Relay', 'Screen', 'Snipe', 'Swarm']
+}
 
-function RightPaneHeader({ rightPaneText, isRightPaneFocused, handleSetRightPaneFocus }) {
+
+function RightPaneHeader({
+    faction,
+    breakpoints,
+    rightPaneText,
+    isRightPaneFocused,
+    squadronKeywordFilter,
+    handleSetRightPaneFocus,
+    handleSetSquadronKeywordFilter
+}) {
+
+    const SquadronFilter = () => {
+        if (breakpoints.lg) {
+            return (
+                <>
+                    <Chip
+                        size="small"
+                        variant={squadronKeywordFilter === 'all' ? 'filled' : 'outlined'}
+                        label={
+                            <span className={robotoCondensed.className}>
+                                ALL
+                            </span>
+                        }
+                        style={{ marginRight: 4 }}
+                        onClick={() => handleSetSquadronKeywordFilter('all')}
+                    />
+                    {squadronKeywords[faction].map(keyword => (
+                        <Chip
+                            size="small"
+                            key={keyword}
+                            variant={squadronKeywordFilter === keyword ? 'filled' : 'outlined'}
+                            label={
+                                <span className={robotoCondensed.className}>
+                                    {keyword.toUpperCase()}
+                                </span>
+                            }
+                            style={{ marginRight: 4 }}
+                            onClick={() => handleSetSquadronKeywordFilter(keyword)}
+                        />
+                    ))}
+                </>
+            );
+        } else {
+            return (
+                <FormControl size="small" sx={{ minWidth: 120 }}>
+                    <InputLabel id="keyword-select-label">Keyword</InputLabel>
+                    <Select
+                        labelId="keyword-select-label"
+                        label="Keyword"
+                        value={squadronKeywordFilter}
+                        onChange={e => handleSetSquadronKeywordFilter(e.target.value)}
+                    >
+                        <MenuItem value="all">
+                            <span className={robotoCondensed.className}>
+                                ALL
+                            </span>
+                        </MenuItem>
+                        {squadronKeywords[faction].map(keyword => (
+                            <MenuItem value={keyword}>
+                                <span className={robotoCondensed.className}>
+                                    {keyword.toUpperCase()}
+                                </span>
+                            </MenuItem>
+                        ))}
+                    </Select>
+                </FormControl>
+            );
+        }
+    };
     return (
         <Paper
             style={{
@@ -53,11 +132,22 @@ function RightPaneHeader({ rightPaneText, isRightPaneFocused, handleSetRightPane
                 position: 'sticky',
             }}
         >
-            <Typography>
-                <span className={robotoCondensed.className}>
-                    {rightPaneText ? rightPaneText : undefined}
-                </span>
-            </Typography>
+            {rightPaneText.includes('Squadron') ? (
+                <div style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center' }}>
+                    <Typography style={{ marginRight: 12 }}>
+                        <span className={robotoCondensed.className}>
+                            {rightPaneText ? rightPaneText : undefined}
+                        </span>
+                    </Typography>
+                    <SquadronFilter />
+                </div>
+            ) : (
+                <Typography style={{ marginRight: 8 }}>
+                    <span className={robotoCondensed.className}>
+                        {rightPaneText ? rightPaneText : undefined}
+                    </span>
+                </Typography>
+            )}
             <IconButton onClick={() => handleSetRightPaneFocus(false)}>
                 <Clear />
             </IconButton>
@@ -134,6 +224,7 @@ function ListContainer({
     const [squadronTitles, setSquadronTitles] = useState([]);
     const [ships, setShips] = useState([]);
     const [squadrons, setSquadrons] = useState([]);
+    const [squadronKeywordFilter, setSquadronKeywordFilter] = useState('all');
     const [cardComponentProps, setCardComponentProps] = useState([]);
     const [rightPaneText, setRightPaneText] = useState('');
     const [isCardPropsDelimited, setIsCardPropsDelimited] = useState(false);
@@ -663,7 +754,7 @@ function ListContainer({
             const card = cards.cardsById[id];
             if (card.cardType !== 'ship') continue;
             if (card.faction !== faction) continue;
-            if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
+            if (card.hidden && !versions[version].enabledCards.includes(id)) continue;
             newCardComponentProps.push({
                 id,
                 key: id,
@@ -686,7 +777,7 @@ function ListContainer({
             
             if (card.cardType !== 'objective') continue;
             if (card.objectiveType !== objectiveType) continue;
-            if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
+            if (card.hidden && !versions[version].enabledCards.includes(id)) continue;
 
             let isDisabled = false;
             if (objectiveType === 'assault' && redObjId === id) isDisabled = true;
@@ -714,7 +805,7 @@ function ListContainer({
             
             if (card.cardType !== 'objective') continue;
             if (card.objectiveType !== objectiveType) continue;
-            if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
+            if (card.hidden && !versions[version].enabledCards.includes(id)) continue;
 
             let isDisabled = false;
             if (objectiveType === 'assault' && redObjId === id) isDisabled = true;
@@ -768,8 +859,8 @@ function ListContainer({
             // Check if boarding teams type upgrade can be equipped
             if (card.upgradeSlots.length > 1 && !(openUpgradeSlots['weapons team'] > 0 && openUpgradeSlots['offensive retrofit'] > 0)) continue;
 
-            // Check if the card is omitted per the version of the list
-            if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
+            // Check if the card is hidden per the version of the list
+            if (card.hidden && !versions[version].enabledCards.includes(id)) continue;
 
             // Check if ship already has a modification upgrade or fails uniqueness check
             let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.cardName);
@@ -806,7 +897,7 @@ function ListContainer({
             if (!isUpgradeRequirementsMet(card.requirements, { ...shipCard, faction, flagship: ships[shipIndex].flagship ? ships[shipIndex].flagship : false })) continue;
             if (card.upgradeSlots.length > 1) continue; // no swapping multi-slot upgrades
             if (card.addsUpgradeSlot) continue; // no cards that add upgrade slots
-            if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
+            if (card.hidden && !versions[version].enabledCards.includes(id)) continue;
             let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.cardName) || upgradeCard.id === id;
 
             newCardComponentProps.push({
@@ -830,7 +921,8 @@ function ListContainer({
             const card = cards.cardsById[id];
             if (card.cardType !== 'squadron') continue;
             if (card.faction !== faction) continue;
-            if (versions[version].omittedCards.length > 0 && versions[version].omittedCards.includes(id)) continue;
+            if (card.hidden && !versions[version].enabledCards.includes(id)) continue;
+            if (squadronKeywordFilter !== 'all' && !card.keywords.includes(squadronKeywordFilter)) continue;
             newCardComponentProps.push({
                 id,
                 key: id,
@@ -879,9 +971,11 @@ function ListContainer({
         for (let i = 0; i < cardComponentProps.length; i++) {
             const { id } = cardComponentProps[i];
             const card = cards.cardsById[id];
-            if (card.cardType === 'squadron' && card.isUnique) {
+            if (card.cardType === 'upgrade' && card.isUnique && card.upgradeSlots.includes('officer')) {
                 uniqueCardRowProps.push(cardComponentProps[i]);
-            } else if (card.cardType === 'upgrade' && card.upgradeSlots.length === 1) {
+            } else if (card.cardType === 'squadron' && card.isUnique) {
+                uniqueCardRowProps.push(cardComponentProps[i]);
+            } else if (card.cardType === 'upgrade' && card.upgradeSlots.length === 1 && !card.upgradeSlots.includes('officer')) {
                 uniqueCardRowProps.push(cardComponentProps[i]);
             } else if (card.cardType === 'upgrade' && card.upgradeSlots.length > 1) {
                 nonUniqueCardRowProps.push(cardComponentProps[i]);
@@ -969,24 +1063,40 @@ function ListContainer({
             </div>
             <div className={styles.rightPane} style={{ ...secondaryPaneStyles }}>
                 <RightPaneHeader
+                    faction={faction}
+                    breakpoints={breakpoints}
                     rightPaneText={rightPaneText}
+                    squadronKeywordFilter={squadronKeywordFilter}
                     isRightPaneFocused={isRightPaneFocused}
+                    handleSetSquadronKeywordFilter={keyword => setSquadronKeywordFilter(keyword)}
                     handleSetRightPaneFocus={handleSetRightPaneFocus}
                 />
                 {isRightPaneFocused ? (
                     <div>
                         <div style={{ display: isCardPropsDelimited ? 'none' : 'block' }}>
                             <CardSelector
-                                cardComponents={cardComponentProps.map(cardProps => (<CardButton key={cardProps.id} {...cardProps}/>))}
+                                cardComponents={uniqueCardRowProps.map(cardProps => (<CardButton key={cardProps.id} {...cardProps}/>))}
                             />
                         </div>
                         <div style={{ display: isCardPropsDelimited ? 'block' : 'none' }}>
                             <CardSelector
-                                cardComponents={uniqueCardRowProps.map(cardProps => (<CardButton key={cardProps.id} {...cardProps}/>))}
+                                cardComponents={uniqueCardRowProps
+                                    .filter(cardProps => {
+                                        const card = cards.cardsById[cardProps.id];
+                                        return !(card.cardType === 'squadron' && squadronKeywordFilter !== 'all' && !card.keywords.includes(squadronKeywordFilter));
+                                    })
+                                    .map(cardProps => (<CardButton key={cardProps.id} {...cardProps}/>))
+                                }
                             />
                             <Divider variant="middle" style={{ margin: '10px 0px', color: '#eee' }} />
                             <CardSelector
-                                cardComponents={nonUniqueCardRowProps.map(cardProps => (<CardButton key={cardProps.id} {...cardProps}/>))}
+                                cardComponents={nonUniqueCardRowProps
+                                    .filter(cardProps => {
+                                        const card = cards.cardsById[cardProps.id];
+                                        return !(card.cardType === 'squadron' && squadronKeywordFilter !== 'all' && !card.keywords.includes(squadronKeywordFilter));
+                                    })
+                                    .map(cardProps => (<CardButton key={cardProps.id} {...cardProps}/>))
+                                }
                             />
                         </div>
                     </div>

@@ -12,15 +12,6 @@ const versions = [
         roles: ["everyone"],
         pointDeltas: {},
         footnoteChanges: {},
-        omittedCards: [
-            "tl", // bossk for CIS
-            "tg", // yv 666 for CIS
-            "gp", // moralo eval for CIS
-            "th", // generous benefector
-            "ti", // force of commerce
-            "tj", // enduring fealty
-            "tk" // skakoan pride
-        ],
         enabledCards: [],
         textChanges: {}
     },
@@ -121,7 +112,6 @@ const versions = [
             "gp": ["Added to CIS"],
             "tl": ["Added to CIS"]
         },
-        omittedCards: [],
         enabledCards: [
             "th",
             "ti",
@@ -192,10 +182,6 @@ const versions = [
             "tl": ["Added to CIS"],
             "tg": ["Added to CIS"]
         },
-        omittedCards: [
-            "gp", // yv 666 for CIS
-            "tj", // enduring fealty
-        ],
         enabledCards: [
             "th",
             "ti",
@@ -204,6 +190,41 @@ const versions = [
             "tg"
         ],
         textChanges: {}
+    },
+    {
+        id: 3,
+        label: "ARC Playtesting v2024-10",
+        description: "Special playtesting package focusing on CW",
+        roles: ["core"],
+        enabledCards: [],
+        footnoteChanges: {},
+        textChanges: {},
+        pointDeltas: {
+            "am": -2,
+            "ak": -3,
+            "al": -2,
+            "sx": -4,
+            "iy": -6,
+            "qb": -2,
+            "li": -1,
+            "hh": -2,
+            "hj": -3,
+            "hd": -1,
+            "ab": -2,
+            "ah": -3,
+            "ai": -8,
+            "ac": -3,
+            "ja": -4,
+            "jb": -3,
+            "ot": -1,
+            "pm": -2,
+            "hr": -2,
+            "hv": -1,
+            "mt": -5,
+            "mx": -4,
+            "nc": -1,
+            "ng": 2
+        }
     }
 ];
 
