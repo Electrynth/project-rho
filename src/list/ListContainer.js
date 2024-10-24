@@ -87,7 +87,13 @@ function RightPaneHeader({
                                 </span>
                             }
                             style={{ marginRight: 4 }}
-                            onClick={() => handleSetSquadronKeywordFilter(keyword)}
+                            onClick={() => {
+                                if (keyword === squadronKeywordFilter) {
+                                    handleSetSquadronKeywordFilter('all')
+                                } else {
+                                    handleSetSquadronKeywordFilter(keyword)
+                                }
+                            }}
                         />
                     ))}
                 </>
@@ -100,7 +106,13 @@ function RightPaneHeader({
                         labelId="keyword-select-label"
                         label="Keyword"
                         value={squadronKeywordFilter}
-                        onChange={e => handleSetSquadronKeywordFilter(e.target.value)}
+                        onChange={e => {
+                            if (e.target.value === squadronKeywordFilter) {
+                                handleSetSquadronKeywordFilter('all');
+                            } else {
+                                handleSetSquadronKeywordFilter(e.target.value);
+                            }
+                        }}
                     >
                         <MenuItem key="all" value="all">
                             <span className={robotoCondensed.className}>
