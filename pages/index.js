@@ -217,7 +217,7 @@ export default function Home() {
             <DialogTitle><span className={robotoCondensed.className} style={{ fontSize: 24 }}>Contact Us</span></DialogTitle>
             <DialogContent>
               <DialogContentText>
-              <span className={robotoCondensed.className} style={{ fontSize: 18 }}>Questions, inquiries, feedback, bug reports, and feature requests may be emailed to <a style={{ color: '#a5d6ff' }} href="mailto:contact@legion-hq.com">contact@legion-hq.com</a> or may be sent in a direct message to nick on the Armada Hub discord server.</span>
+              <span className={robotoCondensed.className} style={{ fontSize: 18 }}>Questions, inquiries, feedback, bug reports, and feature requests may be emailed to <a style={{ color: '#a5d6ff' }} href="mailto:contact@legion-hq.com">contact@legion-hq.com</a> or may be sent in a direct message to nick, Simon (CptAwesomer), unskilledfirstofficer, or LargePackage on the Armada Hub discord server.</span>
               </DialogContentText>
             </DialogContent>
         </Dialog>
