@@ -138,6 +138,14 @@ export default function Home() {
               </CardContent>
             </Card>
           ) : undefined}
+          {!isServerReachable ? (
+            <Alert variant="outlined" severity="error" style={{ marginTop: 18 }}>
+              <AlertTitle>
+                Server Error {serverErrorMessage && serverErrorName ? `: ${serverErrorMessage} (${serverErrorName})` : undefined}
+              </AlertTitle>
+              Lists may be unavailable.
+            </Alert>
+          ) : undefined}
           <div style={{ display: 'flex', flexFlow: 'row wrap', alignItems: 'center', marginTop: 18, marginBottom: 18 }}>
             <Chip
               clickable
@@ -173,14 +181,6 @@ export default function Home() {
                 )
             }}
           />
-          {!isServerReachable ? (
-            <Alert variant="outlined" severity="error" style={{ marginTop: 18 }}>
-              <AlertTitle>
-                Server Error {serverErrorMessage && serverErrorName ? `: ${serverErrorMessage} (${serverErrorName})` : undefined}
-              </AlertTitle>
-              Lists may be unavailable.
-            </Alert>
-          ) : undefined}
           <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
           <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
               <FactionLinkButton isAuthenticated={isAuthenticated} faction="rebels" lists={userLists}/>
