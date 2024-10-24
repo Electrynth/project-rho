@@ -112,6 +112,7 @@ export default function Home() {
         // if (user.settings && user.settings.builderAccess) setBuilderAccess(user.settings.builderAccess);
         axios.get(`${urls.api}/lists/email?email=${user.email}`).then(foundLists => {
           setUserLists(foundLists.data);
+          setIsServerReachable(true);
         });
       }).catch(e => {
         setIsServerReachable(false);
@@ -163,10 +164,16 @@ export default function Home() {
           </div>
           <Chip
             clickable={!isLoading}
-            label={
-              <span className={robotoCondensed.className} style={{ fontSize: 16 }}>
-                {isAuthenticated ? `Logout (${user.email})` : 'Login'}
-              </span>
+            label={isLoading ?
+              (
+                <span className={robotoCondensed.className} style={{ fontSize: 16 }}>
+                  Loading...
+                </span>
+              ) : (
+                <span className={robotoCondensed.className} style={{ fontSize: 16 }}>
+                  {isAuthenticated ? `Logout (${user.email})` : 'Login'}
+                </span>
+              )
             }
             className={robotoCondensed.className}
             onClick={() => {
