@@ -66,6 +66,7 @@ function RightPaneHeader({
                 <>
                     <Chip
                         size="small"
+                        key="all"
                         variant={squadronKeywordFilter === 'all' ? 'filled' : 'outlined'}
                         label={
                             <span className={robotoCondensed.className}>
@@ -101,13 +102,13 @@ function RightPaneHeader({
                         value={squadronKeywordFilter}
                         onChange={e => handleSetSquadronKeywordFilter(e.target.value)}
                     >
-                        <MenuItem value="all">
+                        <MenuItem key="all" value="all">
                             <span className={robotoCondensed.className}>
                                 ALL
                             </span>
                         </MenuItem>
                         {squadronKeywords[faction].map(keyword => (
-                            <MenuItem value={keyword}>
+                            <MenuItem key={keyword} value={keyword}>
                                 <span className={robotoCondensed.className}>
                                     {keyword.toUpperCase()}
                                 </span>
