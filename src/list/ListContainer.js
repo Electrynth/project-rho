@@ -988,6 +988,8 @@ function ListContainer({
                 nonUniqueCardRowProps.push(cardComponentProps[i]);
             }
         }
+    } else {
+        uniqueCardRowProps.concat(cardComponentProps);
     }
 
     return (
@@ -1076,7 +1078,7 @@ function ListContainer({
                     <div>
                         <div style={{ display: isCardPropsDelimited ? 'none' : 'block' }}>
                             <CardSelector
-                                cardComponents={uniqueCardRowProps.map(cardProps => (<CardButton key={cardProps.id} {...cardProps}/>))}
+                                cardComponents={cardComponentProps.map(cardProps => (<CardButton key={cardProps.id} {...cardProps}/>))}
                             />
                         </div>
                         <div style={{ display: isCardPropsDelimited ? 'block' : 'none' }}>
