@@ -97,6 +97,9 @@ export default function Home() {
   } = useAuth0();
 
   const [userLists, setUserLists] = useState([]);
+  const [isServerReachable, setIsServerReachable] = useState(true);
+  const [serverErrorMessage, setServerErrorMessage] = useState();
+  const [serverErrorName, setServerErrorName] = useState();
   const [isAboutUsDialogOpen, setIsAboutUsDialogOpen] = useState(false);
   const [isContactDialogOpen, setIsContactDialogOpen] = useState(false);
   // const [builderAccess, setBuilderAccess] = useState(false);
@@ -110,6 +113,12 @@ export default function Home() {
         axios.get(`${urls.api}/lists/email?email=${user.email}`).then(foundLists => {
           setUserLists(foundLists.data);
         });
+      }).catch(e => {
+        setIsServerReachable(false);
+        if (e.name) setServerErrorName(e.name);
+        else setServerErrorName('No error name');
+        if (e.message) setServerErrorMessage(e.message);
+        else setServerErrorMessage('No error message found');
       });
     }
   }, [user]);
@@ -164,6 +173,14 @@ export default function Home() {
                 )
             }}
           />
+          {!isServerReachable ? (
+            <Alert variant="outlined" severity="error" style={{ marginTop: 18 }}>
+              <AlertTitle>
+                Server Error {serverErrorMessage && serverErrorName ? `: ${serverErrorMessage} (${serverErrorName})` : undefined}
+              </AlertTitle>
+              Lists may be unavailable.
+            </Alert>
+          ) : undefined}
           <Divider variant="middle" style={{ margin: '20px 0px', width: 300, backgroundColor: '#2f2f2f' }} />
           <div style={{ display: 'flex', flexFlow: 'row nowrap' }}>
               <FactionLinkButton isAuthenticated={isAuthenticated} faction="rebels" lists={userLists}/>
