@@ -63,7 +63,7 @@ function RightPaneHeader({
     const SquadronFilter = () => {
         if (breakpoints.lg) {
             return (
-                <>
+                <div style={{ display: 'flex', flexFlow: 'row wrap', gap: 4 }}>
                     <Chip
                         size="small"
                         key="all"
@@ -73,7 +73,6 @@ function RightPaneHeader({
                                 ALL
                             </span>
                         }
-                        style={{ marginRight: 4 }}
                         onClick={() => handleSetSquadronKeywordFilter('all')}
                     />
                     {squadronKeywords[faction].map(keyword => (
@@ -86,7 +85,6 @@ function RightPaneHeader({
                                     {keyword.toUpperCase()}
                                 </span>
                             }
-                            style={{ marginRight: 4 }}
                             onClick={() => {
                                 if (keyword === squadronKeywordFilter) {
                                     handleSetSquadronKeywordFilter('all')
@@ -96,7 +94,7 @@ function RightPaneHeader({
                             }}
                         />
                     ))}
-                </>
+                </div>
             );
         } else {
             return (
