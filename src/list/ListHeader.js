@@ -359,7 +359,7 @@ function ListHeader({
                    
                 </div>
                 <DialogActions>
-                    <Button color="secondary" size="large" onClick={() => setZoomDialogCard()}>
+                    <Button color="secondary" size="large" onClick={() => setIsDialogOpen(false)}>
                         <span className={robotoCondensed.className}>Back</span>
                     </Button>
                 </DialogActions>
