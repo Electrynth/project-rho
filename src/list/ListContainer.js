@@ -159,7 +159,12 @@ function RightPaneHeader({
                     </span>
                 </Typography>
             )}
-            <IconButton onClick={() => handleSetRightPaneFocus(false)}>
+            <IconButton
+                onClick={() => {
+                    handleSetRightPaneFocus(false);
+                    handleSetSquadronKeywordFilter('all')
+                }}
+            >
                 <Clear />
             </IconButton>
         </Paper>
@@ -556,6 +561,7 @@ function ListContainer({
         setCardComponentProps([]);
         setRightPaneText('');
         setIsCardPropsDelimited(false);
+        setSquadronKeywordFilter('all');
     }
 
 
@@ -593,6 +599,7 @@ function ListContainer({
         setCardComponentProps([]);
         setRightPaneText('');
         setIsCardPropsDelimited(false);
+        setSquadronKeywordFilter('all');
     }
 
     const incrementSquadron = (index) => {
@@ -955,11 +962,13 @@ function ListContainer({
             const card = cards.cardsById[id];
             if (card.cardType !== 'squadron') continue;
             if (card.faction !== faction) continue;
+            if (card.hidden && !versions[version].enabledCards.includes(id)) continue;
+            if (squadronKeywordFilter !== 'all' && !card.keywords.includes(squadronKeywordFilter)) continue;
             newCardComponentProps.push({
                 id,
                 key: id,
                 version,
-                isDisabled: card.title ? squadronTitles.includes(card.title) : false,
+                isDisabled: uniques.includes(card.cardName) || squadronTitles.includes(card.title),
                 onClick: () => swapSquadron(index, id)
             });
         }
