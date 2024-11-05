@@ -446,7 +446,7 @@ function ListContainer({
     const copyShip = (index) => {
         const ship = ships[index];
         const newShip = { id: ship.id, hasModification: false };
-        newShip.upgradesEquipped = ship.upgradesEquipped.map(upgrade => {
+        newShip.upgradesEquipped = ship.upgradesEquipped.filter(upgrade => !(Boolean(upgrade.parentCardId))).map(upgrade => {
             const upgradeCard = cards.cardsById[upgrade.id];
             if (upgradeCard && upgradeCard.isModification) newShip.hasModification = true;
             return {
@@ -523,7 +523,7 @@ function ListContainer({
             newShip.upgradesEquipped[upgradeIndex].id = id;
         }
         if (upgradeCard.addsUpgradeSlot) {
-            if (upgradeCard.id === 'rr') { // only card that conditionally adds a slot
+            if (upgradeCard.id === 'rr') { // only card that conditionally adds a slot :))))
                 let hasDefensiveRetro = false;
                 newShip.upgradesEquipped.forEach(upgradeSlot => {
                     if (upgradeSlot.upgradeType === 'defensive retrofit') hasDefensiveRetro = true;
