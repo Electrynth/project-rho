@@ -1,7 +1,6 @@
 /*
     pointDeltas are cards that get a point change
-    omittedCards is how to hide cards from the "everyone" role, note: any cards NOT in this field will be visible to the public
-    enabledCards is only to show what cards are being added to that "version", note: this field doesn't actuall do anything, its cosmetic and convenient
+    enabledCards overrides the "hidden" attribute on cards
 */
 
 const versions = [
@@ -21,6 +20,7 @@ const versions = [
         description: "Playtesting package for CORE members",
         roles: ["core"],
         pointDeltas: {
+            "on": -2,
             "fw": -1,
             "az": -4,
             "bl": -5,
@@ -193,38 +193,13 @@ const versions = [
     },
     {
         id: 3,
-        label: "ARC Playtesting v2024-10",
-        description: "Special playtesting package focusing on CW",
-        roles: ["core"],
+        label: "ARC November Tournament",
+        description: "Tournament description TBD",
+        roles: ["everyone"],
         enabledCards: [],
         footnoteChanges: {},
         textChanges: {},
-        pointDeltas: {
-            "am": -2,
-            "ak": -3,
-            "al": -2,
-            "sx": -4,
-            "iy": -6,
-            "qb": -2,
-            "li": -1,
-            "hh": -2,
-            "hj": -3,
-            "hd": -1,
-            "ab": -2,
-            "ah": -3,
-            "ai": -8,
-            "ac": -3,
-            "ja": -4,
-            "jb": -3,
-            "ot": -1,
-            "pm": -2,
-            "hr": -2,
-            "hv": -1,
-            "mt": -5,
-            "mx": -4,
-            "nc": -1,
-            "ng": 2
-        }
+        pointDeltas: {}
     }
 ];
 
