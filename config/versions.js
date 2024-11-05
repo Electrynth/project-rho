@@ -1,6 +1,9 @@
 /*
-    pointDeltas are cards that get a point change
+    roles are the groups that have access to the version
+    pointDeltas are cards that get a point change { "<card id>: <point delta>" }
     enabledCards overrides the "hidden" attribute on cards
+    footnoteChanges adds text chips at the bottom of cards { "<card id>": ["Text1", "Text2", etc...] }
+    textChanges adds a chip button that brings up a popup with the new text { "<card id": ["New Text1", "New Text2", etc...] }
 */
 
 const versions = [
