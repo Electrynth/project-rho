@@ -40,7 +40,10 @@ const roles = {
             'skybloub@hotmail.fr',
             'chris_a_spencer@hotmail.com',
             'larkairn@hotmail.co.uk',
-            'tora.samurai@web.de'
+            'tora.samurai@web.de',
+            'mathieu_barbeau@hotmail.ca',
+            'marcmalfara@gmail.com',
+            'mr.matt.chestnut@gmail.com'
         ]
     }
 };
