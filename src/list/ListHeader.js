@@ -331,7 +331,11 @@ function ListHeader({
                             })}
                         </Select>
                     </FormControl>
-                    <Typography className={robotoCondensed.className}>*Changing the version will reset your list</Typography>
+                    <Typography variant="h6">
+                        <span className={robotoCondensed.className}>
+                        *Changing the version will reset your list
+                        </span>
+                    </Typography>
                     <Paper style={{ marginTop: 8, padding: 12 }}>
                         <Typography variant="h4"><span className={robotoCondensed.className}>Description</span></Typography>
                         <div style={{ maxHeight: 600, overflowY: 'scroll' }}>
