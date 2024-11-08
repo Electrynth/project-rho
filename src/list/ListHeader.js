@@ -254,7 +254,9 @@ function ListHeader({
     if (version === 3) {
         addendum = (
             <Typography className={robotoCondensed.className}>
-                Tournament outline is <a style={{ color: '#a5d6ff' }} href="https://drive.google.com/file/d/12vIx-VqgKfb0NNlAlfz-xhxW8eJ84TAD/view" target="_blank" rel="noopener noreferrer">here</a>. Tournament official changelog is <a style={{ color: '#a5d6ff' }} href="https://drive.google.com/file/d/1u41PbY9UHftr0Wj671YhTGKWAvixKg4I/view" target="_blank" rel="noopener noreferrer">here</a>.
+                <span className={robotoCondensed.className}>
+                    Tournament outline is <a style={{ color: '#a5d6ff' }} href="https://drive.google.com/file/d/12vIx-VqgKfb0NNlAlfz-xhxW8eJ84TAD/view" target="_blank" rel="noopener noreferrer">here</a>. Tournament official changelog is <a style={{ color: '#a5d6ff' }} href="https://drive.google.com/file/d/1u41PbY9UHftr0Wj671YhTGKWAvixKg4I/view" target="_blank" rel="noopener noreferrer">here</a>.
+                </span>
             </Typography>
         );
     }
