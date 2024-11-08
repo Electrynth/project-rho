@@ -34,7 +34,7 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = { } }) {
                 <Chip
                     size="small"
                     key={`footnote-${i}`}
-                    label={footnote}
+                    label={<span className={robotoCondensed.className}>{footnote}</span>}
                 />
             );
         });
@@ -45,7 +45,7 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = { } }) {
             <Chip
                 size="small"
                 key="pt-change-footnote"
-                label={`Cost: ${card.points}->${card.points + pointDelta}`}
+                label={<span className={robotoCondensed.className}>{`Cost: ${card.points}->${card.points + pointDelta}`}</span>}
             />
         );
     }

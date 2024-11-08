@@ -23,7 +23,10 @@ import {
     FormControl,
     InputLabel,
     MenuItem,
-    Select
+    Select,
+    List,
+    ListItem,
+    ListItemText
 } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import Clear from '@mui/icons-material/Clear';
@@ -1156,6 +1159,31 @@ function ListContainer({
                         />
                     ) : undefined}
                 </DialogContent>
+                <div style={{ marginLeft: 8, marginRight: 8 }}>
+                    <List>
+                        {zoomDialogCard && versions[version].pointDeltas[zoomDialogCard] ? (
+                            <ListItem key="pt-change-footnote">
+                                <ListItemText
+                                    primary={<span className={robotoCondensed.className}>{`Point Change: ${cards.cardsById[zoomDialogCard].points} -> ${cards.cardsById[zoomDialogCard].points + versions[version].pointDeltas[zoomDialogCard]}`}</span>}
+                                />
+                            </ListItem>
+                        ) : undefined}
+                        {zoomDialogCard && versions[version].footnoteChanges[zoomDialogCard] && versions[version].footnoteChanges.length > 0 ? (
+                            versions[version].footnoteChanges[zoomDialogCard].map(footnoteChange => (
+                                <ListItem key={footnoteChange}>
+                                    <ListItemText primary={<span className={robotoCondensed.className}>Card Change (check official changelog for more details)</span>} secondary={<span className={robotoCondensed.className}>{footnoteChange}</span>} />
+                                </ListItem>
+                            ))
+                        ) : undefined}
+                        {zoomDialogCard && versions[version].textChanges[zoomDialogCard] && versions[version].textChanges[zoomDialogCard].length > 0 ? (
+                            versions[version].textChanges[zoomDialogCard].map(textChange => (
+                                <ListItem key={textChange}>
+                                    <ListItemText secondary={<span className={robotoCondensed.className}>{textChange}</span>} primary={<span className={robotoCondensed.className}>Card Change (check official changelog for more details)</span>} />
+                                </ListItem>
+                            ))
+                        ) : undefined}
+                    </List>
+                </div>
                 <DialogActions>
                     <Button color="secondary" size="large" onClick={() => setZoomDialogCard()}>
                         <span className={robotoCondensed.className}>Back</span>
