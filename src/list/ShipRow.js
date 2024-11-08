@@ -17,7 +17,7 @@ import UpgradeIcon from 'src/common/UpgradeIcon';
 
 function ShipRow({
     index,
-    version = 1,
+    version = 0,
     ship,
     ships,
     commander,
@@ -34,7 +34,10 @@ function ShipRow({
 
     for (let i = 0; i < ship.upgradesEquipped.length; i++) {
         const upgrade = ship.upgradesEquipped[i];
-        if (upgrade.id && upgrade.id !== true) upgradePoints += cards.cardsById[upgrade.id].points;
+        if (upgrade.id && upgrade.id !== true) {
+            upgradePoints += cards.cardsById[upgrade.id].points;
+            if (versions[version].pointDeltas[upgrade.id]) upgradePoints += versions[version].pointDeltas[upgrade.id];
+        }
     }
 
     return (
