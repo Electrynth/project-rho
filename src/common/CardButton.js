@@ -3,6 +3,7 @@ import {
     Box,
     Typography,
     Chip,
+    Divider,
     Card,
     CardActionArea,
     CardMedia,
@@ -14,6 +15,7 @@ import {
 import SearchIcon from '@mui/icons-material/Search';
 import cards from 'config/cards.js';
 import versions from 'config/versions';
+import robotoCondensed from 'config/font';
 
 
 function CardButton({ id, version, isDisabled, onClick, cardStyles = { } }) {
@@ -85,21 +87,29 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = { } }) {
             </CardActionArea>
             {version >= 0 ? (
                 <CardActions>
-                    {textChanges[id] && textChanges[id].length > 0 ? <Chip icon={<SearchIcon />} size="small" label="Text Change" onClick={handleSetDialogOpen} /> : undefined}
+                    {textChanges[id] && textChanges[id].length > 0 ? <Chip icon={<SearchIcon />} size="small" label={<span className={robotoCondensed.className}>Text Change</span>} onClick={handleSetDialogOpen} /> : undefined}
                     {footnoteActions.length > 0 ? footnoteActions : undefined}
                     {footnoteActions.length === 0 && !textChanges[id] ? <div /> : undefined}
                 </CardActions>
             ) : undefined}
             <Dialog open={isDialogOpen} onClose={handleSetDialogClose}>
-                <DialogTitle>{card.cardName}</DialogTitle>
+                <DialogTitle className={robotoCondensed.className} style={{ fontSize: 24 }}>{card.cardName}</DialogTitle>
                 <DialogContent>
                     {textChanges[id] && textChanges[id].length > 0 ? textChanges[id].map((line, i) => {
                         return (
-                            <Typography key={`line-${i}`}>
-                                {line} <br/> <br/>
+                            <Typography key={`line-${i}`} style={{ fontSize: 18 }}>
+                                <span className={robotoCondensed.className}>
+                                    {line}
+                                </span> <br/> <br/>
                             </Typography>
                         );
                     }) : undefined}
+                    <Divider />
+                    <Typography variant="subtitle2">
+                        <span className={robotoCondensed.className}>
+                            This is a shorthand summary of the text change. Please refer to the official changelog document for the full official text change.
+                        </span>
+                    </Typography>
                 </DialogContent>
             </Dialog>
         </Card>
