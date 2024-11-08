@@ -18,7 +18,7 @@ import versions from 'config/versions';
 import robotoCondensed from 'config/font';
 
 
-function CardButton({ id, version, isDisabled, onClick, cardStyles = { } }) {
+function CardButton({ id, ships, squadronTitles, shipIndex, uniques, version, isDisabled, onClick, addSquadron, squadronIndex, swapSquadron, checkIfDisabled, cardStyles = { } }) {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     if (id === true) return undefined;
     const card = cards.cardsById[id];
@@ -57,16 +57,38 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = { } }) {
             sx={{ marginRight: 1, marginBottom: 1 }}
             style={{ maxWidth, ...cardStyles }}
         >
-            <CardActionArea onClick={isDisabled ? undefined : onClick} style={{ display: 'flex', justifyContent: 'flex-end' }}>
+            <CardActionArea
+                onClick={
+                    checkIfDisabled ?
+                        (
+                            checkIfDisabled(shipIndex, squadronTitles, uniques, card) ?
+                                undefined :
+                                card.cardType === 'squadron' ? squadronIndex > -1 ? () => swapSquadron(squadronIndex, id) : () => addSquadron(id) : onClick
+                        ) :
+                        (
+                            isDisabled ?
+                                undefined :
+                                card.cardType === 'squadron' ? squadronIndex > -1 ? () => swapSquadron(squadronIndex, id) : () => addSquadron(id) : onClick
+                        )
+                }
+                style={{
+                    display: 'flex',
+                    justifyContent: 'flex-end'
+                }}
+            >
                 <CardMedia
                     component="img"
                     image={cards.getCardImageUrl(card.imageName ? card.imageName : card.cardName, card.cardType)}
                     alt={card.cardName}
-                    style={{ maxHeight: card.cardType === 'upgrade' ? 245 : 290, opacity: isDisabled ? '0.25' : '1.0', ...cardStyles }}
+                    style={{
+                        maxHeight: card.cardType === 'upgrade' ? 245 : 290,
+                        opacity: checkIfDisabled ? (checkIfDisabled(shipIndex, squadronTitles, uniques, card) ? '0.25' : '1.0') : (isDisabled ? '0.25' : '1.0'),
+                        ...cardStyles
+                    }}
                 />
                 <Box
                     style={{
-                        backgroundColor: `rgb(255, 255, 255, ${isDisabled ? '0.75' : '1.0'}`,
+                        backgroundColor: `rgb(255, 255, 255, ${checkIfDisabled ? (checkIfDisabled(shipIndex, squadronTitles, uniques, card) ? '0.75' : '1.0') : (isDisabled ? '0.75' : '1.0')}`,
                         borderRadius: 4,
                         bottom: 2,
                         right: 7,
