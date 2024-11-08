@@ -93,14 +93,16 @@ function CardButton({ id, version, isDisabled, onClick, cardStyles = { } }) {
                 </CardActions>
             ) : undefined}
             <Dialog open={isDialogOpen} onClose={handleSetDialogClose}>
-                <DialogTitle className={robotoCondensed.className} style={{ fontSize: 24 }}>{card.cardName}</DialogTitle>
+                <DialogTitle><span className={robotoCondensed.className} style={{ fontSize: 24 }}>{card.cardName}</span></DialogTitle>
                 <DialogContent>
                     {textChanges[id] && textChanges[id].length > 0 ? textChanges[id].map((line, i) => {
                         return (
-                            <Typography key={`line-${i}`} style={{ fontSize: 18 }}>
-                                <span className={robotoCondensed.className}>
+                            <Typography key={`line-${i}`}>
+                                <span className={robotoCondensed.className} style={{ fontSize: 18 }}>
                                     {line}
-                                </span> <br/> <br/>
+                                </span>
+                                <br />
+                                <br />
                             </Typography>
                         );
                     }) : undefined}
