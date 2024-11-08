@@ -56,16 +56,7 @@ function ListFooter({ listId, listEmail, saveList, deleteList, generateExportedL
                 <IconButton size="small" style={{ marginRight: 2, cursor: 'pointer' }} onClick={() => setIsDialogOpen(true)}>
                     <OpenInNew fontSize="inherit" />
                 </IconButton>
-                <IconButton disabled size="small" style={{ marginRight: 2 }}>
-                    <Print fontSize="inherit" />
-                </IconButton>
-                {listId ? (
-                    <IconButton disabled size="small" style={{ marginRight: 2, cursor: 'pointer' }} onClick={() => {}}>
-                        <FileCopy fontSize="inherit" />
-                    </IconButton>
-                ) : (
-                    undefined
-                )}
+                
                 {listId ? (
                     <IconButton
                         disabled={!(user && user.email === listEmail)}
@@ -91,15 +82,16 @@ function ListFooter({ listId, listEmail, saveList, deleteList, generateExportedL
 }
 
 /*
-<IconButton size="small" style={{ marginRight: 2 }}>
-                    <Print fontSize="inherit" />
-                </IconButton>
-<IconButton size="small" style={{ marginRight: 2 }}>
-                    <FileCopy fontSize="inherit" />
-                </IconButton>
-                <IconButton size="small" style={{ marginRight: 2 }}>
-                    <Delete fontSize="inherit" />
-                </IconButton>
+<IconButton disabled size="small" style={{ marginRight: 2 }}>
+    <Print fontSize="inherit" />
+</IconButton>
+{listId ? (
+    <IconButton disabled size="small" style={{ marginRight: 2, cursor: 'pointer' }} onClick={() => {}}>
+        <FileCopy fontSize="inherit" />
+    </IconButton>
+) : (
+    undefined
+)}
 */
 
 export default ListFooter;
