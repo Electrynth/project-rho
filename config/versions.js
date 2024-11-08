@@ -223,7 +223,8 @@ const versions = [
             "mt": -4,
             "mx": -2,
             "sw": 2,
-            "ng": 2
+            "ng": 2,
+            "lq": 2
         }
     }
 ];

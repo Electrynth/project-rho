@@ -248,6 +248,17 @@ function ListHeader({
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const handleOpen = () => setIsDialogOpen(true);
     const handleClose = () => setIsDialogOpen(false);
+
+    let addendum = undefined;
+
+    if (version === 3) {
+        addendum = (
+            <Typography className={robotoCondensed.className}>
+                Tournament outline is <a style={{ color: '#a5d6ff' }} href="https://drive.google.com/file/d/12vIx-VqgKfb0NNlAlfz-xhxW8eJ84TAD/view" target="_blank" rel="noopener noreferrer">here</a>. Tournament official changelog is <a style={{ color: '#a5d6ff' }} href="https://drive.google.com/file/d/1u41PbY9UHftr0Wj671YhTGKWAvixKg4I/view" target="_blank" rel="noopener noreferrer">here</a>.
+            </Typography>
+        );
+    }
+
     return (
         <div id="list-header" style={{ display: 'flex', flexFlow: 'column', paddingTop: 20 }}>
             <div className={robotoCondensed.className} style={{ display: 'flex', flexFlow: 'row nowrap', alignItems: 'center', marginBottom: 8 }}>
@@ -327,6 +338,12 @@ function ListHeader({
                             ) : (
                                 <Typography><span className={robotoCondensed.className}>None</span></Typography>
                             )}
+                            {addendum ? (
+                                <>
+                                    <br />
+                                    {addendum}
+                                </>
+                            ) : undefined}
                         </div>
                     </Paper>
                     <Paper style={{ marginTop: 8, padding: 12 }} className={robotoCondensed.className}>

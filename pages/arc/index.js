@@ -1,9 +1,28 @@
 import {
     Typography,
     Divider,
+    Box,
+    Tabs,
+    Tab,
     useMediaQuery
 } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
+
+function CustomTabPanel(props) {
+    const { children, value, index, ...other } = props;
+  
+    return (
+      <div
+        role="tabpanel"
+        hidden={value !== index}
+        id={`simple-tabpanel-${index}`}
+        aria-labelledby={`simple-tab-${index}`}
+        {...other}
+      >
+        {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+      </div>
+    );
+  }
 
 export default function Arc() {
 
@@ -19,10 +38,24 @@ export default function Arc() {
             <Typography variant="h2">
                 Armada Ruleset Collective
             </Typography>
+            <Box sx={{ width: '100%' }}>
+                <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+                    <Tabs value={value} onChange={handleTabChange}>
+                        <Tab label="About Us" />
+                        <Tab label="The Team" />
+                        <Tab label="FAQ" />
+                    </Tabs>
+                </Box>
+                <CustomTabPanel value={value} index={0}>
+                    Item One
+                </CustomTabPanel>
+            </Box>
             <div style={{ display: 'flex', flexFlow: 'column nowrap', 'alignItems': 'center' }}>
                 <Typography variant="h4">What is ARC?</Typography>
                 <Typography>
-                    We are stuff and things. Maybe a picture of the hierarchy.
+                    &emsp;&emsp;The Armada Ruleset Collective (ARC) is a coalition of judges, tournament organizers, and competitive players dedicated to stewarding the competitive season of Star Wars: Armada by helping maintain a high level of organized play.
+                    Our primary goal is to maintain a balanced ruleset that players will use to keep the game flourishing for years to come.
+
                 </Typography>
             </div>
             <div style={{ display: 'flex', flexFlow: 'column nowrap', 'alignItems': 'center' }}>
@@ -44,13 +77,13 @@ export default function Arc() {
                     }}
                 >
                     <div style={{ width: '100%' }}>
-                        <Typography variant="h5">Nick</Typography>
+                        <Typography variant="h5">Nicholas Brown</Typography>
                         <Typography variant="subtitle1">@cactus.cooler</Typography>
                         <Divider />
                         
                     </div>
                     <div style={{ width: '100%' }}>
-                        <Typography variant="h5">Nick</Typography>
+                        <Typography variant="h5">Nicholas Larson</Typography>
                         <Typography variant="subtitle1">@unskilledfirstofficer</Typography>
                         <Divider />
                         <Typography>
@@ -58,7 +91,7 @@ export default function Arc() {
                         </Typography>
                     </div>
                     <div style={{ width: '100%' }}>
-                        <Typography variant="h5">Simon</Typography>
+                        <Typography variant="h5">Simon Girard</Typography>
                         <Typography variant="subtitle1">@cptawesomer</Typography>
                         <Divider />
                         <Typography>
@@ -66,7 +99,7 @@ export default function Arc() {
                         </Typography>
                     </div>
                     <div style={{ width: '100%' }}>
-                        <Typography variant="h5">Mack</Typography>
+                        <Typography variant="h5">Mackenzie Dalla Lana</Typography>
                         <Typography variant="subtitle1">@largepackage</Typography>
                         <Divider />
                         <Typography>
