@@ -7150,5 +7150,27 @@
     ],
     "cardType": "squadron",
     "id": "tm"
+  },
+  "tn": {
+    "cardName": "Linked Turbolaser Towers",
+    "points": 7,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [
+      "OR",
+      {
+        "faction": "republic"
+      },
+      {
+        "faction": "separatists"
+      }
+    ],
+    "isModification": false,
+    "id": "tn",
+    "hidden": true,
+    "cardType": "upgrade"
   }
 }

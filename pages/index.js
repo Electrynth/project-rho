@@ -115,6 +115,7 @@ export default function Home() {
           setIsServerReachable(true);
         });
       }).catch(e => {
+        console.error(e);
         setIsServerReachable(false);
         if (e.name) setServerErrorName(e.name);
         else setServerErrorName('No error name');
@@ -142,9 +143,9 @@ export default function Home() {
           {!isServerReachable ? (
             <Alert variant="outlined" severity="error" style={{ marginTop: 18 }}>
               <AlertTitle>
-                Server Error {serverErrorMessage && serverErrorName ? `: ${serverErrorMessage} (${serverErrorName})` : undefined}
+                Server Error: Lists may be unavailable
               </AlertTitle>
-              Lists may be unavailable.
+              {serverErrorMessage && serverErrorName ? `${serverErrorMessage} (${serverErrorName})` : 'Unknown Error - check logs.'}
             </Alert>
           ) : undefined}
           <div style={{ display: 'flex', flexFlow: 'row wrap', alignItems: 'center', marginTop: 18, marginBottom: 18 }}>
@@ -202,13 +203,19 @@ export default function Home() {
             <DialogContent>
               <DialogContentText>
                 <span className={robotoCondensed.className} style={{ fontSize: 18 }}>
-                  This website is an unofficial fan creation that is intended to act as platform for official, unofficial, and fan-created Star Wars: Armada content.
+                  This website is an unofficial fan creation that is intended to act as platform and list builder for official, unofficial, and fan-created Star Wars: Armada content. More information on Star Wars: Armada can be found <a style={{ color: '#a5d6ff' }} href="https://www.fantasyflightgames.com/en/products/star-wars-armada/" target="_blank" rel="noopener noreferrer">here</a>.
                 </span>
               </DialogContentText>
               <br />
               <DialogContentText>
                 <span className={robotoCondensed.className} style={{ fontSize: 18 }}>
                   All images, game symbols, and text is copyright Lucasfilm Ltd. and Atomic Mass Games. This website is NOT affiliated or sponsored by Atomic Mass Games.
+                </span>
+              </DialogContentText>
+              <br />
+              <DialogContentText>
+                <span className={robotoCondensed.className} style={{ fontSize: 18 }}>
+                  Click on the faction icon buttons to create a list of ships and squadrons for that faction. You may create an account to save your lists and share them. If you are new to the game click the Contact Us button and send us a message! Someone will reach out to help you get started and provide you with additional resources on the game.
                 </span>
               </DialogContentText>
             </DialogContent>
