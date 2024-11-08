@@ -71,7 +71,7 @@ function FactionLinkButton({
             </MenuItem>
           )}
           <Divider />
-          {factionLists.map((list, index) => {
+          {factionLists.reverse().map((list, index) => {
             return (
               <MenuItem
                 key={`list_${index}`}
