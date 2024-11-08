@@ -880,6 +880,8 @@ function ListContainer({
             // Check if the card is hidden per the version of the list
             if (card.hidden && !versions[version].enabledCards.includes(id)) continue;
 
+            if (versions[version].disabledCards.includes(id)) continue;
+
             // Check if ship already has a modification upgrade or fails uniqueness check
             let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.cardName);
             ship.upgradesEquipped.forEach(upgrade => {
