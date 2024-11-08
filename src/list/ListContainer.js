@@ -1171,14 +1171,14 @@ function ListContainer({
                         {zoomDialogCard && versions[version].footnoteChanges[zoomDialogCard] && versions[version].footnoteChanges.length > 0 ? (
                             versions[version].footnoteChanges[zoomDialogCard].map(footnoteChange => (
                                 <ListItem key={footnoteChange}>
-                                    <ListItemText primary={<span className={robotoCondensed.className}>Card Change (check official changelog for more details)</span>} secondary={<span className={robotoCondensed.className}>{footnoteChange}</span>} />
+                                    <ListItemText primary={<span className={robotoCondensed.className}>Card Change (check log for details)</span>} secondary={<span className={robotoCondensed.className}>{footnoteChange}</span>} />
                                 </ListItem>
                             ))
                         ) : undefined}
                         {zoomDialogCard && versions[version].textChanges[zoomDialogCard] && versions[version].textChanges[zoomDialogCard].length > 0 ? (
                             versions[version].textChanges[zoomDialogCard].map(textChange => (
                                 <ListItem key={textChange}>
-                                    <ListItemText secondary={<span className={robotoCondensed.className}>{textChange}</span>} primary={<span className={robotoCondensed.className}>Card Change (check official changelog for more details)</span>} />
+                                    <ListItemText secondary={<span className={robotoCondensed.className}>{textChange}</span>} primary={<span className={robotoCondensed.className}>Card Change (check log for details)</span>} />
                                 </ListItem>
                             ))
                         ) : undefined}
