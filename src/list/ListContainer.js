@@ -526,7 +526,7 @@ function ListContainer({
             newShip.upgradesEquipped[upgradeIndex].id = id;
         }
         if (upgradeCard.addsUpgradeSlot) {
-            if (upgradeCard.id === 'rr') { // only card that conditionally adds a slot :))))
+            if (upgradeCard.id === 'rr' && cards.cardsById[newShip.id].shipSize !== 'small') { // only card that conditionally adds a slot :))))
                 let hasDefensiveRetro = false;
                 newShip.upgradesEquipped.forEach(upgradeSlot => {
                     if (upgradeSlot.upgradeType === 'defensive retrofit') hasDefensiveRetro = true;
@@ -664,8 +664,6 @@ function ListContainer({
         setRightPaneText('');
     }
 
-    console.log(uniques);
-
     const swapUpgrade = (shipIndex, upgradeIndex, id) => {
         const newShips = [...ships];
         const newUniques = [...uniques];
@@ -731,7 +729,6 @@ function ListContainer({
         if (upgradeCard.addsUpgradeSlot) {
             let secondUpgradeCardIndex;
             for (let i = 0; i < newShip.upgradesEquipped.length; i++) {
-                console.log('\t', newShip.upgradesEquipped[i]);
                 if (newShip.upgradesEquipped[i].parentCardId && newShip.upgradesEquipped[i].parentCardId === upgradeCard.id) {
                     secondUpgradeCardIndex = i;
                     if (newShip.upgradesEquipped[i].id) {
@@ -746,6 +743,9 @@ function ListContainer({
                 }
             }
             newShip.upgradesEquipped.splice(secondUpgradeCardIndex, 1);
+            handleSetRightPaneFocus(false);
+            setCardComponentProps([]);
+            setRightPaneText('');
         }
 
         if (upgrade.parentCardId) {
@@ -860,6 +860,8 @@ function ListContainer({
         setIsCardPropsDelimited(false)
     }
 
+    console.log(ships);
+
     const setEligibleUpgradesToAdd = (shipIndex, upgradeIndex) => {
         const ship = ships[shipIndex];
         const shipCard = cards.cardsById[ships[shipIndex].id];
@@ -898,7 +900,7 @@ function ListContainer({
             if (card.hidden && !versions[version].enabledCards.includes(id)) continue;
 
             if (versions[version].disabledCards.includes(id)) continue;
-
+            
             // Check if ship already has a modification upgrade or fails uniqueness check
             let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.cardName);
             ship.upgradesEquipped.forEach(upgrade => {
@@ -910,7 +912,17 @@ function ListContainer({
                 version,
                 isDisabled,
                 shipIndex,
-                checkIfDisabled: (shipIndex, squadronTitles, uniques, card) => (ship.hasModification && card.isModification || uniques.includes(card.cardName)),
+                checkIfDisabled: (shipIndex, squadronTitles, uniques, card) => {
+                    if (card.id === 'rr' && shipIndex > -1 && cards.cardsById[ships[shipIndex].id].shipSize === 'huge') return true;
+                    else if (card.id === 'rr' && shipIndex > -1 && (cards.cardsById[ships[shipIndex].id].shipSize === 'large' || cards.cardsById[ships[shipIndex].id].shipSize === 'medium') && cards.cardsById[ships[shipIndex].id].upgradeSlots.includes('defensive retrofit')) return true;
+                    else {
+                        let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.cardName);
+                        ships[shipIndex].upgradesEquipped.forEach(upgrade => {
+                            if (upgrade.id !== true && upgrade.id === id) isDisabled = true;
+                        });
+                        return isDisabled;
+                    }
+                },
                 onClick: () => addUpgrade(shipIndex, upgradeIndex, id)
             });
         }
@@ -944,7 +956,17 @@ function ListContainer({
                 key: id,
                 version,
                 isDisabled,
-                checkIfDisabled: (shipIndex, squadronTitles, uniques, card) => (ship.hasModification && card.isModification || uniques.includes(card.cardName)),
+                checkIfDisabled: (shipIndex, squadronTitles, uniques, card) => {
+                    if (card.id === 'rr' && shipIndex > -1 && cards.cardsById[ships[shipIndex].id].shipSize === 'huge') return true;
+                    else if (card.id === 'rr' && shipIndex > -1 && (cards.cardsById[ships[shipIndex].id].shipSize === 'large' || cards.cardsById[ships[shipIndex].id].shipSize === 'medium') && cards.cardsById[ships[shipIndex].id].upgradeSlots.includes('defensive retrofit')) return true;
+                    else {
+                        let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.cardName);
+                        ship.upgradesEquipped.forEach(upgrade => {
+                            if (upgrade.id !== true && upgrade.id === id) isDisabled = true;
+                        });
+                        return isDisabled;
+                    }
+                },
                 onClick: () => swapUpgrade(shipIndex, upgradeIndex, id)
             });
         }
