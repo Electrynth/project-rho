@@ -5549,6 +5549,7 @@
         "cardName": "CR90"
       }
     ],
+    "addsUpgradeSlot": "fleet command",
     "isModification": false,
     "id": "pk",
     "cardType": "upgrade"
