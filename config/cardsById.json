@@ -4478,7 +4478,15 @@
     "upgradeSlots": [
       "ordnance"
     ],
-    "requirements": [],
+    "requirements": [
+      "OR",
+      {
+        "shipSize": "medium"
+      },
+      {
+        "shipSize": "large"
+      }
+    ],
     "isModification": false,
     "id": "mw",
     "cardType": "upgrade"
