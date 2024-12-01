@@ -4108,7 +4108,7 @@
         "shipSize": "large"
       }
     ],
-    "isModification": true,
+    "isModification": false,
     "id": "lv",
     "cardType": "upgrade"
   },
