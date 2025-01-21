@@ -23,7 +23,7 @@
     "faction": "separatists",
     "cardType": "ship",
     "shipSize": "small",
-    "points": 52,
+    "points": 50,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -42,7 +42,7 @@
     "faction": "separatists",
     "cardType": "ship",
     "shipSize": "small",
-    "points": 27,
+    "points": 24,
     "isUnique": false,
     "upgradeSlots": [
       "officer",
@@ -134,7 +134,7 @@
     "faction": "separatists",
     "cardType": "ship",
     "shipSize": "large",
-    "points": 105,
+    "points": 102,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -155,7 +155,7 @@
     "faction": "separatists",
     "cardType": "ship",
     "shipSize": "large",
-    "points": 105,
+    "points": 97,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -194,7 +194,7 @@
     "faction": "republic",
     "cardType": "ship",
     "shipSize": "small",
-    "points": 45,
+    "points": 42,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -213,7 +213,7 @@
     "faction": "republic",
     "cardType": "ship",
     "shipSize": "medium",
-    "points": 75,
+    "points": 73,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -233,7 +233,7 @@
     "faction": "republic",
     "cardType": "ship",
     "shipSize": "medium",
-    "points": 66,
+    "points": 64,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -462,7 +462,7 @@
     "faction": "rebels",
     "cardType": "ship",
     "shipSize": "medium",
-    "points": 81,
+    "points": 77,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -499,7 +499,7 @@
     "faction": "rebels",
     "cardType": "ship",
     "shipSize": "large",
-    "points": 106,
+    "points": 102,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -534,7 +534,7 @@
     "faction": "rebels",
     "cardType": "ship",
     "shipSize": "large",
-    "points": 114,
+    "points": 110,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -687,7 +687,7 @@
     "faction": "rebels",
     "cardType": "ship",
     "shipSize": "large",
-    "points": 100,
+    "points": 95,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -724,7 +724,7 @@
     "faction": "rebels",
     "cardType": "ship",
     "shipSize": "large",
-    "points": 104,
+    "points": 99,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -761,7 +761,7 @@
     "faction": "empire",
     "cardType": "ship",
     "shipSize": "small",
-    "points": 28,
+    "points": 26,
     "isUnique": false,
     "upgradeSlots": [
       "officer",
@@ -962,7 +962,7 @@
     "faction": "empire",
     "cardType": "ship",
     "shipSize": "small",
-    "points": 54,
+    "points": 52,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -999,7 +999,7 @@
     "faction": "empire",
     "cardType": "ship",
     "shipSize": "small",
-    "points": 59,
+    "points": 55,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -1075,7 +1075,7 @@
     "faction": "empire",
     "cardType": "ship",
     "shipSize": "medium",
-    "points": 85,
+    "points": 80,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -1603,7 +1603,7 @@
   "ej": {
     "cardName": "E-Wing Squadron",
     "faction": "rebels",
-    "points": 15,
+    "points": 14,
     "isUnique": false,
     "keywords": [
       "Bomber",
@@ -1627,7 +1627,7 @@
   "el": {
     "cardName": "Lancer-class Pursuit Craft",
     "faction": "rebels",
-    "points": 15,
+    "points": 14,
     "isUnique": false,
     "keywords": [
       "Bomber",
@@ -1739,7 +1739,7 @@
     "cardName": "Han Solo",
     "title": "Millennium Falcon",
     "faction": "rebels",
-    "points": 26,
+    "points": 24,
     "isUnique": true,
     "keywords": [
       "Grit",
@@ -1791,7 +1791,7 @@
   "ey": {
     "cardName": "Keyan Farlander",
     "faction": "rebels",
-    "points": 20,
+    "points": 18,
     "isUnique": true,
     "keywords": [
       "Bomber"
@@ -1803,7 +1803,7 @@
     "cardName": "Lando Calrissian",
     "title": "Millennium Falcon",
     "faction": "rebels",
-    "points": 23,
+    "points": 24,
     "isUnique": true,
     "keywords": [
       "Grit",
@@ -1838,7 +1838,7 @@
   "fc": {
     "cardName": "Malee Hurra",
     "faction": "rebels",
-    "points": 26,
+    "points": 21,
     "isUnique": true,
     "keywords": [
       "Bomber",
@@ -1932,7 +1932,7 @@
   "fk": {
     "cardName": "Aggressor Assault Fighter",
     "faction": "empire",
-    "points": 16,
+    "points": 15,
     "isUnique": false,
     "keywords": [
       "Counter",
@@ -1982,7 +1982,7 @@
   "fo": {
     "cardName": "Mandalorian Gauntlet Fighter",
     "faction": "empire",
-    "points": 20,
+    "points": 18,
     "isUnique": false,
     "keywords": [
       "Assault",
@@ -2101,7 +2101,7 @@
     "cardName": "Boba Fett",
     "title": "Slave I",
     "faction": "empire",
-    "points": 26,
+    "points": 24,
     "isUnique": true,
     "keywords": [
       "Bomber",
@@ -2151,7 +2151,7 @@
   "gc": {
     "cardName": "Colonel Jendon",
     "faction": "empire",
-    "points": 20,
+    "points": 23,
     "isUnique": true,
     "keywords": [
       "Heavy",
@@ -2216,7 +2216,7 @@
   "gh": {
     "cardName": "Gar Saxon",
     "faction": "empire",
-    "points": 23,
+    "points": 20,
     "isUnique": true,
     "keywords": [
       "Assault",
@@ -2254,7 +2254,7 @@
     "cardName": "IG-88",
     "title": "IG-2000",
     "faction": "empire",
-    "points": 21,
+    "points": 19,
     "isUnique": true,
     "keywords": [
       "Counter",
@@ -2267,7 +2267,7 @@
     "cardName": "IG-88B",
     "title": "IG-2000B",
     "faction": "empire",
-    "points": 21,
+    "points": 19,
     "isUnique": true,
     "keywords": [
       "Counter",
@@ -2397,7 +2397,7 @@
   "gw": {
     "cardName": "\"Whisper\"",
     "faction": "empire",
-    "points": 20,
+    "points": 18,
     "isUnique": true,
     "keywords": [
       "Cloak"
@@ -2482,7 +2482,7 @@
     "cardName": "Anakin Skywalker",
     "imageName": "Anakin Skywalker BTL-B",
     "faction": "republic",
-    "points": 19,
+    "points": 18,
     "isUnique": true,
     "keywords": [
       "Adept",
@@ -2533,7 +2533,7 @@
   "hh": {
     "cardName": "Kit Fisto",
     "faction": "republic",
-    "points": 26,
+    "points": 24,
     "isUnique": true,
     "keywords": [
       "Adept",
@@ -2558,7 +2558,7 @@
   "hj": {
     "cardName": "\"Odd Ball\"",
     "faction": "republic",
-    "points": 23,
+    "points": 20,
     "isUnique": true,
     "keywords": [
       "Bomber",
@@ -2660,7 +2660,7 @@
   "hr": {
     "cardName": "DFS-311",
     "faction": "separatists",
-    "points": 18,
+    "points": 16,
     "isUnique": true,
     "keywords": [
       "Ai",
@@ -2711,7 +2711,7 @@
   "hv": {
     "cardName": "Phlac-Arphocc Prototypes",
     "faction": "separatists",
-    "points": 19,
+    "points": 18,
     "isUnique": true,
     "keywords": [
       "Ai",
@@ -2920,7 +2920,7 @@
   },
   "il": {
     "cardName": "Admiral Screed",
-    "points": 26,
+    "points": 24,
     "isUnique": true,
     "faction": "empire",
     "upgradeSlots": [
@@ -2947,7 +2947,7 @@
   "in": {
     "cardName": "Darth Vader",
     "imageName": "Darth Vader Admiral",
-    "points": 36,
+    "points": 34,
     "isUnique": true,
     "faction": "empire",
     "upgradeSlots": [
@@ -3090,7 +3090,7 @@
   },
   "iy": {
     "cardName": "Obi-Wan Kenobi",
-    "points": 28,
+    "points": 22,
     "isUnique": true,
     "faction": "republic",
     "upgradeSlots": [
@@ -3116,7 +3116,7 @@
   },
   "ja": {
     "cardName": "Admiral Trench",
-    "points": 36,
+    "points": 32,
     "isUnique": true,
     "faction": "separatists",
     "upgradeSlots": [
@@ -3129,7 +3129,7 @@
   },
   "jb": {
     "cardName": "Count Dooku",
-    "points": 30,
+    "points": 27,
     "isUnique": true,
     "faction": "separatists",
     "upgradeSlots": [
@@ -3220,7 +3220,7 @@
   },
   "ji": {
     "cardName": "Damage Control Officer",
-    "points": 5,
+    "points": 3,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -3324,7 +3324,7 @@
   },
   "jq": {
     "cardName": "Support Officer",
-    "points": 4,
+    "points": 2,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -3350,7 +3350,7 @@
   },
   "js": {
     "cardName": "Veteran Captain",
-    "points": 3,
+    "points": 2,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -3885,7 +3885,7 @@
   },
   "lh": {
     "cardName": "Weapons Battery Techs",
-    "points": 5,
+    "points": 4,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -3939,7 +3939,7 @@
   },
   "ll": {
     "cardName": "Shriv Suurgav",
-    "points": 6,
+    "points": 4,
     "isUnique": true,
     "faction": "rebels",
     "upgradeSlots": [
@@ -4179,7 +4179,7 @@
   },
   "mb": {
     "cardName": "Reserve Hangar Deck",
-    "points": 3,
+    "points": 4,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -4218,7 +4218,7 @@
   },
   "me": {
     "cardName": "Engineering Team",
-    "points": 5,
+    "points": 3,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -4433,7 +4433,7 @@
   },
   "mt": {
     "cardName": "Expanded Launchers",
-    "points": 13,
+    "points": 8,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -4493,7 +4493,7 @@
   },
   "mx": {
     "cardName": "Rapid Reload",
-    "points": 8,
+    "points": 4,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -4532,7 +4532,7 @@
   },
   "na": {
     "cardName": "High-Capacity Ion Turbines",
-    "points": 8,
+    "points": 6,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -4558,7 +4558,7 @@
   },
   "nc": {
     "cardName": "Leading Shots",
-    "points": 6,
+    "points": 5,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -4584,7 +4584,7 @@
   },
   "ne": {
     "cardName": "NK-7 Ion Cannons",
-    "points": 10,
+    "points": 6,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -4597,7 +4597,7 @@
   },
   "nf": {
     "cardName": "Overload Pulse",
-    "points": 8,
+    "points": 6,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -4610,7 +4610,7 @@
   },
   "ng": {
     "cardName": "Point Defense Ion Cannons",
-    "points": 4,
+    "points": 6,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -4654,7 +4654,7 @@
   },
   "nj": {
     "cardName": "Dual Turbolaser Turrets",
-    "points": 5,
+    "points": 4,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -4693,7 +4693,7 @@
   },
   "nm": {
     "cardName": "Heavy Fire Zone",
-    "points": 4,
+    "points": 2,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -4706,7 +4706,7 @@
   },
   "nn": {
     "cardName": "Heavy Turbolaser Turrets",
-    "points": 6,
+    "points": 4,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -4810,7 +4810,7 @@
   },
   "nv": {
     "cardName": "XX-9 Turbolasers",
-    "points": 5,
+    "points": 2,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -4844,7 +4844,7 @@
   },
   "nx": {
     "cardName": "Admonition",
-    "points": 6,
+    "points": 10,
     "isUnique": true,
     "faction": "rebels",
     "upgradeSlots": [
@@ -5040,7 +5040,7 @@
   },
   "oi": {
     "cardName": "Corrupter",
-    "points": 5,
+    "points": 3,
     "isUnique": true,
     "faction": "empire",
     "upgradeSlots": [
@@ -5133,7 +5133,7 @@
   },
   "on": {
     "cardName": "Dodonna's Pride",
-    "points": 6,
+    "points": 4,
     "isUnique": true,
     "faction": "rebels",
     "upgradeSlots": [
@@ -5150,7 +5150,7 @@
   },
   "oo": {
     "cardName": "Dominator",
-    "points": 12,
+    "points": 7,
     "isUnique": true,
     "faction": "empire",
     "upgradeSlots": [
@@ -5256,7 +5256,7 @@
   },
   "ou": {
     "cardName": "Foresight",
-    "points": 8,
+    "points": 10,
     "isUnique": true,
     "faction": "rebels",
     "upgradeSlots": [
@@ -5324,7 +5324,7 @@
   },
   "oy": {
     "cardName": "Hand of Justice",
-    "points": 4,
+    "points": 2,
     "isUnique": true,
     "faction": "empire",
     "upgradeSlots": [
@@ -5359,7 +5359,7 @@
   },
   "pa": {
     "cardName": "Home One",
-    "points": 7,
+    "points": 5,
     "isUnique": true,
     "faction": "rebels",
     "upgradeSlots": [
@@ -5504,7 +5504,7 @@
   },
   "pi": {
     "cardName": "Invisible Hand",
-    "points": 9,
+    "points": 8,
     "isUnique": true,
     "faction": "separatists",
     "upgradeSlots": [
@@ -5521,7 +5521,7 @@
   },
   "pj": {
     "cardName": "Jaina's Light",
-    "points": 2,
+    "points": 5,
     "isUnique": true,
     "faction": "rebels",
     "upgradeSlots": [
@@ -5577,7 +5577,7 @@
   },
   "pm": {
     "cardName": "Lucid Voice",
-    "points": 8,
+    "points": 6,
     "isUnique": true,
     "faction": "separatists",
     "upgradeSlots": [
@@ -5808,7 +5808,7 @@
   },
   "pz": {
     "cardName": "Redemption",
-    "points": 8,
+    "points": 5,
     "isUnique": true,
     "faction": "rebels",
     "upgradeSlots": [
@@ -5846,7 +5846,7 @@
   },
   "qb": {
     "cardName": "Resolute",
-    "points": 6,
+    "points": 4,
     "isUnique": true,
     "faction": "republic",
     "upgradeSlots": [
@@ -5918,7 +5918,7 @@
   },
   "qf": {
     "cardName": "Squall",
-    "points": 3,
+    "points": 7,
     "isUnique": true,
     "faction": "empire",
     "upgradeSlots": [
@@ -5935,7 +5935,7 @@
   },
   "qg": {
     "cardName": "Stronghold",
-    "points": 5,
+    "points": 3,
     "isUnique": true,
     "faction": "empire",
     "upgradeSlots": [
@@ -6400,7 +6400,7 @@
   "rk": {
     "cardName": "Darth Vader",
     "imageName": "Darth Vader Officer",
-    "points": 1,
+    "points": 4,
     "isUnique": true,
     "faction": "empire",
     "upgradeSlots": [
@@ -6634,7 +6634,7 @@
   },
   "sb": {
     "cardName": "Mercy Mission",
-    "points": 0,
+    "points": 5,
     "isUnique": true,
     "faction": "republic",
     "upgradeSlots": [
@@ -6871,7 +6871,7 @@
   },
   "ss": {
     "cardName": "Repair Crews",
-    "points": 4,
+    "points": 3,
     "isUnique": false,
     "faction": "",
     "upgradeSlots": [
@@ -6922,7 +6922,7 @@
   },
   "sw": {
     "cardName": "Governor Pryce",
-    "points": 7,
+    "points": 6,
     "isUnique": true,
     "faction": "empire",
     "upgradeSlots": [
@@ -6936,7 +6936,7 @@
   "sx": {
     "cardName": "Anakin Skywalker",
     "imageName": "Anakin Skywalker Admiral",
-    "points": 31,
+    "points": 27,
     "isUnique": true,
     "faction": "republic",
     "upgradeSlots": [
@@ -6961,7 +6961,7 @@
   },
   "sz": {
     "cardName": "Asajj Ventress",
-    "points": 4,
+    "points": 2,
     "isUnique": true,
     "faction": "separatists",
     "upgradeSlots": [
