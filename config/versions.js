@@ -13,14 +13,13 @@ const versions = [
         label: "Official Game",
         description: "Current official ruleset for organized play.",
         roles: ["everyone"],
-        pointDeltas: {
-            
-        },
+        pointDeltas: {},
         footnoteChanges: {},
         enabledCards: [],
         disabledCards: [],
         textChanges: {
             "no": [
+                "The entire text should read as the following:",
                 "While attacking a squadron, you may reroll 1 red die in your attack pool.",
                 "While attacking a ship, if you have the bombard tag, you may reroll 1 red die in your attack pool.",
                 "During your activation, while attacking the first squadron during an attack, you may exhaust this card to add 2 dice of any color to your attack pool. If you do, you may cannot declare additional squadron targets for this attack."
@@ -32,6 +31,7 @@ const versions = [
                 "Remove the \"printed\" qualifier from the text in the 2nd bullet point."
             ],
             "st": [
+                "The entire text should read as the following:",
                 "After you execute a maneuver, you may exhaust this card to choose an enemy ship at distance 1-3. You may look at the top command dial assigned to that ship. Then, you may either choose a new command on its top command dial or assign 1 raid token of your choice (that does not match the ship's top command dial).",
                 "If the chosen ship has no top command dial, it gains 1 raid token of your choice.",
                 "Remove non-recur icon, add recur icon."
