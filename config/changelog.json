@@ -1,6 +1,11 @@
 {
     "news": [
         {
+            "date": "21 January 2025",
+            "title": "Final AMG Star Wars: Armada Update",
+            "body": "Release includes revised tournamen regulations, updated rules, and errata."
+        },
+        {
             "date": "7 November 2024",
             "title": "ARC Open Beta Tournament",
             "body": "Lists can be built for this tournament by changing the list version to 'ARC Open Beta Tournament'."
