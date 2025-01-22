@@ -7181,5 +7181,19 @@
     "id": "tn",
     "hidden": true,
     "cardType": "upgrade"
+  },
+  "to": {
+    "cardName": "Jango Fett",
+    "title": "Slave I",
+    "faction": "separatists",
+    "points": 22,
+    "isUnique": true,
+    "keywords": [
+      "Bomber",
+      "Rogue",
+      "Grit"
+    ],
+    "cardType": "squadron",
+    "id": "to"
   }
 }

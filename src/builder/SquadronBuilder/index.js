@@ -59,6 +59,7 @@ export default function SquadronBuilder({ breakpoints }) {
     const [chassisTextFontSize, setChassisTextFontSize] = useState(44);
     const [vsSquadronArmament, setVsSquadronArmament] = useState([0, 0, 0]);
     const [vsShipArmament, setVsShipArmament] = useState([0, 0, 0]);
+    const [defenseTokenYOffset, setDefenseTokenYOffset] = useState(0);
     const [firstDefenseToken, setFirstDefenseToken] = useState('none');
     const [secondDefenseToken, setSecondDefenseToken] = useState('none');
 
@@ -254,6 +255,13 @@ export default function SquadronBuilder({ breakpoints }) {
                             style={{ width: 150 }}
                         />
                     ) : undefined}
+                    <TextInput
+                        elementId="defense-token-offset-input"
+                        label="Defense Token Y Offset"
+                        value={defenseTokenYOffset}
+                        handleChange={e => setDefenseTokenYOffset(e.target.value)}
+                        style={{ width: 170 }}
+                    />
                 </div>
                 <div style={{ display: 'flex', flexFlow: 'row wrap', alignItems: 'center', width: '100%', gap: 4 }}>
                     <Typography>Squadron Armament</Typography>
@@ -453,6 +461,7 @@ export default function SquadronBuilder({ breakpoints }) {
                 vsSquadronArmament={vsSquadronArmament}
                 vsShipArmament={vsShipArmament}
                 maxNumAllowed={maxNumAllowed}
+                defenseTokenYOffset={Number(defenseTokenYOffset) ? Number.parseInt(defenseTokenYOffset) * sizeMultiplier : 0}
                 firstDefenseToken={firstDefenseToken}
                 secondDefenseToken={secondDefenseToken}
                 cardText={cardText}
