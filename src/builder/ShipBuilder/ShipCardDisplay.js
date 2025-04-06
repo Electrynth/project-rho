@@ -78,6 +78,7 @@ export default function ShipCardDisplay({
     numExperimentalSlots,
     numSuperWeaponSlots,
     defenseTokens,
+    defenseTokenYOffset,
     maxSpeed,
     speed1Chart,
     speed2Chart,
@@ -203,11 +204,10 @@ export default function ShipCardDisplay({
         else if (a === 'brace' && (b === 'scatter' || b === 'evade')) return 1;
         else if (a === 'redirect' && (b === 'scatter' || b === 'evade' || b === 'brace')) return 1;
         else if (a === 'contain' && (b === 'redirect' || b === 'scatter' || b === 'evade' || b === 'brace')) return 1;
-        else if (a === 'salvo') return -1;
+        else if (a === 'salvo') return 1;
         return -1;
     });
     
-    let defenseTokenYOffset = -4;
     orderedDefenseTokens.forEach((defenseToken, i) => {
         if (defenseToken === '') return;
 

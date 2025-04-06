@@ -93,6 +93,7 @@ export default function ShipBuilder({ breakpoints }) {
     const [numExperimentalSlots, setNumExperimentalSlots] = useState(0);
     const [numSuperWeaponSlots, setSuperWeaponSlots] = useState(0);
     const [defenseTokens, setDefenseTokens] = useState(['', '', '', '', '', '']);
+    const [defenseTokenYOffset, setDefenseTokenYOffset] = useState(0);
     const [maxSpeed, setMaxSpeed] = useState(1);
     const [speed1Chart, setSpeed1Chart] = useState([0]);
     const [speed2Chart, setSpeed2Chart] = useState([0, 0]);
@@ -391,6 +392,15 @@ export default function ShipBuilder({ breakpoints }) {
                             defenseTokens[5]
                         ])}
                         style={{ width: 175 }}
+                    />
+                </div>
+                <div>
+                    <TextInput
+                        elementId="defense-token-offset-input"
+                        label="Defense Token Offset"
+                        value={defenseTokenYOffset}
+                        handleChange={e => setDefenseTokenYOffset(e.target.value)}
+                        style={{ width: 170 }}
                     />
                 </div>
                 <div style={{ display: 'flex', flexFlow: 'row wrap', width: '100%', alignItems: 'center', gap: 8 }}>
@@ -1067,6 +1077,7 @@ export default function ShipBuilder({ breakpoints }) {
                         portraitX={portraitX}
                         portraitY={portraitY}
                         isPortraitMirrored={isPortraitMirrored}
+                        defenseTokenYOffset={Number(defenseTokenYOffset) ? Number.parseInt(defenseTokenYOffset) * sizeMultiplier : 0 }
                         uploadedShipPortraitStyles={{
                             marginTop: Number(portraitY) ? Number.parseInt(portraitY) * sizeMultiplier : 0,
                             marginLeft: Number(portraitX) ? Number.parseInt(portraitX) * sizeMultiplier : 0,
