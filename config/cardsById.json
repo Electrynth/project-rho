@@ -7195,5 +7195,87 @@
     ],
     "cardType": "squadron",
     "id": "to"
+  },
+  "tp": {
+    "hidden": true,
+    "displayName": "Munificent Heavy Frigate",
+    "imageName": "Munificent-class Heavy Frigate",
+    "cardName": "Munificent-class Star Frigate",
+    "faction": "separatists",
+    "cardType": "ship",
+    "shipSize": "medium",
+    "points": 75,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "support team",
+      "ordnance",
+      "ordnance",
+      "title"
+    ],
+    "id": "tp"
+  },
+  "tq": {
+    "hidden": true,
+    "displayName": "CR90 Assassin Corvette",
+    "imageName": "CR90 Assassin-class Corvette",
+    "cardName": "CR90 Corvette B",
+    "faction": "separatists",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 42,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "ion cannons",
+      "title"
+    ],
+    "id": "tq"
+  },
+  "tr": {
+    "hidden": true,
+    "displayName": "Arquitens Jedi Cruiser",
+    "imageName": "Arquitens-class Jedi Cruiser",
+    "cardName": "Arquitens-class Light Cruiser",
+    "faction": "republic",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 50,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "officer",
+      "weapons team",
+      "title"
+    ],
+    "id": "tr"
+  },
+  "ts": {
+    "hidden": true,
+    "displayName": "Venator Imperator Refit",
+    "imageName": "Venator Star Destroyer Imperator Refit",
+    "cardName": "Venator II-class Star Destroyer",
+    "faction": "republic",
+    "cardType": "ship",
+    "shipSize": "large",
+    "points": 104,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "defensive retrofit",
+      "ion cannons",
+      "turbolasers",
+      "turbolasers",
+      "title"
+    ],
+    "id": "ts"
   }
 }
