@@ -5,13 +5,14 @@ const roles = {
             'nbrown4296@gmail.com',
             'dallalanamackenzie@gmail.com',
             'larson.n12@gmail.com',
-            'simon.girard@gmail.com',
-            'patrickryandoupe@gmail.com',
+            'jchen101@gmail.com'
         ]
     },
     'playtester': {
         label: 'Playtesters',
         userEmails: [
+            'simon.girard@gmail.com',
+            'patrickryandoupe@gmail.com',
             'ifranklin@ntlworld.com',
             'sebastianrauscher1987@googlemail.com',
             'fritzofgalatia@gmail.com',
