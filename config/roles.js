@@ -11,6 +11,7 @@ const roles = {
     'playtester': {
         label: 'Playtesters',
         userEmails: [
+            'justin.rasmussen@gmail.com',
             'simon.girard@gmail.com',
             'patrickryandoupe@gmail.com',
             'ifranklin@ntlworld.com',
