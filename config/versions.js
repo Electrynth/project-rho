@@ -26,19 +26,41 @@ const versions = [
         label: "ARC Core Playtesting",
         description: "Playtesting package for CORE members",
         roles: ["core"],
-        pointDeltas: {},
+        pointDeltas: {
+            "in": -6,
+            "hy": -2,
+            "ii": -4,
+            "il": 2,
+            "io": -3
+        },
         footnoteChanges: {
-            
+
         },
         enabledCards: [
             "tp",
-            "tq",
             "tr",
-            "ts"
+            "ts",
+            "tt"
         ],
         disabledCards: [],
         textChanges: {
-            
+            "ii": [
+                "The hull value of each friendly ship is increased according to its size class:",
+                "Small ship: 1",
+                "Medium ship: 2",
+                "Large ship: 3",
+                "Huge ship: 4"
+            ],
+            "il": ["Once per activation, while a friendly ship is attacking, it may spend 1 die to change a die to a face with a (crit) icon. That die cannot be rerolled."],
+            "hz": ["After deploying fleets, place 2 round tokens on this card. At the start of the Ship Phase, during each round matching 1 of those tokens, each friendly ship may gain a number of command tokens equal to its command value."],
+            "iq": ["After deploying fleets, place 2 round tokens on this card. At the start of the Ship Phase, during each round matching 1 of those tokens, each friendly ship may recover 1 of its discarded defense tokens."],
+            "ig": [
+                "When a friendly ship resolves the (evade) token effect, it can cancel 1 die at medium range or reroll 1 additional die at close range or distance 1.",
+                "While a friendly ship is defending, it may spend (evade) tokens that the attacker targeted with an (accuracy) result."
+            ],
+            "kc": ["When a friendly ship resolves a command by spending a command dial, it may resolve that command as if it also spent a matching command token."],
+            "hy": ["While a friendly ship is attacking a ship at distance 1 of a friendly squadron, the attacker may add 2 dice, each of any color. If it does, it must choose and cancel 2 attack dice."],
+            "io": "After deploying fleets, place 1 defense token of each type on this card. At the start of each Ship Phase, you may discard 1 of those tokens. If you do, until the end of the round, if an enemy ship or squadron spends a matching token, discard that token."
         }
     },
     {
@@ -47,7 +69,11 @@ const versions = [
         description: "ARC Playtesting package",
         roles: ["core", "playtester"],
         pointDeltas: {
-
+            "in": -6,
+            "hy": -2,
+            "ii": -4,
+            "il": 2,
+            "io": -3
         },
         footnoteChanges: {
             
@@ -62,7 +88,23 @@ const versions = [
 
         ],
         textChanges: {
-            
+            "ii": [
+                "The hull value of each friendly ship is increased according to its size class:",
+                "Small ship: 1",
+                "Medium ship: 2",
+                "Large ship: 3",
+                "Huge ship: 4"
+            ],
+            "il": ["Once per activation, while a friendly ship is attacking, it may spend 1 die to change a die to a face with a (crit) icon. That die cannot be rerolled."],
+            "hz": ["After deploying fleets, place 2 round tokens on this card. At the start of the Ship Phase, during each round matching 1 of those tokens, each friendly ship may gain a number of command tokens equal to its command value."],
+            "iq": ["After deploying fleets, place 2 round tokens on this card. At the start of the Ship Phase, during each round matching 1 of those tokens, each friendly ship may recover 1 of its discarded defense tokens."],
+            "ig": [
+                "When a friendly ship resolves the (evade) token effect, it can cancel 1 die at medium range or reroll 1 additional die at close range or distance 1.",
+                "While a friendly ship is defending, it may spend (evade) tokens that the attacker targeted with an (accuracy) result."
+            ],
+            "kc": ["When a friendly ship resolves a command by spending a command dial, it may resolve that command as if it also spent a matching command token."],
+            "hy": ["While a friendly ship is attacking a ship at distance 1 of a friendly squadron, the attacker may add 2 dice, each of any color. If it does, it must choose and cancel 2 attack dice."],
+            "io": "After deploying fleets, place 1 defense token of each type on this card. At the start of each Ship Phase, you may discard 1 of those tokens. If you do, until the end of the round, if an enemy ship or squadron spends a matching token, discard that token."
         }
     },
     {
