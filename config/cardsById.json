@@ -7277,5 +7277,26 @@
       "title"
     ],
     "id": "ts"
+  },
+  "tt": {
+    "hidden": true,
+    "displayName": "Quarren Gunship",
+    "imageName": "Quarren Gunship",
+    "cardName": "MC30c Torpedo Frigate",
+    "faction": "separatists",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 63,
+    "isUnique": true,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "defensive retrofit",
+      "ion cannons",
+      "title"
+    ],
+    "id": "tt"
   }
 }

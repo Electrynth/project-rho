@@ -61,7 +61,7 @@ function FactionLinkButton({
           anchorEl={anchorEl}
           onClose={() => setAnchorEl(null)}
         >
-          {factionLists.length < 12 ? (
+          {factionLists.length < 32 ? (
             <MenuItem onClick={() => router.push(`/list/${faction}`) }>
               <span className={robotoCondensed.className}>Create New List</span>
             </MenuItem>

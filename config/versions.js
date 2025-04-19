@@ -150,7 +150,8 @@ const versions = [
             "tp",
             "tq",
             "tr",
-            "ts"
+            "ts",
+            "tt"
         ],
         disabledCards: [
 
