@@ -39,16 +39,16 @@ function CardButton({ id, ships, squadronTitles, shipIndex, uniques, version, is
             );
         });
     }
-    if (id in versions[version].pointDeltas) {
-        const pointDelta = versions[version].pointDeltas[id];
-        footnoteActions.push(
-            <Chip
-                size="small"
-                key="pt-change-footnote"
-                label={<span className={robotoCondensed.className}>{`Cost: ${card.points}->${card.points + pointDelta}`}</span>}
-            />
-        );
-    }
+    // if (id in versions[version].pointDeltas) {
+    //     const pointDelta = versions[version].pointDeltas[id];
+    //     footnoteActions.push(
+    //         <Chip
+    //             size="small"
+    //             key="pt-change-footnote"
+    //             label={<span className={robotoCondensed.className}>{`Cost: ${card.points}->${card.points + pointDelta}`}</span>}
+    //         />
+    //     );
+    // }
 
     const maxWidth = '45%';
 
