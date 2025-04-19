@@ -13,6 +13,8 @@ const roles = {
         userEmails: [
             'rhysaghatabay@gmail.com',
             'dbertier@free.fr',
+            'forrest.weigel@gmail.com',
+            'justin.rasmussen@gmail.com',
             'simon.girard@gmail.com',
             'patrickryandoupe@gmail.com',
             'ifranklin@ntlworld.com',
