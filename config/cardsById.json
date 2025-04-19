@@ -7204,15 +7204,16 @@
     "faction": "separatists",
     "cardType": "ship",
     "shipSize": "medium",
-    "points": 75,
-    "isUnique": false,
+    "points": 78,
+    "isUnique": true,
     "upgradeSlots": [
       "commander",
       "officer",
       "weapons team",
-      "support team",
-      "ordnance",
-      "ordnance",
+      "offensive retrofit",
+      "defensive retrofit",
+      "turbolasers",
+      "fleet support",
       "title"
     ],
     "id": "tp"

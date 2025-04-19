@@ -18,54 +18,7 @@ const versions = [
         enabledCards: [],
         disabledCards: [],
         textChanges: {
-            "no": [
-                "The entire text should read as the following:",
-                "While attacking a squadron, you may reroll 1 red die in your attack pool.",
-                "While attacking a ship, if you have the bombard tag, you may reroll 1 red die in your attack pool.",
-                "During your activation, while attacking the first squadron during an attack, you may exhaust this card to add 2 dice of any color to your attack pool. If you do, you may cannot declare additional squadron targets for this attack."
-            ],
-            "sb": [
-                "At the end of the game, if you are within the enemy deployment zone, increase your score by 40 points; if you were destroyed, increase your opponents score by 15 points."
-            ],
-            "kn": [
-                "Remove the \"printed\" qualifier from the text in the 2nd bullet point."
-            ],
-            "st": [
-                "The entire text should read as the following:",
-                "After you execute a maneuver, you may exhaust this card to choose an enemy ship at distance 1-3. You may look at the top command dial assigned to that ship. Then, you may either choose a new command on its top command dial or assign 1 raid token of your choice (that does not match the ship's top command dial).",
-                "If the chosen ship has no top command dial, it gains 1 raid token of your choice.",
-                "Remove non-recur icon, add recur icon."
-            ],
-            "lj": [
-                "When you reveal a command, you may discard a [squadron] dial or token, and this card to choose 1 enemy ship at close range. If you do, you may look at all command dials assigned to that ship, then you may choose a new command for each of its command dials to be set to."
-            ],
-            "ma": [
-                "Before deploying fleets, you may set aside a number of friendly squadrons up to your squadron value next to your ship card.",
-                "When you reveal a command, you may discard this card. If you do, for each squadron set aside with this card, you may place it within distance 1-2 of you. It canot move during your activation."
-            ],
-            "pi": [
-                "When deploying fleets, if you are in the play area, when you would deploy a squadron with SWARM, you may set that squadron aside next to your ship card instead. You may set aside up to 5 squadrons in this way.",
-                "[Squadron]: For each squadron set aside with this card, you may place it within distance 1-3. During your activation, it cannot move and if it has AI it may increase its AI value by 1 during your activation."
-            ],
-            "ic": [
-                "While a friendly ship is executing the first maneuver during its activation, in the Determine Course step, it may increase 1 yaw value by 1."
-            ],
-            "kr": [
-                "Starts with 3 [squadron] tokens on this card.",
-                "When a friendly ship at distance 1-5 resolves a [squadron] command, you may discard 1 [squadron] token from this card. If you do, that friendly ship may activate 1 additional squadron during that command."
-            ],
-            "nx": [
-                "While defending, during the Spend Defense Tokens Step, you may discard a defense token to cancel 1 attack die."
-            ],
-            "sw": [
-                "Once per activation, while attacking a ship, you may spend 1 shield from the attacking hull zone to change 1 die to any face without an [accuracy] icon."
-            ],
-            "sz": [
-                "Add recur symbol"
-            ],
-            "ll": [
-                "Replace the 2nd [offensive retrofit] icon with an [ordnance] icon"
-            ]
+            
         }
     },
     {
@@ -85,54 +38,7 @@ const versions = [
         ],
         disabledCards: [],
         textChanges: {
-            "no": [
-                "The entire text should read as the following:",
-                "While attacking a squadron, you may reroll 1 red die in your attack pool.",
-                "While attacking a ship, if you have the bombard tag, you may reroll 1 red die in your attack pool.",
-                "During your activation, while attacking the first squadron during an attack, you may exhaust this card to add 2 dice of any color to your attack pool. If you do, you may cannot declare additional squadron targets for this attack."
-            ],
-            "sb": [
-                "At the end of the game, if you are within the enemy deployment zone, increase your score by 40 points; if you were destroyed, increase your opponents score by 15 points."
-            ],
-            "kn": [
-                "Remove the \"printed\" qualifier from the text in the 2nd bullet point."
-            ],
-            "st": [
-                "The entire text should read as the following:",
-                "After you execute a maneuver, you may exhaust this card to choose an enemy ship at distance 1-3. You may look at the top command dial assigned to that ship. Then, you may either choose a new command on its top command dial or assign 1 raid token of your choice (that does not match the ship's top command dial).",
-                "If the chosen ship has no top command dial, it gains 1 raid token of your choice.",
-                "Remove non-recur icon, add recur icon."
-            ],
-            "lj": [
-                "When you reveal a command, you may discard a [squadron] dial or token, and this card to choose 1 enemy ship at close range. If you do, you may look at all command dials assigned to that ship, then you may choose a new command for each of its command dials to be set to."
-            ],
-            "ma": [
-                "Before deploying fleets, you may set aside a number of friendly squadrons up to your squadron value next to your ship card.",
-                "When you reveal a command, you may discard this card. If you do, for each squadron set aside with this card, you may place it within distance 1-2 of you. It canot move during your activation."
-            ],
-            "pi": [
-                "When deploying fleets, if you are in the play area, when you would deploy a squadron with SWARM, you may set that squadron aside next to your ship card instead. You may set aside up to 5 squadrons in this way.",
-                "[Squadron]: For each squadron set aside with this card, you may place it within distance 1-3. During your activation, it cannot move and if it has AI it may increase its AI value by 1 during your activation."
-            ],
-            "ic": [
-                "While a friendly ship is executing the first maneuver during its activation, in the Determine Course step, it may increase 1 yaw value by 1."
-            ],
-            "kr": [
-                "Starts with 3 [squadron] tokens on this card.",
-                "When a friendly ship at distance 1-5 resolves a [squadron] command, you may discard 1 [squadron] token from this card. If you do, that friendly ship may activate 1 additional squadron during that command."
-            ],
-            "nx": [
-                "While defending, during the Spend Defense Tokens Step, you may discard a defense token to cancel 1 attack die."
-            ],
-            "sw": [
-                "Once per activation, while attacking a ship, you may spend 1 shield from the attacking hull zone to change 1 die to any face without an [accuracy] icon."
-            ],
-            "sz": [
-                "Add recur symbol"
-            ],
-            "ll": [
-                "Replace the 2nd [offensive retrofit] icon with an [ordnance] icon"
-            ]
+            
         }
     },
     {
@@ -148,7 +54,6 @@ const versions = [
         },
         enabledCards: [
             "tp",
-            "tq",
             "tr",
             "ts",
             "tt"
@@ -157,54 +62,7 @@ const versions = [
 
         ],
         textChanges: {
-            "no": [
-                "The entire text should read as the following:",
-                "While attacking a squadron, you may reroll 1 red die in your attack pool.",
-                "While attacking a ship, if you have the bombard tag, you may reroll 1 red die in your attack pool.",
-                "During your activation, while attacking the first squadron during an attack, you may exhaust this card to add 2 dice of any color to your attack pool. If you do, you may cannot declare additional squadron targets for this attack."
-            ],
-            "sb": [
-                "At the end of the game, if you are within the enemy deployment zone, increase your score by 40 points; if you were destroyed, increase your opponents score by 15 points."
-            ],
-            "kn": [
-                "Remove the \"printed\" qualifier from the text in the 2nd bullet point."
-            ],
-            "st": [
-                "The entire text should read as the following:",
-                "After you execute a maneuver, you may exhaust this card to choose an enemy ship at distance 1-3. You may look at the top command dial assigned to that ship. Then, you may either choose a new command on its top command dial or assign 1 raid token of your choice (that does not match the ship's top command dial).",
-                "If the chosen ship has no top command dial, it gains 1 raid token of your choice.",
-                "Remove non-recur icon, add recur icon."
-            ],
-            "lj": [
-                "When you reveal a command, you may discard a [squadron] dial or token, and this card to choose 1 enemy ship at close range. If you do, you may look at all command dials assigned to that ship, then you may choose a new command for each of its command dials to be set to."
-            ],
-            "ma": [
-                "Before deploying fleets, you may set aside a number of friendly squadrons up to your squadron value next to your ship card.",
-                "When you reveal a command, you may discard this card. If you do, for each squadron set aside with this card, you may place it within distance 1-2 of you. It canot move during your activation."
-            ],
-            "pi": [
-                "When deploying fleets, if you are in the play area, when you would deploy a squadron with SWARM, you may set that squadron aside next to your ship card instead. You may set aside up to 5 squadrons in this way.",
-                "[Squadron]: For each squadron set aside with this card, you may place it within distance 1-3. During your activation, it cannot move and if it has AI it may increase its AI value by 1 during your activation."
-            ],
-            "ic": [
-                "While a friendly ship is executing the first maneuver during its activation, in the Determine Course step, it may increase 1 yaw value by 1."
-            ],
-            "kr": [
-                "Starts with 3 [squadron] tokens on this card.",
-                "When a friendly ship at distance 1-5 resolves a [squadron] command, you may discard 1 [squadron] token from this card. If you do, that friendly ship may activate 1 additional squadron during that command."
-            ],
-            "nx": [
-                "While defending, during the Spend Defense Tokens Step, you may discard a defense token to cancel 1 attack die."
-            ],
-            "sw": [
-                "Once per activation, while attacking a ship, you may spend 1 shield from the attacking hull zone to change 1 die to any face without an [accuracy] icon."
-            ],
-            "sz": [
-                "Add recur symbol"
-            ],
-            "ll": [
-                "Replace the 2nd [offensive retrofit] icon with an [ordnance] icon"
-            ]
+            
         }
     },
     {
