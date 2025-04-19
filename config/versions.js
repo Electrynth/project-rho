@@ -76,13 +76,14 @@ const versions = [
             "io": -3
         },
         footnoteChanges: {
-            
+
         },
         enabledCards: [
             "tp",
             "tr",
             "ts",
-            "tt"
+            "tt",
+            "tq"
         ],
         disabledCards: [
 
