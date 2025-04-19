@@ -31,7 +31,8 @@ const versions = [
             "hy": -2,
             "ii": -4,
             "il": 2,
-            "io": -3
+            "io": -3,
+            "sv": 2
         },
         footnoteChanges: {
 
@@ -60,7 +61,12 @@ const versions = [
             ],
             "kc": ["When a friendly ship resolves a command by spending a command dial, it may resolve that command as if it also spent a matching command token."],
             "hy": ["While a friendly ship is attacking a ship at distance 1 of a friendly squadron, the attacker may add 2 dice, each of any color. If it does, it must choose and cancel 2 attack dice."],
-            "io": "After deploying fleets, place 1 defense token of each type on this card. At the start of each Ship Phase, you may discard 1 of those tokens. If you do, until the end of the round, if an enemy ship or squadron spends a matching token, discard that token."
+            "io": ["After deploying fleets, place 1 defense token of each type on this card. At the start of each Ship Phase, you may discard 1 of those tokens. If you do, until the end of the round, if an enemy ship or squadron spends a matching token, discard that token."],
+            "sv": [
+                "You must choose 2 types of command tokens for this card (5).",
+                "After an enemy ship resolves a command, you may discard a matching command token from this card. If you do, that enemy ship gains 1 matching raid token.",
+                "While a friendly squadron is attacking a ship with at least 1 raid token, it may reroll 1 die."
+            ]
         }
     },
     {
@@ -73,7 +79,8 @@ const versions = [
             "hy": -2,
             "ii": -4,
             "il": 2,
-            "io": -3
+            "io": -3,
+            "sv": 2
         },
         footnoteChanges: {
 
@@ -105,7 +112,12 @@ const versions = [
             ],
             "kc": ["When a friendly ship resolves a command by spending a command dial, it may resolve that command as if it also spent a matching command token."],
             "hy": ["While a friendly ship is attacking a ship at distance 1 of a friendly squadron, the attacker may add 2 dice, each of any color. If it does, it must choose and cancel 2 attack dice."],
-            "io": "After deploying fleets, place 1 defense token of each type on this card. At the start of each Ship Phase, you may discard 1 of those tokens. If you do, until the end of the round, if an enemy ship or squadron spends a matching token, discard that token."
+            "io": ["After deploying fleets, place 1 defense token of each type on this card. At the start of each Ship Phase, you may discard 1 of those tokens. If you do, until the end of the round, if an enemy ship or squadron spends a matching token, discard that token."],
+            "sv": [
+                "You must choose 2 types of command tokens for this card (5).",
+                "After an enemy ship resolves a command, you may discard a matching command token from this card. If you do, that enemy ship gains 1 matching raid token.",
+                "While a friendly squadron is attacking a ship with at least 1 raid token, it may reroll 1 die."
+            ]
         }
     },
     {
