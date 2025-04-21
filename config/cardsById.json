@@ -7265,7 +7265,7 @@
     "faction": "republic",
     "cardType": "ship",
     "shipSize": "large",
-    "points": 104,
+    "points": 97,
     "isUnique": false,
     "upgradeSlots": [
       "commander",

@@ -33,9 +33,9 @@ function SquadronsRow({ version, squadrons, handleSetZoomOnCard }) {
     if (squadrons.length === 0 ) return undefined;
     return (
         <div style={{ display: 'flex', flexFlow: 'row wrap' }}>
-            {squadrons.map((squadron) => {
+            {squadrons.map((squadron, index) => {
                 return (
-                    <CardButton version={version} id={squadron.id} key={squadron.id} cardStyles={{ maxHeight: 240 }} onClick={() => handleSetZoomOnCard(squadron.id)} />
+                    <CardButton version={version} squadronIndex={index} id={squadron.id} key={squadron.id} cardStyles={{ maxHeight: 240 }} onClick={() => handleSetZoomOnCard(squadron.id)} />
                 );
             })}
         </div>

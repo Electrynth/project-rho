@@ -35,13 +35,15 @@ const versions = [
             "sv": 2
         },
         footnoteChanges: {
-
+            "fb": ["-Escort", "+Rogue"],
+            "gd": ["-Escort", "+Screen"]
         },
         enabledCards: [
             "tp",
             "tr",
             "ts",
-            "tt"
+            "tt",
+            "tq"
         ],
         disabledCards: [],
         textChanges: {
