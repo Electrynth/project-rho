@@ -42,8 +42,7 @@ const versions = [
             "tp",
             "tr",
             "ts",
-            "tt",
-            "tq"
+            "tt"
         ],
         disabledCards: [],
         textChanges: {
@@ -85,14 +84,14 @@ const versions = [
             "sv": 2
         },
         footnoteChanges: {
-
+            "fb": ["-Escort", "+Rogue"],
+            "gd": ["-Escort", "+Screen"]
         },
         enabledCards: [
             "tp",
             "tr",
             "ts",
-            "tt",
-            "tq"
+            "tt"
         ],
         disabledCards: [
 
