@@ -5,12 +5,15 @@ const roles = {
             'nbrown4296@gmail.com',
             'dallalanamackenzie@gmail.com',
             'larson.n12@gmail.com',
-            'jchen101@gmail.com'
+            'jchen101@gmail.com',
+            'larkairn@hotmail.co.uk'
         ]
     },
     'playtester': {
         label: 'Playtesters',
         userEmails: [
+            'mail@the-spike.de',
+            'andrewarm33@gmail.com',
             'paul.adler24@gmail.com',
             'rhysaghatabay@gmail.com',
             'dbertier@free.fr',
@@ -45,7 +48,6 @@ const roles = {
             'yetiapoilblanc@hotmail.com',
             'skybloub@hotmail.fr',
             'chris_a_spencer@hotmail.com',
-            'larkairn@hotmail.co.uk',
             'tora.samurai@web.de',
             'mathieu_barbeau@hotmail.ca',
             'marcmalfara@gmail.com',
