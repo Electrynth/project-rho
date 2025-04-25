@@ -6,7 +6,8 @@ const roles = {
             'dallalanamackenzie@gmail.com',
             'larson.n12@gmail.com',
             'jchen101@gmail.com',
-            'larkairn@hotmail.co.uk'
+            'larkairn@hotmail.co.uk',
+            'xxjacksonlipschutzxx@gmail.com'
         ]
     },
     'playtester': {
