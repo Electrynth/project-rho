@@ -7253,6 +7253,7 @@
       "officer",
       "officer",
       "weapons team",
+      "weapons team",
       "title"
     ],
     "id": "tr"
@@ -7265,11 +7266,12 @@
     "faction": "republic",
     "cardType": "ship",
     "shipSize": "large",
-    "points": 97,
+    "points": 94,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
       "officer",
+      "weapons team",
       "weapons team",
       "defensive retrofit",
       "ion cannons",
