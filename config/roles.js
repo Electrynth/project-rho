@@ -13,6 +13,7 @@ const roles = {
     'playtester': {
         label: 'Playtesters',
         userEmails: [
+            'chris.mcw@live.co.uk',
             'kuba.charmo@gmail.com',
             'jarek.jesikiewicz@gmail.com',
             'mail@the-spike.de',
