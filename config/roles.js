@@ -7,7 +7,8 @@ const roles = {
             'larson.n12@gmail.com',
             'jchen101@gmail.com',
             'larkairn@hotmail.co.uk',
-            'xxjacksonlipschutzxx@gmail.com'
+            'xxjacksonlipschutzxx@gmail.com',
+            'fritzofgalatia@gmail.com'
         ]
     },
     'playtester': {
@@ -15,7 +16,6 @@ const roles = {
         userEmails: [
             'strefazabawy@gmail.com',
             'richard.hill@gmx.de',
-            'chris.mcw@live.co.uk',
             'kuba.charmo@gmail.com',
             'jarek.jesikiewicz@gmail.com',
             'mail@the-spike.de',
@@ -29,7 +29,6 @@ const roles = {
             'patrickryandoupe@gmail.com',
             'ifranklin@ntlworld.com',
             'sebastianrauscher1987@googlemail.com',
-            'fritzofgalatia@gmail.com',
             'samsimpsonbbf@gmail.com',
             'thomsonjohn1988@gmail.com',
             'seb.legare@gmail.com',
