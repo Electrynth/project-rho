@@ -78,7 +78,7 @@ const versions = [
         }
     },
     {
-        id: 1,
+        id: 2,
         label: "ARC Playtesting",
         description: "Playtesting package for ARC playtesters.",
         roles: ["core", "playtester"],
