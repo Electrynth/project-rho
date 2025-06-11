@@ -7198,13 +7198,13 @@
   },
   "tp": {
     "hidden": true,
-    "displayName": "Munificent Heavy Frigate",
+    "displayName": "Munificent Command Frigate",
     "imageName": "Munificent-class Heavy Frigate",
-    "cardName": "Munificent-class Heavy Frigate",
+    "cardName": "Munificent-class Command Frigate",
     "faction": "separatists",
     "cardType": "ship",
     "shipSize": "medium",
-    "points": 78,
+    "points": 74,
     "isUnique": true,
     "upgradeSlots": [
       "commander",
@@ -7240,13 +7240,13 @@
   },
   "tr": {
     "hidden": true,
-    "displayName": "Arquitens Jedi Cruiser",
+    "displayName": "Arquitens Light Cruiser",
     "imageName": "Arquitens-class Jedi Cruiser",
     "cardName": "Arquitens-class Light Cruiser",
     "faction": "republic",
     "cardType": "ship",
     "shipSize": "small",
-    "points": 50,
+    "points": 48,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -7266,7 +7266,7 @@
     "faction": "republic",
     "cardType": "ship",
     "shipSize": "large",
-    "points": 94,
+    "points": 95,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -7275,9 +7275,7 @@
       "weapons team",
       "defensive retrofit",
       "ordnance",
-      "ion cannons",
-      "turbolasers",
-      "turbolasers",
+      "ordnance",
       "title"
     ],
     "id": "ts"
