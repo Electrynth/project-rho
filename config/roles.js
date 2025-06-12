@@ -14,6 +14,7 @@ const roles = {
     'playtester': {
         label: 'Playtesters',
         userEmails: [
+            'judgewrath@gmail.com',
             'strefazabawy@gmail.com',
             'richard.hill@gmx.de',
             'kuba.charmo@gmail.com',
@@ -23,7 +24,6 @@ const roles = {
             'paul.adler24@gmail.com',
             'rhysaghatabay@gmail.com',
             'dbertier@free.fr',
-            'forrest.weigel@gmail.com',
             'justin.rasmussen@gmail.com',
             'simon.girard@gmail.com',
             'patrickryandoupe@gmail.com',
