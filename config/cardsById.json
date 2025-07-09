@@ -7246,7 +7246,7 @@
     "faction": "republic",
     "cardType": "ship",
     "shipSize": "small",
-    "points": 48,
+    "points": 52,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -7265,7 +7265,7 @@
     "faction": "republic",
     "cardType": "ship",
     "shipSize": "large",
-    "points": 95,
+    "points": 100,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -7281,7 +7281,7 @@
   },
   "tt": {
     "hidden": true,
-    "displayName": "Quarren Gunship",
+    "displayName": "Quarren Prototype Gunship",
     "imageName": "Quarren Gunship",
     "cardName": "MC30c Torpedo Frigate",
     "faction": "separatists",
