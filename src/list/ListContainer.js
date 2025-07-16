@@ -368,6 +368,34 @@ function ListContainer({
         }
     }
 
+    const copyList = () => {
+        const list = {
+            version,
+            faction,
+            commander,
+            uniques,
+            ships,
+            squadrons,
+            redObjId,
+            yellowObjId,
+            blueObjId
+        };
+
+        const shipPoints = calculateShipPoints(ships, version);
+        const squadronPoints = calculateSquadronPoints(squadrons, version);
+        const points = shipPoints + squadronPoints;
+
+        if (listId) {
+            axios.post(`${urls.api}/lists`, { ...list, title: title + ' copy', points, email: user.email }).then(copiedList => {
+                setListId(copiedList.data.listId);
+                setListEmail(copiedList.data.email);
+                router.push(`/list/${copiedList.data.listId}`);
+            }).catch(e => {
+                console.error(e.message);
+            });
+        }
+    }
+
     const handleSetTitleFromEvent = (event) => {
         if (title.length < 51 || event.target.value.length < title.length) setTitle(event.target.value);
     }
@@ -1128,6 +1156,7 @@ function ListContainer({
                     listEmail={listEmail}
                     listId={listId}
                     saveList={saveList}
+                    copyList={copyList}
                     deleteList={deleteList}
                     generateExportedListText={generateExportedListText}
                 />
