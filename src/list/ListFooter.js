@@ -60,13 +60,12 @@ function ListFooter({
             </div>
             <div style={{ flexGrow: 1 }} />
             <div style={{ ...centerAlignedRowStyles }}>
-                <IconButton size="small" style={{ marginRight: 2, cursor: 'pointer' }} onClick={() => setIsDialogOpen(true)}>
+                <IconButton style={{ marginRight: 2, cursor: 'pointer' }} onClick={() => setIsDialogOpen(true)}>
                     <OpenInNew fontSize="inherit" />
                 </IconButton>
                 {listId ? (
                     <IconButton
                         disabled={!(user && user.email === listEmail)}
-                        size="small"
                         style={{ marginRight: 2, cursor: 'pointer' }}
                         onClick={copyList}
                     >
@@ -78,7 +77,6 @@ function ListFooter({
                 {listId ? (
                     <IconButton
                         disabled={!(user && user.email === listEmail)}
-                        size="small"
                         style={{ marginRight: 2, cursor: 'pointer' }}
                         onClick={deleteList}
                     >
