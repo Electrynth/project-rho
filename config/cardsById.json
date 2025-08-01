@@ -707,7 +707,7 @@
     "faction": "rebels",
     "cardType": "ship",
     "shipSize": "small",
-    "points": 56,
+    "points": 52,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -795,7 +795,7 @@
     "faction": "empire",
     "cardType": "ship",
     "shipSize": "medium",
-    "points": 93,
+    "points": 85,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -1739,7 +1739,7 @@
     "cardName": "Han Solo",
     "title": "Millennium Falcon",
     "faction": "rebels",
-    "points": 26,
+    "points": 24,
     "isUnique": true,
     "keywords": [
       "Grit",
@@ -1830,7 +1830,7 @@
     "isUnique": true,
     "keywords": [
       "Bomber",
-      "Escort"
+      "Rogue"
     ],
     "cardType": "squadron",
     "id": "fb"
@@ -2165,10 +2165,10 @@
     "cardName": "Darth Vader",
     "imageName": "Darth Vader TIE Advanced",
     "faction": "empire",
-    "points": 21,
+    "points": 20,
     "isUnique": true,
     "keywords": [
-      "Escort"
+      "Screen"
     ],
     "cardType": "squadron",
     "id": "gd"
@@ -7197,9 +7197,9 @@
     "id": "to"
   },
   "tp": {
-    "hidden": true,
+    "hidden": false,
     "displayName": "Munificent Command Frigate",
-    "imageName": "Munificent-class Heavy Frigate",
+    "imageName": "Munificent-class Command Frigate",
     "cardName": "Munificent-class Command Frigate",
     "faction": "separatists",
     "cardType": "ship",
@@ -7239,9 +7239,9 @@
     "id": "tq"
   },
   "tr": {
-    "hidden": true,
+    "hidden": false,
     "displayName": "Arquitens Light Cruiser",
-    "imageName": "Arquitens-class Jedi Cruiser",
+    "imageName": "Arquitens-class Light Cruiser Republic",
     "cardName": "Arquitens-class Light Cruiser",
     "faction": "republic",
     "cardType": "ship",
@@ -7253,15 +7253,16 @@
       "officer",
       "officer",
       "weapons team",
+      "weapons team",
       "title"
     ],
     "id": "tr"
   },
   "ts": {
-    "hidden": true,
+    "hidden": false,
     "displayName": "Venator Imperator Refit",
     "imageName": "Venator Star Destroyer Imperator Refit",
-    "cardName": "Venator II-class Star Destroyer",
+    "cardName": "Venator Star Destroyer Imperator Refit",
     "faction": "republic",
     "cardType": "ship",
     "shipSize": "large",
@@ -7271,7 +7272,6 @@
       "commander",
       "officer",
       "weapons team",
-      "weapons team",
       "defensive retrofit",
       "ordnance",
       "ordnance",
@@ -7280,10 +7280,10 @@
     "id": "ts"
   },
   "tt": {
-    "hidden": true,
-    "displayName": "Quarren Prototype Gunship",
-    "imageName": "Quarren Gunship",
-    "cardName": "MC30c Torpedo Frigate",
+    "hidden": false,
+    "displayName": "Quarren Gunship",
+    "imageName": "Quarren Prototype Gunship",
+    "cardName": "Quarren Prototype Gunship",
     "faction": "separatists",
     "cardType": "ship",
     "shipSize": "small",

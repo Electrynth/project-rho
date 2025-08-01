@@ -1,6 +1,11 @@
 {
     "news": [
         {
+            "date": "1 August 2025",
+            "title": "ARC01 Is Here!",
+            "body": "Release includes four new ships and several reworked cards."
+        },
+        {
             "date": "21 January 2025",
             "title": "Final AMG Star Wars: Armada Update",
             "body": "Release includes revised tournament regulations, updated rules, and errata."
