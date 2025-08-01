@@ -888,8 +888,6 @@ function ListContainer({
         setIsCardPropsDelimited(false)
     }
 
-    console.log(ships);
-
     const setEligibleUpgradesToAdd = (shipIndex, upgradeIndex) => {
         const ship = ships[shipIndex];
         const shipCard = cards.cardsById[ships[shipIndex].id];
@@ -928,6 +926,9 @@ function ListContainer({
             if (card.hidden && !versions[version].enabledCards.includes(id)) continue;
 
             if (versions[version].disabledCards.includes(id)) continue;
+
+            // Check if Radiant 7
+            if(ships[shipIndex].upgradesEquipped[ships[shipIndex].upgradesEquipped.length - 1].parentCardId === 'pw' && (upgradeType === 'ordnance' || upgradeType === 'turbolasers')) continue;
             
             // Check if ship already has a modification upgrade or fails uniqueness check
             let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.cardName);
