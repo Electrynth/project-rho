@@ -2881,7 +2881,7 @@
   },
   "ii": {
     "cardName": "Admiral Motti",
-    "points": 24,
+    "points": 20,
     "isUnique": true,
     "faction": "empire",
     "upgradeSlots": [
@@ -2947,7 +2947,7 @@
   "in": {
     "cardName": "Darth Vader",
     "imageName": "Darth Vader Admiral",
-    "points": 34,
+    "points": 28,
     "isUnique": true,
     "faction": "empire",
     "upgradeSlots": [
@@ -2960,7 +2960,7 @@
   },
   "io": {
     "cardName": "Emperor Palpatine",
-    "points": 35,
+    "points": 32,
     "isUnique": true,
     "faction": "empire",
     "upgradeSlots": [
