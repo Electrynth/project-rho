@@ -10,6 +10,7 @@ import republicUpgrade from 'public/images/templates/upgrade/template parts/repu
 import separatistsUpgrade from 'public/images/templates/upgrade/template parts/separatists.png';
 import exhaust from 'public/images/templates/upgrade/template parts/exhaust.png';
 import red from 'public/images/templates/upgrade/template parts/red.png';
+import nonrecur from 'public/images/templates/upgrade/template parts/nonrecur.png';
 import blue from 'public/images/templates/upgrade/template parts/blue.png';
 import blueCommander from 'public/images/templates/upgrade/template parts/blue commander.png';
 import doubleSlot from 'public/images/templates/upgrade/template parts/double upgrade slot.png';
@@ -174,6 +175,7 @@ const upgradeTemplateImages = {
     separatistsCommander,
     exhaust,
     red,
+    nonrecur,
     blue,
     blueCommander,
     doubleSlot,

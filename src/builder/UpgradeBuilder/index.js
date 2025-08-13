@@ -54,7 +54,7 @@ export default function UpgradeBuilder({ breakpoints }) {
     const [cardTextFontSize, setCardTextFontSize] = useState(19);
     const [titledShip, setTitledShip] = useState('');
     const [shipIconYOffset, setShipIconYOffset] = useState(0);
-    const [isExhaust, setIsExhaust] = useState(false);
+    const [exhaustType, setExhaustType] = useState('none');
     const [upgradeTypes, setUpgradeTypes] = useState([]);
     const [readyCostTokens, setReadyCostTokens] = useState([]);
     const [readyCostTokenValue, setReadyCostTokenValue] = useState(0);
@@ -279,14 +279,15 @@ export default function UpgradeBuilder({ breakpoints }) {
                         <Typography>or</Typography>
                         <SelectorInput
                             elementId="exhaustible-input"
-                            label="Exhaustible"
-                            value={isExhaust}
-                            handleChange={e => setIsExhaust(e.target.value)}
+                            label="Exhaust"
+                            value={exhaustType}
+                            handleChange={e => setExhaustType(e.target.value)}
                             items={[
-                                { label: 'No', value: false },
-                                { label: 'Yes', value: true }
+                                { label: 'No', value: 'none' },
+                                { label: 'Normal Exhaust', value: 'exhaust' },
+                                { label: 'Non-recur Exhaust', value: 'non-recur'}
                             ]}
-                            style={{ width: 90 }}
+                            style={{ width: 180 }}
                         />
                     </div>
                     <ToggleGroupInput
@@ -411,7 +412,7 @@ export default function UpgradeBuilder({ breakpoints }) {
                 cardText={cardText}
                 cardTextFontSize={cardTextFontSize}
                 upgradeTypes={upgradeTypes}
-                isExhaust={isExhaust}
+                exhaustType={exhaustType}
                 startingTokens={startingTokens}
                 startingTokenValue={startingTokenValue}
                 readyCostTokens={readyCostTokens}
