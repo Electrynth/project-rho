@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import _ from 'lodash';
 import { useAuth0 } from '@auth0/auth0-react';
 import axios from 'axios';
@@ -174,50 +174,6 @@ function RightPaneHeader({
     );
 }
 
-function calculateSquadronPoints(squadrons, version) {
-    let squadronPoints = 0;
-
-    squadrons.forEach(squadron => {
-        const squadronCard = cards.cardsById[squadron.id];
-        const { points } = squadronCard
-
-        let delta = 0;
-        if (squadron.id in versions[version].pointDeltas) {
-            delta = versions[version].pointDeltas[squadron.id];
-        }
-
-        if (points) squadronPoints += (points + delta) * squadron.count;
-        else return 0;
-    });
-
-    return squadronPoints;
-}
-
-function calculateShipPoints(ships, version) {
-    let shipPoints = 0;
-
-    ships.forEach(ship => {
-        const shipCard = cards.cardsById[ship.id];
-        const { points } = shipCard;
-        shipPoints += points;
-        if (ship.id in versions[version].pointDeltas) {
-            shipPoints += versions[version].pointDeltas[ship.id];
-        }
-        for (let i = 0; i < ship.upgradesEquipped.length; i++) {
-            const upgrade = ship.upgradesEquipped[i];
-            if (upgrade.id && upgrade.id !== true) {
-                const upgradeCard = cards.cardsById[upgrade.id];
-                const { points } = upgradeCard;
-                shipPoints += points;
-                if (upgrade.id in versions[version].pointDeltas) {
-                    shipPoints += versions[version].pointDeltas[upgrade.id];
-                }
-            }
-        }
-    });
-
-    return shipPoints;
-}
 
 function ListContainer({
     primaryPaneStyles,
@@ -257,6 +213,74 @@ function ListContainer({
         md: useMediaQuery(theme.breakpoints.up('md')),
         lg: useMediaQuery(theme.breakpoints.up('lg'))
     };
+
+    const calculateSquadronPoints = (squadrons, version) => {
+        let squadronPoints = 0;
+        squadrons.forEach(squadron => {
+            const squadronCard = cards.cardsById[squadron.id];
+            const { points } = squadronCard
+
+            let delta = 0;
+            if (squadron.id in versions[version].pointDeltas) {
+                delta = versions[version].pointDeltas[squadron.id];
+            }
+        
+            if (points) squadronPoints += (points + delta) * squadron.count;
+            else return 0;
+        });
+
+        return squadronPoints;
+    }
+
+    const redoSquadronTitles = () => {
+        const redoneSquadronTitles = [];
+        squadrons.forEach(squadron => {
+            const squadronCard = cards.cardsById[squadron.id];
+            if (squadron.title) redoneSquadronTitles.push(squadron.id);
+        });
+        setSquadronTitles(redoneSquadronTitles);
+    }
+
+    const calculateShipPoints = (ships, version) => {
+        let shipPoints = 0;
+
+        ships.forEach(ship => {
+            const shipCard = cards.cardsById[ship.id];
+            const { points } = shipCard;
+            shipPoints += points;
+            if (ship.id in versions[version].pointDeltas) {
+                shipPoints += versions[version].pointDeltas[ship.id];
+            }
+
+            for (let i = 0; i < ship.upgradesEquipped.length; i++) {
+                const upgrade = ship.upgradesEquipped[i];
+                if (upgrade.id && upgrade.id !== true) {
+                    const upgradeCard = cards.cardsById[upgrade.id];
+                    const { points } = upgradeCard;
+                    shipPoints += points;
+                    if (upgrade.id in versions[version].pointDeltas) {
+                        shipPoints += versions[version].pointDeltas[upgrade.id];
+                    }
+                }
+            }
+        });
+
+        return shipPoints;
+    }
+
+    const redoUniques = () => {
+        const redoneUniques = [];
+        ships.forEach(ship => {
+            const shipCard = cards.cardsById[ship.id];
+            if (shipCard.isUnique) redoneUniques.push(shipCard.cardName);
+            for (let i = 0; i < ship.upgradesEquipped.length; i++) {
+                const upgrade = ship.upgradesEquipped[i];
+                if (upgrade.id && upgrade.id !== true && cardsById[upgrade.id].isUnique) {
+                    redoneUniques.push(cardsById[upgrade.id].cardName);
+                }
+            }
+        })
+    }
 
     const shipPoints = calculateShipPoints(ships, version);
     const squadronPoints = calculateSquadronPoints(squadrons, version);
@@ -488,6 +512,8 @@ function ListContainer({
         let newShips = [...ships];
         newShips.splice(index + 1, 0, newShip);
         setShips([...newShips]);
+        redoUniques();
+        redoSquadronTitles();
     }
 
     const addShip = (id) => {
@@ -500,6 +526,8 @@ function ListContainer({
         handleSetRightPaneFocus(false);
         setCardComponentProps([]);
         setRightPaneText('');
+        redoUniques();
+        redoSquadronTitles();
     }
 
     const shiftShipInList = (index, shiftValue) => {
@@ -570,6 +598,8 @@ function ListContainer({
         handleSetRightPaneFocus(false);
         setCardComponentProps([]);
         setRightPaneText('');
+        redoUniques();
+        redoSquadronTitles();
     }
 
     const addSquadron = (id) => {
@@ -593,6 +623,7 @@ function ListContainer({
         setRightPaneText('');
         setIsCardPropsDelimited(false);
         setSquadronKeywordFilter('all');
+        redoSquadronTitles();
     }
 
 
@@ -690,6 +721,8 @@ function ListContainer({
         handleSetRightPaneFocus(false);
         setCardComponentProps([]);
         setRightPaneText('');
+        redoSquadronTitles();
+        redoUniques();
     }
 
     const swapUpgrade = (shipIndex, upgradeIndex, id) => {
@@ -784,6 +817,8 @@ function ListContainer({
 
         setUniques(newUniques);
         setShips(newShips);
+        redoUniques();
+        redoSquadronTitles();
     }
 
     const removeSquadron = (index) => {
@@ -807,6 +842,8 @@ function ListContainer({
         setSquadronTitles(newSquadronTitles);
         setSquadrons(newSquadrons);
         setUniques(newUniques);
+        redoSquadronTitles()
+        redoUniques();
     }
     
     const setEligibleShipsToAdd = () => {
