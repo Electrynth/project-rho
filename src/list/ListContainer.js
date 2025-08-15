@@ -236,7 +236,7 @@ function ListContainer({
         const redoneSquadronTitles = [];
         squadrons.forEach(squadron => {
             const squadronCard = cards.cardsById[squadron.id];
-            if (squadron.title) redoneSquadronTitles.push(squadron.id);
+            if (squadronCard.title) redoneSquadronTitles.push(squadronCard.title);
         });
         setSquadronTitles(redoneSquadronTitles);
     }
