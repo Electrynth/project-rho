@@ -272,7 +272,7 @@ function ListContainer({
         const allUniques = [];
         ships.forEach(ship => {
             const shipCard = cards.cardsById[ship.id];
-            if (shipCard.isUnique) redoneUniques.push(shipCard.cardName);
+            if (shipCard.isUnique) allUniques.push(shipCard.cardName);
             for (let i = 0; i < ship.upgradesEquipped.length; i++) {
                 const upgrade = ship.upgradesEquipped[i];
                 if (upgrade.id && upgrade.id !== true && cardsById[upgrade.id].isUnique) {
