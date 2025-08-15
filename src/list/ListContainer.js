@@ -236,7 +236,6 @@ function ListContainer({
         const allSquadronTitles = [];
         squadrons.forEach(squadron => {
             const squadronCard = cards.cardsById[squadron.id];
-            console.log(squadronCard)
             if (squadronCard.title) allSquadronTitles.push(squadronCard.title);
         });
         return allSquadronTitles;
@@ -330,6 +329,8 @@ function ListContainer({
     useEffect(() => {
         console.log('uniques:', getAllUniques(), 'vs', uniques);
         console.log('squadron titles:', getAllSquadronTitles(), 'vs', squadronTitles);
+        setUniques([...getAllUniques()])
+        setSquadronTitles([...getAllSquadronTitles()])
     }, [shipPoints, squadronPoints]);
 
     const deleteList = () => {
