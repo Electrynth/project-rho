@@ -232,15 +232,6 @@ function ListContainer({
         return squadronPoints;
     }
 
-    const getAllSquadronTitles = () => {
-        const allSquadronTitles = [];
-        squadrons.forEach(squadron => {
-            const squadronCard = cards.cardsById[squadron.id];
-            if (squadronCard.title) allSquadronTitles.push(squadronCard.title);
-        });
-        return allSquadronTitles;
-    }
-
     const calculateShipPoints = (ships, version) => {
         let shipPoints = 0;
 
@@ -280,7 +271,20 @@ function ListContainer({
                 }
             }
         });
+        squadrons.forEach(squadron => {
+            const squadronCard = cards.cardsById[squadron.id];
+            if (squadronCard.isUnique) allUniques.push(squadronCard.cardName);
+        });
         return allUniques;
+    }
+
+    const getAllSquadronTitles = () => {
+        const allSquadronTitles = [];
+        squadrons.forEach(squadron => {
+            const squadronCard = cards.cardsById[squadron.id];
+            if (squadronCard.title) allSquadronTitles.push(squadronCard.title);
+        });
+        return allSquadronTitles;
     }
 
     const shipPoints = calculateShipPoints(ships, version);
