@@ -466,13 +466,21 @@ function ListContainer({
             const shipCard = cards.cardsById[ship.id];
             let shipTotalPoints = shipCard.points;
             const shipPointDelta = versions[version].pointDeltas[ship.id] ? versions[version].pointDeltas[ship.id] : 0;
-            lines.push(`${shipCard.displayName ? shipCard.displayName : shipCard.cardName} (${shipCard.points + shipPointDelta})`);
+            if (shipCard.exportName) {
+                lines.push(`${shipCard.exportName}`);
+            } else {
+                lines.push(`${shipCard.displayName ? shipCard.displayName : shipCard.cardName} (${shipCard.points + shipPointDelta})`);
+            }
             ship.upgradesEquipped.forEach(upgrade => {
                 if (upgrade.id && cards.cardsById[upgrade.id]) {
                     const upgradeCard = cards.cardsById[upgrade.id];
                     const upgradePointDelta = versions[version].pointDeltas[upgrade.id] ? versions[version].pointDeltas[upgrade.id] : 0;
                     shipTotalPoints += upgradeCard.points + upgradePointDelta;
-                    lines.push(`• ${upgradeCard.displayName ? upgradeCard.displayName : upgradeCard.cardName} (${upgradeCard.points + upgradePointDelta})`);
+                    if (upgradeCard.exportName) {
+                        lines.push(`• ${upgradeCard.exportName}`);
+                    } else {
+                        lines.push(`• ${upgradeCard.displayName ? upgradeCard.displayName : upgradeCard.cardName} (${upgradeCard.points + upgradePointDelta})`);
+                    }
                 }
             });
             lines.push(`= ${shipTotalPoints} Points`);
@@ -492,12 +500,15 @@ function ListContainer({
                     delta = versions[version].pointDeltas[squadron.id];
                 }
 
+                if (squadronCard.exportName) {
+                    lines.push(`• ${squadron.count > 1 ? squadron.count + ' x ' : ''}${squadronCard.exportName}`);
+                } else {
+                    lines.push(`• ${squadron.count > 1 ? squadron.count + ' x ' : ''}${squadronCard.displayName ? squadronCard.displayName : squadronCard.cardName} (${squadronCard.points + delta})`);
+                }
                 if (squadron.count === 1) {
                     totalSquadronPoints += squadronCard.points + delta;
-                    lines.push(`• ${squadronCard.displayName ? squadronCard.displayName : squadronCard.cardName} (${squadronCard.points + delta})`);
                 } else {
                     totalSquadronPoints += (squadronCard.points + delta) * squadron.count;
-                    lines.push(`• ${squadron.count} x ${squadronCard.displayName ? squadronCard.displayName : squadronCard.cardName} (${(squadronCard.points + delta) * squadron.count})`);
                 }
             }
         });

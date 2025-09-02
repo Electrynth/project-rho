@@ -704,6 +704,7 @@
   "bm": {
     "displayName": "Pelta Assault Ship",
     "cardName": "Modified Pelta-class Assault Ship",
+    "exportName": "Modified Pelta-class Assault Ship [ARC] (52)",
     "faction": "rebels",
     "cardType": "ship",
     "shipSize": "small",
@@ -792,6 +793,7 @@
   },
   "br": {
     "cardName": "Interdictor Combat Refit",
+    "exportName": "Interdictor Combat Refit [ARC] (85)",
     "faction": "empire",
     "cardType": "ship",
     "shipSize": "medium",
@@ -1825,6 +1827,7 @@
   },
   "fb": {
     "cardName": "Luke Skywalker",
+    "exportName": "Luke Skywalker - X-Wing Squadron [ARC] (20)",
     "faction": "rebels",
     "points": 20,
     "isUnique": true,
@@ -2163,6 +2166,7 @@
   "gd": {
     "displayName": "Darth Vader (TIE Advanced)",
     "cardName": "Darth Vader",
+    "exportName": "Darth Vader - TIE Advanced Squadron [ARC] (20)",
     "imageName": "Darth Vader TIE Advanced",
     "faction": "empire",
     "points": 20,
@@ -2749,6 +2753,7 @@
   },
   "hy": {
     "cardName": "Commander Sato",
+    "exportName": "Commander Sato [ARC] (25)",
     "points": 25,
     "isUnique": true,
     "faction": "rebels",
@@ -2842,6 +2847,7 @@
   "if": {
     "cardName": "Leia Organa",
     "imageName": "Leia Organa Admiral",
+    "exportName": "Leia Organa [ARC] (28)",
     "points": 28,
     "isUnique": true,
     "faction": "rebels",
@@ -2855,6 +2861,7 @@
   },
   "ig": {
     "cardName": "Mon Mothma",
+    "exportName": "Mon Mothma [ARC] (27)",
     "points": 27,
     "isUnique": true,
     "faction": "rebels",
@@ -2881,6 +2888,7 @@
   },
   "ii": {
     "cardName": "Admiral Motti",
+    "exportName": "Admiral Motti [ARC] (20)",
     "points": 20,
     "isUnique": true,
     "faction": "empire",
@@ -2920,6 +2928,7 @@
   },
   "il": {
     "cardName": "Admiral Screed",
+    "exportName": "Admiral Screed [ARC] (26)",
     "points": 26,
     "isUnique": true,
     "faction": "empire",
@@ -2946,6 +2955,7 @@
   },
   "in": {
     "cardName": "Darth Vader",
+    "exportName": "Darth Vader [ARC] (28)",
     "imageName": "Darth Vader Admiral",
     "points": 28,
     "isUnique": true,
@@ -2960,6 +2970,7 @@
   },
   "io": {
     "cardName": "Emperor Palpatine",
+    "exportName": "Emperor Palpatine [ARC] (32)",
     "points": 32,
     "isUnique": true,
     "faction": "empire",
@@ -6909,6 +6920,7 @@
   },
   "sv": {
     "cardName": "General Draven",
+    "exportName": "General Draven [ARC] (22)",
     "points": 22,
     "isUnique": true,
     "faction": "rebels",
@@ -7201,6 +7213,7 @@
     "displayName": "Munificent Command Frigate",
     "imageName": "Munificent-class Command Frigate",
     "cardName": "Munificent-class Command Frigate",
+    "exportName": "Munificent-class Command Frigate [ARC] (74)",
     "faction": "separatists",
     "cardType": "ship",
     "shipSize": "medium",
@@ -7243,6 +7256,7 @@
     "displayName": "Arquitens Light Cruiser",
     "imageName": "Arquitens-class Light Cruiser Republic",
     "cardName": "Arquitens-class Light Cruiser",
+    "exportName": "Arquitens-class Light Cruiser [ARC] (52)",
     "faction": "republic",
     "cardType": "ship",
     "shipSize": "small",
@@ -7263,6 +7277,7 @@
     "displayName": "Venator Imperator Refit",
     "imageName": "Venator Star Destroyer Imperator Refit",
     "cardName": "Venator Star Destroyer Imperator Refit",
+    "exportName": "Venator Star Destroyer Imperator Refit [ARC] (100)",
     "faction": "republic",
     "cardType": "ship",
     "shipSize": "large",
@@ -7284,6 +7299,7 @@
     "displayName": "Quarren Gunship",
     "imageName": "Quarren Prototype Gunship",
     "cardName": "Quarren Prototype Gunship",
+    "exportName": "Quarren Prototype Gunship [ARC] (63)",
     "faction": "separatists",
     "cardType": "ship",
     "shipSize": "small",
