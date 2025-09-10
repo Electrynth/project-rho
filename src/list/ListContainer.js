@@ -1164,7 +1164,8 @@ function ListContainer({
                         version={version}
                         commander={commander}
                         ships={ships}
-                        shipPoints={shipPoints}
+                        calculateShipPoints={calculateShipPoints}
+                        shipPoints={calculateShipPoints(ships, version)}
                         removeShip={removeShip}
                         copyShip={copyShip}
                         removeUpgrade={removeUpgrade}
@@ -1179,11 +1180,12 @@ function ListContainer({
                 <ListSquadrons
                     version={version}
                     squadrons={squadrons}
-                    squadronPoints={squadronPoints}
+                    squadronPoints={calculateSquadronPoints(squadrons, version)}
                     swapSquadron={swapSquadron}
                     incrementSquadron={incrementSquadron}
                     decrementSquadron={decrementSquadron}
                     removeSquadron={removeSquadron}
+                    calculateSquadronPoints={calculateSquadronPoints}
                     setEligibleSquadronsToSwap={setEligibleSquadronsToSwap}
                     setEligibleSquadronsToAdd={setEligibleSquadronsToAdd}
                     handleSetZoomOnCard={(id) => setZoomDialogCard(id)}

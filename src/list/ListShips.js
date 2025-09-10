@@ -10,6 +10,7 @@ function ListShips({
     removeShip,
     copyShip,
     removeUpgrade,
+    calculateShipPoints,
     setEligibleShipsToAdd,
     setEligibleUpgradesToSwap,
     setEligibleUpgradesToAdd,
@@ -30,6 +31,7 @@ function ListShips({
                     shipPoints={shipPoints}
                     removeShip={removeShip}
                     removeUpgrade={removeUpgrade}
+                    calculateShipPoints={calculateShipPoints}
                     setEligibleUpgradesToSwap={setEligibleUpgradesToSwap}
                     setEligibleUpgradesToAdd={setEligibleUpgradesToAdd}
                     handleSetZoomOnCard={handleSetZoomOnCard}

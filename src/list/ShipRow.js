@@ -24,6 +24,7 @@ function ShipRow({
     removeShip,
     copyShip,
     removeUpgrade,
+    calculateShipPoints,
     setEligibleUpgradesToAdd,
     setEligibleUpgradesToSwap,
     handleSetZoomOnCard,
@@ -239,7 +240,7 @@ function ShipRow({
                                     style={{ marginRight: 4, border: '1px solid', borderRadius: 5, borderColor: 'rgba(238, 238, 238, 0.5)', padding: 1 }}
                                 >
                                     <div className={robotoCondensed.className} style={{ paddingLeft: 2, paddingRight: 2 }}>
-                                        {shipCard.points + upgradePoints}
+                                        {calculateShipPoints([ship], version)}
                                     </div>
                                 </div>
                             ) : undefined}
