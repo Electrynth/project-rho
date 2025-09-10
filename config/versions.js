@@ -34,8 +34,7 @@ const versions = [
             "tp",
             "tr",
             "ts",
-            "tt",
-            "tg"
+            "tt"
         ],
         disabledCards: [],
         textChanges: {}
