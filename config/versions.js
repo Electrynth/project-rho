@@ -46,9 +46,20 @@ const versions = [
         description: "Playtesting package for ARC playtesters.",
         roles: ["core", "playtester"],
         pointDeltas: {
-            
+            "no": -2,
+            "nb": -1,
+            "nc": -1,
+            "nh": -1,
+            "ad": -5,
+            "it": 4,
+            "hi": -3,
+            "hk": -3,
+            "ha": -2
         },
         footnoteChanges: {
+            "nj": ["Lose Mod"],
+            "ge": ["Adept 2->1"],
+            "he": ["-Dodge 1"]
         },
         enabledCards: [
             "tp",
