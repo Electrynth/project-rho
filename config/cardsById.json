@@ -586,7 +586,7 @@
     "id": "bf"
   },
   "bg": {
-    "displayName": "Stawhawk Battleship Mk I",
+    "displayName": "Starhawk Battleship Mk I",
     "cardName": "Starhawk-class Battleship Mark I",
     "faction": "rebels",
     "cardType": "ship",
@@ -4896,9 +4896,16 @@
       "title"
     ],
     "requirements": [
+      "AND",
       {
         "cardName": "Starhawk"
-      }
+      },
+      [
+        "NOT",
+        {
+          "cardName": "Starhawk-class Battleship Mark II"
+        }
+      ]
     ],
     "isModification": false,
     "id": "nz",
@@ -5041,9 +5048,16 @@
       "title"
     ],
     "requirements": [
+      "AND",
       {
         "cardName": "Starhawk"
-      }
+      },
+      [
+        "NOT",
+        {
+          "cardName": "Starhawk-class Battleship Mark II"
+        }
+      ]
     ],
     "isModification": false,
     "id": "oh",
@@ -7315,5 +7329,20 @@
       "title"
     ],
     "id": "tt"
+  },
+  "tu": {
+    "hidden": true,
+    "cardName": "DTT (no mod)",
+    "imageName": "Dual Turbolaser Turrets",
+    "points": 4,
+    "isUnique": false,
+    "faction": "",
+    "upgradeSlots": [
+      "turbolasers"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "tu",
+    "cardType": "upgrade"
   }
 }

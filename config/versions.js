@@ -34,7 +34,8 @@ const versions = [
             "tp",
             "tr",
             "ts",
-            "tt"
+            "tt",
+            "tu"
         ],
         disabledCards: [],
         textChanges: {}
@@ -56,15 +57,16 @@ const versions = [
             "ha": -2
         },
         footnoteChanges: {
-            "nj": ["Lose Mod"],
             "ge": ["Adept 2->1"],
-            "he": ["-Dodge 1"]
+            "he": ["-Dodge 1"],
+            "tu": ["Lose Modification"]
         },
         enabledCards: [
             "tp",
             "tr",
             "ts",
-            "tt"
+            "tt",
+            "tu"
         ],
         disabledCards: [],
         textChanges: {

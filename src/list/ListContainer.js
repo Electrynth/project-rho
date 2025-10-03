@@ -981,7 +981,8 @@ function ListContainer({
             let isDisabled = ship.hasModification && card.isModification || uniques.includes(card.cardName);
             ship.upgradesEquipped.forEach(upgrade => {
                 if (upgrade.id !== true && upgrade.id === id) isDisabled = true;
-            })
+            });
+
             newCardComponentProps.push({
                 id,
                 key: id,
