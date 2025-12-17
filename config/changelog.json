@@ -1,6 +1,11 @@
 {
     "news": [
         {
+            "date": "17 December 2025",
+            "title": "ARC02 Deployed!",
+            "body": "Point adjustments to Kraken, Muni Comms Frigate, Belbs, Generic Aethersprite, and squadron Plo & Lumi."
+        },
+        {
             "date": "1 August 2025",
             "title": "ARC01 Is Here!",
             "body": "Release includes four new ships and several reworked cards."
