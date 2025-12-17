@@ -58,7 +58,7 @@
     "faction": "separatists",
     "cardType": "ship",
     "shipSize": "medium",
-    "points": 70,
+    "points": 65,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
@@ -2447,7 +2447,7 @@
   "ha": {
     "cardName": "Delta-7 Aethersprite Squadron",
     "faction": "republic",
-    "points": 17,
+    "points": 15,
     "isUnique": false,
     "keywords": [
       "Adept",
@@ -2550,7 +2550,7 @@
   "hi": {
     "cardName": "Luminara Unduli",
     "faction": "republic",
-    "points": 23,
+    "points": 20,
     "isUnique": true,
     "keywords": [
       "Adept",
@@ -2574,7 +2574,7 @@
   "hk": {
     "cardName": "Plo Koon",
     "faction": "republic",
-    "points": 24,
+    "points": 21,
     "isUnique": true,
     "keywords": [
       "Adept ",
@@ -2586,7 +2586,7 @@
   "hl": {
     "cardName": "Belbullab-22 Starfighter Squadron",
     "faction": "separatists",
-    "points": 15,
+    "points": 14,
     "isUnique": false,
     "keywords": [
       "Relay",
@@ -3166,7 +3166,7 @@
   },
   "jd": {
     "cardName": "Kraken",
-    "points": 30,
+    "points": 24,
     "isUnique": true,
     "faction": "separatists",
     "upgradeSlots": [
