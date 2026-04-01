@@ -588,6 +588,7 @@
   "bg": {
     "displayName": "Starhawk Battleship Mk I",
     "cardName": "Starhawk-class Battleship Mark I",
+    "exportName": "Starhawk Battleship Mark I",
     "faction": "rebels",
     "cardType": "ship",
     "shipSize": "large",
@@ -609,6 +610,7 @@
   "bh": {
     "displayName": "Starhawk Battleship Mk II",
     "cardName": "Starhawk-class Battleship Mark II",
+    "exportName": "Starhawk Battleship Mark II",
     "faction": "rebels",
     "cardType": "ship",
     "shipSize": "large",
