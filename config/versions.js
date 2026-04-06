@@ -27,20 +27,8 @@ const versions = [
         description: "Playtesting package for Core Executive members",
         roles: ["core"],
         pointDeltas: {
-            "ad": -5,
-            "hi": -3,
-            "hk": -3,
-            "ha": -2,
-            "jf": -2,
-            "jd": -6,
-            "hl": -1
         },
         footnoteChanges: {
-            "ge": ["Adept 2->1"],
-            "he": ["-Dodge 1"],
-            "tu": ["Lose Modification"],
-            "hl": ["+Escort"],
-            "hj": ["+Grit"]
         },
         enabledCards: [
         ],
@@ -54,20 +42,22 @@ const versions = [
         description: "Playtesting package for ARC playtesters.",
         roles: ["core", "playtester"],
         pointDeltas: {
-            "ad": -5,
-            "hi": -3,
-            "hk": -3,
-            "ha": -2,
-            "jf": -2,
-            "jd": -6,
-            "hl": -1
+            "am": -2,
+            "an": -2,
+            "ao": -5,
+            "ts": -5,
+            "al": -2,
+            "tr": -2,
+            "sy": -1,
+            "hh": -2,
+            "iu": -4,
+            "iz": -2,
+            "kl": -3,
+            "kn": -2,
+            "ji: 1,
         },
         footnoteChanges: {
-            "ge": ["Adept 2->1"],
-            "he": ["-Dodge 1"],
-            "tu": ["Lose Modification"],
-            "hl": ["+Escort"],
-            "hj": ["+Grit"]
+            
         },
         enabledCards: [
         ],
