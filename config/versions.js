@@ -54,7 +54,7 @@ const versions = [
             "iz": -2,
             "kl": -3,
             "kn": -2,
-            "ji": 1,,
+            "ji": 1,
             "en": -1,
             "fn": -1,
             "fu": -1,
