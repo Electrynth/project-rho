@@ -39,7 +39,7 @@ const versions = [
     {
         id: 2,
         label: "ARC Playtesting",
-        description: "Playtesting package for ARC playtesters.",
+        description: "ARC03 Playtesting package for ARC playtesters.",
         roles: ["core", "playtester"],
         pointDeltas: {
             "am": -2,
@@ -54,14 +54,23 @@ const versions = [
             "iz": -2,
             "kl": -3,
             "kn": -2,
-            "ji": 1,
+            "ji": 1,,
+            "en": -1,
+            "fn": -1,
+            "fu": -1,
+            "hu": -3,
+            "gp": -2,
+            "tm": -2
         },
         footnoteChanges: {
             
         },
         enabledCards: [
+            "tm"
         ],
-        disabledCards: [],
+        disabledCards: [
+            
+        ],
         textChanges: {
         }
     }
