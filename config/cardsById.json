@@ -3956,7 +3956,7 @@
     "cardType": "upgrade"
   },
   "ll": {
-    "cardName": "Shriv Suurgav",
+    "cardName": "Shriv Surgaav",
     "points": 4,
     "isUnique": true,
     "faction": "rebels",
@@ -7318,16 +7318,23 @@
     "id": "tt"
   },
   "tu": {
-    "hidden": true,
-    "cardName": "DTT (no mod)",
-    "imageName": "Dual Turbolaser Turrets (No Mod)",
+    "cardName": "Nautilian",
     "points": 4,
-    "isUnique": false,
-    "faction": "",
+    "isUnique": true,
+    "faction": "rebels",
     "upgradeSlots": [
-      "turbolasers"
+      "title"
     ],
-    "requirements": [],
+    "requirements": [
+      "OR",
+      {
+        "cardName": "MC80 Command Cruiser"
+      },
+      {
+        "cardName": "MC80 Assault Cruiser"
+      }
+    ],
+    "addsUpgradeSlot": "fleet command",
     "isModification": false,
     "id": "tu",
     "cardType": "upgrade"
@@ -7381,5 +7388,252 @@
       "title"
     ],
     "id": "tx"
+  },
+  "ty": {
+    "cardName": "Petranaki",
+    "points": 2,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Pinnace"
+      }
+    ],
+    "isModification": false,
+    "id": "ty",
+    "cardType": "upgrade"
+  },
+  "tz": {
+    "cardName": "Poggle the Lesser",
+    "points": 20,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "tz",
+    "cardType": "upgrade"
+  },
+  "ua": {
+    "cardName": "Stellar Rise",
+    "points": 2,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Arquitens"
+      }
+    ],
+    "isModification": false,
+    "id": "ua",
+    "cardType": "upgrade"
+  },
+  "ub": {
+    "cardName": "Surrogator",
+    "points": 2,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Arquitens"
+      }
+    ],
+    "isModification": false,
+    "id": "ub",
+    "cardType": "upgrade"
+  },
+  "uc": {
+    "cardName": "Thunder Wasp",
+    "points": 3,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Arquitens"
+      }
+    ],
+    "isModification": false,
+    "id": "ua",
+    "cardType": "upgrade"
+  },
+  "ud": {
+    "cardName": "Visgura",
+    "points": 2,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Pinnace"
+      }
+    ],
+    "isModification": false,
+    "id": "ud",
+    "cardType": "upgrade"
+  },
+  "ue": {
+    "cardName": "Anakin Skywalker",
+    "imageName": "Anakin Skywalker (Twilight)",
+    "title": "Twilight",
+    "faction": "republic",
+    "points": 24,
+    "isUnique": true,
+    "keywords": [
+      "Adept",
+      "Rogue",
+      "Scout"
+    ],
+    "cardType": "squadron",
+    "id": "ue"
+  },
+  "uf": {
+    "cardName": "Bandit Squadron",
+    "faction": "rebels",
+    "points": 9,
+    "isUnique": true,
+    "keywords": [
+      "heavy"
+    ],
+    "cardType": "squadron",
+    "id": "uf"
+  },
+  "ug": {
+    "cardName": "Count Dooku",
+    "title": "Sith Infiltrator",
+    "faction": "separatists",
+    "points": 21,
+    "isUnique": true,
+    "keywords": [
+      "Adept",
+      "Cloak"
+    ],
+    "cardType": "squadron",
+    "id": "ug"
+  },
+  "uh": {
+    "cardName": "Dark Squadron",
+    "faction": "rebels",
+    "points": 17,
+    "isUnique": true,
+    "keywords": [
+      "grit",
+      "swarm"
+    ],
+    "cardType": "squadron",
+    "id": "uh"
+  },
+  "ui": {
+    "cardName": "Darth Maul",
+    "title": "Scimitar",
+    "faction": "separatists",
+    "points": 24,
+    "isUnique": true,
+    "keywords": [
+      "Cloak",
+      "Dodge",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "ui"
+  },
+  "uj": {
+    "cardName": "Five-Seven",
+    "faction": "republic",
+    "points": 21,
+    "isUnique": true,
+    "keywords": [
+      "Assault",
+      "Grit"
+    ],
+    "cardType": "squadron",
+    "id": "uj"
+  },
+  "uk": {
+    "cardName": "G9 Rigger-class Freighter",
+    "faction": "republic",
+    "points": 14,
+    "isUnique": false,
+    "keywords": [
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "uk"
+  },
+  "ul": {
+    "cardName": "LAAT Gunship",
+    "faction": "republic",
+    "points": 14,
+    "isUnique": false,
+    "keywords": [
+      "Assault",
+      "Grit",
+      "Heavy"
+    ],
+    "cardType": "squadron",
+    "id": "ul"
+  },
+  "um": {
+    "cardName": "Nightmare Squadron",
+    "faction": "rebels",
+    "points": 15,
+    "isUnique": true,
+    "keywords": [
+      "Relay",
+      "Snipe"
+    ],
+    "cardType": "squadron",
+    "id": "um"
+  },
+  "un": {
+    "cardName": "R2-D2",
+    "title": "Twilight",
+    "faction": "republic",
+    "points": 17,
+    "isUnique": true,
+    "keywords": [
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "un"
+  },
+  "uo": {
+    "cardName": "Shadow Squadron",
+    "faction": "empire",
+    "points": 15,
+    "isUnique": true,
+    "keywords": [
+      "Relay",
+      "Snipe"
+    ],
+    "cardType": "squadron",
+    "id": "uo"
+  },
+  "up": {
+    "cardName": "Star Courier",
+    "faction": "separatists",
+    "points": 17,
+    "isUnique": false,
+    "keywords": [
+      "Intel",
+      "Rogue"
+    ],
+    "cardType": "squadron",
+    "id": "up"
   }
 }
