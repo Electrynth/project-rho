@@ -7635,5 +7635,22 @@
     ],
     "cardType": "squadron",
     "id": "up"
+  },
+  "uq": {
+    "cardName": "Rebel One",
+    "points": 7,
+    "isUnique": true,
+    "faction": "rebels",
+    "upgradeSlots": [
+      "title"
+    ],
+    "requirements": [
+      {
+        "cardName": "Providence"
+      }
+    ],
+    "isModification": false,
+    "id": "uq",
+    "cardType": "upgrade"
   }
 }
