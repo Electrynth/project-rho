@@ -2042,7 +2042,7 @@
     "id": "fs"
   },
   "ft": {
-    "cardName": "TIE Interceptor",
+    "cardName": "TIE Interceptor Squadron",
     "faction": "empire",
     "points": 11,
     "isUnique": false,
@@ -7474,7 +7474,7 @@
     "cardName": "Visgura",
     "points": 2,
     "isUnique": true,
-    "faction": "republic",
+    "faction": "separatists",
     "upgradeSlots": [
       "title"
     ],
