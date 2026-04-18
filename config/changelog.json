@@ -1,6 +1,11 @@
 {
     "news": [
         {
+            "date": "18 April 2026",
+            "title": "Legacy Wave 0 & 1",
+            "body": "Legacy Wave 0 & 1 have been added. Special shout-out to Doty for providing updated and refreshed images for all cards!"
+        },
+        {
             "date": "17 December 2025",
             "title": "ARC02 Deployed!",
             "body": "Point adjustments to Kraken, Muni Comms Frigate, Belbs, Generic Aethersprite, and squadron Plo & Lumi."
