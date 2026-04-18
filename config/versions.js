@@ -10,8 +10,8 @@
 const versions = [
     {
         id: 0,
-        label: "ARC02",
-        description: "Current official ruleset for organized play.",
+        label: "Community Edition",
+        description: "Current ruleset for organized play.",
         roles: ["everyone"],
         pointDeltas: {},
         footnoteChanges: {},
