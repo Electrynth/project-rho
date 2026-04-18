@@ -38,7 +38,7 @@
   "ac": {
     "displayName": "Gozanti Cruisers",
     "cardName": "Gozanti-class Cruisers",
-    "imageName": "Gozanti-class Cruisers Separatists",
+    "imageName": "Gozanti-class Cruisers (separatists)",
     "faction": "separatists",
     "cardType": "ship",
     "shipSize": "small",
@@ -209,7 +209,7 @@
   "al": {
     "displayName": "Victory I",
     "cardName": "Victory I-class Star Destroyer",
-    "imageName": "Victory I-class Star Destroyer Republic",
+    "imageName": "Victory I-class Star Destroyer (republic)",
     "faction": "republic",
     "cardType": "ship",
     "shipSize": "medium",
@@ -1095,7 +1095,7 @@
   "ch": {
     "displayName": "Venator II",
     "cardName": "Venator II-class Star Destroyer",
-    "imageName": "Venator II-class Star Destroyer Empire",
+    "imageName": "Venator II-class Star Destroyer (empire)",
     "faction": "empire",
     "cardType": "ship",
     "shipSize": "large",
@@ -1234,7 +1234,7 @@
   "cn": {
     "displayName": "Providence Carrier",
     "cardName": "Providence-class Carrier",
-    "imageName": "Providence-class Carrier Rebels",
+    "imageName": "Providence-class Carrier (rebels)",
     "faction": "rebels",
     "cardType": "ship",
     "shipSize": "large",
@@ -1486,7 +1486,7 @@
     "displayName": "Hera Syndulla (Ghost)",
     "title": "Ghost",
     "cardName": "Hera Syndulla",
-    "imageName": "Hera Syndulla Ghost",
+    "imageName": "Hera Syndulla (Ghost)",
     "faction": "rebels",
     "points": 28,
     "isUnique": true,
@@ -1500,7 +1500,7 @@
   "ea": {
     "displayName": "Hera Syndulla (X-Wing)",
     "cardName": "Hera Syndulla",
-    "imageName": "Hera Syndulla X-Wing",
+    "imageName": "Hera Syndulla (X-Wing Squadron)",
     "faction": "rebels",
     "points": 23,
     "isUnique": true,
@@ -2169,7 +2169,7 @@
     "displayName": "Darth Vader (TIE Advanced)",
     "cardName": "Darth Vader",
     "exportName": "Darth Vader - TIE Advanced Squadron [ARC] (20)",
-    "imageName": "Darth Vader TIE Advanced",
+    "imageName": "Darth Vader (TIE Advanced)",
     "faction": "empire",
     "points": 20,
     "isUnique": true,
@@ -2182,7 +2182,7 @@
   "ge": {
     "displayName": "Darth Vader (TIE Defender)",
     "cardName": "Darth Vader",
-    "imageName": "Darth Vader TIE Defender",
+    "imageName": "Darth Vader (TIE Defender)",
     "faction": "empire",
     "points": 25,
     "isUnique": true,
@@ -2486,7 +2486,7 @@
   },
   "hd": {
     "cardName": "Anakin Skywalker",
-    "imageName": "Anakin Skywalker BTL-B",
+    "imageName": "Anakin Skywalker (BTL-B Y-Wing Squadron)",
     "faction": "republic",
     "points": 18,
     "isUnique": true,
@@ -2500,7 +2500,7 @@
   },
   "he": {
     "cardName": "Anakin Skywalker",
-    "imageName": "Anakin Skywalker Delta",
+    "imageName": "Anakin Skywalker (Delta-7 Aethersprite Squadron)",
     "faction": "republic",
     "points": 24,
     "isUnique": true,
@@ -2834,7 +2834,7 @@
   },
   "ie": {
     "cardName": "Kyrsta Agate",
-    "imageName": "Kyrsta Agate Admiral",
+    "imageName": "Kyrsta Agate (commander)",
     "points": 25,
     "isUnique": true,
     "faction": "rebels",
@@ -2848,7 +2848,7 @@
   },
   "if": {
     "cardName": "Leia Organa",
-    "imageName": "Leia Organa Admiral",
+    "imageName": "Leia Organa (commander)",
     "exportName": "Leia Organa [ARC] (28)",
     "points": 28,
     "isUnique": true,
@@ -2904,6 +2904,7 @@
   },
   "ij": {
     "cardName": "Admiral Ozzel",
+    "imageName": "Admiral Ozzel (commander)",
     "points": 20,
     "isUnique": true,
     "faction": "empire",
@@ -2958,7 +2959,7 @@
   "in": {
     "cardName": "Darth Vader",
     "exportName": "Darth Vader [ARC] (28)",
-    "imageName": "Darth Vader Admiral",
+    "imageName": "Darth Vader (commander)",
     "points": 28,
     "isUnique": true,
     "faction": "empire",
@@ -2972,6 +2973,7 @@
   },
   "io": {
     "cardName": "Emperor Palpatine",
+    "imageName": "Emperor Palpatine (commander)",
     "exportName": "Emperor Palpatine [ARC] (32)",
     "points": 32,
     "isUnique": true,
@@ -3415,6 +3417,7 @@
   },
   "jw": {
     "cardName": "Ahsoka Tano",
+    "imageName": "Ahsoka Tano (rebels)",
     "points": 2,
     "isUnique": true,
     "faction": "rebels",
@@ -3454,7 +3457,7 @@
   },
   "jz": {
     "cardName": "General Draven",
-    "imageName": "General Draven Officer",
+    "imageName": "General Draven (officer)",
     "points": 3,
     "isUnique": true,
     "faction": "rebels",
@@ -3468,6 +3471,7 @@
   },
   "ka": {
     "cardName": "Kyrsta Agate",
+    "imageName": "Kyrsta Agate (officer)",
     "points": 5,
     "isUnique": true,
     "faction": "rebels",
@@ -3494,6 +3498,7 @@
   },
   "kc": {
     "cardName": "Leia Organa",
+    "imageName": "Leia Organa (officer)",
     "points": 3,
     "isUnique": true,
     "faction": "rebels",
@@ -3584,7 +3589,7 @@
     "cardType": "upgrade"
   },
   "kj": {
-    "cardName": "Adi Galia",
+    "cardName": "Adi Gallia",
     "points": 3,
     "isUnique": true,
     "faction": "republic",
@@ -3598,7 +3603,7 @@
   },
   "kk": {
     "cardName": "Ahsoka Tano",
-    "imageName": "Ahsoka Tano Republic",
+    "imageName": "Ahsoka Tano (republic)",
     "points": 6,
     "isUnique": true,
     "faction": "republic",
@@ -3966,7 +3971,7 @@
   },
   "lm": {
     "cardName": "Darth Vader",
-    "imageName": "Darth Vader Boarding Team",
+    "imageName": "Darth Vader (boarding team)",
     "points": 3,
     "isUnique": true,
     "faction": "empire",
@@ -4653,7 +4658,7 @@
     "cardType": "upgrade"
   },
   "ni": {
-    "cardName": "DBY-827 Heavy Turbolasers",
+    "cardName": "DBY-827 Heavy Turbolaser",
     "points": 3,
     "isUnique": false,
     "faction": "",
@@ -6295,7 +6300,7 @@
   },
   "ra": {
     "cardName": "Admiral Ozzel",
-    "imageName": "Admiral Ozzel Officer",
+    "imageName": "Admiral Ozzel (officer)",
     "points": 2,
     "isUnique": true,
     "faction": "empire",
@@ -6426,7 +6431,7 @@
   },
   "rk": {
     "cardName": "Darth Vader",
-    "imageName": "Darth Vader Officer",
+    "imageName": "Darth Vader (officer)",
     "points": 4,
     "isUnique": true,
     "faction": "empire",
@@ -6466,7 +6471,7 @@
   },
   "rn": {
     "cardName": "Emperor Palpatine",
-    "imageName": "Emperor Palpatine Officer",
+    "imageName": "Emperor Palpatine (officer)",
     "points": 3,
     "isUnique": true,
     "faction": "empire",
@@ -6574,7 +6579,7 @@
     "cardType": "upgrade"
   },
   "rv": {
-    "cardName": "Wulff Yularen",
+    "cardName": "Wullf Yularen",
     "points": 7,
     "isUnique": true,
     "faction": "empire",
@@ -6751,7 +6756,8 @@
     "cardType": "upgrade"
   },
   "si": {
-    "cardName": "Magnite Crystal Tractor Beam",
+    "cardName": "Magnite Crystal Tractor Beam Array",
+    "displayName": "Magnite Crystal Tractor Beam",
     "points": 10,
     "isUnique": false,
     "faction": "rebels",
@@ -6936,6 +6942,7 @@
   },
   "sv": {
     "cardName": "General Draven",
+    "imageName": "General Draven (commander)",
     "exportName": "General Draven [ARC] (22)",
     "points": 22,
     "isUnique": true,
@@ -6977,7 +6984,6 @@
   },
   "sy": {
     "cardName": "\"Matchstick\"",
-    "imageName": "Matchstick",
     "faction": "republic",
     "points": 16,
     "isUnique": true,
@@ -7076,31 +7082,29 @@
     "isUnique": false
   },
   "tg": {
-    "hidden": true,
-    "cardName": "YV-666",
+    "cardName": "HMP Droid Gunship",
     "faction": "separatists",
-    "points": 15,
+    "points": 13,
     "isUnique": false,
     "keywords": [
-      "Grit",
-      "Heavy",
-      "Rogue"
+      "AI",
+      "Assault",
+      "Heavy"
     ],
     "cardType": "squadron",
     "id": "tg"
   },
   "th": {
-    "hidden": true,
-    "cardName": "Generous Benefactor",
-    "points": 5,
+    "cardName": "Arlionne",
+    "points": 7,
     "isUnique": true,
-    "faction": "separatists",
+    "faction": "republic",
     "upgradeSlots": [
       "title"
     ],
     "requirements": [
       {
-        "cardName": "Munificent"
+        "cardName": "Victory"
       }
     ],
     "isModification": false,
@@ -7108,26 +7112,25 @@
     "cardType": "upgrade"
   },
   "ti": {
-    "hidden": true,
-    "cardName": "Force of Commerce",
-    "points": 9,
-    "isUnique": true,
-    "faction": "separatists",
+    "cardName": "Battle Cruiser",
+    "points": 2,
+    "isUnique": false,
+    "faction": "empire",
     "upgradeSlots": [
       "title"
     ],
     "requirements": [
       {
-        "cardName": "Munificent"
+        "cardName": "Interdictor Combat Refit"
       }
     ],
+    "addsUpgradeSlot": "turbolasers",
     "isModification": false,
     "id": "ti",
     "cardType": "upgrade"
   },
   "tj": {
-    "hidden": true,
-    "cardName": "Enduring Fealty",
+    "cardName": "Insatiable",
     "points": 3,
     "isUnique": true,
     "faction": "separatists",
@@ -7136,7 +7139,7 @@
     ],
     "requirements": [
       {
-        "cardName": "Hardcell"
+        "cardName": "Gozanti"
       }
     ],
     "isModification": false,
@@ -7144,17 +7147,16 @@
     "cardType": "upgrade"
   },
   "tk": {
-    "hidden": true,
-    "cardName": "Skakoan Pride",
-    "points": 5,
+    "cardName": "Intrepid",
+    "points": 4,
     "isUnique": true,
-    "faction": "separatists",
+    "faction": "empire",
     "upgradeSlots": [
       "title"
     ],
     "requirements": [
       {
-        "cardName": "Hardcell"
+        "cardName": "Venator"
       }
     ],
     "isModification": false,
@@ -7162,15 +7164,13 @@
     "cardType": "upgrade"
   },
   "tl": {
-    "hidden": true,
-    "cardName": "Bossk",
-    "title": "Hound's Tooth",
+    "cardName": "DGS-047",
     "faction": "separatists",
-    "points": 23,
+    "points": 18,
     "isUnique": true,
     "keywords": [
-      "Grit",
-      "Rogue"
+      "AI",
+      "Assault"
     ],
     "cardType": "squadron",
     "id": "tl"
@@ -7189,25 +7189,21 @@
     "id": "tm"
   },
   "tn": {
-    "cardName": "Linked Turbolaser Towers",
-    "points": 7,
-    "isUnique": false,
-    "faction": "",
+    "cardName": "Koklivex",
+    "points": 3,
+    "isUnique": true,
+    "faction": "separatists",
     "upgradeSlots": [
-      "turbolasers"
+      "title"
     ],
     "requirements": [
-      "OR",
       {
-        "faction": "republic"
-      },
-      {
-        "faction": "separatists"
+        "cardName": "Pinnace"
       }
     ],
+    "addsUpgradeSlot": "offensive retrofit",
     "isModification": false,
     "id": "tn",
-    "hidden": true,
     "cardType": "upgrade"
   },
   "to": {
@@ -7225,9 +7221,7 @@
     "id": "to"
   },
   "tp": {
-    "hidden": false,
     "displayName": "Munificent Command Frigate",
-    "imageName": "Munificent-class Command Frigate",
     "cardName": "Munificent-class Command Frigate",
     "exportName": "Munificent-class Command Frigate [ARC] (74)",
     "faction": "separatists",
@@ -7248,29 +7242,24 @@
     "id": "tp"
   },
   "tq": {
-    "hidden": true,
-    "displayName": "CR90 Assassin Corvette",
-    "imageName": "CR90 Assassin-class Corvette",
-    "cardName": "CR90 Corvette B",
+    "cardName": "Pinnace-class Corsair",
     "faction": "separatists",
     "cardType": "ship",
     "shipSize": "small",
-    "points": 42,
+    "points": 40,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
       "officer",
-      "weapons team",
-      "offensive retrofit",
-      "ion cannons",
+      "defensive retrofit",
+      "ordnance",
       "title"
     ],
     "id": "tq"
   },
   "tr": {
-    "hidden": false,
     "displayName": "Arquitens Light Cruiser",
-    "imageName": "Arquitens-class Light Cruiser Republic",
+    "imageName": "Arquitens-class Light Cruiser (republic)",
     "cardName": "Arquitens-class Light Cruiser",
     "exportName": "Arquitens-class Light Cruiser [ARC] (52)",
     "faction": "republic",
@@ -7289,9 +7278,7 @@
     "id": "tr"
   },
   "ts": {
-    "hidden": false,
     "displayName": "Venator Imperator Refit",
-    "imageName": "Venator Star Destroyer Imperator Refit",
     "cardName": "Venator Star Destroyer Imperator Refit",
     "exportName": "Venator Star Destroyer Imperator Refit [ARC] (100)",
     "faction": "republic",
@@ -7311,9 +7298,7 @@
     "id": "ts"
   },
   "tt": {
-    "hidden": false,
     "displayName": "Quarren Gunship",
-    "imageName": "Quarren Prototype Gunship",
     "cardName": "Quarren Prototype Gunship",
     "exportName": "Quarren Prototype Gunship [ARC] (63)",
     "faction": "separatists",
@@ -7346,5 +7331,55 @@
     "isModification": false,
     "id": "tu",
     "cardType": "upgrade"
+  },
+  "tv": {
+    "cardName": "Pinnace-class Corvette",
+    "faction": "separatists",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 40,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "ion cannons",
+      "turbolasers",
+      "title"
+    ],
+    "id": "tv"
+  },
+  "tw": {
+    "cardName": "Arquitens-class Assault Cruiser",
+    "faction": "republic",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 48,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "weapons team",
+      "offensive retrofit",
+      "ordnance",
+      "title"
+    ],
+    "id": "tw"
+  },
+  "tx": {
+    "cardName": "Arquitens-class Escort Cruiser",
+    "faction": "republic",
+    "cardType": "ship",
+    "shipSize": "small",
+    "points": 54,
+    "isUnique": false,
+    "upgradeSlots": [
+      "commander",
+      "officer",
+      "support team",
+      "turbolasers",
+      "turbolasers",
+      "title"
+    ],
+    "id": "tx"
   }
 }
