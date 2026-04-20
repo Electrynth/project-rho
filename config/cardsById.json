@@ -7651,5 +7651,31 @@
     "isModification": false,
     "id": "uq",
     "cardType": "upgrade"
+  },
+  "ur": {
+    "cardName": "Ki-Adi-Mundi",
+    "points": 30,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ur",
+    "cardType": "upgrade"
+  },
+  "us": {
+    "cardName": "Admiral Coburn",
+    "points": 25,
+    "isUnique": true,
+    "faction": "republic",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "us",
+    "cardType": "upgrade"
   }
 }
