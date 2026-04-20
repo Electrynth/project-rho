@@ -7344,7 +7344,7 @@
     "faction": "separatists",
     "cardType": "ship",
     "shipSize": "small",
-    "points": 40,
+    "points": 43,
     "isUnique": false,
     "upgradeSlots": [
       "commander",
