@@ -7677,5 +7677,18 @@
     "isModification": false,
     "id": "us",
     "cardType": "upgrade"
+  },
+  "ua": {
+    "cardName": "Daultay Dofine",
+    "points": 25,
+    "isUnique": true,
+    "faction": "separatists",
+    "upgradeSlots": [
+      "commander"
+    ],
+    "requirements": [],
+    "isModification": false,
+    "id": "ua",
+    "cardType": "upgrade"
   }
 }
